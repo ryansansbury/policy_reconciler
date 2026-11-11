@@ -1,0 +1,370 @@
+{
+ "step": "classify",
+ "tag": "evals-11",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "2c908358fde9f0f4a792753579a6cfaa33476e41c4b0f235744675d8e8283a19",
+ "input": [
+  {
+   "pair": "pair-299f85368f",
+   "rule": "Unfair treatment escalation",
+   "attribute": "complaint_escalation_role",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-CMP-01@v4/s3/c1",
+    "text": "Escalate any complaint alleging unfair treatment to the regional manager on the day it is received.",
+    "heading": "Policy statements",
+    "document": {
+     "title": "Complaint Management Policy",
+     "type": "policy",
+     "version": 4,
+     "effective": "2025-07-22",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "PRO-CMP-03@v4/s3/c8",
+    "text": "Escalate any complaint alleging unfair treatment to the branch manager on the day it is received.",
+    "heading": "Steps",
+    "document": {
+     "title": "Resolving and Closing a Complaint",
+     "type": "procedure",
+     "version": 4,
+     "effective": "2026-01-23",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-a754085c71",
+   "rule": "Unfair treatment escalation",
+   "attribute": "complaint_escalation_role",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-CMP-01@v4/s3/c1",
+    "text": "Escalate any complaint alleging unfair treatment to the regional manager on the day it is received.",
+    "heading": "Policy statements",
+    "document": {
+     "title": "Complaint Management Policy",
+     "type": "policy",
+     "version": 4,
+     "effective": "2025-07-22",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "BUL-CMP-02@v3/s1/c2",
+    "text": "Escalate any complaint alleging unfair treatment to the branch manager on the day it is received.",
+    "heading": "What branches need to know",
+    "document": {
+     "title": "Branch Bulletin 2026-12: Escalation for unfair treatment complaints",
+     "type": "bulletin",
+     "version": 3,
+     "effective": "2025-07-29",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-5efc3367f7",
+   "rule": "Large deposit hold threshold",
+   "attribute": "hold_large_threshold",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-HLD-01@v2/s3/c1",
+    "text": "An extended hold may be placed on the part of a day's check deposits above $6,000.",
+    "heading": "Policy statements",
+    "document": {
+     "title": "Funds Availability Policy",
+     "type": "policy",
+     "version": 2,
+     "effective": "2024-08-19",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "BUL-HLD-02@v4/s1/c2",
+    "text": "An extended hold may be placed on the part of a day's check deposits above $5,000.",
+    "heading": "What branches need to know",
+    "document": {
+     "title": "Branch Bulletin 2026-14: Large deposit threshold for extended holds",
+     "type": "bulletin",
+     "version": 4,
+     "effective": "2025-10-21",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-c44b4460e5",
+   "rule": "Complaint acknowledgment deadline",
+   "attribute": "complaint_ack",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-CMP-01@v4/s4/c1",
+    "text": "Send the customer an acknowledgment no later than 2 business days after a written complaint arrives.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Complaint Management Policy",
+     "type": "policy",
+     "version": 4,
+     "effective": "2025-07-22",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "PRO-CMP-04@v2/s3/c8",
+    "text": "Send the customer an acknowledgment no later than 1 business day after a written complaint arrives.",
+    "heading": "Steps",
+    "document": {
+     "title": "Escalating a Sensitive Complaint",
+     "type": "procedure",
+     "version": 2,
+     "effective": "2025-02-14",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-77e4b005fd",
+   "rule": "Dispute review threshold",
+   "attribute": "dispute_review_threshold",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-DSP-01@v5/s4/c2",
+    "text": "Send any dispute above $500 to card services for review before issuing credit.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Debit Card Dispute Policy",
+     "type": "policy",
+     "version": 5,
+     "effective": "2025-02-25",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "PRO-DSP-05@v1/s3/c3",
+    "text": "Send any dispute above $250 to card services for review before issuing credit.",
+    "heading": "Steps",
+    "document": {
+     "title": "Blocking and Replacing a Compromised Card",
+     "type": "procedure",
+     "version": 1,
+     "effective": "2025-09-16",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-20833e160b",
+   "rule": "Inactivity before dormancy",
+   "attribute": "dormant_inactivity",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-DRM-01@v4/s4/c1",
+    "text": "Classify accounts as dormant after 12 months without customer-initiated activity.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Dormant Account Policy",
+     "type": "policy",
+     "version": 4,
+     "effective": "2026-08-22",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "JA-DRM-01@v3/s1/c1",
+    "text": "Inactivity before an account is dormant | 24 months",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Dormant Account Quick Reference",
+     "type": "job_aid",
+     "version": 3,
+     "effective": "2026-05-24",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-a64bac09d9",
+   "rule": "Standard check hold",
+   "attribute": "hold_standard",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-HLD-01@v2/s4/c2",
+    "text": "Place a standard hold of 2 business days on deposited checks that don't qualify for next-day availability.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Funds Availability Policy",
+     "type": "policy",
+     "version": 2,
+     "effective": "2024-08-19",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "BUL-HLD-01@v4/s1/c2",
+    "text": "Place a standard hold of 1 business day on deposited checks that don't qualify for next-day availability.",
+    "heading": "What branches need to know",
+    "document": {
+     "title": "Branch Bulletin 2025-14: Standard check hold",
+     "type": "bulletin",
+     "version": 4,
+     "effective": "2025-12-23",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-7c2474d712",
+   "rule": "Fee refund window",
+   "attribute": "fee_refund_window",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-FEE-01@v2/s4/c2",
+    "text": "Fee refund requests are accepted for 60 days after the statement date.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Service Fee Waiver Policy",
+     "type": "policy",
+     "version": 2,
+     "effective": "2024-05-13",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "PRO-FEE-04@v3/s3/c7",
+    "text": "Fee refund requests are accepted for 30 days after the statement date.",
+    "heading": "Steps",
+    "document": {
+     "title": "Reviewing Waiver Activity Each Month",
+     "type": "procedure",
+     "version": 3,
+     "effective": "2025-10-08",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  }
+ ],
+ "input_hash": "9c8770144e0b136e8bcac8fbed96f188c35d0cdd537f7d23517bf09313f33377",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [{\"pair\": \"pair-299f85368f\", \"label\": \"conflict\", \"quote_a\": \"Escalate any complaint alleging unfair treatment to the regional manager on the day it is received.\", \"quote_b\": \"Escalate any complaint alleging unfair treatment to the branch manager on the day it is received.\", \"rationale\": \"Both clauses cover all branches and business lines but name different escalation recipients. Staff following the procedure would not send the complaint to the regional manager the policy requires, and the policy is the clause to keep.\"}, {\"pair\": \"pair-a754085c71\", \"label\": \"conflict\", \"quote_a\": \"Escalate any complaint alleging unfair treatment to the regional manager on the day it is received.\", \"quote_b\": \"Escalate any complaint alleging unfair treatment to the branch manager on the day it is received.\", \"rationale\": \"The bulletin applies to all branches and business lines just as the policy does, yet it names the branch manager instead of the regional manager. The bulletin states no narrower scope, so it is a conflict and the higher ranked policy is the clause to keep.\"}, {\"pair\": \"pair-5efc3367f7\", \"label\": \"conflict\", \"quote_a\": \"An extended hold may be placed on the part of a day's check deposits above $6,000.\", \"quote_b\": \"An extended hold may be placed on the part of a day's check deposits above $5,000.\", \"rationale\": \"Both clauses cover the same accounts and set different dollar thresholds for an extended hold. The two come from different documents rather than versions of one document, so neither replaces the other. The policy outranks the bulletin and is the clause to keep.\"}, {\"pair\": \"pair-c44b4460e5\", \"label\": \"conflict\", \"quote_a\": \"Send the customer an acknowledgment no later than 2 business days after a written complaint arrives.\", \"quote_b\": \"Send the customer an acknowledgment no later than 1 business day after a written complaint arrives.\", \"rationale\": \"Both use business days and apply to all branches, but the deadlines are 2 and 1. Staff who follow the policy and send on the second day would miss the procedure deadline. The policy is the clause to keep.\"}, {\"pair\": \"pair-77e4b005fd\", \"label\": \"conflict\", \"quote_a\": \"Send any dispute above $500 to card services for review before issuing credit.\", \"quote_b\": \"Send any dispute above $250 to card services for review before issuing credit.\", \"rationale\": \"The scope is the same for both and the review thresholds differ. A dispute between $250 and $500 must go to card services under the procedure but could be credited directly under the policy. The policy is the clause to keep.\"}, {\"pair\": \"pair-20833e160b\", \"label\": \"conflict\", \"quote_a\": \"Classify accounts as dormant after 12 months without customer-initiated activity.\", \"quote_b\": \"Inactivity before an account is dormant | 24 months\", \"rationale\": \"The policy sets 12 months and the job aid sets 24 months for the same accounts with no narrower scope stated. Staff would classify an account at different times depending on which they follow. The policy outranks the job aid and is the clause to keep.\"}, {\"pair\": \"pair-a64bac09d9\", \"label\": \"conflict\", \"quote_a\": \"Place a standard hold of 2 business days on deposited checks that don't qualify for next-day availability.\", \"quote_b\": \"Place a standard hold of 1 business day on deposited checks that don't qualify for next-day availability.\", \"rationale\": \"Both clauses cover the same checks and accounts but set holds of 2 business days and 1 business day. Funds would be released on different days depending on the clause followed. The policy outranks the bulletin and is the clause to keep.\"}, {\"pair\": \"pair-7c2474d712\", \"label\": \"conflict\", \"quote_a\": \"Fee refund requests are accepted for 60 days after the statement date.\", \"quote_b\": \"Fee refund requests are accepted for 30 days after the statement date.\", \"rationale\": \"The refund window is 60 days in the policy and 30 days in the procedure for the same accounts. A request made on day 45 would be accepted under one clause and refused under the other. The policy is the clause to keep.\"}]}",
+   "problems": [
+    "pair-a754085c71: the rationale has a comma before so. End the sentence there and start the next one",
+    "pair-5efc3367f7: the rationale has a comma before so. End the sentence there and start the next one",
+    "pair-7c2474d712: the rationale uses numbers that aren't in either clause or its document: 45"
+   ],
+   "meta": {
+    "ms": 12533,
+    "api_ms": 12385,
+    "input_tokens": 9087,
+    "output_tokens": 1952,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 9085,
+     "cache_read_input_tokens": 0,
+     "output_tokens": 1952,
+     "output_tokens_details": {
+      "thinking_tokens": 583
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 9085,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 1952,
+       "cache_read_input_tokens": 0,
+       "cache_creation_input_tokens": 9085,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 9085
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.055864,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  },
+  {
+   "reply": "{\"results\": [{\"pair\": \"pair-a754085c71\", \"label\": \"conflict\", \"quote_a\": \"to the regional manager on the day it is received\", \"quote_b\": \"to the branch manager on the day it is received\", \"rationale\": \"Both clauses require same day escalation of unfair treatment complaints but name the regional manager in one and the branch manager in the other. Both apply to all branches and all business lines. Staff following one would send the complaint to a different person than the other requires. The policy outranks the bulletin and is the clause to keep.\"}, {\"pair\": \"pair-5efc3367f7\", \"label\": \"conflict\", \"quote_a\": \"above $6,000\", \"quote_b\": \"above $5,000\", \"rationale\": \"The clauses set different thresholds for an extended hold on the same check deposits. Both apply to all branches and to consumer and small business accounts. A deposit of $5,500 could be held under one clause and not the other. The policy outranks the bulletin and is the clause to keep.\"}, {\"pair\": \"pair-7c2474d712\", \"label\": \"conflict\", \"quote_a\": \"accepted for 60 days after the statement date\", \"quote_b\": \"accepted for 30 days after the statement date\", \"rationale\": \"The policy accepts fee refund requests for 60 days after the statement date and the procedure accepts them for 30 days. Both apply to all branches and to the same accounts. Staff following the procedure would refuse a request that the policy allows. The policy outranks the procedure and is the clause to keep.\"}]}",
+   "problems": [
+    "pair-5efc3367f7: the rationale uses numbers that aren't in either clause or its document: 5,500"
+   ],
+   "meta": {
+    "ms": 10344,
+    "api_ms": 10207,
+    "input_tokens": 7137,
+    "output_tokens": 1133,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 6294,
+     "cache_read_input_tokens": 841,
+     "output_tokens": 1133,
+     "output_tokens_details": {
+      "thinking_tokens": 647
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 6294,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 1133,
+       "cache_read_input_tokens": 841,
+       "cache_creation_input_tokens": 6294,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 6294
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.036594100000000004,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   },
+   "items": [
+    "pair-a754085c71",
+    "pair-5efc3367f7",
+    "pair-7c2474d712"
+   ]
+  }
+ ],
+ "held": {
+  "pair-5efc3367f7": [
+   "the rationale uses numbers that aren't in either clause or its document: 5,500"
+  ]
+ },
+ "recorded_at": "2026-10-30T03:53:55+00:00"
+}

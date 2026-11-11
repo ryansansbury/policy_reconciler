@@ -1,0 +1,189 @@
+{
+ "step": "draft",
+ "tag": "2026",
+ "model": "claude-opus",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "opus",
+  "client_context": true
+ },
+ "prompt_hash": "d412e32e9168de04c00c3959530ebecb6630d0f9092d4afc1f9c308a4695a32e",
+ "input": [
+  {
+   "group": "g-34eb5d1d",
+   "rule": "Provisional credit deadline",
+   "attribute": "dispute_provisional_credit",
+   "type": "duration",
+   "keep": {
+    "clause": "POL-DSP-01@v3/s4/c1",
+    "text": "Credit the customer provisionally no later than 10 business days after the dispute form is complete.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Debit Card Dispute Policy",
+     "type": "policy",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "change": [
+    {
+     "clause": "PRO-DSP-03@v1/s3/c3",
+     "text": "Provisional credit is issued within 10 days of receiving a completed dispute.",
+     "heading": "Steps",
+     "document": {
+      "title": "Investigating a Dispute",
+      "type": "procedure",
+      "applies_to": "All branches. Consumer and small business accounts."
+     }
+    }
+   ],
+   "allowed": {
+    "BUL-DSP-01@v4/s2/c1#value": "10 business days",
+    "FAQ-DSP-02@v1/s2/c1#value": "10 business days",
+    "JA-DSP-01@v4/s1/c2#value": "10 business days",
+    "JA-DSP-02@v1/s1/c1#value": "10 business days",
+    "JA-DSP-03@v3/s1/c1#value": "10 business days",
+    "POL-DSP-01@v3/s4/c1#value": "10 business days",
+    "PRO-DSP-04@v1/s3/c8#value": "10 business days",
+    "PRO-DSP-06@v3/s3/c8#value": "10 business days"
+   },
+   "placeholder": "{clause:POL-DSP-01@v3/s4/c1#value}"
+  },
+  {
+   "group": "g-137a3a32",
+   "rule": "Dispute review threshold",
+   "attribute": "dispute_review_threshold",
+   "type": "money",
+   "keep": {
+    "clause": "POL-DSP-01@v3/s3/c1",
+    "text": "Disputes over $500 are reviewed by a card services specialist before credit is issued.",
+    "heading": "Policy statements",
+    "document": {
+     "title": "Debit Card Dispute Policy",
+     "type": "policy",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "change": [
+    {
+     "clause": "JA-DSP-03@v3/s1/c3",
+     "text": "Dispute amount that needs card services review | $1,000",
+     "heading": "Quick reference",
+     "document": {
+      "title": "Card Services Quick Reference",
+      "type": "job_aid",
+      "applies_to": "All branches. Consumer and small business accounts."
+     }
+    },
+    {
+     "clause": "PRO-DSP-01@v4/s3/c7",
+     "text": "Disputes over $1,000 are reviewed by a card services specialist before credit is issued.",
+     "heading": "Steps",
+     "document": {
+      "title": "Taking a Debit Card Dispute",
+      "type": "procedure",
+      "applies_to": "All branches. Consumer and small business accounts."
+     }
+    }
+   ],
+   "allowed": {
+    "BUL-DSP-01@v4/s1/c2#value": "$500",
+    "BUL-DSP-02@v4/s3/c1#value": "$500",
+    "FAQ-DSP-01@v3/s1/c1#value": "$500",
+    "FAQ-DSP-02@v1/s3/c1#value": "$500",
+    "JA-DSP-01@v4/s1/c1#value": "$500",
+    "POL-DSP-01@v3/s3/c1#value": "$500",
+    "PRO-DSP-04@v1/s3/c7#value": "$500"
+   },
+   "placeholder": "{clause:POL-DSP-01@v3/s3/c1#value}"
+  },
+  {
+   "group": "g-cfcd9295",
+   "rule": "Card dispute window",
+   "attribute": "dispute_window",
+   "type": "duration",
+   "keep": {
+    "clause": "FAQ-DSP-02@v1/s1/c1",
+    "text": "Customers have 60 days from the statement date to dispute a debit card transaction.",
+    "heading": "How long do customers have to dispute a debit card transaction?",
+    "document": {
+     "title": "Provisional Credit Questions",
+     "type": "faq",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "change": [
+    {
+     "clause": "BUL-DSP-02@v4/s1/c2",
+     "text": "Accept debit card disputes filed within 30 days of the statement that first showed the charge.",
+     "heading": "What branches need to know",
+     "document": {
+      "title": "Branch Bulletin 2026-20: Debit card dispute window",
+      "type": "bulletin",
+      "applies_to": "All branches. Consumer and small business accounts."
+     }
+    }
+   ],
+   "allowed": {
+    "FAQ-DSP-02@v1/s1/c1#value": "60 days",
+    "JA-DSP-02@v1/s1/c2#value": "60 days",
+    "JA-DSP-03@v3/s1/c2#value": "60 days",
+    "POL-DSP-01@v3/s4/c2#value": "60 days"
+   },
+   "placeholder": "{clause:FAQ-DSP-02@v1/s1/c1#value}"
+  }
+ ],
+ "input_hash": "24dc77a4460084560d4a81ab9a01f43cad8378692ec14734f01d8688f47545cd",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [{\"group\": \"g-34eb5d1d\", \"title\": \"Provisional credit deadline\", \"text\": \"Staff credit the customer provisionally no later than {clause:POL-DSP-01@v3/s4/c1#value} after the dispute form is complete.\"}, {\"group\": \"g-137a3a32\", \"title\": \"Specialist review of larger disputes\", \"text\": \"A card services specialist reviews every dispute over {clause:POL-DSP-01@v3/s3/c1#value} before credit is issued.\"}, {\"group\": \"g-cfcd9295\", \"title\": \"Debit card dispute window\", \"text\": \"Customers have {clause:FAQ-DSP-02@v1/s1/c1#value} from the statement date to dispute a debit card transaction.\"}]}",
+   "problems": [],
+   "meta": {
+    "ms": 6752,
+    "api_ms": 6612,
+    "input_tokens": 7863,
+    "output_tokens": 497,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 6787,
+     "cache_read_input_tokens": 1074,
+     "output_tokens": 497,
+     "output_tokens_details": {
+      "thinking_tokens": 245
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 6787,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 497,
+       "cache_read_input_tokens": 1074,
+       "cache_creation_input_tokens": 6787,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 6787
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.0644588,
+    "models": [
+     "claude-opus-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T05:57:30+00:00"
+}

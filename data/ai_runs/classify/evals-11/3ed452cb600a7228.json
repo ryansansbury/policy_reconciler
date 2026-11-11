@@ -1,0 +1,292 @@
+{
+ "step": "classify",
+ "tag": "evals-11",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "1346938ac1ecbf43874a700ab9916c851d6a29bb5d6b9e5f1199128bc8cd59f2",
+ "input": [
+  {
+   "pair": "pair-26f6e270be",
+   "rule": "Complaint acknowledgment deadline",
+   "attribute": "complaint_ack",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-CMP-01@v4/s4/c1",
+    "text": "Send the customer an acknowledgment no later than 2 business days after a written complaint arrives.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Complaint Management Policy",
+     "type": "policy",
+     "version": 4,
+     "effective": "2025-07-22",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "JA-CMP-01@v4/s1/c1",
+    "text": "Complaint acknowledgment deadline | 3 business days",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Complaint Handling Card",
+     "type": "job_aid",
+     "version": 4,
+     "effective": "2025-05-29",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-81e4d9317a",
+   "rule": "Documenting pricing exceptions",
+   "attribute": "lend_exception_doc",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-LND-01@v2/s3/c1",
+    "text": "Every pricing exception must be documented in the loan file with the reason and the approver.",
+    "heading": "Policy statements",
+    "document": {
+     "title": "Loan Pricing Exception Policy",
+     "type": "policy",
+     "version": 2,
+     "effective": "2024-08-27",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "JA-LND-01@v4/s1/c1",
+    "text": "Documenting pricing exceptions | Optional",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Rate Exception Authority Card",
+     "type": "job_aid",
+     "version": 4,
+     "effective": "2026-05-06",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-04f21e4e31",
+   "rule": "Vault combination change interval",
+   "attribute": "combo_change",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-BOP-01@v2/s4/c1",
+    "text": "Change the vault combination at least every 6 months.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Branch Security and Opening Policy",
+     "type": "policy",
+     "version": 2,
+     "effective": "2025-01-24",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "JA-BOP-01@v2/s1/c1",
+    "text": "Vault combination change interval | 3 months",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Opening Checklist",
+     "type": "job_aid",
+     "version": 2,
+     "effective": "2026-04-21",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-41e4520bd2",
+   "rule": "Dual control for the vault",
+   "attribute": "cash_vault_dual",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-CSH-01@v4/s4/c1",
+    "text": "The vault must be opened under dual control, with two employees present.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Cash Handling Policy",
+     "type": "policy",
+     "version": 4,
+     "effective": "2025-05-08",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "FAQ-CSH-02@v2/s2/c1",
+    "text": "A single employee may open the vault when a second employee is not available.",
+    "heading": "Can one employee open the vault alone?",
+    "document": {
+     "title": "Large-Cash Review Questions",
+     "type": "faq",
+     "version": 2,
+     "effective": "2026-03-29",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-c97a897f98",
+   "rule": "New account check hold",
+   "attribute": "hold_new_account",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-HLD-01@v2/s4/c1",
+    "text": "New accounts can have check holds of as long as 7 business days.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Funds Availability Policy",
+     "type": "policy",
+     "version": 2,
+     "effective": "2024-08-19",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "PRO-HLD-05@v2/s3/c5",
+    "text": "Checks deposited to a new account may be held for up to 5 business days.",
+    "heading": "Steps",
+    "document": {
+     "title": "Explaining Holds to Customers",
+     "type": "procedure",
+     "version": 2,
+     "effective": "2025-04-19",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-492812696b",
+   "rule": "Branch manager rate exception limit",
+   "attribute": "lend_rate_bm",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-LND-01@v2/s4/c2",
+    "text": "A branch manager can lower a loan rate by no more than 0.25% as an exception.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Loan Pricing Exception Policy",
+     "type": "policy",
+     "version": 2,
+     "effective": "2024-08-27",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "FAQ-LND-01@v2/s1/c1",
+    "text": "Rate exceptions larger than 0.15% need approval above the branch manager.",
+    "heading": "How large a rate exception can a branch manager approve?",
+    "document": {
+     "title": "Rate Exception FAQ",
+     "type": "faq",
+     "version": 2,
+     "effective": "2026-03-15",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-5ea58dcae2",
+   "rule": "Dormant account fee",
+   "attribute": "dormant_fee",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-DRM-01@v4/s4/c2",
+    "text": "The monthly fee for a dormant account is $5.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Dormant Account Policy",
+     "type": "policy",
+     "version": 4,
+     "effective": "2026-08-22",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "PRO-DRM-03@v2/s3/c6",
+    "text": "Dormant accounts are charged a maintenance fee of $3 per month.",
+    "heading": "Steps",
+    "document": {
+     "title": "Reactivating a Dormant Account",
+     "type": "procedure",
+     "version": 2,
+     "effective": "2024-11-06",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-f96b6f9b38",
+   "rule": "Regional manager rate exception limit",
+   "attribute": "lend_rate_rm",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-LND-01@v2/s4/c1",
+    "text": "Regional managers may approve rate exceptions of up to 0.50%.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Loan Pricing Exception Policy",
+     "type": "policy",
+     "version": 2,
+     "effective": "2024-08-27",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "PRO-LND-01@v3/s3/c5",
+    "text": "A regional manager can approve a rate exception as large as 1.00%.",
+    "heading": "Steps",
+    "document": {
+     "title": "Requesting a Rate Exception",
+     "type": "procedure",
+     "version": 3,
+     "effective": "2025-12-17",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  }
+ ],
+ "input_hash": "497d8e000309f8e56119c0dc63ff15e39af5985c2bc613ba1cbbe4bc21c41be5",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [{\"pair\": \"pair-26f6e270be\", \"label\": \"conflict\", \"quote_a\": \"no later than 2 business days after a written complaint arrives\", \"quote_b\": \"3 business days\", \"rationale\": \"The policy sets 2 business days and the card sets 3 business days for the same acknowledgment, and both apply to all branches. Staff using the card could send the acknowledgment a day too late under the policy, and the policy is the clause to keep.\"}, {\"pair\": \"pair-81e4d9317a\", \"label\": \"conflict\", \"quote_a\": \"Every pricing exception must be documented in the loan file with the reason and the approver.\", \"quote_b\": \"Optional\", \"rationale\": \"The policy requires documentation for every pricing exception while the card calls it optional. Staff following the card could skip documentation that the policy requires, and the policy is the clause to keep.\"}, {\"pair\": \"pair-04f21e4e31\", \"label\": \"conflict\", \"quote_a\": \"Change the vault combination at least every 6 months.\", \"quote_b\": \"3 months\", \"rationale\": \"The policy allows a change interval of 6 months and the card sets 3 months for the same task. Staff following the policy could wait past the 3 months the card requires, so the values clash and the policy is the clause to keep.\"}, {\"pair\": \"pair-41e4520bd2\", \"label\": \"conflict\", \"quote_a\": \"The vault must be opened under dual control, with two employees present.\", \"quote_b\": \"A single employee may open the vault when a second employee is not available.\", \"rationale\": \"The policy requires two employees at every vault opening and the FAQ lets one employee open it alone. Staff following the FAQ would do exactly what the policy forbids, and the policy is the clause to keep.\"}, {\"pair\": \"pair-c97a897f98\", \"label\": \"conflict\", \"quote_a\": \"as long as 7 business days\", \"quote_b\": \"held for up to 5 business days\", \"rationale\": \"The policy sets a new account hold ceiling of 7 business days and the procedure sets 5 business days for the same accounts and branches. Staff following the policy could hold checks longer than the procedure permits, and the policy is the clause to keep.\"}, {\"pair\": \"pair-492812696b\", \"label\": \"conflict\", \"quote_a\": \"no more than 0.25%\", \"quote_b\": \"larger than 0.15%\", \"rationale\": \"The policy lets a branch manager approve up to 0.25% and the FAQ sends anything over 0.15% to a higher approver. A branch manager following the policy could approve an exception the FAQ says needs escalation, and the policy is the clause to keep.\"}, {\"pair\": \"pair-5ea58dcae2\", \"label\": \"conflict\", \"quote_a\": \"The monthly fee for a dormant account is $5.\", \"quote_b\": \"charged a maintenance fee of $3 per month\", \"rationale\": \"The policy charges $5 a month and the procedure charges $3 a month for the same dormant accounts. These are separate documents rather than versions of one document, and the policy is the clause to keep.\"}, {\"pair\": \"pair-f96b6f9b38\", \"label\": \"conflict\", \"quote_a\": \"up to 0.50%\", \"quote_b\": \"as large as 1.00%\", \"rationale\": \"The policy caps regional manager approval at 0.50% and the procedure allows 1.00% for the same role and scope. Staff following the procedure could approve an exception the policy does not allow, and the policy is the clause to keep.\"}]}",
+   "problems": [
+    "pair-04f21e4e31: the rationale has a comma before so"
+   ],
+   "meta": {
+    "ms": 12828,
+    "api_ms": 12588,
+    "input_tokens": 2,
+    "output_tokens": 1951,
+    "cost_usd": 0.0518449,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  },
+  {
+   "reply": "{\"results\": [{\"pair\": \"pair-04f21e4e31\", \"label\": \"conflict\", \"quote_a\": \"Change the vault combination at least every 6 months.\", \"quote_b\": \"Vault combination change interval | 3 months\", \"rationale\": \"Both clauses cover all branches and all business lines but set the interval at 6 months in one and 3 months in the other. Staff who follow the policy and change the combination at 6 months would miss the 3 month interval in the job aid, and the policy's higher rank only tells the reader which clause to keep.\"}]}",
+   "problems": [],
+   "meta": {
+    "ms": 4758,
+    "api_ms": 4527,
+    "input_tokens": 2,
+    "output_tokens": 589,
+    "cost_usd": 0.0272209,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   },
+   "items": [
+    "pair-04f21e4e31"
+   ]
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T03:25:06+00:00"
+}

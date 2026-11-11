@@ -1,0 +1,133 @@
+{
+ "step": "extract",
+ "tag": "evals-11",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "c338e60b657607c5f659b819665f2ec94796d01ec070e1f88f830e5bdacdd3fe",
+ "input": [
+  {
+   "clause": "JA-CMP-01@v4/s1/c1",
+   "text": "Complaint acknowledgment deadline | 3 business days",
+   "heading": "Quick reference",
+   "document": {
+    "title": "Complaint Handling Card",
+    "type": "job_aid",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "JA-CSH-02@v2/s1/c1",
+   "text": "Large-cash review threshold | $7,500",
+   "heading": "Quick reference",
+   "document": {
+    "title": "Vault Opening Checklist",
+    "type": "job_aid",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "JA-DRM-01@v3/s1/c1",
+   "text": "Inactivity before an account is dormant | 24 months",
+   "heading": "Quick reference",
+   "document": {
+    "title": "Dormant Account Quick Reference",
+    "type": "job_aid",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "JA-DRM-02@v1/s3/c2",
+   "text": "An account with no customer-initiated activity for 12 months is classified as dormant.",
+   "heading": "Steps to follow",
+   "document": {
+    "title": "Dormancy Notice Checklist",
+    "type": "job_aid",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "JA-DSP-01@v1/s1/c2",
+   "text": "Dispute amount that needs card services review | $250",
+   "heading": "Quick reference",
+   "document": {
+    "title": "Dispute Intake Checklist",
+    "type": "job_aid",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "JA-DSP-01@v1/s1/c3",
+   "text": "Provisional credit deadline for disputes | 5 business days",
+   "heading": "Quick reference",
+   "document": {
+    "title": "Dispute Intake Checklist",
+    "type": "job_aid",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "JA-DSP-02@v2/s1/c2",
+   "text": "Debit card dispute window | 90 days",
+   "heading": "Quick reference",
+   "document": {
+    "title": "Dispute Timelines Card",
+    "type": "job_aid",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "JA-FEE-03@v2/s1/c3",
+   "text": "Fee waivers per account per year | three",
+   "heading": "Quick reference",
+   "document": {
+    "title": "Waiver Authority Card",
+    "type": "job_aid",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "JA-FEE-03@v3/s1/c1",
+   "text": "Branch manager fee waiver limit | $100",
+   "heading": "Quick reference",
+   "document": {
+    "title": "Waiver Authority Card",
+    "type": "job_aid",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "JA-HLD-01@v2/s3/c4",
+   "text": "Place a standard hold of 2 business days on deposited checks that don't qualify for next-day availability.",
+   "heading": "Steps to follow",
+   "document": {
+    "title": "Hold Calendar Quick Reference",
+    "type": "job_aid",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  }
+ ],
+ "input_hash": "fb7308138c827682153d5d2f2e29ec1c003af4a68930b6f83e2a558d9f2060f6",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [\n{\"clause\": \"JA-CMP-01@v4/s1/c1\", \"atoms\": [{\"attribute\": \"complaint_ack\", \"value\": {\"type\": \"duration\", \"n\": 3, \"unit\": \"business_days\"}, \"quote\": \"3 business days\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]},\n{\"clause\": \"JA-CSH-02@v2/s1/c1\", \"atoms\": [{\"attribute\": \"cash_review_threshold\", \"value\": {\"type\": \"money\", \"dollars\": 7500}, \"quote\": \"$7,500\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]},\n{\"clause\": \"JA-DRM-01@v3/s1/c1\", \"atoms\": [{\"attribute\": \"dormant_inactivity\", \"value\": {\"type\": \"duration\", \"n\": 24, \"unit\": \"months\"}, \"quote\": \"24 months\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]},\n{\"clause\": \"JA-DRM-02@v1/s3/c2\", \"atoms\": [{\"attribute\": \"dormant_inactivity\", \"value\": {\"type\": \"duration\", \"n\": 12, \"unit\": \"months\"}, \"quote\": \"12 months\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]},\n{\"clause\": \"JA-DSP-01@v1/s1/c2\", \"atoms\": [{\"attribute\": \"dispute_review_threshold\", \"value\": {\"type\": \"money\", \"dollars\": 250}, \"quote\": \"$250\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]},\n{\"clause\": \"JA-DSP-01@v1/s1/c3\", \"atoms\": [{\"attribute\": \"dispute_provisional_credit\", \"value\": {\"type\": \"duration\", \"n\": 5, \"unit\": \"business_days\"}, \"quote\": \"5 business days\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]},\n{\"clause\": \"JA-DSP-02@v2/s1/c2\", \"atoms\": [{\"attribute\": \"dispute_window\", \"value\": {\"type\": \"duration\", \"n\": 90, \"unit\": \"days\"}, \"quote\": \"90 days\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]},\n{\"clause\": \"JA-FEE-03@v2/s1/c3\", \"atoms\": [{\"attribute\": \"fee_waivers_per_year\", \"value\": {\"type\": \"count\", \"n\": 3}, \"quote\": \"three\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]},\n{\"clause\": \"JA-FEE-03@v3/s1/c1\", \"atoms\": [{\"attribute\": \"fee_waiver_bm\", \"value\": {\"type\": \"money\", \"dollars\": 100}, \"quote\": \"$100\", \"actor\": \"branch_manager\", \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]},\n{\"clause\": \"JA-HLD-01@v2/s3/c4\", \"atoms\": [{\"attribute\": \"hold_standard\", \"value\": {\"type\": \"duration\", \"n\": 2, \"unit\": \"business_days\"}, \"quote\": \"2 business days\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": \"that don't qualify for next-day availability\"}]}\n]}",
+   "problems": [],
+   "meta": {
+    "ms": 8529,
+    "api_ms": 8325,
+    "input_tokens": 2,
+    "output_tokens": 1569,
+    "cost_usd": 0.040703,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T03:22:59+00:00"
+}

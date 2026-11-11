@@ -1,0 +1,73 @@
+{
+ "step": "judge",
+ "tag": "drafts-6101",
+ "model": "google-a",
+ "backend": {
+  "vendor": "Google",
+  "model": "gemini-3.1-pro-preview",
+  "label": "Gemini 3.1 Pro"
+ },
+ "prompt_hash": "ab6a49ec8731854b3cf900a9a4387417ee8016fe68257c4d327181c7eb1621da",
+ "input": [
+  {
+   "draft": "g-275f258e.1fb17aba",
+   "text": "Staff log any cash deposit or withdrawal of $7,500 or more for large cash review.",
+   "sources": [
+    "Log any cash deposit or withdrawal of $7,500 or more for large-cash review."
+   ]
+  },
+  {
+   "draft": "g-982e824a.9f2a7e3c",
+   "text": "Staff acknowledge every written complaint within 2 business days.",
+   "sources": [
+    "Acknowledge every written complaint within 2 business days."
+   ]
+  },
+  {
+   "draft": "g-89c313f3.fa3af33b",
+   "text": "Staff escalate any complaint that alleges unfair treatment to the regional manager the same day.",
+   "sources": [
+    "Complaints that allege unfair treatment are escalated to the regional manager the same day."
+   ]
+  },
+  {
+   "draft": "g-76b64634.576430d2",
+   "text": "Staff resolve complaints within 15 business days of receipt or tell the customer when to expect a resolution.",
+   "sources": [
+    "Resolve complaints within 15 business days of receipt, or tell the customer when to expect a resolution."
+   ]
+  },
+  {
+   "draft": "g-14fea1fb.bba76a1c",
+   "text": "Collect two forms of identification from each signer before opening the account, or one form plus a verified bank reference when the approval named in this policy is given.",
+   "sources": [
+    "Collect two forms of identification from each signer before opening the account, or one form plus a verified bank reference when the branch manager approves."
+   ]
+  }
+ ],
+ "input_hash": "5f7aa7ad3dd09d37083243021f3b69c3df986655f12b554a04b0def7e0f7e04a",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "```json\n{\"results\": [{\"draft\": \"g-275f258e.1fb17aba\", \"scores\": {\"keeps_rules\": {\"pass\": true, \"evidence\": \"\"}, \"adds_no_rule\": {\"pass\": true, \"evidence\": \"\"}, \"keeps_scope\": {\"pass\": true, \"evidence\": \"\"}, \"plain\": {\"pass\": true, \"evidence\": \"\"}}}, {\"draft\": \"g-982e824a.9f2a7e3c\", \"scores\": {\"keeps_rules\": {\"pass\": true, \"evidence\": \"\"}, \"adds_no_rule\": {\"pass\": true, \"evidence\": \"\"}, \"keeps_scope\": {\"pass\": true, \"evidence\": \"\"}, \"plain\": {\"pass\": true, \"evidence\": \"\"}}}, {\"draft\": \"g-89c313f3.fa3af33b\", \"scores\": {\"keeps_rules\": {\"pass\": true, \"evidence\": \"\"}, \"adds_no_rule\": {\"pass\": true, \"evidence\": \"\"}, \"keeps_scope\": {\"pass\": true, \"evidence\": \"\"}, \"plain\": {\"pass\": true, \"evidence\": \"\"}}}, {\"draft\": \"g-76b64634.576430d2\", \"scores\": {\"keeps_rules\": {\"pass\": true, \"evidence\": \"\"}, \"adds_no_rule\": {\"pass\": true, \"evidence\": \"\"}, \"keeps_scope\": {\"pass\": true, \"evidence\": \"\"}, \"plain\": {\"pass\": true, \"evidence\": \"\"}}}, {\"draft\": \"g-14fea1fb.bba76a1c\", \"scores\": {\"keeps_rules\": {\"pass\": false, \"evidence\": \"when the branch manager approves\"}, \"adds_no_rule\": {\"pass\": true, \"evidence\": \"\"}, \"keeps_scope\": {\"pass\": true, \"evidence\": \"\"}, \"plain\": {\"pass\": true, \"evidence\": \"\"}}}]}\n```",
+   "problems": [],
+   "meta": {
+    "ms": 15725,
+    "input_tokens": 931,
+    "output_tokens": 2480,
+    "cost_usd": 0.031622,
+    "usage": {
+     "completion_tokens": 440,
+     "prompt_tokens": 931,
+     "total_tokens": 3411
+    },
+    "models": [
+     "gemini-3.1-pro-preview"
+    ],
+    "stop_reason": "stop"
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T17:55:27+00:00"
+}

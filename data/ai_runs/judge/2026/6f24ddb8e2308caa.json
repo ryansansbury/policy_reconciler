@@ -1,0 +1,66 @@
+{
+ "step": "judge",
+ "tag": "2026",
+ "model": "google-a",
+ "backend": {
+  "vendor": "Google",
+  "model": "gemini-3.1-pro-preview",
+  "label": "Gemini 3.1 Pro"
+ },
+ "prompt_hash": "ab6a49ec8731854b3cf900a9a4387417ee8016fe68257c4d327181c7eb1621da",
+ "input": [
+  {
+   "draft": "g-02ec0cc3",
+   "text": "Before an outgoing wire of $10,000 or more is sent, staff call the customer back at a phone number already on file. No callback is needed when the wire goes to an account the customer has used in the past year.",
+   "sources": [
+    "Outgoing wires of $10,000 or more require a callback to the customer at a number already on file, unless the wire goes to an account the customer has used in the past year."
+   ]
+  },
+  {
+   "draft": "g-e83d1e4a",
+   "text": "Every wire callback is completed by a wire specialist. The employee who took the wire request never completes the callback.",
+   "sources": [
+    "Callbacks are completed by a wire specialist, never by the employee who took the request."
+   ]
+  },
+  {
+   "draft": "g-1e497f6c",
+   "text": "Submit outgoing consumer and small business wires by 3:00 PM Central time for processing on the same day.",
+   "sources": [
+    "Submit outgoing consumer and small business wires by 3:00 PM Central for same-day processing."
+   ]
+  },
+  {
+   "draft": "g-de226699",
+   "text": "The cutoff for outgoing commercial wires is 4:00 PM Central time.",
+   "sources": [
+    "The cutoff for outgoing commercial wires is 4:00 PM Central time."
+   ]
+  }
+ ],
+ "input_hash": "13b8180d3f7e2283e1ac085abd8c72dc9ea94d3c3f10aa1551eefd834d670d01",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "```json\n{\"results\": [{\"draft\": \"g-02ec0cc3\", \"scores\": {\"keeps_rules\": {\"pass\": true, \"evidence\": \"\"}, \"adds_no_rule\": {\"pass\": false, \"evidence\": \"Before\"}, \"keeps_scope\": {\"pass\": true, \"evidence\": \"\"}, \"plain\": {\"pass\": true, \"evidence\": \"\"}}}, {\"draft\": \"g-e83d1e4a\", \"scores\": {\"keeps_rules\": {\"pass\": true, \"evidence\": \"\"}, \"adds_no_rule\": {\"pass\": true, \"evidence\": \"\"}, \"keeps_scope\": {\"pass\": true, \"evidence\": \"\"}, \"plain\": {\"pass\": true, \"evidence\": \"\"}}}, {\"draft\": \"g-1e497f6c\", \"scores\": {\"keeps_rules\": {\"pass\": true, \"evidence\": \"\"}, \"adds_no_rule\": {\"pass\": true, \"evidence\": \"\"}, \"keeps_scope\": {\"pass\": true, \"evidence\": \"\"}, \"plain\": {\"pass\": true, \"evidence\": \"\"}}}, {\"draft\": \"g-de226699\", \"scores\": {\"keeps_rules\": {\"pass\": true, \"evidence\": \"\"}, \"adds_no_rule\": {\"pass\": true, \"evidence\": \"\"}, \"keeps_scope\": {\"pass\": true, \"evidence\": \"\"}, \"plain\": {\"pass\": true, \"evidence\": \"\"}}}]}\n```",
+   "problems": [],
+   "meta": {
+    "ms": 31622,
+    "input_tokens": 860,
+    "output_tokens": 4390,
+    "cost_usd": 0.0544,
+    "usage": {
+     "completion_tokens": 319,
+     "prompt_tokens": 860,
+     "total_tokens": 5250
+    },
+    "models": [
+     "gemini-3.1-pro-preview"
+    ],
+    "stop_reason": "stop"
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T17:02:39+00:00"
+}

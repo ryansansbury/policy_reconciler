@@ -1,0 +1,133 @@
+{
+ "step": "extract",
+ "tag": "evals-11",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "c338e60b657607c5f659b819665f2ec94796d01ec070e1f88f830e5bdacdd3fe",
+ "input": [
+  {
+   "clause": "PRO-HLD-02@v2/s3/c4",
+   "text": "Checks deposited to a new account may be held for up to 7 days.",
+   "heading": "Steps",
+   "document": {
+    "title": "Extending a Hold on a Large Deposit",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "PRO-HLD-02@v2/s3/c9",
+   "text": "An authorization hold that the merchant never settles releases within 3 business days.",
+   "heading": "Steps",
+   "document": {
+    "title": "Extending a Hold on a Large Deposit",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "PRO-HLD-05@v2/s3/c5",
+   "text": "Checks deposited to a new account may be held for up to 5 business days.",
+   "heading": "Steps",
+   "document": {
+    "title": "Explaining Holds to Customers",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "PRO-LND-01@v3/s3/c5",
+   "text": "A regional manager can approve a rate exception as large as 1.00%.",
+   "heading": "Steps",
+   "document": {
+    "title": "Requesting a Rate Exception",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-LND-02@v2/s3/c2",
+   "text": "Regional managers may approve rate exceptions of up to 1.00%.",
+   "heading": "Steps",
+   "document": {
+    "title": "Approving a Rate Exception",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-LND-03@v2/s3/c4",
+   "text": "Pricing exceptions may be documented in the loan file after closing if time is short.",
+   "heading": "Steps",
+   "document": {
+    "title": "Documenting Pricing Exceptions",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-ODR-01@v1/s3/c5",
+   "text": "Accounts overdrawn by no more than $5 at the end of the day are not charged an overdraft fee.",
+   "heading": "Steps",
+   "document": {
+    "title": "Reviewing Overdrawn Accounts Each Morning",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "PRO-ODR-03@v2/s3/c4",
+   "text": "Accounts that remain overdrawn for 30 days are referred for charge-off.",
+   "heading": "Steps",
+   "document": {
+    "title": "Referring Accounts for Charge-Off",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "PRO-ODR-05@v4/s3/c11",
+   "text": "Withdrawals at ATMs outside the network are charged $3 each.",
+   "heading": "Steps",
+   "document": {
+    "title": "Closing an Overdrawn Account",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "PRO-ODR-05@v4/s3/c12",
+   "text": "The bank charges $3 for each withdrawal at an ATM outside its network.",
+   "heading": "Steps",
+   "document": {
+    "title": "Closing an Overdrawn Account",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  }
+ ],
+ "input_hash": "96ef2ffe945061095383a4e691cd98d46585d30d0bbfe2ba2d59ce46a9f0688e",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\":[{\"clause\":\"PRO-HLD-02@v2/s3/c4\",\"atoms\":[{\"attribute\":\"hold_new_account\",\"value\":{\"type\":\"duration\",\"n\":7,\"unit\":\"days\"},\"quote\":\"7 days\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]},{\"clause\":\"PRO-HLD-02@v2/s3/c9\",\"atoms\":[{\"attribute\":\"card_auth_hold\",\"value\":{\"type\":\"duration\",\"n\":3,\"unit\":\"business_days\"},\"quote\":\"3 business days\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]},{\"clause\":\"PRO-HLD-05@v2/s3/c5\",\"atoms\":[{\"attribute\":\"hold_new_account\",\"value\":{\"type\":\"duration\",\"n\":5,\"unit\":\"business_days\"},\"quote\":\"5 business days\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]},{\"clause\":\"PRO-LND-01@v3/s3/c5\",\"atoms\":[{\"attribute\":\"lend_rate_rm\",\"value\":{\"type\":\"percent\",\"bp\":100},\"quote\":\"1.00%\",\"actor\":\"regional_manager\",\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]},{\"clause\":\"PRO-LND-02@v2/s3/c2\",\"atoms\":[{\"attribute\":\"lend_rate_rm\",\"value\":{\"type\":\"percent\",\"bp\":100},\"quote\":\"1.00%\",\"actor\":\"regional_manager\",\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]},{\"clause\":\"PRO-LND-03@v2/s3/c4\",\"atoms\":[{\"attribute\":\"lend_exception_doc\",\"value\":{\"type\":\"modal\",\"modal\":\"may\"},\"quote\":\"may be documented\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":\"if time is short\"}]},{\"clause\":\"PRO-ODR-01@v1/s3/c5\",\"atoms\":[{\"attribute\":\"od_de_minimis\",\"value\":{\"type\":\"money\",\"dollars\":5},\"quote\":\"$5\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]},{\"clause\":\"PRO-ODR-03@v2/s3/c4\",\"atoms\":[{\"attribute\":\"od_chargeoff\",\"value\":{\"type\":\"duration\",\"n\":30,\"unit\":\"days\"},\"quote\":\"30 days\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]},{\"clause\":\"PRO-ODR-05@v4/s3/c11\",\"atoms\":[{\"attribute\":\"atm_fee\",\"value\":{\"type\":\"money\",\"dollars\":3},\"quote\":\"$3\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]},{\"clause\":\"PRO-ODR-05@v4/s3/c12\",\"atoms\":[{\"attribute\":\"atm_fee\",\"value\":{\"type\":\"money\",\"dollars\":3},\"quote\":\"$3\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]}]}",
+   "problems": [],
+   "meta": {
+    "ms": 8105,
+    "api_ms": 7927,
+    "input_tokens": 2,
+    "output_tokens": 1459,
+    "cost_usd": 0.039847,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T03:23:32+00:00"
+}

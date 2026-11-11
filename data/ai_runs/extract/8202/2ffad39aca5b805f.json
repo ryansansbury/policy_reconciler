@@ -1,0 +1,167 @@
+{
+ "step": "extract",
+ "tag": "8202",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "dcc761e46c6ec579c01b9dfd540df3c2fa4bba3b6b5ec777aa2cf9c9c62aa411",
+ "input": [
+  {
+   "clause": "ADD-KS-01@v1/s2/c3",
+   "text": "In Kansas branches, resolve complaints within 30 business days of receipt, or tell the customer when to expect a resolution.",
+   "heading": "Kansas requirements",
+   "document": {
+    "title": "Kansas Branch Addendum",
+    "type": "addendum",
+    "applies_to": "Kansas branches. All business lines."
+   }
+  },
+  {
+   "clause": "ADD-OK-01@v3/s2/c1",
+   "text": "In Oklahoma branches, resolve complaints within 10 business days of receipt, or tell the customer when to expect a resolution.",
+   "heading": "Oklahoma requirements",
+   "document": {
+    "title": "Oklahoma Branch Addendum",
+    "type": "addendum",
+    "applies_to": "Oklahoma branches. All business lines."
+   }
+  },
+  {
+   "clause": "BUL-AOP-01@v4/s1/c2",
+   "text": "Only the branch manager can approve an exception to the identification requirements.",
+   "heading": "What branches need to know",
+   "document": {
+    "title": "Branch Bulletin 2025-34: Approver for identification exceptions",
+    "type": "bulletin",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "BUL-FEE-02@v4/s1/c2",
+   "text": "Limit fee waivers to two per account in each calendar year.",
+   "heading": "What branches need to know",
+   "document": {
+    "title": "Branch Bulletin 2026-18: Fee waivers per account per year",
+    "type": "bulletin",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "BUL-WIR-02@v1/s1/c2",
+   "text": "Outgoing wires over $50,000 need a second approval from an operations manager.",
+   "heading": "What branches need to know",
+   "document": {
+    "title": "Branch Bulletin 2026-02: Second approval threshold for outgoing wires",
+    "type": "bulletin",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "BUL-WIR-02@v1/s2/c1",
+   "text": "Outgoing wires of $10,000 or more require a callback that a wire specialist completes.",
+   "heading": "Related requirements",
+   "document": {
+    "title": "Branch Bulletin 2026-02: Second approval threshold for outgoing wires",
+    "type": "bulletin",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "FAQ-AOP-01@v3/s2/c1",
+   "text": "Any exception to the identification requirements must be approved by the branch manager.",
+   "heading": "Who can approve an exception to the identification requirements?",
+   "document": {
+    "title": "Account Opening FAQ",
+    "type": "faq",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "FAQ-AOP-02@v3/s2/c1",
+   "text": "Only the branch manager can approve an exception to the identification requirements.",
+   "heading": "Who can approve an exception to the identification requirements?",
+   "document": {
+    "title": "Identification Questions from the Branches",
+    "type": "faq",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "FAQ-FEE-02@v3/s3/c1",
+   "text": "Each account may receive no more than two fee waivers in a calendar year.",
+   "heading": "How many fee waivers can one account get in a year?",
+   "document": {
+    "title": "Fee Refund Questions",
+    "type": "faq",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "FAQ-HLD-01@v2/s1/c1",
+   "text": "Funds from deposited checks are available within 2 business days unless a longer hold applies.",
+   "heading": "How long is the standard hold on a deposited check?",
+   "document": {
+    "title": "Funds Availability FAQ",
+    "type": "faq",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  }
+ ],
+ "input_hash": "38534f6e2e2b60cf9cf91efcabeac6915237fee730fb19a6255c63de095ffb10",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [\n{\"clause\": \"ADD-KS-01@v1/s2/c3\", \"atoms\": [{\"attribute\": \"complaint_resolve\", \"value\": {\"type\": \"duration\", \"n\": 30, \"unit\": \"business_days\"}, \"quote\": \"30 business days\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": \"In Kansas branches\", \"condition\": \"or tell the customer when to expect a resolution\"}]},\n{\"clause\": \"ADD-OK-01@v3/s2/c1\", \"atoms\": [{\"attribute\": \"complaint_resolve\", \"value\": {\"type\": \"duration\", \"n\": 10, \"unit\": \"business_days\"}, \"quote\": \"10 business days\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": \"In Oklahoma branches\", \"condition\": \"or tell the customer when to expect a resolution\"}]},\n{\"clause\": \"BUL-AOP-01@v4/s1/c2\", \"atoms\": [{\"attribute\": \"ao_exception_approver\", \"value\": {\"type\": \"role\", \"role\": \"branch_manager\"}, \"quote\": \"branch manager\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]},\n{\"clause\": \"BUL-FEE-02@v4/s1/c2\", \"atoms\": [{\"attribute\": \"fee_waivers_per_year\", \"value\": {\"type\": \"count\", \"n\": 2}, \"quote\": \"two\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]},\n{\"clause\": \"BUL-WIR-02@v1/s1/c2\", \"atoms\": [{\"attribute\": \"wire_second_approval\", \"value\": {\"type\": \"money\", \"dollars\": 50000}, \"quote\": \"$50,000\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]},\n{\"clause\": \"BUL-WIR-02@v1/s2/c1\", \"atoms\": [{\"attribute\": \"wire_callback\", \"value\": {\"type\": \"money\", \"dollars\": 10000}, \"quote\": \"$10,000\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}, {\"attribute\": \"wire_callback_role\", \"value\": {\"type\": \"role\", \"role\": \"wire_specialist\"}, \"quote\": \"wire specialist\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]},\n{\"clause\": \"FAQ-AOP-01@v3/s2/c1\", \"atoms\": [{\"attribute\": \"ao_exception_approver\", \"value\": {\"type\": \"role\", \"role\": \"branch_manager\"}, \"quote\": \"branch manager\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]},\n{\"clause\": \"FAQ-AOP-02@v3/s2/c1\", \"atoms\": [{\"attribute\": \"ao_exception_approver\", \"value\": {\"type\": \"role\", \"role\": \"branch_manager\"}, \"quote\": \"branch manager\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]},\n{\"clause\": \"FAQ-FEE-02@v3/s3/c1\", \"atoms\": [{\"attribute\": \"fee_waivers_per_year\", \"value\": {\"type\": \"count\", \"n\": 2}, \"quote\": \"two\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]},\n{\"clause\": \"FAQ-HLD-01@v2/s1/c1\", \"atoms\": [{\"attribute\": \"hold_standard\", \"value\": {\"type\": \"duration\", \"n\": 2, \"unit\": \"business_days\"}, \"quote\": \"2 business days\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": \"unless a longer hold applies\"}]}\n]}",
+   "problems": [],
+   "meta": {
+    "ms": 9921,
+    "api_ms": 9781,
+    "input_tokens": 9067,
+    "output_tokens": 1842,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 6383,
+     "cache_read_input_tokens": 2682,
+     "output_tokens": 1842,
+     "output_tokens_details": {
+      "thinking_tokens": 570
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 6383,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 1842,
+       "cache_read_input_tokens": 2682,
+       "cache_creation_input_tokens": 6383,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 6383
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.044224200000000005,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T05:40:10+00:00"
+}

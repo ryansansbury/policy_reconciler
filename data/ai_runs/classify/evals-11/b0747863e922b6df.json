@@ -1,0 +1,292 @@
+{
+ "step": "classify",
+ "tag": "evals-11",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "1346938ac1ecbf43874a700ab9916c851d6a29bb5d6b9e5f1199128bc8cd59f2",
+ "input": [
+  {
+   "pair": "pair-fef762f6a3",
+   "rule": "Who completes wire callbacks",
+   "attribute": "wire_callback_role",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-WIR-01@v4/s3/c1",
+    "text": "Only a wire specialist may complete the callback for an outgoing wire.",
+    "heading": "Policy statements",
+    "document": {
+     "title": "Wire Transfer Policy",
+     "type": "policy",
+     "version": 4,
+     "effective": "2025-04-29",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "PRO-WIR-03@v2/s3/c6",
+    "text": "Callbacks are completed by an operations employee, never by the employee who took the request.",
+    "heading": "Steps",
+    "document": {
+     "title": "Completing Wire Callback Verification",
+     "type": "procedure",
+     "version": 2,
+     "effective": "2025-01-04",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-b363338ac7",
+   "rule": null,
+   "attribute": null,
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-CMP-05@v1/s3/c8",
+    "text": "Resolve complaints within 15 business days of receipt, or tell the customer when to expect a resolution.",
+    "heading": "Steps",
+    "document": {
+     "title": "Reviewing Complaint Trends Each Quarter",
+     "type": "procedure",
+     "version": 1,
+     "effective": "2025-02-15",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "POL-CMP-01@v4/s4/c2",
+    "text": "Complaints should be closed within 15 business days of the day they arrive, or within 30 business days when another department has to investigate.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Complaint Management Policy",
+     "type": "policy",
+     "version": 4,
+     "effective": "2025-07-22",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-e15a577a5e",
+   "rule": "Complaint resolution deadline",
+   "attribute": "complaint_resolve",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-CMP-02@v2/s3/c5",
+    "text": "Complaints should be closed within 15 business days of the day they arrive.",
+    "heading": "Steps",
+    "document": {
+     "title": "Acknowledging a Written Complaint",
+     "type": "procedure",
+     "version": 2,
+     "effective": "2026-03-24",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "BUL-CMP-01@v1/s1/c2",
+    "text": "Resolve complaints within 15 days of receipt, or tell the customer when to expect a resolution.",
+    "heading": "What branches need to know",
+    "document": {
+     "title": "Branch Bulletin 2025-05: Complaint resolution deadline",
+     "type": "bulletin",
+     "version": 1,
+     "effective": "2025-10-07",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-d6f75d6932",
+   "rule": "Records destruction approver",
+   "attribute": "records_destroy_role",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-REC-01@v3/s3/c1",
+    "text": "The records custodian must approve the destruction of any records in writing.",
+    "heading": "Policy statements",
+    "document": {
+     "title": "Records Retention Policy",
+     "type": "policy",
+     "version": 3,
+     "effective": "2026-06-19",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "FAQ-REC-02@v3/s1/c1",
+    "text": "Records may be destroyed only with written approval from a manager.",
+    "heading": "Who approves the destruction of records?",
+    "document": {
+     "title": "Legal Hold Questions",
+     "type": "faq",
+     "version": 3,
+     "effective": "2026-03-31",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-a9d2e80e5f",
+   "rule": "Forms of identification per signer",
+   "attribute": "ao_id_count",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-AOP-07@v2/s3/c3",
+    "text": "Every signer must present two separate identification documents before the account is opened.",
+    "heading": "Steps",
+    "document": {
+     "title": "Opening an Account for a Minor with a Custodian",
+     "type": "procedure",
+     "version": 2,
+     "effective": "2026-02-05",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "POL-AOP-02@v6/s4/c2",
+    "text": "Every signer must present two separate identification documents before the account is opened, or one form plus a verified bank reference when the branch manager approves.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Customer Identification Policy",
+     "type": "policy",
+     "version": 6,
+     "effective": "2024-09-21",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-383eeed864",
+   "rule": "Complaint acknowledgment deadline",
+   "attribute": "complaint_ack",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-CMP-01@v4/s4/c1",
+    "text": "Send the customer an acknowledgment no later than 2 business days after a written complaint arrives.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Complaint Management Policy",
+     "type": "policy",
+     "version": 4,
+     "effective": "2025-07-22",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "PRO-CMP-02@v2/s3/c1",
+    "text": "Send the customer an acknowledgment no later than 2 days after a written complaint arrives.",
+    "heading": "Steps",
+    "document": {
+     "title": "Acknowledging a Written Complaint",
+     "type": "procedure",
+     "version": 2,
+     "effective": "2026-03-24",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-0d7e210ed3",
+   "rule": "Records destruction approver",
+   "attribute": "records_destroy_role",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-REC-04@v3/s3/c3",
+    "text": "Records may be destroyed only with written approval from the records custodian.",
+    "heading": "Steps",
+    "document": {
+     "title": "Releasing a Legal Hold",
+     "type": "procedure",
+     "version": 3,
+     "effective": "2025-09-05",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "BUL-REC-01@v1/s1/c2",
+    "text": "A manager must approve the destruction of any records in writing.",
+    "heading": "What branches need to know",
+    "document": {
+     "title": "Branch Bulletin 2025-04: Approver for records destruction",
+     "type": "bulletin",
+     "version": 1,
+     "effective": "2025-12-17",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-b6adcaf364",
+   "rule": "Personal banker fee waiver limit",
+   "attribute": "fee_waiver_pb",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-FEE-01@v2/s3/c7",
+    "text": "Personal bankers may waive service fees up to $25 per account in a calendar year.",
+    "heading": "Steps",
+    "document": {
+     "title": "Processing a Fee Waiver Request",
+     "type": "procedure",
+     "version": 2,
+     "effective": "2026-04-10",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "POL-FEE-01@v2/s4/c1",
+    "text": "A personal banker can waive no more than $25 for one account in a calendar year, or up to $50 with branch manager approval noted in the account.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Service Fee Waiver Policy",
+     "type": "policy",
+     "version": 2,
+     "effective": "2024-05-13",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  }
+ ],
+ "input_hash": "d62468555929fa35595f4d24176d448a99dabf5bab6951a5154b1c0e9e92152f",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [{\"pair\": \"pair-fef762f6a3\", \"label\": \"conflict\", \"quote_a\": \"Only a wire specialist may complete the callback for an outgoing wire.\", \"quote_b\": \"Callbacks are completed by an operations employee\", \"rationale\": \"The procedure's general wording lets any operations employee complete the callback, while the policy limits it to a wire specialist. Staff following the procedure could assign someone the policy does not allow, and the policy is the clause to keep.\"}, {\"pair\": \"pair-b363338ac7\", \"label\": \"conflict\", \"quote_a\": \"Resolve complaints within 15 business days of receipt, or tell the customer when to expect a resolution.\", \"quote_b\": \"or within 30 business days when another department has to investigate\", \"rationale\": \"The procedure lets staff skip the 15 business day limit by giving the customer an expected date, with no cap. The policy allows a longer limit of 30 business days only when another department investigates, and the policy is the clause to keep.\"}, {\"pair\": \"pair-e15a577a5e\", \"label\": \"conflict\", \"quote_a\": \"Complaints should be closed within 15 business days of the day they arrive.\", \"quote_b\": \"Resolve complaints within 15 days of receipt, or tell the customer when to expect a resolution.\", \"rationale\": \"The bulletin counts 15 days where the procedure counts 15 business days, which gives staff a shorter window. The bulletin also allows an expected date to replace resolution. The procedure outranks the bulletin and is the clause to keep.\"}, {\"pair\": \"pair-d6f75d6932\", \"label\": \"conflict\", \"quote_a\": \"The records custodian must approve the destruction of any records in writing.\", \"quote_b\": \"Records may be destroyed only with written approval from a manager.\", \"rationale\": \"The policy requires the records custodian to approve while the FAQ accepts a manager. A manager's approval would satisfy the FAQ but not the policy, and the policy is the clause to keep.\"}, {\"pair\": \"pair-a9d2e80e5f\", \"label\": \"conflict\", \"quote_a\": \"Every signer must present two separate identification documents before the account is opened.\", \"quote_b\": \"or one form plus a verified bank reference when the branch manager approves\", \"rationale\": \"The procedure leaves out the exception, so staff following it would refuse one form plus a verified bank reference, which the policy allows with branch manager approval. The procedure states no narrower scope for its stricter rule, and the policy is the clause to keep.\"}, {\"pair\": \"pair-383eeed864\", \"label\": \"conflict\", \"quote_a\": \"Send the customer an acknowledgment no later than 2 business days after a written complaint arrives.\", \"quote_b\": \"Send the customer an acknowledgment no later than 2 days after a written complaint arrives.\", \"rationale\": \"Counting 2 days instead of 2 business days gives a shorter deadline whenever a weekend or holiday falls in the window. Staff would act differently under each clause, and the policy is the clause to keep.\"}, {\"pair\": \"pair-0d7e210ed3\", \"label\": \"conflict\", \"quote_a\": \"Records may be destroyed only with written approval from the records custodian.\", \"quote_b\": \"A manager must approve the destruction of any records in writing.\", \"rationale\": \"The procedure requires approval from the records custodian while the bulletin accepts a manager. A manager's approval would satisfy the bulletin but not the procedure, and the procedure is the clause to keep.\"}, {\"pair\": \"pair-b6adcaf364\", \"label\": \"conflict\", \"quote_a\": \"Personal bankers may waive service fees up to $25 per account in a calendar year.\", \"quote_b\": \"or up to $50 with branch manager approval noted in the account\", \"rationale\": \"The procedure caps the waiver at $25 and omits the policy's $50 allowance with branch manager approval. Staff following the procedure would refuse a waiver the policy permits, and the policy is the clause to keep.\"}]}",
+   "problems": [
+    "pair-a9d2e80e5f: the rationale has a comma before so"
+   ],
+   "meta": {
+    "ms": 21830,
+    "api_ms": 21669,
+    "input_tokens": 2,
+    "output_tokens": 3011,
+    "cost_usd": 0.0629409,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  },
+  {
+   "reply": "{\"results\": [{\"pair\": \"pair-a9d2e80e5f\", \"label\": \"conflict\", \"quote_a\": \"Every signer must present two separate identification documents before the account is opened.\", \"quote_b\": \"or one form plus a verified bank reference when the branch manager approves\", \"rationale\": \"Clause b lets a branch manager approve one form plus a verified bank reference, and clause a allows no such option even though both apply to all branches. Staff following the procedure would refuse what the policy allows. The policy outranks the procedure and its wording is the one to keep.\"}]}",
+   "problems": [],
+   "meta": {
+    "ms": 9512,
+    "api_ms": 9280,
+    "input_tokens": 2,
+    "output_tokens": 945,
+    "cost_usd": 0.031012900000000003,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   },
+   "items": [
+    "pair-a9d2e80e5f"
+   ]
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T03:25:52+00:00"
+}

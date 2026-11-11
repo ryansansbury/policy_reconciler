@@ -1,0 +1,149 @@
+{
+ "step": "extract",
+ "tag": "cmp-6101",
+ "model": "openai-a",
+ "backend": {
+  "vendor": "OpenAI",
+  "model": "gpt-6-astra",
+  "label": "GPT-6 Astra"
+ },
+ "prompt_hash": "dcc761e46c6ec579c01b9dfd540df3c2fa4bba3b6b5ec777aa2cf9c9c62aa411",
+ "input": [
+  {
+   "clause": "PRO-CMP-05@v1/s3/c5",
+   "text": "Tell the customer who will contact them next and when.",
+   "heading": "Steps",
+   "document": {
+    "title": "Reviewing Complaint Trends Each Quarter",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-CSH-07@v4/s3/c5",
+   "text": "Keep your drawer locked whenever you step away from the teller line.",
+   "heading": "Steps",
+   "document": {
+    "title": "Counting Cash Under Dual Control",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-DRM-01@v3/s3/c7",
+   "text": "Verify the customer's identity before discussing any account details.",
+   "heading": "Steps",
+   "document": {
+    "title": "Identifying Dormant Accounts",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "PRO-DRM-06@v1/s2/c1",
+   "text": "Make sure you have completed the training for this task and have access to the systems it uses.",
+   "heading": "Before you begin",
+   "document": {
+    "title": "Handling Mail Returned on a Dormant Account",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "PRO-DSP-04@v1/s3/c6",
+   "text": "Document the request and its outcome in the account notes.",
+   "heading": "Steps",
+   "document": {
+    "title": "Reversing Provisional Credit",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "PRO-FEE-01@v1/s3/c8",
+   "text": "Follow up with the customer if the request cannot be completed the same day.",
+   "heading": "Steps",
+   "document": {
+    "title": "Processing a Fee Waiver Request",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "PRO-LND-06@v4/s3/c1",
+   "text": "Enter the requested rate and the reason for the exception in the pricing worksheet.",
+   "heading": "Steps",
+   "document": {
+    "title": "Escalating Exceptions Above Branch Authority",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-ODR-03@v2/s4/c1",
+   "text": "Use plain language and avoid internal codes when explaining the outcome to the customer.",
+   "heading": "Exceptions and escalation",
+   "document": {
+    "title": "Referring Accounts for Charge-Off",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "PRO-WIR-04@v1/s2/c1",
+   "text": "Make sure you have completed the training for this task and have access to the systems it uses.",
+   "heading": "Before you begin",
+   "document": {
+    "title": "Handling Incoming Wires",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-WIR-05@v1/s3/c2",
+   "text": "Check the account balance before sending the wire to operations.",
+   "heading": "Steps",
+   "document": {
+    "title": "Wire Cutoffs on Holidays and Weekends",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  }
+ ],
+ "input_hash": "d3d577b4644280457eb4b29ec120300d0797673beeb8aaf2e49d4034f87c6876",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\":[{\"clause\":\"PRO-CMP-05@v1/s3/c5\",\"atoms\":[]},{\"clause\":\"PRO-CSH-07@v4/s3/c5\",\"atoms\":[]},{\"clause\":\"PRO-DRM-01@v3/s3/c7\",\"atoms\":[]},{\"clause\":\"PRO-DRM-06@v1/s2/c1\",\"atoms\":[]},{\"clause\":\"PRO-DSP-04@v1/s3/c6\",\"atoms\":[]},{\"clause\":\"PRO-FEE-01@v1/s3/c8\",\"atoms\":[]},{\"clause\":\"PRO-LND-06@v4/s3/c1\",\"atoms\":[{\"attribute\":\"lend_exception_doc\",\"value\":{\"type\":\"modal\",\"modal\":\"must\"},\"quote\":\"Enter the requested rate and the reason for the exception in the pricing worksheet.\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]},{\"clause\":\"PRO-ODR-03@v2/s4/c1\",\"atoms\":[]},{\"clause\":\"PRO-WIR-04@v1/s2/c1\",\"atoms\":[]},{\"clause\":\"PRO-WIR-05@v1/s3/c2\",\"atoms\":[]}]}",
+   "problems": [],
+   "meta": {
+    "ms": 3168,
+    "input_tokens": 2652,
+    "output_tokens": 255,
+    "cost_usd": 0.03927,
+    "usage": {
+     "prompt_tokens": 2652,
+     "completion_tokens": 255,
+     "total_tokens": 2907,
+     "prompt_tokens_details": {
+      "cached_tokens": 1728,
+      "cache_write_tokens": 921,
+      "audio_tokens": 0
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+     }
+    },
+    "models": [
+     "gpt-6-astra"
+    ],
+    "stop_reason": "stop"
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T21:19:11+00:00"
+}

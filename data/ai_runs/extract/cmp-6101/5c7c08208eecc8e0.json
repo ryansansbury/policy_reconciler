@@ -1,0 +1,138 @@
+{
+ "step": "extract",
+ "tag": "cmp-6101",
+ "model": "google-a",
+ "backend": {
+  "vendor": "Google",
+  "model": "gemini-3.1-pro-preview",
+  "label": "Gemini 3.1 Pro"
+ },
+ "prompt_hash": "dcc761e46c6ec579c01b9dfd540df3c2fa4bba3b6b5ec777aa2cf9c9c62aa411",
+ "input": [
+  {
+   "clause": "POL-FEE-01@v3/s3/c1",
+   "text": "A personal banker can waive no more than $25 for one account in a calendar year, or up to $50 with branch manager approval noted in the account.",
+   "heading": "Policy statements",
+   "document": {
+    "title": "Service Fee Waiver Policy",
+    "type": "policy",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "POL-HLD-01@v3/s4/c3",
+   "text": "Never destroy a record that is under a legal hold.",
+   "heading": "Additional requirements",
+   "document": {
+    "title": "Funds Availability Policy",
+    "type": "policy",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "POL-ODR-01@v2/s4/c2",
+   "text": "No overdraft fee is charged when the account is overdrawn by $10 or less at the end of the day.",
+   "heading": "Additional requirements",
+   "document": {
+    "title": "Overdraft Policy",
+    "type": "policy",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "POL-WIR-01@v2/s3/c3",
+   "text": "Incoming wires received by 4:30 p.m. Central are posted to the customer's account the same day.",
+   "heading": "Policy statements",
+   "document": {
+    "title": "Wire Transfer Policy",
+    "type": "policy",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-AOP-01@v2/s3/c1",
+   "text": "Collect two forms of identification from each signer before opening the account, or one form plus a verified bank reference when the branch manager approves.",
+   "heading": "Steps",
+   "document": {
+    "title": "Opening a Consumer Checking Account",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer accounts."
+   }
+  },
+  {
+   "clause": "PRO-AOP-04@v4/s3/c4",
+   "text": "Only the operations specialist can approve an exception to the identification requirements.",
+   "heading": "Steps",
+   "document": {
+    "title": "Verifying Customer Identification",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "PRO-AOP-05@v3/s3/c2",
+   "text": "Do not open an account until you have verified three forms of identification for each signer.",
+   "heading": "Steps",
+   "document": {
+    "title": "Adding a Signer to an Existing Account",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "PRO-AOP-06@v2/s3/c4",
+   "text": "Every signer must present one separate identification documents before the account is opened.",
+   "heading": "Steps",
+   "document": {
+    "title": "Handling Identification Exceptions",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "PRO-BOP-03@v2/s5/c2",
+   "text": "Vault combinations are changed every 6 months and whenever an employee who knows the combination leaves.",
+   "heading": "Steps to follow",
+   "document": {
+    "title": "Changing Vault Combinations",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-BOP-04@v3/s5/c3",
+   "text": "Vault combinations are changed every 6 months and whenever an employee who knows the combination leaves.",
+   "heading": "Steps to follow",
+   "document": {
+    "title": "Testing the Alarm System",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  }
+ ],
+ "input_hash": "58b9c8d4bf8b345e9c4fa7c58ab0dd511744db62eb2cd274c17978c8e6e4543a",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "```json\n{\"results\": [\n  {\n    \"clause\": \"POL-FEE-01@v3/s3/c1\",\n    \"atoms\": [\n      {\n        \"attribute\": \"fee_waiver_pb\",\n        \"value\": {\n          \"type\": \"money\",\n          \"dollars\": 25\n        },\n        \"quote\": \"$25\",\n        \"actor\": \"personal_banker\",\n        \"actor_inferred\": false,\n        \"scope_quote\": null,\n        \"condition\": null\n      },\n      {\n        \"attribute\": \"fee_waiver_bm\",\n        \"value\": {\n          \"type\": \"money\",\n          \"dollars\": 50\n        },\n        \"quote\": \"$50\",\n        \"actor\": \"branch_manager\",\n        \"actor_inferred\": false,\n        \"scope_quote\": null,\n        \"condition\": \"or up to $50 with branch manager approval noted in the account\"\n      }\n    ]\n  },\n  {\n    \"clause\": \"POL-HLD-01@v3/s4/c3\",\n    \"atoms\": [\n      {\n        \"attribute\": \"legal_hold\",\n        \"value\": {\n          \"type\": \"modal\",\n          \"modal\": \"must_not\"\n        },\n        \"quote\": \"Never\",\n        \"actor\": null,\n        \"actor_inferred\": false,\n        \"scope_quote\": null,\n        \"condition\": null\n      }\n    ]\n  },\n  {\n    \"clause\": \"POL-ODR-01@v2/s4/c2\",\n    \"atoms\": [\n      {\n        \"attribute\": \"od_de_minimis\",\n        \"value\": {\n          \"type\": \"money\",\n          \"dollars\": 10\n        },\n        \"quote\": \"$10\",\n        \"actor\": null,\n        \"actor_inferred\": false,\n        \"scope_quote\": null,\n        \"condition\": null\n      }\n    ]\n  },\n  {\n    \"clause\": \"POL-WIR-01@v2/s3/c3\",\n    \"atoms\": [\n      {\n        \"attribute\": \"incoming_wire_posting\",\n        \"value\": {\n          \"type\": \"time\",\n          \"minutes\": 990\n        },\n        \"quote\": \"4:30 p.m.\",\n        \"actor\": null,\n        \"actor_inferred\": false,\n        \"scope_quote\": null,\n        \"condition\": null\n      }\n    ]\n  },\n  {\n    \"clause\": \"PRO-AOP-01@v2/s3/c1\",\n    \"atoms\": [\n      {\n        \"attribute\": \"ao_id_count\",\n        \"value\": {\n          \"type\": \"count\",\n          \"n\": 2\n        },\n        \"quote\": \"two\",\n        \"actor\": null,\n        \"actor_inferred\": false,\n        \"scope_quote\": null,\n        \"condition\": \"or one form plus a verified bank reference when the branch manager approves\"\n      }\n    ]\n  },\n  {\n    \"clause\": \"PRO-AOP-04@v4/s3/c4\",\n    \"atoms\": [\n      {\n        \"attribute\": \"ao_exception_approver\",\n        \"value\": {\n          \"type\": \"role\",\n          \"role\": \"operations_specialist\"\n        },\n        \"quote\": \"operations specialist\",\n        \"actor\": null,\n        \"actor_inferred\": false,\n        \"scope_quote\": null,\n        \"condition\": null\n      }\n    ]\n  },\n  {\n    \"clause\": \"PRO-AOP-05@v3/s3/c2\",\n    \"atoms\": [\n      {\n        \"attribute\": \"ao_id_count\",\n        \"value\": {\n          \"type\": \"count\",\n          \"n\": 3\n        },\n        \"quote\": \"three\",\n        \"actor\": null,\n        \"actor_inferred\": false,\n        \"scope_quote\": null,\n        \"condition\": null\n      }\n    ]\n  },\n  {\n    \"clause\": \"PRO-AOP-06@v2/s3/c4\",\n    \"atoms\": [\n      {\n        \"attribute\": \"ao_id_count\",\n        \"value\": {\n          \"type\": \"count\",\n          \"n\": 1\n        },\n        \"quote\": \"one\",\n        \"actor\": null,\n        \"actor_inferred\": false,\n        \"scope_quote\": null,\n        \"condition\": null\n      }\n    ]\n  },\n  {\n    \"clause\": \"PRO-BOP-03@v2/s5/c2\",\n    \"atoms\": [\n      {\n        \"attribute\": \"combo_change\",\n        \"value\": {\n          \"type\": \"duration\",\n          \"n\": 6,\n          \"unit\": \"months\"\n        },\n        \"quote\": \"6 months\",\n        \"actor\": null,\n        \"actor_inferred\": false,\n        \"scope_quote\": null,\n        \"condition\": \"and whenever an employee who knows the combination leaves\"\n      }\n    ]\n  },\n  {\n    \"clause\": \"PRO-BOP-04@v3/s5/c3\",\n    \"atoms\": [\n      {\n        \"attribute\": \"combo_change\",\n        \"value\": {\n          \"type\": \"duration\",\n          \"n\": 6,\n          \"unit\": \"months\"\n        },\n        \"quote\": \"6 months\",\n        \"actor\": null,\n        \"actor_inferred\": false,\n        \"scope_quote\": null,\n        \"condition\": \"and whenever an employee who knows the combination leaves\"\n      }\n    ]\n  }\n]}\n```",
+   "problems": [],
+   "meta": {
+    "ms": 36652,
+    "input_tokens": 3004,
+    "output_tokens": 5976,
+    "cost_usd": 0.07772,
+    "usage": {
+     "completion_tokens": 1389,
+     "prompt_tokens": 3004,
+     "total_tokens": 8980
+    },
+    "models": [
+     "gemini-3.1-pro-preview"
+    ],
+    "stop_reason": "stop"
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T21:21:17+00:00"
+}

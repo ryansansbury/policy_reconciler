@@ -1,0 +1,199 @@
+{
+ "step": "draft",
+ "tag": "2026",
+ "model": "claude-opus",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "opus",
+  "client_context": true
+ },
+ "prompt_hash": "d412e32e9168de04c00c3959530ebecb6630d0f9092d4afc1f9c308a4695a32e",
+ "input": [
+  {
+   "group": "g-2529a4f0",
+   "rule": "New account period",
+   "attribute": "ao_new_account_window",
+   "type": "duration",
+   "keep": {
+    "clause": "POL-AOP-02@v2/s3/c1",
+    "text": "Accounts open fewer than 30 days are new accounts for hold and limit purposes.",
+    "heading": "Policy statements",
+    "document": {
+     "title": "Customer Identification Policy",
+     "type": "policy",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "change": [
+    {
+     "clause": "BUL-AOP-02@v1/s1/c2",
+     "text": "Accounts open fewer than 90 days are new accounts for hold and limit purposes.",
+     "heading": "What branches need to know",
+     "document": {
+      "title": "Branch Bulletin 2026-29: How long an account counts as new",
+      "type": "bulletin",
+      "applies_to": "All branches. Consumer and small business accounts."
+     }
+    },
+    {
+     "clause": "FAQ-AOP-02@v2/s3/c1",
+     "text": "An account is treated as a new account for the first 60 days after it opens.",
+     "heading": "How long is an account considered a new account?",
+     "document": {
+      "title": "Identification Questions from the Branches",
+      "type": "faq",
+      "applies_to": "All branches. Consumer and small business accounts."
+     }
+    }
+   ],
+   "allowed": {
+    "JA-AOP-01@v3/s1/c2#value": "30 days",
+    "JA-AOP-03@v4/s1/c1#value": "30 days",
+    "POL-AOP-01@v2/s4/c1#value": "30 days",
+    "POL-AOP-02@v2/s3/c1#value": "30 days"
+   },
+   "placeholder": "{clause:POL-AOP-02@v2/s3/c1#value}"
+  },
+  {
+   "group": "g-4ec9a097",
+   "rule": "Dual control at opening",
+   "attribute": "branch_open_dual",
+   "type": "modal",
+   "keep": {
+    "clause": "POL-BOP-01@v5/s3/c1",
+    "text": "The branch is opened by two employees together, never by one.",
+    "heading": "Policy statements",
+    "document": {
+     "title": "Branch Security and Opening Policy",
+     "type": "policy",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "change": [
+    {
+     "clause": "FAQ-BOP-01@v4/s1/c1",
+     "text": "One employee may open the branch when the second opener is running late, as long as the alarm log is noted.",
+     "heading": "How many employees must be present to open the branch?",
+     "document": {
+      "title": "Branch Opening FAQ",
+      "type": "faq",
+      "applies_to": "All branches. All business lines."
+     }
+    }
+   ],
+   "allowed": {
+    "JA-BOP-01@v2/s1/c1#value": "must",
+    "JA-BOP-02@v4/s1/c2#value": "must",
+    "JA-BOP-03@v2/s1/c2#value": "must",
+    "POL-BOP-01@v5/s3/c1#v2": "two",
+    "POL-BOP-01@v5/s3/c1#value": "must",
+    "PRO-BOP-01@v3/s3/c3#value": "must",
+    "PRO-BOP-02@v3/s5/c1#value": "must",
+    "PRO-BOP-04@v4/s3/c6#value": "must",
+    "PRO-BOP-06@v3/s3/c1#value": "must"
+   },
+   "placeholder": "{clause:POL-BOP-01@v5/s3/c1#value}"
+  },
+  {
+   "group": "g-b28d1323",
+   "rule": "Teller drawer limit",
+   "attribute": "cash_drawer_limit",
+   "type": "money",
+   "keep": {
+    "clause": "POL-CSH-01@v3/s3/c1",
+    "text": "A teller drawer may not hold more than $15,000 at any time.",
+    "heading": "Policy statements",
+    "document": {
+     "title": "Cash Handling Policy",
+     "type": "policy",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "change": [
+    {
+     "clause": "FAQ-CSH-02@v1/s1/c1",
+     "text": "A teller drawer may not hold more than $20,000 at any time.",
+     "heading": "How much cash can a teller drawer hold?",
+     "document": {
+      "title": "Large-Cash Review Questions",
+      "type": "faq",
+      "applies_to": "All branches. All business lines."
+     }
+    },
+    {
+     "clause": "PRO-CSH-03@v3/s3/c7",
+     "text": "Sell excess cash to the vault whenever a teller drawer goes above $20,000.",
+     "heading": "Steps",
+     "document": {
+      "title": "Opening and Closing the Vault",
+      "type": "procedure",
+      "applies_to": "All branches. All business lines."
+     }
+    }
+   ],
+   "allowed": {
+    "FAQ-CSH-01@v4/s1/c1#value": "$15,000",
+    "JA-CSH-02@v1/s1/c2#value": "$15,000",
+    "JA-CSH-03@v1/s1/c2#value": "$15,000",
+    "POL-CSH-01@v3/s3/c1#value": "$15,000",
+    "PRO-CSH-04@v1/s3/c9#value": "$15,000",
+    "PRO-CSH-05@v3/s3/c4#value": "$15,000"
+   },
+   "placeholder": "{clause:POL-CSH-01@v3/s3/c1#value}"
+  }
+ ],
+ "input_hash": "c64b63847ab707bbd5775d7afc0e91c03ef4d95dca83f439277a5f4352e072f4",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [{\"group\": \"g-2529a4f0\", \"title\": \"How long an account counts as new\", \"text\": \"An account that has been open fewer than {clause:POL-AOP-02@v2/s3/c1#value} is a new account for hold and limit purposes.\"}, {\"group\": \"g-4ec9a097\", \"title\": \"Dual control when opening the branch\", \"text\": \"{clause:POL-BOP-01@v5/s3/c1#v2} employees {clause:POL-BOP-01@v5/s3/c1#value} open the branch together. No employee opens the branch alone.\"}, {\"group\": \"g-b28d1323\", \"title\": \"Teller drawer cash limit\", \"text\": \"Keep no more than {clause:POL-CSH-01@v3/s3/c1#value} in a teller drawer at any time.\"}]}",
+   "problems": [],
+   "meta": {
+    "ms": 8368,
+    "api_ms": 8205,
+    "input_tokens": 7939,
+    "output_tokens": 717,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 7937,
+     "cache_read_input_tokens": 0,
+     "output_tokens": 717,
+     "output_tokens_details": {
+      "thinking_tokens": 450
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 7937,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 717,
+       "cache_read_input_tokens": 0,
+       "cache_creation_input_tokens": 7937,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 7937
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.077844,
+    "models": [
+     "claude-opus-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T05:57:24+00:00"
+}

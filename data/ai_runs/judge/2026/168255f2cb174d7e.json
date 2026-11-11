@@ -1,0 +1,73 @@
+{
+ "step": "judge",
+ "tag": "2026",
+ "model": "google-b",
+ "backend": {
+  "vendor": "Google",
+  "model": "gemini-3.8-flash",
+  "label": "Gemini 3.8 Flash"
+ },
+ "prompt_hash": "ab6a49ec8731854b3cf900a9a4387417ee8016fe68257c4d327181c7eb1621da",
+ "input": [
+  {
+   "draft": "g-26d6eeb7",
+   "text": "Staff must record the reason and the approver for every pricing exception in the loan file.",
+   "sources": [
+    "Record the reason and the approver for every pricing exception in the loan file."
+   ]
+  },
+  {
+   "draft": "g-a0b05e44",
+   "text": "A branch manager can lower a loan rate by no more than 0.25% as an exception.",
+   "sources": [
+    "A branch manager can lower a loan rate by no more than 0.25% as an exception."
+   ]
+  },
+  {
+   "draft": "g-133084ff",
+   "text": "A regional manager may approve a rate exception as large as 0.50%.",
+   "sources": [
+    "A regional manager can approve a rate exception as large as 0.50%."
+   ]
+  },
+  {
+   "draft": "g-136d0342",
+   "text": "Refer an account for charge-off once it has been negative for 45 days.",
+   "sources": [
+    "Refer an account for charge-off once it has been negative for 45 days."
+   ]
+  },
+  {
+   "draft": "g-e65702a5",
+   "text": "The records custodian must approve the destruction of any records in writing.",
+   "sources": [
+    "The records custodian must approve the destruction of any records in writing."
+   ]
+  }
+ ],
+ "input_hash": "aea019f4964ac72dab638e20d6920688473437d39b7a9da5f596e9dc8f201e95",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "```json\n{\"results\": [{\"draft\": \"g-26d6eeb7\", \"scores\": {\"keeps_rules\": {\"pass\": true, \"evidence\": \"\"}, \"adds_no_rule\": {\"pass\": true, \"evidence\": \"\"}, \"keeps_scope\": {\"pass\": true, \"evidence\": \"\"}, \"plain\": {\"pass\": true, \"evidence\": \"\"}}}, {\"draft\": \"g-a0b05e44\", \"scores\": {\"keeps_rules\": {\"pass\": true, \"evidence\": \"\"}, \"adds_no_rule\": {\"pass\": true, \"evidence\": \"\"}, \"keeps_scope\": {\"pass\": true, \"evidence\": \"\"}, \"plain\": {\"pass\": true, \"evidence\": \"\"}}}, {\"draft\": \"g-133084ff\", \"scores\": {\"keeps_rules\": {\"pass\": true, \"evidence\": \"\"}, \"adds_no_rule\": {\"pass\": true, \"evidence\": \"\"}, \"keeps_scope\": {\"pass\": true, \"evidence\": \"\"}, \"plain\": {\"pass\": true, \"evidence\": \"\"}}}, {\"draft\": \"g-136d0342\", \"scores\": {\"keeps_rules\": {\"pass\": true, \"evidence\": \"\"}, \"adds_no_rule\": {\"pass\": true, \"evidence\": \"\"}, \"keeps_scope\": {\"pass\": true, \"evidence\": \"\"}, \"plain\": {\"pass\": true, \"evidence\": \"\"}}}, {\"draft\": \"g-e65702a5\", \"scores\": {\"keeps_rules\": {\"pass\": true, \"evidence\": \"\"}, \"adds_no_rule\": {\"pass\": true, \"evidence\": \"\"}, \"keeps_scope\": {\"pass\": true, \"evidence\": \"\"}, \"plain\": {\"pass\": true, \"evidence\": \"\"}}}]}\n```",
+   "problems": [],
+   "meta": {
+    "ms": 9608,
+    "input_tokens": 872,
+    "output_tokens": 1107,
+    "cost_usd": 0.004805,
+    "usage": {
+     "completion_tokens": 397,
+     "prompt_tokens": 872,
+     "total_tokens": 1979
+    },
+    "models": [
+     "gemini-3.8-flash"
+    ],
+    "stop_reason": "stop"
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T19:48:14+00:00"
+}

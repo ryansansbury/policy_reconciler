@@ -1,0 +1,167 @@
+{
+ "step": "extract",
+ "tag": "evals-6101",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "dcc761e46c6ec579c01b9dfd540df3c2fa4bba3b6b5ec777aa2cf9c9c62aa411",
+ "input": [
+  {
+   "clause": "JA-HLD-03@v3/s1/c2",
+   "text": "Longest check hold on a new account | 5 business days",
+   "heading": "Quick reference",
+   "document": {
+    "title": "Hold Notice Checklist",
+    "type": "job_aid",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "JA-HLD-03@v3/s3/c3",
+   "text": "Checks deposited to a new account may be held for up to 7 business days.",
+   "heading": "Steps to follow",
+   "document": {
+    "title": "Hold Notice Checklist",
+    "type": "job_aid",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "JA-LND-01@v1/s1/c2",
+   "text": "Documenting pricing exceptions | Optional",
+   "heading": "Quick reference",
+   "document": {
+    "title": "Rate Exception Authority Card",
+    "type": "job_aid",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "JA-LND-02@v2/s1/c1",
+   "text": "Regional manager rate exception limit | 1.00%",
+   "heading": "Quick reference",
+   "document": {
+    "title": "Exception Documentation Checklist",
+    "type": "job_aid",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "JA-ODR-01@v4/s1/c1",
+   "text": "Overdraft fees per account per day | four",
+   "heading": "Quick reference",
+   "document": {
+    "title": "Overdraft Quick Reference",
+    "type": "job_aid",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "JA-REC-01@v4/s1/c1",
+   "text": "Retention for closed account records | 5 years",
+   "heading": "Quick reference",
+   "document": {
+    "title": "Records Retention Schedule Card",
+    "type": "job_aid",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "JA-REC-01@v4/s1/c2",
+   "text": "Approver for records destruction | operations specialist",
+   "heading": "Quick reference",
+   "document": {
+    "title": "Records Retention Schedule Card",
+    "type": "job_aid",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "JA-WIR-03@v3/s1/c2",
+   "text": "Outgoing wire cutoff (consumer and small business) | 3:00 PM Central",
+   "heading": "Quick reference",
+   "document": {
+    "title": "Wire Cutoff Card",
+    "type": "job_aid",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "POL-AOP-01@v5/s3/c1",
+   "text": "Collect two forms of identification from each signer before opening the account, or one form plus a verified bank reference when the branch manager approves.",
+   "heading": "Policy statements",
+   "document": {
+    "title": "Deposit Account Opening Policy",
+    "type": "policy",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "POL-AOP-01@v5/s3/c2",
+   "text": "Only the branch manager can approve an exception to the identification requirements.",
+   "heading": "Policy statements",
+   "document": {
+    "title": "Deposit Account Opening Policy",
+    "type": "policy",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  }
+ ],
+ "input_hash": "74396c526911a6a87cb3ef086e93c219f8be45038d1de2128af411f02f269dce",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\":[{\"clause\":\"JA-HLD-03@v3/s1/c2\",\"atoms\":[{\"attribute\":\"hold_new_account\",\"value\":{\"type\":\"duration\",\"n\":5,\"unit\":\"business_days\"},\"quote\":\"5 business days\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]},{\"clause\":\"JA-HLD-03@v3/s3/c3\",\"atoms\":[{\"attribute\":\"hold_new_account\",\"value\":{\"type\":\"duration\",\"n\":7,\"unit\":\"business_days\"},\"quote\":\"7 business days\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]},{\"clause\":\"JA-LND-01@v1/s1/c2\",\"atoms\":[{\"attribute\":\"lend_exception_doc\",\"value\":{\"type\":\"modal\",\"modal\":\"may\"},\"quote\":\"Optional\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]},{\"clause\":\"JA-LND-02@v2/s1/c1\",\"atoms\":[{\"attribute\":\"lend_rate_rm\",\"value\":{\"type\":\"percent\",\"bp\":100},\"quote\":\"1.00%\",\"actor\":\"regional_manager\",\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]},{\"clause\":\"JA-ODR-01@v4/s1/c1\",\"atoms\":[{\"attribute\":\"od_daily_cap\",\"value\":{\"type\":\"count\",\"n\":4},\"quote\":\"four\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]},{\"clause\":\"JA-REC-01@v4/s1/c1\",\"atoms\":[{\"attribute\":\"records_retention\",\"value\":{\"type\":\"duration\",\"n\":5,\"unit\":\"years\"},\"quote\":\"5 years\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]},{\"clause\":\"JA-REC-01@v4/s1/c2\",\"atoms\":[{\"attribute\":\"records_destroy_role\",\"value\":{\"type\":\"role\",\"role\":\"operations_specialist\"},\"quote\":\"operations specialist\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]},{\"clause\":\"JA-WIR-03@v3/s1/c2\",\"atoms\":[{\"attribute\":\"wire_cutoff\",\"value\":{\"type\":\"time\",\"minutes\":900},\"quote\":\"3:00 PM\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":\"consumer and small business\",\"condition\":null}]},{\"clause\":\"POL-AOP-01@v5/s3/c1\",\"atoms\":[{\"attribute\":\"ao_id_count\",\"value\":{\"type\":\"count\",\"n\":2},\"quote\":\"two\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":\"or one form plus a verified bank reference when the branch manager approves\"}]},{\"clause\":\"POL-AOP-01@v5/s3/c2\",\"atoms\":[{\"attribute\":\"ao_exception_approver\",\"value\":{\"type\":\"role\",\"role\":\"branch_manager\"},\"quote\":\"branch manager\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]}]}",
+   "problems": [],
+   "meta": {
+    "ms": 11995,
+    "api_ms": 11749,
+    "input_tokens": 8868,
+    "output_tokens": 1920,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 6184,
+     "cache_read_input_tokens": 2682,
+     "output_tokens": 1920,
+     "output_tokens_details": {
+      "thinking_tokens": 851
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 6184,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 1920,
+       "cache_read_input_tokens": 2682,
+       "cache_creation_input_tokens": 6184,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 6184
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.0442082,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T04:13:19+00:00"
+}

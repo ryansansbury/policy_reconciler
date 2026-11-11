@@ -1,0 +1,23 @@
+# The CI gate as a GitHub Actions workflow. It builds the public profile from the seeds, runs ci/run_gate.py, and
+# never calls a model, since every AI step replays what was recorded.
+name: gate
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  gate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.15"
+      - uses: actions/setup-node@v5
+        with:
+          node-version: "26"
+      - name: Build the world and the page
+        run: python3 build.py --profile general
+      - name: Run the gate
+        run: python3 ci/run_gate.py

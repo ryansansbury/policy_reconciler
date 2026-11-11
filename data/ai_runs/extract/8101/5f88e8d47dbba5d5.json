@@ -1,0 +1,167 @@
+{
+ "step": "extract",
+ "tag": "8101",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "dcc761e46c6ec579c01b9dfd540df3c2fa4bba3b6b5ec777aa2cf9c9c62aa411",
+ "input": [
+  {
+   "clause": "PRO-WIR-02@v2/s5/c1",
+   "text": "Wire specialists work only at the regional operations center and are not assigned to branches.",
+   "heading": "Related requirements",
+   "document": {
+    "title": "Processing Outgoing Commercial Wires",
+    "type": "procedure",
+    "applies_to": "All branches. Commercial accounts."
+   }
+  },
+  {
+   "clause": "PRO-WIR-03@v1/s3/c1",
+   "text": "Call the customer back at a phone number already on file before releasing any outgoing wire of $10,000 or more.",
+   "heading": "Steps",
+   "document": {
+    "title": "Completing Wire Callback Verification",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-WIR-03@v1/s3/c2",
+   "text": "An operations manager must give a second approval for any outgoing wire above $50,000.",
+   "heading": "Steps",
+   "document": {
+    "title": "Completing Wire Callback Verification",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-WIR-03@v1/s3/c6",
+   "text": "Never accept wire instructions sent by email without verifying them by phone.",
+   "heading": "Steps",
+   "document": {
+    "title": "Completing Wire Callback Verification",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-WIR-04@v2/s3/c6",
+   "text": "Never accept wire instructions sent by email without verifying them by phone.",
+   "heading": "Steps",
+   "document": {
+    "title": "Handling Incoming Wires",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-WIR-04@v2/s3/c7",
+   "text": "Outgoing wires of $10,000 or more require a callback to the customer at a number already on file.",
+   "heading": "Steps",
+   "document": {
+    "title": "Handling Incoming Wires",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-WIR-05@v1/s3/c7",
+   "text": "An operations manager must give a second approval for any outgoing wire above $100,000.",
+   "heading": "Steps",
+   "document": {
+    "title": "Wire Cutoffs on Holidays and Weekends",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-WIR-06@v1/s3/c1",
+   "text": "Call the customer back at a phone number already on file before releasing any outgoing wire of $10,000 or more.",
+   "heading": "Steps",
+   "document": {
+    "title": "Recalling or Cancelling a Wire",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-WIR-06@v1/s3/c8",
+   "text": "Only an operations employee may complete the callback for an outgoing wire.",
+   "heading": "Steps",
+   "document": {
+    "title": "Recalling or Cancelling a Wire",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-WIR-07@v4/s3/c3",
+   "text": "Never accept wire instructions sent by email without verifying them by phone.",
+   "heading": "Steps",
+   "document": {
+    "title": "Second Approval for Large Wires",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  }
+ ],
+ "input_hash": "8325e3cde4a7ad16baaf7da88099bdd7dce870083e593bb07a941320ce1deed6",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [\n{\"clause\": \"PRO-WIR-02@v2/s5/c1\", \"atoms\": []},\n{\"clause\": \"PRO-WIR-03@v1/s3/c1\", \"atoms\": [\n{\"attribute\": \"wire_callback\", \"value\": {\"type\": \"money\", \"dollars\": 10000}, \"quote\": \"$10,000\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}\n]},\n{\"clause\": \"PRO-WIR-03@v1/s3/c2\", \"atoms\": [\n{\"attribute\": \"wire_second_approval\", \"value\": {\"type\": \"money\", \"dollars\": 50000}, \"quote\": \"$50,000\", \"actor\": \"operations_manager\", \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}\n]},\n{\"clause\": \"PRO-WIR-03@v1/s3/c6\", \"atoms\": []},\n{\"clause\": \"PRO-WIR-04@v2/s3/c6\", \"atoms\": []},\n{\"clause\": \"PRO-WIR-04@v2/s3/c7\", \"atoms\": [\n{\"attribute\": \"wire_callback\", \"value\": {\"type\": \"money\", \"dollars\": 10000}, \"quote\": \"$10,000\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}\n]},\n{\"clause\": \"PRO-WIR-05@v1/s3/c7\", \"atoms\": [\n{\"attribute\": \"wire_second_approval\", \"value\": {\"type\": \"money\", \"dollars\": 100000}, \"quote\": \"$100,000\", \"actor\": \"operations_manager\", \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}\n]},\n{\"clause\": \"PRO-WIR-06@v1/s3/c1\", \"atoms\": [\n{\"attribute\": \"wire_callback\", \"value\": {\"type\": \"money\", \"dollars\": 10000}, \"quote\": \"$10,000\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}\n]},\n{\"clause\": \"PRO-WIR-06@v1/s3/c8\", \"atoms\": [\n{\"attribute\": \"wire_callback_role\", \"value\": {\"type\": \"role\", \"role\": null, \"generic\": \"operations employee\"}, \"quote\": \"operations employee\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}\n]},\n{\"clause\": \"PRO-WIR-07@v4/s3/c3\", \"atoms\": []}\n]}",
+   "problems": [],
+   "meta": {
+    "ms": 7718,
+    "api_ms": 7579,
+    "input_tokens": 8910,
+    "output_tokens": 1370,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 6226,
+     "cache_read_input_tokens": 2682,
+     "output_tokens": 1370,
+     "output_tokens_details": {
+      "thinking_tokens": 545
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 6226,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 1370,
+       "cache_read_input_tokens": 2682,
+       "cache_creation_input_tokens": 6226,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 6226
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.0388762,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T05:39:59+00:00"
+}

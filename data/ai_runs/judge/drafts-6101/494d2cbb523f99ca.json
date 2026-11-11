@@ -1,0 +1,102 @@
+{
+ "step": "judge",
+ "tag": "drafts-6101",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "ab6a49ec8731854b3cf900a9a4387417ee8016fe68257c4d327181c7eb1621da",
+ "input": [
+  {
+   "draft": "g-982e824a.1944514e",
+   "text": "Acknowledge every written complaint within 2 business days.",
+   "sources": [
+    "Acknowledge every written complaint within 2 business days."
+   ]
+  },
+  {
+   "draft": "g-89c313f3.9189c470",
+   "text": "Staff escalate complaints that allege unfair treatment to the regional manager the same day.",
+   "sources": [
+    "Complaints that allege unfair treatment are escalated to the regional manager the same day."
+   ]
+  },
+  {
+   "draft": "g-76b64634.576430d2",
+   "text": "Staff resolve complaints within 15 business days of receipt or tell the customer when to expect a resolution.",
+   "sources": [
+    "Resolve complaints within 15 business days of receipt, or tell the customer when to expect a resolution."
+   ]
+  },
+  {
+   "draft": "g-14fea1fb.44b2d715",
+   "text": "Collect two forms of identification from each signer before opening the account, or one form plus a verified bank reference when the branch manager approves.",
+   "sources": [
+    "Collect two forms of identification from each signer before opening the account, or one form plus a verified bank reference when the branch manager approves."
+   ]
+  },
+  {
+   "draft": "g-89c313f3.a9844f56",
+   "text": "Complaints that allege unfair treatment are escalated to the regional manager the same day.",
+   "sources": [
+    "Complaints that allege unfair treatment are escalated to the regional manager the same day."
+   ]
+  }
+ ],
+ "input_hash": "71ee23e43fa1970f67616cf12b23c080fa4a5f585c416ba29496e97ea0abf210",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [{\"draft\": \"g-982e824a.1944514e\", \"scores\": {\"keeps_rules\": {\"pass\": true, \"evidence\": \"\"}, \"adds_no_rule\": {\"pass\": true, \"evidence\": \"\"}, \"keeps_scope\": {\"pass\": true, \"evidence\": \"\"}, \"plain\": {\"pass\": true, \"evidence\": \"\"}}}, {\"draft\": \"g-89c313f3.9189c470\", \"scores\": {\"keeps_rules\": {\"pass\": true, \"evidence\": \"\"}, \"adds_no_rule\": {\"pass\": true, \"evidence\": \"\"}, \"keeps_scope\": {\"pass\": true, \"evidence\": \"\"}, \"plain\": {\"pass\": true, \"evidence\": \"\"}}}, {\"draft\": \"g-76b64634.576430d2\", \"scores\": {\"keeps_rules\": {\"pass\": true, \"evidence\": \"\"}, \"adds_no_rule\": {\"pass\": true, \"evidence\": \"\"}, \"keeps_scope\": {\"pass\": true, \"evidence\": \"\"}, \"plain\": {\"pass\": true, \"evidence\": \"\"}}}, {\"draft\": \"g-14fea1fb.44b2d715\", \"scores\": {\"keeps_rules\": {\"pass\": true, \"evidence\": \"\"}, \"adds_no_rule\": {\"pass\": true, \"evidence\": \"\"}, \"keeps_scope\": {\"pass\": true, \"evidence\": \"\"}, \"plain\": {\"pass\": true, \"evidence\": \"\"}}}, {\"draft\": \"g-89c313f3.a9844f56\", \"scores\": {\"keeps_rules\": {\"pass\": true, \"evidence\": \"\"}, \"adds_no_rule\": {\"pass\": true, \"evidence\": \"\"}, \"keeps_scope\": {\"pass\": true, \"evidence\": \"\"}, \"plain\": {\"pass\": true, \"evidence\": \"\"}}}]}",
+   "problems": [],
+   "meta": {
+    "ms": 3646,
+    "api_ms": 3493,
+    "input_tokens": 6144,
+    "output_tokens": 604,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 5419,
+     "cache_read_input_tokens": 723,
+     "output_tokens": 604,
+     "output_tokens_details": {
+      "thinking_tokens": 0
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 5419,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 604,
+       "cache_read_input_tokens": 723,
+       "cache_creation_input_tokens": 5419,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 5419
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.0277923,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T17:55:46+00:00"
+}

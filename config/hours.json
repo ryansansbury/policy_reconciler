@@ -1,0 +1,6 @@
+{
+ "note": "The manual estimate the Hours and cost panel compares against. Every number here is an assumption the page labels as one and lets anyone edit. The numbers cover how long a reviewer spends reading each document against the rest of the library and what an hour of a policy specialist's time costs. The review's own side uses the measured time of the code review and the specialist's minutes per finding to confirm it.",
+ "minutes_per_document": 45,
+ "minutes_per_finding": 6,
+ "hourly_rate": 85
+}

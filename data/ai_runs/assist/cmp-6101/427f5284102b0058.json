@@ -1,0 +1,114 @@
+{
+ "step": "assist",
+ "tag": "cmp-6101",
+ "model": "claude-haiku",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "haiku",
+  "client_context": true
+ },
+ "prompt_hash": "66c01f0da9f327e74355d39363e55b642a1bbf8dc6249974c3afbf3cb3d6ccd5",
+ "input": [
+  {
+   "question": "q-C-09",
+   "text": "Who handles a complaint that alleges unfair treatment?",
+   "type": "role",
+   "clauses": [
+    {
+     "id": "PRO-CMP-05@v1/s3/c4",
+     "text": "Escalate any complaint alleging unfair treatment to management on the day it is received.",
+     "title": "Reviewing Complaint Trends Each Quarter",
+     "type": "procedure",
+     "version": 1,
+     "effective": "2025-12-18"
+    },
+    {
+     "id": "PRO-CMP-04@v1/s3/c5",
+     "text": "Escalate any complaint alleging unfair treatment to the regional manager on the day it is received.",
+     "title": "Escalating a Sensitive Complaint",
+     "type": "procedure",
+     "version": 1,
+     "effective": "2026-01-28"
+    },
+    {
+     "id": "FAQ-CMP-01@v3/s2/c1",
+     "text": "Complaints that allege unfair treatment are escalated to the branch manager the same day.",
+     "title": "Complaint Handling FAQ",
+     "type": "faq",
+     "version": 3,
+     "effective": "2025-09-08"
+    },
+    {
+     "id": "POL-CMP-01@v4/s3/c1",
+     "text": "Complaints that allege unfair treatment are escalated to the regional manager the same day.",
+     "title": "Complaint Management Policy",
+     "type": "policy",
+     "version": 4,
+     "effective": "2026-05-11"
+    },
+    {
+     "id": "PRO-CMP-03@v1/s3/c7",
+     "text": "Complaints that allege unfair treatment are escalated to the compliance officer the same day.",
+     "title": "Resolving and Closing a Complaint",
+     "type": "procedure",
+     "version": 1,
+     "effective": "2025-11-10"
+    }
+   ]
+  }
+ ],
+ "input_hash": "41705c403bcea4b916925b078bedf42dcb3eccc081509722b01b4ce4cbd5d64a",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [{\"question\": \"q-C-09\", \"answer\": \"The sources disagree. The Complaint Management Policy says complaints that allege unfair treatment are escalated to the regional manager the same day. The policy outranks the procedures and the FAQ, which name the branch manager, the compliance officer or management in general, so the regional manager is the role the bank's ranking favors.\", \"citations\": [\"POL-CMP-01@v4/s3/c1\", \"PRO-CMP-04@v1/s3/c5\", \"PRO-CMP-05@v1/s3/c4\", \"PRO-CMP-03@v1/s3/c7\", \"FAQ-CMP-01@v3/s2/c1\"], \"sources_disagree\": true}]}",
+   "problems": [],
+   "meta": {
+    "ms": 4747,
+    "api_ms": 4614,
+    "input_tokens": 6180,
+    "output_tokens": 1073,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 5560,
+     "cache_read_input_tokens": 618,
+     "output_tokens": 1073,
+     "output_tokens_details": {
+      "thinking_tokens": 832
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 5560,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 1073,
+       "cache_read_input_tokens": 618,
+       "cache_creation_input_tokens": 5560,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 5560
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.00165488,
+    "models": [
+     "claude-haiku-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T17:19:24+00:00"
+}

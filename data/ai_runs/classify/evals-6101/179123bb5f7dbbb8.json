@@ -1,0 +1,307 @@
+{
+ "step": "classify",
+ "tag": "evals-6101",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "2c908358fde9f0f4a792753579a6cfaa33476e41c4b0f235744675d8e8283a19",
+ "input": [
+  {
+   "pair": "pair-3bbec94397",
+   "rule": null,
+   "attribute": null,
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-CMP-01@v4/s4/c2",
+    "text": "Resolve complaints within 15 business days of receipt, or tell the customer when to expect a resolution.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Complaint Management Policy",
+     "type": "policy",
+     "version": 4,
+     "effective": "2026-05-11",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "PRO-CMP-01@v2/s3/c6",
+    "text": "Resolve complaints within 15 days of receipt, or tell the customer when to expect a resolution.",
+    "heading": "Steps",
+    "document": {
+     "title": "Logging a Customer Complaint",
+     "type": "procedure",
+     "version": 2,
+     "effective": "2025-08-20",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-8743e29235",
+   "rule": "Unfair treatment escalation",
+   "attribute": "complaint_escalation_role",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-CMP-01@v4/s3/c1",
+    "text": "Complaints that allege unfair treatment are escalated to the regional manager the same day.",
+    "heading": "Policy statements",
+    "document": {
+     "title": "Complaint Management Policy",
+     "type": "policy",
+     "version": 4,
+     "effective": "2026-05-11",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "PRO-CMP-05@v1/s3/c4",
+    "text": "Escalate any complaint alleging unfair treatment to management on the day it is received.",
+    "heading": "Steps",
+    "document": {
+     "title": "Reviewing Complaint Trends Each Quarter",
+     "type": "procedure",
+     "version": 1,
+     "effective": "2025-12-18",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-79223e07d4",
+   "rule": "Forms of identification per signer",
+   "attribute": "ao_id_count",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-AOP-07@v2/s3/c7",
+    "text": "Every signer must present two separate identification documents before the account is opened.",
+    "heading": "Steps",
+    "document": {
+     "title": "Opening an Account for a Minor with a Custodian",
+     "type": "procedure",
+     "version": 2,
+     "effective": "2025-09-28",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "POL-AOP-01@v5/s3/c1",
+    "text": "Collect two forms of identification from each signer before opening the account, or one form plus a verified bank reference when the branch manager approves.",
+    "heading": "Policy statements",
+    "document": {
+     "title": "Deposit Account Opening Policy",
+     "type": "policy",
+     "version": 5,
+     "effective": "2026-05-17",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-4df992cd83",
+   "rule": "New account check hold",
+   "attribute": "hold_new_account",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-HLD-01@v3/s4/c2",
+    "text": "New accounts can have check holds of as long as 7 business days.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Funds Availability Policy",
+     "type": "policy",
+     "version": 3,
+     "effective": "2025-02-25",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "BUL-HLD-02@v4/s1/c2",
+    "text": "New accounts can have check holds of as long as 7 days.",
+    "heading": "What branches need to know",
+    "document": {
+     "title": "Branch Bulletin 2026-17: Longest check hold on a new account",
+     "type": "bulletin",
+     "version": 4,
+     "effective": "2025-05-17",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-25806df9b8",
+   "rule": "Who completes wire callbacks",
+   "attribute": "wire_callback_role",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-WIR-01@v2/s3/c2",
+    "text": "Callbacks are completed by a wire specialist, never by the employee who took the request.",
+    "heading": "Policy statements",
+    "document": {
+     "title": "Wire Transfer Policy",
+     "type": "policy",
+     "version": 2,
+     "effective": "2026-08-02",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "PRO-WIR-02@v3/s3/c3",
+    "text": "Only an operations employee may complete the callback for an outgoing wire.",
+    "heading": "Steps",
+    "document": {
+     "title": "Processing Outgoing Commercial Wires",
+     "type": "procedure",
+     "version": 3,
+     "effective": "2025-07-09",
+     "applies_to": "All branches. Commercial accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-90bebcb580",
+   "rule": "Personal banker fee waiver limit",
+   "attribute": "fee_waiver_pb",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "BUL-FEE-01@v2/s1/c2",
+    "text": "A personal banker can waive no more than $25 for one account in a calendar year.",
+    "heading": "What branches need to know",
+    "document": {
+     "title": "Branch Bulletin 2025-12: Personal banker fee waiver limit",
+     "type": "bulletin",
+     "version": 2,
+     "effective": "2025-02-15",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "POL-FEE-01@v3/s3/c1",
+    "text": "A personal banker can waive no more than $25 for one account in a calendar year, or up to $50 with branch manager approval noted in the account.",
+    "heading": "Policy statements",
+    "document": {
+     "title": "Service Fee Waiver Policy",
+     "type": "policy",
+     "version": 3,
+     "effective": "2024-08-03",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-86e93b37d6",
+   "rule": "Complaint acknowledgment deadline",
+   "attribute": "complaint_ack",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-CMP-01@v4/s4/c1",
+    "text": "Acknowledge every written complaint within 2 business days.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Complaint Management Policy",
+     "type": "policy",
+     "version": 4,
+     "effective": "2026-05-11",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "FAQ-CMP-01@v3/s1/c1",
+    "text": "Send the customer an acknowledgment no later than 2 days after a written complaint arrives.",
+    "heading": "How quickly is a written complaint acknowledged?",
+    "document": {
+     "title": "Complaint Handling FAQ",
+     "type": "faq",
+     "version": 3,
+     "effective": "2025-09-08",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-2ba7515783",
+   "rule": "Approver for identification exceptions",
+   "attribute": "ao_exception_approver",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-AOP-01@v5/s3/c2",
+    "text": "Only the branch manager can approve an exception to the identification requirements.",
+    "heading": "Policy statements",
+    "document": {
+     "title": "Deposit Account Opening Policy",
+     "type": "policy",
+     "version": 5,
+     "effective": "2026-05-17",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "POL-AOP-02@v3/s3/c1",
+    "text": "Only a manager can approve an exception to the identification requirements.",
+    "heading": "Policy statements",
+    "document": {
+     "title": "Customer Identification Policy",
+     "type": "policy",
+     "version": 3,
+     "effective": "2026-02-28",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  }
+ ],
+ "input_hash": "a1af671d06b0de76e49b33bfc1a4217d22f6f7e885337910eb08a60f90be5776",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [{\"pair\": \"pair-3bbec94397\", \"label\": \"conflict\", \"quote_a\": \"within 15 business days of receipt\", \"quote_b\": \"within 15 days of receipt\", \"rationale\": \"The policy counts 15 business days while the procedure counts 15 days, which ends sooner. Staff following the procedure would work to a stricter deadline than the policy sets, and the policy is the clause to keep.\"}, {\"pair\": \"pair-8743e29235\", \"label\": \"conflict\", \"quote_a\": \"escalated to the regional manager the same day\", \"quote_b\": \"Escalate any complaint alleging unfair treatment to management on the day it is received.\", \"rationale\": \"The policy names the regional manager while the procedure says only management. Staff following the procedure could escalate to a lower level manager, which the policy does not allow, and I decided the general wording widens who can act.\"}, {\"pair\": \"pair-79223e07d4\", \"label\": \"conflict\", \"quote_a\": \"Every signer must present two separate identification documents before the account is opened.\", \"quote_b\": \"or one form plus a verified bank reference when the branch manager approves\", \"rationale\": \"The policy allows one form plus a verified bank reference with branch manager approval and the procedure leaves that out. Staff following the procedure would refuse a signer the policy accepts, and I decided the missing exception makes it a conflict.\"}, {\"pair\": \"pair-4df992cd83\", \"label\": \"conflict\", \"quote_a\": \"as long as 7 business days\", \"quote_b\": \"as long as 7 days\", \"rationale\": \"The policy allows a hold of up to 7 business days while the bulletin caps it at 7 days, which ends sooner. Staff following the bulletin would release funds earlier than the policy requires, and the policy is the clause to keep.\"}, {\"pair\": \"pair-25806df9b8\", \"label\": \"variation\", \"quote_a\": \"Callbacks are completed by a wire specialist, never by the employee who took the request.\", \"quote_b\": \"Only an operations employee may complete the callback for an outgoing wire.\", \"rationale\": \"The procedure covers only commercial accounts and outgoing commercial wires, and it names operations staff for that line. I decided this is a narrower scope stated on purpose, so it is a variation.\"}, {\"pair\": \"pair-90bebcb580\", \"label\": \"conflict\", \"quote_a\": \"A personal banker can waive no more than $25 for one account in a calendar year.\", \"quote_b\": \"or up to $50 with branch manager approval noted in the account\", \"rationale\": \"The policy allows up to $50 with branch manager approval and the bulletin leaves that out. Staff following the bulletin would refuse a waiver the policy allows, and the policy is the clause to keep.\"}, {\"pair\": \"pair-86e93b37d6\", \"label\": \"conflict\", \"quote_a\": \"within 2 business days\", \"quote_b\": \"no later than 2 days after\", \"rationale\": \"The policy counts 2 business days while the FAQ counts 2 days, which can end sooner over a weekend. Staff following the FAQ would send acknowledgments on a stricter clock than the policy sets, and the policy is the clause to keep.\"}, {\"pair\": \"pair-2ba7515783\", \"label\": \"conflict\", \"quote_a\": \"Only the branch manager can approve an exception\", \"quote_b\": \"Only a manager can approve an exception\", \"rationale\": \"One policy limits approval to the branch manager while the other lets any manager approve. Staff following the second could accept an exception from a manager the first does not permit, and I decided the general wording widens who can act.\"}]}",
+   "problems": [],
+   "meta": {
+    "ms": 23692,
+    "api_ms": 23575,
+    "input_tokens": 9044,
+    "output_tokens": 3435,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 8201,
+     "cache_read_input_tokens": 841,
+     "output_tokens": 3435,
+     "output_tokens_details": {
+      "thinking_tokens": 2268
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 8201,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 3435,
+       "cache_read_input_tokens": 841,
+       "cache_creation_input_tokens": 8201,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 8201
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.0672421,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T05:28:33+00:00"
+}

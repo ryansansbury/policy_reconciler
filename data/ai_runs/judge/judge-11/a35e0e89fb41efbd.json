@@ -1,0 +1,78 @@
+{
+ "step": "judge",
+ "tag": "judge-11",
+ "model": "google-a",
+ "backend": {
+  "vendor": "Google",
+  "model": "gemini-3.1-pro-preview",
+  "label": "Gemini 3.1 Pro"
+ },
+ "prompt_hash": "ab6a49ec8731854b3cf900a9a4387417ee8016fe68257c4d327181c7eb1621da",
+ "input": [
+  {
+   "draft": "draft-26",
+   "text": "The records custodian must approve the destruction of any records in writing. Retain closed account records for 7 years from the closing date.",
+   "sources": [
+    "The records custodian must approve the destruction of any records in writing.",
+    "Retain closed account records for 7 years from the closing date."
+   ]
+  },
+  {
+   "draft": "draft-27",
+   "text": "No more than three overdraft fees are charged to an account in one business day.",
+   "sources": [
+    "No more than three overdraft fees are charged to an account in one business day.",
+    "Accounts that remain overdrawn for 45 days are referred for charge-off."
+   ]
+  },
+  {
+   "draft": "draft-28",
+   "text": "Mail the customer a notice at least 30 days before the account is classified as dormant. Dormant accounts are charged a maintenance fee of $5 per month. Personal bankers may waive service fees up to $15 per account in a calendar year.",
+   "sources": [
+    "Mail the customer a notice at least 30 days before the account is classified as dormant.",
+    "Dormant accounts are charged a maintenance fee of $5 per month."
+   ]
+  },
+  {
+   "draft": "draft-29",
+   "text": "Only the branch manager can approve an exception to the identification requirements, generally. The minimum opening deposit for a consumer checking account is $25, generally.",
+   "sources": [
+    "Only the branch manager can approve an exception to the identification requirements.",
+    "The minimum opening deposit for a consumer checking account is $25."
+   ]
+  },
+  {
+   "draft": "draft-30",
+   "text": "Change the vault combination at least every 6 months. Change the vault combination at least every 3 months.",
+   "sources": [
+    "Change the vault combination at least every 6 months.",
+    "In Oklahoma branches, change the vault combination at least every 3 months."
+   ]
+  }
+ ],
+ "input_hash": "3d54c2c87086fd62f619fe1020cb3decc5dadddebad398afa1669048b222b8d8",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "```json\n{\"results\": [{\"draft\": \"draft-26\", \"scores\": {\"keeps_rules\": {\"pass\": true, \"evidence\": \"\"}, \"adds_no_rule\": {\"pass\": true, \"evidence\": \"\"}, \"keeps_scope\": {\"pass\": true, \"evidence\": \"\"}, \"plain\": {\"pass\": true, \"evidence\": \"\"}}}, {\"draft\": \"draft-27\", \"scores\": {\"keeps_rules\": {\"pass\": false, \"evidence\": \"Accounts that remain overdrawn for 45 days are referred for charge-off.\"}, \"adds_no_rule\": {\"pass\": true, \"evidence\": \"\"}, \"keeps_scope\": {\"pass\": true, \"evidence\": \"\"}, \"plain\": {\"pass\": true, \"evidence\": \"\"}}}, {\"draft\": \"draft-28\", \"scores\": {\"keeps_rules\": {\"pass\": true, \"evidence\": \"\"}, \"adds_no_rule\": {\"pass\": false, \"evidence\": \"Personal bankers may waive service fees up to $15 per account in a calendar year.\"}, \"keeps_scope\": {\"pass\": true, \"evidence\": \"\"}, \"plain\": {\"pass\": true, \"evidence\": \"\"}}}, {\"draft\": \"draft-29\", \"scores\": {\"keeps_rules\": {\"pass\": true, \"evidence\": \"\"}, \"adds_no_rule\": {\"pass\": true, \"evidence\": \"\"}, \"keeps_scope\": {\"pass\": true, \"evidence\": \"\"}, \"plain\": {\"pass\": false, \"evidence\": \"generally\"}}}, {\"draft\": \"draft-30\", \"scores\": {\"keeps_rules\": {\"pass\": true, \"evidence\": \"\"}, \"adds_no_rule\": {\"pass\": true, \"evidence\": \"\"}, \"keeps_scope\": {\"pass\": false, \"evidence\": \"In Oklahoma branches\"}, \"plain\": {\"pass\": true, \"evidence\": \"\"}}}]}\n```",
+   "problems": [],
+   "meta": {
+    "ms": 14270,
+    "input_tokens": 977,
+    "output_tokens": 2191,
+    "cost_usd": 0.028246,
+    "usage": {
+     "completion_tokens": 406,
+     "prompt_tokens": 977,
+     "total_tokens": 3168
+    },
+    "models": [
+     "gemini-3.1-pro-preview"
+    ],
+    "stop_reason": "stop"
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T16:47:21+00:00"
+}

@@ -1,0 +1,315 @@
+{
+ "step": "classify",
+ "tag": "2026",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "2c908358fde9f0f4a792753579a6cfaa33476e41c4b0f235744675d8e8283a19",
+ "input": [
+  {
+   "pair": "pair-14e62e4004",
+   "rule": "Forms of identification per signer",
+   "attribute": "ao_id_count",
+   "reason": "One side carries a condition that may change the rule.",
+   "a": {
+    "clause": "POL-AOP-02@v2/s4/c1",
+    "text": "Do not open an account until you have verified two forms of identification for each signer, or one form plus a verified bank reference when the branch manager approves.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Customer Identification Policy",
+     "type": "policy",
+     "version": 2,
+     "effective": "2026-08-21",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "PRO-AOP-03@v4/s3/c5",
+    "text": "Every signer must present one separate identification documents before the account is opened.",
+    "heading": "Steps",
+    "document": {
+     "title": "Opening a Small Business Account",
+     "type": "procedure",
+     "version": 4,
+     "effective": "2026-04-09",
+     "applies_to": "All branches. Small business accounts."
+    }
+   },
+   "kind": "condition"
+  },
+  {
+   "pair": "pair-ddf3f1a137",
+   "rule": "Complaint resolution deadline",
+   "attribute": "complaint_resolve",
+   "reason": "One side carries a condition that may change the rule.",
+   "a": {
+    "clause": "POL-CMP-01@v5/s3/c1",
+    "text": "Resolve complaints within 15 business days of receipt, or tell the customer when to expect a resolution.",
+    "heading": "Policy statements",
+    "document": {
+     "title": "Complaint Management Policy",
+     "type": "policy",
+     "version": 5,
+     "effective": "2026-06-14",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "JA-CMP-01@v1/s1/c1",
+    "text": "Complaint resolution deadline | 10 business days",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Complaint Handling Card",
+     "type": "job_aid",
+     "version": 1,
+     "effective": "2026-07-10",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "kind": "condition"
+  },
+  {
+   "pair": "pair-86be4129d3",
+   "rule": "Card dispute window",
+   "attribute": "dispute_window",
+   "reason": "One side carries a condition that may change the rule.",
+   "a": {
+    "clause": "POL-DSP-01@v3/s4/c2",
+    "text": "Customers have 60 days from the statement date to dispute a debit card transaction, or longer when the customer was traveling or hospitalized.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Debit Card Dispute Policy",
+     "type": "policy",
+     "version": 3,
+     "effective": "2026-02-06",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "BUL-DSP-02@v4/s1/c2",
+    "text": "Accept debit card disputes filed within 30 days of the statement that first showed the charge.",
+    "heading": "What branches need to know",
+    "document": {
+     "title": "Branch Bulletin 2026-20: Debit card dispute window",
+     "type": "bulletin",
+     "version": 4,
+     "effective": "2025-03-09",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "kind": "condition"
+  },
+  {
+   "pair": "pair-af43f48fd4",
+   "rule": "Personal banker fee waiver limit",
+   "attribute": "fee_waiver_pb",
+   "reason": "One side carries a condition that may change the rule.",
+   "a": {
+    "clause": "POL-FEE-01@v2/s3/c1",
+    "text": "Personal bankers may waive service fees up to $25 per account in a calendar year, or up to $50 with branch manager approval noted in the account.",
+    "heading": "Policy statements",
+    "document": {
+     "title": "Service Fee Waiver Policy",
+     "type": "policy",
+     "version": 2,
+     "effective": "2025-05-24",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "JA-FEE-03@v3/s1/c1",
+    "text": "Personal banker fee waiver limit | $15",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Waiver Authority Card",
+     "type": "job_aid",
+     "version": 3,
+     "effective": "2025-07-01",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "kind": "condition"
+  },
+  {
+   "pair": "pair-267f7e596f",
+   "rule": "Standard check hold",
+   "attribute": "hold_standard",
+   "reason": "One side carries a condition that may change the rule.",
+   "a": {
+    "clause": "POL-HLD-01@v5/s3/c1",
+    "text": "Place a standard hold of 2 business days on deposited checks that don't qualify for next-day availability.",
+    "heading": "Policy statements",
+    "document": {
+     "title": "Funds Availability Policy",
+     "type": "policy",
+     "version": 5,
+     "effective": "2026-05-20",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "PRO-HLD-05@v1/s3/c3",
+    "text": "Funds from deposited checks are available within 3 business days unless a longer hold applies.",
+    "heading": "Steps",
+    "document": {
+     "title": "Explaining Holds to Customers",
+     "type": "procedure",
+     "version": 1,
+     "effective": "2025-07-31",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "kind": "condition"
+  },
+  {
+   "pair": "pair-c873843cc2",
+   "rule": "Wire callback threshold",
+   "attribute": "wire_callback",
+   "reason": "One side carries a condition that may change the rule.",
+   "a": {
+    "clause": "POL-WIR-01@v6/s4/c2",
+    "text": "Outgoing wires of $10,000 or more require a callback to the customer at a number already on file, unless the wire goes to an account the customer has used in the past year.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Wire Transfer Policy",
+     "type": "policy",
+     "version": 6,
+     "effective": "2024-09-10",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "BUL-WIR-02@v2/s1/c2",
+    "text": "Outgoing wires of $5,000 or more require a callback to the customer at a number already on file.",
+    "heading": "What branches need to know",
+    "document": {
+     "title": "Branch Bulletin 2026-11: Callback threshold for outgoing wires",
+     "type": "bulletin",
+     "version": 2,
+     "effective": "2026-02-09",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "kind": "condition"
+  },
+  {
+   "pair": "pair-2ca802d208",
+   "rule": "Standard check hold",
+   "attribute": "hold_standard",
+   "reason": "The values match, but the weaker document adds a condition the stronger one doesn't state.",
+   "a": {
+    "clause": "POL-HLD-01@v5/s3/c1",
+    "text": "Place a standard hold of 2 business days on deposited checks that don't qualify for next-day availability.",
+    "heading": "Policy statements",
+    "document": {
+     "title": "Funds Availability Policy",
+     "type": "policy",
+     "version": 5,
+     "effective": "2026-05-20",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "FAQ-HLD-02@v3/s1/c1",
+    "text": "Funds from deposited checks are available within 2 business days unless a longer hold applies.",
+    "heading": "How long is the standard hold on a deposited check?",
+    "document": {
+     "title": "Check Hold Questions from Customers",
+     "type": "faq",
+     "version": 3,
+     "effective": "2026-05-09",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "kind": "added_condition"
+  },
+  {
+   "pair": "pair-1ea2811d13",
+   "rule": "Forms of identification per signer",
+   "attribute": "ao_id_count",
+   "reason": "The values match, but the weaker document adds a condition the stronger one doesn't state.",
+   "a": {
+    "clause": "POL-AOP-02@v2/s4/c1",
+    "text": "Do not open an account until you have verified two forms of identification for each signer, or one form plus a verified bank reference when the branch manager approves.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Customer Identification Policy",
+     "type": "policy",
+     "version": 2,
+     "effective": "2026-08-21",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "POL-AOP-01@v2/s4/c2",
+    "text": "Do not open an account until you have verified two forms of identification for each signer, or one form plus a verified bank reference when the branch manager approves.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Deposit Account Opening Policy",
+     "type": "policy",
+     "version": 2,
+     "effective": "2025-04-05",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "kind": "added_condition"
+  }
+ ],
+ "input_hash": "aded0757023e458aa9bfe78b563daa7866f87c990da9f588c581985c4515a3c3",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [{\"pair\": \"pair-14e62e4004\", \"label\": \"conflict\", \"quote_a\": \"verified two forms of identification for each signer\", \"quote_b\": \"Every signer must present one separate identification documents before the account is opened.\", \"rationale\": \"The policy requires two forms of identification per signer unless a manager approves one form plus a bank reference, while the procedure asks for only one document from each signer. Staff following the procedure would open small business accounts that the policy does not allow.\"}, {\"pair\": \"pair-ddf3f1a137\", \"label\": \"conflict\", \"quote_a\": \"Resolve complaints within 15 business days of receipt\", \"quote_b\": \"Complaint resolution deadline | 10 business days\", \"rationale\": \"The policy allows 15 business days while the job aid sets 10 business days for the same deadline in the same scope. Staff following one would act against the other, and rank only tells the reader to keep the policy.\"}, {\"pair\": \"pair-86be4129d3\", \"label\": \"conflict\", \"quote_a\": \"Customers have 60 days from the statement date to dispute a debit card transaction\", \"quote_b\": \"Accept debit card disputes filed within 30 days of the statement that first showed the charge.\", \"rationale\": \"The policy gives 60 days while the bulletin sets 30 days for the same accounts. Staff following the bulletin would refuse disputes that the policy requires them to accept.\"}, {\"pair\": \"pair-af43f48fd4\", \"label\": \"conflict\", \"quote_a\": \"Personal bankers may waive service fees up to $25 per account in a calendar year\", \"quote_b\": \"Personal banker fee waiver limit | $15\", \"rationale\": \"The policy lets a personal banker waive up to $25 and the job aid caps the limit at $15 for the same role and scope. Staff following the job aid would refuse waivers the policy allows.\"}, {\"pair\": \"pair-267f7e596f\", \"label\": \"conflict\", \"quote_a\": \"Place a standard hold of 2 business days\", \"quote_b\": \"available within 3 business days\", \"rationale\": \"The policy sets a standard hold of 2 business days while the procedure tells staff funds are available within 3 business days. Staff following the procedure would hold or explain holds differently from what the policy requires.\"}, {\"pair\": \"pair-c873843cc2\", \"label\": \"conflict\", \"quote_a\": \"Outgoing wires of $10,000 or more require a callback\", \"quote_b\": \"Outgoing wires of $5,000 or more require a callback\", \"rationale\": \"The policy sets the callback threshold at $10,000 and the bulletin sets it at $5,000 for all branches and business lines. Staff following the bulletin would make callbacks on wires between those amounts that the policy does not require.\"}, {\"pair\": \"pair-2ca802d208\", \"label\": \"consistent\", \"quote_a\": \"Place a standard hold of 2 business days\", \"quote_b\": \"available within 2 business days unless a longer hold applies\", \"rationale\": \"Both clauses give 2 business days for the standard hold. The FAQ's note that a longer hold may apply does not change what staff do, since the policy already limits the standard hold to checks that don't qualify for next-day availability.\"}, {\"pair\": \"pair-1ea2811d13\", \"label\": \"consistent\", \"quote_a\": \"Do not open an account until you have verified two forms of identification for each signer, or one form plus a verified bank reference when the branch manager approves.\", \"quote_b\": \"Do not open an account until you have verified two forms of identification for each signer, or one form plus a verified bank reference when the branch manager approves.\", \"rationale\": \"Both policies state the same identification rule with the same values and the same branch manager exception for the same scope. Staff following either would act the same way.\"}]}",
+   "problems": [],
+   "meta": {
+    "ms": 20181,
+    "api_ms": 19950,
+    "input_tokens": 9175,
+    "output_tokens": 2961,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 8332,
+     "cache_read_input_tokens": 841,
+     "output_tokens": 2961,
+     "output_tokens_details": {
+      "thinking_tokens": 1743
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 8332,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 2961,
+       "cache_read_input_tokens": 841,
+       "cache_creation_input_tokens": 8332,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 8332
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.0630261,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T04:14:58+00:00"
+}

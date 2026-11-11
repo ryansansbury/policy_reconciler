@@ -1,0 +1,133 @@
+{
+ "step": "extract",
+ "tag": "evals-11",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "c338e60b657607c5f659b819665f2ec94796d01ec070e1f88f830e5bdacdd3fe",
+ "input": [
+  {
+   "clause": "PRO-DSP-03@v4/s2/c1",
+   "text": "Make sure you have completed the training for this task and have access to the systems it uses.",
+   "heading": "Before you begin",
+   "document": {
+    "title": "Investigating a Dispute",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "PRO-DSP-05@v1/s1/c1",
+   "text": "This procedure covers blocking and Replacing a Compromised Card, step by step, for every branch it applies to.",
+   "heading": "Purpose",
+   "document": {
+    "title": "Blocking and Replacing a Compromised Card",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "PRO-HLD-04@v3/s3/c1",
+   "text": "Print the hold notice and give it to the customer with their receipt.",
+   "heading": "Steps",
+   "document": {
+    "title": "Releasing a Hold Early",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "PRO-LND-04@v1/s1/c1",
+   "text": "This procedure covers reviewing Exception Reports Each Month, step by step, for every branch it applies to.",
+   "heading": "Purpose",
+   "document": {
+    "title": "Reviewing Exception Reports Each Month",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-ODR-01@v1/s3/c1",
+   "text": "Reverse a fee only when the reversal is within your authority.",
+   "heading": "Steps",
+   "document": {
+    "title": "Reviewing Overdrawn Accounts Each Morning",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "PRO-ODR-02@v1/s1/c1",
+   "text": "This procedure covers assessing and Reversing Overdraft Fees, step by step, for every branch it applies to.",
+   "heading": "Purpose",
+   "document": {
+    "title": "Assessing and Reversing Overdraft Fees",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "PRO-REC-04@v3/s3/c6",
+   "text": "Ship boxes to offsite storage using the approved courier.",
+   "heading": "Steps",
+   "document": {
+    "title": "Releasing a Legal Hold",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-REC-05@v1/s1/c1",
+   "text": "This procedure covers shipping Records to Offsite Storage, step by step, for every branch it applies to.",
+   "heading": "Purpose",
+   "document": {
+    "title": "Shipping Records to Offsite Storage",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-WIR-03@v2/s3/c5",
+   "text": "Have the customer sign the wire request form in the branch.",
+   "heading": "Steps",
+   "document": {
+    "title": "Completing Wire Callback Verification",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-WIR-04@v2/s3/c3",
+   "text": "Give the customer the wire confirmation number once the wire is released.",
+   "heading": "Steps",
+   "document": {
+    "title": "Handling Incoming Wires",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  }
+ ],
+ "input_hash": "0d174899dd6132eae848582c673ac8194c3ad9b57ac1846fd4598ad4d23c652b",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [{\"clause\": \"PRO-DSP-03@v4/s2/c1\", \"atoms\": []}, {\"clause\": \"PRO-DSP-05@v1/s1/c1\", \"atoms\": []}, {\"clause\": \"PRO-HLD-04@v3/s3/c1\", \"atoms\": []}, {\"clause\": \"PRO-LND-04@v1/s1/c1\", \"atoms\": []}, {\"clause\": \"PRO-ODR-01@v1/s3/c1\", \"atoms\": []}, {\"clause\": \"PRO-ODR-02@v1/s1/c1\", \"atoms\": []}, {\"clause\": \"PRO-REC-04@v3/s3/c6\", \"atoms\": []}, {\"clause\": \"PRO-REC-05@v1/s1/c1\", \"atoms\": []}, {\"clause\": \"PRO-WIR-03@v2/s3/c5\", \"atoms\": []}, {\"clause\": \"PRO-WIR-04@v2/s3/c3\", \"atoms\": []}]}",
+   "problems": [],
+   "meta": {
+    "ms": 2609,
+    "api_ms": 2403,
+    "input_tokens": 2,
+    "output_tokens": 335,
+    "cost_usd": 0.028635,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T03:23:40+00:00"
+}

@@ -1,0 +1,167 @@
+{
+ "step": "extract",
+ "tag": "8101",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "dcc761e46c6ec579c01b9dfd540df3c2fa4bba3b6b5ec777aa2cf9c9c62aa411",
+ "input": [
+  {
+   "clause": "POL-BOP-01@v3/s6/c1",
+   "text": "Branch managers make sure their teams follow this policy, and Branch Network answers questions about it.",
+   "heading": "Roles and responsibilities",
+   "document": {
+    "title": "Branch Security and Opening Policy",
+    "type": "policy",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "POL-CMP-01@v5/s4/c2",
+   "text": "Complaints should be closed within 15 business days of the day they arrive, or within 30 business days when another department has to investigate.",
+   "heading": "Additional requirements",
+   "document": {
+    "title": "Complaint Management Policy",
+    "type": "policy",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "POL-CMP-01@v5/s6/c1",
+   "text": "Branch managers make sure their teams follow this policy, and Customer Experience answers questions about it.",
+   "heading": "Roles and responsibilities",
+   "document": {
+    "title": "Complaint Management Policy",
+    "type": "policy",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "POL-CSH-01@v6/s6/c1",
+   "text": "Branch managers make sure their teams follow this policy, and Branch Network answers questions about it.",
+   "heading": "Roles and responsibilities",
+   "document": {
+    "title": "Cash Handling Policy",
+    "type": "policy",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "POL-CSH-02@v6/s6/c1",
+   "text": "Branch managers make sure their teams follow this policy, and Branch Network answers questions about it.",
+   "heading": "Roles and responsibilities",
+   "document": {
+    "title": "Large-Cash Review Policy",
+    "type": "policy",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "POL-DRM-01@v4/s5/c1",
+   "text": "Exceptions to this policy need written approval from the Deposit Operations manager and are reviewed each quarter.",
+   "heading": "Exceptions",
+   "document": {
+    "title": "Dormant Account Policy",
+    "type": "policy",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "POL-DRM-01@v4/s6/c1",
+   "text": "Branch managers make sure their teams follow this policy, and Deposit Operations answers questions about it.",
+   "heading": "Roles and responsibilities",
+   "document": {
+    "title": "Dormant Account Policy",
+    "type": "policy",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "POL-DSP-01@v3/s4/c2",
+   "text": "Accept debit card disputes filed within 60 days of the statement that first showed the charge, or longer when the customer was traveling or hospitalized.",
+   "heading": "Additional requirements",
+   "document": {
+    "title": "Debit Card Dispute Policy",
+    "type": "policy",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "POL-DSP-01@v3/s6/c1",
+   "text": "Branch managers make sure their teams follow this policy, and Card Services answers questions about it.",
+   "heading": "Roles and responsibilities",
+   "document": {
+    "title": "Debit Card Dispute Policy",
+    "type": "policy",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "POL-FEE-01@v6/s3/c2",
+   "text": "Personal bankers may waive service fees up to $25 per account in a calendar year, or up to $50 with branch manager approval noted in the account.",
+   "heading": "Policy statements",
+   "document": {
+    "title": "Service Fee Waiver Policy",
+    "type": "policy",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  }
+ ],
+ "input_hash": "30eedcb88fcd22bed4e3d9d05676771fbc02224b1ca751e70e3ec3ce1d405813",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [{\"clause\": \"POL-BOP-01@v3/s6/c1\", \"atoms\": []}, {\"clause\": \"POL-CMP-01@v5/s4/c2\", \"atoms\": [{\"attribute\": \"complaint_resolve\", \"value\": {\"type\": \"duration\", \"n\": 15, \"unit\": \"business_days\"}, \"quote\": \"15 business days\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": \"or within 30 business days when another department has to investigate\"}]}, {\"clause\": \"POL-CMP-01@v5/s6/c1\", \"atoms\": []}, {\"clause\": \"POL-CSH-01@v6/s6/c1\", \"atoms\": []}, {\"clause\": \"POL-CSH-02@v6/s6/c1\", \"atoms\": []}, {\"clause\": \"POL-DRM-01@v4/s5/c1\", \"atoms\": []}, {\"clause\": \"POL-DRM-01@v4/s6/c1\", \"atoms\": []}, {\"clause\": \"POL-DSP-01@v3/s4/c2\", \"atoms\": [{\"attribute\": \"dispute_window\", \"value\": {\"type\": \"duration\", \"n\": 60, \"unit\": \"days\"}, \"quote\": \"60 days\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": \"or longer when the customer was traveling or hospitalized\"}]}, {\"clause\": \"POL-DSP-01@v3/s6/c1\", \"atoms\": []}, {\"clause\": \"POL-FEE-01@v6/s3/c2\", \"atoms\": [{\"attribute\": \"fee_waiver_pb\", \"value\": {\"type\": \"money\", \"dollars\": 25}, \"quote\": \"$25\", \"actor\": \"personal_banker\", \"actor_inferred\": false, \"scope_quote\": null, \"condition\": \"or up to $50 with branch manager approval noted in the account\"}]}]}",
+   "problems": [],
+   "meta": {
+    "ms": 8459,
+    "api_ms": 8350,
+    "input_tokens": 9020,
+    "output_tokens": 1292,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 6336,
+     "cache_read_input_tokens": 2682,
+     "output_tokens": 1292,
+     "output_tokens_details": {
+      "thinking_tokens": 665
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 6336,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 1292,
+       "cache_read_input_tokens": 2682,
+       "cache_creation_input_tokens": 6336,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 6336
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.0385362,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T05:39:36+00:00"
+}

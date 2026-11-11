@@ -1,0 +1,85 @@
+{
+ "step": "judge",
+ "tag": "2026",
+ "model": "google-a",
+ "backend": {
+  "vendor": "Google",
+  "model": "gemini-3.1-pro-preview",
+  "label": "Gemini 3.1 Pro"
+ },
+ "prompt_hash": "ab6a49ec8731854b3cf900a9a4387417ee8016fe68257c4d327181c7eb1621da",
+ "input": [
+  {
+   "draft": "g-d6d9426f",
+   "text": "An account with no activity initiated by the customer for 12 months is classified as dormant.",
+   "sources": [
+    "An account with no customer-initiated activity for 12 months is classified as dormant.",
+    "Inactivity before an account is dormant | 18 months"
+   ]
+  },
+  {
+   "draft": "g-06709e03",
+   "text": "Customers receive written notice 30 days before their account becomes dormant.",
+   "sources": [
+    "Customers receive written notice 30 days before their account becomes dormant.",
+    "Customers receive written notice 60 days before their account becomes dormant.",
+    "Notice before dormancy | 45 days"
+   ]
+  },
+  {
+   "draft": "g-76e59fc8",
+   "text": "Customers may request a fee refund within 60 days of the statement date.",
+   "sources": [
+    "Customers may request a fee refund within 60 days of the statement date.",
+    "Fee refund requests are accepted for 30 days after the statement date.",
+    "Customers may request a fee refund within 90 days of the statement date."
+   ]
+  },
+  {
+   "draft": "g-8dd7694e",
+   "text": "A branch manager may waive up to $50 in fees for one account in a calendar year.",
+   "sources": [
+    "The most a branch manager can waive for one account in a calendar year is $50.",
+    "The most a branch manager can waive for one account in a calendar year is $75.",
+    "The most a branch manager can waive for one account in a calendar year is $100."
+   ]
+  },
+  {
+   "draft": "g-eeefec6d",
+   "text": "Personal bankers may waive service fees up to $25 per account in a calendar year. With branch manager approval noted in the account they may waive up to $50.",
+   "sources": [
+    "Personal bankers may waive service fees up to $25 per account in a calendar year, or up to $50 with branch manager approval noted in the account.",
+    "A personal banker can waive no more than $25 for one account in a calendar year.",
+    "Personal banker fee waiver limit | $25",
+    "Personal banker fee waiver limit | $15",
+    "A personal banker can waive no more than $25 for one account in a calendar year.",
+    "Personal bankers may waive service fees up to $25 per account in a calendar year."
+   ]
+  }
+ ],
+ "input_hash": "ab505b8f17daa6de6b898b0360281a5f8ae22cc6fe691dfd13f418578d487ff4",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "```json\n{\"results\": [{\"draft\": \"g-d6d9426f\", \"scores\": {\"keeps_rules\": {\"pass\": false, \"evidence\": \"18 months\"}, \"adds_no_rule\": {\"pass\": true, \"evidence\": \"\"}, \"keeps_scope\": {\"pass\": true, \"evidence\": \"\"}, \"plain\": {\"pass\": true, \"evidence\": \"\"}}}, {\"draft\": \"g-06709e03\", \"scores\": {\"keeps_rules\": {\"pass\": false, \"evidence\": \"60 days\"}, \"adds_no_rule\": {\"pass\": true, \"evidence\": \"\"}, \"keeps_scope\": {\"pass\": true, \"evidence\": \"\"}, \"plain\": {\"pass\": true, \"evidence\": \"\"}}}, {\"draft\": \"g-76e59fc8\", \"scores\": {\"keeps_rules\": {\"pass\": false, \"evidence\": \"30 days\"}, \"adds_no_rule\": {\"pass\": true, \"evidence\": \"\"}, \"keeps_scope\": {\"pass\": true, \"evidence\": \"\"}, \"plain\": {\"pass\": true, \"evidence\": \"\"}}}, {\"draft\": \"g-8dd7694e\", \"scores\": {\"keeps_rules\": {\"pass\": false, \"evidence\": \"$75\"}, \"adds_no_rule\": {\"pass\": true, \"evidence\": \"\"}, \"keeps_scope\": {\"pass\": true, \"evidence\": \"\"}, \"plain\": {\"pass\": true, \"evidence\": \"\"}}}, {\"draft\": \"g-eeefec6d\", \"scores\": {\"keeps_rules\": {\"pass\": false, \"evidence\": \"$15\"}, \"adds_no_rule\": {\"pass\": true, \"evidence\": \"\"}, \"keeps_scope\": {\"pass\": true, \"evidence\": \"\"}, \"plain\": {\"pass\": true, \"evidence\": \"\"}}}]}\n```",
+   "problems": [],
+   "meta": {
+    "ms": 21222,
+    "input_tokens": 1115,
+    "output_tokens": 3849,
+    "cost_usd": 0.048418,
+    "usage": {
+     "completion_tokens": 407,
+     "prompt_tokens": 1115,
+     "total_tokens": 4964
+    },
+    "models": [
+     "gemini-3.1-pro-preview"
+    ],
+    "stop_reason": "stop"
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T16:54:19+00:00"
+}

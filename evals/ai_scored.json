@@ -1,0 +1,2398 @@
+{
+ "runs": [
+  {
+   "at": "2026-10-29T22:30",
+   "code": {
+    "agents/__init__.py": "e3b0c44298fc1c14",
+    "agents/assisting.py": "334df05d315abf0f",
+    "agents/combine.py": "58be8adfeaf5168c",
+    "agents/decisions.py": "b291a24342c506f3",
+    "agents/drafting.py": "465f55bf99ee79db",
+    "agents/flow.py": "c2ef904ea1517eed",
+    "agents/inputs.py": "935ee1c2939eac9d",
+    "agents/items.py": "aaeaabc7065f3d49",
+    "agents/judging.py": "f3cbec7ac45165de",
+    "agents/llm.py": "644c1f5b275991cf",
+    "agents/mask.py": "41aabdb3639139f8",
+    "agents/prompts.py": "a8a9c9050a4fdb52",
+    "agents/replay.py": "343bdd2295c21906",
+    "agents/routing.py": "4fe5e03ca02ab791",
+    "agents/standin.py": "e0712a8ddd83806d",
+    "agents/steps.py": "e389e0f0ea3e8cb4",
+    "agents/validate.py": "8033b491312e8147",
+    "evals/decisions.json": "d7ecb59472db2e3d"
+   },
+   "extraction": {
+    "evals-6101": {
+     "actor_agreement": [
+      130,
+      150
+     ],
+     "atoms": {
+      "found": 150,
+      "invented": 0,
+      "missed": 0,
+      "precision": 1.0,
+      "recall": 1.0
+     },
+     "clauses": 180,
+     "exact_share": 1.0,
+     "misses": [],
+     "outcomes": {
+      "empty": 30,
+      "exact": 150,
+      "held": 0,
+      "invented": 0,
+      "missed": 0,
+      "not_recorded": 0,
+      "partial": 0
+     },
+     "scope_agreement": [
+      141,
+      150
+     ],
+     "scored": 180,
+     "totals": {
+      "calls": 18,
+      "dollars": 0.7287,
+      "input_tokens": 160946,
+      "output_tokens": 27329,
+      "seconds": 158.1
+     }
+    },
+    "fresh_wording": {
+     "actor_agreement": [
+      33,
+      34
+     ],
+     "atoms": {
+      "found": 34,
+      "invented": 0,
+      "missed": 0,
+      "precision": 1.0,
+      "recall": 1.0
+     },
+     "clauses": 40,
+     "exact_share": 1.0,
+     "misses": [
+      {
+       "clause": "fw-08",
+       "outcome": "held",
+       "reasons": [
+        "atom 1: the quote doesn't hold the value"
+       ],
+       "text": "Six weeks and three days in the red sends an account to the charge-off team."
+      },
+      {
+       "clause": "fw-10",
+       "outcome": "held",
+       "reasons": [
+        "atom 1: the quote doesn't hold the value"
+       ],
+       "text": "For transfers going out by wire at $10K and up, phone the client at the number on file before release."
+      }
+     ],
+     "outcomes": {
+      "empty": 4,
+      "exact": 34,
+      "held": 2,
+      "invented": 0,
+      "missed": 0,
+      "not_recorded": 0,
+      "partial": 0
+     },
+     "scope_agreement": [
+      0,
+      0
+     ],
+     "scored": 38,
+     "totals": {
+      "calls": 5,
+      "dollars": 0.1934,
+      "input_tokens": 42982,
+      "output_tokens": 7379,
+      "seconds": 47.7
+     }
+    }
+   },
+   "held_out": [
+    "6101",
+    "6202",
+    "6303",
+    "evals-6101",
+    "fresh_wording"
+   ],
+   "models": {
+    "assist": "claude-sonnet",
+    "classify": "claude-sonnet",
+    "draft": "claude-opus",
+    "extract": "claude-sonnet",
+    "judge": "google-a"
+   },
+   "pairs": {
+    "evals-6101": {
+     "accuracy": 0.847,
+     "by_label": {
+      "conflict": [
+       46,
+       49
+      ],
+      "consistent": [
+       40,
+       40
+      ],
+      "duplicate": [
+       0,
+       25
+      ],
+      "superseded": [
+       15,
+       15
+      ],
+      "unrelated": [
+       39,
+       40
+      ],
+      "variation": [
+       21,
+       21
+      ]
+     },
+     "conflict": {
+      "precision": 1.0,
+      "recall": 0.939
+     },
+     "confusion": {
+      "conflict": {
+       "conflict": 46,
+       "consistent": 2,
+       "variation": 1
+      },
+      "consistent": {
+       "consistent": 40
+      },
+      "duplicate": {
+       "consistent": 25
+      },
+      "superseded": {
+       "superseded": 15
+      },
+      "unrelated": {
+       "consistent": 1,
+       "unrelated": 39
+      },
+      "variation": {
+       "variation": 21
+      }
+     },
+     "decision_accuracy": 0.979,
+     "disputed": [
+      {
+       "item": "A-01",
+       "rationale": "Staff following the procedure would refuse a late dispute from a traveling or hospitalized customer, which the policy allows. The policy outranks the procedure, so the policy clause is the one to keep.",
+       "said": "conflict"
+      },
+      {
+       "item": "A-02",
+       "rationale": "The policy counts 15 business days while the procedure counts 15 days, which ends sooner. Staff following the procedure would work to a stricter deadline than the policy sets, and the policy is the clause to keep.",
+       "said": "conflict"
+      },
+      {
+       "item": "A-03",
+       "rationale": "The policy names the regional manager while the procedure says only management. Staff following the procedure could escalate to a lower level manager, which the policy does not allow, and I decided the general wording widens who can act.",
+       "said": "conflict"
+      },
+      {
+       "item": "A-04",
+       "rationale": "The policy allows one form plus a verified bank reference with branch manager approval and the procedure leaves that out. Staff following the procedure would refuse a signer the policy accepts, and I decided the missing exception makes it a conflict.",
+       "said": "conflict"
+      },
+      {
+       "item": "A-05",
+       "rationale": "The policy allows a hold of up to 7 business days while the bulletin caps it at 7 days, which ends sooner. Staff following the bulletin would release funds earlier than the policy requires, and the policy is the clause to keep.",
+       "said": "conflict"
+      },
+      {
+       "item": "A-06",
+       "rationale": "The procedure covers only commercial accounts and outgoing commercial wires, and it names operations staff for that line. I decided this is a narrower scope stated on purpose, so it is a variation.",
+       "said": "variation"
+      },
+      {
+       "item": "A-07",
+       "rationale": "The policy allows up to $50 with branch manager approval and the bulletin leaves that out. Staff following the bulletin would refuse a waiver the policy allows, and the policy is the clause to keep.",
+       "said": "conflict"
+      },
+      {
+       "item": "A-08",
+       "rationale": "The policy counts 2 business days while the FAQ counts 2 days, which can end sooner over a weekend. Staff following the FAQ would send acknowledgments on a stricter clock than the policy sets, and the policy is the clause to keep.",
+       "said": "conflict"
+      },
+      {
+       "item": "A-09",
+       "rationale": "One policy limits approval to the branch manager while the other lets any manager approve. Staff following the second could accept an exception from a manager the first does not permit, and I decided the general wording widens who can act.",
+       "said": "conflict"
+      },
+      {
+       "item": "A-10",
+       "rationale": "Both clauses cover the same accounts and branches. Staff following the bulletin would refuse an account that the policy lets a branch manager approve with one form and a bank reference. The policy outranks the bulletin, which only tells the reader which clause to keep.",
+       "said": "conflict"
+      },
+      {
+       "item": "A-11",
+       "rationale": "Both procedures apply to all branches and business lines. Fifteen days of receipt can be shorter than 15 business days, so staff following one could miss the deadline in the other.",
+       "said": "conflict"
+      },
+      {
+       "item": "A-12",
+       "rationale": "Both clauses say who completes the callback on an outgoing wire for all branches and business lines. One limits it to a wire specialist and the other names an operations employee, so an operations employee who is not a wire specialist would be allowed by one clause and barred by the other.",
+       "said": "conflict"
+      },
+      {
+       "item": "A-13",
+       "rationale": "Consumer accounts fall under both procedures, and the second one is not a deliberate narrower variation on this rule. Staff following the first would refuse an account that the second allows with manager approval.",
+       "said": "conflict"
+      },
+      {
+       "item": "A-14",
+       "rationale": "Both clauses cover the same accounts and branches. Two days can pass sooner than 2 business days when a weekend or holiday falls in between, so the customer explanation could promise earlier availability than the policy gives. The policy outranks the procedure, which only tells the reader which clause to keep.",
+       "said": "conflict"
+      }
+     ],
+     "held": 1,
+     "misses": [
+      {
+       "a": "Record the reason and the approver for every pricing exception in the loan file.",
+       "b": "Pricing exceptions may be documented in the loan file after closing if time is short.",
+       "gold": "conflict",
+       "item": "C-31",
+       "pair": "pair-e5f05a2d7e",
+       "rationale": "The policy requires the record in the loan file but sets no timing, and the procedure only allows that same record to be completed late. I decided staff following the policy alone would not refuse or do anything the procedure forbids, so the two do not contradict.",
+       "said": "consistent"
+      },
+      {
+       "a": "Log any cash deposit or withdrawal of $7,500 or more for large-cash review.",
+       "b": "Cash transactions under $5,000 do not need large-cash review.",
+       "gold": "conflict",
+       "item": "P-03",
+       "pair": "pair-33d4e82967",
+       "rationale": "The bulletin only says that amounts under $5,000 need no review and never says that amounts from $5,000 up must be logged. Staff following it would not refuse or do anything the policy forbids, so the two do not contradict. The bulletin's title suggests a threshold change but its text does not state one.",
+       "said": "consistent"
+      },
+      {
+       "a": "An operations manager must give a second approval for any outgoing wire above $50,000.",
+       "b": "Outgoing wires over $100,000 need a second approval from an operations manager.",
+       "gold": "conflict",
+       "item": "P-08",
+       "pair": "pair-b3a74f08cd",
+       "rationale": "Clause b comes from a procedure written only for commercial accounts and sets its own threshold of $100,000 for that line. Clause a covers all business lines at $50,000, so the commercial threshold reads as an intended narrower scope.",
+       "said": "variation"
+      },
+      {
+       "a": "Send the completed form to card services the same day.",
+       "b": "Send the completed form to card services the same day.",
+       "gold": "duplicate",
+       "item": "D-01",
+       "pair": "pair-d7ac9a5b10",
+       "rationale": "Both clauses give the same instruction with the same deadline for the same accounts. This is a single sentence and not a copied run of steps, so it is consistent.",
+       "said": "consistent"
+      },
+      {
+       "a": "Place a standard hold of 2 business days on deposited checks that don't qualify for next-day availability.",
+       "b": "Place a standard hold of 2 business days on deposited checks that don't qualify for next-day availability.",
+       "gold": "duplicate",
+       "item": "D-02",
+       "pair": "pair-39b9cd6394",
+       "rationale": "Both clauses state the same hold with the same value for the same accounts. Matching words alone do not make this a duplicate, so it is consistent.",
+       "said": "consistent"
+      },
+      {
+       "a": "Send the completed form to card services the same day.",
+       "b": "Send the completed form to card services the same day.",
+       "gold": "duplicate",
+       "item": "D-03",
+       "pair": "pair-bbabaee60a",
+       "rationale": "The procedure and the job aid give the same instruction with the same same day deadline for the same accounts. Staff acting on either one do the same thing.",
+       "said": "consistent"
+      },
+      {
+       "a": "Verify the customer's identity before reactivating a dormant account.",
+       "b": "Verify the customer's identity before reactivating a dormant account.",
+       "gold": "duplicate",
+       "item": "D-04",
+       "pair": "pair-b6a6666aa7",
+       "rationale": "Both clauses give the same single requirement with the same value and the same scope. Staff following either one would act the same way.",
+       "said": "consistent"
+      },
+      {
+       "a": "Tell the customer who will contact them next and when.",
+       "b": "Tell the customer who will contact them next and when.",
+       "gold": "duplicate",
+       "item": "D-05",
+       "pair": "pair-3ad45c8359",
+       "rationale": "Both clauses state the same instruction for all branches and business lines. Nothing in either one changes what staff would do.",
+       "said": "consistent"
+      },
+      {
+       "a": "Lock the doors and set the alarm after the last customer leaves.",
+       "b": "Lock the doors and set the alarm after the last customer leaves.",
+       "gold": "duplicate",
+       "item": "D-06",
+       "pair": "pair-1ced63d644",
+       "rationale": "Both procedures state the same closing rule with the same value. Each is a single rule that fits its own document, so there is no contradiction and no copied run of steps.",
+       "said": "consistent"
+      },
+      {
+       "a": "Check the legal hold list before preparing any records for destruction.",
+       "b": "Check the legal hold list before preparing any records for destruction.",
+       "gold": "duplicate",
+       "item": "D-07",
+       "pair": "pair-aca41c2483",
+       "rationale": "Both clauses require the same check before records are prepared for destruction. The rule and scope match, so staff act the same under either one.",
+       "said": "consistent"
+      },
+      {
+       "a": "Mail the hold notice when the deposit was made by mail or at an ATM.",
+       "b": "Mail the hold notice when the deposit was made by mail or at an ATM.",
+       "gold": "duplicate",
+       "item": "D-08",
+       "pair": "pair-c1264b7852",
+       "rationale": "Both clauses set the same trigger for mailing the hold notice. The scope is the same and no value differs.",
+       "said": "consistent"
+      },
+      {
+       "a": "Check the legal hold list before preparing any records for destruction.",
+       "b": "Check the legal hold list before preparing any records for destruction.",
+       "gold": "duplicate",
+       "item": "D-09",
+       "pair": "pair-57cdc935d3",
+       "rationale": "Both procedures state the same single check with the same value across all branches and business lines. They agree, and the exact wording match does not make them a copied passage.",
+       "said": "consistent"
+      },
+      {
+       "a": "Note every customer contact in the account record.",
+       "b": "Note every client contact in the account record.",
+       "gold": "duplicate",
+       "item": "D-10",
+       "pair": "pair-009c38bf11",
+       "rationale": "The only difference is the word client in place of customer, which does not change who or what staff must record. Both require every contact to be noted in the account record.",
+       "said": "consistent"
+      },
+      {
+       "a": "Verify the customer's identity before reactivating a dormant account.",
+       "b": "Verify the customer's identity before reactivating a dormant account.",
+       "gold": "duplicate",
+       "item": "D-11",
+       "pair": "pair-a06de55366",
+       "rationale": "Both procedures state the same identity check with the same value and scope. Staff following either clause would act the same way.",
+       "said": "consistent"
+      },
+      {
+       "a": "Keep your drawer locked whenever you step away from the teller line.",
+       "b": "Keep your drawer locked whenever you step away from the teller line.",
+       "gold": "duplicate",
+       "item": "D-12",
+       "pair": "pair-ae8bfc910f",
+       "rationale": "Both procedures state the same single rule with the same value. Staff following either one would act the same way.",
+       "said": "consistent"
+      },
+      {
+       "a": "Report any alarm fault to security before opening for business.",
+       "b": "Report any alarm fault to security prior to opening for business.",
+       "gold": "duplicate",
+       "item": "D-13",
+       "pair": "pair-81af5c48a6",
+       "rationale": "The two clauses differ only in the words before and prior to. Staff would act the same way under either one.",
+       "said": "consistent"
+      },
+      {
+       "a": "Check the account balance before sending the wire to operations.",
+       "b": "Check the account balance before sending the wire to operations.",
+       "gold": "duplicate",
+       "item": "D-14",
+       "pair": "pair-ce254f7f00",
+       "rationale": "Both procedures require the same balance check before the wire goes to operations. The rule and its value match.",
+       "said": "consistent"
+      },
+      {
+       "a": "Review complaint trends with your team each quarter.",
+       "b": "Review complaint trends with your team each quarter.",
+       "gold": "duplicate",
+       "item": "D-15",
+       "pair": "pair-60544ea00a",
+       "rationale": "The procedure and the job aid set the same quarterly review. Nothing in either clause pulls staff in a different direction.",
+       "said": "consistent"
+      },
+      {
+       "a": "Run the dormancy report on the first business day of each month.",
+       "b": "Run the dormancy report on the first business day of each month.",
+       "gold": "duplicate",
+       "item": "D-16",
+       "pair": "pair-7fb7b60b4a",
+       "rationale": "Both clauses set the same timing for the dormancy report and cover the same accounts. The rule and value agree.",
+       "said": "consistent"
+      },
+      {
+       "a": "Approach the branch together and check the exterior for signs of forced entry.",
+       "b": "Approach the branch together and check the exterior for signs of forced entry.",
+       "gold": "duplicate",
+       "item": "D-17",
+       "pair": "pair-5a13d7bd7c",
+       "rationale": "Both procedures give the same instruction for approaching the branch. Staff would act the same way under either one.",
+       "said": "consistent"
+      },
+      {
+       "a": "Accounts that remain overdrawn for 45 days are referred for charge-off.",
+       "b": "Accounts that remain overdrawn for 45 days are referred for charge-off.",
+       "gold": "duplicate",
+       "item": "D-18",
+       "pair": "pair-346e8a0429",
+       "rationale": "Both clauses set the charge off referral at 45 days for the same accounts. The value is the same in each.",
+       "said": "consistent"
+      },
+      {
+       "a": "Check the account balance before sending the wire to operations.",
+       "b": "Check the account balance before sending the wire to operations.",
+       "gold": "duplicate",
+       "item": "D-19",
+       "pair": "pair-83cc81eafa",
+       "rationale": "The procedure and the bulletin state the same balance check with the same value. They are separate documents and not versions of one document, so nothing is superseded.",
+       "said": "consistent"
+      },
+      {
+       "a": "Ask the customer why they are requesting the waiver and note the reason.",
+       "b": "Ask the client why they are requesting the waiver and note the reason.",
+       "gold": "duplicate",
+       "item": "D-20",
+       "pair": "pair-67447ac86a",
+       "rationale": "Both clauses tell staff to ask why the waiver is requested and to note the reason. Only the word for the person differs, so staff act the same way under either.",
+       "said": "consistent"
+      },
+      {
+       "a": "Report any alarm fault to security before opening for business.",
+       "b": "Report any alarm fault to security prior to opening for business.",
+       "gold": "duplicate",
+       "item": "D-21",
+       "pair": "pair-f1aecab62a",
+       "rationale": "Both clauses require an alarm fault to be reported to security before the branch opens. The wording differs but the rule and its timing are the same.",
+       "said": "consistent"
+      },
+      {
+       "a": "Log the opening and closing times in the branch log.",
+       "b": "Log the opening and closing times in the branch log.",
+       "gold": "duplicate",
+       "item": "D-22",
+       "pair": "pair-6337e72cf2",
+       "rationale": "Both clauses state the same logging rule with the same value. Each sits in a different procedure and applies to all branches, so they agree.",
+       "said": "consistent"
+      },
+      {
+       "a": "Check the legal hold list before preparing any records for destruction.",
+       "b": "Check the legal hold list prior to preparing any records for destruction.",
+       "gold": "duplicate",
+       "item": "D-23",
+       "pair": "pair-364388b0f6",
+       "rationale": "Both clauses require the legal hold list to be checked before records are prepared for destruction. Only the phrasing of the timing differs.",
+       "said": "consistent"
+      },
+      {
+       "a": "Tell the customer how they will be notified of the outcome.",
+       "b": "Tell the client how they will be notified of the outcome.",
+       "gold": "duplicate",
+       "item": "D-24",
+       "pair": "pair-f3f9dee97b",
+       "rationale": "Both clauses tell staff to explain how the outcome will be communicated. Customer and client mean the same person here, so staff act the same way.",
+       "said": "consistent"
+      },
+      {
+       "a": "Confirm the borrower's credit grade before requesting an exception.",
+       "b": "Confirm the borrower's credit grade before requesting an exception.",
+       "gold": "duplicate",
+       "item": "D-25",
+       "pair": "pair-1078c1715f",
+       "rationale": "Both clauses require the same check before an exception is requested. The second document covers consumer accounts only, which falls inside the scope of the first, so nothing contradicts.",
+       "said": "consistent"
+      },
+      {
+       "a": "Limit fee waivers to two per account in each calendar year.",
+       "b": "A personal banker can waive no more than $25 for one account in a calendar year.",
+       "gold": "unrelated",
+       "item": null,
+       "pair": "pair-d7b5039090",
+       "rationale": "One clause caps the number of waivers and the other caps the dollar amount a personal banker can waive. Both are limits that staff can follow together, so neither makes staff act against the other.",
+       "said": "consistent"
+      }
+     ],
+     "not_recorded": 0,
+     "pairs": 205,
+     "scored": 190,
+     "totals": {
+      "calls": 31,
+      "dollars": 1.4866,
+      "input_tokens": 266218,
+      "output_tokens": 51369,
+      "seconds": 354.9
+     },
+     "variations_as_conflict": 0
+    }
+   },
+   "seeds": {
+    "6101": {
+     "ai": {
+      "classify": {
+       "accepted": 6,
+       "asked": 6,
+       "held": {},
+       "missing": 0,
+       "recorded_at": "2026-10-30T04:14:35+00:00",
+       "stale": [],
+       "totals": {
+        "calls": 1,
+        "dollars": 0.0553,
+        "input_tokens": 8330,
+        "output_tokens": 2525,
+        "seconds": 19.2
+       }
+      },
+      "extract": {
+       "accepted": 149,
+       "asked": 149,
+       "held": {},
+       "missing": 0,
+       "recorded_at": "2026-10-30T04:10:30+00:00",
+       "stale": [],
+       "totals": {
+        "calls": 15,
+        "dollars": 0.5485,
+        "input_tokens": 133902,
+        "output_tokens": 16986,
+        "seconds": 108.0
+       }
+      }
+     },
+     "code_only": {
+      "authority_checked": 50,
+      "authority_right": 48,
+      "caught": 90,
+      "decided_match": 0,
+      "decided_of": 0,
+      "false_alarms": 1,
+      "key_version": 1,
+      "planted": 90,
+      "queue": 149,
+      "unexplained": 0
+     },
+     "combined": {
+      "conflict_findings": 67,
+      "disputed": [
+       {
+        "item": "A-01",
+        "kind": "exception_path",
+        "matches": true,
+        "ruled": "conflict",
+        "said": "conflict"
+       },
+       {
+        "item": "A-02",
+        "kind": "unit",
+        "matches": true,
+        "ruled": "conflict",
+        "said": "conflict"
+       },
+       {
+        "item": "A-03",
+        "kind": "role_generic",
+        "matches": true,
+        "ruled": "conflict",
+        "said": "conflict"
+       },
+       {
+        "item": "A-04",
+        "kind": "exception_path",
+        "matches": true,
+        "ruled": "conflict",
+        "said": "conflict"
+       },
+       {
+        "item": "A-05",
+        "kind": "unit",
+        "matches": true,
+        "ruled": "conflict",
+        "said": "conflict"
+       },
+       {
+        "item": "A-06",
+        "kind": "role_generic",
+        "matches": true,
+        "ruled": "conflict",
+        "said": "conflict"
+       },
+       {
+        "item": "A-07",
+        "kind": "exception_path",
+        "matches": true,
+        "ruled": "conflict",
+        "said": "conflict"
+       },
+       {
+        "item": "A-08",
+        "kind": "unit",
+        "matches": true,
+        "ruled": "conflict",
+        "said": "conflict"
+       },
+       {
+        "item": "A-09",
+        "kind": "role_generic",
+        "matches": true,
+        "ruled": "conflict",
+        "said": "conflict"
+       },
+       {
+        "item": "A-10",
+        "kind": "exception_path",
+        "matches": true,
+        "ruled": "conflict",
+        "said": "conflict"
+       },
+       {
+        "item": "A-11",
+        "kind": "unit",
+        "matches": true,
+        "ruled": "conflict",
+        "said": "conflict"
+       },
+       {
+        "item": "A-12",
+        "kind": "role_generic",
+        "matches": true,
+        "ruled": "conflict",
+        "said": "conflict"
+       },
+       {
+        "item": "A-13",
+        "kind": "exception_path",
+        "matches": false,
+        "ruled": "conflict",
+        "said": "the classifier said consistent"
+       },
+       {
+        "item": "A-14",
+        "kind": "unit",
+        "matches": true,
+        "ruled": "conflict",
+        "said": "conflict"
+       }
+      ],
+      "false_alarms": {
+       "N": {
+        "flagged": 0,
+        "flags": [],
+        "planted": 20
+       },
+       "V": {
+        "flagged": 1,
+        "flags": [
+         "V-20"
+        ],
+        "planted": 21
+       }
+      },
+      "per_category": {
+       "C": {
+        "caught": 36,
+        "missed": [],
+        "planted": 36
+       },
+       "D": {
+        "caught": 25,
+        "missed": [],
+        "planted": 25
+       },
+       "P": {
+        "caught": 14,
+        "missed": [],
+        "planted": 14
+       },
+       "S": {
+        "caught": 15,
+        "missed": [],
+        "planted": 15
+       }
+      },
+      "summary": {
+       "authority_checked": 50,
+       "authority_right": 50,
+       "caught": 90,
+       "decided_match": 13,
+       "decided_of": 14,
+       "false_alarms": 1,
+       "key_version": 2,
+       "planted": 90,
+       "queue": 149,
+       "unexplained": 3
+      },
+      "unexplained": [
+       [
+        "POL-AOP-01@v5/s3/c2",
+        "POL-AOP-02@v3/s5/c1"
+       ],
+       [
+        "PRO-CMP-02@v1/s3/c1",
+        "POL-CMP-01@v4/s4/c2"
+       ],
+       [
+        "PRO-HLD-03@v2/s5/c1",
+        "POL-HLD-01@v3/s4/c1"
+       ]
+      ]
+     },
+     "decided": [
+      {
+       "attribute": "ao_id_count",
+       "label": "conflict",
+       "pair": "pair-41ad21e7f8",
+       "rationale": "The policy requires two forms of identification from each signer but the procedure asks for one document. Staff following the procedure would accept a signer the policy would not, and both cover the same branches and accounts.",
+       "reason": "One side carries a condition that may change the rule."
+      },
+      {
+       "attribute": "ao_id_count",
+       "label": "conflict",
+       "pair": "pair-042284e8bf",
+       "rationale": "The policy requires two forms of identification per signer and the desk card says three. The card sets a different count for the same scope, and the policy outranks the card, which only tells the reader which clause to keep.",
+       "reason": "One side carries a condition that may change the rule."
+      },
+      {
+       "attribute": "dispute_window",
+       "label": "conflict",
+       "pair": "pair-ec8aac74fa",
+       "rationale": "The policy sets a 60 day window and the procedure accepts disputes up to 90 days for every customer. The policy's longer window applies only to customers who were traveling or hospitalized, so staff following the procedure would accept disputes the policy would refuse.",
+       "reason": "One side carries a condition that may change the rule."
+      },
+      {
+       "attribute": "hold_standard",
+       "label": "conflict",
+       "pair": "pair-6282b4ede2",
+       "rationale": "The policy makes funds available within 2 business days and the FAQ sets the standard hold at 3 business days. The FAQ presents its hold as the normal one rather than an exception, so staff following it would hold funds longer than the policy allows.",
+       "reason": "One side carries a condition that may change the rule."
+      },
+      {
+       "attribute": "fee_waiver_pb",
+       "label": "conflict",
+       "pair": "pair-d0f3262efb",
+       "rationale": "The second policy lets a personal banker go up to $50 with branch manager approval, and the first policy states a $25 limit with no such exception. Staff following the first clause would refuse a waiver the second clause allows, and the two are separate policies rather than versions of one document.",
+       "reason": "The values match, but the weaker document adds a condition the stronger one doesn't state."
+      },
+      {
+       "attribute": "ao_id_count",
+       "label": "consistent",
+       "pair": "pair-86cf3d3f61",
+       "rationale": "Both clauses state the same rule with the same values and the same branch manager condition. The procedure covers consumer accounts only, which sits inside the policy's scope and changes nothing staff do.",
+       "reason": "The values match, but the weaker document adds a condition the stronger one doesn't state."
+      }
+     ]
+    },
+    "6202": {
+     "ai": {
+      "classify": {
+       "accepted": 10,
+       "asked": 10,
+       "held": {},
+       "missing": 0,
+       "recorded_at": "2026-10-30T04:14:38+00:00",
+       "stale": [],
+       "totals": {
+        "calls": 2,
+        "dollars": 0.1003,
+        "input_tokens": 15769,
+        "output_tokens": 4380,
+        "seconds": 33.3
+       }
+      },
+      "extract": {
+       "accepted": 166,
+       "asked": 166,
+       "held": {},
+       "missing": 0,
+       "recorded_at": "2026-10-30T04:11:20+00:00",
+       "stale": [],
+       "totals": {
+        "calls": 17,
+        "dollars": 0.6119,
+        "input_tokens": 151382,
+        "output_tokens": 18428,
+        "seconds": 118.6
+       }
+      }
+     },
+     "code_only": {
+      "authority_checked": 47,
+      "authority_right": 47,
+      "caught": 86,
+      "decided_match": 0,
+      "decided_of": 0,
+      "false_alarms": 0,
+      "key_version": 1,
+      "planted": 89,
+      "queue": 166,
+      "unexplained": 0
+     },
+     "combined": {
+      "conflict_findings": 69,
+      "disputed": [
+       {
+        "item": "A-01",
+        "kind": "exception_path",
+        "matches": true,
+        "ruled": "conflict",
+        "said": "conflict"
+       },
+       {
+        "item": "A-02",
+        "kind": "unit",
+        "matches": true,
+        "ruled": "conflict",
+        "said": "conflict"
+       },
+       {
+        "item": "A-03",
+        "kind": "role_generic",
+        "matches": true,
+        "ruled": "conflict",
+        "said": "conflict"
+       },
+       {
+        "item": "A-04",
+        "kind": "exception_path",
+        "matches": true,
+        "ruled": "conflict",
+        "said": "conflict"
+       },
+       {
+        "item": "A-05",
+        "kind": "unit",
+        "matches": true,
+        "ruled": "conflict",
+        "said": "conflict"
+       },
+       {
+        "item": "A-06",
+        "kind": "role_generic",
+        "matches": true,
+        "ruled": "conflict",
+        "said": "conflict"
+       },
+       {
+        "item": "A-07",
+        "kind": "exception_path",
+        "matches": true,
+        "ruled": "conflict",
+        "said": "conflict"
+       },
+       {
+        "item": "A-08",
+        "kind": "unit",
+        "matches": true,
+        "ruled": "conflict",
+        "said": "conflict"
+       },
+       {
+        "item": "A-09",
+        "kind": "role_generic",
+        "matches": true,
+        "ruled": "conflict",
+        "said": "conflict"
+       },
+       {
+        "item": "A-10",
+        "kind": "exception_path",
+        "matches": false,
+        "ruled": "conflict",
+        "said": "the classifier said consistent"
+       },
+       {
+        "item": "A-11",
+        "kind": "unit",
+        "matches": true,
+        "ruled": "conflict",
+        "said": "conflict"
+       },
+       {
+        "item": "A-12",
+        "kind": "role_generic",
+        "matches": true,
+        "ruled": "conflict",
+        "said": "conflict"
+       },
+       {
+        "item": "A-13",
+        "kind": "exception_path",
+        "matches": true,
+        "ruled": "conflict",
+        "said": "conflict"
+       },
+       {
+        "item": "A-14",
+        "kind": "unit",
+        "matches": true,
+        "ruled": "conflict",
+        "said": "conflict"
+       },
+       {
+        "item": "A-15",
+        "kind": "role_generic",
+        "matches": true,
+        "ruled": "conflict",
+        "said": "conflict"
+       },
+       {
+        "item": "A-16",
+        "kind": "exception_path",
+        "matches": true,
+        "ruled": "conflict",
+        "said": "conflict"
+       },
+       {
+        "item": "A-17",
+        "kind": "unit",
+        "matches": true,
+        "ruled": "conflict",
+        "said": "conflict"
+       },
+       {
+        "item": "A-18",
+        "kind": "role_generic",
+        "matches": true,
+        "ruled": "conflict",
+        "said": "conflict"
+       }
+      ],
+      "false_alarms": {
+       "N": {
+        "flagged": 0,
+        "flags": [],
+        "planted": 20
+       },
+       "V": {
+        "flagged": 0,
+        "flags": [],
+        "planted": 20
+       }
+      },
+      "per_category": {
+       "C": {
+        "caught": 36,
+        "missed": [],
+        "planted": 36
+       },
+       "D": {
+        "caught": 25,
+        "missed": [],
+        "planted": 25
+       },
+       "P": {
+        "caught": 13,
+        "missed": [
+         "P-05"
+        ],
+        "planted": 14
+       },
+       "S": {
+        "caught": 14,
+        "missed": [],
+        "planted": 14
+       }
+      },
+      "summary": {
+       "authority_checked": 49,
+       "authority_right": 49,
+       "caught": 88,
+       "decided_match": 17,
+       "decided_of": 18,
+       "false_alarms": 0,
+       "key_version": 2,
+       "planted": 89,
+       "queue": 166,
+       "unexplained": 1
+      },
+      "unexplained": [
+       [
+        "PRO-HLD-01@v3/s3/c5",
+        "POL-HLD-01@v5/s4/c1"
+       ]
+      ]
+     },
+     "decided": [
+      {
+       "attribute": "complaint_resolve",
+       "label": "conflict",
+       "pair": "pair-0a8a97ae1f",
+       "rationale": "Both clauses cover all branches and business lines but set 15 business days in one and 30 business days in the other. The policy ranks higher so its clause is the one to keep, yet the two still conflict.",
+       "reason": "One side carries a condition that may change the rule."
+      },
+      {
+       "attribute": "dispute_window",
+       "label": "conflict",
+       "pair": "pair-667a16bc7a",
+       "rationale": "The scopes are the same and the policy allows 60 days while the job aid says 30 days. Staff following the job aid would turn away a dispute the policy accepts.",
+       "reason": "One side carries a condition that may change the rule."
+      },
+      {
+       "attribute": "dispute_window",
+       "label": "conflict",
+       "pair": "pair-a1fecf5948",
+       "rationale": "The scopes are the same and the policy allows 60 days while the job aid says 30 days. Staff following the job aid would turn away a dispute the policy accepts.",
+       "reason": "One side carries a condition that may change the rule."
+      },
+      {
+       "attribute": "fee_waiver_bm",
+       "label": "consistent",
+       "pair": "pair-0bee222a01",
+       "rationale": "The procedure names no actor and only says when regional manager approval is needed, so it does not give branch managers a $75 limit. Staff following either clause would not act against the other, so I treated them as consistent.",
+       "reason": "One side's actor was inferred by the AI, not named."
+      },
+      {
+       "attribute": "fee_waiver_pb",
+       "label": "conflict",
+       "pair": "pair-69718998ed",
+       "rationale": "Both apply to all branches and the same accounts, but the policy allows up to $25 and the job aid says $15. A personal banker following the job aid would refuse a waiver the policy permits.",
+       "reason": "One side carries a condition that may change the rule."
+      },
+      {
+       "attribute": "hold_standard",
+       "label": "conflict",
+       "pair": "pair-870e29039d",
+       "rationale": "The scopes are the same and one clause says 2 business days while the other says 3 business days. The shared exception for longer holds does not remove the difference in the standard hold.",
+       "reason": "One side carries a condition that may change the rule."
+      },
+      {
+       "attribute": "hold_standard",
+       "label": "consistent",
+       "pair": "pair-47ac6f4c74",
+       "rationale": "The two clauses are word for word the same and state the same rule with the same value. Neither adds a condition the other lacks, so they are consistent.",
+       "reason": "The values match, but the weaker document adds a condition the stronger one doesn't state."
+      },
+      {
+       "attribute": "ao_id_count",
+       "label": "conflict",
+       "pair": "pair-b502021df0",
+       "rationale": "Staff following the first policy would refuse to open an account on one form of identification plus a bank reference, which the second policy allows with branch manager approval. Both policies cover the same accounts and have equal rank, so this is a conflict.",
+       "reason": "The values match, but the weaker document adds a condition the stronger one doesn't state."
+      },
+      {
+       "attribute": "wire_callback",
+       "label": "conflict",
+       "pair": "pair-4203b5c59e",
+       "rationale": "Clause a requires a callback on every outgoing wire of $10,000 or more, while clause b skips the callback when the wire goes to an account used in the past year. Staff following clause b would release a commercial wire without a callback that clause a requires, and neither clause states the difference as a deliberate narrower scope.",
+       "reason": "The values match, but the weaker document adds a condition the stronger one doesn't state."
+      },
+      {
+       "attribute": "fee_waiver_pb",
+       "label": "consistent",
+       "pair": "pair-296e81768e",
+       "rationale": "Both clauses set the same limits of $25 and $50 with the same branch manager approval condition. This is one rule stated again in a procedure step and not a copied run of steps, and no condition is added or missing.",
+       "reason": "The values match, but the weaker document adds a condition the stronger one doesn't state."
+      }
+     ]
+    },
+    "6303": {
+     "ai": {
+      "classify": {
+       "accepted": 7,
+       "asked": 7,
+       "held": {},
+       "missing": 0,
+       "recorded_at": "2026-10-30T04:14:54+00:00",
+       "stale": [],
+       "totals": {
+        "calls": 1,
+        "dollars": 0.0615,
+        "input_tokens": 8777,
+        "output_tokens": 2971,
+        "seconds": 23.1
+       }
+      },
+      "extract": {
+       "accepted": 153,
+       "asked": 153,
+       "held": {},
+       "missing": 0,
+       "recorded_at": "2026-10-30T04:12:03+00:00",
+       "stale": [],
+       "totals": {
+        "calls": 16,
+        "dollars": 0.5659,
+        "input_tokens": 142004,
+        "output_tokens": 16527,
+        "seconds": 105.0
+       }
+      }
+     },
+     "code_only": {
+      "authority_checked": 48,
+      "authority_right": 47,
+      "caught": 88,
+      "decided_match": 0,
+      "decided_of": 0,
+      "false_alarms": 0,
+      "key_version": 1,
+      "planted": 90,
+      "queue": 153,
+      "unexplained": 0
+     },
+     "combined": {
+      "conflict_findings": 67,
+      "disputed": [
+       {
+        "item": "A-01",
+        "kind": "exception_path",
+        "matches": true,
+        "ruled": "conflict",
+        "said": "conflict"
+       },
+       {
+        "item": "A-02",
+        "kind": "unit",
+        "matches": true,
+        "ruled": "conflict",
+        "said": "conflict"
+       },
+       {
+        "item": "A-03",
+        "kind": "role_generic",
+        "matches": true,
+        "ruled": "conflict",
+        "said": "conflict"
+       },
+       {
+        "item": "A-04",
+        "kind": "exception_path",
+        "matches": true,
+        "ruled": "conflict",
+        "said": "conflict"
+       },
+       {
+        "item": "A-05",
+        "kind": "unit",
+        "matches": true,
+        "ruled": "conflict",
+        "said": "conflict"
+       },
+       {
+        "item": "A-06",
+        "kind": "role_generic",
+        "matches": true,
+        "ruled": "conflict",
+        "said": "conflict"
+       },
+       {
+        "item": "A-07",
+        "kind": "exception_path",
+        "matches": true,
+        "ruled": "conflict",
+        "said": "conflict"
+       },
+       {
+        "item": "A-08",
+        "kind": "unit",
+        "matches": true,
+        "ruled": "conflict",
+        "said": "conflict"
+       },
+       {
+        "item": "A-09",
+        "kind": "role_generic",
+        "matches": true,
+        "ruled": "conflict",
+        "said": "conflict"
+       },
+       {
+        "item": "A-10",
+        "kind": "exception_path",
+        "matches": false,
+        "ruled": "conflict",
+        "said": "the classifier said consistent"
+       },
+       {
+        "item": "A-11",
+        "kind": "unit",
+        "matches": true,
+        "ruled": "conflict",
+        "said": "conflict"
+       },
+       {
+        "item": "A-12",
+        "kind": "role_generic",
+        "matches": true,
+        "ruled": "conflict",
+        "said": "conflict"
+       },
+       {
+        "item": "A-13",
+        "kind": "exception_path",
+        "matches": true,
+        "ruled": "conflict",
+        "said": "conflict"
+       },
+       {
+        "item": "A-14",
+        "kind": "unit",
+        "matches": true,
+        "ruled": "conflict",
+        "said": "conflict"
+       },
+       {
+        "item": "A-15",
+        "kind": "role_generic",
+        "matches": true,
+        "ruled": "conflict",
+        "said": "conflict"
+       },
+       {
+        "item": "A-16",
+        "kind": "exception_path",
+        "matches": true,
+        "ruled": "conflict",
+        "said": "conflict"
+       },
+       {
+        "item": "A-17",
+        "kind": "unit",
+        "matches": true,
+        "ruled": "conflict",
+        "said": "conflict"
+       },
+       {
+        "item": "A-18",
+        "kind": "role_generic",
+        "matches": true,
+        "ruled": "conflict",
+        "said": "conflict"
+       }
+      ],
+      "false_alarms": {
+       "N": {
+        "flagged": 0,
+        "flags": [],
+        "planted": 20
+       },
+       "V": {
+        "flagged": 0,
+        "flags": [],
+        "planted": 20
+       }
+      },
+      "per_category": {
+       "C": {
+        "caught": 36,
+        "missed": [],
+        "planted": 36
+       },
+       "D": {
+        "caught": 25,
+        "missed": [],
+        "planted": 25
+       },
+       "P": {
+        "caught": 14,
+        "missed": [],
+        "planted": 14
+       },
+       "S": {
+        "caught": 15,
+        "missed": [],
+        "planted": 15
+       }
+      },
+      "summary": {
+       "authority_checked": 50,
+       "authority_right": 50,
+       "caught": 90,
+       "decided_match": 17,
+       "decided_of": 18,
+       "false_alarms": 0,
+       "key_version": 2,
+       "planted": 90,
+       "queue": 153,
+       "unexplained": 1
+      },
+      "unexplained": [
+       [
+        "PRO-CMP-04@v3/s3/c3",
+        "POL-CMP-01@v6/s4/c1"
+       ]
+      ]
+     },
+     "decided": [
+      {
+       "attribute": "ao_id_count",
+       "label": "conflict",
+       "pair": "pair-ff75db358b",
+       "rationale": "Both clauses cover the same branches and account types but ask for a different number of IDs per signer. The policy outranks the procedure, so the policy clause is the one to keep.",
+       "reason": "One side carries a condition that may change the rule."
+      },
+      {
+       "attribute": "complaint_resolve",
+       "label": "conflict",
+       "pair": "pair-35696ab09e",
+       "rationale": "The same deadline is set at 15 business days in one clause and 10 business days in the other for the same scope. The policy outranks the procedure, so the policy clause is the one to keep.",
+       "reason": "One side carries a condition that may change the rule."
+      },
+      {
+       "attribute": "hold_standard",
+       "label": "conflict",
+       "pair": "pair-089d0218d2",
+       "rationale": "The policy sets a standard hold of 2 business days and the procedure says 3 business days for the same checks. Staff following the procedure would act against the policy, which outranks it.",
+       "reason": "One side carries a condition that may change the rule."
+      },
+      {
+       "attribute": "complaint_resolve",
+       "label": "consistent",
+       "pair": "pair-6cbf853a42",
+       "rationale": "The two clauses state the same rule with the same value and neither adds a condition. Matching wording alone does not make them a conflict.",
+       "reason": "The values match, but the weaker document adds a condition the stronger one doesn't state."
+      },
+      {
+       "attribute": "wire_callback",
+       "label": "consistent",
+       "pair": "pair-84a9f5f011",
+       "rationale": "Both clauses set the same threshold and the same callback requirement with the same past year exception. The commercial policy only restates the rule for a narrower group.",
+       "reason": "The values match, but the weaker document adds a condition the stronger one doesn't state."
+      },
+      {
+       "attribute": "complaint_resolve",
+       "label": "conflict",
+       "pair": "pair-234d31df51",
+       "rationale": "I decided this way because staff following the procedure could leave a complaint open to 30 business days without telling the customer, which the policy does not allow. Staff following the policy would never go against the procedure. The policy outranks the procedure, so the policy clause is the one to keep.",
+       "reason": "The values match, but the weaker document adds a condition the stronger one doesn't state."
+      },
+      {
+       "attribute": "hold_standard",
+       "label": "consistent",
+       "pair": "pair-eca2149e9b",
+       "rationale": "Both clauses give 2 business days for deposited checks. The procedure's note about a longer hold does not contradict the policy.",
+       "reason": "The values match, but the weaker document adds a condition the stronger one doesn't state."
+      }
+     ]
+    }
+   },
+   "versions": {
+    "catalog": 2,
+    "engine": 3,
+    "prompts": 1
+   }
+  },
+  {
+   "at": "2026-10-29T22:44",
+   "code": {
+    "agents/__init__.py": "e3b0c44298fc1c14",
+    "agents/assisting.py": "334df05d315abf0f",
+    "agents/combine.py": "2e840a645288e9f7",
+    "agents/decisions.py": "b291a24342c506f3",
+    "agents/drafting.py": "465f55bf99ee79db",
+    "agents/flow.py": "c2ef904ea1517eed",
+    "agents/inputs.py": "935ee1c2939eac9d",
+    "agents/items.py": "aaeaabc7065f3d49",
+    "agents/judging.py": "f3cbec7ac45165de",
+    "agents/llm.py": "644c1f5b275991cf",
+    "agents/mask.py": "41aabdb3639139f8",
+    "agents/prompts.py": "a8a9c9050a4fdb52",
+    "agents/replay.py": "343bdd2295c21906",
+    "agents/routing.py": "4fe5e03ca02ab791",
+    "agents/standin.py": "e0712a8ddd83806d",
+    "agents/steps.py": "e389e0f0ea3e8cb4",
+    "agents/validate.py": "8033b491312e8147",
+    "evals/decisions.json": "d7ecb59472db2e3d"
+   },
+   "extraction": {},
+   "held_out": [
+    "8101",
+    "8202",
+    "8303"
+   ],
+   "models": {
+    "assist": "claude-sonnet",
+    "classify": "claude-sonnet",
+    "draft": "claude-opus",
+    "extract": "claude-sonnet",
+    "judge": "google-a"
+   },
+   "pairs": {},
+   "seeds": {
+    "8101": {
+     "ai": {
+      "classify": {
+       "accepted": 7,
+       "asked": 7,
+       "held": {},
+       "missing": 0,
+       "recorded_at": "2026-10-30T05:41:57+00:00",
+       "stale": [],
+       "totals": {
+        "calls": 2,
+        "dollars": 0.0872,
+        "input_tokens": 15475,
+        "output_tokens": 3184,
+        "seconds": 21.2
+       }
+      },
+      "extract": {
+       "accepted": 154,
+       "asked": 154,
+       "held": {},
+       "missing": 0,
+       "recorded_at": "2026-10-30T05:40:00+00:00",
+       "stale": [],
+       "totals": {
+        "calls": 16,
+        "dollars": 0.5935,
+        "input_tokens": 142129,
+        "output_tokens": 16098,
+        "seconds": 103.8
+       }
+      }
+     },
+     "code_only": {
+      "authority_checked": 49,
+      "authority_right": 48,
+      "caught": 89,
+      "decided_match": 0,
+      "decided_of": 0,
+      "false_alarms": 0,
+      "key_version": 1,
+      "planted": 90,
+      "queue": 154,
+      "ruled_extra": 0,
+      "unexplained": 0
+     },
+     "combined": {
+      "conflict_findings": 94,
+      "disputed": [
+       {
+        "item": "A-01",
+        "kind": "exception_path",
+        "matches": true,
+        "ruled": "conflict",
+        "said": "conflict"
+       },
+       {
+        "item": "A-02",
+        "kind": "unit",
+        "matches": true,
+        "ruled": "conflict",
+        "said": "conflict"
+       },
+       {
+        "item": "A-03",
+        "kind": "role_generic",
+        "matches": true,
+        "ruled": "conflict",
+        "said": "conflict"
+       },
+       {
+        "item": "A-04",
+        "kind": "exception_path",
+        "matches": true,
+        "ruled": "conflict",
+        "said": "conflict"
+       },
+       {
+        "item": "A-05",
+        "kind": "unit",
+        "matches": true,
+        "ruled": "conflict",
+        "said": "conflict"
+       },
+       {
+        "item": "A-06",
+        "kind": "role_generic",
+        "matches": false,
+        "ruled": "conflict",
+        "said": "sent to AI"
+       },
+       {
+        "item": "A-07",
+        "kind": "exception_path",
+        "matches": true,
+        "ruled": "conflict",
+        "said": "conflict"
+       },
+       {
+        "item": "A-08",
+        "kind": "unit",
+        "matches": true,
+        "ruled": "conflict",
+        "said": "conflict"
+       },
+       {
+        "item": "A-09",
+        "kind": "role_generic",
+        "matches": true,
+        "ruled": "conflict",
+        "said": "conflict"
+       },
+       {
+        "item": "A-10",
+        "kind": "exception_path",
+        "matches": true,
+        "ruled": "conflict",
+        "said": "conflict"
+       },
+       {
+        "item": "A-11",
+        "kind": "unit",
+        "matches": true,
+        "ruled": "conflict",
+        "said": "conflict"
+       },
+       {
+        "item": "A-12",
+        "kind": "role_generic",
+        "matches": true,
+        "ruled": "conflict",
+        "said": "conflict"
+       },
+       {
+        "item": "A-13",
+        "kind": "exception_path",
+        "matches": true,
+        "ruled": "conflict",
+        "said": "conflict"
+       },
+       {
+        "item": "A-14",
+        "kind": "unit",
+        "matches": true,
+        "ruled": "conflict",
+        "said": "conflict"
+       },
+       {
+        "item": "A-15",
+        "kind": "role_generic",
+        "matches": true,
+        "ruled": "conflict",
+        "said": "conflict"
+       },
+       {
+        "item": "A-16",
+        "kind": "exception_path",
+        "matches": true,
+        "ruled": "conflict",
+        "said": "conflict"
+       },
+       {
+        "item": "A-17",
+        "kind": "unit",
+        "matches": true,
+        "ruled": "conflict",
+        "said": "conflict"
+       },
+       {
+        "item": "A-18",
+        "kind": "role_generic",
+        "matches": true,
+        "ruled": "conflict",
+        "said": "conflict"
+       }
+      ],
+      "false_alarms": {
+       "N": {
+        "flagged": 0,
+        "flags": [],
+        "planted": 20
+       },
+       "V": {
+        "flagged": 0,
+        "flags": [],
+        "planted": 20
+       }
+      },
+      "per_category": {
+       "C": {
+        "caught": 36,
+        "missed": [],
+        "planted": 36
+       },
+       "D": {
+        "caught": 25,
+        "missed": [],
+        "planted": 25
+       },
+       "P": {
+        "caught": 14,
+        "missed": [],
+        "planted": 14
+       },
+       "S": {
+        "caught": 15,
+        "missed": [],
+        "planted": 15
+       }
+      },
+      "ruled_extra": [],
+      "summary": {
+       "authority_checked": 50,
+       "authority_right": 50,
+       "caught": 90,
+       "decided_match": 17,
+       "decided_of": 18,
+       "false_alarms": 0,
+       "key_version": 2,
+       "planted": 90,
+       "queue": 154,
+       "ruled_extra": 0,
+       "unexplained": 0
+      },
+      "unexplained": []
+     },
+     "decided": [
+      {
+       "attribute": "complaint_resolve",
+       "label": "conflict",
+       "pair": "pair-e5306809cf",
+       "rationale": "The policy allows 30 business days only when another department investigates, but the FAQ gives 30 business days for every complaint. Staff following the FAQ would hold an ordinary complaint open past the 15 business days the policy sets.",
+       "reason": "One side carries a condition that may change the rule."
+      },
+      {
+       "attribute": "complaint_resolve",
+       "label": "conflict",
+       "pair": "pair-b877a6d58f",
+       "rationale": "The bulletin sets 10 business days for all complaints while the policy sets 15 or 30 business days. The two apply to the same branches and business lines, and the higher rank only decides which one to keep.",
+       "reason": "One side carries a condition that may change the rule."
+      },
+      {
+       "attribute": "dispute_window",
+       "label": "conflict",
+       "pair": "pair-ca97cd8191",
+       "rationale": "The policy accepts disputes within 60 days unless the customer was traveling or hospitalized, while the procedure accepts them within 90 days with no such condition. Staff following the policy would refuse a dispute filed after 60 days from a customer who was not away, which the procedure allows, and the policy outranks the procedure so its clause is the one to keep.",
+       "reason": "One side carries a condition that may change the rule."
+      },
+      {
+       "attribute": "fee_waiver_pb",
+       "label": "conflict",
+       "pair": "pair-4787e4bfb8",
+       "rationale": "The policy limits a personal banker to $25 unless a branch manager approves the higher amount. The procedure lets a personal banker waive $50 with no approval, so staff following it would do something the policy does not allow.",
+       "reason": "One side carries a condition that may change the rule."
+      },
+      {
+       "attribute": "fee_waiver_pb",
+       "label": "conflict",
+       "pair": "pair-f4df0a1a7f",
+       "rationale": "The FAQ drops the branch manager approval and states $50 as the personal banker limit. A banker who follows the FAQ would waive between $25 and $50 without approval, which the policy does not allow.",
+       "reason": "One side carries a condition that may change the rule."
+      },
+      {
+       "attribute": "hold_standard",
+       "label": "conflict",
+       "pair": "pair-6cf3f0b5f1",
+       "rationale": "The policy sets a standard hold of 2 business days while the FAQ tells customers funds arrive within 3 business days. The FAQ's unless clause covers longer holds only, so the standard figures differ and staff would act on different timelines.",
+       "reason": "One side carries a condition that may change the rule."
+      },
+      {
+       "attribute": "wire_callback",
+       "label": "conflict",
+       "pair": "pair-374789f334",
+       "rationale": "The policy requires a callback at $10,000 or more unless the account was used in the past year, while the bulletin requires one only at $25,000 or more. A wire between those amounts to a new account needs a callback under the policy but not under the bulletin, and the policy outranks the bulletin so its clause is the one to keep.",
+       "reason": "One side carries a condition that may change the rule."
+      }
+     ]
+    },
+    "8202": {
+     "ai": {
+      "classify": {
+       "accepted": 11,
+       "asked": 11,
+       "held": {},
+       "missing": 0,
+       "recorded_at": "2026-10-30T05:41:51+00:00",
+       "stale": [],
+       "totals": {
+        "calls": 2,
+        "dollars": 0.0973,
+        "input_tokens": 16144,
+        "output_tokens": 3926,
+        "seconds": 28.1
+       }
+      },
+      "extract": {
+       "accepted": 158,
+       "asked": 158,
+       "held": {},
+       "missing": 0,
+       "recorded_at": "2026-10-30T05:40:48+00:00",
+       "stale": [],
+       "totals": {
+        "calls": 16,
+        "dollars": 0.586,
+        "input_tokens": 142636,
+        "output_tokens": 18286,
+        "seconds": 112.7
+       }
+      }
+     },
+     "code_only": {
+      "authority_checked": 50,
+      "authority_right": 48,
+      "caught": 90,
+      "decided_match": 0,
+      "decided_of": 0,
+      "false_alarms": 0,
+      "key_version": 1,
+      "planted": 90,
+      "queue": 158,
+      "ruled_extra": 0,
+      "unexplained": 0
+     },
+     "combined": {
+      "conflict_findings": 84,
+      "disputed": [
+       {
+        "item": "A-01",
+        "kind": "exception_path",
+        "matches": true,
+        "ruled": "conflict",
+        "said": "conflict"
+       },
+       {
+        "item": "A-02",
+        "kind": "unit",
+        "matches": true,
+        "ruled": "conflict",
+        "said": "conflict"
+       },
+       {
+        "item": "A-03",
+        "kind": "role_generic",
+        "matches": true,
+        "ruled": "conflict",
+        "said": "conflict"
+       },
+       {
+        "item": "A-04",
+        "kind": "exception_path",
+        "matches": true,
+        "ruled": "conflict",
+        "said": "conflict"
+       },
+       {
+        "item": "A-05",
+        "kind": "unit",
+        "matches": true,
+        "ruled": "conflict",
+        "said": "conflict"
+       },
+       {
+        "item": "A-06",
+        "kind": "role_generic",
+        "matches": true,
+        "ruled": "conflict",
+        "said": "conflict"
+       },
+       {
+        "item": "A-07",
+        "kind": "exception_path",
+        "matches": true,
+        "ruled": "conflict",
+        "said": "conflict"
+       },
+       {
+        "item": "A-08",
+        "kind": "unit",
+        "matches": true,
+        "ruled": "conflict",
+        "said": "conflict"
+       },
+       {
+        "item": "A-09",
+        "kind": "role_generic",
+        "matches": true,
+        "ruled": "conflict",
+        "said": "conflict"
+       },
+       {
+        "item": "A-10",
+        "kind": "exception_path",
+        "matches": true,
+        "ruled": "conflict",
+        "said": "conflict"
+       },
+       {
+        "item": "A-11",
+        "kind": "unit",
+        "matches": true,
+        "ruled": "conflict",
+        "said": "conflict"
+       },
+       {
+        "item": "A-12",
+        "kind": "role_generic",
+        "matches": true,
+        "ruled": "conflict",
+        "said": "conflict"
+       },
+       {
+        "item": "A-13",
+        "kind": "exception_path",
+        "matches": true,
+        "ruled": "conflict",
+        "said": "conflict"
+       },
+       {
+        "item": "A-14",
+        "kind": "unit",
+        "matches": true,
+        "ruled": "conflict",
+        "said": "conflict"
+       },
+       {
+        "item": "A-15",
+        "kind": "role_generic",
+        "matches": true,
+        "ruled": "conflict",
+        "said": "conflict"
+       },
+       {
+        "item": "A-16",
+        "kind": "exception_path",
+        "matches": true,
+        "ruled": "conflict",
+        "said": "conflict"
+       }
+      ],
+      "false_alarms": {
+       "N": {
+        "flagged": 0,
+        "flags": [],
+        "planted": 20
+       },
+       "V": {
+        "flagged": 0,
+        "flags": [],
+        "planted": 20
+       }
+      },
+      "per_category": {
+       "C": {
+        "caught": 35,
+        "missed": [
+         "C-15"
+        ],
+        "planted": 36
+       },
+       "D": {
+        "caught": 25,
+        "missed": [],
+        "planted": 25
+       },
+       "P": {
+        "caught": 14,
+        "missed": [],
+        "planted": 14
+       },
+       "S": {
+        "caught": 15,
+        "missed": [],
+        "planted": 15
+       }
+      },
+      "ruled_extra": [
+       [
+        "POL-CMP-01@v3/s3/c1",
+        "JA-CMP-01@v1/s1/c2"
+       ],
+       [
+        "POL-CMP-01@v3/s3/c1",
+        "JA-CMP-02@v4/s1/c2"
+       ]
+      ],
+      "summary": {
+       "authority_checked": 49,
+       "authority_right": 49,
+       "caught": 89,
+       "decided_match": 16,
+       "decided_of": 16,
+       "false_alarms": 0,
+       "key_version": 2,
+       "planted": 90,
+       "queue": 158,
+       "ruled_extra": 2,
+       "unexplained": 0
+      },
+      "unexplained": []
+     },
+     "decided": [
+      {
+       "attribute": "ao_id_count",
+       "label": "conflict",
+       "pair": "pair-cc9300e3fa",
+       "rationale": "Both clauses cover consumer and small business accounts at all branches but require two forms and three forms. Staff following the policy would open accounts the procedure forbids, so the policy clause should be kept.",
+       "reason": "One side carries a condition that may change the rule."
+      },
+      {
+       "attribute": "ao_id_count",
+       "label": "variation",
+       "pair": "pair-1d25030b18",
+       "rationale": "The procedure is written only for small business accounts and sets a stricter count of three forms on purpose. The policy's two forms still applies to consumer accounts.",
+       "reason": "One side carries a condition that may change the rule."
+      },
+      {
+       "attribute": "complaint_resolve",
+       "label": "conflict",
+       "pair": "pair-3ff33bb130",
+       "rationale": "Both apply to all branches and business lines but set 15 business days and 10 business days. Staff who use the full 15 days under the policy would miss the procedure's deadline, and the policy clause outranks the procedure.",
+       "reason": "One side carries a condition that may change the rule."
+      },
+      {
+       "attribute": "complaint_resolve",
+       "label": "conflict",
+       "pair": "pair-fb9dd9aa56",
+       "rationale": "Both apply to all branches and business lines but set 15 business days and 30 business days. The bulletin lets staff take twice as long as the policy allows, and the policy outranks the bulletin.",
+       "reason": "One side carries a condition that may change the rule."
+      },
+      {
+       "attribute": "hold_new_account",
+       "label": "conflict",
+       "pair": "pair-6a2ff3dda6",
+       "rationale": "Both cover the same accounts and branches but cap the hold at 7 business days and 5 business days. Staff applying the policy could hold a check longer than the procedure permits, and the policy clause outranks the procedure.",
+       "reason": "One side carries a condition that may change the rule."
+      },
+      {
+       "attribute": "hold_new_account",
+       "label": "conflict",
+       "pair": "pair-7d4c267cf8",
+       "rationale": "The bulletin allows 9 business days for every new account while the policy allows 9 only above the large deposit threshold and 7 otherwise. Staff following the bulletin would hold smaller deposits longer than the policy permits, and the policy outranks the bulletin.",
+       "reason": "One side carries a condition that may change the rule."
+      },
+      {
+       "attribute": "wire_callback",
+       "label": "conflict",
+       "pair": "pair-75191860d0",
+       "rationale": "The thresholds are $10,000 and $25,000 for the same callback at all branches. Staff following the procedure would skip callbacks the policy requires on wires below $25,000, and the policy's exception for recently used accounts does not remove that gap.",
+       "reason": "One side carries a condition that may change the rule."
+      },
+      {
+       "attribute": "wire_callback",
+       "label": "conflict",
+       "pair": "pair-1ac0f25d21",
+       "rationale": "The policy sets the callback threshold at $10,000 and the job aid sets it at $5,000 for the same wires at all branches. Staff using the card would call back on wires the policy does not require, and the policy outranks the job aid.",
+       "reason": "One side carries a condition that may change the rule."
+      },
+      {
+       "attribute": "hold_standard",
+       "label": "consistent",
+       "pair": "pair-9a48adc195",
+       "rationale": "Both clauses set 2 business days for the standard hold. The phrase about a longer hold is a general caveat that doesn't change what staff do on a standard hold, so the clauses agree.",
+       "reason": "The values match, but the weaker document adds a condition the stronger one doesn't state."
+      },
+      {
+       "attribute": "dispute_window",
+       "label": "conflict",
+       "pair": "pair-7aeaad1ccb",
+       "rationale": "Staff following the first clause would refuse a dispute filed after 60 days from a traveling or hospitalized customer. The second clause tells staff to accept it, and both apply to the same accounts in the same branches.",
+       "reason": "The values match, but the weaker document adds a condition the stronger one doesn't state."
+      },
+      {
+       "attribute": "hold_standard",
+       "label": "consistent",
+       "pair": "pair-59e423f360",
+       "rationale": "Both clauses set 2 business days for the standard hold. The phrase about a longer hold is a general caveat that doesn't change what staff do on a standard hold, so the clauses agree.",
+       "reason": "The values match, but the weaker document adds a condition the stronger one doesn't state."
+      }
+     ]
+    },
+    "8303": {
+     "ai": {
+      "classify": {
+       "accepted": 9,
+       "asked": 9,
+       "held": {},
+       "missing": 0,
+       "recorded_at": "2026-10-30T05:42:08+00:00",
+       "stale": [],
+       "totals": {
+        "calls": 2,
+        "dollars": 0.0933,
+        "input_tokens": 15358,
+        "output_tokens": 3841,
+        "seconds": 29.3
+       }
+      },
+      "extract": {
+       "accepted": 152,
+       "asked": 152,
+       "held": {},
+       "missing": 0,
+       "recorded_at": "2026-10-30T05:41:32+00:00",
+       "stale": [],
+       "totals": {
+        "calls": 16,
+        "dollars": 0.5714,
+        "input_tokens": 141989,
+        "output_tokens": 17091,
+        "seconds": 109.8
+       }
+      }
+     },
+     "code_only": {
+      "authority_checked": 49,
+      "authority_right": 48,
+      "caught": 86,
+      "decided_match": 0,
+      "decided_of": 0,
+      "false_alarms": 0,
+      "key_version": 1,
+      "planted": 87,
+      "queue": 152,
+      "ruled_extra": 0,
+      "unexplained": 0
+     },
+     "combined": {
+      "conflict_findings": 94,
+      "disputed": [
+       {
+        "item": "A-01",
+        "kind": "exception_path",
+        "matches": true,
+        "ruled": "conflict",
+        "said": "conflict"
+       },
+       {
+        "item": "A-02",
+        "kind": "unit",
+        "matches": true,
+        "ruled": "conflict",
+        "said": "conflict"
+       },
+       {
+        "item": "A-03",
+        "kind": "role_generic",
+        "matches": true,
+        "ruled": "conflict",
+        "said": "conflict"
+       },
+       {
+        "item": "A-04",
+        "kind": "exception_path",
+        "matches": true,
+        "ruled": "conflict",
+        "said": "conflict"
+       },
+       {
+        "item": "A-05",
+        "kind": "unit",
+        "matches": true,
+        "ruled": "conflict",
+        "said": "conflict"
+       },
+       {
+        "item": "A-06",
+        "kind": "role_generic",
+        "matches": true,
+        "ruled": "conflict",
+        "said": "conflict"
+       },
+       {
+        "item": "A-07",
+        "kind": "exception_path",
+        "matches": false,
+        "ruled": "conflict",
+        "said": "the decision says conflict"
+       },
+       {
+        "item": "A-08",
+        "kind": "unit",
+        "matches": true,
+        "ruled": "conflict",
+        "said": "conflict"
+       },
+       {
+        "item": "A-09",
+        "kind": "role_generic",
+        "matches": true,
+        "ruled": "conflict",
+        "said": "conflict"
+       },
+       {
+        "item": "A-10",
+        "kind": "exception_path",
+        "matches": true,
+        "ruled": "conflict",
+        "said": "conflict"
+       },
+       {
+        "item": "A-11",
+        "kind": "unit",
+        "matches": true,
+        "ruled": "conflict",
+        "said": "conflict"
+       },
+       {
+        "item": "A-12",
+        "kind": "role_generic",
+        "matches": true,
+        "ruled": "conflict",
+        "said": "conflict"
+       },
+       {
+        "item": "A-13",
+        "kind": "exception_path",
+        "matches": true,
+        "ruled": "conflict",
+        "said": "conflict"
+       },
+       {
+        "item": "A-14",
+        "kind": "unit",
+        "matches": true,
+        "ruled": "conflict",
+        "said": "conflict"
+       },
+       {
+        "item": "A-15",
+        "kind": "role_generic",
+        "matches": true,
+        "ruled": "conflict",
+        "said": "conflict"
+       },
+       {
+        "item": "A-16",
+        "kind": "exception_path",
+        "matches": true,
+        "ruled": "conflict",
+        "said": "conflict"
+       },
+       {
+        "item": "A-17",
+        "kind": "unit",
+        "matches": true,
+        "ruled": "conflict",
+        "said": "conflict"
+       },
+       {
+        "item": "A-18",
+        "kind": "role_generic",
+        "matches": false,
+        "ruled": "conflict",
+        "said": "sent to AI"
+       }
+      ],
+      "false_alarms": {
+       "N": {
+        "flagged": 0,
+        "flags": [],
+        "planted": 20
+       },
+       "V": {
+        "flagged": 0,
+        "flags": [],
+        "planted": 20
+       }
+      },
+      "per_category": {
+       "C": {
+        "caught": 36,
+        "missed": [],
+        "planted": 36
+       },
+       "D": {
+        "caught": 25,
+        "missed": [],
+        "planted": 25
+       },
+       "P": {
+        "caught": 14,
+        "missed": [],
+        "planted": 14
+       },
+       "S": {
+        "caught": 12,
+        "missed": [],
+        "planted": 12
+       }
+      },
+      "ruled_extra": [
+       [
+        "POL-CMP-01@v6/s3/c1",
+        "JA-CMP-02@v3/s1/c2"
+       ],
+       [
+        "PRO-HLD-01@v1/s3/c2",
+        "JA-HLD-02@v1/s1/c1"
+       ],
+       [
+        "PRO-HLD-01@v1/s3/c2",
+        "JA-HLD-03@v1/s1/c2"
+       ]
+      ],
+      "summary": {
+       "authority_checked": 50,
+       "authority_right": 50,
+       "caught": 87,
+       "decided_match": 16,
+       "decided_of": 18,
+       "false_alarms": 0,
+       "key_version": 2,
+       "planted": 87,
+       "queue": 152,
+       "ruled_extra": 3,
+       "unexplained": 0
+      },
+      "unexplained": []
+     },
+     "decided": [
+      {
+       "attribute": "complaint_resolve",
+       "label": "conflict",
+       "pair": "pair-5d8b09a4f3",
+       "rationale": "The two documents cover the same branches and business lines but set 15 business days and 30 business days. Staff following the job aid would miss the policy deadline, and the policy is the clause to keep.",
+       "reason": "One side carries a condition that may change the rule."
+      },
+      {
+       "attribute": "fee_waiver_bm",
+       "label": "conflict",
+       "pair": "pair-b3746951c0",
+       "rationale": "The FAQ heading asks about a branch manager, so its $75 threshold is read as the branch manager's limit. That would let a branch manager waive more than the $50 the policy allows, and the policy is the clause to keep.",
+       "reason": "One side's actor was inferred by the AI, not named."
+      },
+      {
+       "attribute": "fee_waiver_pb",
+       "label": "conflict",
+       "pair": "pair-0ac7a8362f",
+       "rationale": "Staff following the procedure would refuse a waiver between $15 and $25 that the policy allows. The policy outranks the procedure and is the clause to keep.",
+       "reason": "One side carries a condition that may change the rule."
+      },
+      {
+       "attribute": "fee_waiver_pb",
+       "label": "conflict",
+       "pair": "pair-1eb7c6af9e",
+       "rationale": "The procedure drops the branch manager approval the policy requires above $25. Staff following it would waive up to $50 on their own and act against the policy, which is the clause to keep.",
+       "reason": "One side carries a condition that may change the rule."
+      },
+      {
+       "attribute": "complaint_resolve",
+       "label": "consistent",
+       "pair": "pair-9b4d2a38a9",
+       "rationale": "Both clauses use the same 15 day deadline. Staff following the procedure would close within 15 days, which the FAQ also allows, so the added alternative in the FAQ does not contradict it.",
+       "reason": "The values match, but the weaker document adds a condition the stronger one doesn't state."
+      },
+      {
+       "attribute": "ao_id_count",
+       "label": "conflict",
+       "pair": "pair-c9c4c7fbd6",
+       "rationale": "Staff following the Customer Identification Policy would refuse one form plus a bank reference, which the Deposit Account Opening Policy allows. Both are policies for the same accounts, so the owners need to settle which rule stands.",
+       "reason": "The values match, but the weaker document adds a condition the stronger one doesn't state."
+      },
+      {
+       "attribute": "ao_id_count",
+       "label": "conflict",
+       "pair": "pair-8bc488cb61",
+       "rationale": "The procedure allows one form plus a bank reference, which staff following the policy would refuse. The procedure does not state a narrower scope for this option, and the policy outranks it so the policy is the clause to keep.",
+       "reason": "The values match, but the weaker document adds a condition the stronger one doesn't state."
+      },
+      {
+       "attribute": "hold_standard",
+       "label": "consistent",
+       "pair": "pair-ec380c17e7",
+       "rationale": "Both clauses set the same 2 business day standard period. The procedure's mention of a longer hold does not change what staff do under the standard hold the policy describes.",
+       "reason": "The values match, but the weaker document adds a condition the stronger one doesn't state."
+      },
+      {
+       "attribute": "hold_new_account",
+       "label": "conflict",
+       "pair": "pair-95ff8f9e38",
+       "rationale": "Clause a caps new account holds at 7 business days with no exception, while clause b allows up to 9 business days for large deposits. Staff following clause b would place a hold longer than clause a permits, and the two are equal-rank procedures from separate documents, so neither supersedes the other.",
+       "reason": "The values match, but the weaker document adds a condition the stronger one doesn't state."
+      }
+     ]
+    }
+   },
+   "versions": {
+    "catalog": 2,
+    "engine": 3,
+    "prompts": 1
+   }
+  },
+  {
+   "at": "2026-10-30T09:55",
+   "code": {
+    "agents/__init__.py": "e3b0c44298fc1c14",
+    "agents/assisting.py": "334df05d315abf0f",
+    "agents/combine.py": "be71129ab7906a8e",
+    "agents/decisions.py": "b291a24342c506f3",
+    "agents/drafting.py": "9a2762dc385ef6ef",
+    "agents/flow.py": "c2ef904ea1517eed",
+    "agents/inputs.py": "935ee1c2939eac9d",
+    "agents/items.py": "404fecbdfa0d72ef",
+    "agents/judging.py": "f3cbec7ac45165de",
+    "agents/llm.py": "644c1f5b275991cf",
+    "agents/mask.py": "41aabdb3639139f8",
+    "agents/prompts.py": "a8a9c9050a4fdb52",
+    "agents/replay.py": "343bdd2295c21906",
+    "agents/routing.py": "4fe5e03ca02ab791",
+    "agents/standin.py": "e0712a8ddd83806d",
+    "agents/steps.py": "bb75b2a70a106c14",
+    "agents/validate.py": "8033b491312e8147",
+    "evals/decisions.json": "d7ecb59472db2e3d"
+   },
+   "extraction": {},
+   "held_out": [
+    "judge-6101"
+   ],
+   "judge": {
+    "judge-6101": {
+     "calibration": {
+      "adds_no_rule": {
+       "agree": 30,
+       "misses": [],
+       "of": 30,
+       "share": 1.0,
+       "trusted": true
+      },
+      "keeps_rules": {
+       "agree": 30,
+       "misses": [],
+       "of": 30,
+       "share": 1.0,
+       "trusted": true
+      },
+      "keeps_scope": {
+       "agree": 30,
+       "misses": [],
+       "of": 30,
+       "share": 1.0,
+       "trusted": true
+      },
+      "plain": {
+       "agree": 27,
+       "misses": [],
+       "of": 27,
+       "share": 1.0,
+       "trusted": true
+      }
+     },
+     "held": {},
+     "totals": {
+      "calls": 6,
+      "dollars": 0.1843,
+      "input_tokens": 6476,
+      "output_tokens": 14282,
+      "seconds": 82.2
+     }
+    }
+   },
+   "models": {
+    "assist": "claude-sonnet",
+    "classify": "claude-sonnet",
+    "draft": "claude-opus",
+    "extract": "claude-sonnet",
+    "judge": "google-a"
+   },
+   "pairs": {},
+   "seeds": {},
+   "versions": {
+    "catalog": 2,
+    "engine": 3,
+    "prompts": 2
+   }
+  }
+ ]
+}

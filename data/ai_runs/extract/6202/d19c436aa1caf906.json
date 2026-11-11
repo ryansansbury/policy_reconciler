@@ -1,0 +1,167 @@
+{
+ "step": "extract",
+ "tag": "6202",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "dcc761e46c6ec579c01b9dfd540df3c2fa4bba3b6b5ec777aa2cf9c9c62aa411",
+ "input": [
+  {
+   "clause": "POL-FEE-01@v3/s5/c1",
+   "text": "Exceptions to this policy need written approval from the Retail Banking Operations manager and are reviewed each quarter.",
+   "heading": "Exceptions",
+   "document": {
+    "title": "Service Fee Waiver Policy",
+    "type": "policy",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "POL-FEE-01@v3/s6/c1",
+   "text": "Branch managers make sure their teams follow this policy, and Retail Banking Operations answers questions about it.",
+   "heading": "Roles and responsibilities",
+   "document": {
+    "title": "Service Fee Waiver Policy",
+    "type": "policy",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "POL-FEE-02@v6/s3/c1",
+   "text": "Each account may receive no more than two fee waivers in a calendar year.",
+   "heading": "Policy statements",
+   "document": {
+    "title": "Fee Refund Policy",
+    "type": "policy",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "POL-FEE-02@v6/s5/c1",
+   "text": "Exceptions to this policy need written approval from the Retail Banking Operations manager and are reviewed each quarter.",
+   "heading": "Exceptions",
+   "document": {
+    "title": "Fee Refund Policy",
+    "type": "policy",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "POL-FEE-02@v6/s6/c1",
+   "text": "Branch managers make sure their teams follow this policy, and Retail Banking Operations answers questions about it.",
+   "heading": "Roles and responsibilities",
+   "document": {
+    "title": "Fee Refund Policy",
+    "type": "policy",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "POL-HLD-01@v5/s3/c1",
+   "text": "Checks deposited to a new account may be held for up to 7 business days, or up to 9 business days for deposits above the large deposit threshold.",
+   "heading": "Policy statements",
+   "document": {
+    "title": "Funds Availability Policy",
+    "type": "policy",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "POL-HLD-01@v5/s4/c1",
+   "text": "Funds from deposited checks are available within 2 business days unless a longer hold applies.",
+   "heading": "Additional requirements",
+   "document": {
+    "title": "Funds Availability Policy",
+    "type": "policy",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "POL-HLD-01@v5/s5/c1",
+   "text": "Exceptions to this policy need written approval from the Deposit Operations manager and are reviewed each quarter.",
+   "heading": "Exceptions",
+   "document": {
+    "title": "Funds Availability Policy",
+    "type": "policy",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "POL-HLD-01@v5/s6/c1",
+   "text": "Branch managers make sure their teams follow this policy, and Deposit Operations answers questions about it.",
+   "heading": "Roles and responsibilities",
+   "document": {
+    "title": "Funds Availability Policy",
+    "type": "policy",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "POL-LND-01@v2/s6/c1",
+   "text": "Branch managers make sure their teams follow this policy, and Lending answers questions about it.",
+   "heading": "Roles and responsibilities",
+   "document": {
+    "title": "Loan Pricing Exception Policy",
+    "type": "policy",
+    "applies_to": "All branches. All business lines."
+   }
+  }
+ ],
+ "input_hash": "6a1d0e72ff9cb2b6b202347206007f0f60fd413190d0950a64e840b40b171488",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [\n{\"clause\": \"POL-FEE-01@v3/s5/c1\", \"atoms\": []},\n{\"clause\": \"POL-FEE-01@v3/s6/c1\", \"atoms\": []},\n{\"clause\": \"POL-FEE-02@v6/s3/c1\", \"atoms\": [\n{\"attribute\": \"fee_waivers_per_year\", \"value\": {\"type\": \"count\", \"n\": 2}, \"quote\": \"two\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}\n]},\n{\"clause\": \"POL-FEE-02@v6/s5/c1\", \"atoms\": []},\n{\"clause\": \"POL-FEE-02@v6/s6/c1\", \"atoms\": []},\n{\"clause\": \"POL-HLD-01@v5/s3/c1\", \"atoms\": [\n{\"attribute\": \"hold_new_account\", \"value\": {\"type\": \"duration\", \"n\": 7, \"unit\": \"business_days\"}, \"quote\": \"7 business days\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": \"or up to 9 business days for deposits above the large deposit threshold\"}\n]},\n{\"clause\": \"POL-HLD-01@v5/s4/c1\", \"atoms\": [\n{\"attribute\": \"hold_standard\", \"value\": {\"type\": \"duration\", \"n\": 2, \"unit\": \"business_days\"}, \"quote\": \"2 business days\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": \"unless a longer hold applies\"}\n]},\n{\"clause\": \"POL-HLD-01@v5/s5/c1\", \"atoms\": []},\n{\"clause\": \"POL-HLD-01@v5/s6/c1\", \"atoms\": []},\n{\"clause\": \"POL-LND-01@v2/s6/c1\", \"atoms\": []}\n]}",
+   "problems": [],
+   "meta": {
+    "ms": 7366,
+    "api_ms": 7137,
+    "input_tokens": 9014,
+    "output_tokens": 1119,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 6330,
+     "cache_read_input_tokens": 2682,
+     "output_tokens": 1119,
+     "output_tokens_details": {
+      "thinking_tokens": 511
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 6330,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 1119,
+       "cache_read_input_tokens": 2682,
+       "cache_creation_input_tokens": 6330,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 6330
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.0367822,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T04:10:51+00:00"
+}

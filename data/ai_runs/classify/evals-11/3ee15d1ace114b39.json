@@ -1,0 +1,307 @@
+{
+ "step": "classify",
+ "tag": "evals-11",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "2c908358fde9f0f4a792753579a6cfaa33476e41c4b0f235744675d8e8283a19",
+ "input": [
+  {
+   "pair": "pair-83a0d944bd",
+   "rule": null,
+   "attribute": null,
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-BOP-01@v3/s3/c3",
+    "text": "Lock the doors and set the alarm after the last customer leaves.",
+    "heading": "Steps",
+    "document": {
+     "title": "Opening the Branch Each Morning",
+     "type": "procedure",
+     "version": 3,
+     "effective": "2025-10-12",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "JA-BOP-02@v2/s3/c1",
+    "text": "Lock the doors and set the alarm after the last client leaves.",
+    "heading": "Steps to follow",
+    "document": {
+     "title": "Closing Checklist",
+     "type": "job_aid",
+     "version": 2,
+     "effective": "2025-05-25",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-a9d845364e",
+   "rule": "Teller drawer limit",
+   "attribute": "cash_drawer_limit",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "BUL-CSH-01@v3/s1/c2",
+    "text": "A teller drawer may not hold more than $15,000 at any time.",
+    "heading": "What branches need to know",
+    "document": {
+     "title": "Branch Bulletin 2025-13: Teller drawer cash limit",
+     "type": "bulletin",
+     "version": 3,
+     "effective": "2025-09-04",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "BUL-CSH-01@v2/s1/c2",
+    "text": "A teller drawer may not hold more than $10,000 at any time.",
+    "heading": "What branches need to know",
+    "document": {
+     "title": "Branch Bulletin 2025-13: Teller drawer cash limit",
+     "type": "bulletin",
+     "version": 2,
+     "effective": "2024-05-04",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-c990a48b27",
+   "rule": "Overdraft amount with no fee",
+   "attribute": "od_de_minimis",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "JA-ODR-01@v3/s1/c2",
+    "text": "Overdraft amount with no fee | $10",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Overdraft Quick Reference",
+     "type": "job_aid",
+     "version": 3,
+     "effective": "2026-02-10",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "JA-ODR-01@v2/s1/c2",
+    "text": "Overdraft amount with no fee | $25",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Overdraft Quick Reference",
+     "type": "job_aid",
+     "version": 2,
+     "effective": "2024-09-17",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-0da94ea069",
+   "rule": "Wire callback threshold",
+   "attribute": "wire_callback",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-WIR-06@v2/s3/c2",
+    "text": "Call the customer back at a phone number already on file before releasing any outgoing wire of $10,000 or more.",
+    "heading": "Steps",
+    "document": {
+     "title": "Recalling or Cancelling a Wire",
+     "type": "procedure",
+     "version": 2,
+     "effective": "2025-08-13",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "PRO-WIR-06@v1/s3/c2",
+    "text": "Call the customer back at a phone number already on file before releasing any outgoing wire of $5,000 or more.",
+    "heading": "Steps",
+    "document": {
+     "title": "Recalling or Cancelling a Wire",
+     "type": "procedure",
+     "version": 1,
+     "effective": "2024-07-09",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-4ed2313c2b",
+   "rule": "Large deposit hold threshold",
+   "attribute": "hold_large_threshold",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "JA-HLD-02@v4/s3/c2",
+    "text": "An extended hold may be placed on the part of a day's check deposits above $6,000.",
+    "heading": "Steps to follow",
+    "document": {
+     "title": "Check Hold Desk Card",
+     "type": "job_aid",
+     "version": 4,
+     "effective": "2025-09-09",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "JA-HLD-02@v3/s3/c2",
+    "text": "An extended hold may be placed on the part of a day's check deposits above $5,000.",
+    "heading": "Steps to follow",
+    "document": {
+     "title": "Check Hold Desk Card",
+     "type": "job_aid",
+     "version": 3,
+     "effective": "2024-05-14",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-81f985e290",
+   "rule": "Documenting pricing exceptions",
+   "attribute": "lend_exception_doc",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-LND-03@v3/s3/c4",
+    "text": "Record the reason and the approver for every pricing exception in the loan file.",
+    "heading": "Steps",
+    "document": {
+     "title": "Documenting Pricing Exceptions",
+     "type": "procedure",
+     "version": 3,
+     "effective": "2026-04-10",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "PRO-LND-03@v2/s3/c4",
+    "text": "Pricing exceptions may be documented in the loan file after closing if time is short.",
+    "heading": "Steps",
+    "document": {
+     "title": "Documenting Pricing Exceptions",
+     "type": "procedure",
+     "version": 2,
+     "effective": "2025-02-12",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-74ce3543cf",
+   "rule": "Large-cash review threshold",
+   "attribute": "cash_review_threshold",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-CSH-02@v3/s3/c8",
+    "text": "Log any cash deposit or withdrawal of $7,500 or more for large-cash review.",
+    "heading": "Steps",
+    "document": {
+     "title": "Selling Excess Cash to the Vault",
+     "type": "procedure",
+     "version": 3,
+     "effective": "2025-12-25",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "PRO-CSH-02@v2/s3/c8",
+    "text": "Log any cash deposit or withdrawal of $5,000 or more for large-cash review.",
+    "heading": "Steps",
+    "document": {
+     "title": "Selling Excess Cash to the Vault",
+     "type": "procedure",
+     "version": 2,
+     "effective": "2025-03-10",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-6c00785b39",
+   "rule": "Outgoing wire cutoff",
+   "attribute": "wire_cutoff",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "JA-WIR-01@v4/s1/c3",
+    "text": "Outgoing wire cutoff (consumer and small business) | 3:00 PM Central",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Wire Desk Quick Reference",
+     "type": "job_aid",
+     "version": 4,
+     "effective": "2026-02-23",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "JA-WIR-01@v3/s1/c3",
+    "text": "Outgoing wire cutoff (consumer and small business) | 2:00 PM Central",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Wire Desk Quick Reference",
+     "type": "job_aid",
+     "version": 3,
+     "effective": "2024-12-25",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  }
+ ],
+ "input_hash": "9f90f34403e0171484afbb07d19a1db768eb92a1da6b6a1c776a91883e930c2c",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [{\"pair\": \"pair-83a0d944bd\", \"label\": \"consistent\", \"quote_a\": \"Lock the doors and set the alarm after the last customer leaves.\", \"quote_b\": \"Lock the doors and set the alarm after the last client leaves.\", \"rationale\": \"Both clauses tell staff to lock the doors and set the alarm after the last person leaves. Only one word differs, and the rule and value are the same.\"}, {\"pair\": \"pair-a9d845364e\", \"label\": \"superseded\", \"quote_a\": \"A teller drawer may not hold more than $15,000 at any time.\", \"quote_b\": \"A teller drawer may not hold more than $10,000 at any time.\", \"rationale\": \"These are version 3 and version 2 of the same bulletin. The newer version replaces the older one and raises the limit from $10,000 to $15,000.\"}, {\"pair\": \"pair-c990a48b27\", \"label\": \"superseded\", \"quote_a\": \"Overdraft amount with no fee | $10\", \"quote_b\": \"Overdraft amount with no fee | $25\", \"rationale\": \"These are version 3 and version 2 of the same job aid. The newer version replaces the older one and lowers the no fee amount from $25 to $10.\"}, {\"pair\": \"pair-0da94ea069\", \"label\": \"superseded\", \"quote_a\": \"outgoing wire of $10,000 or more\", \"quote_b\": \"outgoing wire of $5,000 or more\", \"rationale\": \"These are version 2 and version 1 of the same procedure. The newer version replaces the older one and raises the callback threshold from $5,000 to $10,000.\"}, {\"pair\": \"pair-4ed2313c2b\", \"label\": \"superseded\", \"quote_a\": \"above $6,000\", \"quote_b\": \"above $5,000\", \"rationale\": \"These are version 4 and version 3 of the same job aid. The newer version replaces the older one and raises the extended hold threshold from $5,000 to $6,000.\"}, {\"pair\": \"pair-81f985e290\", \"label\": \"superseded\", \"quote_a\": \"Record the reason and the approver for every pricing exception in the loan file.\", \"quote_b\": \"Pricing exceptions may be documented in the loan file after closing if time is short.\", \"rationale\": \"These are version 3 and version 2 of the same procedure. The newer version replaces the older one and no longer allows documentation to wait until after closing.\"}, {\"pair\": \"pair-74ce3543cf\", \"label\": \"superseded\", \"quote_a\": \"cash deposit or withdrawal of $7,500 or more\", \"quote_b\": \"cash deposit or withdrawal of $5,000 or more\", \"rationale\": \"These are version 3 and version 2 of the same procedure. The newer version replaces the older one and raises the review threshold from $5,000 to $7,500.\"}, {\"pair\": \"pair-6c00785b39\", \"label\": \"superseded\", \"quote_a\": \"Outgoing wire cutoff (consumer and small business) | 3:00 PM Central\", \"quote_b\": \"Outgoing wire cutoff (consumer and small business) | 2:00 PM Central\", \"rationale\": \"These are version 4 and version 3 of the same job aid. The newer version replaces the older one and moves the cutoff from 2:00 PM to 3:00 PM Central.\"}]}",
+   "problems": [],
+   "meta": {
+    "ms": 12526,
+    "api_ms": 12332,
+    "input_tokens": 9000,
+    "output_tokens": 2084,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 8157,
+     "cache_read_input_tokens": 841,
+     "output_tokens": 2084,
+     "output_tokens_details": {
+      "thinking_tokens": 1010
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 8157,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 2084,
+       "cache_read_input_tokens": 841,
+       "cache_creation_input_tokens": 8157,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 8157
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.053556099999999995,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T03:55:41+00:00"
+}

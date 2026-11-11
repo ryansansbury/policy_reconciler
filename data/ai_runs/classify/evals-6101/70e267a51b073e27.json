@@ -1,0 +1,364 @@
+{
+ "step": "classify",
+ "tag": "evals-6101",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "2c908358fde9f0f4a792753579a6cfaa33476e41c4b0f235744675d8e8283a19",
+ "input": [
+  {
+   "pair": "pair-41ad21e7f8",
+   "rule": "Forms of identification per signer",
+   "attribute": "ao_id_count",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-AOP-01@v5/s3/c1",
+    "text": "Collect two forms of identification from each signer before opening the account, or one form plus a verified bank reference when the branch manager approves.",
+    "heading": "Policy statements",
+    "document": {
+     "title": "Deposit Account Opening Policy",
+     "type": "policy",
+     "version": 5,
+     "effective": "2026-05-17",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "PRO-AOP-04@v4/s3/c6",
+    "text": "Every signer must present one separate identification documents before the account is opened.",
+    "heading": "Steps",
+    "document": {
+     "title": "Verifying Customer Identification",
+     "type": "procedure",
+     "version": 4,
+     "effective": "2024-12-10",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-2222367be8",
+   "rule": "Branch manager fee waiver limit",
+   "attribute": "fee_waiver_bm",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-FEE-01@v3/s4/c2",
+    "text": "The most a branch manager can waive for one account in a calendar year is $50.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Service Fee Waiver Policy",
+     "type": "policy",
+     "version": 3,
+     "effective": "2024-08-03",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "PRO-FEE-05@v3/s3/c5",
+    "text": "A branch manager may waive up to one hundred dollars in fees for a single account each year.",
+    "heading": "Steps",
+    "document": {
+     "title": "Documenting Fee Waivers in Account Notes",
+     "type": "procedure",
+     "version": 3,
+     "effective": "2025-11-11",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-d275606915",
+   "rule": "Closed account record retention",
+   "attribute": "records_retention",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-REC-01@v4/s4/c1",
+    "text": "Account records are kept for 7 years after the account closes.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Records Retention Policy",
+     "type": "policy",
+     "version": 4,
+     "effective": "2025-04-11",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "BUL-REC-01@v2/s1/c2",
+    "text": "Retain closed account records for 10 years from the closing date.",
+    "heading": "What branches need to know",
+    "document": {
+     "title": "Branch Bulletin 2025-26: Retention for closed account records",
+     "type": "bulletin",
+     "version": 2,
+     "effective": "2025-10-29",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-b3a74f08cd",
+   "rule": "Wire second approval threshold",
+   "attribute": "wire_second_approval",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-WIR-01@v2/s4/c2",
+    "text": "An operations manager must give a second approval for any outgoing wire above $50,000.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Wire Transfer Policy",
+     "type": "policy",
+     "version": 2,
+     "effective": "2026-08-02",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "PRO-WIR-02@v3/s3/c8",
+    "text": "Outgoing wires over $100,000 need a second approval from an operations manager.",
+    "heading": "Steps",
+    "document": {
+     "title": "Processing Outgoing Commercial Wires",
+     "type": "procedure",
+     "version": 3,
+     "effective": "2025-07-09",
+     "applies_to": "All branches. Commercial accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-b09231a0f1",
+   "rule": "New account period",
+   "attribute": "ao_new_account_window",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-AOP-01@v5/s4/c1",
+    "text": "An account is treated as a new account for the first 30 days after it opens.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Deposit Account Opening Policy",
+     "type": "policy",
+     "version": 5,
+     "effective": "2026-05-17",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "FAQ-AOP-01@v4/s1/c1",
+    "text": "Accounts open fewer than 60 days are new accounts for hold and limit purposes.",
+    "heading": "How long is an account considered a new account?",
+    "document": {
+     "title": "Account Opening FAQ",
+     "type": "faq",
+     "version": 4,
+     "effective": "2026-02-28",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-51a3cfb7ea",
+   "rule": "Overdraft amount with no fee",
+   "attribute": "od_de_minimis",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-ODR-01@v2/s4/c2",
+    "text": "No overdraft fee is charged when the account is overdrawn by $10 or less at the end of the day.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Overdraft Policy",
+     "type": "policy",
+     "version": 2,
+     "effective": "2025-11-24",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "FAQ-ODR-01@v4/s2/c1",
+    "text": "Accounts overdrawn by no more than $5 at the end of the day are not charged an overdraft fee.",
+    "heading": "How much can an account be overdrawn without a fee?",
+    "document": {
+     "title": "Overdraft FAQ",
+     "type": "faq",
+     "version": 4,
+     "effective": "2026-02-16",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-813e261f0e",
+   "rule": "New account period",
+   "attribute": "ao_new_account_window",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-AOP-01@v5/s4/c1",
+    "text": "An account is treated as a new account for the first 30 days after it opens.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Deposit Account Opening Policy",
+     "type": "policy",
+     "version": 5,
+     "effective": "2026-05-17",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "BUL-AOP-01@v4/s1/c2",
+    "text": "Accounts open fewer than 90 days are new accounts for hold and limit purposes.",
+    "heading": "What branches need to know",
+    "document": {
+     "title": "Branch Bulletin 2025-34: How long an account counts as new",
+     "type": "bulletin",
+     "version": 4,
+     "effective": "2025-11-26",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-6282b4ede2",
+   "rule": "Standard check hold",
+   "attribute": "hold_standard",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-HLD-01@v3/s4/c1",
+    "text": "Funds from deposited checks are available within 2 business days unless a longer hold applies.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Funds Availability Policy",
+     "type": "policy",
+     "version": 3,
+     "effective": "2025-02-25",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "FAQ-HLD-01@v3/s1/c1",
+    "text": "Place a standard hold of 3 business days on deposited checks that don't qualify for next-day availability.",
+    "heading": "How long is the standard hold on a deposited check?",
+    "document": {
+     "title": "Funds Availability FAQ",
+     "type": "faq",
+     "version": 3,
+     "effective": "2026-03-31",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  }
+ ],
+ "input_hash": "231f53cf8febd996a0d6cb9c4bd57992e1b4c87908dd8ad58247ec8e90cfce65",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\":[{\"pair\":\"pair-41ad21e7f8\",\"label\":\"conflict\",\"quote_a\":\"Collect two forms of identification from each signer\",\"quote_b\":\"must present one separate identification documents\",\"rationale\":\"Clause a requires two forms of identification from each signer while clause b asks for only one document. Staff following clause b would accept an account opening that clause a would refuse.\"},{\"pair\":\"pair-2222367be8\",\"label\":\"conflict\",\"quote_a\":\"The most a branch manager can waive for one account in a calendar year is $50.\",\"quote_b\":\"A branch manager may waive up to one hundred dollars in fees for a single account each year.\",\"rationale\":\"The two clauses cap the yearly branch manager waiver at $50 and at one hundred dollars for the same accounts. A waiver between those amounts is allowed by one clause and not the other, and the policy is the clause to keep.\"},{\"pair\":\"pair-d275606915\",\"label\":\"conflict\",\"quote_a\":\"Account records are kept for 7 years after the account closes.\",\"quote_b\":\"Retain closed account records for 10 years from the closing date.\",\"rationale\":\"Both clauses cover all branches and all business lines but set retention at 7 years and 10 years. Staff could not satisfy both, and the policy outranks the bulletin.\"},{\"pair\":\"pair-b3a74f08cd\",\"label\":\"variation\",\"quote_a\":\"for any outgoing wire above $50,000\",\"quote_b\":\"Outgoing wires over $100,000 need a second approval from an operations manager.\",\"rationale\":\"Clause b comes from a procedure written only for commercial accounts and sets its own threshold of $100,000 for that line. Clause a covers all business lines at $50,000, so the commercial threshold reads as an intended narrower scope.\"},{\"pair\":\"pair-b09231a0f1\",\"label\":\"conflict\",\"quote_a\":\"for the first 30 days after it opens\",\"quote_b\":\"Accounts open fewer than 60 days are new accounts\",\"rationale\":\"Both clauses apply to the same accounts but treat them as new for 30 days in one and 60 days in the other. An account open 45 days is new under clause b and not under clause a, and the policy outranks the FAQ.\"},{\"pair\":\"pair-51a3cfb7ea\",\"label\":\"conflict\",\"quote_a\":\"overdrawn by $10 or less at the end of the day\",\"quote_b\":\"overdrawn by no more than $5 at the end of the day are not charged an overdraft fee\",\"rationale\":\"The no fee threshold is $10 in the policy and $5 in the FAQ for the same accounts. An account overdrawn by $8 goes uncharged under one clause and charged under the other, and the policy outranks the FAQ.\"},{\"pair\":\"pair-813e261f0e\",\"label\":\"conflict\",\"quote_a\":\"for the first 30 days after it opens\",\"quote_b\":\"Accounts open fewer than 90 days are new accounts\",\"rationale\":\"Both clauses apply to the same accounts but set the new account period at 30 days and 90 days. An account open 60 days is new under clause b and not under clause a, and the policy outranks the bulletin.\"},{\"pair\":\"pair-6282b4ede2\",\"label\":\"conflict\",\"quote_a\":\"available within 2 business days unless a longer hold applies\",\"quote_b\":\"Place a standard hold of 3 business days on deposited checks\",\"rationale\":\"The policy makes check funds available within 2 business days while the FAQ tells staff to hold them for 3 business days. The FAQ does not point to any longer hold that the policy's exception would cover, so staff following it would act against the policy.\"}]}",
+   "problems": [
+    "pair-b09231a0f1: the rationale uses numbers that aren't in either clause or its document: 45",
+    "pair-51a3cfb7ea: the rationale uses numbers that aren't in either clause or its document: 8",
+    "pair-813e261f0e: the rationale uses numbers that aren't in either clause or its document: 60"
+   ],
+   "meta": {
+    "ms": 16554,
+    "api_ms": 16410,
+    "input_tokens": 9078,
+    "output_tokens": 2387,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 9076,
+     "cache_read_input_tokens": 0,
+     "output_tokens": 2387,
+     "output_tokens_details": {
+      "thinking_tokens": 1218
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 9076,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 2387,
+       "cache_read_input_tokens": 0,
+       "cache_creation_input_tokens": 9076,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 9076
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.060178,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  },
+  {
+   "reply": "{\"results\": [{\"pair\": \"pair-b09231a0f1\", \"label\": \"conflict\", \"quote_a\": \"treated as a new account for the first 30 days after it opens\", \"quote_b\": \"Accounts open fewer than 60 days are new accounts\", \"rationale\": \"The policy sets the new account period at 30 days and the FAQ sets it at 60 days for the same accounts. Staff applying one would treat an account differently from staff applying the other. The policy outranks the FAQ, so the policy clause is the one to keep.\"}, {\"pair\": \"pair-51a3cfb7ea\", \"label\": \"conflict\", \"quote_a\": \"No overdraft fee is charged when the account is overdrawn by $10 or less at the end of the day.\", \"quote_b\": \"overdrawn by no more than $5 at the end of the day\", \"rationale\": \"The policy waives the fee up to $10 and the FAQ waives it only up to $5 for the same accounts. An account overdrawn by more than $5 and up to $10 would be charged under one clause and not under the other. The policy outranks the FAQ, so the policy clause is the one to keep.\"}, {\"pair\": \"pair-813e261f0e\", \"label\": \"conflict\", \"quote_a\": \"treated as a new account for the first 30 days after it opens\", \"quote_b\": \"Accounts open fewer than 90 days are new accounts\", \"rationale\": \"The policy sets the new account period at 30 days and the bulletin sets it at 90 days for the same accounts. Staff would apply hold and limit rules for different lengths of time depending on which clause they follow. The policy outranks the bulletin, so the policy clause is the one to keep.\"}]}",
+   "problems": [],
+   "meta": {
+    "ms": 8843,
+    "api_ms": 8729,
+    "input_tokens": 7147,
+    "output_tokens": 1193,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 6304,
+     "cache_read_input_tokens": 841,
+     "output_tokens": 1193,
+     "output_tokens_details": {
+      "thinking_tokens": 653
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 6304,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 1193,
+       "cache_read_input_tokens": 841,
+       "cache_creation_input_tokens": 6304,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 6304
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.0372341,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   },
+   "items": [
+    "pair-b09231a0f1",
+    "pair-51a3cfb7ea",
+    "pair-813e261f0e"
+   ]
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T05:28:10+00:00"
+}

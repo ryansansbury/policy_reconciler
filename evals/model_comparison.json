@@ -1,0 +1,1420 @@
+{
+ "after": {
+  "from": "2027-01-01",
+  "routes": {
+   "Anthropic": {
+    "assist": {
+     "best": 1.0,
+     "fallbacks": [],
+     "model": "claude-haiku",
+     "reason": "cheapest",
+     "rejected": {
+      "claude-opus": "assist_below",
+      "claude-sonnet": "assist_below"
+     }
+    },
+    "classify": {
+     "best": 0.984,
+     "fallbacks": [
+      "claude-opus"
+     ],
+     "model": "claude-sonnet",
+     "reason": "cheapest",
+     "rejected": {
+      "claude-haiku": "classify_below"
+     }
+    },
+    "draft": {
+     "best": 1.0,
+     "fallbacks": [
+      "claude-sonnet"
+     ],
+     "model": "claude-opus",
+     "reason": "hold",
+     "rejected": {
+      "claude-haiku": "draft_below"
+     },
+     "unheld": "claude-sonnet"
+    },
+    "extract": {
+     "best": 0.989,
+     "fallbacks": [
+      "claude-opus"
+     ],
+     "model": "claude-sonnet",
+     "reason": "hold",
+     "rejected": {
+      "claude-haiku": "extract_below"
+     },
+     "unheld": "claude-sonnet"
+    },
+    "judge": {
+     "fallbacks": [],
+     "model": null,
+     "reason": "same_vendor",
+     "rejected": {}
+    }
+   },
+   "Anthropic + Google": {
+    "assist": {
+     "best": 1.0,
+     "fallbacks": [],
+     "model": "claude-haiku",
+     "reason": "cheapest",
+     "rejected": {
+      "claude-opus": "assist_below",
+      "claude-sonnet": "assist_below",
+      "google-a": "assist_below",
+      "google-b": "assist_below"
+     }
+    },
+    "classify": {
+     "best": 0.984,
+     "fallbacks": [
+      "claude-opus",
+      "google-b"
+     ],
+     "model": "claude-sonnet",
+     "reason": "cheapest",
+     "rejected": {
+      "claude-haiku": "classify_below",
+      "google-a": "classify_below"
+     }
+    },
+    "draft": {
+     "best": 1.0,
+     "fallbacks": [
+      "claude-sonnet",
+      "google-b",
+      "google-a"
+     ],
+     "model": "claude-opus",
+     "reason": "hold",
+     "rejected": {
+      "claude-haiku": "draft_below"
+     },
+     "unheld": "claude-sonnet"
+    },
+    "extract": {
+     "best": 1.0,
+     "fallbacks": [
+      "google-b"
+     ],
+     "model": "claude-sonnet",
+     "reason": "hold",
+     "rejected": {
+      "claude-haiku": "extract_below",
+      "claude-opus": "extract_below",
+      "google-a": "extract_below"
+     },
+     "unheld": "google-b"
+    },
+    "judge": {
+     "best": 1.0,
+     "fallbacks": [
+      "google-a"
+     ],
+     "model": "google-b",
+     "reason": "cheapest",
+     "rejected": {}
+    }
+   },
+   "Anthropic + Google + OpenAI": {
+    "assist": {
+     "best": 1.0,
+     "fallbacks": [],
+     "model": "claude-haiku",
+     "reason": "cheapest",
+     "rejected": {
+      "claude-opus": "assist_below",
+      "claude-sonnet": "assist_below",
+      "google-a": "assist_below",
+      "google-b": "assist_below",
+      "openai-a": "assist_below",
+      "openai-b": "assist_below"
+     }
+    },
+    "classify": {
+     "best": 0.984,
+     "fallbacks": [
+      "claude-opus",
+      "google-b",
+      "openai-a"
+     ],
+     "model": "claude-sonnet",
+     "reason": "cheapest",
+     "rejected": {
+      "claude-haiku": "classify_below",
+      "google-a": "classify_below",
+      "openai-b": "classify_below"
+     }
+    },
+    "draft": {
+     "best": 1.0,
+     "fallbacks": [
+      "claude-sonnet",
+      "google-b",
+      "openai-a",
+      "google-a"
+     ],
+     "model": "claude-opus",
+     "reason": "hold",
+     "rejected": {
+      "claude-haiku": "draft_below",
+      "openai-b": "draft_below"
+     },
+     "unheld": "claude-sonnet"
+    },
+    "extract": {
+     "best": 1.0,
+     "fallbacks": [
+      "google-b"
+     ],
+     "model": "claude-sonnet",
+     "reason": "hold",
+     "rejected": {
+      "claude-haiku": "extract_below",
+      "claude-opus": "extract_below",
+      "google-a": "extract_below",
+      "openai-a": "extract_below",
+      "openai-b": "extract_below"
+     },
+     "unheld": "google-b"
+    },
+    "judge": {
+     "best": 1.0,
+     "fallbacks": [
+      "google-a"
+     ],
+     "model": "google-b",
+     "reason": "cheapest",
+     "rejected": {
+      "openai-a": "judge_untrusted",
+      "openai-b": "judge_untrusted"
+     }
+    }
+   },
+   "Anthropic + OpenAI": {
+    "assist": {
+     "best": 1.0,
+     "fallbacks": [],
+     "model": "claude-haiku",
+     "reason": "cheapest",
+     "rejected": {
+      "claude-opus": "assist_below",
+      "claude-sonnet": "assist_below",
+      "openai-a": "assist_below",
+      "openai-b": "assist_below"
+     }
+    },
+    "classify": {
+     "best": 0.984,
+     "fallbacks": [
+      "claude-opus",
+      "openai-a"
+     ],
+     "model": "claude-sonnet",
+     "reason": "cheapest",
+     "rejected": {
+      "claude-haiku": "classify_below",
+      "openai-b": "classify_below"
+     }
+    },
+    "draft": {
+     "best": 1.0,
+     "fallbacks": [
+      "claude-sonnet",
+      "openai-a"
+     ],
+     "model": "claude-opus",
+     "reason": "hold",
+     "rejected": {
+      "claude-haiku": "draft_below",
+      "openai-b": "draft_below"
+     },
+     "unheld": "claude-sonnet"
+    },
+    "extract": {
+     "best": 0.989,
+     "fallbacks": [
+      "claude-opus"
+     ],
+     "model": "claude-sonnet",
+     "reason": "hold",
+     "rejected": {
+      "claude-haiku": "extract_below",
+      "openai-a": "extract_below",
+      "openai-b": "extract_below"
+     },
+     "unheld": "claude-sonnet"
+    },
+    "judge": {
+     "best": 0.963,
+     "fallbacks": [],
+     "model": null,
+     "reason": "none_clears",
+     "rejected": {
+      "openai-a": "judge_untrusted",
+      "openai-b": "judge_untrusted"
+     }
+    }
+   },
+   "Google": {
+    "assist": {
+     "best": 0.875,
+     "fallbacks": [
+      "google-a"
+     ],
+     "model": "google-b",
+     "reason": "cheapest",
+     "rejected": {}
+    },
+    "classify": {
+     "best": 0.984,
+     "fallbacks": [],
+     "model": "google-b",
+     "reason": "cheapest",
+     "rejected": {
+      "google-a": "classify_below"
+     }
+    },
+    "draft": {
+     "best": 1.0,
+     "fallbacks": [
+      "google-a"
+     ],
+     "model": "google-b",
+     "reason": "cheapest",
+     "rejected": {}
+    },
+    "extract": {
+     "best": 1.0,
+     "fallbacks": [],
+     "model": "google-b",
+     "reason": "cheapest",
+     "rejected": {
+      "google-a": "extract_below"
+     }
+    },
+    "judge": {
+     "fallbacks": [],
+     "model": null,
+     "reason": "same_vendor",
+     "rejected": {}
+    }
+   },
+   "Google + OpenAI": {
+    "assist": {
+     "best": 0.875,
+     "fallbacks": [
+      "google-a"
+     ],
+     "model": "google-b",
+     "reason": "cheapest",
+     "rejected": {
+      "openai-a": "assist_below",
+      "openai-b": "assist_below"
+     }
+    },
+    "classify": {
+     "best": 0.984,
+     "fallbacks": [
+      "openai-a"
+     ],
+     "model": "google-b",
+     "reason": "cheapest",
+     "rejected": {
+      "google-a": "classify_below",
+      "openai-b": "classify_below"
+     }
+    },
+    "draft": {
+     "best": 1.0,
+     "fallbacks": [
+      "openai-a",
+      "google-a"
+     ],
+     "model": "google-b",
+     "reason": "cheapest",
+     "rejected": {
+      "openai-b": "draft_below"
+     }
+    },
+    "extract": {
+     "best": 1.0,
+     "fallbacks": [],
+     "model": "google-b",
+     "reason": "cheapest",
+     "rejected": {
+      "google-a": "extract_below",
+      "openai-a": "extract_below",
+      "openai-b": "extract_below"
+     }
+    },
+    "judge": {
+     "best": 0.963,
+     "fallbacks": [],
+     "model": null,
+     "reason": "none_clears",
+     "rejected": {
+      "openai-a": "judge_untrusted",
+      "openai-b": "judge_untrusted"
+     }
+    }
+   },
+   "OpenAI": {
+    "assist": {
+     "best": 0.75,
+     "fallbacks": [
+      "openai-a"
+     ],
+     "model": "openai-b",
+     "reason": "cheapest",
+     "rejected": {}
+    },
+    "classify": {
+     "best": 0.984,
+     "fallbacks": [],
+     "model": "openai-a",
+     "reason": "cheapest",
+     "rejected": {
+      "openai-b": "classify_below"
+     }
+    },
+    "draft": {
+     "best": 1.0,
+     "fallbacks": [],
+     "model": "openai-a",
+     "reason": "cheapest",
+     "rejected": {
+      "openai-b": "draft_below"
+     }
+    },
+    "extract": {
+     "best": 0.978,
+     "fallbacks": [],
+     "model": "openai-b",
+     "reason": "cheapest",
+     "rejected": {
+      "openai-a": "extract_below"
+     }
+    },
+    "judge": {
+     "fallbacks": [],
+     "model": null,
+     "reason": "same_vendor",
+     "rejected": {}
+    }
+   }
+  }
+ },
+ "prices_checked": "2026-10-30",
+ "pricing": {
+  "client_context_fit": {
+   "Google": {
+    "intercept": 4972,
+    "slope": 1.254,
+    "worst_residual": 224
+   },
+   "OpenAI": {
+    "intercept": 4898,
+    "slope": 1.452,
+    "worst_residual": 154
+   }
+  },
+  "client_context_tokens": 4936,
+  "note": "Every model is priced at list price on its own tokens. The client context each recorded Claude call carries is left out of Claude's input. reported_cost_per_item is what each backend reported."
+ },
+ "routes": {
+  "Anthropic": {
+   "assist": {
+    "best": 1.0,
+    "fallbacks": [],
+    "model": "claude-haiku",
+    "reason": "cheapest",
+    "rejected": {
+     "claude-opus": "assist_below",
+     "claude-sonnet": "assist_below"
+    }
+   },
+   "classify": {
+    "best": 0.984,
+    "fallbacks": [
+     "claude-opus"
+    ],
+    "model": "claude-sonnet",
+    "reason": "cheapest",
+    "rejected": {
+     "claude-haiku": "classify_below"
+    }
+   },
+   "draft": {
+    "best": 1.0,
+    "fallbacks": [
+     "claude-sonnet"
+    ],
+    "model": "claude-opus",
+    "reason": "hold",
+    "rejected": {
+     "claude-haiku": "draft_below"
+    },
+    "unheld": "claude-sonnet"
+   },
+   "extract": {
+    "best": 0.989,
+    "fallbacks": [
+     "claude-opus"
+    ],
+    "model": "claude-sonnet",
+    "reason": "hold",
+    "rejected": {
+     "claude-haiku": "extract_below"
+    },
+    "unheld": "claude-sonnet"
+   },
+   "judge": {
+    "fallbacks": [],
+    "model": null,
+    "reason": "same_vendor",
+    "rejected": {}
+   }
+  },
+  "Anthropic + Google": {
+   "assist": {
+    "best": 1.0,
+    "fallbacks": [],
+    "model": "claude-haiku",
+    "reason": "cheapest",
+    "rejected": {
+     "claude-opus": "assist_below",
+     "claude-sonnet": "assist_below",
+     "google-a": "assist_below",
+     "google-b": "assist_below"
+    }
+   },
+   "classify": {
+    "best": 0.984,
+    "fallbacks": [
+     "claude-sonnet",
+     "claude-opus"
+    ],
+    "model": "google-b",
+    "reason": "cheapest",
+    "rejected": {
+     "claude-haiku": "classify_below",
+     "google-a": "classify_below"
+    }
+   },
+   "draft": {
+    "best": 1.0,
+    "fallbacks": [
+     "google-b",
+     "claude-sonnet",
+     "google-a"
+    ],
+    "model": "claude-opus",
+    "reason": "hold",
+    "rejected": {
+     "claude-haiku": "draft_below"
+    },
+    "unheld": "google-b"
+   },
+   "extract": {
+    "best": 1.0,
+    "fallbacks": [
+     "google-b"
+    ],
+    "model": "claude-sonnet",
+    "reason": "hold",
+    "rejected": {
+     "claude-haiku": "extract_below",
+     "claude-opus": "extract_below",
+     "google-a": "extract_below"
+    },
+    "unheld": "google-b"
+   },
+   "judge": {
+    "best": 1.0,
+    "fallbacks": [
+     "google-a"
+    ],
+    "model": "google-b",
+    "reason": "cheapest",
+    "rejected": {}
+   }
+  },
+  "Anthropic + Google + OpenAI": {
+   "assist": {
+    "best": 1.0,
+    "fallbacks": [],
+    "model": "claude-haiku",
+    "reason": "cheapest",
+    "rejected": {
+     "claude-opus": "assist_below",
+     "claude-sonnet": "assist_below",
+     "google-a": "assist_below",
+     "google-b": "assist_below",
+     "openai-a": "assist_below",
+     "openai-b": "assist_below"
+    }
+   },
+   "classify": {
+    "best": 0.984,
+    "fallbacks": [
+     "claude-sonnet",
+     "claude-opus",
+     "openai-a"
+    ],
+    "model": "google-b",
+    "reason": "cheapest",
+    "rejected": {
+     "claude-haiku": "classify_below",
+     "google-a": "classify_below",
+     "openai-b": "classify_below"
+    }
+   },
+   "draft": {
+    "best": 1.0,
+    "fallbacks": [
+     "google-b",
+     "claude-sonnet",
+     "openai-a",
+     "google-a"
+    ],
+    "model": "claude-opus",
+    "reason": "hold",
+    "rejected": {
+     "claude-haiku": "draft_below",
+     "openai-b": "draft_below"
+    },
+    "unheld": "google-b"
+   },
+   "extract": {
+    "best": 1.0,
+    "fallbacks": [
+     "google-b"
+    ],
+    "model": "claude-sonnet",
+    "reason": "hold",
+    "rejected": {
+     "claude-haiku": "extract_below",
+     "claude-opus": "extract_below",
+     "google-a": "extract_below",
+     "openai-a": "extract_below",
+     "openai-b": "extract_below"
+    },
+    "unheld": "google-b"
+   },
+   "judge": {
+    "best": 1.0,
+    "fallbacks": [
+     "google-a"
+    ],
+    "model": "google-b",
+    "reason": "cheapest",
+    "rejected": {
+     "openai-a": "judge_untrusted",
+     "openai-b": "judge_untrusted"
+    }
+   }
+  },
+  "Anthropic + OpenAI": {
+   "assist": {
+    "best": 1.0,
+    "fallbacks": [],
+    "model": "claude-haiku",
+    "reason": "cheapest",
+    "rejected": {
+     "claude-opus": "assist_below",
+     "claude-sonnet": "assist_below",
+     "openai-a": "assist_below",
+     "openai-b": "assist_below"
+    }
+   },
+   "classify": {
+    "best": 0.984,
+    "fallbacks": [
+     "claude-opus",
+     "openai-a"
+    ],
+    "model": "claude-sonnet",
+    "reason": "cheapest",
+    "rejected": {
+     "claude-haiku": "classify_below",
+     "openai-b": "classify_below"
+    }
+   },
+   "draft": {
+    "best": 1.0,
+    "fallbacks": [
+     "claude-sonnet",
+     "openai-a"
+    ],
+    "model": "claude-opus",
+    "reason": "hold",
+    "rejected": {
+     "claude-haiku": "draft_below",
+     "openai-b": "draft_below"
+    },
+    "unheld": "claude-sonnet"
+   },
+   "extract": {
+    "best": 0.989,
+    "fallbacks": [
+     "claude-opus"
+    ],
+    "model": "claude-sonnet",
+    "reason": "hold",
+    "rejected": {
+     "claude-haiku": "extract_below",
+     "openai-a": "extract_below",
+     "openai-b": "extract_below"
+    },
+    "unheld": "claude-sonnet"
+   },
+   "judge": {
+    "best": 0.963,
+    "fallbacks": [],
+    "model": null,
+    "reason": "none_clears",
+    "rejected": {
+     "openai-a": "judge_untrusted",
+     "openai-b": "judge_untrusted"
+    }
+   }
+  },
+  "Google": {
+   "assist": {
+    "best": 0.875,
+    "fallbacks": [
+     "google-a"
+    ],
+    "model": "google-b",
+    "reason": "cheapest",
+    "rejected": {}
+   },
+   "classify": {
+    "best": 0.984,
+    "fallbacks": [],
+    "model": "google-b",
+    "reason": "cheapest",
+    "rejected": {
+     "google-a": "classify_below"
+    }
+   },
+   "draft": {
+    "best": 1.0,
+    "fallbacks": [
+     "google-a"
+    ],
+    "model": "google-b",
+    "reason": "cheapest",
+    "rejected": {}
+   },
+   "extract": {
+    "best": 1.0,
+    "fallbacks": [],
+    "model": "google-b",
+    "reason": "cheapest",
+    "rejected": {
+     "google-a": "extract_below"
+    }
+   },
+   "judge": {
+    "fallbacks": [],
+    "model": null,
+    "reason": "same_vendor",
+    "rejected": {}
+   }
+  },
+  "Google + OpenAI": {
+   "assist": {
+    "best": 0.875,
+    "fallbacks": [
+     "google-a"
+    ],
+    "model": "google-b",
+    "reason": "cheapest",
+    "rejected": {
+     "openai-a": "assist_below",
+     "openai-b": "assist_below"
+    }
+   },
+   "classify": {
+    "best": 0.984,
+    "fallbacks": [
+     "openai-a"
+    ],
+    "model": "google-b",
+    "reason": "cheapest",
+    "rejected": {
+     "google-a": "classify_below",
+     "openai-b": "classify_below"
+    }
+   },
+   "draft": {
+    "best": 1.0,
+    "fallbacks": [
+     "openai-a",
+     "google-a"
+    ],
+    "model": "google-b",
+    "reason": "cheapest",
+    "rejected": {
+     "openai-b": "draft_below"
+    }
+   },
+   "extract": {
+    "best": 1.0,
+    "fallbacks": [],
+    "model": "google-b",
+    "reason": "cheapest",
+    "rejected": {
+     "google-a": "extract_below",
+     "openai-a": "extract_below",
+     "openai-b": "extract_below"
+    }
+   },
+   "judge": {
+    "best": 0.963,
+    "fallbacks": [],
+    "model": null,
+    "reason": "none_clears",
+    "rejected": {
+     "openai-a": "judge_untrusted",
+     "openai-b": "judge_untrusted"
+    }
+   }
+  },
+  "OpenAI": {
+   "assist": {
+    "best": 0.75,
+    "fallbacks": [
+     "openai-a"
+    ],
+    "model": "openai-b",
+    "reason": "cheapest",
+    "rejected": {}
+   },
+   "classify": {
+    "best": 0.984,
+    "fallbacks": [],
+    "model": "openai-a",
+    "reason": "cheapest",
+    "rejected": {
+     "openai-b": "classify_below"
+    }
+   },
+   "draft": {
+    "best": 1.0,
+    "fallbacks": [],
+    "model": "openai-a",
+    "reason": "cheapest",
+    "rejected": {
+     "openai-b": "draft_below"
+    }
+   },
+   "extract": {
+    "best": 0.978,
+    "fallbacks": [],
+    "model": "openai-b",
+    "reason": "cheapest",
+    "rejected": {
+     "openai-a": "extract_below"
+    }
+   },
+   "judge": {
+    "fallbacks": [],
+    "model": null,
+    "reason": "same_vendor",
+    "rejected": {}
+   }
+  }
+ },
+ "seed": "6101",
+ "steps": {
+  "assist": {
+   "claude-haiku": {
+    "cost_per_item": 0.000954,
+    "held": 0,
+    "items": 10,
+    "quality": 1.0,
+    "reported_cost_per_item": 0.00208,
+    "retrieved": 8,
+    "seconds_per_item": 7.75,
+    "tokens_per_item": [
+     1336.3,
+     1639.8
+    ],
+    "vendor": "Anthropic"
+   },
+   "claude-opus": {
+    "cost_per_item": 0.016293,
+    "held": 0,
+    "items": 10,
+    "quality": 0.875,
+    "reported_cost_per_item": 0.06108,
+    "retrieved": 8,
+    "seconds_per_item": 4.89,
+    "tokens_per_item": [
+     1303.2,
+     554.0
+    ],
+    "vendor": "Anthropic"
+   },
+   "claude-sonnet": {
+    "cost_per_item": 0.009683,
+    "held": 0,
+    "items": 10,
+    "quality": 0.875,
+    "reported_cost_per_item": 0.03209,
+    "retrieved": 8,
+    "seconds_per_item": 8.56,
+    "tokens_per_item": [
+     1309.5,
+     706.4
+    ],
+    "vendor": "Anthropic"
+   },
+   "google-a": {
+    "cost_per_item": 0.028859,
+    "held": 0,
+    "items": 10,
+    "quality": 0.875,
+    "reported_cost_per_item": 0.02886,
+    "retrieved": 8,
+    "seconds_per_item": 15.44,
+    "tokens_per_item": [
+     1077.2,
+     2225.4
+    ],
+    "vendor": "Google"
+   },
+   "google-b": {
+    "cost_per_item": 0.010073,
+    "held": 0,
+    "items": 10,
+    "quality": 0.875,
+    "reported_cost_per_item": 0.01007,
+    "retrieved": 8,
+    "seconds_per_item": 18.18,
+    "tokens_per_item": [
+     1077.2,
+     2470.7
+    ],
+    "vendor": "Google"
+   },
+   "openai-a": {
+    "cost_per_item": 0.020361,
+    "held": 1,
+    "items": 10,
+    "quality": 0.75,
+    "reported_cost_per_item": 0.02036,
+    "retrieved": 8,
+    "seconds_per_item": 4.11,
+    "tokens_per_item": [
+     1049.6,
+     197.3
+    ],
+    "vendor": "OpenAI"
+   },
+   "openai-b": {
+    "cost_per_item": 0.000258,
+    "held": 1,
+    "items": 10,
+    "quality": 0.75,
+    "reported_cost_per_item": 0.00026,
+    "retrieved": 8,
+    "seconds_per_item": 3.87,
+    "tokens_per_item": [
+     1049.0,
+     305.3
+    ],
+    "vendor": "OpenAI"
+   }
+  },
+  "classify": {
+   "claude-haiku": {
+    "cost_per_item": 0.00038,
+    "held": 0,
+    "items": 69,
+    "quality": 0.938,
+    "reported_cost_per_item": 0.000574,
+    "seconds_per_item": 2.72,
+    "tokens_per_item": [
+     552.5,
+     650.1
+    ],
+    "variations_as_conflict": 0,
+    "vendor": "Anthropic"
+   },
+   "claude-opus": {
+    "cost_per_item": 0.006269,
+    "held": 0,
+    "items": 69,
+    "quality": 0.984,
+    "reported_cost_per_item": 0.012894,
+    "seconds_per_item": 1.71,
+    "tokens_per_item": [
+     511.4,
+     211.2
+    ],
+    "variations_as_conflict": 0,
+    "vendor": "Anthropic"
+   },
+   "claude-sonnet": {
+    "cost_per_item": 0.003975,
+    "held": 1,
+    "items": 69,
+    "quality": 0.968,
+    "reported_cost_per_item": 0.008181,
+    "seconds_per_item": 2.32,
+    "tokens_per_item": [
+     600.4,
+     277.4
+    ],
+    "variations_as_conflict": 0,
+    "vendor": "Anthropic"
+   },
+   "google-a": {
+    "cost_per_item": 0.011851,
+    "held": 0,
+    "items": 69,
+    "quality": 0.938,
+    "reported_cost_per_item": 0.011851,
+    "seconds_per_item": 5.42,
+    "tokens_per_item": [
+     419.2,
+     917.7
+    ],
+    "variations_as_conflict": 0,
+    "vendor": "Google"
+   },
+   "google-b": {
+    "cost_per_item": 0.003804,
+    "held": 0,
+    "items": 69,
+    "quality": 0.984,
+    "reported_cost_per_item": 0.003803,
+    "seconds_per_item": 6.11,
+    "tokens_per_item": [
+     419.2,
+     930.5
+    ],
+    "variations_as_conflict": 0,
+    "vendor": "Google"
+   },
+   "openai-a": {
+    "cost_per_item": 0.008033,
+    "held": 0,
+    "items": 69,
+    "quality": 0.984,
+    "reported_cost_per_item": 0.008033,
+    "seconds_per_item": 0.97,
+    "tokens_per_item": [
+     364.2,
+     87.8
+    ],
+    "variations_as_conflict": 0,
+    "vendor": "OpenAI"
+   },
+   "openai-b": {
+    "cost_per_item": 0.000123,
+    "held": 0,
+    "items": 69,
+    "quality": 0.922,
+    "reported_cost_per_item": 0.000123,
+    "seconds_per_item": 1.6,
+    "tokens_per_item": [
+     364.2,
+     172.6
+    ],
+    "variations_as_conflict": 0,
+    "vendor": "OpenAI"
+   }
+  },
+  "draft": {
+   "claude-haiku": {
+    "cost_per_item": 0.000469,
+    "held": 0,
+    "items": 8,
+    "judge_failed": [
+     {
+      "flags": {
+       "keeps_rules": "when the branch manager approves"
+      },
+      "group": "g-14fea1fb",
+      "rule": "Forms of identification per signer",
+      "text": "Collect two forms of identification from each signer before opening the account, or one form plus a verified bank reference when the approval named in this policy is given."
+     },
+     {
+      "flags": {
+       "keeps_rules": "the same day"
+      },
+      "group": "g-89c313f3",
+      "rule": "Unfair treatment escalation",
+      "text": "Complaints that allege unfair treatment are escalated to regional manager."
+     }
+    ],
+    "judged": 8,
+    "passed_gate": 8,
+    "quality": 0.75,
+    "reported_cost_per_item": 0.000963,
+    "ruled": 0,
+    "seconds_per_item": 3.27,
+    "tokens_per_item": [
+     1281.4,
+     682.2
+    ],
+    "vendor": "Anthropic"
+   },
+   "claude-opus": {
+    "cost_per_item": 0.008721,
+    "held": 0,
+    "items": 8,
+    "judge_failed": [],
+    "judged": 8,
+    "passed_gate": 8,
+    "quality": 1.0,
+    "reported_cost_per_item": 0.028612,
+    "ruled": 1,
+    "seconds_per_item": 1.65,
+    "tokens_per_item": [
+     1272.1,
+     181.6
+    ],
+    "vendor": "Anthropic"
+   },
+   "claude-sonnet": {
+    "cost_per_item": 0.004821,
+    "held": 0,
+    "items": 8,
+    "judge_failed": [],
+    "judged": 8,
+    "passed_gate": 8,
+    "quality": 1.0,
+    "reported_cost_per_item": 0.014775,
+    "ruled": 2,
+    "seconds_per_item": 2.17,
+    "tokens_per_item": [
+     1273.5,
+     227.4
+    ],
+    "vendor": "Anthropic"
+   },
+   "google-a": {
+    "cost_per_item": 0.013232,
+    "held": 0,
+    "items": 8,
+    "judge_failed": [],
+    "judged": 8,
+    "passed_gate": 8,
+    "quality": 1.0,
+    "reported_cost_per_item": 0.013237,
+    "ruled": 0,
+    "seconds_per_item": 6.21,
+    "tokens_per_item": [
+     1033.0,
+     930.5
+    ],
+    "vendor": "Google"
+   },
+   "google-b": {
+    "cost_per_item": 0.003051,
+    "held": 0,
+    "items": 8,
+    "judge_failed": [],
+    "judged": 8,
+    "passed_gate": 8,
+    "quality": 1.0,
+    "reported_cost_per_item": 0.00305,
+    "ruled": 0,
+    "seconds_per_item": 4.67,
+    "tokens_per_item": [
+     1033.0,
+     607.0
+    ],
+    "vendor": "Google"
+   },
+   "openai-a": {
+    "cost_per_item": 0.012974,
+    "held": 0,
+    "items": 8,
+    "judge_failed": [],
+    "judged": 8,
+    "passed_gate": 8,
+    "quality": 1.0,
+    "reported_cost_per_item": 0.012975,
+    "ruled": 0,
+    "seconds_per_item": 1.25,
+    "tokens_per_item": [
+     908.0,
+     77.9
+    ],
+    "vendor": "OpenAI"
+   },
+   "openai-b": {
+    "cost_per_item": 0.00024,
+    "held": 0,
+    "items": 8,
+    "judge_failed": [
+     {
+      "flags": {
+       "keeps_rules": "the same day"
+      },
+      "group": "g-89c313f3",
+      "rule": "Unfair treatment escalation",
+      "text": "Complaints that allege unfair treatment are escalated to regional manager."
+     }
+    ],
+    "judged": 8,
+    "passed_gate": 8,
+    "quality": 0.875,
+    "reported_cost_per_item": 0.000237,
+    "ruled": 0,
+    "seconds_per_item": 2.99,
+    "tokens_per_item": [
+     908.0,
+     298.8
+    ],
+    "vendor": "OpenAI"
+   }
+  },
+  "extract": {
+   "claude-haiku": {
+    "cost_per_item": 0.000197,
+    "held": 0,
+    "items": 180,
+    "quality": 0.978,
+    "reported_cost_per_item": 0.000307,
+    "seconds_per_item": 1.21,
+    "tokens_per_item": [
+     418.5,
+     310.7
+    ],
+    "vendor": "Anthropic"
+   },
+   "claude-opus": {
+    "cost_per_item": 0.00468,
+    "held": 0,
+    "items": 180,
+    "quality": 0.989,
+    "reported_cost_per_item": 0.008717,
+    "seconds_per_item": 1.14,
+    "tokens_per_item": [
+     400.1,
+     154.0
+    ],
+    "vendor": "Anthropic"
+   },
+   "claude-sonnet": {
+    "cost_per_item": 0.002387,
+    "held": 0,
+    "items": 180,
+    "quality": 0.989,
+    "reported_cost_per_item": 0.004464,
+    "seconds_per_item": 0.99,
+    "tokens_per_item": [
+     400.5,
+     158.6
+    ],
+    "vendor": "Anthropic"
+   },
+   "google-a": {
+    "cost_per_item": 0.006161,
+    "held": 0,
+    "items": 180,
+    "quality": 0.983,
+    "reported_cost_per_item": 0.006161,
+    "seconds_per_item": 2.82,
+    "tokens_per_item": [
+     299.2,
+     463.6
+    ],
+    "vendor": "Google"
+   },
+   "google-b": {
+    "cost_per_item": 0.00327,
+    "held": 0,
+    "items": 180,
+    "quality": 1.0,
+    "reported_cost_per_item": 0.00327,
+    "seconds_per_item": 5.37,
+    "tokens_per_item": [
+     299.2,
+     812.1
+    ],
+    "vendor": "Google"
+   },
+   "openai-a": {
+    "cost_per_item": 0.006169,
+    "held": 0,
+    "items": 180,
+    "quality": 0.967,
+    "reported_cost_per_item": 0.006169,
+    "seconds_per_item": 0.77,
+    "tokens_per_item": [
+     268.2,
+     69.7
+    ],
+    "vendor": "OpenAI"
+   },
+   "openai-b": {
+    "cost_per_item": 9.7e-05,
+    "held": 0,
+    "items": 180,
+    "quality": 0.978,
+    "reported_cost_per_item": 9.7e-05,
+    "seconds_per_item": 1.4,
+    "tokens_per_item": [
+     268.2,
+     140.0
+    ],
+    "vendor": "OpenAI"
+   }
+  },
+  "judge": {
+   "claude-haiku": {
+    "by_criterion": {
+     "adds_no_rule": 0.8,
+     "keeps_rules": 0.767,
+     "keeps_scope": 1.0,
+     "plain": 0.852
+    },
+    "cost_per_item": 0.000299,
+    "held": 0,
+    "items": 30,
+    "quality": 0.855,
+    "reported_cost_per_item": 0.000513,
+    "seconds_per_item": 2.17,
+    "tokens_per_item": [
+     294.4,
+     539.3
+    ],
+    "trusted_on_all": false,
+    "vendor": "Anthropic"
+   },
+   "claude-opus": {
+    "by_criterion": {
+     "adds_no_rule": 1.0,
+     "keeps_rules": 1.0,
+     "keeps_scope": 1.0,
+     "plain": 0.926
+    },
+    "cost_per_item": 0.006289,
+    "held": 0,
+    "items": 30,
+    "quality": 0.982,
+    "reported_cost_per_item": 0.01478,
+    "seconds_per_item": 2.11,
+    "tokens_per_item": [
+     289.6,
+     256.5
+    ],
+    "trusted_on_all": true,
+    "vendor": "Anthropic"
+   },
+   "claude-sonnet": {
+    "by_criterion": {
+     "adds_no_rule": 1.0,
+     "keeps_rules": 1.0,
+     "keeps_scope": 1.0,
+     "plain": 1.0
+    },
+    "cost_per_item": 0.00292,
+    "held": 0,
+    "items": 30,
+    "quality": 1.0,
+    "reported_cost_per_item": 0.007167,
+    "seconds_per_item": 1.48,
+    "tokens_per_item": [
+     290.5,
+     233.9
+    ],
+    "trusted_on_all": true,
+    "vendor": "Anthropic"
+   },
+   "google-a": {
+    "by_criterion": {
+     "adds_no_rule": 1.0,
+     "keeps_rules": 1.0,
+     "keeps_scope": 1.0,
+     "plain": 1.0
+    },
+    "cost_per_item": 0.006454,
+    "held": 0,
+    "items": 30,
+    "quality": 1.0,
+    "reported_cost_per_item": 0.006453,
+    "seconds_per_item": 3.02,
+    "tokens_per_item": [
+     215.9,
+     501.8
+    ],
+    "trusted_on_all": true,
+    "vendor": "Google"
+   },
+   "google-b": {
+    "by_criterion": {
+     "adds_no_rule": 1.0,
+     "keeps_rules": 1.0,
+     "keeps_scope": 1.0,
+     "plain": 1.0
+    },
+    "cost_per_item": 0.001437,
+    "held": 0,
+    "items": 30,
+    "quality": 1.0,
+    "reported_cost_per_item": 0.001437,
+    "seconds_per_item": 2.44,
+    "tokens_per_item": [
+     215.9,
+     339.9
+    ],
+    "trusted_on_all": true,
+    "vendor": "Google"
+   },
+   "openai-a": {
+    "by_criterion": {
+     "adds_no_rule": 1.0,
+     "keeps_rules": 1.0,
+     "keeps_scope": 1.0,
+     "plain": 0.852
+    },
+    "cost_per_item": 0.007069,
+    "held": 0,
+    "items": 30,
+    "quality": 0.963,
+    "reported_cost_per_item": 0.00707,
+    "seconds_per_item": 1.5,
+    "tokens_per_item": [
+     200.4,
+     101.3
+    ],
+    "trusted_on_all": false,
+    "vendor": "OpenAI"
+   },
+   "openai-b": {
+    "by_criterion": {
+     "adds_no_rule": 0.833,
+     "keeps_rules": 0.7,
+     "keeps_scope": 1.0,
+     "plain": 0.852
+    },
+    "cost_per_item": 0.000168,
+    "held": 0,
+    "items": 30,
+    "quality": 0.846,
+    "reported_cost_per_item": 0.000167,
+    "seconds_per_item": 3.04,
+    "tokens_per_item": [
+     236.3,
+     288.2
+    ],
+    "trusted_on_all": false,
+    "vendor": "OpenAI"
+   }
+  }
+ },
+ "summarized_at": "2026-10-30T15:53"
+}

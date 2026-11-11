@@ -1,0 +1,114 @@
+{
+ "step": "assist",
+ "tag": "before-2026",
+ "model": "claude-haiku",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "haiku",
+  "client_context": true
+ },
+ "prompt_hash": "66c01f0da9f327e74355d39363e55b642a1bbf8dc6249974c3afbf3cb3d6ccd5",
+ "input": [
+  {
+   "question": "q-C-02",
+   "text": "How long can checks deposited to a new account be held?",
+   "type": "duration",
+   "clauses": [
+    {
+     "id": "PRO-HLD-03@v3/s3/c2",
+     "text": "Checks deposited to a new account may be held for up to 7 days.",
+     "title": "Holds on New Accounts",
+     "type": "procedure",
+     "version": 3,
+     "effective": "2025-08-11"
+    },
+    {
+     "id": "JA-AOP-01@v3/s1/c2",
+     "text": "How long an account counts as new | 30 days",
+     "title": "New Account Quick Reference",
+     "type": "job_aid",
+     "version": 3,
+     "effective": "2026-01-31"
+    },
+    {
+     "id": "JA-AOP-03@v4/s1/c1",
+     "text": "How long an account counts as new | 30 days",
+     "title": "Account Opening Desk Card",
+     "type": "job_aid",
+     "version": 4,
+     "effective": "2025-05-22"
+    },
+    {
+     "id": "POL-HLD-01@v5/s4/c1",
+     "text": "New accounts can have check holds of as long as 7 business days.",
+     "title": "Funds Availability Policy",
+     "type": "policy",
+     "version": 5,
+     "effective": "2026-05-20"
+    },
+    {
+     "id": "PRO-HLD-06@v2/s3/c4",
+     "text": "New accounts can have check holds of as long as 9 business days.",
+     "title": "Holds on Mobile Deposits",
+     "type": "procedure",
+     "version": 2,
+     "effective": "2025-07-22"
+    }
+   ]
+  }
+ ],
+ "input_hash": "9e9810f7a6cda565c2113f35ac555e610b67eef9f29a021e97f429bf552a2d4a",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [{\"question\": \"q-C-02\", \"answer\": \"The sources disagree. The Funds Availability Policy allows holds of up to 7 business days on new accounts. The Holds on New Accounts procedure says 7 days without naming business days, and the Holds on Mobile Deposits procedure says 9 business days, but the policy outranks both procedures and 7 business days is the value to apply.\", \"citations\": [\"POL-HLD-01@v5/s4/c1\", \"PRO-HLD-03@v3/s3/c2\", \"PRO-HLD-06@v2/s3/c4\"], \"sources_disagree\": true}]}",
+   "problems": [],
+   "meta": {
+    "ms": 9137,
+    "api_ms": 8983,
+    "input_tokens": 6107,
+    "output_tokens": 2149,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 6105,
+     "cache_read_input_tokens": 0,
+     "output_tokens": 2149,
+     "output_tokens_details": {
+      "thinking_tokens": 1941
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 6105,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 2149,
+       "cache_read_input_tokens": 0,
+       "cache_creation_input_tokens": 6105,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 6105
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.0022957,
+    "models": [
+     "claude-haiku-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T21:26:49+00:00"
+}

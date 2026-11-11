@@ -1,0 +1,167 @@
+{
+ "step": "extract",
+ "tag": "fresh_wording",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "dcc761e46c6ec579c01b9dfd540df3c2fa4bba3b6b5ec777aa2cf9c9c62aa411",
+ "input": [
+  {
+   "clause": "fw-11",
+   "text": "An ops manager signs off a second time on outbound wires larger than fifty thousand dollars.",
+   "heading": "Requirements",
+   "document": {
+    "title": "Branch Operations Manual",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "fw-12",
+   "text": "The person who verifies a wire by phone has to be from the wire desk, not whoever took the request.",
+   "heading": "Requirements",
+   "document": {
+    "title": "Branch Operations Manual",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "fw-13",
+   "text": "Keep no more than fifteen thousand in any teller's cash drawer.",
+   "heading": "Requirements",
+   "document": {
+    "title": "Branch Operations Manual",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "fw-14",
+   "text": "Flag cash in or out totaling $7,500 or higher for the large-cash reviewers before close.",
+   "heading": "Requirements",
+   "document": {
+    "title": "Branch Operations Manual",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "fw-15",
+   "text": "Nobody goes into the vault alone, ever.",
+   "heading": "Requirements",
+   "document": {
+    "title": "Branch Operations Manual",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "fw-16",
+   "text": "Most check deposits clear in two business days unless a longer hold is placed.",
+   "heading": "Requirements",
+   "document": {
+    "title": "Branch Operations Manual",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "fw-17",
+   "text": "Only the part of a day's check deposits beyond $6,000 can be held longer than the standard hold.",
+   "heading": "Requirements",
+   "document": {
+    "title": "Branch Operations Manual",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "fw-18",
+   "text": "Brand-new accounts may see deposited checks held as long as seven business days.",
+   "heading": "Requirements",
+   "document": {
+    "title": "Branch Operations Manual",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "fw-19",
+   "text": "Cardholders get two months from the statement date to challenge a debit charge.",
+   "heading": "Requirements",
+   "document": {
+    "title": "Branch Operations Manual",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "fw-20",
+   "text": "Temporary credit must post no later than the tenth business day after a dispute form is complete.",
+   "heading": "Requirements",
+   "document": {
+    "title": "Branch Operations Manual",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  }
+ ],
+ "input_hash": "b504137436afa411b37b96b505aaaf3be959d29390412cf5d80e954270a041e0",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [{\"clause\": \"fw-11\", \"atoms\": [{\"attribute\": \"wire_second_approval\", \"value\": {\"type\": \"money\", \"dollars\": 50000}, \"quote\": \"fifty thousand dollars\", \"actor\": \"operations_manager\", \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]}, {\"clause\": \"fw-12\", \"atoms\": [{\"attribute\": \"wire_callback_role\", \"value\": {\"type\": \"role\", \"role\": \"wire_specialist\"}, \"quote\": \"the wire desk\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]}, {\"clause\": \"fw-13\", \"atoms\": [{\"attribute\": \"cash_drawer_limit\", \"value\": {\"type\": \"money\", \"dollars\": 15000}, \"quote\": \"fifteen thousand\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]}, {\"clause\": \"fw-14\", \"atoms\": [{\"attribute\": \"cash_review_threshold\", \"value\": {\"type\": \"money\", \"dollars\": 7500}, \"quote\": \"$7,500\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]}, {\"clause\": \"fw-15\", \"atoms\": [{\"attribute\": \"cash_vault_dual\", \"value\": {\"type\": \"modal\", \"modal\": \"must\"}, \"quote\": \"Nobody goes into the vault alone\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]}, {\"clause\": \"fw-16\", \"atoms\": [{\"attribute\": \"hold_standard\", \"value\": {\"type\": \"duration\", \"n\": 2, \"unit\": \"business_days\"}, \"quote\": \"two business days\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": \"unless a longer hold is placed\"}]}, {\"clause\": \"fw-17\", \"atoms\": [{\"attribute\": \"hold_large_threshold\", \"value\": {\"type\": \"money\", \"dollars\": 6000}, \"quote\": \"$6,000\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]}, {\"clause\": \"fw-18\", \"atoms\": [{\"attribute\": \"hold_new_account\", \"value\": {\"type\": \"duration\", \"n\": 7, \"unit\": \"business_days\"}, \"quote\": \"seven business days\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]}, {\"clause\": \"fw-19\", \"atoms\": [{\"attribute\": \"dispute_window\", \"value\": {\"type\": \"duration\", \"n\": 2, \"unit\": \"months\"}, \"quote\": \"two months\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]}, {\"clause\": \"fw-20\", \"atoms\": [{\"attribute\": \"dispute_provisional_credit\", \"value\": {\"type\": \"duration\", \"n\": 10, \"unit\": \"business_days\"}, \"quote\": \"tenth business day\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]}]}",
+   "problems": [],
+   "meta": {
+    "ms": 12357,
+    "api_ms": 12144,
+    "input_tokens": 8794,
+    "output_tokens": 1927,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 6110,
+     "cache_read_input_tokens": 2682,
+     "output_tokens": 1927,
+     "output_tokens_details": {
+      "thinking_tokens": 892
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 6110,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 1927,
+       "cache_read_input_tokens": 2682,
+       "cache_creation_input_tokens": 6110,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 6110
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.0439822,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T04:14:05+00:00"
+}

@@ -1,0 +1,149 @@
+{
+ "step": "extract",
+ "tag": "cmp-6101",
+ "model": "openai-a",
+ "backend": {
+  "vendor": "OpenAI",
+  "model": "gpt-6-astra",
+  "label": "GPT-6 Astra"
+ },
+ "prompt_hash": "dcc761e46c6ec579c01b9dfd540df3c2fa4bba3b6b5ec777aa2cf9c9c62aa411",
+ "input": [
+  {
+   "clause": "ADD-CO-01@v1/s2/c2",
+   "text": "In Colorado branches, accounts open fewer than 60 days are new accounts for hold and limit purposes.",
+   "heading": "Colorado requirements",
+   "document": {
+    "title": "Colorado Branch Addendum",
+    "type": "addendum",
+    "applies_to": "Colorado branches. All business lines."
+   }
+  },
+  {
+   "clause": "ADD-CO-01@v1/s2/c3",
+   "text": "In Colorado branches, account records are kept for 5 years after the account closes.",
+   "heading": "Colorado requirements",
+   "document": {
+    "title": "Colorado Branch Addendum",
+    "type": "addendum",
+    "applies_to": "Colorado branches. All business lines."
+   }
+  },
+  {
+   "clause": "ADD-KS-01@v1/s2/c2",
+   "text": "In Kansas branches, customers have 30 days from the statement date to dispute a debit card transaction.",
+   "heading": "Kansas requirements",
+   "document": {
+    "title": "Kansas Branch Addendum",
+    "type": "addendum",
+    "applies_to": "Kansas branches. All business lines."
+   }
+  },
+  {
+   "clause": "ADD-KS-01@v1/s2/c3",
+   "text": "In Kansas branches, complaints should be closed within 30 business days of the day they arrive.",
+   "heading": "Kansas requirements",
+   "document": {
+    "title": "Kansas Branch Addendum",
+    "type": "addendum",
+    "applies_to": "Kansas branches. All business lines."
+   }
+  },
+  {
+   "clause": "ADD-OK-01@v1/s2/c2",
+   "text": "In Oklahoma branches, vault combinations are changed every 12 months and whenever an employee who knows the combination leaves.",
+   "heading": "Oklahoma requirements",
+   "document": {
+    "title": "Oklahoma Branch Addendum",
+    "type": "addendum",
+    "applies_to": "Oklahoma branches. All business lines."
+   }
+  },
+  {
+   "clause": "ADD-OK-01@v1/s2/c3",
+   "text": "In Oklahoma branches, mail the customer a notice at least 60 days before the account is classified as dormant.",
+   "heading": "Oklahoma requirements",
+   "document": {
+    "title": "Oklahoma Branch Addendum",
+    "type": "addendum",
+    "applies_to": "Oklahoma branches. All business lines."
+   }
+  },
+  {
+   "clause": "ADD-TX-01@v1/s2/c2",
+   "text": "In Texas branches, dormant accounts are charged a maintenance fee of $3 per month.",
+   "heading": "Texas requirements",
+   "document": {
+    "title": "Texas Branch Addendum",
+    "type": "addendum",
+    "applies_to": "Texas branches. All business lines."
+   }
+  },
+  {
+   "clause": "ADD-TX-01@v1/s2/c3",
+   "text": "In Texas branches, refer an account for charge-off once it has been negative for 60 days.",
+   "heading": "Texas requirements",
+   "document": {
+    "title": "Texas Branch Addendum",
+    "type": "addendum",
+    "applies_to": "Texas branches. All business lines."
+   }
+  },
+  {
+   "clause": "BUL-BOP-01@v2/s1/c2",
+   "text": "Change the vault combination at least every 3 months.",
+   "heading": "What branches need to know",
+   "document": {
+    "title": "Branch Bulletin 2025-07: Vault combination change interval",
+    "type": "bulletin",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "BUL-CMP-02@v1/s1/c4",
+   "text": "Send the visit survey within 5 business days after the customer's branch visit.",
+   "heading": "What branches need to know",
+   "document": {
+    "title": "Branch Bulletin 2026-35: Complaint acknowledgment deadline",
+    "type": "bulletin",
+    "applies_to": "All branches. All business lines."
+   }
+  }
+ ],
+ "input_hash": "87a05ea4e43fcec148a8675e1dad7eedb24d2080f73b941ba4a4f360cc148489",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\":[{\"clause\":\"ADD-CO-01@v1/s2/c2\",\"atoms\":[{\"attribute\":\"ao_new_account_window\",\"value\":{\"type\":\"duration\",\"n\":60,\"unit\":\"days\"},\"quote\":\"60 days\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":\"In Colorado branches\",\"condition\":null}]},{\"clause\":\"ADD-CO-01@v1/s2/c3\",\"atoms\":[{\"attribute\":\"records_retention\",\"value\":{\"type\":\"duration\",\"n\":5,\"unit\":\"years\"},\"quote\":\"5 years\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":\"In Colorado branches\",\"condition\":null}]},{\"clause\":\"ADD-KS-01@v1/s2/c2\",\"atoms\":[{\"attribute\":\"dispute_window\",\"value\":{\"type\":\"duration\",\"n\":30,\"unit\":\"days\"},\"quote\":\"30 days\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":\"In Kansas branches\",\"condition\":null}]},{\"clause\":\"ADD-KS-01@v1/s2/c3\",\"atoms\":[{\"attribute\":\"complaint_resolve\",\"value\":{\"type\":\"duration\",\"n\":30,\"unit\":\"business_days\"},\"quote\":\"30 business days\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":\"In Kansas branches\",\"condition\":null}]},{\"clause\":\"ADD-OK-01@v1/s2/c2\",\"atoms\":[{\"attribute\":\"combo_change\",\"value\":{\"type\":\"duration\",\"n\":12,\"unit\":\"months\"},\"quote\":\"12 months\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":\"In Oklahoma branches\",\"condition\":\"and whenever an employee who knows the combination leaves\"}]},{\"clause\":\"ADD-OK-01@v1/s2/c3\",\"atoms\":[{\"attribute\":\"dormant_notice\",\"value\":{\"type\":\"duration\",\"n\":60,\"unit\":\"days\"},\"quote\":\"60 days\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":\"In Oklahoma branches\",\"condition\":null}]},{\"clause\":\"ADD-TX-01@v1/s2/c2\",\"atoms\":[{\"attribute\":\"dormant_fee\",\"value\":{\"type\":\"money\",\"dollars\":3},\"quote\":\"$3\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":\"In Texas branches\",\"condition\":null}]},{\"clause\":\"ADD-TX-01@v1/s2/c3\",\"atoms\":[{\"attribute\":\"od_chargeoff\",\"value\":{\"type\":\"duration\",\"n\":60,\"unit\":\"days\"},\"quote\":\"60 days\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":\"In Texas branches\",\"condition\":null}]},{\"clause\":\"BUL-BOP-01@v2/s1/c2\",\"atoms\":[{\"attribute\":\"combo_change\",\"value\":{\"type\":\"duration\",\"n\":3,\"unit\":\"months\"},\"quote\":\"3 months\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]},{\"clause\":\"BUL-CMP-02@v1/s1/c4\",\"atoms\":[{\"attribute\":\"survey_send\",\"value\":{\"type\":\"duration\",\"n\":5,\"unit\":\"business_days\"},\"quote\":\"5 business days\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]}]}",
+   "problems": [],
+   "meta": {
+    "ms": 7216,
+    "input_tokens": 2705,
+    "output_tokens": 686,
+    "cost_usd": 0.06135,
+    "usage": {
+     "prompt_tokens": 2705,
+     "completion_tokens": 686,
+     "total_tokens": 3391,
+     "prompt_tokens_details": {
+      "cached_tokens": 1728,
+      "cache_write_tokens": 974,
+      "audio_tokens": 0
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+     }
+    },
+    "models": [
+     "gpt-6-astra"
+    ],
+    "stop_reason": "stop"
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T21:18:44+00:00"
+}

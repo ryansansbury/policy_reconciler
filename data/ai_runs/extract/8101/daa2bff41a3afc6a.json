@@ -1,0 +1,167 @@
+{
+ "step": "extract",
+ "tag": "8101",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "dcc761e46c6ec579c01b9dfd540df3c2fa4bba3b6b5ec777aa2cf9c9c62aa411",
+ "input": [
+  {
+   "clause": "POL-FEE-01@v6/s4/c1",
+   "text": "Limit fee waivers to two per account in each calendar year.",
+   "heading": "Additional requirements",
+   "document": {
+    "title": "Service Fee Waiver Policy",
+    "type": "policy",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "POL-FEE-01@v6/s5/c1",
+   "text": "Exceptions to this policy need written approval from the Retail Banking Operations manager and are reviewed each quarter.",
+   "heading": "Exceptions",
+   "document": {
+    "title": "Service Fee Waiver Policy",
+    "type": "policy",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "POL-FEE-01@v6/s6/c1",
+   "text": "Branch managers make sure their teams follow this policy, and Retail Banking Operations answers questions about it.",
+   "heading": "Roles and responsibilities",
+   "document": {
+    "title": "Service Fee Waiver Policy",
+    "type": "policy",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "POL-FEE-02@v2/s3/c2",
+   "text": "For small business accounts, limit fee waivers to one per account in each calendar year.",
+   "heading": "Policy statements",
+   "document": {
+    "title": "Fee Refund Policy",
+    "type": "policy",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "POL-FEE-02@v2/s5/c1",
+   "text": "Exceptions to this policy need written approval from the Retail Banking Operations manager and are reviewed each quarter.",
+   "heading": "Exceptions",
+   "document": {
+    "title": "Fee Refund Policy",
+    "type": "policy",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "POL-FEE-02@v2/s6/c1",
+   "text": "Branch managers make sure their teams follow this policy, and Retail Banking Operations answers questions about it.",
+   "heading": "Roles and responsibilities",
+   "document": {
+    "title": "Fee Refund Policy",
+    "type": "policy",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "POL-HLD-01@v2/s5/c1",
+   "text": "Exceptions to this policy need written approval from the Deposit Operations manager and are reviewed each quarter.",
+   "heading": "Exceptions",
+   "document": {
+    "title": "Funds Availability Policy",
+    "type": "policy",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "POL-HLD-01@v2/s6/c1",
+   "text": "Branch managers make sure their teams follow this policy, and Deposit Operations answers questions about it.",
+   "heading": "Roles and responsibilities",
+   "document": {
+    "title": "Funds Availability Policy",
+    "type": "policy",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "POL-LND-01@v5/s6/c1",
+   "text": "Branch managers make sure their teams follow this policy, and Lending answers questions about it.",
+   "heading": "Roles and responsibilities",
+   "document": {
+    "title": "Loan Pricing Exception Policy",
+    "type": "policy",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "POL-ODR-01@v2/s5/c1",
+   "text": "Exceptions to this policy need written approval from the Deposit Operations manager and are reviewed each quarter.",
+   "heading": "Exceptions",
+   "document": {
+    "title": "Overdraft Policy",
+    "type": "policy",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  }
+ ],
+ "input_hash": "4bd0f0f62052345b52b4c86b21dfad06187a80c6f52e5641095e4eb7520c38b8",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [{\"clause\": \"POL-FEE-01@v6/s4/c1\", \"atoms\": [{\"attribute\": \"fee_waivers_per_year\", \"value\": {\"type\": \"count\", \"n\": 2}, \"quote\": \"two\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]}, {\"clause\": \"POL-FEE-01@v6/s5/c1\", \"atoms\": []}, {\"clause\": \"POL-FEE-01@v6/s6/c1\", \"atoms\": []}, {\"clause\": \"POL-FEE-02@v2/s3/c2\", \"atoms\": [{\"attribute\": \"fee_waivers_per_year\", \"value\": {\"type\": \"count\", \"n\": 1}, \"quote\": \"one\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": \"For small business accounts\", \"condition\": null}]}, {\"clause\": \"POL-FEE-02@v2/s5/c1\", \"atoms\": []}, {\"clause\": \"POL-FEE-02@v2/s6/c1\", \"atoms\": []}, {\"clause\": \"POL-HLD-01@v2/s5/c1\", \"atoms\": []}, {\"clause\": \"POL-HLD-01@v2/s6/c1\", \"atoms\": []}, {\"clause\": \"POL-LND-01@v5/s6/c1\", \"atoms\": []}, {\"clause\": \"POL-ODR-01@v2/s5/c1\", \"atoms\": []}]}",
+   "problems": [],
+   "meta": {
+    "ms": 5120,
+    "api_ms": 4964,
+    "input_tokens": 9002,
+    "output_tokens": 776,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 6318,
+     "cache_read_input_tokens": 2682,
+     "output_tokens": 776,
+     "output_tokens_details": {
+      "thinking_tokens": 295
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 6318,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 776,
+       "cache_read_input_tokens": 2682,
+       "cache_creation_input_tokens": 6318,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 6318
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.0333042,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T05:39:40+00:00"
+}

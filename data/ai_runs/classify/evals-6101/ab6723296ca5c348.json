@@ -1,0 +1,307 @@
+{
+ "step": "classify",
+ "tag": "evals-6101",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "2c908358fde9f0f4a792753579a6cfaa33476e41c4b0f235744675d8e8283a19",
+ "input": [
+  {
+   "pair": "pair-dc772c9ef1",
+   "rule": "Branch manager fee waiver limit",
+   "attribute": "fee_waiver_bm",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "JA-FEE-02@v3/s1/c2",
+    "text": "Branch manager fee waiver limit | $50",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Fee Schedule at a Glance",
+     "type": "job_aid",
+     "version": 3,
+     "effective": "2025-08-09",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "JA-FEE-01@v1/s1/c1",
+    "text": "Branch manager fee waiver limit | $50",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Fee Waiver Quick Reference",
+     "type": "job_aid",
+     "version": 1,
+     "effective": "2025-12-30",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-dfa393a94e",
+   "rule": "Fee waivers per account per year",
+   "attribute": "fee_waivers_per_year",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "JA-FEE-03@v2/s1/c2",
+    "text": "Fee waivers per account per year | two",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Waiver Authority Card",
+     "type": "job_aid",
+     "version": 2,
+     "effective": "2026-02-08",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "PRO-FEE-03@v2/s3/c2",
+    "text": "Limit fee waivers to two per account in each calendar year.",
+    "heading": "Steps",
+    "document": {
+     "title": "Handling Fee Refund Requests",
+     "type": "procedure",
+     "version": 2,
+     "effective": "2024-12-28",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-978bbc15e6",
+   "rule": "Overdraft amount with no fee",
+   "attribute": "od_de_minimis",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-ODR-05@v4/s3/c6",
+    "text": "Accounts overdrawn by no more than $10 at the end of the day are not charged an overdraft fee.",
+    "heading": "Steps",
+    "document": {
+     "title": "Closing an Overdrawn Account",
+     "type": "procedure",
+     "version": 4,
+     "effective": "2025-04-12",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "JA-ODR-01@v4/s1/c3",
+    "text": "Overdraft amount with no fee | $10",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Overdraft Quick Reference",
+     "type": "job_aid",
+     "version": 4,
+     "effective": "2026-04-04",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-b38a2c2911",
+   "rule": "Fee waivers per account per year",
+   "attribute": "fee_waivers_per_year",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "FAQ-FEE-02@v2/s2/c1",
+    "text": "Limit fee waivers to two per account in each calendar year.",
+    "heading": "How many fee waivers can one account get in a year?",
+    "document": {
+     "title": "Fee Refund Questions",
+     "type": "faq",
+     "version": 2,
+     "effective": "2026-04-19",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "JA-FEE-01@v1/s1/c2",
+    "text": "Fee waivers per account per year | two",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Fee Waiver Quick Reference",
+     "type": "job_aid",
+     "version": 1,
+     "effective": "2025-12-30",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-1f4a4c2bcf",
+   "rule": "Closed account record retention",
+   "attribute": "records_retention",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-REC-02@v3/s3/c5",
+    "text": "Account records are kept for 7 years after the account closes.",
+    "heading": "Steps",
+    "document": {
+     "title": "Approving Records Destruction",
+     "type": "procedure",
+     "version": 3,
+     "effective": "2026-03-12",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "JA-REC-02@v2/s1/c2",
+    "text": "Retention for closed account records | 7 years",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Destruction Approval Checklist",
+     "type": "job_aid",
+     "version": 2,
+     "effective": "2025-12-22",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-12a8817920",
+   "rule": "Teller drawer limit",
+   "attribute": "cash_drawer_limit",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "FAQ-CSH-01@v3/s1/c1",
+    "text": "Sell excess cash to the vault whenever a teller drawer goes above $15,000.",
+    "heading": "How much cash can a teller drawer hold?",
+    "document": {
+     "title": "Cash Handling FAQ",
+     "type": "faq",
+     "version": 3,
+     "effective": "2026-03-24",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "PRO-CSH-06@v2/s3/c4",
+    "text": "Sell excess cash to the vault whenever a teller drawer goes above $15,000.",
+    "heading": "Steps",
+    "document": {
+     "title": "Ordering Cash Shipments",
+     "type": "procedure",
+     "version": 2,
+     "effective": "2024-11-28",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-e74d12b32d",
+   "rule": "Overdraft fees per day",
+   "attribute": "od_daily_cap",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-ODR-03@v2/s3/c8",
+    "text": "No more than three overdraft fees are charged to an account in one business day.",
+    "heading": "Steps",
+    "document": {
+     "title": "Referring Accounts for Charge-Off",
+     "type": "procedure",
+     "version": 2,
+     "effective": "2025-03-21",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "PRO-ODR-05@v4/s3/c9",
+    "text": "No more than three overdraft fees are charged to an account in one business day.",
+    "heading": "Steps",
+    "document": {
+     "title": "Closing an Overdrawn Account",
+     "type": "procedure",
+     "version": 4,
+     "effective": "2025-04-12",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-d5289b52f4",
+   "rule": "Dormant account fee",
+   "attribute": "dormant_fee",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "FAQ-DRM-01@v3/s3/c1",
+    "text": "The monthly fee for a dormant account is $5.",
+    "heading": "What is the monthly fee on a dormant account?",
+    "document": {
+     "title": "Dormant Account FAQ",
+     "type": "faq",
+     "version": 3,
+     "effective": "2026-05-06",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "JA-DRM-01@v1/s1/c1",
+    "text": "Monthly dormant account fee | $5",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Dormant Account Quick Reference",
+     "type": "job_aid",
+     "version": 1,
+     "effective": "2025-07-09",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  }
+ ],
+ "input_hash": "f5104717ef3b8a19148b7ad81f7d744f78944776227a4788157e1a5a90ebe051",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [{\"pair\": \"pair-dc772c9ef1\", \"label\": \"consistent\", \"quote_a\": \"Branch manager fee waiver limit | $50\", \"quote_b\": \"Branch manager fee waiver limit | $50\", \"rationale\": \"Both job aids set the branch manager fee waiver limit at $50 for the same scope. Staff following either one act the same way.\"}, {\"pair\": \"pair-dfa393a94e\", \"label\": \"consistent\", \"quote_a\": \"Fee waivers per account per year | two\", \"quote_b\": \"Limit fee waivers to two per account in each calendar year.\", \"rationale\": \"Both clauses cap fee waivers at two per account per year. The procedure only adds the words calendar year, which does not change what staff do.\"}, {\"pair\": \"pair-978bbc15e6\", \"label\": \"consistent\", \"quote_a\": \"Accounts overdrawn by no more than $10 at the end of the day are not charged an overdraft fee.\", \"quote_b\": \"Overdraft amount with no fee | $10\", \"rationale\": \"Both clauses set the no fee overdraft amount at $10. The procedure states the end of day timing and the job aid leaves it out, which does not contradict anything.\"}, {\"pair\": \"pair-b38a2c2911\", \"label\": \"consistent\", \"quote_a\": \"Limit fee waivers to two per account in each calendar year.\", \"quote_b\": \"Fee waivers per account per year | two\", \"rationale\": \"Both clauses cap fee waivers at two per account per year. Staff would act the same way under either one.\"}, {\"pair\": \"pair-1f4a4c2bcf\", \"label\": \"consistent\", \"quote_a\": \"Account records are kept for 7 years after the account closes.\", \"quote_b\": \"Retention for closed account records | 7 years\", \"rationale\": \"Both clauses set retention for closed account records at 7 years. They apply to the same branches and business lines.\"}, {\"pair\": \"pair-12a8817920\", \"label\": \"consistent\", \"quote_a\": \"Sell excess cash to the vault whenever a teller drawer goes above $15,000.\", \"quote_b\": \"Sell excess cash to the vault whenever a teller drawer goes above $15,000.\", \"rationale\": \"Both clauses state the same drawer limit of $15,000 with the same action. This is one rule stated twice with the same value and not a copied run of steps.\"}, {\"pair\": \"pair-e74d12b32d\", \"label\": \"consistent\", \"quote_a\": \"No more than three overdraft fees are charged to an account in one business day.\", \"quote_b\": \"No more than three overdraft fees are charged to an account in one business day.\", \"rationale\": \"Both procedures cap overdraft fees at three per business day for the same accounts. The wording matches but each clause states the same rule with the same value.\"}, {\"pair\": \"pair-d5289b52f4\", \"label\": \"consistent\", \"quote_a\": \"The monthly fee for a dormant account is $5.\", \"quote_b\": \"Monthly dormant account fee | $5\", \"rationale\": \"Both clauses set the monthly dormant account fee at $5 for the same accounts. Staff would charge the same amount under either one.\"}]}",
+   "problems": [],
+   "meta": {
+    "ms": 11212,
+    "api_ms": 11073,
+    "input_tokens": 8964,
+    "output_tokens": 1693,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 8121,
+     "cache_read_input_tokens": 841,
+     "output_tokens": 1693,
+     "output_tokens_details": {
+      "thinking_tokens": 667
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 8121,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 1693,
+       "cache_read_input_tokens": 841,
+       "cache_creation_input_tokens": 8121,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 8121
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.0495021,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T05:29:09+00:00"
+}

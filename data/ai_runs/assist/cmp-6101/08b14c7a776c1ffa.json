@@ -1,0 +1,85 @@
+{
+ "step": "assist",
+ "tag": "cmp-6101",
+ "model": "google-a",
+ "backend": {
+  "vendor": "Google",
+  "model": "gemini-3.1-pro-preview",
+  "label": "Gemini 3.1 Pro"
+ },
+ "prompt_hash": "66c01f0da9f327e74355d39363e55b642a1bbf8dc6249974c3afbf3cb3d6ccd5",
+ "input": [
+  {
+   "question": "q-C-02",
+   "text": "Who can approve an exception to the identification requirements?",
+   "type": "role",
+   "clauses": [
+    {
+     "id": "POL-AOP-02@v3/s3/c1",
+     "text": "Only a manager can approve an exception to the identification requirements.",
+     "title": "Customer Identification Policy",
+     "type": "policy",
+     "version": 3,
+     "effective": "2026-02-28"
+    },
+    {
+     "id": "POL-AOP-01@v5/s3/c2",
+     "text": "Only the branch manager can approve an exception to the identification requirements.",
+     "title": "Deposit Account Opening Policy",
+     "type": "policy",
+     "version": 5,
+     "effective": "2026-05-17"
+    },
+    {
+     "id": "PRO-AOP-04@v4/s3/c4",
+     "text": "Only the operations specialist can approve an exception to the identification requirements.",
+     "title": "Verifying Customer Identification",
+     "type": "procedure",
+     "version": 4,
+     "effective": "2024-12-10"
+    },
+    {
+     "id": "PRO-AOP-03@v1/s3/c1",
+     "text": "Any exception to the identification requirements must be approved by the branch manager.",
+     "title": "Opening a Small Business Account",
+     "type": "procedure",
+     "version": 1,
+     "effective": "2025-09-11"
+    },
+    {
+     "id": "PRO-LND-03@v4/s3/c9",
+     "text": "A regional manager can approve a rate exception as large as 0.50%.",
+     "title": "Documenting Pricing Exceptions",
+     "type": "procedure",
+     "version": 4,
+     "effective": "2025-06-20"
+    }
+   ]
+  }
+ ],
+ "input_hash": "657b81ba219888a5b18f53267bb41068b0e6aa98295789fa0ce9bb456893fc6b",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\n \"results\": [\n  {\n   \"question\": \"q-C-02\",\n   \"answer\": \"The sources disagree on who can approve an exception to the identification requirements. The Customer Identification Policy says a manager can approve it and the Deposit Account Opening Policy along with the Opening a Small Business Account procedure say the branch manager. The Verifying Customer Identification procedure says the operations specialist but policies outrank procedures so you should ask a manager or the branch manager for approval.\",\n   \"citations\": [\n    \"POL-AOP-01@v5/s3/c2\",\n    \"POL-AOP-02@v3/s3/c1\",\n    \"PRO-AOP-03@v1/s3/c1\",\n    \"PRO-AOP-04@v4/s3/c4\"\n   ],\n   \"sources_disagree\": true\n  }\n ]\n}",
+   "problems": [],
+   "meta": {
+    "ms": 20397,
+    "input_tokens": 968,
+    "output_tokens": 2972,
+    "cost_usd": 0.0376,
+    "usage": {
+     "completion_tokens": 205,
+     "prompt_tokens": 968,
+     "total_tokens": 3940
+    },
+    "models": [
+     "gemini-3.1-pro-preview"
+    ],
+    "stop_reason": "stop"
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T17:28:03+00:00"
+}

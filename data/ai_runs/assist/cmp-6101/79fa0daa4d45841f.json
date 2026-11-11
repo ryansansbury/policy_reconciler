@@ -1,0 +1,96 @@
+{
+ "step": "assist",
+ "tag": "cmp-6101",
+ "model": "openai-a",
+ "backend": {
+  "vendor": "OpenAI",
+  "model": "gpt-6-astra",
+  "label": "GPT-6 Astra"
+ },
+ "prompt_hash": "66c01f0da9f327e74355d39363e55b642a1bbf8dc6249974c3afbf3cb3d6ccd5",
+ "input": [
+  {
+   "question": "q-C-06",
+   "text": "When does a customer get provisional credit on a dispute?",
+   "type": "duration",
+   "clauses": [
+    {
+     "id": "POL-DSP-01@v5/s4/c2",
+     "text": "Provisional credit is issued within 10 business days of receiving a completed dispute.",
+     "title": "Debit Card Dispute Policy",
+     "type": "policy",
+     "version": 5,
+     "effective": "2024-07-18"
+    },
+    {
+     "id": "PRO-DSP-03@v2/s3/c6",
+     "text": "Provisional credit is issued within 10 business days of receiving a completed dispute.",
+     "title": "Investigating a Dispute",
+     "type": "procedure",
+     "version": 2,
+     "effective": "2026-07-31"
+    },
+    {
+     "id": "PRO-DSP-06@v3/s3/c7",
+     "text": "Provisional credit is issued within 5 business days of receiving a completed dispute.",
+     "title": "Large Dispute Review",
+     "type": "procedure",
+     "version": 3,
+     "effective": "2025-06-21"
+    },
+    {
+     "id": "PRO-DSP-06@v3/s5/c1",
+     "text": "Provisional credit is issued within 10 business days of receiving a completed dispute, whatever its review status.",
+     "title": "Large Dispute Review",
+     "type": "procedure",
+     "version": 3,
+     "effective": "2025-06-21"
+    },
+    {
+     "id": "JA-DSP-01@v2/s1/c1",
+     "text": "Provisional credit deadline for disputes | 5 business days",
+     "title": "Dispute Intake Checklist",
+     "type": "job_aid",
+     "version": 2,
+     "effective": "2024-06-03"
+    }
+   ]
+  }
+ ],
+ "input_hash": "746d02d3704282fce70034b1d7d9a83d735889baeb2098f0aa69b98f0b93e57f",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\":[{\"question\":\"q-C-06\",\"answer\":\"The sources disagree. The Debit Card Dispute Policy and Investigating a Dispute require provisional credit within 10 business days of receiving a completed dispute, while Large Dispute Review states both 5 business days and 10 business days regardless of review status, and the Dispute Intake Checklist gives 5 business days. Follow the policy's deadline of 10 business days from receiving a completed dispute because the policy outranks the procedures and job aid.\",\"citations\":[\"POL-DSP-01@v5/s4/c2\",\"PRO-DSP-03@v2/s3/c6\",\"PRO-DSP-06@v3/s3/c7\",\"PRO-DSP-06@v3/s5/c1\",\"JA-DSP-01@v2/s1/c1\"],\"sources_disagree\":true}]}",
+   "problems": [],
+   "meta": {
+    "ms": 4740,
+    "input_tokens": 874,
+    "output_tokens": 274,
+    "cost_usd": 0.02244,
+    "usage": {
+     "prompt_tokens": 874,
+     "completion_tokens": 274,
+     "total_tokens": 1148,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 87,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+     }
+    },
+    "models": [
+     "gpt-6-astra"
+    ],
+    "stop_reason": "stop"
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T17:20:55+00:00"
+}

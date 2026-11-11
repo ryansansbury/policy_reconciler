@@ -1,0 +1,73 @@
+{
+ "step": "judge",
+ "tag": "drafts-6101",
+ "model": "google-a",
+ "backend": {
+  "vendor": "Google",
+  "model": "gemini-3.1-pro-preview",
+  "label": "Gemini 3.1 Pro"
+ },
+ "prompt_hash": "ab6a49ec8731854b3cf900a9a4387417ee8016fe68257c4d327181c7eb1621da",
+ "input": [
+  {
+   "draft": "g-89c313f3.36e0c978",
+   "text": "Complaints that allege unfair treatment are escalated to regional manager.",
+   "sources": [
+    "Complaints that allege unfair treatment are escalated to the regional manager the same day."
+   ]
+  },
+  {
+   "draft": "g-76b64634.6e5d4fca",
+   "text": "Complaints are resolved within 15 business days of receipt, or the customer is told when to expect a resolution.",
+   "sources": [
+    "Resolve complaints within 15 business days of receipt, or tell the customer when to expect a resolution."
+   ]
+  },
+  {
+   "draft": "g-14fea1fb.44b2d715",
+   "text": "Collect two forms of identification from each signer before opening the account, or one form plus a verified bank reference when the branch manager approves.",
+   "sources": [
+    "Collect two forms of identification from each signer before opening the account, or one form plus a verified bank reference when the branch manager approves."
+   ]
+  },
+  {
+   "draft": "g-706e2740.2cc67e40",
+   "text": "Treat an account as a new account for the first 30 days after it opens.",
+   "sources": [
+    "An account is treated as a new account for the first 30 days after it opens."
+   ]
+  },
+  {
+   "draft": "g-0fcc66e4.027b71d9",
+   "text": "Sell excess cash to the vault whenever a teller drawer goes above $15,000.",
+   "sources": [
+    "Sell excess cash to the vault whenever a teller drawer goes above $15,000."
+   ]
+  }
+ ],
+ "input_hash": "1e787d2589304c8670344311fc8f317a9de53e41d75bc9c8c78def4546ddabe3",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\n \"results\": [\n  {\n   \"draft\": \"g-89c313f3.36e0c978\",\n   \"scores\": {\n    \"keeps_rules\": {\n     \"pass\": false,\n     \"evidence\": \"the same day\"\n    },\n    \"adds_no_rule\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    },\n    \"keeps_scope\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    },\n    \"plain\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    }\n   }\n  },\n  {\n   \"draft\": \"g-76b64634.6e5d4fca\",\n   \"scores\": {\n    \"keeps_rules\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    },\n    \"adds_no_rule\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    },\n    \"keeps_scope\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    },\n    \"plain\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    }\n   }\n  },\n  {\n   \"draft\": \"g-14fea1fb.44b2d715\",\n   \"scores\": {\n    \"keeps_rules\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    },\n    \"adds_no_rule\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    },\n    \"keeps_scope\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    },\n    \"plain\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    }\n   }\n  },\n  {\n   \"draft\": \"g-706e2740.2cc67e40\",\n   \"scores\": {\n    \"keeps_rules\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    },\n    \"adds_no_rule\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    },\n    \"keeps_scope\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    },\n    \"plain\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    }\n   }\n  },\n  {\n   \"draft\": \"g-0fcc66e4.027b71d9\",\n   \"scores\": {\n    \"keeps_rules\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    },\n    \"adds_no_rule\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    },\n    \"keeps_scope\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    },\n    \"plain\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    }\n   }\n  }\n ]\n}",
+   "problems": [],
+   "meta": {
+    "ms": 13047,
+    "input_tokens": 941,
+    "output_tokens": 2149,
+    "cost_usd": 0.02767,
+    "usage": {
+     "completion_tokens": 693,
+     "prompt_tokens": 941,
+     "total_tokens": 3090
+    },
+    "models": [
+     "gemini-3.1-pro-preview"
+    ],
+    "stop_reason": "stop"
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T17:55:40+00:00"
+}

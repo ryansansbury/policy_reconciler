@@ -1,0 +1,167 @@
+{
+ "step": "assist",
+ "tag": "after-2026",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "66c01f0da9f327e74355d39363e55b642a1bbf8dc6249974c3afbf3cb3d6ccd5",
+ "input": [
+  {
+   "question": "q-C-10",
+   "text": "What is the monthly fee on a dormant account?",
+   "type": "money",
+   "clauses": [
+    {
+     "id": "JA-DRM-02@v2/s1/c2",
+     "text": "Monthly dormant account fee | $5",
+     "title": "Dormancy Notice Checklist",
+     "type": "job_aid",
+     "version": 2,
+     "effective": "2025-11-08"
+    },
+    {
+     "id": "ADD-TX-01@v3/s2/c2",
+     "text": "In Texas branches, the monthly fee for a dormant account is $10.",
+     "title": "Texas Branch Addendum",
+     "type": "addendum",
+     "version": 3,
+     "effective": "2026-02-10"
+    },
+    {
+     "id": "FAQ-DRM-01@v1/s2/c1",
+     "text": "Dormant accounts are charged a maintenance fee of $5 per month.",
+     "title": "Dormant Account FAQ",
+     "type": "faq",
+     "version": 1,
+     "effective": "2025-11-14"
+    },
+    {
+     "id": "FAQ-DRM-02@v1/s2/c1",
+     "text": "Dormant accounts are charged a maintenance fee of $5 per month.",
+     "title": "Reactivation Questions",
+     "type": "faq",
+     "version": 1,
+     "effective": "2026-01-27"
+    },
+    {
+     "id": "POL-DRM-01@v6/s3/c1",
+     "text": "Dormant accounts are charged a maintenance fee of $5 per month.",
+     "title": "Dormant Account Policy",
+     "type": "policy",
+     "version": 6,
+     "effective": "2025-02-09"
+    }
+   ]
+  }
+ ],
+ "input_hash": "790bd52241341156bfab0d027605d1e55f77703660c508e743908ecfaa2634bb",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [{\"question\": \"q-C-10\", \"answer\": \"The Dormant Account Policy sets the monthly fee on a dormant account at $5. The Texas Branch Addendum applies only to Texas branches and sets the monthly fee there at $10.\", \"citations\": [\"POL-DRM-01@v6/s3/c1\", \"ADD-TX-01@v3/s2/c2\"], \"sources_disagree\": false}]}",
+   "problems": [
+    "q-C-10: the cited clauses state different values, so the answer must say the sources disagree"
+   ],
+   "meta": {
+    "ms": 5527,
+    "api_ms": 5346,
+    "input_tokens": 6109,
+    "output_tokens": 610,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 5489,
+     "cache_read_input_tokens": 618,
+     "output_tokens": 610,
+     "output_tokens_details": {
+      "thinking_tokens": 468
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 5489,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 610,
+       "cache_read_input_tokens": 618,
+       "cache_creation_input_tokens": 5489,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 5489
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.0281218,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  },
+  {
+   "reply": "{\"results\": [{\"question\": \"q-C-10\", \"answer\": \"The sources disagree. The Dormant Account Policy, the Dormancy Notice Checklist and both FAQ pages give $5 per month, while the Texas Branch Addendum gives $10 per month for Texas branches. The policy outranks the job aid and FAQs, which makes $5 the general fee, and the $10 figure is the addendum's amount for Texas branches only.\", \"citations\": [\"POL-DRM-01@v6/s3/c1\", \"JA-DRM-02@v2/s1/c2\", \"FAQ-DRM-01@v1/s2/c1\", \"FAQ-DRM-02@v1/s2/c1\", \"ADD-TX-01@v3/s2/c2\"], \"sources_disagree\": true}]}",
+   "problems": [],
+   "meta": {
+    "ms": 7207,
+    "api_ms": 7019,
+    "input_tokens": 6165,
+    "output_tokens": 963,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 5545,
+     "cache_read_input_tokens": 618,
+     "output_tokens": 963,
+     "output_tokens_details": {
+      "thinking_tokens": 700
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 5545,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 963,
+       "cache_read_input_tokens": 618,
+       "cache_creation_input_tokens": 5545,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 5545
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.031875799999999996,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   },
+   "items": [
+    "q-C-10"
+   ]
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T06:03:40+00:00"
+}

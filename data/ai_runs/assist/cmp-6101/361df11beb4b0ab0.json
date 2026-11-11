@@ -1,0 +1,85 @@
+{
+ "step": "assist",
+ "tag": "cmp-6101",
+ "model": "google-b",
+ "backend": {
+  "vendor": "Google",
+  "model": "gemini-3.8-flash",
+  "label": "Gemini 3.8 Flash"
+ },
+ "prompt_hash": "66c01f0da9f327e74355d39363e55b642a1bbf8dc6249974c3afbf3cb3d6ccd5",
+ "input": [
+  {
+   "question": "q-C-01",
+   "text": "How large a rate exception can a regional manager approve?",
+   "type": "percent",
+   "clauses": [
+    {
+     "id": "PRO-LND-03@v4/s3/c9",
+     "text": "A regional manager can approve a rate exception as large as 0.50%.",
+     "title": "Documenting Pricing Exceptions",
+     "type": "procedure",
+     "version": 4,
+     "effective": "2025-06-20"
+    },
+    {
+     "id": "JA-LND-02@v2/s1/c1",
+     "text": "Regional manager rate exception limit | 1.00%",
+     "title": "Exception Documentation Checklist",
+     "type": "job_aid",
+     "version": 2,
+     "effective": "2025-11-09"
+    },
+    {
+     "id": "BUL-LND-01@v2/s1/c2",
+     "text": "Regional managers may approve rate exceptions of up to 0.75%.",
+     "title": "Branch Bulletin 2025-16: Regional manager rate exception limit",
+     "type": "bulletin",
+     "version": 2,
+     "effective": "2026-01-27"
+    },
+    {
+     "id": "POL-LND-01@v3/s3/c1",
+     "text": "Regional managers may approve rate exceptions of up to 0.50%.",
+     "title": "Loan Pricing Exception Policy",
+     "type": "policy",
+     "version": 3,
+     "effective": "2026-06-18"
+    },
+    {
+     "id": "POL-AOP-02@v3/s3/c1",
+     "text": "Only a manager can approve an exception to the identification requirements.",
+     "title": "Customer Identification Policy",
+     "type": "policy",
+     "version": 3,
+     "effective": "2026-02-28"
+    }
+   ]
+  }
+ ],
+ "input_hash": "dccbc94e493fb78efadc3e548e999f6dbaa3c4d7c629b56a2c6f63b3c4214e22",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "```json\n{\n \"results\": [\n  {\n   \"question\": \"q-C-01\",\n   \"answer\": \"The sources disagree. The Loan Pricing Exception Policy and Documenting Pricing Exceptions set the limit at 0.50%, while Branch Bulletin 2025-16 sets it at 0.75% and the Exception Documentation Checklist sets it at 1.00%. The policy outranks the bulletin and job aid so 0.50% is the limit to follow.\",\n   \"citations\": [\n    \"POL-LND-01@v3/s3/c1\",\n    \"PRO-LND-03@v4/s3/c9\",\n    \"BUL-LND-01@v2/s1/c2\",\n    \"JA-LND-02@v2/s1/c1\"\n   ],\n   \"sources_disagree\": true\n  }\n ]\n}\n```",
+   "problems": [],
+   "meta": {
+    "ms": 13918,
+    "input_tokens": 986,
+    "output_tokens": 2233,
+    "cost_usd": 0.009113,
+    "usage": {
+     "completion_tokens": 218,
+     "prompt_tokens": 986,
+     "total_tokens": 3219
+    },
+    "models": [
+     "gemini-3.8-flash"
+    ],
+    "stop_reason": "stop"
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T17:34:45+00:00"
+}

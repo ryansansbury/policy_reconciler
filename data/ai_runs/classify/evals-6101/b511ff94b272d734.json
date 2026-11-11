@@ -1,0 +1,362 @@
+{
+ "step": "classify",
+ "tag": "evals-6101",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "2c908358fde9f0f4a792753579a6cfaa33476e41c4b0f235744675d8e8283a19",
+ "input": [
+  {
+   "pair": "pair-89159d17cf",
+   "rule": "Dispute review threshold",
+   "attribute": "dispute_review_threshold",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-DSP-01@v5/s3/c1",
+    "text": "Send any dispute above $500 to card services for review before issuing credit.",
+    "heading": "Policy statements",
+    "document": {
+     "title": "Debit Card Dispute Policy",
+     "type": "policy",
+     "version": 5,
+     "effective": "2024-07-18",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "PRO-DSP-02@v4/s3/c5",
+    "text": "Disputes over $1,000 are reviewed by a card services specialist before credit is issued.",
+    "heading": "Steps",
+    "document": {
+     "title": "Issuing Provisional Credit",
+     "type": "procedure",
+     "version": 4,
+     "effective": "2024-12-16",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-ec8aac74fa",
+   "rule": "Card dispute window",
+   "attribute": "dispute_window",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-DSP-01@v5/s4/c1",
+    "text": "Customers have 60 days from the statement date to dispute a debit card transaction, or longer when the customer was traveling or hospitalized.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Debit Card Dispute Policy",
+     "type": "policy",
+     "version": 5,
+     "effective": "2024-07-18",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "PRO-DSP-05@v4/s3/c1",
+    "text": "Accept debit card disputes filed within 90 days of the statement that first showed the charge.",
+    "heading": "Steps",
+    "document": {
+     "title": "Blocking and Replacing a Compromised Card",
+     "type": "procedure",
+     "version": 4,
+     "effective": "2026-04-24",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-9ff3a147af",
+   "rule": "Notice before dormancy",
+   "attribute": "dormant_notice",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-DRM-01@v6/s4/c2",
+    "text": "Mail the customer a notice at least 30 days before the account is classified as dormant.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Dormant Account Policy",
+     "type": "policy",
+     "version": 6,
+     "effective": "2026-06-04",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "ADD-TX-01@v1/s2/c1",
+    "text": "In Texas branches, mail the customer a notice at least 45 days before the account is classified as dormant.",
+    "heading": "Texas requirements",
+    "document": {
+     "title": "Texas Branch Addendum",
+     "type": "addendum",
+     "version": 1,
+     "effective": "2026-08-01",
+     "applies_to": "Texas branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-198c50deb1",
+   "rule": null,
+   "attribute": null,
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-CMP-01@v4/s4/c2",
+    "text": "Resolve complaints within 15 business days of receipt, or tell the customer when to expect a resolution.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Complaint Management Policy",
+     "type": "policy",
+     "version": 4,
+     "effective": "2026-05-11",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "ADD-OK-01@v1/s2/c1",
+    "text": "In Oklahoma branches, resolve complaints within 30 business days of receipt, or tell the customer when to expect a resolution.",
+    "heading": "Oklahoma requirements",
+    "document": {
+     "title": "Oklahoma Branch Addendum",
+     "type": "addendum",
+     "version": 1,
+     "effective": "2026-04-24",
+     "applies_to": "Oklahoma branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-cef5507589",
+   "rule": "Closed account record retention",
+   "attribute": "records_retention",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-REC-01@v4/s4/c1",
+    "text": "Account records are kept for 7 years after the account closes.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Records Retention Policy",
+     "type": "policy",
+     "version": 4,
+     "effective": "2025-04-11",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "ADD-KS-01@v1/s2/c1",
+    "text": "In Kansas branches, retain closed account records for 5 years from the closing date.",
+    "heading": "Kansas requirements",
+    "document": {
+     "title": "Kansas Branch Addendum",
+     "type": "addendum",
+     "version": 1,
+     "effective": "2026-04-19",
+     "applies_to": "Kansas branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-4f72867e18",
+   "rule": "Fee refund window",
+   "attribute": "fee_refund_window",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-FEE-01@v3/s4/c1",
+    "text": "Customers may request a fee refund within 60 days of the statement date.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Service Fee Waiver Policy",
+     "type": "policy",
+     "version": 3,
+     "effective": "2024-08-03",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "ADD-CO-01@v1/s2/c1",
+    "text": "In Colorado branches, customers may request a fee refund within 30 days of the statement date.",
+    "heading": "Colorado requirements",
+    "document": {
+     "title": "Colorado Branch Addendum",
+     "type": "addendum",
+     "version": 1,
+     "effective": "2026-08-20",
+     "applies_to": "Colorado branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-9686e93ef6",
+   "rule": "Dormant account fee",
+   "attribute": "dormant_fee",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-DRM-01@v6/s3/c1",
+    "text": "Dormant accounts are charged a maintenance fee of $5 per month.",
+    "heading": "Policy statements",
+    "document": {
+     "title": "Dormant Account Policy",
+     "type": "policy",
+     "version": 6,
+     "effective": "2026-06-04",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "ADD-TX-01@v1/s2/c2",
+    "text": "In Texas branches, dormant accounts are charged a maintenance fee of $3 per month.",
+    "heading": "Texas requirements",
+    "document": {
+     "title": "Texas Branch Addendum",
+     "type": "addendum",
+     "version": 1,
+     "effective": "2026-08-01",
+     "applies_to": "Texas branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-32cfe51558",
+   "rule": "Vault combination change interval",
+   "attribute": "combo_change",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-BOP-01@v4/s3/c1",
+    "text": "Change the vault combination at least every 6 months.",
+    "heading": "Policy statements",
+    "document": {
+     "title": "Branch Security and Opening Policy",
+     "type": "policy",
+     "version": 4,
+     "effective": "2024-12-04",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "ADD-OK-01@v1/s2/c2",
+    "text": "In Oklahoma branches, vault combinations are changed every 12 months and whenever an employee who knows the combination leaves.",
+    "heading": "Oklahoma requirements",
+    "document": {
+     "title": "Oklahoma Branch Addendum",
+     "type": "addendum",
+     "version": 1,
+     "effective": "2026-04-24",
+     "applies_to": "Oklahoma branches. All business lines."
+    }
+   }
+  }
+ ],
+ "input_hash": "65385b51eb0f5f0b3b60a0bcf906a37aac41fcb034871d2d18a266eda5d0742b",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\":[{\"pair\":\"pair-89159d17cf\",\"label\":\"conflict\",\"quote_a\":\"Send any dispute above $500 to card services for review before issuing credit.\",\"quote_b\":\"Disputes over $1,000 are reviewed by a card services specialist before credit is issued.\",\"rationale\":\"Both apply to the same branches and accounts but set review thresholds of $500 and $1,000. A $750 dispute must go to review under one clause and not under the other.\"},{\"pair\":\"pair-ec8aac74fa\",\"label\":\"conflict\",\"quote_a\":\"Customers have 60 days from the statement date to dispute a debit card transaction\",\"quote_b\":\"Accept debit card disputes filed within 90 days of the statement that first showed the charge.\",\"rationale\":\"Both apply to all branches and the same accounts but set a 60 day and a 90 day window. Staff following the first would refuse a dispute filed on day 75 that the second requires them to accept.\"},{\"pair\":\"pair-9ff3a147af\",\"label\":\"variation\",\"quote_a\":\"Mail the customer a notice at least 30 days before the account is classified as dormant.\",\"quote_b\":\"In Texas branches, mail the customer a notice at least 45 days before the account is classified as dormant.\",\"rationale\":\"The Texas addendum sets a 45 day notice on purpose for Texas branches only. The general 30 day notice applies elsewhere.\"},{\"pair\":\"pair-198c50deb1\",\"label\":\"variation\",\"quote_a\":\"Resolve complaints within 15 business days of receipt\",\"quote_b\":\"In Oklahoma branches, resolve complaints within 30 business days of receipt\",\"rationale\":\"The Oklahoma addendum states a 30 business day deadline for Oklahoma branches on purpose. The 15 business day deadline applies in the other branches.\"},{\"pair\":\"pair-cef5507589\",\"label\":\"variation\",\"quote_a\":\"Account records are kept for 7 years after the account closes.\",\"quote_b\":\"In Kansas branches, retain closed account records for 5 years from the closing date.\",\"rationale\":\"The Kansas addendum sets a 5 year retention period on purpose for Kansas branches only. The 7 year period applies elsewhere.\"},{\"pair\":\"pair-4f72867e18\",\"label\":\"variation\",\"quote_a\":\"Customers may request a fee refund within 60 days of the statement date.\",\"quote_b\":\"In Colorado branches, customers may request a fee refund within 30 days of the statement date.\",\"rationale\":\"The Colorado addendum sets a 30 day window on purpose for Colorado branches only. The 60 day window applies in the other branches.\"},{\"pair\":\"pair-9686e93ef6\",\"label\":\"variation\",\"quote_a\":\"Dormant accounts are charged a maintenance fee of $5 per month.\",\"quote_b\":\"In Texas branches, dormant accounts are charged a maintenance fee of $3 per month.\",\"rationale\":\"The Texas addendum sets a $3 fee on purpose for Texas branches only. The $5 fee applies in the other branches.\"},{\"pair\":\"pair-32cfe51558\",\"label\":\"variation\",\"quote_a\":\"Change the vault combination at least every 6 months.\",\"quote_b\":\"In Oklahoma branches, vault combinations are changed every 12 months and whenever an employee who knows the combination leaves.\",\"rationale\":\"The Oklahoma addendum sets a 12 month interval on purpose for Oklahoma branches only. The 6 month interval applies in the other branches.\"}]}",
+   "problems": [
+    "pair-89159d17cf: the rationale uses numbers that aren't in either clause or its document: 750",
+    "pair-ec8aac74fa: the rationale uses numbers that aren't in either clause or its document: 75"
+   ],
+   "meta": {
+    "ms": 7729,
+    "api_ms": 7583,
+    "input_tokens": 9034,
+    "output_tokens": 1138,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 9032,
+     "cache_read_input_tokens": 0,
+     "output_tokens": 1138,
+     "output_tokens_details": {
+      "thinking_tokens": 0
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 9032,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 1138,
+       "cache_read_input_tokens": 0,
+       "cache_creation_input_tokens": 9032,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 9032
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.047512,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  },
+  {
+   "reply": "{\"results\": [{\"pair\": \"pair-89159d17cf\", \"label\": \"conflict\", \"quote_a\": \"Send any dispute above $500 to card services for review before issuing credit.\", \"quote_b\": \"Disputes over $1,000 are reviewed by a card services specialist before credit is issued.\", \"rationale\": \"The policy requires card services review for disputes above $500 while the procedure requires it only above $1,000. Staff following the procedure would issue credit without review on disputes between those amounts that the policy sends to card services.\"}, {\"pair\": \"pair-ec8aac74fa\", \"label\": \"conflict\", \"quote_a\": \"Customers have 60 days from the statement date to dispute a debit card transaction, or longer when the customer was traveling or hospitalized.\", \"quote_b\": \"Accept debit card disputes filed within 90 days of the statement that first showed the charge.\", \"rationale\": \"The policy sets a 60 day window and extends it only for travel or hospitalization, while the procedure accepts disputes within 90 days with no such condition. Staff following the policy would refuse a dispute filed after 60 days that the procedure tells them to accept.\"}]}",
+   "problems": [],
+   "meta": {
+    "ms": 7614,
+    "api_ms": 7477,
+    "input_tokens": 6682,
+    "output_tokens": 976,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 5839,
+     "cache_read_input_tokens": 841,
+     "output_tokens": 976,
+     "output_tokens_details": {
+      "thinking_tokens": 601
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 5839,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 976,
+       "cache_read_input_tokens": 841,
+       "cache_creation_input_tokens": 5839,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 5839
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.0332041,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   },
+   "items": [
+    "pair-89159d17cf",
+    "pair-ec8aac74fa"
+   ]
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T05:28:00+00:00"
+}

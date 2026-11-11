@@ -1,0 +1,289 @@
+{
+ "step": "classify",
+ "tag": "cmp-6101",
+ "model": "openai-b",
+ "backend": {
+  "vendor": "OpenAI",
+  "model": "gpt-6-luna",
+  "label": "GPT-6 Luna"
+ },
+ "prompt_hash": "2c908358fde9f0f4a792753579a6cfaa33476e41c4b0f235744675d8e8283a19",
+ "input": [
+  {
+   "pair": "pair-b9b63a998c",
+   "rule": "Wire callback threshold",
+   "attribute": "wire_callback",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "BUL-WIR-01@v2/s1/c2",
+    "text": "Call the customer back at a phone number already on file before releasing any outgoing wire of $10,000 or more.",
+    "heading": "What branches need to know",
+    "document": {
+     "title": "Branch Bulletin 2025-24: Callback threshold for outgoing wires",
+     "type": "bulletin",
+     "version": 2,
+     "effective": "2026-07-18",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "BUL-WIR-01@v1/s1/c2",
+    "text": "Call the customer back at a phone number already on file before releasing any outgoing wire of $5,000 or more.",
+    "heading": "What branches need to know",
+    "document": {
+     "title": "Branch Bulletin 2025-24: Callback threshold for outgoing wires",
+     "type": "bulletin",
+     "version": 1,
+     "effective": "2025-04-28",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-cf977c047d",
+   "rule": "Provisional credit deadline",
+   "attribute": "dispute_provisional_credit",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "JA-DSP-01@v3/s1/c1",
+    "text": "Provisional credit deadline for disputes | 10 business days",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Dispute Intake Checklist",
+     "type": "job_aid",
+     "version": 3,
+     "effective": "2025-08-29",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "JA-DSP-01@v2/s1/c1",
+    "text": "Provisional credit deadline for disputes | 5 business days",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Dispute Intake Checklist",
+     "type": "job_aid",
+     "version": 2,
+     "effective": "2024-06-03",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-313e5af199",
+   "rule": "Outgoing wire cutoff",
+   "attribute": "wire_cutoff",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-WIR-01@v2/s3/c1",
+    "text": "The cutoff for outgoing commercial wires is 4:00 PM Central time.",
+    "heading": "Policy statements",
+    "document": {
+     "title": "Wire Transfer Policy",
+     "type": "policy",
+     "version": 2,
+     "effective": "2026-08-02",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "POL-WIR-01@v2/s3/c3",
+    "text": "Incoming wires received by 4:30 p.m. Central are posted to the customer's account the same day.",
+    "heading": "Policy statements",
+    "document": {
+     "title": "Wire Transfer Policy",
+     "type": "policy",
+     "version": 2,
+     "effective": "2026-08-02",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-60d450ea5d",
+   "rule": "Provisional credit deadline",
+   "attribute": "dispute_provisional_credit",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-DSP-01@v5/s4/c2",
+    "text": "Provisional credit is issued within 10 business days of receiving a completed dispute.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Debit Card Dispute Policy",
+     "type": "policy",
+     "version": 5,
+     "effective": "2024-07-18",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "POL-DSP-01@v5/s4/c3",
+    "text": "Replacement debit cards arrive within 7 business days of the request.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Debit Card Dispute Policy",
+     "type": "policy",
+     "version": 5,
+     "effective": "2024-07-18",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-849f1ce6bf",
+   "rule": "Legal hold",
+   "attribute": "legal_hold",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-HLD-05@v1/s3/c7",
+    "text": "Funds from deposited checks are available within 2 days unless a longer hold applies.",
+    "heading": "Steps",
+    "document": {
+     "title": "Explaining Holds to Customers",
+     "type": "procedure",
+     "version": 1,
+     "effective": "2025-03-23",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "PRO-HLD-05@v1/s3/c8",
+    "text": "Records under a legal hold must not be destroyed until Compliance releases the hold in writing.",
+    "heading": "Steps",
+    "document": {
+     "title": "Explaining Holds to Customers",
+     "type": "procedure",
+     "version": 1,
+     "effective": "2025-03-23",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-0be0ab9c1b",
+   "rule": "Teller drawer limit",
+   "attribute": "cash_drawer_limit",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-CSH-01@v4/s4/c1",
+    "text": "Sell excess cash to the vault whenever a teller drawer goes above $15,000.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Cash Handling Policy",
+     "type": "policy",
+     "version": 4,
+     "effective": "2025-05-11",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "POL-CSH-01@v4/s4/c4",
+    "text": "The daily ATM withdrawal limit for consumer debit cards is $800.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Cash Handling Policy",
+     "type": "policy",
+     "version": 4,
+     "effective": "2025-05-11",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-50acec7abf",
+   "rule": "Complaint acknowledgment deadline",
+   "attribute": "complaint_ack",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "BUL-CMP-02@v1/s1/c2",
+    "text": "Send the customer an acknowledgment no later than 2 business days after a written complaint arrives.",
+    "heading": "What branches need to know",
+    "document": {
+     "title": "Branch Bulletin 2026-35: Complaint acknowledgment deadline",
+     "type": "bulletin",
+     "version": 1,
+     "effective": "2026-05-14",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "BUL-CMP-02@v1/s1/c4",
+    "text": "Send the visit survey within 5 business days after the customer's branch visit.",
+    "heading": "What branches need to know",
+    "document": {
+     "title": "Branch Bulletin 2026-35: Complaint acknowledgment deadline",
+     "type": "bulletin",
+     "version": 1,
+     "effective": "2026-05-14",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-9c8f873a29",
+   "rule": "Overdraft fee per item",
+   "attribute": "od_fee",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-ODR-06@v2/s3/c1",
+    "text": "Each item paid into overdraft is charged $30.",
+    "heading": "Steps",
+    "document": {
+     "title": "Handling Overdraft Fee Disputes",
+     "type": "procedure",
+     "version": 2,
+     "effective": "2025-04-24",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "PRO-ODR-06@v2/s3/c8",
+    "text": "Withdrawals at ATMs outside the network are charged $3 each.",
+    "heading": "Steps",
+    "document": {
+     "title": "Handling Overdraft Fee Disputes",
+     "type": "procedure",
+     "version": 2,
+     "effective": "2025-04-24",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  }
+ ],
+ "input_hash": "1331ce0405daeb5df9903402b1e6cf3fd7c20f58bcf986d4bc529ab38b226559",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\":[{\"pair\":\"pair-b9b63a998c\",\"label\":\"superseded\",\"quote_a\":\"Call the customer back at a phone number already on file before releasing any outgoing wire of $10,000 or more.\",\"quote_b\":\"Call the customer back at a phone number already on file before releasing any outgoing wire of $5,000 or more.\",\"rationale\":\"These clauses are different versions of the same bulletin. Version 2 replaces version 1.\"},{\"pair\":\"pair-cf977c047d\",\"label\":\"superseded\",\"quote_a\":\"Provisional credit deadline for disputes | 10 business days\",\"quote_b\":\"Provisional credit deadline for disputes | 5 business days\",\"rationale\":\"These clauses are different versions of the same job aid. Version 3 replaces version 2.\"},{\"pair\":\"pair-313e5af199\",\"label\":\"unrelated\",\"quote_a\":\"The cutoff for outgoing commercial wires is 4:00 PM Central time.\",\"quote_b\":\"Incoming wires received by 4:30 p.m. Central are posted to the customer's account the same day.\",\"rationale\":\"The first clause sets a cutoff for outgoing commercial wires. The second sets a posting time for incoming wires.\"},{\"pair\":\"pair-60d450ea5d\",\"label\":\"unrelated\",\"quote_a\":\"Provisional credit is issued within 10 business days of receiving a completed dispute.\",\"quote_b\":\"Replacement debit cards arrive within 7 business days of the request.\",\"rationale\":\"The first clause sets a deadline for provisional credit after a dispute. The second sets a delivery time for replacement debit cards.\"},{\"pair\":\"pair-849f1ce6bf\",\"label\":\"unrelated\",\"quote_a\":\"Funds from deposited checks are available within 2 days unless a longer hold applies.\",\"quote_b\":\"Records under a legal hold must not be destroyed until Compliance releases the hold in writing.\",\"rationale\":\"The first clause concerns availability of deposited check funds. The second concerns destruction of records under a legal hold.\"},{\"pair\":\"pair-0be0ab9c1b\",\"label\":\"unrelated\",\"quote_a\":\"Sell excess cash to the vault whenever a teller drawer goes above $15,000.\",\"quote_b\":\"The daily ATM withdrawal limit for consumer debit cards is $800.\",\"rationale\":\"The first clause sets a teller drawer cash threshold. The second sets a consumer debit card ATM withdrawal limit.\"},{\"pair\":\"pair-50acec7abf\",\"label\":\"unrelated\",\"quote_a\":\"Send the customer an acknowledgment no later than 2 business days after a written complaint arrives.\",\"quote_b\":\"Send the visit survey within 5 business days after the customer's branch visit.\",\"rationale\":\"The first clause sets an acknowledgment deadline for written complaints. The second sets a deadline for sending a branch visit survey.\"},{\"pair\":\"pair-9c8f873a29\",\"label\":\"unrelated\",\"quote_a\":\"Each item paid into overdraft is charged $30.\",\"quote_b\":\"Withdrawals at ATMs outside the network are charged $3 each.\",\"rationale\":\"The first clause sets a fee for items paid into overdraft. The second sets a fee for out of network ATM withdrawals.\"}]}",
+   "problems": [],
+   "meta": {
+    "ms": 7527,
+    "input_tokens": 2923,
+    "output_tokens": 879,
+    "cost_usd": 0.000732,
+    "usage": {
+     "prompt_tokens": 2923,
+     "completion_tokens": 879,
+     "total_tokens": 3802,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 2920,
+      "audio_tokens": 0
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 223,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+     }
+    },
+    "models": [
+     "gpt-6-luna"
+    ],
+    "stop_reason": "stop"
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T17:22:05+00:00"
+}

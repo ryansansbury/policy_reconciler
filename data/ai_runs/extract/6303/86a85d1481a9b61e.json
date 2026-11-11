@@ -1,0 +1,167 @@
+{
+ "step": "extract",
+ "tag": "6303",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "dcc761e46c6ec579c01b9dfd540df3c2fa4bba3b6b5ec777aa2cf9c9c62aa411",
+ "input": [
+  {
+   "clause": "ADD-KS-01@v3/s2/c3",
+   "text": "In Kansas branches, resolve complaints within 30 business days of receipt, or tell the customer when to expect a resolution.",
+   "heading": "Kansas requirements",
+   "document": {
+    "title": "Kansas Branch Addendum",
+    "type": "addendum",
+    "applies_to": "Kansas branches. All business lines."
+   }
+  },
+  {
+   "clause": "BUL-AOP-01@v2/s1/c2",
+   "text": "Only the branch manager can approve an exception to the identification requirements.",
+   "heading": "What branches need to know",
+   "document": {
+    "title": "Branch Bulletin 2025-09: Approver for identification exceptions",
+    "type": "bulletin",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "BUL-CMP-02@v3/s1/c2",
+   "text": "Complaints that allege unfair treatment are escalated to management the same day.",
+   "heading": "What branches need to know",
+   "document": {
+    "title": "Branch Bulletin 2026-12: Escalation for unfair treatment complaints",
+    "type": "bulletin",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "BUL-WIR-01@v4/s1/c2",
+   "text": "Outgoing wires of $10,000 or more require a callback to the customer at a number already on file.",
+   "heading": "What branches need to know",
+   "document": {
+    "title": "Branch Bulletin 2025-30: Callback threshold for outgoing wires",
+    "type": "bulletin",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "BUL-WIR-02@v2/s1/c2",
+   "text": "Only an operations employee may complete the callback for an outgoing wire.",
+   "heading": "What branches need to know",
+   "document": {
+    "title": "Branch Bulletin 2026-38: Who completes wire callbacks",
+    "type": "bulletin",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "FAQ-AOP-01@v3/s3/c1",
+   "text": "Any exception to the identification requirements must be approved by the branch manager.",
+   "heading": "Who can approve an exception to the identification requirements?",
+   "document": {
+    "title": "Account Opening FAQ",
+    "type": "faq",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "FAQ-AOP-02@v2/s1/c1",
+   "text": "Any exception to the identification requirements must be approved by the operations specialist.",
+   "heading": "Who can approve an exception to the identification requirements?",
+   "document": {
+    "title": "Identification Questions from the Branches",
+    "type": "faq",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "FAQ-CMP-01@v2/s1/c1",
+   "text": "Complaints that allege unfair treatment are escalated to management the same day.",
+   "heading": "Who handles a complaint that alleges unfair treatment?",
+   "document": {
+    "title": "Complaint Handling FAQ",
+    "type": "faq",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "FAQ-CMP-02@v1/s1/c1",
+   "text": "Resolve complaints within 15 business days of receipt, or tell the customer when to expect a resolution.",
+   "heading": "How long does the bank have to resolve a complaint?",
+   "document": {
+    "title": "Complaint Escalation Questions",
+    "type": "faq",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "FAQ-CSH-01@v3/s1/c2",
+   "text": "Use the counterfeit detection pen on bills of fifty dollars or more.",
+   "heading": "How much cash can a teller drawer hold?",
+   "document": {
+    "title": "Cash Handling FAQ",
+    "type": "faq",
+    "applies_to": "All branches. All business lines."
+   }
+  }
+ ],
+ "input_hash": "9c9e1ef5aa8e74749a90e3c6cbd2418aa7a128331ccac455e87bfd7985dcc598",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\":[{\"clause\":\"ADD-KS-01@v3/s2/c3\",\"atoms\":[{\"attribute\":\"complaint_resolve\",\"value\":{\"type\":\"duration\",\"n\":30,\"unit\":\"business_days\"},\"quote\":\"30 business days\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":\"In Kansas branches\",\"condition\":\"or tell the customer when to expect a resolution\"}]},{\"clause\":\"BUL-AOP-01@v2/s1/c2\",\"atoms\":[{\"attribute\":\"ao_exception_approver\",\"value\":{\"type\":\"role\",\"role\":\"branch_manager\"},\"quote\":\"branch manager\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]},{\"clause\":\"BUL-CMP-02@v3/s1/c2\",\"atoms\":[{\"attribute\":\"complaint_escalation_role\",\"value\":{\"type\":\"role\",\"role\":null,\"generic\":\"management\"},\"quote\":\"management\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]},{\"clause\":\"BUL-WIR-01@v4/s1/c2\",\"atoms\":[{\"attribute\":\"wire_callback\",\"value\":{\"type\":\"money\",\"dollars\":10000},\"quote\":\"$10,000\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]},{\"clause\":\"BUL-WIR-02@v2/s1/c2\",\"atoms\":[{\"attribute\":\"wire_callback_role\",\"value\":{\"type\":\"role\",\"role\":null,\"generic\":\"operations employee\"},\"quote\":\"operations employee\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]},{\"clause\":\"FAQ-AOP-01@v3/s3/c1\",\"atoms\":[{\"attribute\":\"ao_exception_approver\",\"value\":{\"type\":\"role\",\"role\":\"branch_manager\"},\"quote\":\"branch manager\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]},{\"clause\":\"FAQ-AOP-02@v2/s1/c1\",\"atoms\":[{\"attribute\":\"ao_exception_approver\",\"value\":{\"type\":\"role\",\"role\":\"operations_specialist\"},\"quote\":\"operations specialist\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]},{\"clause\":\"FAQ-CMP-01@v2/s1/c1\",\"atoms\":[{\"attribute\":\"complaint_escalation_role\",\"value\":{\"type\":\"role\",\"role\":null,\"generic\":\"management\"},\"quote\":\"management\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]},{\"clause\":\"FAQ-CMP-02@v1/s1/c1\",\"atoms\":[{\"attribute\":\"complaint_resolve\",\"value\":{\"type\":\"duration\",\"n\":15,\"unit\":\"business_days\"},\"quote\":\"15 business days\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":\"or tell the customer when to expect a resolution\"}]},{\"clause\":\"FAQ-CSH-01@v3/s1/c2\",\"atoms\":[]}]}",
+   "problems": [],
+   "meta": {
+    "ms": 8933,
+    "api_ms": 8706,
+    "input_tokens": 9050,
+    "output_tokens": 1639,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 6366,
+     "cache_read_input_tokens": 2682,
+     "output_tokens": 1639,
+     "output_tokens_details": {
+      "thinking_tokens": 587
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 6366,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 1639,
+       "cache_read_input_tokens": 2682,
+       "cache_creation_input_tokens": 6366,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 6366
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.0421262,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T04:11:24+00:00"
+}

@@ -1,0 +1,149 @@
+{
+ "step": "extract",
+ "tag": "2026",
+ "model": "openai-b",
+ "backend": {
+  "vendor": "OpenAI",
+  "model": "gpt-6-luna",
+  "label": "GPT-6 Luna"
+ },
+ "prompt_hash": "dcc761e46c6ec579c01b9dfd540df3c2fa4bba3b6b5ec777aa2cf9c9c62aa411",
+ "input": [
+  {
+   "clause": "JA-WIR-03@v3/s2/c1",
+   "text": "Never accept wire instructions sent by email without verifying them by phone.",
+   "heading": "Checklist",
+   "document": {
+    "title": "Wire Cutoff Card",
+    "type": "job_aid",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "JA-WIR-03@v3/s3/c1",
+   "text": "Callbacks are completed by a wire specialist, never by the employee who took the request.",
+   "heading": "Steps to follow",
+   "document": {
+    "title": "Wire Cutoff Card",
+    "type": "job_aid",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "JA-WIR-03@v3/s3/c2",
+   "text": "Never accept wire instructions sent by email without verifying them by phone.",
+   "heading": "Steps to follow",
+   "document": {
+    "title": "Wire Cutoff Card",
+    "type": "job_aid",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "JA-WIR-03@v3/s3/c4",
+   "text": "An operations manager must give a second approval for any outgoing wire above $50,000.",
+   "heading": "Steps to follow",
+   "document": {
+    "title": "Wire Cutoff Card",
+    "type": "job_aid",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "POL-AOP-01@v2/s3/c1",
+   "text": "Only the branch manager can approve an exception to the identification requirements.",
+   "heading": "Policy statements",
+   "document": {
+    "title": "Deposit Account Opening Policy",
+    "type": "policy",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "POL-AOP-01@v2/s4/c2",
+   "text": "Do not open an account until you have verified two forms of identification for each signer, or one form plus a verified bank reference when the branch manager approves.",
+   "heading": "Additional requirements",
+   "document": {
+    "title": "Deposit Account Opening Policy",
+    "type": "policy",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "POL-AOP-01@v2/s5/c1",
+   "text": "Exceptions to this policy need written approval from the Deposit Operations manager and are reviewed each quarter.",
+   "heading": "Exceptions",
+   "document": {
+    "title": "Deposit Account Opening Policy",
+    "type": "policy",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "POL-AOP-01@v2/s6/c1",
+   "text": "Branch managers make sure their teams follow this policy, and Deposit Operations answers questions about it.",
+   "heading": "Roles and responsibilities",
+   "document": {
+    "title": "Deposit Account Opening Policy",
+    "type": "policy",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "POL-AOP-02@v2/s4/c1",
+   "text": "Do not open an account until you have verified two forms of identification for each signer, or one form plus a verified bank reference when the branch manager approves.",
+   "heading": "Additional requirements",
+   "document": {
+    "title": "Customer Identification Policy",
+    "type": "policy",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "POL-AOP-02@v2/s5/c1",
+   "text": "Exceptions to this policy need written approval from the Deposit Operations manager and are reviewed each quarter.",
+   "heading": "Exceptions",
+   "document": {
+    "title": "Customer Identification Policy",
+    "type": "policy",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  }
+ ],
+ "input_hash": "a70b14818b49c040ca9829b20e9186f58d9dc8affa585cb38c03655b2391dbbf",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\":[{\"clause\":\"JA-WIR-03@v3/s2/c1\",\"atoms\":[]},{\"clause\":\"JA-WIR-03@v3/s3/c1\",\"atoms\":[{\"attribute\":\"wire_callback_role\",\"value\":{\"type\":\"role\",\"role\":\"wire_specialist\"},\"quote\":\"wire specialist\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]},{\"clause\":\"JA-WIR-03@v3/s3/c2\",\"atoms\":[]},{\"clause\":\"JA-WIR-03@v3/s3/c4\",\"atoms\":[{\"attribute\":\"wire_second_approval\",\"value\":{\"type\":\"money\",\"dollars\":50000},\"quote\":\"$50,000\",\"actor\":\"operations_manager\",\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]},{\"clause\":\"POL-AOP-01@v2/s3/c1\",\"atoms\":[{\"attribute\":\"ao_exception_approver\",\"value\":{\"type\":\"role\",\"role\":\"branch_manager\"},\"quote\":\"branch manager\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]},{\"clause\":\"POL-AOP-01@v2/s4/c2\",\"atoms\":[{\"attribute\":\"ao_id_count\",\"value\":{\"type\":\"count\",\"n\":2},\"quote\":\"two forms\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":\"or one form plus a verified bank reference when the branch manager approves\"},{\"attribute\":\"ao_exception_approver\",\"value\":{\"type\":\"role\",\"role\":\"branch_manager\"},\"quote\":\"branch manager\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":\"when the branch manager approves\"}]},{\"clause\":\"POL-AOP-01@v2/s5/c1\",\"atoms\":[{\"attribute\":\"ao_exception_approver\",\"value\":{\"type\":\"role\",\"role\":null,\"generic\":\"Deposit Operations manager\"},\"quote\":\"Deposit Operations manager\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]},{\"clause\":\"POL-AOP-01@v2/s6/c1\",\"atoms\":[]},{\"clause\":\"POL-AOP-02@v2/s4/c1\",\"atoms\":[{\"attribute\":\"ao_id_count\",\"value\":{\"type\":\"count\",\"n\":2},\"quote\":\"two forms\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":\"or one form plus a verified bank reference when the branch manager approves\"},{\"attribute\":\"ao_exception_approver\",\"value\":{\"type\":\"role\",\"role\":\"branch_manager\"},\"quote\":\"branch manager\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":\"when the branch manager approves\"}]},{\"clause\":\"POL-AOP-02@v2/s5/c1\",\"atoms\":[{\"attribute\":\"ao_exception_approver\",\"value\":{\"type\":\"role\",\"role\":null,\"generic\":\"Deposit Operations manager\"},\"quote\":\"Deposit Operations manager\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]}]}",
+   "problems": [],
+   "meta": {
+    "ms": 24962,
+    "input_tokens": 2692,
+    "output_tokens": 1984,
+    "cost_usd": 0.001261,
+    "usage": {
+     "prompt_tokens": 2692,
+     "completion_tokens": 1984,
+     "total_tokens": 4676,
+     "prompt_tokens_details": {
+      "cached_tokens": 1728,
+      "cache_write_tokens": 961,
+      "audio_tokens": 0
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 1326,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+     }
+    },
+    "models": [
+     "gpt-6-luna"
+    ],
+    "stop_reason": "stop"
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T19:46:17+00:00"
+}

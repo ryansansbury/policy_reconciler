@@ -1,0 +1,167 @@
+{
+ "step": "extract",
+ "tag": "6101",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "dcc761e46c6ec579c01b9dfd540df3c2fa4bba3b6b5ec777aa2cf9c9c62aa411",
+ "input": [
+  {
+   "clause": "PRO-CSH-06@v2/s3/c7",
+   "text": "Keep your drawer locked whenever you step away from the teller line.",
+   "heading": "Steps",
+   "document": {
+    "title": "Ordering Cash Shipments",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-CSH-07@v3/s3/c3",
+   "text": "Report any shortage or overage to the head teller before you leave for the day.",
+   "heading": "Steps",
+   "document": {
+    "title": "Counting Cash Under Dual Control",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-CSH-07@v3/s3/c4",
+   "text": "Use the counterfeit detection pen on bills of fifty dollars or more.",
+   "heading": "Steps",
+   "document": {
+    "title": "Counting Cash Under Dual Control",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-CSH-07@v3/s3/c5",
+   "text": "Keep your drawer locked whenever you step away from the teller line.",
+   "heading": "Steps",
+   "document": {
+    "title": "Counting Cash Under Dual Control",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-CSH-07@v4/s3/c3",
+   "text": "Report any shortage or overage to the head teller before you leave for the day.",
+   "heading": "Steps",
+   "document": {
+    "title": "Counting Cash Under Dual Control",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-CSH-07@v4/s3/c4",
+   "text": "Use the counterfeit detection pen on bills of fifty dollars or more.",
+   "heading": "Steps",
+   "document": {
+    "title": "Counting Cash Under Dual Control",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-CSH-07@v4/s3/c5",
+   "text": "Keep your drawer locked whenever you step away from the teller line.",
+   "heading": "Steps",
+   "document": {
+    "title": "Counting Cash Under Dual Control",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-DSP-05@v4/s5/c1",
+   "text": "Card services specialists review disputes in the order they arrive.",
+   "heading": "Related requirements",
+   "document": {
+    "title": "Blocking and Replacing a Compromised Card",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "PRO-DSP-06@v3/s5/c1",
+   "text": "Provisional credit is issued within 10 business days of receiving a completed dispute, whatever its review status.",
+   "heading": "Related requirements",
+   "document": {
+    "title": "Large Dispute Review",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "PRO-FEE-03@v2/s3/c1",
+   "text": "Review recurring waiver requests with the branch manager at the monthly meeting.",
+   "heading": "Steps",
+   "document": {
+    "title": "Handling Fee Refund Requests",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  }
+ ],
+ "input_hash": "c401dbbac5cbb252af00295878d1c837a9c22a4bf11a1e2de352cbd30b4ec1cc",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [\n{\"clause\": \"PRO-CSH-06@v2/s3/c7\", \"atoms\": []},\n{\"clause\": \"PRO-CSH-07@v3/s3/c3\", \"atoms\": []},\n{\"clause\": \"PRO-CSH-07@v3/s3/c4\", \"atoms\": []},\n{\"clause\": \"PRO-CSH-07@v3/s3/c5\", \"atoms\": []},\n{\"clause\": \"PRO-CSH-07@v4/s3/c3\", \"atoms\": []},\n{\"clause\": \"PRO-CSH-07@v4/s3/c4\", \"atoms\": []},\n{\"clause\": \"PRO-CSH-07@v4/s3/c5\", \"atoms\": []},\n{\"clause\": \"PRO-DSP-05@v4/s5/c1\", \"atoms\": []},\n{\"clause\": \"PRO-DSP-06@v3/s5/c1\", \"atoms\": [\n{\"attribute\": \"dispute_provisional_credit\", \"value\": {\"type\": \"duration\", \"n\": 10, \"unit\": \"business_days\"}, \"quote\": \"10 business days\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}\n]},\n{\"clause\": \"PRO-FEE-03@v2/s3/c1\", \"atoms\": []}\n]}",
+   "problems": [],
+   "meta": {
+    "ms": 6241,
+    "api_ms": 6022,
+    "input_tokens": 8896,
+    "output_tokens": 877,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 6212,
+     "cache_read_input_tokens": 2682,
+     "output_tokens": 877,
+     "output_tokens_details": {
+      "thinking_tokens": 447
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 6212,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 877,
+       "cache_read_input_tokens": 2682,
+       "cache_creation_input_tokens": 6212,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 6212
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.033890199999999995,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T04:10:20+00:00"
+}

@@ -1,0 +1,79 @@
+{
+ "step": "judge",
+ "tag": "2026",
+ "model": "google-a",
+ "backend": {
+  "vendor": "Google",
+  "model": "gemini-3.1-pro-preview",
+  "label": "Gemini 3.1 Pro"
+ },
+ "prompt_hash": "ab6a49ec8731854b3cf900a9a4387417ee8016fe68257c4d327181c7eb1621da",
+ "input": [
+  {
+   "draft": "g-02ec0cc3",
+   "text": "Before an outgoing wire of $10,000 or more is sent, staff call the customer back at a phone number already on file. No callback is needed when the wire goes to an account the customer has used in the past year.",
+   "sources": [
+    "Outgoing wires of $10,000 or more require a callback to the customer at a number already on file, unless the wire goes to an account the customer has used in the past year.",
+    "Outgoing wires of $5,000 or more require a callback to the customer at a number already on file.",
+    "Outgoing wires of $10,000 or more require a callback to the customer at a number already on file.",
+    "Outgoing wires of $10,000 or more require a callback that a wire specialist completes.",
+    "Callback threshold for outgoing wires | $10,000",
+    "Call the customer back at a phone number already on file before releasing any outgoing wire of $10,000 or more.",
+    "Outgoing wires of $10,000 or more require a callback to the customer at a number already on file."
+   ]
+  },
+  {
+   "draft": "g-e83d1e4a",
+   "text": "Every wire callback is completed by a wire specialist. The employee who took the wire request never completes the callback.",
+   "sources": [
+    "Callbacks are completed by a wire specialist, never by the employee who took the request.",
+    "Only an operations employee may complete the callback for an outgoing wire.",
+    "Callbacks are completed by an operations employee, never by the employee who took the request.",
+    "Who completes wire callbacks | teller"
+   ]
+  },
+  {
+   "draft": "g-1e497f6c",
+   "text": "Submit outgoing consumer and small business wires by 3:00 PM Central time for processing on the same day.",
+   "sources": [
+    "Submit outgoing consumer and small business wires by 3:00 PM Central for same-day processing.",
+    "Submit outgoing consumer and small business wires by 2:00 PM Central for same-day processing.",
+    "Submit outgoing consumer and small business wires by 2:00 PM Central for same-day processing."
+   ]
+  },
+  {
+   "draft": "g-de226699",
+   "text": "The cutoff for outgoing commercial wires is 4:00 PM Central time.",
+   "sources": [
+    "The cutoff for outgoing commercial wires is 4:00 PM Central time.",
+    "The cutoff for outgoing commercial wires is 3:30 PM Central time.",
+    "The cutoff for outgoing commercial wires is 3:30 PM Central time."
+   ]
+  }
+ ],
+ "input_hash": "92dec9db961487625658e0614c7e5fce60473298029ae8bf9c9adc82861b725f",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "```json\n{\"results\": [{\"draft\": \"g-02ec0cc3\", \"scores\": {\"keeps_rules\": {\"pass\": false, \"evidence\": \"$5,000 or more\"}, \"adds_no_rule\": {\"pass\": true, \"evidence\": \"\"}, \"keeps_scope\": {\"pass\": true, \"evidence\": \"\"}, \"plain\": {\"pass\": true, \"evidence\": \"\"}}}, {\"draft\": \"g-e83d1e4a\", \"scores\": {\"keeps_rules\": {\"pass\": false, \"evidence\": \"operations employee\"}, \"adds_no_rule\": {\"pass\": true, \"evidence\": \"\"}, \"keeps_scope\": {\"pass\": true, \"evidence\": \"\"}, \"plain\": {\"pass\": true, \"evidence\": \"\"}}}, {\"draft\": \"g-1e497f6c\", \"scores\": {\"keeps_rules\": {\"pass\": false, \"evidence\": \"2:00 PM Central\"}, \"adds_no_rule\": {\"pass\": true, \"evidence\": \"\"}, \"keeps_scope\": {\"pass\": true, \"evidence\": \"\"}, \"plain\": {\"pass\": true, \"evidence\": \"\"}}}, {\"draft\": \"g-de226699\", \"scores\": {\"keeps_rules\": {\"pass\": false, \"evidence\": \"3:30 PM Central time\"}, \"adds_no_rule\": {\"pass\": true, \"evidence\": \"\"}, \"keeps_scope\": {\"pass\": true, \"evidence\": \"\"}, \"plain\": {\"pass\": true, \"evidence\": \"\"}}}]}\n```",
+   "problems": [],
+   "meta": {
+    "ms": 13628,
+    "input_tokens": 1146,
+    "output_tokens": 2270,
+    "cost_usd": 0.029532,
+    "usage": {
+     "completion_tokens": 340,
+     "prompt_tokens": 1146,
+     "total_tokens": 3416
+    },
+    "models": [
+     "gemini-3.1-pro-preview"
+    ],
+    "stop_reason": "stop"
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T16:54:39+00:00"
+}

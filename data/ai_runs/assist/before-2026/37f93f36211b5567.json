@@ -1,0 +1,167 @@
+{
+ "step": "assist",
+ "tag": "before-2026",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "66c01f0da9f327e74355d39363e55b642a1bbf8dc6249974c3afbf3cb3d6ccd5",
+ "input": [
+  {
+   "question": "q-C-03",
+   "text": "How long does the bank have to resolve a complaint?",
+   "type": "duration",
+   "clauses": [
+    {
+     "id": "JA-AOP-01@v3/s1/c2",
+     "text": "How long an account counts as new | 30 days",
+     "title": "New Account Quick Reference",
+     "type": "job_aid",
+     "version": 3,
+     "effective": "2026-01-31"
+    },
+    {
+     "id": "JA-AOP-03@v4/s1/c1",
+     "text": "How long an account counts as new | 30 days",
+     "title": "Account Opening Desk Card",
+     "type": "job_aid",
+     "version": 4,
+     "effective": "2025-05-22"
+    },
+    {
+     "id": "POL-HLD-01@v5/s4/c1",
+     "text": "New accounts can have check holds of as long as 7 business days.",
+     "title": "Funds Availability Policy",
+     "type": "policy",
+     "version": 5,
+     "effective": "2026-05-20"
+    },
+    {
+     "id": "PRO-HLD-06@v2/s3/c4",
+     "text": "New accounts can have check holds of as long as 9 business days.",
+     "title": "Holds on Mobile Deposits",
+     "type": "procedure",
+     "version": 2,
+     "effective": "2025-07-22"
+    },
+    {
+     "id": "JA-CMP-01@v1/s2/c2",
+     "text": "Log the complaint in the complaint system, even when it is resolved on the spot.",
+     "title": "Complaint Handling Card",
+     "type": "job_aid",
+     "version": 1,
+     "effective": "2026-07-10"
+    }
+   ]
+  }
+ ],
+ "input_hash": "90a26476915d914f9c8e95fcf9af1db760ac03d1af6b67192feb117a8e24e12b",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [{\"question\": \"q-C-03\", \"answer\": \"None of the clauses retrieved for this question state how long the bank has to resolve a complaint. The complaint clause only covers logging, and the other clauses cover new account periods and check holds, so no deadline can be given from these sources.\", \"citations\": [], \"sources_disagree\": false}]}",
+   "problems": [
+    "q-C-03: an answer needs its text and at least one citation"
+   ],
+   "meta": {
+    "ms": 5189,
+    "api_ms": 5065,
+    "input_tokens": 6093,
+    "output_tokens": 571,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 6091,
+     "cache_read_input_tokens": 0,
+     "output_tokens": 571,
+     "output_tokens_details": {
+      "thinking_tokens": 458
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 6091,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 571,
+       "cache_read_input_tokens": 0,
+       "cache_creation_input_tokens": 6091,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 6091
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.030078,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  },
+  {
+   "reply": "{\"results\": [{\"question\": \"q-C-03\", \"answer\": \"None of the retrieved clauses state how long the bank has to resolve a complaint. The Complaint Handling Card only says to log the complaint in the complaint system, even when it is resolved on the spot.\", \"citations\": [\"JA-CMP-01@v1/s2/c2\"], \"sources_disagree\": false}]}",
+   "problems": [],
+   "meta": {
+    "ms": 3906,
+    "api_ms": 3761,
+    "input_tokens": 6141,
+    "output_tokens": 448,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 5521,
+     "cache_read_input_tokens": 618,
+     "output_tokens": 448,
+     "output_tokens_details": {
+      "thinking_tokens": 324
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 5521,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 448,
+       "cache_read_input_tokens": 618,
+       "cache_creation_input_tokens": 5521,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 5521
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.0266298,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   },
+   "items": [
+    "q-C-03"
+   ]
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T06:02:49+00:00"
+}

@@ -1,0 +1,114 @@
+{
+ "step": "assist",
+ "tag": "cmp-6101",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "66c01f0da9f327e74355d39363e55b642a1bbf8dc6249974c3afbf3cb3d6ccd5",
+ "input": [
+  {
+   "question": "q-C-08",
+   "text": "How long are closed account records kept?",
+   "type": "duration",
+   "clauses": [
+    {
+     "id": "FAQ-REC-01@v2/s1/c1",
+     "text": "Account records are kept for 7 years after the account closes.",
+     "title": "Records Retention FAQ",
+     "type": "faq",
+     "version": 2,
+     "effective": "2025-11-04"
+    },
+    {
+     "id": "FAQ-REC-02@v4/s1/c1",
+     "text": "Account records are kept for 7 years after the account closes.",
+     "title": "Legal Hold Questions",
+     "type": "faq",
+     "version": 4,
+     "effective": "2025-10-02"
+    },
+    {
+     "id": "POL-REC-01@v4/s4/c1",
+     "text": "Account records are kept for 7 years after the account closes.",
+     "title": "Records Retention Policy",
+     "type": "policy",
+     "version": 4,
+     "effective": "2025-04-11"
+    },
+    {
+     "id": "PRO-REC-01@v4/s3/c3",
+     "text": "Account records are kept for 7 years after the account closes.",
+     "title": "Retaining Closed Account Records",
+     "type": "procedure",
+     "version": 4,
+     "effective": "2026-08-05"
+    },
+    {
+     "id": "PRO-REC-02@v3/s3/c5",
+     "text": "Account records are kept for 7 years after the account closes.",
+     "title": "Approving Records Destruction",
+     "type": "procedure",
+     "version": 3,
+     "effective": "2026-03-12"
+    }
+   ]
+  }
+ ],
+ "input_hash": "5a692ffb49ba9ab127a9c6df2b98da84deee8a08fb852f4696bd87c9cbb9b4c7",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [{\"question\": \"q-C-08\", \"answer\": \"Closed account records are kept for 7 years after the account closes. The Records Retention Policy, the Retaining Closed Account Records procedure and the other cited clauses all give the same period.\", \"citations\": [\"POL-REC-01@v4/s4/c1\", \"PRO-REC-01@v4/s3/c3\", \"PRO-REC-02@v3/s3/c5\", \"FAQ-REC-01@v2/s1/c1\", \"FAQ-REC-02@v4/s1/c1\"], \"sources_disagree\": false}]}",
+   "problems": [],
+   "meta": {
+    "ms": 10391,
+    "api_ms": 10250,
+    "input_tokens": 6075,
+    "output_tokens": 196,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 5455,
+     "cache_read_input_tokens": 618,
+     "output_tokens": 196,
+     "output_tokens_details": {
+      "thinking_tokens": 0
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 5455,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 196,
+       "cache_read_input_tokens": 618,
+       "cache_creation_input_tokens": 5455,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 5455
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.0238458,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T17:16:29+00:00"
+}

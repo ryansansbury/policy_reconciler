@@ -1,0 +1,133 @@
+{
+ "step": "extract",
+ "tag": "evals-11",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "c338e60b657607c5f659b819665f2ec94796d01ec070e1f88f830e5bdacdd3fe",
+ "input": [
+  {
+   "clause": "PRO-ODR-06@v4/s3/c9",
+   "text": "For small business accounts, each item paid into overdraft is charged $32.",
+   "heading": "Steps",
+   "document": {
+    "title": "Handling Overdraft Fee Disputes",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "PRO-REC-01@v1/s3/c4",
+   "text": "Account records are kept for 7 years after the account closes.",
+   "heading": "Steps",
+   "document": {
+    "title": "Retaining Closed Account Records",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-REC-02@v1/s4/c2",
+   "text": "For commercial accounts, retain closed account records for 5 years from the closing date.",
+   "heading": "Exceptions and escalation",
+   "document": {
+    "title": "Approving Records Destruction",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-REC-05@v1/s5/c1",
+   "text": "Account records are kept for 7 years after the account closes.",
+   "heading": "Steps to follow",
+   "document": {
+    "title": "Shipping Records to Offsite Storage",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-WIR-01@v4/s3/c10",
+   "text": "Incoming wires received by 4:30 p.m. Central are posted to the customer's account the same day.",
+   "heading": "Steps",
+   "document": {
+    "title": "Processing Outgoing Consumer Wires",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer accounts."
+   }
+  },
+  {
+   "clause": "PRO-WIR-01@v4/s3/c5",
+   "text": "Only an operations employee may complete the callback for an outgoing wire.",
+   "heading": "Steps",
+   "document": {
+    "title": "Processing Outgoing Consumer Wires",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer accounts."
+   }
+  },
+  {
+   "clause": "PRO-WIR-03@v2/s3/c1",
+   "text": "Submit outgoing consumer and small business wires by 4:00 p.m. Central for same-day processing.",
+   "heading": "Steps",
+   "document": {
+    "title": "Completing Wire Callback Verification",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-WIR-03@v2/s3/c6",
+   "text": "Callbacks are completed by an operations employee, never by the employee who took the request.",
+   "heading": "Steps",
+   "document": {
+    "title": "Completing Wire Callback Verification",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-WIR-06@v1/s3/c2",
+   "text": "Call the customer back at a phone number already on file before releasing any outgoing wire of $5,000 or more.",
+   "heading": "Steps",
+   "document": {
+    "title": "Recalling or Cancelling a Wire",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-WIR-06@v2/s3/c6",
+   "text": "Only a branch manager may complete the callback for an outgoing wire.",
+   "heading": "Steps",
+   "document": {
+    "title": "Recalling or Cancelling a Wire",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  }
+ ],
+ "input_hash": "dcece75e59b4654f46580d4be6f01ded0240bce17e944f1837f799c3be16205b",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\":[{\"clause\":\"PRO-ODR-06@v4/s3/c9\",\"atoms\":[{\"attribute\":\"od_fee\",\"value\":{\"type\":\"money\",\"dollars\":32},\"quote\":\"$32\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":\"For small business accounts\",\"condition\":null}]},{\"clause\":\"PRO-REC-01@v1/s3/c4\",\"atoms\":[{\"attribute\":\"records_retention\",\"value\":{\"type\":\"duration\",\"n\":7,\"unit\":\"years\"},\"quote\":\"7 years\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]},{\"clause\":\"PRO-REC-02@v1/s4/c2\",\"atoms\":[{\"attribute\":\"records_retention\",\"value\":{\"type\":\"duration\",\"n\":5,\"unit\":\"years\"},\"quote\":\"5 years\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":\"For commercial accounts\",\"condition\":null}]},{\"clause\":\"PRO-REC-05@v1/s5/c1\",\"atoms\":[{\"attribute\":\"records_retention\",\"value\":{\"type\":\"duration\",\"n\":7,\"unit\":\"years\"},\"quote\":\"7 years\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]},{\"clause\":\"PRO-WIR-01@v4/s3/c10\",\"atoms\":[{\"attribute\":\"incoming_wire_posting\",\"value\":{\"type\":\"time\",\"minutes\":990},\"quote\":\"4:30 p.m.\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]},{\"clause\":\"PRO-WIR-01@v4/s3/c5\",\"atoms\":[{\"attribute\":\"wire_callback_role\",\"value\":{\"type\":\"role\",\"role\":null,\"generic\":\"operations employee\"},\"quote\":\"operations employee\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]},{\"clause\":\"PRO-WIR-03@v2/s3/c1\",\"atoms\":[{\"attribute\":\"wire_cutoff\",\"value\":{\"type\":\"time\",\"minutes\":960},\"quote\":\"4:00 p.m.\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":\"outgoing consumer and small business wires\",\"condition\":null}]},{\"clause\":\"PRO-WIR-03@v2/s3/c6\",\"atoms\":[{\"attribute\":\"wire_callback_role\",\"value\":{\"type\":\"role\",\"role\":null,\"generic\":\"operations employee\"},\"quote\":\"operations employee\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]},{\"clause\":\"PRO-WIR-06@v1/s3/c2\",\"atoms\":[{\"attribute\":\"wire_callback\",\"value\":{\"type\":\"money\",\"dollars\":5000},\"quote\":\"$5,000\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]},{\"clause\":\"PRO-WIR-06@v2/s3/c6\",\"atoms\":[{\"attribute\":\"wire_callback_role\",\"value\":{\"type\":\"role\",\"role\":\"branch_manager\"},\"quote\":\"branch manager\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]}]}",
+   "problems": [],
+   "meta": {
+    "ms": 13649,
+    "api_ms": 13430,
+    "input_tokens": 2,
+    "output_tokens": 2322,
+    "cost_usd": 0.048401,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T03:23:42+00:00"
+}

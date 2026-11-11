@@ -1,0 +1,114 @@
+{
+ "step": "assist",
+ "tag": "cmp-6101",
+ "model": "claude-haiku",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "haiku",
+  "client_context": true
+ },
+ "prompt_hash": "66c01f0da9f327e74355d39363e55b642a1bbf8dc6249974c3afbf3cb3d6ccd5",
+ "input": [
+  {
+   "question": "q-C-03",
+   "text": "What is the overdraft fee?",
+   "type": "money",
+   "clauses": [
+    {
+     "id": "JA-ODR-01@v4/s1/c3",
+     "text": "Overdraft amount with no fee | $10",
+     "title": "Overdraft Quick Reference",
+     "type": "job_aid",
+     "version": 4,
+     "effective": "2026-04-04"
+    },
+    {
+     "id": "JA-ODR-02@v4/s1/c1",
+     "text": "Overdraft amount with no fee | $10",
+     "title": "Overdraft Fee Desk Card",
+     "type": "job_aid",
+     "version": 4,
+     "effective": "2025-11-07"
+    },
+    {
+     "id": "JA-ODR-01@v4/s2/c2",
+     "text": "Explain the overdraft fee and the options for avoiding future fees.",
+     "title": "Overdraft Quick Reference",
+     "type": "job_aid",
+     "version": 4,
+     "effective": "2026-04-04"
+    },
+    {
+     "id": "JA-ODR-01@v4/s3/c3",
+     "text": "Explain the overdraft fee and the options for avoiding future fees.",
+     "title": "Overdraft Quick Reference",
+     "type": "job_aid",
+     "version": 4,
+     "effective": "2026-04-04"
+    },
+    {
+     "id": "JA-ODR-02@v4/s2/c2",
+     "text": "Explain the overdraft fee and the options for avoiding future fees.",
+     "title": "Overdraft Fee Desk Card",
+     "type": "job_aid",
+     "version": 4,
+     "effective": "2025-11-07"
+    }
+   ]
+  }
+ ],
+ "input_hash": "f987d6a04c508caef3d8895d7e751d88d8e4184af30ed9fcc0f0b7de1a3c7d61",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [{\"question\": \"q-C-03\", \"answer\": \"The clauses do not state the dollar amount of the overdraft fee itself. The Overdraft Quick Reference and the Overdraft Fee Desk Card both list $10 as the overdraft amount with no fee, and both direct staff to explain the overdraft fee and the options for avoiding future fees.\", \"citations\": [\"JA-ODR-01@v4/s1/c3\", \"JA-ODR-02@v4/s1/c1\", \"JA-ODR-01@v4/s2/c2\", \"JA-ODR-02@v4/s2/c2\"], \"sources_disagree\": false}]}",
+   "problems": [],
+   "meta": {
+    "ms": 6169,
+    "api_ms": 6017,
+    "input_tokens": 6124,
+    "output_tokens": 1244,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 6122,
+     "cache_read_input_tokens": 0,
+     "output_tokens": 1244,
+     "output_tokens_details": {
+      "thinking_tokens": 1029
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 6122,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 1244,
+       "cache_read_input_tokens": 0,
+       "cache_creation_input_tokens": 6122,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 6122
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.0018466,
+    "models": [
+     "claude-haiku-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T17:19:09+00:00"
+}

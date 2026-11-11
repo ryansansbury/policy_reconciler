@@ -1,0 +1,129 @@
+{
+ "step": "classify",
+ "tag": "6202",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "2c908358fde9f0f4a792753579a6cfaa33476e41c4b0f235744675d8e8283a19",
+ "input": [
+  {
+   "pair": "pair-4203b5c59e",
+   "rule": "Wire callback threshold",
+   "attribute": "wire_callback",
+   "reason": "The values match, but the weaker document adds a condition the stronger one doesn't state.",
+   "a": {
+    "clause": "POL-WIR-02@v5/s4/c2",
+    "text": "Outgoing wires of $10,000 or more require a callback to the customer at a number already on file.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Commercial Wire Services Policy",
+     "type": "policy",
+     "version": 5,
+     "effective": "2026-05-02",
+     "applies_to": "All branches. Commercial accounts."
+    }
+   },
+   "b": {
+    "clause": "POL-WIR-01@v5/s3/c2",
+    "text": "Call the customer back at a phone number already on file before releasing any outgoing wire of $10,000 or more, unless the wire goes to an account the customer has used in the past year.",
+    "heading": "Policy statements",
+    "document": {
+     "title": "Wire Transfer Policy",
+     "type": "policy",
+     "version": 5,
+     "effective": "2025-09-17",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "kind": "added_condition"
+  },
+  {
+   "pair": "pair-296e81768e",
+   "rule": "Personal banker fee waiver limit",
+   "attribute": "fee_waiver_pb",
+   "reason": "The values match, but the weaker document adds a condition the stronger one doesn't state.",
+   "a": {
+    "clause": "POL-FEE-01@v3/s4/c1",
+    "text": "A personal banker can waive no more than $25 for one account in a calendar year, or up to $50 with branch manager approval noted in the account.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Service Fee Waiver Policy",
+     "type": "policy",
+     "version": 3,
+     "effective": "2024-04-19",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "PRO-FEE-06@v2/s3/c6",
+    "text": "A personal banker can waive no more than $25 for one account in a calendar year, or up to $50 with branch manager approval noted in the account.",
+    "heading": "Steps",
+    "document": {
+     "title": "Explaining Fees to a New Customer",
+     "type": "procedure",
+     "version": 2,
+     "effective": "2025-03-13",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "kind": "added_condition"
+  }
+ ],
+ "input_hash": "b6612a49df2c24f9fcf202f800c1be5ffcb6664c45f3c3060cf897813fc8c64d",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [{\"pair\": \"pair-4203b5c59e\", \"label\": \"conflict\", \"quote_a\": \"Outgoing wires of $10,000 or more require a callback to the customer at a number already on file.\", \"quote_b\": \"unless the wire goes to an account the customer has used in the past year\", \"rationale\": \"Clause a requires a callback on every outgoing wire of $10,000 or more, while clause b skips the callback when the wire goes to an account used in the past year. Staff following clause b would release a commercial wire without a callback that clause a requires, and neither clause states the difference as a deliberate narrower scope.\"}, {\"pair\": \"pair-296e81768e\", \"label\": \"consistent\", \"quote_a\": \"A personal banker can waive no more than $25 for one account in a calendar year, or up to $50 with branch manager approval noted in the account.\", \"quote_b\": \"A personal banker can waive no more than $25 for one account in a calendar year, or up to $50 with branch manager approval noted in the account.\", \"rationale\": \"Both clauses set the same limits of $25 and $50 with the same branch manager approval condition. This is one rule stated again in a procedure step and not a copied run of steps, and no condition is added or missing.\"}]}",
+   "problems": [],
+   "meta": {
+    "ms": 11882,
+    "api_ms": 11632,
+    "input_tokens": 6650,
+    "output_tokens": 1305,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 5807,
+     "cache_read_input_tokens": 841,
+     "output_tokens": 1305,
+     "output_tokens_details": {
+      "thinking_tokens": 905
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 5807,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 1305,
+       "cache_read_input_tokens": 841,
+       "cache_creation_input_tokens": 5807,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 5807
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.0363661,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T04:14:28+00:00"
+}

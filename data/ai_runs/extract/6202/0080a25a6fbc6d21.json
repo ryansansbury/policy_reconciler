@@ -1,0 +1,167 @@
+{
+ "step": "extract",
+ "tag": "6202",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "dcc761e46c6ec579c01b9dfd540df3c2fa4bba3b6b5ec777aa2cf9c9c62aa411",
+ "input": [
+  {
+   "clause": "PRO-FEE-03@v2/s3/c5",
+   "text": "Review recurring waiver requests with the branch manager at the monthly meeting.",
+   "heading": "Steps",
+   "document": {
+    "title": "Handling Fee Refund Requests",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "PRO-FEE-04@v2/s3/c2",
+   "text": "Limit fee waivers to two per account in each calendar year.",
+   "heading": "Steps",
+   "document": {
+    "title": "Reviewing Waiver Activity Each Month",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "PRO-FEE-04@v2/s3/c3",
+   "text": "Review recurring waiver requests with the branch manager at the monthly meeting.",
+   "heading": "Steps",
+   "document": {
+    "title": "Reviewing Waiver Activity Each Month",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "PRO-FEE-04@v2/s3/c7",
+   "text": "Fee waivers above $75 for one account in a calendar year require approval from the regional manager.",
+   "heading": "Steps",
+   "document": {
+    "title": "Reviewing Waiver Activity Each Month",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "PRO-FEE-05@v2/s3/c2",
+   "text": "Review recurring waiver requests with the branch manager at the monthly meeting.",
+   "heading": "Steps",
+   "document": {
+    "title": "Documenting Fee Waivers in Account Notes",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "PRO-FEE-06@v2/s3/c1",
+   "text": "Review recurring waiver requests with the branch manager at the monthly meeting.",
+   "heading": "Steps",
+   "document": {
+    "title": "Explaining Fees to a New Customer",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "PRO-FEE-06@v2/s3/c6",
+   "text": "A personal banker can waive no more than $25 for one account in a calendar year, or up to $50 with branch manager approval noted in the account.",
+   "heading": "Steps",
+   "document": {
+    "title": "Explaining Fees to a New Customer",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "PRO-HLD-01@v3/s3/c5",
+   "text": "Funds from deposited checks are available within 2 business days unless a longer hold applies.",
+   "heading": "Steps",
+   "document": {
+    "title": "Placing a Hold on a Deposited Check",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "PRO-ODR-01@v3/s3/c4",
+   "text": "Contact customers whose accounts have been overdrawn for more than three days.",
+   "heading": "Steps",
+   "document": {
+    "title": "Reviewing Overdrawn Accounts Each Morning",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "PRO-ODR-02@v3/s3/c2",
+   "text": "Contact customers whose accounts have been overdrawn for more than three days.",
+   "heading": "Steps",
+   "document": {
+    "title": "Assessing and Reversing Overdraft Fees",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  }
+ ],
+ "input_hash": "125e2db47d93885e78806c90f96ade4a7bf41b4e10d195a5248671bab618b614",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [\n{\"clause\": \"PRO-FEE-03@v2/s3/c5\", \"atoms\": []},\n{\"clause\": \"PRO-FEE-04@v2/s3/c2\", \"atoms\": [\n{\"attribute\": \"fee_waivers_per_year\", \"value\": {\"type\": \"count\", \"n\": 2}, \"quote\": \"two\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}\n]},\n{\"clause\": \"PRO-FEE-04@v2/s3/c3\", \"atoms\": []},\n{\"clause\": \"PRO-FEE-04@v2/s3/c7\", \"atoms\": [\n{\"attribute\": \"fee_waiver_bm\", \"value\": {\"type\": \"money\", \"dollars\": 75}, \"quote\": \"$75\", \"actor\": \"branch_manager\", \"actor_inferred\": true, \"scope_quote\": null, \"condition\": null}\n]},\n{\"clause\": \"PRO-FEE-05@v2/s3/c2\", \"atoms\": []},\n{\"clause\": \"PRO-FEE-06@v2/s3/c1\", \"atoms\": []},\n{\"clause\": \"PRO-FEE-06@v2/s3/c6\", \"atoms\": [\n{\"attribute\": \"fee_waiver_pb\", \"value\": {\"type\": \"money\", \"dollars\": 25}, \"quote\": \"$25\", \"actor\": \"personal_banker\", \"actor_inferred\": false, \"scope_quote\": null, \"condition\": \"or up to $50 with branch manager approval noted in the account\"}\n]},\n{\"clause\": \"PRO-HLD-01@v3/s3/c5\", \"atoms\": [\n{\"attribute\": \"hold_standard\", \"value\": {\"type\": \"duration\", \"n\": 2, \"unit\": \"business_days\"}, \"quote\": \"2 business days\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": \"unless a longer hold applies\"}\n]},\n{\"clause\": \"PRO-ODR-01@v3/s3/c4\", \"atoms\": []},\n{\"clause\": \"PRO-ODR-02@v3/s3/c2\", \"atoms\": []}\n]}",
+   "problems": [],
+   "meta": {
+    "ms": 7421,
+    "api_ms": 7174,
+    "input_tokens": 8992,
+    "output_tokens": 1271,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 6308,
+     "cache_read_input_tokens": 2682,
+     "output_tokens": 1271,
+     "output_tokens_details": {
+      "thinking_tokens": 575
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 6308,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 1271,
+       "cache_read_input_tokens": 2682,
+       "cache_creation_input_tokens": 6308,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 6308
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.038214200000000004,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T04:11:11+00:00"
+}

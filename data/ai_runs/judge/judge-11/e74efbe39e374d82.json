@@ -1,0 +1,79 @@
+{
+ "step": "judge",
+ "tag": "judge-11",
+ "model": "google-a",
+ "backend": {
+  "vendor": "Google",
+  "model": "gemini-3.1-pro-preview",
+  "label": "Gemini 3.1 Pro"
+ },
+ "prompt_hash": "ab6a49ec8731854b3cf900a9a4387417ee8016fe68257c4d327181c7eb1621da",
+ "input": [
+  {
+   "draft": "draft-16",
+   "text": "Every signer must present two separate identification documents before the account is opened, or one form plus a verified bank reference when the branch manager approves. The minimum opening deposit for a consumer checking account is $25.",
+   "sources": [
+    "Every signer must present two separate identification documents before the account is opened, or one form plus a verified bank reference when the branch manager approves.",
+    "The minimum opening deposit for a consumer checking account is $25."
+   ]
+  },
+  {
+   "draft": "draft-17",
+   "text": "Retain closed account records for 7 years from the closing date.",
+   "sources": [
+    "Retain closed account records for 7 years from the closing date.",
+    "Records may be destroyed only with written approval from the records custodian."
+   ]
+  },
+  {
+   "draft": "draft-18",
+   "text": "Two employees must be present to open the branch each morning. Vault combinations are changed every 6 months and whenever an employee who knows the combination leaves. Personal bankers may waive service fees up to $15 per account in a calendar year.",
+   "sources": [
+    "Two employees must be present to open the branch each morning.",
+    "Vault combinations are changed every 6 months and whenever an employee who knows the combination leaves."
+   ]
+  },
+  {
+   "draft": "draft-19",
+   "text": "Customers have 60 days from the statement date to dispute a debit card transaction, where appropriate. Provisional credit is issued within 10 business days of receiving a completed dispute, where appropriate.",
+   "sources": [
+    "Customers have 60 days from the statement date to dispute a debit card transaction.",
+    "Provisional credit is issued within 10 business days of receiving a completed dispute."
+   ]
+  },
+  {
+   "draft": "draft-20",
+   "text": "Fee refund requests are accepted for 60 days after the statement date. Customers may request a fee refund within 90 days of the statement date. Personal bankers may waive service fees up to $25 per account in a calendar year.",
+   "sources": [
+    "Fee refund requests are accepted for 60 days after the statement date.",
+    "In Colorado branches, customers may request a fee refund within 90 days of the statement date.",
+    "Personal bankers may waive service fees up to $25 per account in a calendar year."
+   ]
+  }
+ ],
+ "input_hash": "ed89665aa29d6c2c274a60d735487e2e2bef84af824292d9a3e6df056a8f7588",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "```json\n{\n \"results\": [\n  {\n   \"draft\": \"draft-16\",\n   \"scores\": {\n    \"keeps_rules\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    },\n    \"adds_no_rule\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    },\n    \"keeps_scope\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    },\n    \"plain\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    }\n   }\n  },\n  {\n   \"draft\": \"draft-17\",\n   \"scores\": {\n    \"keeps_rules\": {\n     \"pass\": false,\n     \"evidence\": \"Records may be destroyed only with written approval from the records custodian.\"\n    },\n    \"adds_no_rule\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    },\n    \"keeps_scope\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    },\n    \"plain\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    }\n   }\n  },\n  {\n   \"draft\": \"draft-18\",\n   \"scores\": {\n    \"keeps_rules\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    },\n    \"adds_no_rule\": {\n     \"pass\": false,\n     \"evidence\": \"Personal bankers may waive service fees up to $15 per account in a calendar year.\"\n    },\n    \"keeps_scope\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    },\n    \"plain\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    }\n   }\n  },\n  {\n   \"draft\": \"draft-19\",\n   \"scores\": {\n    \"keeps_rules\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    },\n    \"adds_no_rule\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    },\n    \"keeps_scope\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    },\n    \"plain\": {\n     \"pass\": false,\n     \"evidence\": \"where appropriate\"\n    }\n   }\n  },\n  {\n   \"draft\": \"draft-20\",\n   \"scores\": {\n    \"keeps_rules\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    },\n    \"adds_no_rule\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    },\n    \"keeps_scope\": {\n     \"pass\": false,\n     \"evidence\": \"In Colorado branches,\"\n    },\n    \"plain\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    }\n   }\n  }\n ]\n}\n```",
+   "problems": [],
+   "meta": {
+    "ms": 13768,
+    "input_tokens": 1064,
+    "output_tokens": 2202,
+    "cost_usd": 0.028552,
+    "usage": {
+     "completion_tokens": 663,
+     "prompt_tokens": 1064,
+     "total_tokens": 3266
+    },
+    "models": [
+     "gemini-3.1-pro-preview"
+    ],
+    "stop_reason": "stop"
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T16:47:07+00:00"
+}

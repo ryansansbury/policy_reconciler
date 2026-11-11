@@ -1,0 +1,360 @@
+{
+ "step": "classify",
+ "tag": "cmp-6101",
+ "model": "claude-haiku",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "haiku",
+  "client_context": true
+ },
+ "prompt_hash": "2c908358fde9f0f4a792753579a6cfaa33476e41c4b0f235744675d8e8283a19",
+ "input": [
+  {
+   "pair": "pair-3bbec94397",
+   "rule": null,
+   "attribute": null,
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-CMP-01@v4/s4/c2",
+    "text": "Resolve complaints within 15 business days of receipt, or tell the customer when to expect a resolution.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Complaint Management Policy",
+     "type": "policy",
+     "version": 4,
+     "effective": "2026-05-11",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "PRO-CMP-01@v2/s3/c6",
+    "text": "Resolve complaints within 15 days of receipt, or tell the customer when to expect a resolution.",
+    "heading": "Steps",
+    "document": {
+     "title": "Logging a Customer Complaint",
+     "type": "procedure",
+     "version": 2,
+     "effective": "2025-08-20",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-4df992cd83",
+   "rule": "New account check hold",
+   "attribute": "hold_new_account",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-HLD-01@v3/s4/c2",
+    "text": "New accounts can have check holds of as long as 7 business days.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Funds Availability Policy",
+     "type": "policy",
+     "version": 3,
+     "effective": "2025-02-25",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "BUL-HLD-02@v4/s1/c2",
+    "text": "New accounts can have check holds of as long as 7 days.",
+    "heading": "What branches need to know",
+    "document": {
+     "title": "Branch Bulletin 2026-17: Longest check hold on a new account",
+     "type": "bulletin",
+     "version": 4,
+     "effective": "2025-05-17",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-86e93b37d6",
+   "rule": "Complaint acknowledgment deadline",
+   "attribute": "complaint_ack",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-CMP-01@v4/s4/c1",
+    "text": "Acknowledge every written complaint within 2 business days.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Complaint Management Policy",
+     "type": "policy",
+     "version": 4,
+     "effective": "2026-05-11",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "FAQ-CMP-01@v3/s1/c1",
+    "text": "Send the customer an acknowledgment no later than 2 days after a written complaint arrives.",
+    "heading": "How quickly is a written complaint acknowledged?",
+    "document": {
+     "title": "Complaint Handling FAQ",
+     "type": "faq",
+     "version": 3,
+     "effective": "2025-09-08",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-b1d5c24a22",
+   "rule": null,
+   "attribute": null,
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-CMP-02@v1/s3/c1",
+    "text": "Resolve complaints within 15 business days of receipt, or tell the customer when to expect a resolution.",
+    "heading": "Steps",
+    "document": {
+     "title": "Acknowledging a Written Complaint",
+     "type": "procedure",
+     "version": 1,
+     "effective": "2026-01-12",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "PRO-CMP-06@v1/s3/c2",
+    "text": "Resolve complaints within 15 days of receipt, or tell the customer when to expect a resolution.",
+    "heading": "Steps",
+    "document": {
+     "title": "Responding to a Complaint by Phone",
+     "type": "procedure",
+     "version": 1,
+     "effective": "2024-12-19",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-b5fcf80da1",
+   "rule": null,
+   "attribute": null,
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-HLD-01@v3/s4/c1",
+    "text": "Funds from deposited checks are available within 2 business days unless a longer hold applies.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Funds Availability Policy",
+     "type": "policy",
+     "version": 3,
+     "effective": "2025-02-25",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "PRO-HLD-05@v1/s3/c7",
+    "text": "Funds from deposited checks are available within 2 days unless a longer hold applies.",
+    "heading": "Steps",
+    "document": {
+     "title": "Explaining Holds to Customers",
+     "type": "procedure",
+     "version": 1,
+     "effective": "2025-03-23",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-bbabaee60a",
+   "rule": null,
+   "attribute": null,
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-DSP-03@v2/s3/c2",
+    "text": "Send the completed form to card services the same day.",
+    "heading": "Steps",
+    "document": {
+     "title": "Investigating a Dispute",
+     "type": "procedure",
+     "version": 2,
+     "effective": "2026-07-31",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "JA-DSP-01@v3/s3/c1",
+    "text": "Send the completed form to card services the same day.",
+    "heading": "Steps to follow",
+    "document": {
+     "title": "Dispute Intake Checklist",
+     "type": "job_aid",
+     "version": 3,
+     "effective": "2025-08-29",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-1ced63d644",
+   "rule": null,
+   "attribute": null,
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-BOP-06@v4/s3/c2",
+    "text": "Lock the doors and set the alarm after the last customer leaves.",
+    "heading": "Steps",
+    "document": {
+     "title": "After-Hours Branch Access",
+     "type": "procedure",
+     "version": 4,
+     "effective": "2025-12-26",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "PRO-BOP-01@v3/s5/c1",
+    "text": "Lock the doors and set the alarm after the last customer leaves.",
+    "heading": "Steps to follow",
+    "document": {
+     "title": "Opening the Branch Each Morning",
+     "type": "procedure",
+     "version": 3,
+     "effective": "2025-01-17",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-57cdc935d3",
+   "rule": null,
+   "attribute": null,
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-REC-06@v4/s3/c1",
+    "text": "Check the legal hold list before preparing any records for destruction.",
+    "heading": "Steps",
+    "document": {
+     "title": "Retrieving Archived Records",
+     "type": "procedure",
+     "version": 4,
+     "effective": "2025-12-12",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "PRO-REC-02@v3/s5/c1",
+    "text": "Check the legal hold list before preparing any records for destruction.",
+    "heading": "Steps to follow",
+    "document": {
+     "title": "Approving Records Destruction",
+     "type": "procedure",
+     "version": 3,
+     "effective": "2026-03-12",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  }
+ ],
+ "input_hash": "28e8ceddd36bf93d729704efa4a3c440e6d3ff060f8b7d3af0f1dc9f008839ee",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [{\"pair\": \"pair-3bbec94397\", \"label\": \"conflict\", \"quote_a\": \"Resolve complaints within 15 business days of receipt, or tell the customer when to expect a resolution.\", \"quote_b\": \"Resolve complaints within 15 days of receipt, or tell the customer when to expect a resolution.\", \"rationale\": \"The policy allows 15 business days while the procedure allows 15 calendar days. Staff following the procedure would respond earlier than the policy requires, and staff following the policy would miss the procedure's deadline, so the two cannot both be followed.\"}, {\"pair\": \"pair-4df992cd83\", \"label\": \"conflict\", \"quote_a\": \"New accounts can have check holds of as long as 7 business days.\", \"quote_b\": \"New accounts can have check holds of as long as 7 days.\", \"rationale\": \"The policy caps new account holds at 7 business days, but the bulletin states a cap of 7 calendar days. A hold of 8 calendar days is allowed by the policy and contradicted by the bulletin, and the policy outranks the bulletin.\"}, {\"pair\": \"pair-86e93b37d6\", \"label\": \"conflict\", \"quote_a\": \"Acknowledge every written complaint within 2 business days.\", \"quote_b\": \"Send the customer an acknowledgment no later than 2 days after a written complaint arrives.\", \"rationale\": \"The policy allows 2 business days and the FAQ requires 2 calendar days. A complaint received on a Friday would need an acknowledgment by Sunday under the FAQ but not until Tuesday under the policy, so the two clauses set different deadlines for the same action.\"}, {\"pair\": \"pair-b1d5c24a22\", \"label\": \"conflict\", \"quote_a\": \"Resolve complaints within 15 business days of receipt, or tell the customer when to expect a resolution.\", \"quote_b\": \"Resolve complaints within 15 days of receipt, or tell the customer when to expect a resolution.\", \"rationale\": \"One procedure allows 15 business days and the other allows 15 calendar days for the same resolution step. Following either one can put staff outside the deadline set by the other, so they conflict.\"}, {\"pair\": \"pair-b5fcf80da1\", \"label\": \"conflict\", \"quote_a\": \"Funds from deposited checks are available within 2 business days unless a longer hold applies.\", \"quote_b\": \"Funds from deposited checks are available within 2 days unless a longer hold applies.\", \"rationale\": \"The policy sets availability at 2 business days, but the procedure tells staff to explain availability as 2 calendar days. Customers would be told funds arrive earlier than the policy allows, which changes what staff say and when customers expect funds.\"}, {\"pair\": \"pair-bbabaee60a\", \"label\": \"duplicate\", \"quote_a\": \"Send the completed form to card services the same day.\", \"quote_b\": \"Send the completed form to card services the same day.\", \"rationale\": \"The job aid restates the same step from the dispute procedure with the same value and scope. A policy owner would keep one copy and point the job aid to the procedure.\"}, {\"pair\": \"pair-1ced63d644\", \"label\": \"duplicate\", \"quote_a\": \"Lock the doors and set the alarm after the last customer leaves.\", \"quote_b\": \"Lock the doors and set the alarm after the last customer leaves.\", \"rationale\": \"Two procedures for different tasks contain the same step with the same wording and scope. The step is copied between documents and could be kept in one place with a pointer from the other.\"}, {\"pair\": \"pair-57cdc935d3\", \"label\": \"duplicate\", \"quote_a\": \"Check the legal hold list before preparing any records for destruction.\", \"quote_b\": \"Check the legal hold list before preparing any records for destruction.\", \"rationale\": \"Two procedures contain the same legal hold check step with identical wording and scope. The copied step could be consolidated into one location with a reference from the other procedure.\"}]}",
+   "problems": [
+    "pair-4df992cd83: the rationale uses numbers that aren't in either clause or its document: 8"
+   ],
+   "meta": {
+    "ms": 20189,
+    "api_ms": 20037,
+    "input_tokens": 8897,
+    "output_tokens": 4743,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 8054,
+     "cache_read_input_tokens": 841,
+     "output_tokens": 4743,
+     "output_tokens_details": {
+      "thinking_tokens": 3452
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 8054,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 4743,
+       "cache_read_input_tokens": 841,
+       "cache_creation_input_tokens": 8054,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 8054
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.00399091,
+    "models": [
+     "claude-haiku-5-5"
+    ]
+   }
+  },
+  {
+   "reply": "{\"results\": [{\"pair\": \"pair-4df992cd83\", \"label\": \"conflict\", \"quote_a\": \"New accounts can have check holds of as long as 7 business days.\", \"quote_b\": \"New accounts can have check holds of as long as 7 days.\", \"rationale\": \"The policy allows a hold of 7 business days, while the bulletin allows only 7 days, which is a different unit that is shorter in calendar time. Staff following the bulletin would release holds that the policy still permits, so both clauses cannot be followed at once.\"}]}",
+   "problems": [],
+   "meta": {
+    "ms": 6135,
+    "api_ms": 5989,
+    "input_tokens": 6225,
+    "output_tokens": 1033,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 5382,
+     "cache_read_input_tokens": 841,
+     "output_tokens": 1033,
+     "output_tokens_details": {
+      "thinking_tokens": 859
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 5382,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 1033,
+       "cache_read_input_tokens": 841,
+       "cache_creation_input_tokens": 5382,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 5382
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.00160151,
+    "models": [
+     "claude-haiku-5-5"
+    ]
+   },
+   "items": [
+    "pair-4df992cd83"
+   ]
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T17:17:56+00:00"
+}

@@ -1,0 +1,85 @@
+{
+ "step": "assist",
+ "tag": "cmp-6101",
+ "model": "google-a",
+ "backend": {
+  "vendor": "Google",
+  "model": "gemini-3.1-pro-preview",
+  "label": "Gemini 3.1 Pro"
+ },
+ "prompt_hash": "66c01f0da9f327e74355d39363e55b642a1bbf8dc6249974c3afbf3cb3d6ccd5",
+ "input": [
+  {
+   "question": "q-C-01",
+   "text": "How large a rate exception can a regional manager approve?",
+   "type": "percent",
+   "clauses": [
+    {
+     "id": "PRO-LND-03@v4/s3/c9",
+     "text": "A regional manager can approve a rate exception as large as 0.50%.",
+     "title": "Documenting Pricing Exceptions",
+     "type": "procedure",
+     "version": 4,
+     "effective": "2025-06-20"
+    },
+    {
+     "id": "JA-LND-02@v2/s1/c1",
+     "text": "Regional manager rate exception limit | 1.00%",
+     "title": "Exception Documentation Checklist",
+     "type": "job_aid",
+     "version": 2,
+     "effective": "2025-11-09"
+    },
+    {
+     "id": "BUL-LND-01@v2/s1/c2",
+     "text": "Regional managers may approve rate exceptions of up to 0.75%.",
+     "title": "Branch Bulletin 2025-16: Regional manager rate exception limit",
+     "type": "bulletin",
+     "version": 2,
+     "effective": "2026-01-27"
+    },
+    {
+     "id": "POL-LND-01@v3/s3/c1",
+     "text": "Regional managers may approve rate exceptions of up to 0.50%.",
+     "title": "Loan Pricing Exception Policy",
+     "type": "policy",
+     "version": 3,
+     "effective": "2026-06-18"
+    },
+    {
+     "id": "POL-AOP-02@v3/s3/c1",
+     "text": "Only a manager can approve an exception to the identification requirements.",
+     "title": "Customer Identification Policy",
+     "type": "policy",
+     "version": 3,
+     "effective": "2026-02-28"
+    }
+   ]
+  }
+ ],
+ "input_hash": "dccbc94e493fb78efadc3e548e999f6dbaa3c4d7c629b56a2c6f63b3c4214e22",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\n \"results\": [\n  {\n   \"question\": \"q-C-01\",\n   \"answer\": \"The sources disagree. The Loan Pricing Exception Policy and the Documenting Pricing Exceptions procedure set the limit at 0.50% while the Exception Documentation Checklist job aid says 1.00% and the branch bulletin says 0.75%. The policy outranks the other documents so 0.50% is the limit to follow.\",\n   \"citations\": [\n    \"PRO-LND-03@v4/s3/c9\",\n    \"JA-LND-02@v2/s1/c1\",\n    \"BUL-LND-01@v2/s1/c2\",\n    \"POL-LND-01@v3/s3/c1\"\n   ],\n   \"sources_disagree\": true\n  }\n ]\n}",
+   "problems": [],
+   "meta": {
+    "ms": 16031,
+    "input_tokens": 986,
+    "output_tokens": 2473,
+    "cost_usd": 0.031648,
+    "usage": {
+     "completion_tokens": 204,
+     "prompt_tokens": 986,
+     "total_tokens": 3459
+    },
+    "models": [
+     "gemini-3.1-pro-preview"
+    ],
+    "stop_reason": "stop"
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T17:27:59+00:00"
+}

@@ -1,0 +1,312 @@
+{
+ "step": "classify",
+ "tag": "11",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "1346938ac1ecbf43874a700ab9916c851d6a29bb5d6b9e5f1199128bc8cd59f2",
+ "input": [
+  {
+   "pair": "pair-c8b212a1ed",
+   "rule": "Approver for identification exceptions",
+   "attribute": "ao_exception_approver",
+   "reason": "One side names a general role instead of one from the role list.",
+   "a": {
+    "clause": "POL-AOP-01@v5/s4/c2",
+    "text": "Only the branch manager can approve an exception to the identification requirements.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Deposit Account Opening Policy",
+     "type": "policy",
+     "version": 5,
+     "effective": "2025-02-05",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "POL-AOP-02@v6/s5/c1",
+    "text": "Exceptions to this policy need written approval from the Deposit Operations manager and are reviewed each quarter.",
+    "heading": "Exceptions",
+    "document": {
+     "title": "Customer Identification Policy",
+     "type": "policy",
+     "version": 6,
+     "effective": "2024-09-21",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "kind": "role_generic"
+  },
+  {
+   "pair": "pair-f32f12228f",
+   "rule": "Approver for identification exceptions",
+   "attribute": "ao_exception_approver",
+   "reason": "One side names a general role instead of one from the role list.",
+   "a": {
+    "clause": "POL-AOP-01@v5/s4/c2",
+    "text": "Only the branch manager can approve an exception to the identification requirements.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Deposit Account Opening Policy",
+     "type": "policy",
+     "version": 5,
+     "effective": "2025-02-05",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "PRO-AOP-06@v4/s3/c8",
+    "text": "Any exception to the identification requirements must be approved by a manager.",
+    "heading": "Steps",
+    "document": {
+     "title": "Handling Identification Exceptions",
+     "type": "procedure",
+     "version": 4,
+     "effective": "2025-04-25",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "kind": "role_generic"
+  },
+  {
+   "pair": "pair-84bc6e3ddc",
+   "rule": "Forms of identification per signer",
+   "attribute": "ao_id_count",
+   "reason": "One side carries a condition that may change the rule.",
+   "a": {
+    "clause": "POL-AOP-01@v5/s4/c1",
+    "text": "Every signer must present two separate identification documents before the account is opened, or one form plus a verified bank reference when the branch manager approves.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Deposit Account Opening Policy",
+     "type": "policy",
+     "version": 5,
+     "effective": "2025-02-05",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "PRO-AOP-01@v4/s3/c9",
+    "text": "Every signer must present one separate identification documents before the account is opened.",
+    "heading": "Steps",
+    "document": {
+     "title": "Opening a Consumer Checking Account",
+     "type": "procedure",
+     "version": 4,
+     "effective": "2025-06-07",
+     "applies_to": "All branches. Consumer accounts."
+    }
+   },
+   "kind": "condition"
+  },
+  {
+   "pair": "pair-383eeed864",
+   "rule": "Complaint acknowledgment deadline",
+   "attribute": "complaint_ack",
+   "reason": "The two deadlines share a number but not a unit.",
+   "a": {
+    "clause": "POL-CMP-01@v4/s4/c1",
+    "text": "Send the customer an acknowledgment no later than 2 business days after a written complaint arrives.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Complaint Management Policy",
+     "type": "policy",
+     "version": 4,
+     "effective": "2025-07-22",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "PRO-CMP-02@v2/s3/c1",
+    "text": "Send the customer an acknowledgment no later than 2 days after a written complaint arrives.",
+    "heading": "Steps",
+    "document": {
+     "title": "Acknowledging a Written Complaint",
+     "type": "procedure",
+     "version": 2,
+     "effective": "2026-03-24",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "kind": "unit"
+  },
+  {
+   "pair": "pair-e1567e122a",
+   "rule": "Complaint acknowledgment deadline",
+   "attribute": "complaint_ack",
+   "reason": "The two deadlines share a number but not a unit.",
+   "a": {
+    "clause": "POL-CMP-01@v4/s4/c1",
+    "text": "Send the customer an acknowledgment no later than 2 business days after a written complaint arrives.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Complaint Management Policy",
+     "type": "policy",
+     "version": 4,
+     "effective": "2025-07-22",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "FAQ-CMP-02@v1/s1/c1",
+    "text": "Acknowledge every written complaint within 2 days.",
+    "heading": "How quickly is a written complaint acknowledged?",
+    "document": {
+     "title": "Complaint Escalation Questions",
+     "type": "faq",
+     "version": 1,
+     "effective": "2025-12-18",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "kind": "unit"
+  },
+  {
+   "pair": "pair-b1f2d7454e",
+   "rule": "Unfair treatment escalation",
+   "attribute": "complaint_escalation_role",
+   "reason": "One side names a general role instead of one from the role list.",
+   "a": {
+    "clause": "POL-CMP-01@v4/s3/c1",
+    "text": "Escalate any complaint alleging unfair treatment to the regional manager on the day it is received.",
+    "heading": "Policy statements",
+    "document": {
+     "title": "Complaint Management Policy",
+     "type": "policy",
+     "version": 4,
+     "effective": "2025-07-22",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "PRO-CMP-05@v1/s3/c7",
+    "text": "Escalate any complaint alleging unfair treatment to management on the day it is received.",
+    "heading": "Steps",
+    "document": {
+     "title": "Reviewing Complaint Trends Each Quarter",
+     "type": "procedure",
+     "version": 1,
+     "effective": "2025-02-15",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "kind": "role_generic"
+  },
+  {
+   "pair": "pair-25f64f5edb",
+   "rule": "Complaint resolution deadline",
+   "attribute": "complaint_resolve",
+   "reason": "One side carries a condition that may change the rule.",
+   "a": {
+    "clause": "POL-CMP-01@v4/s4/c2",
+    "text": "Complaints should be closed within 15 business days of the day they arrive, or within 30 business days when another department has to investigate.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Complaint Management Policy",
+     "type": "policy",
+     "version": 4,
+     "effective": "2025-07-22",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "PRO-CMP-04@v2/s3/c1",
+    "text": "Complaints should be closed within 10 business days of the day they arrive.",
+    "heading": "Steps",
+    "document": {
+     "title": "Escalating a Sensitive Complaint",
+     "type": "procedure",
+     "version": 2,
+     "effective": "2025-02-14",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "kind": "condition"
+  },
+  {
+   "pair": "pair-65187446c7",
+   "rule": "Complaint resolution deadline",
+   "attribute": "complaint_resolve",
+   "reason": "One side carries a condition that may change the rule.",
+   "a": {
+    "clause": "POL-CMP-01@v4/s4/c2",
+    "text": "Complaints should be closed within 15 business days of the day they arrive, or within 30 business days when another department has to investigate.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Complaint Management Policy",
+     "type": "policy",
+     "version": 4,
+     "effective": "2025-07-22",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "FAQ-CMP-01@v1/s1/c1",
+    "text": "Complaints should be closed within 10 business days of the day they arrive.",
+    "heading": "How long does the bank have to resolve a complaint?",
+    "document": {
+     "title": "Complaint Handling FAQ",
+     "type": "faq",
+     "version": 1,
+     "effective": "2026-06-27",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "kind": "condition"
+  }
+ ],
+ "input_hash": "8bcf801b55a581aa2ef7624ad154c64e395537cbf4d99e4a99febc7494ce07d6",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [{\"pair\": \"pair-c8b212a1ed\", \"label\": \"conflict\", \"quote_a\": \"Only the branch manager can approve an exception to the identification requirements.\", \"quote_b\": \"written approval from the Deposit Operations manager\", \"rationale\": \"The two policies cover the same branches and accounts but name different approvers for the same exceptions. Staff following one would send the exception to someone the other does not accept.\"}, {\"pair\": \"pair-f32f12228f\", \"label\": \"conflict\", \"quote_a\": \"Only the branch manager can approve an exception to the identification requirements.\", \"quote_b\": \"Any exception to the identification requirements must be approved by a manager.\", \"rationale\": \"The word manager widens who can approve, and staff following the procedure could accept sign off from a manager the policy does not allow. The policy outranks the procedure, so the procedure wording is the one to fix.\"}, {\"pair\": \"pair-84bc6e3ddc\", \"label\": \"conflict\", \"quote_a\": \"Every signer must present two separate identification documents before the account is opened\", \"quote_b\": \"Every signer must present one separate identification documents before the account is opened\", \"rationale\": \"The policy requires two documents from every signer unless the branch manager approves a bank reference, while the procedure accepts one with no approval. The consumer account scope is not stated as an intended exception, so staff following the procedure would open accounts the policy forbids.\"}, {\"pair\": \"pair-383eeed864\", \"label\": \"conflict\", \"quote_a\": \"2 business days\", \"quote_b\": \"2 days\", \"rationale\": \"Two calendar days can end sooner than 2 business days when a weekend falls in between. Staff following the procedure could send the acknowledgment on a day the policy treats as on time, and the reverse could also happen, so the difference changes what staff do.\"}, {\"pair\": \"pair-e1567e122a\", \"label\": \"conflict\", \"quote_a\": \"2 business days\", \"quote_b\": \"within 2 days\", \"rationale\": \"The FAQ drops the business day unit, which changes the actual deadline whenever a weekend or holiday is involved. The policy outranks the FAQ, so the FAQ is the clause to correct.\"}, {\"pair\": \"pair-b1f2d7454e\", \"label\": \"conflict\", \"quote_a\": \"to the regional manager on the day it is received\", \"quote_b\": \"to management on the day it is received\", \"rationale\": \"The policy names the regional manager while the procedure says only management, which would let staff escalate to a local manager the policy does not name. The policy outranks the procedure, so the procedure wording should be tightened.\"}, {\"pair\": \"pair-25f64f5edb\", \"label\": \"conflict\", \"quote_a\": \"within 15 business days of the day they arrive\", \"quote_b\": \"within 10 business days of the day they arrive\", \"rationale\": \"The policy allows 15 business days, or 30 when another department investigates, while the procedure sets 10 for every complaint. The procedure applies to all branches and business lines and states no narrower scope, so staff could close on day 10 or wait until day 15 depending on which they follow.\"}, {\"pair\": \"pair-65187446c7\", \"label\": \"conflict\", \"quote_a\": \"within 15 business days of the day they arrive\", \"quote_b\": \"within 10 business days of the day they arrive\", \"rationale\": \"The FAQ gives 10 business days while the policy gives 15, or 30 when another department investigates. The policy outranks the FAQ, so the FAQ is the clause to correct.\"}]}",
+   "problems": [
+    "pair-f32f12228f: the rationale has a comma before so",
+    "pair-84bc6e3ddc: the rationale has a comma before so",
+    "pair-383eeed864: the rationale has a comma before so",
+    "pair-e1567e122a: the rationale has a comma before so",
+    "pair-b1f2d7454e: the rationale has a comma before so",
+    "pair-25f64f5edb: the rationale has a comma before so",
+    "pair-65187446c7: the rationale has a comma before so"
+   ],
+   "meta": {
+    "ms": 17572,
+    "api_ms": 17340,
+    "input_tokens": 2,
+    "output_tokens": 2590,
+    "cost_usd": 0.061607999999999996,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  },
+  {
+   "reply": "{\"results\": [{\"pair\": \"pair-f32f12228f\", \"label\": \"conflict\", \"quote_a\": \"Only the branch manager can approve an exception to the identification requirements.\", \"quote_b\": \"must be approved by a manager\", \"rationale\": \"The policy limits approval to the branch manager while the procedure lets any manager approve, which widens who can act. The policy outranks the procedure and should be kept.\"}, {\"pair\": \"pair-84bc6e3ddc\", \"label\": \"conflict\", \"quote_a\": \"Every signer must present two separate identification documents\", \"quote_b\": \"Every signer must present one separate identification documents\", \"rationale\": \"The policy requires two documents per signer unless the branch manager approves a bank reference, while the procedure accepts one document with no such condition. Staff following the procedure would accept a signer the policy would turn away. The policy outranks the procedure and should be kept.\"}, {\"pair\": \"pair-383eeed864\", \"label\": \"conflict\", \"quote_a\": \"no later than 2 business days after a written complaint arrives\", \"quote_b\": \"no later than 2 days after a written complaint arrives\", \"rationale\": \"Business days skip nonworking days and plain days do not, which changes the real deadline when a complaint arrives near a weekend. Staff following the policy could miss the procedure deadline. The policy outranks the procedure and should be kept.\"}, {\"pair\": \"pair-e1567e122a\", \"label\": \"conflict\", \"quote_a\": \"no later than 2 business days after a written complaint arrives\", \"quote_b\": \"within 2 days\", \"rationale\": \"The policy counts business days while the FAQ counts plain days, which changes the real deadline when a complaint arrives near a weekend. Staff following the policy could miss the FAQ deadline. The policy outranks the FAQ and should be kept.\"}, {\"pair\": \"pair-b1f2d7454e\", \"label\": \"conflict\", \"quote_a\": \"to the regional manager on the day it is received\", \"quote_b\": \"to management on the day it is received\", \"rationale\": \"The policy names the regional manager while the procedure accepts any management, which widens who can act. Staff following the procedure could escalate to someone the policy does not name. The policy outranks the procedure and should be kept.\"}, {\"pair\": \"pair-25f64f5edb\", \"label\": \"conflict\", \"quote_a\": \"within 15 business days of the day they arrive\", \"quote_b\": \"within 10 business days of the day they arrive\", \"rationale\": \"The policy allows 15 business days or 30 business days when another department investigates, while the procedure sets 10 business days. Staff following the policy could close a complaint after the procedure deadline has passed. The policy outranks the procedure and should be kept.\"}, {\"pair\": \"pair-65187446c7\", \"label\": \"conflict\", \"quote_a\": \"within 15 business days of the day they arrive\", \"quote_b\": \"within 10 business days of the day they arrive\", \"rationale\": \"The policy allows 15 business days or 30 business days when another department investigates, while the FAQ sets 10 business days. Staff following the policy could close a complaint after the FAQ deadline has passed. The policy outranks the FAQ and should be kept.\"}]}",
+   "problems": [],
+   "meta": {
+    "ms": 19978,
+    "api_ms": 19806,
+    "input_tokens": 2,
+    "output_tokens": 2790,
+    "cost_usd": 0.0598909,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   },
+   "items": [
+    "pair-f32f12228f",
+    "pair-84bc6e3ddc",
+    "pair-383eeed864",
+    "pair-e1567e122a",
+    "pair-b1f2d7454e",
+    "pair-25f64f5edb",
+    "pair-65187446c7"
+   ]
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T03:24:23+00:00"
+}

@@ -1,0 +1,133 @@
+{
+ "step": "extract",
+ "tag": "evals-11",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "c338e60b657607c5f659b819665f2ec94796d01ec070e1f88f830e5bdacdd3fe",
+ "input": [
+  {
+   "clause": "ADD-CO-01@v1/s2/c1",
+   "text": "In Colorado branches, customers may request a fee refund within 90 days of the statement date.",
+   "heading": "Colorado requirements",
+   "document": {
+    "title": "Colorado Branch Addendum",
+    "type": "addendum",
+    "applies_to": "Colorado branches. All business lines."
+   }
+  },
+  {
+   "clause": "ADD-CO-01@v1/s2/c2",
+   "text": "In Colorado branches, accounts open fewer than 60 days are new accounts for hold and limit purposes.",
+   "heading": "Colorado requirements",
+   "document": {
+    "title": "Colorado Branch Addendum",
+    "type": "addendum",
+    "applies_to": "Colorado branches. All business lines."
+   }
+  },
+  {
+   "clause": "ADD-CO-01@v1/s2/c3",
+   "text": "In Colorado branches, account records are kept for 5 years after the account closes.",
+   "heading": "Colorado requirements",
+   "document": {
+    "title": "Colorado Branch Addendum",
+    "type": "addendum",
+    "applies_to": "Colorado branches. All business lines."
+   }
+  },
+  {
+   "clause": "ADD-KS-01@v1/s2/c1",
+   "text": "In Kansas branches, retain closed account records for 5 years from the closing date.",
+   "heading": "Kansas requirements",
+   "document": {
+    "title": "Kansas Branch Addendum",
+    "type": "addendum",
+    "applies_to": "Kansas branches. All business lines."
+   }
+  },
+  {
+   "clause": "ADD-KS-01@v1/s2/c2",
+   "text": "In Kansas branches, accept debit card disputes filed within 90 days of the statement that first showed the charge.",
+   "heading": "Kansas requirements",
+   "document": {
+    "title": "Kansas Branch Addendum",
+    "type": "addendum",
+    "applies_to": "Kansas branches. All business lines."
+   }
+  },
+  {
+   "clause": "ADD-KS-01@v1/s2/c3",
+   "text": "In Kansas branches, complaints should be closed within 30 business days of the day they arrive.",
+   "heading": "Kansas requirements",
+   "document": {
+    "title": "Kansas Branch Addendum",
+    "type": "addendum",
+    "applies_to": "Kansas branches. All business lines."
+   }
+  },
+  {
+   "clause": "ADD-OK-01@v2/s2/c1",
+   "text": "In Oklahoma branches, resolve complaints within 30 business days of receipt, or tell the customer when to expect a resolution.",
+   "heading": "Oklahoma requirements",
+   "document": {
+    "title": "Oklahoma Branch Addendum",
+    "type": "addendum",
+    "applies_to": "Oklahoma branches. All business lines."
+   }
+  },
+  {
+   "clause": "ADD-OK-01@v2/s2/c2",
+   "text": "In Oklahoma branches, change the vault combination at least every 3 months.",
+   "heading": "Oklahoma requirements",
+   "document": {
+    "title": "Oklahoma Branch Addendum",
+    "type": "addendum",
+    "applies_to": "Oklahoma branches. All business lines."
+   }
+  },
+  {
+   "clause": "ADD-OK-01@v2/s2/c3",
+   "text": "In Oklahoma branches, customers receive written notice 60 days before their account becomes dormant.",
+   "heading": "Oklahoma requirements",
+   "document": {
+    "title": "Oklahoma Branch Addendum",
+    "type": "addendum",
+    "applies_to": "Oklahoma branches. All business lines."
+   }
+  },
+  {
+   "clause": "ADD-TX-01@v4/s2/c1",
+   "text": "In Texas branches, mail the customer a notice at least 45 days before the account is classified as dormant.",
+   "heading": "Texas requirements",
+   "document": {
+    "title": "Texas Branch Addendum",
+    "type": "addendum",
+    "applies_to": "Texas branches. All business lines."
+   }
+  }
+ ],
+ "input_hash": "eca0b47a1457d508e323921c759153c2bc041e9359c2f86a42a9aa573967390a",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\":[{\"clause\":\"ADD-CO-01@v1/s2/c1\",\"atoms\":[{\"attribute\":\"fee_refund_window\",\"value\":{\"type\":\"duration\",\"n\":90,\"unit\":\"days\"},\"quote\":\"90 days\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":\"In Colorado branches\",\"condition\":null}]},{\"clause\":\"ADD-CO-01@v1/s2/c2\",\"atoms\":[{\"attribute\":\"ao_new_account_window\",\"value\":{\"type\":\"duration\",\"n\":60,\"unit\":\"days\"},\"quote\":\"60 days\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":\"In Colorado branches\",\"condition\":null}]},{\"clause\":\"ADD-CO-01@v1/s2/c3\",\"atoms\":[{\"attribute\":\"records_retention\",\"value\":{\"type\":\"duration\",\"n\":5,\"unit\":\"years\"},\"quote\":\"5 years\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":\"In Colorado branches\",\"condition\":null}]},{\"clause\":\"ADD-KS-01@v1/s2/c1\",\"atoms\":[{\"attribute\":\"records_retention\",\"value\":{\"type\":\"duration\",\"n\":5,\"unit\":\"years\"},\"quote\":\"5 years\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":\"In Kansas branches\",\"condition\":null}]},{\"clause\":\"ADD-KS-01@v1/s2/c2\",\"atoms\":[{\"attribute\":\"dispute_window\",\"value\":{\"type\":\"duration\",\"n\":90,\"unit\":\"days\"},\"quote\":\"90 days\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":\"In Kansas branches\",\"condition\":null}]},{\"clause\":\"ADD-KS-01@v1/s2/c3\",\"atoms\":[{\"attribute\":\"complaint_resolve\",\"value\":{\"type\":\"duration\",\"n\":30,\"unit\":\"business_days\"},\"quote\":\"30 business days\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":\"In Kansas branches\",\"condition\":null}]},{\"clause\":\"ADD-OK-01@v2/s2/c1\",\"atoms\":[{\"attribute\":\"complaint_resolve\",\"value\":{\"type\":\"duration\",\"n\":30,\"unit\":\"business_days\"},\"quote\":\"30 business days\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":\"In Oklahoma branches\",\"condition\":\"or tell the customer when to expect a resolution\"}]},{\"clause\":\"ADD-OK-01@v2/s2/c2\",\"atoms\":[{\"attribute\":\"combo_change\",\"value\":{\"type\":\"duration\",\"n\":3,\"unit\":\"months\"},\"quote\":\"3 months\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":\"In Oklahoma branches\",\"condition\":null}]},{\"clause\":\"ADD-OK-01@v2/s2/c3\",\"atoms\":[{\"attribute\":\"dormant_notice\",\"value\":{\"type\":\"duration\",\"n\":60,\"unit\":\"days\"},\"quote\":\"60 days\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":\"In Oklahoma branches\",\"condition\":null}]},{\"clause\":\"ADD-TX-01@v4/s2/c1\",\"atoms\":[{\"attribute\":\"dormant_notice\",\"value\":{\"type\":\"duration\",\"n\":45,\"unit\":\"days\"},\"quote\":\"45 days\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":\"In Texas branches\",\"condition\":null}]}]}",
+   "problems": [],
+   "meta": {
+    "ms": 9161,
+    "api_ms": 9009,
+    "input_tokens": 2,
+    "output_tokens": 1508,
+    "cost_usd": 0.040625,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T03:22:42+00:00"
+}

@@ -1,0 +1,288 @@
+{
+ "step": "draft",
+ "tag": "2026",
+ "model": "claude-opus",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "opus",
+  "client_context": true
+ },
+ "prompt_hash": "d412e32e9168de04c00c3959530ebecb6630d0f9092d4afc1f9c308a4695a32e",
+ "input": [
+  {
+   "group": "g-72f10808",
+   "rule": "Approver for identification exceptions",
+   "attribute": "ao_exception_approver",
+   "type": "role",
+   "keep": {
+    "clause": "POL-AOP-02@v2/s4/c1",
+    "text": "Do not open an account until you have verified two forms of identification for each signer, or one form plus a verified bank reference when the branch manager approves.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Customer Identification Policy",
+     "type": "policy",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "change": [
+    {
+     "clause": "BUL-AOP-01@v4/s1/c2",
+     "text": "Any exception to the identification requirements must be approved by a manager.",
+     "heading": "What branches need to know",
+     "document": {
+      "title": "Branch Bulletin 2025-30: Approver for identification exceptions",
+      "type": "bulletin",
+      "applies_to": "All branches. Consumer and small business accounts."
+     }
+    },
+    {
+     "clause": "FAQ-AOP-01@v4/s3/c1",
+     "text": "Any exception to the identification requirements must be approved by the branch manager.",
+     "heading": "Who can approve an exception to the identification requirements?",
+     "document": {
+      "title": "Account Opening FAQ",
+      "type": "faq",
+      "applies_to": "All branches. Consumer and small business accounts."
+     }
+    },
+    {
+     "clause": "FAQ-AOP-02@v2/s2/c1",
+     "text": "Only the regional manager can approve an exception to the identification requirements.",
+     "heading": "Who can approve an exception to the identification requirements?",
+     "document": {
+      "title": "Identification Questions from the Branches",
+      "type": "faq",
+      "applies_to": "All branches. Consumer and small business accounts."
+     }
+    },
+    {
+     "clause": "JA-AOP-02@v1/s1/c2",
+     "text": "Approver for identification exceptions | regional manager",
+     "heading": "Quick reference",
+     "document": {
+      "title": "Identification Checklist",
+      "type": "job_aid",
+      "applies_to": "All branches. Consumer and small business accounts."
+     }
+    },
+    {
+     "clause": "POL-AOP-01@v2/s3/c1",
+     "text": "Only the branch manager can approve an exception to the identification requirements.",
+     "heading": "Policy statements",
+     "document": {
+      "title": "Deposit Account Opening Policy",
+      "type": "policy",
+      "applies_to": "All branches. Consumer and small business accounts."
+     }
+    },
+    {
+     "clause": "POL-AOP-01@v2/s5/c1",
+     "text": "Exceptions to this policy need written approval from the Deposit Operations manager and are reviewed each quarter.",
+     "heading": "Exceptions",
+     "document": {
+      "title": "Deposit Account Opening Policy",
+      "type": "policy",
+      "applies_to": "All branches. Consumer and small business accounts."
+     }
+    },
+    {
+     "clause": "POL-AOP-02@v2/s5/c1",
+     "text": "Exceptions to this policy need written approval from the Deposit Operations manager and are reviewed each quarter.",
+     "heading": "Exceptions",
+     "document": {
+      "title": "Customer Identification Policy",
+      "type": "policy",
+      "applies_to": "All branches. Consumer and small business accounts."
+     }
+    }
+   ],
+   "allowed": {
+    "FAQ-AOP-01@v4/s3/c1#value": "branch manager",
+    "POL-AOP-01@v2/s3/c1#value": "branch manager",
+    "POL-AOP-01@v2/s4/c2#value": "branch manager",
+    "POL-AOP-02@v2/s4/c1#v2": "two",
+    "POL-AOP-02@v2/s4/c1#v3": "one",
+    "POL-AOP-02@v2/s4/c1#value": "branch manager"
+   },
+   "placeholder": "{clause:POL-AOP-02@v2/s4/c1#value}"
+  },
+  {
+   "group": "g-e45abd58",
+   "rule": "Forms of identification per signer",
+   "attribute": "ao_id_count",
+   "type": "count",
+   "keep": {
+    "clause": "POL-AOP-02@v2/s4/c1",
+    "text": "Do not open an account until you have verified two forms of identification for each signer, or one form plus a verified bank reference when the branch manager approves.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Customer Identification Policy",
+     "type": "policy",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "change": [
+    {
+     "clause": "FAQ-AOP-01@v4/s1/c1",
+     "text": "Collect two forms of identification from each signer before opening the account.",
+     "heading": "How many forms of identification does each signer need to open an account?",
+     "document": {
+      "title": "Account Opening FAQ",
+      "type": "faq",
+      "applies_to": "All branches. Consumer and small business accounts."
+     }
+    },
+    {
+     "clause": "FAQ-AOP-02@v2/s1/c1",
+     "text": "Do not open an account until you have verified two forms of identification for each signer.",
+     "heading": "How many forms of identification does each signer need to open an account?",
+     "document": {
+      "title": "Identification Questions from the Branches",
+      "type": "faq",
+      "applies_to": "All branches. Consumer and small business accounts."
+     }
+    },
+    {
+     "clause": "JA-AOP-02@v1/s1/c1",
+     "text": "Forms of identification per signer | two",
+     "heading": "Quick reference",
+     "document": {
+      "title": "Identification Checklist",
+      "type": "job_aid",
+      "applies_to": "All branches. Consumer and small business accounts."
+     }
+    },
+    {
+     "clause": "PRO-AOP-01@v3/s3/c1",
+     "text": "Every signer must present two separate identification documents before the account is opened.",
+     "heading": "Steps",
+     "document": {
+      "title": "Opening a Consumer Checking Account",
+      "type": "procedure",
+      "applies_to": "All branches. Consumer accounts."
+     }
+    },
+    {
+     "clause": "PRO-AOP-02@v4/s3/c6",
+     "text": "Do not open an account until you have verified two forms of identification for each signer.",
+     "heading": "Steps",
+     "document": {
+      "title": "Opening a Savings Account",
+      "type": "procedure",
+      "applies_to": "All branches. Consumer and small business accounts."
+     }
+    },
+    {
+     "clause": "PRO-AOP-04@v4/s3/c6",
+     "text": "Every signer must present two separate identification documents before the account is opened.",
+     "heading": "Steps",
+     "document": {
+      "title": "Verifying Customer Identification",
+      "type": "procedure",
+      "applies_to": "All branches. Consumer and small business accounts."
+     }
+    }
+   ],
+   "allowed": {
+    "FAQ-AOP-01@v4/s1/c1#value": "two",
+    "FAQ-AOP-02@v2/s1/c1#value": "two",
+    "JA-AOP-02@v1/s1/c1#value": "two",
+    "POL-AOP-01@v2/s4/c2#value": "two forms",
+    "POL-AOP-02@v2/s4/c1#v2": "two",
+    "POL-AOP-02@v2/s4/c1#v3": "one",
+    "POL-AOP-02@v2/s4/c1#value": "two forms",
+    "PRO-AOP-01@v3/s3/c1#value": "two",
+    "PRO-AOP-02@v4/s3/c6#value": "two",
+    "PRO-AOP-04@v4/s3/c6#value": "two"
+   },
+   "placeholder": "{clause:POL-AOP-02@v2/s4/c1#value}"
+  },
+  {
+   "group": "g-b48023fb",
+   "rule": "Unfair treatment escalation",
+   "attribute": "complaint_escalation_role",
+   "type": "role",
+   "keep": {
+    "clause": "PRO-CMP-06@v3/s3/c6",
+    "text": "Complaints that allege unfair treatment are escalated to management the same day.",
+    "heading": "Steps",
+    "document": {
+     "title": "Responding to a Complaint by Phone",
+     "type": "procedure",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "change": [
+    {
+     "clause": "BUL-CMP-01@v1/s1/c2",
+     "text": "Complaints that allege unfair treatment are escalated to management the same day.",
+     "heading": "What branches need to know",
+     "document": {
+      "title": "Branch Bulletin 2025-32: Escalation for unfair treatment complaints",
+      "type": "bulletin",
+      "applies_to": "All branches. All business lines."
+     }
+    }
+   ],
+   "allowed": {
+    "BUL-CMP-01@v1/s1/c2#value": "management",
+    "PRO-CMP-06@v3/s3/c6#value": "management"
+   },
+   "placeholder": "{clause:PRO-CMP-06@v3/s3/c6#value}"
+  }
+ ],
+ "input_hash": "f29388ed3949d66afe60aaa7d5bd2f4c42d9f92630bf15724af029c9552fdced",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [{\"group\": \"g-72f10808\", \"title\": \"Approving the bank reference alternative for identification\", \"text\": \"Do not open an account until you have verified {clause:POL-AOP-02@v2/s4/c1#v2} forms of identification for each signer, or {clause:POL-AOP-02@v2/s4/c1#v3} form plus a verified bank reference when the {clause:POL-AOP-02@v2/s4/c1#value} approves.\"}, {\"group\": \"g-e45abd58\", \"title\": \"Forms of identification for each signer\", \"text\": \"Do not open an account until you have verified {clause:POL-AOP-02@v2/s4/c1#value} of identification for each signer, or {clause:POL-AOP-02@v2/s4/c1#v3} form plus a verified bank reference when the branch manager approves.\"}, {\"group\": \"g-b48023fb\", \"title\": \"Escalating unfair treatment complaints\", \"text\": \"Complaints that allege unfair treatment are escalated to {clause:PRO-CMP-06@v3/s3/c6#value} the same day.\"}]}",
+   "problems": [],
+   "meta": {
+    "ms": 9746,
+    "api_ms": 9592,
+    "input_tokens": 9195,
+    "output_tokens": 1063,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 9193,
+     "cache_read_input_tokens": 0,
+     "output_tokens": 1063,
+     "output_tokens_details": {
+      "thinking_tokens": 701
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 9193,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 1063,
+       "cache_read_input_tokens": 0,
+       "cache_creation_input_tokens": 9193,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 9193
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.094812,
+    "models": [
+     "claude-opus-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T19:47:46+00:00"
+}

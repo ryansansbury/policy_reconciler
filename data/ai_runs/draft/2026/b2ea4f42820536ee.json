@@ -1,0 +1,210 @@
+{
+ "step": "draft",
+ "tag": "2026",
+ "model": "claude-opus",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "opus",
+  "client_context": true
+ },
+ "prompt_hash": "d412e32e9168de04c00c3959530ebecb6630d0f9092d4afc1f9c308a4695a32e",
+ "input": [
+  {
+   "group": "g-c75726e7",
+   "rule": "Standard check hold",
+   "attribute": "hold_standard",
+   "type": "duration",
+   "keep": {
+    "clause": "PRO-HLD-04@v3/s3/c8",
+    "text": "Funds from deposited checks are available within 2 business days unless a longer hold applies.",
+    "heading": "Steps",
+    "document": {
+     "title": "Releasing a Hold Early",
+     "type": "procedure",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "change": [
+    {
+     "clause": "JA-HLD-01@v3/s1/c3",
+     "text": "Standard check hold | 2 business days",
+     "heading": "Quick reference",
+     "document": {
+      "title": "Hold Calendar Quick Reference",
+      "type": "job_aid",
+      "applies_to": "All branches. Consumer and small business accounts."
+     }
+    },
+    {
+     "clause": "JA-HLD-02@v2/s1/c2",
+     "text": "Standard check hold | 2 business days",
+     "heading": "Quick reference",
+     "document": {
+      "title": "Check Hold Desk Card",
+      "type": "job_aid",
+      "applies_to": "All branches. Consumer and small business accounts."
+     }
+    },
+    {
+     "clause": "JA-HLD-03@v3/s1/c3",
+     "text": "Standard check hold | 2 business days",
+     "heading": "Quick reference",
+     "document": {
+      "title": "Hold Notice Checklist",
+      "type": "job_aid",
+      "applies_to": "All branches. Consumer and small business accounts."
+     }
+    }
+   ],
+   "allowed": {
+    "FAQ-HLD-02@v3/s1/c1#value": "2 business days",
+    "JA-HLD-01@v3/s1/c3#value": "2 business days",
+    "JA-HLD-02@v2/s1/c2#value": "2 business days",
+    "JA-HLD-03@v3/s1/c3#value": "2 business days",
+    "POL-HLD-01@v5/s3/c1#value": "2 business days",
+    "PRO-HLD-02@v2/s3/c6#value": "2 business days",
+    "PRO-HLD-04@v3/s3/c8#value": "2 business days"
+   },
+   "placeholder": "{clause:PRO-HLD-04@v3/s3/c8#value}"
+  },
+  {
+   "group": "g-26d6eeb7",
+   "rule": "Documenting pricing exceptions",
+   "attribute": "lend_exception_doc",
+   "type": "modal",
+   "keep": {
+    "clause": "POL-LND-01@v4/s3/c1",
+    "text": "Record the reason and the approver for every pricing exception in the loan file.",
+    "heading": "Policy statements",
+    "document": {
+     "title": "Loan Pricing Exception Policy",
+     "type": "policy",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "change": [
+    {
+     "clause": "JA-LND-01@v3/s1/c2",
+     "text": "Documenting pricing exceptions | Optional",
+     "heading": "Quick reference",
+     "document": {
+      "title": "Rate Exception Authority Card",
+      "type": "job_aid",
+      "applies_to": "All branches. All business lines."
+     }
+    },
+    {
+     "clause": "PRO-LND-03@v4/s3/c5",
+     "text": "Pricing exceptions may be documented in the loan file after closing if time is short.",
+     "heading": "Steps",
+     "document": {
+      "title": "Documenting Pricing Exceptions",
+      "type": "procedure",
+      "applies_to": "All branches. All business lines."
+     }
+    }
+   ],
+   "allowed": {
+    "BUL-LND-02@v2/s1/c2#value": "must",
+    "FAQ-LND-02@v4/s2/c1#value": "must",
+    "JA-LND-01@v3/s3/c1#value": "must",
+    "JA-LND-02@v2/s1/c1#value": "must",
+    "POL-LND-01@v4/s3/c1#value": "must",
+    "PRO-LND-02@v1/s3/c4#value": "must",
+    "PRO-LND-04@v2/s3/c5#value": "must"
+   },
+   "placeholder": "{clause:POL-LND-01@v4/s3/c1#value}"
+  },
+  {
+   "group": "g-a0b05e44",
+   "rule": "Branch manager rate exception limit",
+   "attribute": "lend_rate_bm",
+   "type": "percent",
+   "keep": {
+    "clause": "POL-LND-01@v4/s4/c1",
+    "text": "A branch manager can lower a loan rate by no more than 0.25% as an exception.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Loan Pricing Exception Policy",
+     "type": "policy",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "change": [
+    {
+     "clause": "BUL-LND-01@v3/s1/c2",
+     "text": "Rate exceptions larger than 0.15% need approval above the branch manager.",
+     "heading": "What branches need to know",
+     "document": {
+      "title": "Branch Bulletin 2025-26: Branch manager rate exception limit",
+      "type": "bulletin",
+      "applies_to": "All branches. All business lines."
+     }
+    }
+   ],
+   "allowed": {
+    "FAQ-LND-02@v4/s1/c1#value": "0.25%",
+    "JA-LND-01@v3/s1/c1#value": "0.25%",
+    "JA-LND-01@v3/s4/c1#value": "0.25%",
+    "POL-LND-01@v4/s4/c1#value": "0.25%",
+    "PRO-LND-01@v4/s3/c5#value": "0.25%",
+    "PRO-LND-05@v4/s3/c2#value": "0.25%"
+   },
+   "placeholder": "{clause:POL-LND-01@v4/s4/c1#value}"
+  }
+ ],
+ "input_hash": "89511ea635b96cff4eef254d7f72f5661a34afa6d03b3ccc7f1641bea562aeda",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [{\"group\": \"g-c75726e7\", \"title\": \"Standard check hold\", \"text\": \"Funds from deposited checks are available within {clause:PRO-HLD-04@v3/s3/c8#value} unless a longer hold applies.\"}, {\"group\": \"g-26d6eeb7\", \"title\": \"Documenting pricing exceptions\", \"text\": \"Staff {clause:POL-LND-01@v4/s3/c1#value} record the reason and the approver for every pricing exception in the loan file.\"}, {\"group\": \"g-a0b05e44\", \"title\": \"Branch manager rate exceptions\", \"text\": \"A branch manager can lower a loan rate by no more than {clause:POL-LND-01@v4/s4/c1#value} as an exception.\"}]}",
+   "problems": [],
+   "meta": {
+    "ms": 4389,
+    "api_ms": 4248,
+    "input_tokens": 8060,
+    "output_tokens": 486,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 6984,
+     "cache_read_input_tokens": 1074,
+     "output_tokens": 486,
+     "output_tokens_details": {
+      "thinking_tokens": 236
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 6984,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 486,
+       "cache_read_input_tokens": 1074,
+       "cache_creation_input_tokens": 6984,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 6984
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.06581479999999999,
+    "models": [
+     "claude-opus-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T05:57:42+00:00"
+}

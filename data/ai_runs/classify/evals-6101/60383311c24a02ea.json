@@ -1,0 +1,307 @@
+{
+ "step": "classify",
+ "tag": "evals-6101",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "2c908358fde9f0f4a792753579a6cfaa33476e41c4b0f235744675d8e8283a19",
+ "input": [
+  {
+   "pair": "pair-b6a6666aa7",
+   "rule": null,
+   "attribute": null,
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-DRM-06@v1/s3/c2",
+    "text": "Verify the customer's identity before reactivating a dormant account.",
+    "heading": "Steps",
+    "document": {
+     "title": "Handling Mail Returned on a Dormant Account",
+     "type": "procedure",
+     "version": 1,
+     "effective": "2025-12-02",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "JA-DRM-01@v1/s3/c1",
+    "text": "Verify the customer's identity before reactivating a dormant account.",
+    "heading": "Steps to follow",
+    "document": {
+     "title": "Dormant Account Quick Reference",
+     "type": "job_aid",
+     "version": 1,
+     "effective": "2025-07-09",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-3ad45c8359",
+   "rule": null,
+   "attribute": null,
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-CMP-06@v1/s3/c4",
+    "text": "Tell the customer who will contact them next and when.",
+    "heading": "Steps",
+    "document": {
+     "title": "Responding to a Complaint by Phone",
+     "type": "procedure",
+     "version": 1,
+     "effective": "2024-12-19",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "BUL-CMP-01@v1/s2/c1",
+    "text": "Tell the customer who will contact them next and when.",
+    "heading": "Steps to follow",
+    "document": {
+     "title": "Branch Bulletin 2025-09: Complaint resolution deadline",
+     "type": "bulletin",
+     "version": 1,
+     "effective": "2026-01-30",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-1ced63d644",
+   "rule": null,
+   "attribute": null,
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-BOP-06@v4/s3/c2",
+    "text": "Lock the doors and set the alarm after the last customer leaves.",
+    "heading": "Steps",
+    "document": {
+     "title": "After-Hours Branch Access",
+     "type": "procedure",
+     "version": 4,
+     "effective": "2025-12-26",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "PRO-BOP-01@v3/s5/c1",
+    "text": "Lock the doors and set the alarm after the last customer leaves.",
+    "heading": "Steps to follow",
+    "document": {
+     "title": "Opening the Branch Each Morning",
+     "type": "procedure",
+     "version": 3,
+     "effective": "2025-01-17",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-aca41c2483",
+   "rule": null,
+   "attribute": null,
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-REC-04@v1/s3/c1",
+    "text": "Check the legal hold list before preparing any records for destruction.",
+    "heading": "Steps",
+    "document": {
+     "title": "Releasing a Legal Hold",
+     "type": "procedure",
+     "version": 1,
+     "effective": "2025-03-23",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "PRO-REC-03@v4/s5/c1",
+    "text": "Check the legal hold list before preparing any records for destruction.",
+    "heading": "Steps to follow",
+    "document": {
+     "title": "Placing Records on Legal Hold",
+     "type": "procedure",
+     "version": 4,
+     "effective": "2026-04-01",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-c1264b7852",
+   "rule": null,
+   "attribute": null,
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-HLD-03@v2/s3/c4",
+    "text": "Mail the hold notice when the deposit was made by mail or at an ATM.",
+    "heading": "Steps",
+    "document": {
+     "title": "Holds on New Accounts",
+     "type": "procedure",
+     "version": 2,
+     "effective": "2025-08-25",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "JA-HLD-03@v3/s3/c1",
+    "text": "Mail the hold notice when the deposit was made by mail or at an ATM.",
+    "heading": "Steps to follow",
+    "document": {
+     "title": "Hold Notice Checklist",
+     "type": "job_aid",
+     "version": 3,
+     "effective": "2026-05-01",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-57cdc935d3",
+   "rule": null,
+   "attribute": null,
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-REC-06@v4/s3/c1",
+    "text": "Check the legal hold list before preparing any records for destruction.",
+    "heading": "Steps",
+    "document": {
+     "title": "Retrieving Archived Records",
+     "type": "procedure",
+     "version": 4,
+     "effective": "2025-12-12",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "PRO-REC-02@v3/s5/c1",
+    "text": "Check the legal hold list before preparing any records for destruction.",
+    "heading": "Steps to follow",
+    "document": {
+     "title": "Approving Records Destruction",
+     "type": "procedure",
+     "version": 3,
+     "effective": "2026-03-12",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-009c38bf11",
+   "rule": null,
+   "attribute": null,
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-ODR-06@v2/s3/c3",
+    "text": "Note every customer contact in the account record.",
+    "heading": "Steps",
+    "document": {
+     "title": "Handling Overdraft Fee Disputes",
+     "type": "procedure",
+     "version": 2,
+     "effective": "2025-04-24",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "JA-ODR-01@v4/s3/c1",
+    "text": "Note every client contact in the account record.",
+    "heading": "Steps to follow",
+    "document": {
+     "title": "Overdraft Quick Reference",
+     "type": "job_aid",
+     "version": 4,
+     "effective": "2026-04-04",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-a06de55366",
+   "rule": null,
+   "attribute": null,
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-DRM-01@v3/s3/c4",
+    "text": "Verify the customer's identity before reactivating a dormant account.",
+    "heading": "Steps",
+    "document": {
+     "title": "Identifying Dormant Accounts",
+     "type": "procedure",
+     "version": 3,
+     "effective": "2024-12-27",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "PRO-DRM-03@v1/s5/c1",
+    "text": "Verify the customer's identity before reactivating a dormant account.",
+    "heading": "Steps to follow",
+    "document": {
+     "title": "Reactivating a Dormant Account",
+     "type": "procedure",
+     "version": 1,
+     "effective": "2026-01-25",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  }
+ ],
+ "input_hash": "fc383394bc0f2e14ced32dae160da0c66bc93bb901d14587ae3ac5abf4fea064",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [{\"pair\": \"pair-b6a6666aa7\", \"label\": \"consistent\", \"quote_a\": \"Verify the customer's identity before reactivating a dormant account.\", \"quote_b\": \"Verify the customer's identity before reactivating a dormant account.\", \"rationale\": \"Both clauses give the same single requirement with the same value and the same scope. Staff following either one would act the same way.\"}, {\"pair\": \"pair-3ad45c8359\", \"label\": \"consistent\", \"quote_a\": \"Tell the customer who will contact them next and when.\", \"quote_b\": \"Tell the customer who will contact them next and when.\", \"rationale\": \"Both clauses state the same instruction for all branches and business lines. Nothing in either one changes what staff would do.\"}, {\"pair\": \"pair-1ced63d644\", \"label\": \"consistent\", \"quote_a\": \"Lock the doors and set the alarm after the last customer leaves.\", \"quote_b\": \"Lock the doors and set the alarm after the last customer leaves.\", \"rationale\": \"Both procedures state the same closing rule with the same value. Each is a single rule that fits its own document, so there is no contradiction and no copied run of steps.\"}, {\"pair\": \"pair-aca41c2483\", \"label\": \"consistent\", \"quote_a\": \"Check the legal hold list before preparing any records for destruction.\", \"quote_b\": \"Check the legal hold list before preparing any records for destruction.\", \"rationale\": \"Both clauses require the same check before records are prepared for destruction. The rule and scope match, so staff act the same under either one.\"}, {\"pair\": \"pair-c1264b7852\", \"label\": \"consistent\", \"quote_a\": \"Mail the hold notice when the deposit was made by mail or at an ATM.\", \"quote_b\": \"Mail the hold notice when the deposit was made by mail or at an ATM.\", \"rationale\": \"Both clauses set the same trigger for mailing the hold notice. The scope is the same and no value differs.\"}, {\"pair\": \"pair-57cdc935d3\", \"label\": \"consistent\", \"quote_a\": \"Check the legal hold list before preparing any records for destruction.\", \"quote_b\": \"Check the legal hold list before preparing any records for destruction.\", \"rationale\": \"Both procedures state the same single check with the same value across all branches and business lines. They agree, and the exact wording match does not make them a copied passage.\"}, {\"pair\": \"pair-009c38bf11\", \"label\": \"consistent\", \"quote_a\": \"Note every customer contact in the account record.\", \"quote_b\": \"Note every client contact in the account record.\", \"rationale\": \"The only difference is the word client in place of customer, which does not change who or what staff must record. Both require every contact to be noted in the account record.\"}, {\"pair\": \"pair-a06de55366\", \"label\": \"consistent\", \"quote_a\": \"Verify the customer's identity before reactivating a dormant account.\", \"quote_b\": \"Verify the customer's identity before reactivating a dormant account.\", \"rationale\": \"Both procedures state the same identity check with the same value and scope. Staff following either clause would act the same way.\"}]}",
+   "problems": [],
+   "meta": {
+    "ms": 9300,
+    "api_ms": 9170,
+    "input_tokens": 8793,
+    "output_tokens": 1373,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 7950,
+     "cache_read_input_tokens": 841,
+     "output_tokens": 1373,
+     "output_tokens_details": {
+      "thinking_tokens": 372
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 7950,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 1373,
+       "cache_read_input_tokens": 841,
+       "cache_creation_input_tokens": 7950,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 7950
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.0456181,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T05:28:28+00:00"
+}

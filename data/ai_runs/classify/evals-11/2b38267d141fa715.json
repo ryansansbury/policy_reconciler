@@ -1,0 +1,300 @@
+{
+ "step": "classify",
+ "tag": "evals-11",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "1346938ac1ecbf43874a700ab9916c851d6a29bb5d6b9e5f1199128bc8cd59f2",
+ "input": [
+  {
+   "pair": "pair-a9a4241566",
+   "rule": "Closed account record retention",
+   "attribute": "records_retention",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "JA-REC-01@v3/s1/c1",
+    "text": "Retention for closed account records | 7 years",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Records Retention Schedule Card",
+     "type": "job_aid",
+     "version": 3,
+     "effective": "2026-01-25",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "PRO-REC-05@v1/s3/c4",
+    "text": "Account records are kept for 7 years after the account closes.",
+    "heading": "Steps",
+    "document": {
+     "title": "Shipping Records to Offsite Storage",
+     "type": "procedure",
+     "version": 1,
+     "effective": "2026-03-28",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-94a62fbc58",
+   "rule": "Provisional credit deadline",
+   "attribute": "dispute_provisional_credit",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "BUL-DSP-02@v4/s1/c2",
+    "text": "Credit the customer provisionally no later than 10 business days after the dispute form is complete.",
+    "heading": "What branches need to know",
+    "document": {
+     "title": "Branch Bulletin 2026-33: Provisional credit deadline for disputes",
+     "type": "bulletin",
+     "version": 4,
+     "effective": "2026-03-19",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "PRO-DSP-02@v2/s3/c7",
+    "text": "Credit the customer provisionally no later than 10 business days after the dispute form is complete.",
+    "heading": "Steps",
+    "document": {
+     "title": "Issuing Provisional Credit",
+     "type": "procedure",
+     "version": 2,
+     "effective": "2026-07-22",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-f433934f8b",
+   "rule": "Overdraft fee per item",
+   "attribute": "od_fee",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "FAQ-ODR-01@v1/s1/c1",
+    "text": "An overdraft fee of $30 applies to each item the bank pays when the balance is not enough to cover it.",
+    "heading": "What is the overdraft fee?",
+    "document": {
+     "title": "Overdraft FAQ",
+     "type": "faq",
+     "version": 1,
+     "effective": "2025-12-05",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "JA-ODR-02@v1/s1/c1",
+    "text": "Overdraft fee per item | $30",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Overdraft Fee Desk Card",
+     "type": "job_aid",
+     "version": 1,
+     "effective": "2025-07-14",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-ab635a53d1",
+   "rule": "Unfair treatment escalation",
+   "attribute": "complaint_escalation_role",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "FAQ-CMP-01@v1/s2/c1",
+    "text": "Complaints that allege unfair treatment are escalated to the regional manager the same day.",
+    "heading": "Who handles a complaint that alleges unfair treatment?",
+    "document": {
+     "title": "Complaint Handling FAQ",
+     "type": "faq",
+     "version": 1,
+     "effective": "2026-06-27",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "PRO-CMP-02@v2/s3/c7",
+    "text": "Escalate any complaint alleging unfair treatment to the regional manager on the day it is received.",
+    "heading": "Steps",
+    "document": {
+     "title": "Acknowledging a Written Complaint",
+     "type": "procedure",
+     "version": 2,
+     "effective": "2026-03-24",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-5116944f06",
+   "rule": "Outgoing wire cutoff",
+   "attribute": "wire_cutoff",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-WIR-07@v2/s3/c3",
+    "text": "Outgoing consumer and small business wire requests received after 3:00 PM Central are processed the next business day.",
+    "heading": "Steps",
+    "document": {
+     "title": "Second Approval for Large Wires",
+     "type": "procedure",
+     "version": 2,
+     "effective": "2025-05-06",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "PRO-WIR-02@v3/s3/c7",
+    "text": "Only a wire specialist may complete the callback for an outgoing wire.",
+    "heading": "Steps",
+    "document": {
+     "title": "Processing Outgoing Commercial Wires",
+     "type": "procedure",
+     "version": 3,
+     "effective": "2025-10-11",
+     "applies_to": "All branches. Commercial accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-c13724f27f",
+   "rule": "Minimum opening deposit",
+   "attribute": "ao_min_deposit",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-AOP-07@v2/s3/c4",
+    "text": "A consumer checking account needs at least $25 to open.",
+    "heading": "Steps",
+    "document": {
+     "title": "Opening an Account for a Minor with a Custodian",
+     "type": "procedure",
+     "version": 2,
+     "effective": "2026-02-05",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "FAQ-AOP-01@v4/s2/c1",
+    "text": "Any exception to the identification requirements must be approved by the branch manager.",
+    "heading": "Who can approve an exception to the identification requirements?",
+    "document": {
+     "title": "Account Opening FAQ",
+     "type": "faq",
+     "version": 4,
+     "effective": "2026-01-08",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-614405e2e3",
+   "rule": "Inactivity before dormancy",
+   "attribute": "dormant_inactivity",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "FAQ-DRM-02@v4/s1/c1",
+    "text": "Classify accounts as dormant after 12 months without customer-initiated activity.",
+    "heading": "When does an account become dormant?",
+    "document": {
+     "title": "Reactivation Questions",
+     "type": "faq",
+     "version": 4,
+     "effective": "2026-05-12",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "JA-DRM-01@v3/s1/c2",
+    "text": "Notice before dormancy | 30 days",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Dormant Account Quick Reference",
+     "type": "job_aid",
+     "version": 3,
+     "effective": "2026-05-24",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-3ed8d92fdc",
+   "rule": "Dual control for the vault",
+   "attribute": "cash_vault_dual",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "JA-CSH-02@v2/s1/c2",
+    "text": "Dual control for the vault | Required",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Vault Opening Checklist",
+     "type": "job_aid",
+     "version": 2,
+     "effective": "2026-07-28",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "PRO-CSH-06@v4/s3/c4",
+    "text": "A teller drawer may not hold more than $15,000 at any time.",
+    "heading": "Steps",
+    "document": {
+     "title": "Ordering Cash Shipments",
+     "type": "procedure",
+     "version": 4,
+     "effective": "2026-04-08",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  }
+ ],
+ "input_hash": "fdb478a8acc2095362d3aeaa00776fbe1c71475599d378bca7614bb018bce127",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [{\"pair\": \"pair-a9a4241566\", \"label\": \"duplicate\", \"quote_a\": \"Retention for closed account records | 7 years\", \"quote_b\": \"Account records are kept for 7 years after the account closes.\", \"rationale\": \"Both clauses require closed account records to be kept for 7 years and they apply to the same branches and business lines. The job aid only restates the procedure.\"}, {\"pair\": \"pair-94a62fbc58\", \"label\": \"duplicate\", \"quote_a\": \"Credit the customer provisionally no later than 10 business days after the dispute form is complete.\", \"quote_b\": \"Credit the customer provisionally no later than 10 business days after the dispute form is complete.\", \"rationale\": \"The wording is identical and both set a 10 business day deadline for the same accounts. They come from different documents rather than two versions of one document, so this is a repeat and not a replacement.\"}, {\"pair\": \"pair-f433934f8b\", \"label\": \"duplicate\", \"quote_a\": \"An overdraft fee of $30 applies to each item the bank pays\", \"quote_b\": \"Overdraft fee per item | $30\", \"rationale\": \"Both state a $30 fee per paid item for the same accounts and branches. Nothing differs that would change what staff do.\"}, {\"pair\": \"pair-ab635a53d1\", \"label\": \"duplicate\", \"quote_a\": \"escalated to the regional manager the same day\", \"quote_b\": \"to the regional manager on the day it is received\", \"rationale\": \"Both send complaints alleging unfair treatment to the regional manager on the day of receipt. The FAQ and the procedure say the same thing in different words.\"}, {\"pair\": \"pair-5116944f06\", \"label\": \"unrelated\", \"quote_a\": \"processed the next business day\", \"quote_b\": \"Only a wire specialist may complete the callback\", \"rationale\": \"One clause sets a processing cutoff for late wire requests. The other limits who can complete the callback on commercial wires, so they govern different things.\"}, {\"pair\": \"pair-c13724f27f\", \"label\": \"unrelated\", \"quote_a\": \"A consumer checking account needs at least $25 to open.\", \"quote_b\": \"Any exception to the identification requirements must be approved by the branch manager.\", \"rationale\": \"One clause sets a minimum opening deposit. The other names who approves identification exceptions, so they govern different things.\"}, {\"pair\": \"pair-614405e2e3\", \"label\": \"unrelated\", \"quote_a\": \"Classify accounts as dormant after 12 months without customer-initiated activity.\", \"quote_b\": \"Notice before dormancy | 30 days\", \"rationale\": \"One clause defines the inactivity period that makes an account dormant. The other gives the notice period before dormancy, which is a separate requirement, so the two do not set values for the same rule.\"}, {\"pair\": \"pair-3ed8d92fdc\", \"label\": \"unrelated\", \"quote_a\": \"Dual control for the vault | Required\", \"quote_b\": \"A teller drawer may not hold more than $15,000 at any time.\", \"rationale\": \"One clause requires dual control for the vault. The other caps the cash a teller drawer may hold, so they govern different things.\"}]}",
+   "problems": [
+    "pair-94a62fbc58: the rationale has a comma before so",
+    "pair-5116944f06: the rationale has a comma before so",
+    "pair-c13724f27f: the rationale has a comma before so",
+    "pair-614405e2e3: the rationale has a comma before so",
+    "pair-3ed8d92fdc: the rationale has a comma before so"
+   ],
+   "meta": {
+    "ms": 10127,
+    "api_ms": 9978,
+    "input_tokens": 2,
+    "output_tokens": 1593,
+    "cost_usd": 0.048700900000000005,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  },
+  {
+   "reply": "{\"results\": [{\"pair\": \"pair-94a62fbc58\", \"label\": \"duplicate\", \"quote_a\": \"Credit the customer provisionally no later than 10 business days after the dispute form is complete.\", \"quote_b\": \"Credit the customer provisionally no later than 10 business days after the dispute form is complete.\", \"rationale\": \"Both clauses give the same 10 business day deadline for the same scope of branches and accounts. They come from different documents, a bulletin and a procedure, and nothing differs that would change what staff do.\"}, {\"pair\": \"pair-5116944f06\", \"label\": \"unrelated\", \"quote_a\": \"Outgoing consumer and small business wire requests received after 3:00 PM Central are processed the next business day.\", \"quote_b\": \"Only a wire specialist may complete the callback for an outgoing wire.\", \"rationale\": \"One clause sets a daily cutoff for processing outgoing wires. The other limits who may complete a callback. They govern different rules.\"}, {\"pair\": \"pair-c13724f27f\", \"label\": \"unrelated\", \"quote_a\": \"A consumer checking account needs at least $25 to open.\", \"quote_b\": \"Any exception to the identification requirements must be approved by the branch manager.\", \"rationale\": \"One clause sets a minimum opening deposit. The other says who approves exceptions to identification requirements. They govern different things.\"}, {\"pair\": \"pair-614405e2e3\", \"label\": \"unrelated\", \"quote_a\": \"Classify accounts as dormant after 12 months without customer-initiated activity.\", \"quote_b\": \"Notice before dormancy | 30 days\", \"rationale\": \"One clause sets how long an account is inactive before it is classed as dormant. The other sets the notice period of 30 days given before dormancy. These are separate rules and neither contradicts the other.\"}, {\"pair\": \"pair-3ed8d92fdc\", \"label\": \"unrelated\", \"quote_a\": \"Dual control for the vault | Required\", \"quote_b\": \"A teller drawer may not hold more than $15,000 at any time.\", \"rationale\": \"One clause requires dual control for the vault. The other caps the cash a teller drawer may hold. They govern different controls.\"}]}",
+   "problems": [],
+   "meta": {
+    "ms": 8238,
+    "api_ms": 8056,
+    "input_tokens": 2,
+    "output_tokens": 1120,
+    "cost_usd": 0.0396629,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   },
+   "items": [
+    "pair-94a62fbc58",
+    "pair-5116944f06",
+    "pair-c13724f27f",
+    "pair-614405e2e3",
+    "pair-3ed8d92fdc"
+   ]
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T03:27:13+00:00"
+}

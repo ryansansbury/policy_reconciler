@@ -1,0 +1,114 @@
+{
+ "step": "assist",
+ "tag": "before-2026",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "66c01f0da9f327e74355d39363e55b642a1bbf8dc6249974c3afbf3cb3d6ccd5",
+ "input": [
+  {
+   "question": "q-C-06",
+   "text": "How long is an account considered a new account?",
+   "type": "duration",
+   "clauses": [
+    {
+     "id": "JA-AOP-01@v3/s1/c2",
+     "text": "How long an account counts as new | 30 days",
+     "title": "New Account Quick Reference",
+     "type": "job_aid",
+     "version": 3,
+     "effective": "2026-01-31"
+    },
+    {
+     "id": "JA-AOP-03@v4/s1/c1",
+     "text": "How long an account counts as new | 30 days",
+     "title": "Account Opening Desk Card",
+     "type": "job_aid",
+     "version": 4,
+     "effective": "2025-05-22"
+    },
+    {
+     "id": "POL-HLD-01@v5/s4/c1",
+     "text": "New accounts can have check holds of as long as 7 business days.",
+     "title": "Funds Availability Policy",
+     "type": "policy",
+     "version": 5,
+     "effective": "2026-05-20"
+    },
+    {
+     "id": "PRO-HLD-06@v2/s3/c4",
+     "text": "New accounts can have check holds of as long as 9 business days.",
+     "title": "Holds on Mobile Deposits",
+     "type": "procedure",
+     "version": 2,
+     "effective": "2025-07-22"
+    },
+    {
+     "id": "FAQ-AOP-02@v2/s3/c1",
+     "text": "An account is treated as a new account for the first 60 days after it opens.",
+     "title": "Identification Questions from the Branches",
+     "type": "faq",
+     "version": 2,
+     "effective": "2025-12-11"
+    }
+   ]
+  }
+ ],
+ "input_hash": "f610fcce61d22e23c11a62f0fb6d48dd344002d69b82869904dbad83ca417ba9",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [{\"question\": \"q-C-06\", \"answer\": \"The sources disagree. The New Account Quick Reference and the Account Opening Desk Card say an account counts as new for 30 days, while the Identification Questions from the Branches FAQ says 60 days. Job aids and FAQs rank equally and no policy or procedure clause gives the duration, so the bank's ranking does not favor either value.\", \"citations\": [\"JA-AOP-01@v3/s1/c2\", \"JA-AOP-03@v4/s1/c1\", \"FAQ-AOP-02@v2/s3/c1\"], \"sources_disagree\": true}]}",
+   "problems": [],
+   "meta": {
+    "ms": 6862,
+    "api_ms": 6714,
+    "input_tokens": 6086,
+    "output_tokens": 661,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 5466,
+     "cache_read_input_tokens": 618,
+     "output_tokens": 661,
+     "output_tokens_details": {
+      "thinking_tokens": 451
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 5466,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 661,
+       "cache_read_input_tokens": 618,
+       "cache_creation_input_tokens": 5466,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 5466
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.0285398,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T06:02:57+00:00"
+}

@@ -1,0 +1,149 @@
+{
+ "step": "extract",
+ "tag": "cmp-6101",
+ "model": "openai-b",
+ "backend": {
+  "vendor": "OpenAI",
+  "model": "gpt-6-luna",
+  "label": "GPT-6 Luna"
+ },
+ "prompt_hash": "dcc761e46c6ec579c01b9dfd540df3c2fa4bba3b6b5ec777aa2cf9c9c62aa411",
+ "input": [
+  {
+   "clause": "BUL-BOP-01@v3/s1/c1",
+   "text": "This bulletin reminds branch staff of a requirement that applies to their daily work.",
+   "heading": "What branches need to know",
+   "document": {
+    "title": "Branch Bulletin 2025-07: Vault combination change interval",
+    "type": "bulletin",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "JA-BOP-01@v1/s2/c3",
+   "text": "Approach the branch together and check the exterior for signs of forced entry.",
+   "heading": "Checklist",
+   "document": {
+    "title": "Opening Checklist",
+    "type": "job_aid",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "JA-ODR-01@v4/s3/c2",
+   "text": "Review the overdrawn accounts report at the start of each business day.",
+   "heading": "Steps to follow",
+   "document": {
+    "title": "Overdraft Quick Reference",
+    "type": "job_aid",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "PRO-AOP-03@v1/s2/c1",
+   "text": "Make sure you have completed the training for this task and have access to the systems it uses.",
+   "heading": "Before you begin",
+   "document": {
+    "title": "Opening a Small Business Account",
+    "type": "procedure",
+    "applies_to": "All branches. Small business accounts."
+   }
+  },
+  {
+   "clause": "PRO-BOP-01@v3/s3/c5",
+   "text": "Approach the branch together and check the exterior for signs of forced entry.",
+   "heading": "Steps",
+   "document": {
+    "title": "Opening the Branch Each Morning",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-CMP-04@v1/s3/c3",
+   "text": "Attach any letters or emails the customer sent to the complaint record.",
+   "heading": "Steps",
+   "document": {
+    "title": "Escalating a Sensitive Complaint",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-DRM-01@v3/s3/c1",
+   "text": "Reactivate an account when the customer makes a deposit or withdrawal in person.",
+   "heading": "Steps",
+   "document": {
+    "title": "Identifying Dormant Accounts",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "PRO-DSP-02@v4/s5/c1",
+   "text": "Tell the client how they will be notified of the outcome.",
+   "heading": "Steps to follow",
+   "document": {
+    "title": "Issuing Provisional Credit",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "PRO-HLD-04@v3/s3/c7",
+   "text": "Print the hold notice and give it to the customer with their receipt.",
+   "heading": "Steps",
+   "document": {
+    "title": "Releasing a Hold Early",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "PRO-WIR-03@v3/s3/c8",
+   "text": "Enter the wire in the wire system and attach the signed request form.",
+   "heading": "Steps",
+   "document": {
+    "title": "Completing Wire Callback Verification",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  }
+ ],
+ "input_hash": "e1dc4df27441cdeb9cc90601ef35781c1e242b0e3f27042342269ab2a07befbd",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\":[{\"clause\":\"BUL-BOP-01@v3/s1/c1\",\"atoms\":[]},{\"clause\":\"JA-BOP-01@v1/s2/c3\",\"atoms\":[]},{\"clause\":\"JA-ODR-01@v4/s3/c2\",\"atoms\":[]},{\"clause\":\"PRO-AOP-03@v1/s2/c1\",\"atoms\":[]},{\"clause\":\"PRO-BOP-01@v3/s3/c5\",\"atoms\":[]},{\"clause\":\"PRO-CMP-04@v1/s3/c3\",\"atoms\":[]},{\"clause\":\"PRO-DRM-01@v3/s3/c1\",\"atoms\":[]},{\"clause\":\"PRO-DSP-02@v4/s5/c1\",\"atoms\":[]},{\"clause\":\"PRO-HLD-04@v3/s3/c7\",\"atoms\":[]},{\"clause\":\"PRO-WIR-03@v3/s3/c8\",\"atoms\":[]}]}",
+   "problems": [],
+   "meta": {
+    "ms": 4288,
+    "input_tokens": 2660,
+    "output_tokens": 275,
+    "cost_usd": 0.000403,
+    "usage": {
+     "prompt_tokens": 2660,
+     "completion_tokens": 275,
+     "total_tokens": 2935,
+     "prompt_tokens_details": {
+      "cached_tokens": 1728,
+      "cache_write_tokens": 929,
+      "audio_tokens": 0
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 68,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+     }
+    },
+    "models": [
+     "gpt-6-luna"
+    ],
+    "stop_reason": "stop"
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T17:21:26+00:00"
+}

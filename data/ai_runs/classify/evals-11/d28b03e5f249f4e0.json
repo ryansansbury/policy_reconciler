@@ -1,0 +1,307 @@
+{
+ "step": "classify",
+ "tag": "evals-11",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "2c908358fde9f0f4a792753579a6cfaa33476e41c4b0f235744675d8e8283a19",
+ "input": [
+  {
+   "pair": "pair-218823e549",
+   "rule": null,
+   "attribute": null,
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-CMP-06@v2/s3/c4",
+    "text": "Log the complaint in the complaint system, even when it is resolved on the spot.",
+    "heading": "Steps",
+    "document": {
+     "title": "Responding to a Complaint by Phone",
+     "type": "procedure",
+     "version": 2,
+     "effective": "2025-08-24",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "JA-CMP-01@v4/s3/c1",
+    "text": "Log the complaint in the complaint system, even when it is resolved on the spot.",
+    "heading": "Steps to follow",
+    "document": {
+     "title": "Complaint Handling Card",
+     "type": "job_aid",
+     "version": 4,
+     "effective": "2025-05-29",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-f72d1e7927",
+   "rule": null,
+   "attribute": null,
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-HLD-01@v2/s3/c5",
+    "text": "Release a hold early only with your manager's approval.",
+    "heading": "Steps",
+    "document": {
+     "title": "Placing a Hold on a Deposited Check",
+     "type": "procedure",
+     "version": 2,
+     "effective": "2025-10-22",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "JA-HLD-02@v4/s3/c1",
+    "text": "Release a hold early only with your manager's approval.",
+    "heading": "Steps to follow",
+    "document": {
+     "title": "Check Hold Desk Card",
+     "type": "job_aid",
+     "version": 4,
+     "effective": "2025-09-09",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-ea58d6e9e4",
+   "rule": null,
+   "attribute": null,
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-CMP-06@v2/s3/c1",
+    "text": "Attach any letters or emails the customer sent to the complaint record.",
+    "heading": "Steps",
+    "document": {
+     "title": "Responding to a Complaint by Phone",
+     "type": "procedure",
+     "version": 2,
+     "effective": "2025-08-24",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "JA-CMP-02@v4/s3/c1",
+    "text": "Attach any letters or emails the customer sent to the complaint record.",
+    "heading": "Steps to follow",
+    "document": {
+     "title": "Complaint Escalation Checklist",
+     "type": "job_aid",
+     "version": 4,
+     "effective": "2026-03-26",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-b3cfedcc90",
+   "rule": null,
+   "attribute": null,
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-LND-06@v3/s3/c2",
+    "text": "Enter the requested rate and the reason for the exception in the pricing worksheet.",
+    "heading": "Steps",
+    "document": {
+     "title": "Escalating Exceptions Above Branch Authority",
+     "type": "procedure",
+     "version": 3,
+     "effective": "2025-07-04",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "JA-LND-02@v3/s3/c1",
+    "text": "Enter the requested rate and the reason for the exception in the pricing worksheet.",
+    "heading": "Steps to follow",
+    "document": {
+     "title": "Exception Documentation Checklist",
+     "type": "job_aid",
+     "version": 3,
+     "effective": "2025-09-21",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-02a7b03351",
+   "rule": null,
+   "attribute": null,
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-DSP-05@v1/s3/c4",
+    "text": "Send the completed form to card services the same day.",
+    "heading": "Steps",
+    "document": {
+     "title": "Blocking and Replacing a Compromised Card",
+     "type": "procedure",
+     "version": 1,
+     "effective": "2025-09-16",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "PRO-DSP-06@v4/s5/c1",
+    "text": "Send the completed form to card services the same day.",
+    "heading": "Steps to follow",
+    "document": {
+     "title": "Large Dispute Review",
+     "type": "procedure",
+     "version": 4,
+     "effective": "2025-01-10",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-eb059fd4c6",
+   "rule": null,
+   "attribute": null,
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-LND-03@v3/s3/c5",
+    "text": "Attach the competitor offer when the exception matches a competing rate.",
+    "heading": "Steps",
+    "document": {
+     "title": "Documenting Pricing Exceptions",
+     "type": "procedure",
+     "version": 3,
+     "effective": "2026-04-10",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "PRO-LND-04@v1/s5/c1",
+    "text": "Attach the competitor offer when the exception matches a competing rate.",
+    "heading": "Steps to follow",
+    "document": {
+     "title": "Reviewing Exception Reports Each Month",
+     "type": "procedure",
+     "version": 1,
+     "effective": "2026-04-12",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-1fb86cfd83",
+   "rule": "Overdraft fees per day",
+   "attribute": "od_daily_cap",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-ODR-05@v4/s3/c7",
+    "text": "No more than three overdraft fees are charged to an account in one business day.",
+    "heading": "Steps",
+    "document": {
+     "title": "Closing an Overdrawn Account",
+     "type": "procedure",
+     "version": 4,
+     "effective": "2025-04-03",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "BUL-ODR-02@v3/s2/c1",
+    "text": "No more than three overdraft fees are charged to an account in one business day.",
+    "heading": "Steps to follow",
+    "document": {
+     "title": "Branch Bulletin 2026-35: Overdraft fees per account per day",
+     "type": "bulletin",
+     "version": 3,
+     "effective": "2026-06-05",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-f3ea0b02de",
+   "rule": null,
+   "attribute": null,
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-HLD-03@v1/s3/c4",
+    "text": "Enter the hold reason code that matches the situation.",
+    "heading": "Steps",
+    "document": {
+     "title": "Holds on New Accounts",
+     "type": "procedure",
+     "version": 1,
+     "effective": "2026-03-31",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "JA-HLD-01@v2/s3/c1",
+    "text": "Enter the hold reason code that matches the situation.",
+    "heading": "Steps to follow",
+    "document": {
+     "title": "Hold Calendar Quick Reference",
+     "type": "job_aid",
+     "version": 2,
+     "effective": "2026-04-24",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  }
+ ],
+ "input_hash": "39f12889c03370a8aac99436ff8a0b765020b828ef4820582a467e2dd1c48525",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [{\"pair\": \"pair-218823e549\", \"label\": \"consistent\", \"quote_a\": \"Log the complaint in the complaint system, even when it is resolved on the spot.\", \"quote_b\": \"Log the complaint in the complaint system, even when it is resolved on the spot.\", \"rationale\": \"Both clauses give the same logging rule with the same value and the same scope. Staff following either one would act the same way.\"}, {\"pair\": \"pair-f72d1e7927\", \"label\": \"consistent\", \"quote_a\": \"Release a hold early only with your manager's approval.\", \"quote_b\": \"Release a hold early only with your manager's approval.\", \"rationale\": \"Both clauses require the manager's approval for an early release and cover the same accounts. Nothing differs in what staff would do.\"}, {\"pair\": \"pair-ea58d6e9e4\", \"label\": \"consistent\", \"quote_a\": \"Attach any letters or emails the customer sent to the complaint record.\", \"quote_b\": \"Attach any letters or emails the customer sent to the complaint record.\", \"rationale\": \"Both clauses tell staff to attach the same customer correspondence to the complaint record. The rule and its scope match.\"}, {\"pair\": \"pair-b3cfedcc90\", \"label\": \"consistent\", \"quote_a\": \"Enter the requested rate and the reason for the exception in the pricing worksheet.\", \"quote_b\": \"Enter the requested rate and the reason for the exception in the pricing worksheet.\", \"rationale\": \"Both clauses require the same entries in the same worksheet for the same scope. Staff would act identically under either one.\"}, {\"pair\": \"pair-02a7b03351\", \"label\": \"consistent\", \"quote_a\": \"Send the completed form to card services the same day.\", \"quote_b\": \"Send the completed form to card services the same day.\", \"rationale\": \"Both procedures set the same same day deadline for sending the form to card services. Neither adds an exception or changes the value.\"}, {\"pair\": \"pair-eb059fd4c6\", \"label\": \"consistent\", \"quote_a\": \"Attach the competitor offer when the exception matches a competing rate.\", \"quote_b\": \"Attach the competitor offer when the exception matches a competing rate.\", \"rationale\": \"Both clauses require the competitor offer under the same condition. The rule and its value are the same.\"}, {\"pair\": \"pair-1fb86cfd83\", \"label\": \"consistent\", \"quote_a\": \"No more than three overdraft fees are charged to an account in one business day.\", \"quote_b\": \"No more than three overdraft fees are charged to an account in one business day.\", \"rationale\": \"Both clauses cap overdraft fees at three per account in one business day for the same accounts. The documents are different ones and not versions of each other, and the value does not differ.\"}, {\"pair\": \"pair-f3ea0b02de\", \"label\": \"consistent\", \"quote_a\": \"Enter the hold reason code that matches the situation.\", \"quote_b\": \"Enter the hold reason code that matches the situation.\", \"rationale\": \"Both clauses tell staff to enter the matching hold reason code for the same accounts. Nothing in either one changes what staff would do.\"}]}",
+   "problems": [],
+   "meta": {
+    "ms": 10794,
+    "api_ms": 10600,
+    "input_tokens": 8844,
+    "output_tokens": 1564,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 8001,
+     "cache_read_input_tokens": 841,
+     "output_tokens": 1564,
+     "output_tokens_details": {
+      "thinking_tokens": 547
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 8001,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 1564,
+       "cache_read_input_tokens": 841,
+       "cache_creation_input_tokens": 8001,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 8001
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.0477321,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T03:55:36+00:00"
+}

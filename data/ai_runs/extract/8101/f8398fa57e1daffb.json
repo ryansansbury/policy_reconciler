@@ -1,0 +1,167 @@
+{
+ "step": "extract",
+ "tag": "8101",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "dcc761e46c6ec579c01b9dfd540df3c2fa4bba3b6b5ec777aa2cf9c9c62aa411",
+ "input": [
+  {
+   "clause": "PRO-FEE-02@v3/s3/c4",
+   "text": "Review recurring waiver requests with the branch manager at the monthly meeting.",
+   "heading": "Steps",
+   "document": {
+    "title": "Reversing a Service Fee",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "PRO-FEE-03@v1/s3/c4",
+   "text": "Review recurring waiver requests with the branch manager at the monthly meeting.",
+   "heading": "Steps",
+   "document": {
+    "title": "Handling Fee Refund Requests",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "PRO-FEE-04@v1/s3/c2",
+   "text": "Review recurring waiver requests with the branch manager at the monthly meeting.",
+   "heading": "Steps",
+   "document": {
+    "title": "Reviewing Waiver Activity Each Month",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "PRO-FEE-05@v1/s3/c3",
+   "text": "Review recurring waiver requests with the branch manager at the monthly meeting.",
+   "heading": "Steps",
+   "document": {
+    "title": "Documenting Fee Waivers in Account Notes",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "PRO-ODR-01@v3/s3/c7",
+   "text": "Contact customers whose accounts have been overdrawn for more than three days.",
+   "heading": "Steps",
+   "document": {
+    "title": "Reviewing Overdrawn Accounts Each Morning",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "PRO-ODR-02@v4/s3/c5",
+   "text": "Contact customers whose accounts have been overdrawn for more than three days.",
+   "heading": "Steps",
+   "document": {
+    "title": "Assessing and Reversing Overdraft Fees",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "PRO-ODR-03@v1/s3/c2",
+   "text": "Contact customers whose accounts have been overdrawn for more than three days.",
+   "heading": "Steps",
+   "document": {
+    "title": "Referring Accounts for Charge-Off",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "PRO-ODR-04@v2/s3/c4",
+   "text": "Contact customers whose accounts have been overdrawn for more than three days.",
+   "heading": "Steps",
+   "document": {
+    "title": "Talking with Customers About Overdrafts",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "PRO-ODR-05@v1/s3/c7",
+   "text": "Contact customers whose accounts have been overdrawn for more than three days.",
+   "heading": "Steps",
+   "document": {
+    "title": "Closing an Overdrawn Account",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "PRO-ODR-06@v2/s3/c1",
+   "text": "Contact customers whose accounts have been overdrawn for more than three days.",
+   "heading": "Steps",
+   "document": {
+    "title": "Handling Overdraft Fee Disputes",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  }
+ ],
+ "input_hash": "732a0d17100cce5cb21419291845457c88bbbdbc0ff0f813fd28bac2f5bf04f8",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [{\"clause\": \"PRO-FEE-02@v3/s3/c4\", \"atoms\": []}, {\"clause\": \"PRO-FEE-03@v1/s3/c4\", \"atoms\": []}, {\"clause\": \"PRO-FEE-04@v1/s3/c2\", \"atoms\": []}, {\"clause\": \"PRO-FEE-05@v1/s3/c3\", \"atoms\": []}, {\"clause\": \"PRO-ODR-01@v3/s3/c7\", \"atoms\": []}, {\"clause\": \"PRO-ODR-02@v4/s3/c5\", \"atoms\": []}, {\"clause\": \"PRO-ODR-03@v1/s3/c2\", \"atoms\": []}, {\"clause\": \"PRO-ODR-04@v2/s3/c4\", \"atoms\": []}, {\"clause\": \"PRO-ODR-05@v1/s3/c7\", \"atoms\": []}, {\"clause\": \"PRO-ODR-06@v2/s3/c1\", \"atoms\": []}]}",
+   "problems": [],
+   "meta": {
+    "ms": 3824,
+    "api_ms": 3667,
+    "input_tokens": 8961,
+    "output_tokens": 537,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 6277,
+     "cache_read_input_tokens": 2682,
+     "output_tokens": 537,
+     "output_tokens_details": {
+      "thinking_tokens": 199
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 6277,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 537,
+       "cache_read_input_tokens": 2682,
+       "cache_creation_input_tokens": 6277,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 6277
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.0307502,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T05:39:54+00:00"
+}

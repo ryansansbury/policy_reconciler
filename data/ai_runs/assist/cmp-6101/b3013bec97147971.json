@@ -1,0 +1,85 @@
+{
+ "step": "assist",
+ "tag": "cmp-6101",
+ "model": "google-b",
+ "backend": {
+  "vendor": "Google",
+  "model": "gemini-3.8-flash",
+  "label": "Gemini 3.8 Flash"
+ },
+ "prompt_hash": "66c01f0da9f327e74355d39363e55b642a1bbf8dc6249974c3afbf3cb3d6ccd5",
+ "input": [
+  {
+   "question": "q-C-09",
+   "text": "Who handles a complaint that alleges unfair treatment?",
+   "type": "role",
+   "clauses": [
+    {
+     "id": "PRO-CMP-05@v1/s3/c4",
+     "text": "Escalate any complaint alleging unfair treatment to management on the day it is received.",
+     "title": "Reviewing Complaint Trends Each Quarter",
+     "type": "procedure",
+     "version": 1,
+     "effective": "2025-12-18"
+    },
+    {
+     "id": "PRO-CMP-04@v1/s3/c5",
+     "text": "Escalate any complaint alleging unfair treatment to the regional manager on the day it is received.",
+     "title": "Escalating a Sensitive Complaint",
+     "type": "procedure",
+     "version": 1,
+     "effective": "2026-01-28"
+    },
+    {
+     "id": "FAQ-CMP-01@v3/s2/c1",
+     "text": "Complaints that allege unfair treatment are escalated to the branch manager the same day.",
+     "title": "Complaint Handling FAQ",
+     "type": "faq",
+     "version": 3,
+     "effective": "2025-09-08"
+    },
+    {
+     "id": "POL-CMP-01@v4/s3/c1",
+     "text": "Complaints that allege unfair treatment are escalated to the regional manager the same day.",
+     "title": "Complaint Management Policy",
+     "type": "policy",
+     "version": 4,
+     "effective": "2026-05-11"
+    },
+    {
+     "id": "PRO-CMP-03@v1/s3/c7",
+     "text": "Complaints that allege unfair treatment are escalated to the compliance officer the same day.",
+     "title": "Resolving and Closing a Complaint",
+     "type": "procedure",
+     "version": 1,
+     "effective": "2025-11-10"
+    }
+   ]
+  }
+ ],
+ "input_hash": "41705c403bcea4b916925b078bedf42dcb3eccc081509722b01b4ce4cbd5d64a",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "```json\n{\"results\": [{\"question\": \"q-C-09\", \"answer\": \"The sources disagree. Complaint Management Policy and Escalating a Sensitive Complaint designate the regional manager, while Resolving and Closing a Complaint designates the compliance officer, Complaint Handling FAQ designates the branch manager, and Reviewing Complaint Trends Each Quarter designates management. The policy outranks the procedures and the FAQ so the regional manager is the role to follow.\", \"citations\": [\"FAQ-CMP-01@v3/s2/c1\", \"POL-CMP-01@v4/s3/c1\", \"PRO-CMP-03@v1/s3/c7\", \"PRO-CMP-04@v1/s3/c5\", \"PRO-CMP-05@v1/s3/c4\"], \"sources_disagree\": true}]}\n```",
+   "problems": [],
+   "meta": {
+    "ms": 12630,
+    "input_tokens": 978,
+    "output_tokens": 1803,
+    "cost_usd": 0.007495,
+    "usage": {
+     "completion_tokens": 186,
+     "prompt_tokens": 978,
+     "total_tokens": 2781
+    },
+    "models": [
+     "gemini-3.8-flash"
+    ],
+    "stop_reason": "stop"
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T17:35:10+00:00"
+}

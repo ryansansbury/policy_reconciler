@@ -1,0 +1,307 @@
+{
+ "step": "classify",
+ "tag": "evals-6101",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "2c908358fde9f0f4a792753579a6cfaa33476e41c4b0f235744675d8e8283a19",
+ "input": [
+  {
+   "pair": "pair-2624d42537",
+   "rule": "Wire second approval threshold",
+   "attribute": "wire_second_approval",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-WIR-03@v3/s3/c6",
+    "text": "Outgoing wires over $50,000 need a second approval from an operations manager.",
+    "heading": "Steps",
+    "document": {
+     "title": "Completing Wire Callback Verification",
+     "type": "procedure",
+     "version": 3,
+     "effective": "2024-12-08",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "PRO-WIR-05@v1/s3/c10",
+    "text": "An operations manager must give a second approval for any outgoing wire above $50,000.",
+    "heading": "Steps",
+    "document": {
+     "title": "Wire Cutoffs on Holidays and Weekends",
+     "type": "procedure",
+     "version": 1,
+     "effective": "2025-04-08",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-4362c40b51",
+   "rule": "Outgoing wire cutoff",
+   "attribute": "wire_cutoff",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-WIR-04@v1/s3/c7",
+    "text": "The cutoff for outgoing commercial wires is 4:00 PM Central time.",
+    "heading": "Steps",
+    "document": {
+     "title": "Handling Incoming Wires",
+     "type": "procedure",
+     "version": 1,
+     "effective": "2025-02-25",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "POL-WIR-02@v5/s3/c1",
+    "text": "Outgoing commercial wire requests received after 4:00 p.m. Central are processed the next business day.",
+    "heading": "Policy statements",
+    "document": {
+     "title": "Commercial Wire Services Policy",
+     "type": "policy",
+     "version": 5,
+     "effective": "2024-10-18",
+     "applies_to": "All branches. Commercial accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-5ecea45590",
+   "rule": "Branch manager rate exception limit",
+   "attribute": "lend_rate_bm",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "BUL-LND-02@v4/s1/c2",
+    "text": "Branch managers may approve rate exceptions of up to 0.25%.",
+    "heading": "What branches need to know",
+    "document": {
+     "title": "Branch Bulletin 2026-09: Branch manager rate exception limit",
+     "type": "bulletin",
+     "version": 4,
+     "effective": "2025-08-18",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "JA-LND-02@v2/s1/c2",
+    "text": "Branch manager rate exception limit | 0.25%",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Exception Documentation Checklist",
+     "type": "job_aid",
+     "version": 2,
+     "effective": "2025-11-09",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-a31ac93ccf",
+   "rule": "Closed account record retention",
+   "attribute": "records_retention",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-REC-01@v4/s3/c3",
+    "text": "Account records are kept for 7 years after the account closes.",
+    "heading": "Steps",
+    "document": {
+     "title": "Retaining Closed Account Records",
+     "type": "procedure",
+     "version": 4,
+     "effective": "2026-08-05",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "FAQ-REC-02@v4/s1/c1",
+    "text": "Account records are kept for 7 years after the account closes.",
+    "heading": "How long are closed account records kept?",
+    "document": {
+     "title": "Legal Hold Questions",
+     "type": "faq",
+     "version": 4,
+     "effective": "2025-10-02",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-45671f444a",
+   "rule": "Notice before dormancy",
+   "attribute": "dormant_notice",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-DRM-04@v3/s3/c5",
+    "text": "Mail the customer a notice at least 30 days before the account is classified as dormant.",
+    "heading": "Steps",
+    "document": {
+     "title": "Charging Dormant Account Fees",
+     "type": "procedure",
+     "version": 3,
+     "effective": "2025-08-01",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "BUL-DRM-01@v3/s1/c2",
+    "text": "Mail the customer a notice at least 30 days before the account is classified as dormant.",
+    "heading": "What branches need to know",
+    "document": {
+     "title": "Branch Bulletin 2025-17: Notice before dormancy",
+     "type": "bulletin",
+     "version": 3,
+     "effective": "2025-06-02",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-e0bdbe30d8",
+   "rule": "Dual control at opening",
+   "attribute": "branch_open_dual",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "JA-BOP-01@v1/s1/c1",
+    "text": "Dual control at branch opening | Required",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Opening Checklist",
+     "type": "job_aid",
+     "version": 1,
+     "effective": "2025-12-07",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "JA-BOP-03@v4/s1/c1",
+    "text": "Dual control at branch opening | Required",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Vault Security Card",
+     "type": "job_aid",
+     "version": 4,
+     "effective": "2026-05-31",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-3610301733",
+   "rule": "Notice before dormancy",
+   "attribute": "dormant_notice",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "FAQ-DRM-01@v3/s2/c1",
+    "text": "Customers receive written notice 30 days before their account becomes dormant.",
+    "heading": "How much notice does a customer get before dormancy?",
+    "document": {
+     "title": "Dormant Account FAQ",
+     "type": "faq",
+     "version": 3,
+     "effective": "2026-05-06",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "FAQ-DRM-02@v4/s2/c1",
+    "text": "Mail the customer a notice at least 30 days before the account is classified as dormant.",
+    "heading": "How much notice does a customer get before dormancy?",
+    "document": {
+     "title": "Reactivation Questions",
+     "type": "faq",
+     "version": 4,
+     "effective": "2026-03-19",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-8ce4d4f288",
+   "rule": "Days overdrawn before charge-off",
+   "attribute": "od_chargeoff",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "BUL-ODR-02@v1/s1/c2",
+    "text": "Refer an account for charge-off once it has been negative for 45 days.",
+    "heading": "What branches need to know",
+    "document": {
+     "title": "Branch Bulletin 2026-25: Days overdrawn before charge-off",
+     "type": "bulletin",
+     "version": 1,
+     "effective": "2025-04-05",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "JA-ODR-02@v4/s1/c2",
+    "text": "Days overdrawn before charge-off | 45 days",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Overdraft Fee Desk Card",
+     "type": "job_aid",
+     "version": 4,
+     "effective": "2025-11-07",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  }
+ ],
+ "input_hash": "81706d4b7e8416059b20f564524051a01bf252c8dd3e5c2bed1f457ea1950898",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [{\"pair\": \"pair-2624d42537\", \"label\": \"consistent\", \"quote_a\": \"Outgoing wires over $50,000 need a second approval from an operations manager.\", \"quote_b\": \"An operations manager must give a second approval for any outgoing wire above $50,000.\", \"rationale\": \"Both clauses require an operations manager to give a second approval on outgoing wires over $50,000. Over and above mean the same threshold here, and both documents apply to all branches and business lines.\"}, {\"pair\": \"pair-4362c40b51\", \"label\": \"consistent\", \"quote_a\": \"The cutoff for outgoing commercial wires is 4:00 PM Central time.\", \"quote_b\": \"Outgoing commercial wire requests received after 4:00 p.m. Central are processed the next business day.\", \"rationale\": \"Both clauses put the outgoing commercial wire cutoff at 4:00 PM Central. The second clause adds the next business day handling for late requests, which does not contradict the first.\"}, {\"pair\": \"pair-5ecea45590\", \"label\": \"consistent\", \"quote_a\": \"Branch managers may approve rate exceptions of up to 0.25%.\", \"quote_b\": \"Branch manager rate exception limit | 0.25%\", \"rationale\": \"Both clauses set the branch manager rate exception limit at 0.25%. Staff following either one would act the same way.\"}, {\"pair\": \"pair-a31ac93ccf\", \"label\": \"consistent\", \"quote_a\": \"Account records are kept for 7 years after the account closes.\", \"quote_b\": \"Account records are kept for 7 years after the account closes.\", \"rationale\": \"Both clauses state the same 7 year retention period after account closure. The matching words are a single sentence stating the same rule and value, not a copied run of steps.\"}, {\"pair\": \"pair-45671f444a\", \"label\": \"consistent\", \"quote_a\": \"Mail the customer a notice at least 30 days before the account is classified as dormant.\", \"quote_b\": \"Mail the customer a notice at least 30 days before the account is classified as dormant.\", \"rationale\": \"Both clauses require a mailed notice at least 30 days before dormancy for the same consumer and small business accounts. This is one sentence with the same rule and value, not a copied passage.\"}, {\"pair\": \"pair-e0bdbe30d8\", \"label\": \"consistent\", \"quote_a\": \"Dual control at branch opening | Required\", \"quote_b\": \"Dual control at branch opening | Required\", \"rationale\": \"Both job aids say dual control at branch opening is required. The rule and value are the same.\"}, {\"pair\": \"pair-3610301733\", \"label\": \"consistent\", \"quote_a\": \"Customers receive written notice 30 days before their account becomes dormant.\", \"quote_b\": \"Mail the customer a notice at least 30 days before the account is classified as dormant.\", \"rationale\": \"Both clauses give 30 days of written notice before dormancy. The at least wording and the mailing detail in the second clause do not change what staff do.\"}, {\"pair\": \"pair-8ce4d4f288\", \"label\": \"consistent\", \"quote_a\": \"Refer an account for charge-off once it has been negative for 45 days.\", \"quote_b\": \"Days overdrawn before charge-off | 45 days\", \"rationale\": \"Both clauses set the charge-off referral point at 45 days overdrawn for the same account types. Staff would act the same way under either one.\"}]}",
+   "problems": [],
+   "meta": {
+    "ms": 9978,
+    "api_ms": 9844,
+    "input_tokens": 8997,
+    "output_tokens": 1575,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 8154,
+     "cache_read_input_tokens": 841,
+     "output_tokens": 1575,
+     "output_tokens_details": {
+      "thinking_tokens": 464
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 8154,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 1575,
+       "cache_read_input_tokens": 841,
+       "cache_creation_input_tokens": 8154,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 8154
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.0484541,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T05:29:14+00:00"
+}

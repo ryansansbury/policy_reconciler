@@ -1,0 +1,149 @@
+{
+ "step": "extract",
+ "tag": "sample-9001",
+ "model": "openai-b",
+ "backend": {
+  "vendor": "OpenAI",
+  "model": "gpt-6-luna",
+  "label": "GPT-6 Luna"
+ },
+ "prompt_hash": "dcc761e46c6ec579c01b9dfd540df3c2fa4bba3b6b5ec777aa2cf9c9c62aa411",
+ "input": [
+  {
+   "clause": "BUL-AOP-121@v3/s1/c2",
+   "text": "Only the branch manager can approve an exception to the identification requirements.",
+   "heading": "What branches need to know",
+   "document": {
+    "title": "Branch Bulletin 2025-08: Approver for identification exceptions (7)",
+    "type": "bulletin",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "BUL-AOP-142@v4/s1/c2",
+   "text": "Only the branch manager can approve an exception to the identification requirements.",
+   "heading": "What branches need to know",
+   "document": {
+    "title": "Branch Bulletin 2026-04: Approver for identification exceptions (8)",
+    "type": "bulletin",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "BUL-AOP-41@v2/s1/c2",
+   "text": "Only a manager can approve an exception to the identification requirements.",
+   "heading": "What branches need to know",
+   "document": {
+    "title": "Branch Bulletin 2025-40: Approver for identification exceptions (3)",
+    "type": "bulletin",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "BUL-BOP-141@v1/s2/c2",
+   "text": "Approach the branch together and check the exterior for signs of forced entry.",
+   "heading": "Steps to follow",
+   "document": {
+    "title": "Branch Bulletin 2025-26: Dual control at branch opening (8)",
+    "type": "bulletin",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "BUL-BOP-21@v1/s2/c3",
+   "text": "Approach the branch together and check the exterior for signs of forced entry.",
+   "heading": "Steps to follow",
+   "document": {
+    "title": "Branch Bulletin 2025-29: Dual control at branch opening (2)",
+    "type": "bulletin",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "BUL-CMP-162@v3/s1/c2",
+   "text": "Resolve complaints within 15 business days of receipt, or tell the customer when to expect a resolution.",
+   "heading": "What branches need to know",
+   "document": {
+    "title": "Branch Bulletin 2026-16: Complaint resolution deadline (9)",
+    "type": "bulletin",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "BUL-CMP-181@v2/s1/c2",
+   "text": "Escalate any complaint alleging unfair treatment to management on the day it is received.",
+   "heading": "What branches need to know",
+   "document": {
+    "title": "Branch Bulletin 2025-36: Escalation for unfair treatment complaints (10)",
+    "type": "bulletin",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "BUL-CMP-22@v4/s1/c2",
+   "text": "Complaints that allege unfair treatment are escalated to management the same day.",
+   "heading": "What branches need to know",
+   "document": {
+    "title": "Branch Bulletin 2026-21: Escalation for unfair treatment complaints (2)",
+    "type": "bulletin",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "BUL-CMP-41@v3/s1/c2",
+   "text": "Escalate any complaint alleging unfair treatment to management on the day it is received.",
+   "heading": "What branches need to know",
+   "document": {
+    "title": "Branch Bulletin 2025-27: Escalation for unfair treatment complaints (3)",
+    "type": "bulletin",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "BUL-CMP-62@v4/s1/c2",
+   "text": "Resolve complaints within 15 business days of receipt, or tell the customer when to expect a resolution.",
+   "heading": "What branches need to know",
+   "document": {
+    "title": "Branch Bulletin 2026-06: Complaint resolution deadline (4)",
+    "type": "bulletin",
+    "applies_to": "All branches. All business lines."
+   }
+  }
+ ],
+ "input_hash": "9b323ac817a8d7246efa7adea2627fd22fd21e3bc101bec380e1895490b8326c",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\":[{\"clause\":\"BUL-AOP-121@v3/s1/c2\",\"atoms\":[{\"attribute\":\"ao_exception_approver\",\"value\":{\"type\":\"role\",\"role\":\"branch_manager\"},\"quote\":\"branch manager\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]},{\"clause\":\"BUL-AOP-142@v4/s1/c2\",\"atoms\":[{\"attribute\":\"ao_exception_approver\",\"value\":{\"type\":\"role\",\"role\":\"branch_manager\"},\"quote\":\"branch manager\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]},{\"clause\":\"BUL-AOP-41@v2/s1/c2\",\"atoms\":[{\"attribute\":\"ao_exception_approver\",\"value\":{\"type\":\"role\",\"role\":null,\"generic\":\"a manager\"},\"quote\":\"a manager\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]},{\"clause\":\"BUL-BOP-141@v1/s2/c2\",\"atoms\":[{\"attribute\":\"branch_open_dual\",\"value\":{\"type\":\"modal\",\"modal\":\"must\"},\"quote\":\"together\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]},{\"clause\":\"BUL-BOP-21@v1/s2/c3\",\"atoms\":[{\"attribute\":\"branch_open_dual\",\"value\":{\"type\":\"modal\",\"modal\":\"must\"},\"quote\":\"together\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]},{\"clause\":\"BUL-CMP-162@v3/s1/c2\",\"atoms\":[{\"attribute\":\"complaint_resolve\",\"value\":{\"type\":\"duration\",\"n\":15,\"unit\":\"business_days\"},\"quote\":\"15 business days\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":\"or tell the customer when to expect a resolution\"}]},{\"clause\":\"BUL-CMP-181@v2/s1/c2\",\"atoms\":[{\"attribute\":\"complaint_escalation_role\",\"value\":{\"type\":\"role\",\"role\":null,\"generic\":\"management\"},\"quote\":\"management\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":\"any complaint alleging unfair treatment\"}]},{\"clause\":\"BUL-CMP-22@v4/s1/c2\",\"atoms\":[{\"attribute\":\"complaint_escalation_role\",\"value\":{\"type\":\"role\",\"role\":null,\"generic\":\"management\"},\"quote\":\"management\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":\"Complaints that allege unfair treatment\"}]},{\"clause\":\"BUL-CMP-41@v3/s1/c2\",\"atoms\":[{\"attribute\":\"complaint_escalation_role\",\"value\":{\"type\":\"role\",\"role\":null,\"generic\":\"management\"},\"quote\":\"management\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":\"any complaint alleging unfair treatment\"}]},{\"clause\":\"BUL-CMP-62@v4/s1/c2\",\"atoms\":[{\"attribute\":\"complaint_resolve\",\"value\":{\"type\":\"duration\",\"n\":15,\"unit\":\"business_days\"},\"quote\":\"15 business days\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":\"or tell the customer when to expect a resolution\"}]}]}",
+   "problems": [],
+   "meta": {
+    "ms": 21968,
+    "input_tokens": 2805,
+    "output_tokens": 1944,
+    "cost_usd": 0.001252,
+    "usage": {
+     "prompt_tokens": 2805,
+     "completion_tokens": 1944,
+     "total_tokens": 4749,
+     "prompt_tokens_details": {
+      "cached_tokens": 1728,
+      "cache_write_tokens": 1074,
+      "audio_tokens": 0
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 1217,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+     }
+    },
+    "models": [
+     "gpt-6-luna"
+    ],
+    "stop_reason": "stop"
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T19:48:39+00:00"
+}

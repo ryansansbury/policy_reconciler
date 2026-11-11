@@ -1,0 +1,312 @@
+{
+ "step": "classify",
+ "tag": "evals-11",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "1346938ac1ecbf43874a700ab9916c851d6a29bb5d6b9e5f1199128bc8cd59f2",
+ "input": [
+  {
+   "pair": "pair-5557da9543",
+   "rule": "Provisional credit deadline",
+   "attribute": "dispute_provisional_credit",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-DSP-01@v5/s3/c1",
+    "text": "Credit the customer provisionally no later than 10 business days after the dispute form is complete.",
+    "heading": "Policy statements",
+    "document": {
+     "title": "Debit Card Dispute Policy",
+     "type": "policy",
+     "version": 5,
+     "effective": "2025-02-25",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "JA-DSP-01@v1/s1/c3",
+    "text": "Provisional credit deadline for disputes | 5 business days",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Dispute Intake Checklist",
+     "type": "job_aid",
+     "version": 1,
+     "effective": "2026-08-08",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-fe6600e4f2",
+   "rule": "Dual control for the vault",
+   "attribute": "cash_vault_dual",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-CSH-01@v4/s4/c1",
+    "text": "The vault must be opened under dual control, with two employees present.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Cash Handling Policy",
+     "type": "policy",
+     "version": 4,
+     "effective": "2025-05-08",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "BUL-CSH-02@v2/s1/c2",
+    "text": "A single employee may open the vault when a second employee is not available.",
+    "heading": "What branches need to know",
+    "document": {
+     "title": "Branch Bulletin 2026-36: Dual control for the vault",
+     "type": "bulletin",
+     "version": 2,
+     "effective": "2026-01-03",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-c8147c6499",
+   "rule": "Provisional credit deadline",
+   "attribute": "dispute_provisional_credit",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-DSP-01@v5/s3/c1",
+    "text": "Credit the customer provisionally no later than 10 business days after the dispute form is complete.",
+    "heading": "Policy statements",
+    "document": {
+     "title": "Debit Card Dispute Policy",
+     "type": "policy",
+     "version": 5,
+     "effective": "2025-02-25",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "FAQ-DSP-02@v2/s1/c1",
+    "text": "Credit the customer provisionally no later than 5 business days after the dispute form is complete.",
+    "heading": "When does a customer get provisional credit on a dispute?",
+    "document": {
+     "title": "Provisional Credit Questions",
+     "type": "faq",
+     "version": 2,
+     "effective": "2025-10-18",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-619c49b6b7",
+   "rule": "Branch manager fee waiver limit",
+   "attribute": "fee_waiver_bm",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-FEE-01@v2/s3/c2",
+    "text": "The most a branch manager can waive for one account in a calendar year is $50.",
+    "heading": "Policy statements",
+    "document": {
+     "title": "Service Fee Waiver Policy",
+     "type": "policy",
+     "version": 2,
+     "effective": "2024-05-13",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "JA-FEE-03@v3/s1/c1",
+    "text": "Branch manager fee waiver limit | $100",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Waiver Authority Card",
+     "type": "job_aid",
+     "version": 3,
+     "effective": "2026-03-04",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-091e9072ca",
+   "rule": "Outgoing wire cutoff",
+   "attribute": "wire_cutoff",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-WIR-01@v4/s3/c2",
+    "text": "Outgoing commercial wire requests received after 4:00 PM Central are processed the next business day.",
+    "heading": "Policy statements",
+    "document": {
+     "title": "Wire Transfer Policy",
+     "type": "policy",
+     "version": 4,
+     "effective": "2025-04-29",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "JA-WIR-02@v3/s1/c4",
+    "text": "Outgoing wire cutoff (commercial) | 3:30 PM Central",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Callback Checklist",
+     "type": "job_aid",
+     "version": 3,
+     "effective": "2025-12-02",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-9c8c51d505",
+   "rule": "Who completes wire callbacks",
+   "attribute": "wire_callback_role",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-WIR-01@v4/s3/c1",
+    "text": "Only a wire specialist may complete the callback for an outgoing wire.",
+    "heading": "Policy statements",
+    "document": {
+     "title": "Wire Transfer Policy",
+     "type": "policy",
+     "version": 4,
+     "effective": "2025-04-29",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "PRO-WIR-06@v2/s3/c6",
+    "text": "Only a branch manager may complete the callback for an outgoing wire.",
+    "heading": "Steps",
+    "document": {
+     "title": "Recalling or Cancelling a Wire",
+     "type": "procedure",
+     "version": 2,
+     "effective": "2025-08-13",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-2b979a3dc6",
+   "rule": "Inactivity before dormancy",
+   "attribute": "dormant_inactivity",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-DRM-01@v4/s4/c1",
+    "text": "Classify accounts as dormant after 12 months without customer-initiated activity.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Dormant Account Policy",
+     "type": "policy",
+     "version": 4,
+     "effective": "2026-08-22",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "PRO-DRM-02@v1/s3/c7",
+    "text": "Classify accounts as dormant after 18 months without customer-initiated activity.",
+    "heading": "Steps",
+    "document": {
+     "title": "Sending Dormancy Notices",
+     "type": "procedure",
+     "version": 1,
+     "effective": "2026-07-08",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-839a2143e5",
+   "rule": "Large deposit hold threshold",
+   "attribute": "hold_large_threshold",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-HLD-01@v2/s3/c1",
+    "text": "An extended hold may be placed on the part of a day's check deposits above $6,000.",
+    "heading": "Policy statements",
+    "document": {
+     "title": "Funds Availability Policy",
+     "type": "policy",
+     "version": 2,
+     "effective": "2024-08-19",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "JA-HLD-03@v1/s1/c3",
+    "text": "Large deposit threshold for extended holds | $5,000",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Hold Notice Checklist",
+     "type": "job_aid",
+     "version": 1,
+     "effective": "2026-05-01",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  }
+ ],
+ "input_hash": "176aaa411517050367fde891c1fc2efb4a0be24e79c02a73628a7bb91bcbb042",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [{\"pair\": \"pair-5557da9543\", \"label\": \"conflict\", \"quote_a\": \"no later than 10 business days after the dispute form is complete\", \"quote_b\": \"5 business days\", \"rationale\": \"The policy allows 10 business days for provisional credit and the job aid says 5 business days for the same deadline. Staff following the policy could credit later than the job aid permits. The policy outranks the job aid, so the policy value is the one to keep.\"}, {\"pair\": \"pair-fe6600e4f2\", \"label\": \"conflict\", \"quote_a\": \"The vault must be opened under dual control, with two employees present.\", \"quote_b\": \"A single employee may open the vault when a second employee is not available.\", \"rationale\": \"The policy requires two employees at every vault opening and the bulletin lets one employee open it alone. Both apply to all branches and all business lines, and the bulletin is a different document from the policy and does not replace it. The policy outranks the bulletin, so the policy rule is the one to keep.\"}, {\"pair\": \"pair-c8147c6499\", \"label\": \"conflict\", \"quote_a\": \"no later than 10 business days after the dispute form is complete\", \"quote_b\": \"no later than 5 business days after the dispute form is complete\", \"rationale\": \"The policy sets 10 business days and the FAQ sets 5 business days for the same deadline and the same scope. Staff following the policy could credit after the FAQ deadline has passed. The policy outranks the FAQ, so the policy value is the one to keep.\"}, {\"pair\": \"pair-619c49b6b7\", \"label\": \"conflict\", \"quote_a\": \"The most a branch manager can waive for one account in a calendar year is $50.\", \"quote_b\": \"Branch manager fee waiver limit | $100\", \"rationale\": \"The policy caps a branch manager at $50 per account per year and the job aid says $100. A manager following the job aid could waive an amount the policy forbids. The policy outranks the job aid, so the $50 limit is the one to keep.\"}, {\"pair\": \"pair-091e9072ca\", \"label\": \"conflict\", \"quote_a\": \"received after 4:00 PM Central are processed the next business day\", \"quote_b\": \"3:30 PM Central\", \"rationale\": \"The policy cutoff for commercial wires is 4:00 PM Central and the job aid says 3:30 PM Central. A request received between those times would be held by staff following the job aid but processed the same day under the policy. The policy outranks the job aid, so the 4:00 PM cutoff is the one to keep.\"}, {\"pair\": \"pair-9c8c51d505\", \"label\": \"conflict\", \"quote_a\": \"Only a wire specialist may complete the callback for an outgoing wire.\", \"quote_b\": \"Only a branch manager may complete the callback for an outgoing wire.\", \"rationale\": \"Each clause names a different single role as the only one who may complete the callback. A branch manager following the procedure would act against the policy. The policy outranks the procedure, so the wire specialist rule is the one to keep.\"}, {\"pair\": \"pair-2b979a3dc6\", \"label\": \"conflict\", \"quote_a\": \"Classify accounts as dormant after 12 months without customer-initiated activity.\", \"quote_b\": \"Classify accounts as dormant after 18 months without customer-initiated activity.\", \"rationale\": \"The policy sets 12 months of inactivity and the procedure sets 18 months for the same classification and the same accounts. Staff following the procedure would leave accounts unclassified for six more months than the policy allows. The policy outranks the procedure, so the 12 month rule is the one to keep.\"}, {\"pair\": \"pair-839a2143e5\", \"label\": \"conflict\", \"quote_a\": \"above $6,000\", \"quote_b\": \"$5,000\", \"rationale\": \"The policy allows an extended hold only on deposits above $6,000 and the job aid gives a threshold of $5,000. Staff following the job aid could hold funds the policy says may not be held. The policy outranks the job aid, so the $6,000 threshold is the one to keep.\"}]}",
+   "problems": [
+    "pair-5557da9543: the rationale has a comma before so",
+    "pair-fe6600e4f2: the rationale has a comma before so",
+    "pair-c8147c6499: the rationale has a comma before so",
+    "pair-619c49b6b7: the rationale has a comma before so",
+    "pair-091e9072ca: the rationale has a comma before so",
+    "pair-9c8c51d505: the rationale has a comma before so",
+    "pair-2b979a3dc6: the rationale has a comma before so",
+    "pair-839a2143e5: the rationale has a comma before so"
+   ],
+   "meta": {
+    "ms": 14591,
+    "api_ms": 14407,
+    "input_tokens": 2,
+    "output_tokens": 1994,
+    "cost_usd": 0.052686899999999995,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  },
+  {
+   "reply": "{\"results\": [{\"pair\": \"pair-5557da9543\", \"label\": \"conflict\", \"quote_a\": \"Credit the customer provisionally no later than 10 business days after the dispute form is complete.\", \"quote_b\": \"Provisional credit deadline for disputes | 5 business days\", \"rationale\": \"The policy allows up to 10 business days and the job aid says 5 business days for the same deadline across the same branches and accounts. The policy outranks the job aid and is the one to keep, but the job aid still conflicts with it.\"}, {\"pair\": \"pair-fe6600e4f2\", \"label\": \"conflict\", \"quote_a\": \"The vault must be opened under dual control, with two employees present.\", \"quote_b\": \"A single employee may open the vault when a second employee is not available.\", \"rationale\": \"The policy requires two employees at every vault opening and the bulletin lets one employee open it alone. Staff following the bulletin would break the policy. The policy outranks the bulletin and is the one to keep.\"}, {\"pair\": \"pair-c8147c6499\", \"label\": \"conflict\", \"quote_a\": \"Credit the customer provisionally no later than 10 business days after the dispute form is complete.\", \"quote_b\": \"Credit the customer provisionally no later than 5 business days after the dispute form is complete.\", \"rationale\": \"The policy sets 10 business days and the FAQ sets 5 business days for the same deadline and the same scope. The policy outranks the FAQ and is the one to keep, but the FAQ still conflicts with it.\"}, {\"pair\": \"pair-619c49b6b7\", \"label\": \"conflict\", \"quote_a\": \"The most a branch manager can waive for one account in a calendar year is $50.\", \"quote_b\": \"Branch manager fee waiver limit | $100\", \"rationale\": \"The policy caps a branch manager at $50 and the job aid says $100 for the same limit. A manager following the card could waive more than the policy allows. The policy outranks the job aid and is the one to keep.\"}, {\"pair\": \"pair-091e9072ca\", \"label\": \"conflict\", \"quote_a\": \"Outgoing commercial wire requests received after 4:00 PM Central are processed the next business day.\", \"quote_b\": \"Outgoing wire cutoff (commercial) | 3:30 PM Central\", \"rationale\": \"The policy treats 4:00 PM Central as the cutoff and the job aid says 3:30 PM Central. A request received at 3:45 PM would be next day under the job aid and same day under the policy. The policy outranks the job aid and is the one to keep.\"}, {\"pair\": \"pair-9c8c51d505\", \"label\": \"conflict\", \"quote_a\": \"Only a wire specialist may complete the callback for an outgoing wire.\", \"quote_b\": \"Only a branch manager may complete the callback for an outgoing wire.\", \"rationale\": \"Each clause names a different single role as the only one who may complete the callback. A branch manager following the procedure would act against the policy. The policy outranks the procedure and is the one to keep.\"}, {\"pair\": \"pair-2b979a3dc6\", \"label\": \"conflict\", \"quote_a\": \"Classify accounts as dormant after 12 months without customer-initiated activity.\", \"quote_b\": \"Classify accounts as dormant after 18 months without customer-initiated activity.\", \"rationale\": \"The policy sets 12 months and the procedure sets 18 months for the same dormancy trigger across the same accounts. They are different documents and not versions of one another. The policy outranks the procedure and is the one to keep.\"}, {\"pair\": \"pair-839a2143e5\", \"label\": \"conflict\", \"quote_a\": \"An extended hold may be placed on the part of a day's check deposits above $6,000.\", \"quote_b\": \"Large deposit threshold for extended holds | $5,000\", \"rationale\": \"The policy sets the threshold at $6,000 and the job aid says $5,000 for the same extended hold rule. Staff following the job aid would place holds the policy does not allow. The policy outranks the job aid and is the one to keep.\"}]}",
+   "problems": [
+    "pair-091e9072ca: the rationale uses numbers that aren't in either clause or its document: 45"
+   ],
+   "meta": {
+    "ms": 11098,
+    "api_ms": 10931,
+    "input_tokens": 2,
+    "output_tokens": 1877,
+    "cost_usd": 0.0523489,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   },
+   "items": [
+    "pair-5557da9543",
+    "pair-fe6600e4f2",
+    "pair-c8147c6499",
+    "pair-619c49b6b7",
+    "pair-091e9072ca",
+    "pair-9c8c51d505",
+    "pair-2b979a3dc6",
+    "pair-839a2143e5"
+   ]
+  }
+ ],
+ "held": {
+  "pair-091e9072ca": [
+   "the rationale uses numbers that aren't in either clause or its document: 45"
+  ]
+ },
+ "recorded_at": "2026-10-30T03:24:44+00:00"
+}

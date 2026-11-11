@@ -1,0 +1,73 @@
+{
+ "step": "judge",
+ "tag": "2026",
+ "model": "google-b",
+ "backend": {
+  "vendor": "Google",
+  "model": "gemini-3.8-flash",
+  "label": "Gemini 3.8 Flash"
+ },
+ "prompt_hash": "ab6a49ec8731854b3cf900a9a4387417ee8016fe68257c4d327181c7eb1621da",
+ "input": [
+  {
+   "draft": "g-b28d1323",
+   "text": "Keep no more than $15,000 in a teller drawer at any time.",
+   "sources": [
+    "A teller drawer may not hold more than $15,000 at any time."
+   ]
+  },
+  {
+   "draft": "g-18d5c148",
+   "text": "The vault must be opened under dual control with two employees present.",
+   "sources": [
+    "The vault must be opened under dual control, with two employees present."
+   ]
+  },
+  {
+   "draft": "g-ef93aeae",
+   "text": "Vault combinations are changed every 6 months. They are also changed whenever an employee who knows the combination leaves.",
+   "sources": [
+    "Vault combinations are changed every 6 months and whenever an employee who knows the combination leaves."
+   ]
+  },
+  {
+   "draft": "g-b7462d0c",
+   "text": "Staff send the customer an acknowledgment no later than 2 business days after a written complaint arrives.",
+   "sources": [
+    "Send the customer an acknowledgment no later than 2 business days after a written complaint arrives."
+   ]
+  },
+  {
+   "draft": "g-b48023fb",
+   "text": "Complaints that allege unfair treatment are escalated to management the same day.",
+   "sources": [
+    "Complaints that allege unfair treatment are escalated to management the same day."
+   ]
+  }
+ ],
+ "input_hash": "721e516784e843a41651c92484a607697609dceb184cb68fabd80c90c3298996",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "```json\n{\n \"results\": [\n  {\n   \"draft\": \"g-b28d1323\",\n   \"scores\": {\n    \"keeps_rules\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    },\n    \"adds_no_rule\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    },\n    \"keeps_scope\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    },\n    \"plain\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    }\n   }\n  },\n  {\n   \"draft\": \"g-18d5c148\",\n   \"scores\": {\n    \"keeps_rules\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    },\n    \"adds_no_rule\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    },\n    \"keeps_scope\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    },\n    \"plain\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    }\n   }\n  },\n  {\n   \"draft\": \"g-ef93aeae\",\n   \"scores\": {\n    \"keeps_rules\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    },\n    \"adds_no_rule\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    },\n    \"keeps_scope\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    },\n    \"plain\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    }\n   }\n  },\n  {\n   \"draft\": \"g-b7462d0c\",\n   \"scores\": {\n    \"keeps_rules\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    },\n    \"adds_no_rule\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    },\n    \"keeps_scope\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    },\n    \"plain\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    }\n   }\n  },\n  {\n   \"draft\": \"g-b48023fb\",\n   \"scores\": {\n    \"keeps_rules\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    },\n    \"adds_no_rule\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    },\n    \"keeps_scope\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    },\n    \"plain\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    }\n   }\n  }\n ]\n}\n```",
+   "problems": [],
+   "meta": {
+    "ms": 11109,
+    "input_tokens": 864,
+    "output_tokens": 1644,
+    "cost_usd": 0.006813,
+    "usage": {
+     "completion_tokens": 651,
+     "prompt_tokens": 864,
+     "total_tokens": 2508
+    },
+    "models": [
+     "gemini-3.8-flash"
+    ],
+    "stop_reason": "stop"
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T19:47:57+00:00"
+}

@@ -1,0 +1,286 @@
+{
+ "step": "draft",
+ "tag": "cmp-6101",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "d412e32e9168de04c00c3959530ebecb6630d0f9092d4afc1f9c308a4695a32e",
+ "input": [
+  {
+   "group": "g-5998a1d2",
+   "rule": "Approver for identification exceptions",
+   "attribute": "ao_exception_approver",
+   "type": "role",
+   "keep": {
+    "clause": "POL-AOP-01@v5/s3/c2",
+    "text": "Only the branch manager can approve an exception to the identification requirements.",
+    "heading": "Policy statements",
+    "document": {
+     "title": "Deposit Account Opening Policy",
+     "type": "policy",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "change": [
+    {
+     "clause": "JA-AOP-02@v3/s1/c1",
+     "text": "Approver for identification exceptions | regional manager",
+     "heading": "Quick reference",
+     "document": {
+      "title": "Identification Checklist",
+      "type": "job_aid",
+      "applies_to": "All branches. Consumer and small business accounts."
+     }
+    },
+    {
+     "clause": "POL-AOP-02@v3/s3/c1",
+     "text": "Only a manager can approve an exception to the identification requirements.",
+     "heading": "Policy statements",
+     "document": {
+      "title": "Customer Identification Policy",
+      "type": "policy",
+      "applies_to": "All branches. Consumer and small business accounts."
+     }
+    },
+    {
+     "clause": "POL-AOP-02@v3/s5/c1",
+     "text": "Exceptions to this policy need written approval from the Deposit Operations manager and are reviewed each quarter.",
+     "heading": "Exceptions",
+     "document": {
+      "title": "Customer Identification Policy",
+      "type": "policy",
+      "applies_to": "All branches. Consumer and small business accounts."
+     }
+    },
+    {
+     "clause": "PRO-AOP-04@v4/s3/c4",
+     "text": "Only the operations specialist can approve an exception to the identification requirements.",
+     "heading": "Steps",
+     "document": {
+      "title": "Verifying Customer Identification",
+      "type": "procedure",
+      "applies_to": "All branches. Consumer and small business accounts."
+     }
+    }
+   ],
+   "allowed": {
+    "POL-AOP-01@v5/s3/c2#value": "branch manager",
+    "PRO-AOP-03@v1/s3/c1#value": "branch manager"
+   },
+   "placeholder": "{clause:POL-AOP-01@v5/s3/c2#value}"
+  },
+  {
+   "group": "g-14fea1fb",
+   "rule": "Forms of identification per signer",
+   "attribute": "ao_id_count",
+   "type": "count",
+   "keep": {
+    "clause": "POL-AOP-01@v5/s3/c1",
+    "text": "Collect two forms of identification from each signer before opening the account, or one form plus a verified bank reference when the branch manager approves.",
+    "heading": "Policy statements",
+    "document": {
+     "title": "Deposit Account Opening Policy",
+     "type": "policy",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "change": [
+    {
+     "clause": "BUL-AOP-02@v4/s1/c2",
+     "text": "Do not open an account until you have verified two forms of identification for each signer.",
+     "heading": "What branches need to know",
+     "document": {
+      "title": "Branch Bulletin 2026-13: Forms of identification per signer",
+      "type": "bulletin",
+      "applies_to": "All branches. Consumer and small business accounts."
+     }
+    },
+    {
+     "clause": "JA-AOP-01@v4/s1/c2",
+     "text": "Forms of identification per signer | two",
+     "heading": "Quick reference",
+     "document": {
+      "title": "New Account Quick Reference",
+      "type": "job_aid",
+      "applies_to": "All branches. Consumer and small business accounts."
+     }
+    },
+    {
+     "clause": "JA-AOP-02@v3/s1/c2",
+     "text": "Forms of identification per signer | two",
+     "heading": "Quick reference",
+     "document": {
+      "title": "Identification Checklist",
+      "type": "job_aid",
+      "applies_to": "All branches. Consumer and small business accounts."
+     }
+    },
+    {
+     "clause": "JA-AOP-03@v1/s1/c2",
+     "text": "Forms of identification per signer | three",
+     "heading": "Quick reference",
+     "document": {
+      "title": "Account Opening Desk Card",
+      "type": "job_aid",
+      "applies_to": "All branches. Consumer and small business accounts."
+     }
+    },
+    {
+     "clause": "PRO-AOP-04@v4/s3/c6",
+     "text": "Every signer must present one separate identification documents before the account is opened.",
+     "heading": "Steps",
+     "document": {
+      "title": "Verifying Customer Identification",
+      "type": "procedure",
+      "applies_to": "All branches. Consumer and small business accounts."
+     }
+    },
+    {
+     "clause": "PRO-AOP-05@v4/s3/c2",
+     "text": "Do not open an account until you have verified two forms of identification for each signer.",
+     "heading": "Steps",
+     "document": {
+      "title": "Adding a Signer to an Existing Account",
+      "type": "procedure",
+      "applies_to": "All branches. Consumer and small business accounts."
+     }
+    },
+    {
+     "clause": "PRO-AOP-06@v3/s3/c4",
+     "text": "Every signer must present two separate identification documents before the account is opened.",
+     "heading": "Steps",
+     "document": {
+      "title": "Handling Identification Exceptions",
+      "type": "procedure",
+      "applies_to": "All branches. Consumer and small business accounts."
+     }
+    },
+    {
+     "clause": "PRO-AOP-07@v2/s3/c7",
+     "text": "Every signer must present two separate identification documents before the account is opened.",
+     "heading": "Steps",
+     "document": {
+      "title": "Opening an Account for a Minor with a Custodian",
+      "type": "procedure",
+      "applies_to": "All branches. Consumer and small business accounts."
+     }
+    }
+   ],
+   "allowed": {
+    "BUL-AOP-02@v4/s1/c2#value": "two",
+    "JA-AOP-01@v4/s1/c2#value": "two",
+    "JA-AOP-02@v3/s1/c2#value": "two",
+    "POL-AOP-01@v5/s3/c1#v2": "one",
+    "POL-AOP-01@v5/s3/c1#value": "two",
+    "POL-AOP-02@v3/s4/c1#value": "two",
+    "PRO-AOP-01@v2/s3/c1#value": "two",
+    "PRO-AOP-05@v4/s3/c2#value": "two",
+    "PRO-AOP-06@v3/s3/c4#value": "two",
+    "PRO-AOP-07@v2/s3/c7#value": "two"
+   },
+   "placeholder": "{clause:POL-AOP-01@v5/s3/c1#value}"
+  },
+  {
+   "group": "g-706e2740",
+   "rule": "New account period",
+   "attribute": "ao_new_account_window",
+   "type": "duration",
+   "keep": {
+    "clause": "POL-AOP-01@v5/s4/c1",
+    "text": "An account is treated as a new account for the first 30 days after it opens.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Deposit Account Opening Policy",
+     "type": "policy",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "change": [
+    {
+     "clause": "BUL-AOP-01@v4/s1/c2",
+     "text": "Accounts open fewer than 90 days are new accounts for hold and limit purposes.",
+     "heading": "What branches need to know",
+     "document": {
+      "title": "Branch Bulletin 2025-34: How long an account counts as new",
+      "type": "bulletin",
+      "applies_to": "All branches. Consumer and small business accounts."
+     }
+    },
+    {
+     "clause": "FAQ-AOP-01@v4/s1/c1",
+     "text": "Accounts open fewer than 60 days are new accounts for hold and limit purposes.",
+     "heading": "How long is an account considered a new account?",
+     "document": {
+      "title": "Account Opening FAQ",
+      "type": "faq",
+      "applies_to": "All branches. Consumer and small business accounts."
+     }
+    }
+   ],
+   "allowed": {
+    "JA-AOP-01@v4/s1/c1#value": "30 days",
+    "POL-AOP-01@v5/s4/c1#value": "30 days",
+    "POL-AOP-02@v3/s4/c2#value": "30 days",
+    "PRO-AOP-02@v1/s3/c3#value": "30 days"
+   },
+   "placeholder": "{clause:POL-AOP-01@v5/s4/c1#value}"
+  }
+ ],
+ "input_hash": "9b85534569b297e0f5730a6617c8b679a36755e2edebb5908dade9f514c43612",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [{\"group\": \"g-5998a1d2\", \"title\": \"Approver for identification exceptions\", \"text\": \"Only the {clause:POL-AOP-01@v5/s3/c2#value} can approve an exception to the identification requirements.\"}, {\"group\": \"g-14fea1fb\", \"title\": \"Forms of identification per signer\", \"text\": \"Staff collect {clause:POL-AOP-01@v5/s3/c1#value} forms of identification from each signer before opening the account, or {clause:POL-AOP-01@v5/s3/c1#v2} form plus a verified bank reference when the branch manager approves.\"}, {\"group\": \"g-706e2740\", \"title\": \"New account period\", \"text\": \"An account is treated as a new account for the first {clause:POL-AOP-01@v5/s4/c1#value} after it opens.\"}]}",
+   "problems": [],
+   "meta": {
+    "ms": 8683,
+    "api_ms": 8532,
+    "input_tokens": 9056,
+    "output_tokens": 814,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 9054,
+     "cache_read_input_tokens": 0,
+     "output_tokens": 814,
+     "output_tokens_details": {
+      "thinking_tokens": 540
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 9054,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 814,
+       "cache_read_input_tokens": 0,
+       "cache_creation_input_tokens": 9054,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 9054
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.04436,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T17:15:46+00:00"
+}

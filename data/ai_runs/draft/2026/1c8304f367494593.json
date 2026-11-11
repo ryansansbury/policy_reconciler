@@ -1,0 +1,215 @@
+{
+ "step": "draft",
+ "tag": "2026",
+ "model": "claude-opus",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "opus",
+  "client_context": true
+ },
+ "prompt_hash": "d412e32e9168de04c00c3959530ebecb6630d0f9092d4afc1f9c308a4695a32e",
+ "input": [
+  {
+   "group": "g-eeefec6d",
+   "rule": "Personal banker fee waiver limit",
+   "attribute": "fee_waiver_pb",
+   "type": "money",
+   "keep": {
+    "clause": "POL-FEE-01@v2/s3/c1",
+    "text": "Personal bankers may waive service fees up to $25 per account in a calendar year, or up to $50 with branch manager approval noted in the account.",
+    "heading": "Policy statements",
+    "document": {
+     "title": "Service Fee Waiver Policy",
+     "type": "policy",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "change": [
+    {
+     "clause": "FAQ-FEE-02@v2/s2/c1",
+     "text": "A personal banker can waive no more than $25 for one account in a calendar year.",
+     "heading": "How much can a personal banker waive in fees?",
+     "document": {
+      "title": "Fee Refund Questions",
+      "type": "faq",
+      "applies_to": "All branches. Consumer and small business accounts."
+     }
+    },
+    {
+     "clause": "JA-FEE-02@v3/s1/c1",
+     "text": "Personal banker fee waiver limit | $25",
+     "heading": "Quick reference",
+     "document": {
+      "title": "Fee Schedule at a Glance",
+      "type": "job_aid",
+      "applies_to": "All branches. Consumer and small business accounts."
+     }
+    },
+    {
+     "clause": "PRO-FEE-04@v4/s3/c1",
+     "text": "A personal banker can waive no more than $25 for one account in a calendar year.",
+     "heading": "Steps",
+     "document": {
+      "title": "Reviewing Waiver Activity Each Month",
+      "type": "procedure",
+      "applies_to": "All branches. Consumer and small business accounts."
+     }
+    },
+    {
+     "clause": "PRO-FEE-05@v4/s3/c3",
+     "text": "Personal bankers may waive service fees up to $25 per account in a calendar year.",
+     "heading": "Steps",
+     "document": {
+      "title": "Documenting Fee Waivers in Account Notes",
+      "type": "procedure",
+      "applies_to": "All branches. Consumer and small business accounts."
+     }
+    }
+   ],
+   "allowed": {
+    "FAQ-FEE-02@v2/s2/c1#value": "$25",
+    "JA-FEE-02@v3/s1/c1#value": "$25",
+    "POL-FEE-01@v2/s3/c1#v2": "$50",
+    "POL-FEE-01@v2/s3/c1#value": "$25",
+    "PRO-FEE-04@v4/s3/c1#value": "$25",
+    "PRO-FEE-05@v4/s3/c3#value": "$25"
+   },
+   "placeholder": "{clause:POL-FEE-01@v2/s3/c1#value}"
+  },
+  {
+   "group": "g-0840942d",
+   "rule": "Personal banker fee waiver limit",
+   "attribute": "fee_waiver_pb",
+   "type": "money",
+   "keep": {
+    "clause": "PRO-FEE-05@v4/s3/c3",
+    "text": "Personal bankers may waive service fees up to $25 per account in a calendar year.",
+    "heading": "Steps",
+    "document": {
+     "title": "Documenting Fee Waivers in Account Notes",
+     "type": "procedure",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "change": [
+    {
+     "clause": "JA-FEE-03@v3/s1/c1",
+     "text": "Personal banker fee waiver limit | $15",
+     "heading": "Quick reference",
+     "document": {
+      "title": "Waiver Authority Card",
+      "type": "job_aid",
+      "applies_to": "All branches. Consumer and small business accounts."
+     }
+    }
+   ],
+   "allowed": {
+    "FAQ-FEE-02@v2/s2/c1#value": "$25",
+    "JA-FEE-02@v3/s1/c1#value": "$25",
+    "POL-FEE-01@v2/s3/c1#value": "$25",
+    "PRO-FEE-04@v4/s3/c1#value": "$25",
+    "PRO-FEE-05@v4/s3/c3#value": "$25"
+   },
+   "placeholder": "{clause:PRO-FEE-05@v4/s3/c3#value}"
+  },
+  {
+   "group": "g-88f87594",
+   "rule": "Fee waivers per account per year",
+   "attribute": "fee_waivers_per_year",
+   "type": "count",
+   "keep": {
+    "clause": "POL-FEE-01@v2/s4/c2",
+    "text": "Each account may receive no more than two fee waivers in a calendar year.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Service Fee Waiver Policy",
+     "type": "policy",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "change": [
+    {
+     "clause": "PRO-FEE-03@v1/s3/c3",
+     "text": "Limit fee waivers to one per account in each calendar year.",
+     "heading": "Steps",
+     "document": {
+      "title": "Handling Fee Refund Requests",
+      "type": "procedure",
+      "applies_to": "All branches. Consumer and small business accounts."
+     }
+    },
+    {
+     "clause": "PRO-FEE-05@v4/s3/c5",
+     "text": "Each account may receive no more than one fee waivers in a calendar year.",
+     "heading": "Steps",
+     "document": {
+      "title": "Documenting Fee Waivers in Account Notes",
+      "type": "procedure",
+      "applies_to": "All branches. Consumer and small business accounts."
+     }
+    }
+   ],
+   "allowed": {
+    "JA-FEE-01@v1/s1/c1#value": "two",
+    "JA-FEE-02@v3/s1/c2#value": "two",
+    "JA-FEE-03@v3/s1/c4#value": "two",
+    "POL-FEE-01@v2/s4/c2#value": "two"
+   },
+   "placeholder": "{clause:POL-FEE-01@v2/s4/c2#value}"
+  }
+ ],
+ "input_hash": "22f7877f5b37053582ec8ce091ec6bbfedb321ae127dd0c8fb18efa6876a34fd",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [{\"group\": \"g-eeefec6d\", \"title\": \"Personal banker fee waivers\", \"text\": \"Personal bankers may waive service fees up to {clause:POL-FEE-01@v2/s3/c1#value} per account in a calendar year. With branch manager approval noted in the account, a personal banker may waive up to {clause:POL-FEE-01@v2/s3/c1#v2} per account in a calendar year.\"}, {\"group\": \"g-0840942d\", \"title\": \"Personal banker fee waivers\", \"text\": \"Personal bankers may waive service fees up to {clause:PRO-FEE-05@v4/s3/c3#value} per account in a calendar year.\"}, {\"group\": \"g-88f87594\", \"title\": \"Fee waivers per account each year\", \"text\": \"Each account may receive no more than {clause:POL-FEE-01@v2/s4/c2#value} fee waivers in a calendar year.\"}]}",
+   "problems": [],
+   "meta": {
+    "ms": 6419,
+    "api_ms": 6276,
+    "input_tokens": 8134,
+    "output_tokens": 543,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 7058,
+     "cache_read_input_tokens": 1074,
+     "output_tokens": 543,
+     "output_tokens_details": {
+      "thinking_tokens": 237
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 7058,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 543,
+       "cache_read_input_tokens": 1074,
+       "cache_creation_input_tokens": 7058,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 7058
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.0675468,
+    "models": [
+     "claude-opus-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T05:57:40+00:00"
+}

@@ -1,0 +1,85 @@
+{
+ "step": "assist",
+ "tag": "cmp-6101",
+ "model": "google-b",
+ "backend": {
+  "vendor": "Google",
+  "model": "gemini-3.8-flash",
+  "label": "Gemini 3.8 Flash"
+ },
+ "prompt_hash": "66c01f0da9f327e74355d39363e55b642a1bbf8dc6249974c3afbf3cb3d6ccd5",
+ "input": [
+  {
+   "question": "q-C-12",
+   "text": "How many overdraft fees can an account be charged in one day?",
+   "type": "count",
+   "clauses": [
+    {
+     "id": "POL-ODR-01@v2/s3/c2",
+     "text": "No more than three overdraft fees are charged to an account in one business day.",
+     "title": "Overdraft Policy",
+     "type": "policy",
+     "version": 2,
+     "effective": "2025-11-24"
+    },
+    {
+     "id": "PRO-ODR-01@v2/s3/c4",
+     "text": "No more than three overdraft fees are charged to an account in one business day.",
+     "title": "Reviewing Overdrawn Accounts Each Morning",
+     "type": "procedure",
+     "version": 2,
+     "effective": "2025-12-24"
+    },
+    {
+     "id": "PRO-ODR-03@v2/s3/c8",
+     "text": "No more than three overdraft fees are charged to an account in one business day.",
+     "title": "Referring Accounts for Charge-Off",
+     "type": "procedure",
+     "version": 2,
+     "effective": "2025-03-21"
+    },
+    {
+     "id": "PRO-ODR-05@v4/s3/c9",
+     "text": "No more than three overdraft fees are charged to an account in one business day.",
+     "title": "Closing an Overdrawn Account",
+     "type": "procedure",
+     "version": 4,
+     "effective": "2025-04-12"
+    },
+    {
+     "id": "JA-ODR-01@v4/s1/c1",
+     "text": "Overdraft fees per account per day | four",
+     "title": "Overdraft Quick Reference",
+     "type": "job_aid",
+     "version": 4,
+     "effective": "2026-04-04"
+    }
+   ]
+  }
+ ],
+ "input_hash": "592bf6d033a6bdb8adabfec4b0e761e57271fe3a3dafd34c226508d42a7792b5",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "```json\n{\n \"results\": [\n  {\n   \"question\": \"q-C-12\",\n   \"answer\": \"The sources disagree. The Overdraft Policy states that no more than three overdraft fees are charged to an account in one business day while the Overdraft Quick Reference lists four. The policy outranks the job aid so three overdraft fees is the limit to follow.\",\n   \"citations\": [\n    \"POL-ODR-01@v2/s3/c2\",\n    \"JA-ODR-01@v4/s1/c1\"\n   ],\n   \"sources_disagree\": true\n  }\n ]\n}\n```",
+   "problems": [],
+   "meta": {
+    "ms": 13309,
+    "input_tokens": 982,
+    "output_tokens": 1617,
+    "cost_usd": 0.0068,
+    "usage": {
+     "completion_tokens": 149,
+     "prompt_tokens": 982,
+     "total_tokens": 2599
+    },
+    "models": [
+     "gemini-3.8-flash"
+    ],
+    "stop_reason": "stop"
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T17:35:18+00:00"
+}

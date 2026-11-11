@@ -1,0 +1,160 @@
+{
+ "step": "classify",
+ "tag": "11",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "2c908358fde9f0f4a792753579a6cfaa33476e41c4b0f235744675d8e8283a19",
+ "input": [
+  {
+   "pair": "pair-84bc6e3ddc",
+   "rule": "Forms of identification per signer",
+   "attribute": "ao_id_count",
+   "reason": "One side carries a condition that may change the rule.",
+   "a": {
+    "clause": "POL-AOP-01@v5/s4/c1",
+    "text": "Every signer must present two separate identification documents before the account is opened, or one form plus a verified bank reference when the branch manager approves.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Deposit Account Opening Policy",
+     "type": "policy",
+     "version": 5,
+     "effective": "2025-02-05",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "PRO-AOP-01@v4/s3/c9",
+    "text": "Every signer must present one separate identification documents before the account is opened.",
+    "heading": "Steps",
+    "document": {
+     "title": "Opening a Consumer Checking Account",
+     "type": "procedure",
+     "version": 4,
+     "effective": "2025-06-07",
+     "applies_to": "All branches. Consumer accounts."
+    }
+   },
+   "kind": "condition"
+  },
+  {
+   "pair": "pair-25f64f5edb",
+   "rule": "Complaint resolution deadline",
+   "attribute": "complaint_resolve",
+   "reason": "One side carries a condition that may change the rule.",
+   "a": {
+    "clause": "POL-CMP-01@v4/s4/c2",
+    "text": "Complaints should be closed within 15 business days of the day they arrive, or within 30 business days when another department has to investigate.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Complaint Management Policy",
+     "type": "policy",
+     "version": 4,
+     "effective": "2025-07-22",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "PRO-CMP-04@v2/s3/c1",
+    "text": "Complaints should be closed within 10 business days of the day they arrive.",
+    "heading": "Steps",
+    "document": {
+     "title": "Escalating a Sensitive Complaint",
+     "type": "procedure",
+     "version": 2,
+     "effective": "2025-02-14",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "kind": "condition"
+  },
+  {
+   "pair": "pair-65187446c7",
+   "rule": "Complaint resolution deadline",
+   "attribute": "complaint_resolve",
+   "reason": "One side carries a condition that may change the rule.",
+   "a": {
+    "clause": "POL-CMP-01@v4/s4/c2",
+    "text": "Complaints should be closed within 15 business days of the day they arrive, or within 30 business days when another department has to investigate.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Complaint Management Policy",
+     "type": "policy",
+     "version": 4,
+     "effective": "2025-07-22",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "FAQ-CMP-01@v1/s1/c1",
+    "text": "Complaints should be closed within 10 business days of the day they arrive.",
+    "heading": "How long does the bank have to resolve a complaint?",
+    "document": {
+     "title": "Complaint Handling FAQ",
+     "type": "faq",
+     "version": 1,
+     "effective": "2026-06-27",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "kind": "condition"
+  }
+ ],
+ "input_hash": "bf08ab6d5aedb78adbc3bae8bc14a27b090ae8ee7aef4b0811ec494468d49e8b",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [{\"pair\": \"pair-84bc6e3ddc\", \"label\": \"conflict\", \"quote_a\": \"Every signer must present two separate identification documents before the account is opened\", \"quote_b\": \"one separate identification documents\", \"rationale\": \"Both clauses cover consumer accounts at all branches, and clause a requires two documents (or one plus a verified bank reference with manager approval) while clause b requires one. Staff following clause b would open an account that clause a would refuse, and the policy outranks the procedure so clause a is the one to keep.\"}, {\"pair\": \"pair-25f64f5edb\", \"label\": \"conflict\", \"quote_a\": \"within 15 business days of the day they arrive\", \"quote_b\": \"within 10 business days of the day they arrive\", \"rationale\": \"Both clauses apply to all branches and all business lines, and they set 15 business days against 10 business days. Staff following the policy could leave a complaint open past the 10 days the procedure allows, and the policy outranks the procedure so clause a is the one to keep.\"}, {\"pair\": \"pair-65187446c7\", \"label\": \"conflict\", \"quote_a\": \"within 15 business days of the day they arrive\", \"quote_b\": \"within 10 business days of the day they arrive\", \"rationale\": \"Both clauses apply to all branches and all business lines, and they set 15 business days against 10 business days. Staff following the policy could leave a complaint open past the 10 days the FAQ states, and the policy outranks the FAQ so clause a is the one to keep.\"}]}",
+   "problems": [],
+   "meta": {
+    "ms": 7700,
+    "api_ms": 7525,
+    "input_tokens": 6990,
+    "output_tokens": 1107,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 6988,
+     "cache_read_input_tokens": 0,
+     "output_tokens": 1107,
+     "output_tokens_details": {
+      "thinking_tokens": 614
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 6988,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 1107,
+       "cache_read_input_tokens": 0,
+       "cache_creation_input_tokens": 6988,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 6988
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.039026000000000005,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T03:53:39+00:00"
+}

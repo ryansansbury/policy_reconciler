@@ -1,0 +1,114 @@
+{
+ "step": "assist",
+ "tag": "after-2026",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "66c01f0da9f327e74355d39363e55b642a1bbf8dc6249974c3afbf3cb3d6ccd5",
+ "input": [
+  {
+   "question": "q-C-04",
+   "text": "Which disputes need card services review?",
+   "type": "money",
+   "clauses": [
+    {
+     "id": "PRO-DSP-01@v4/s5/c1",
+     "text": "Card services specialists review disputes in the order they arrive.",
+     "title": "Taking a Debit Card Dispute",
+     "type": "procedure",
+     "version": 4,
+     "effective": "2025-07-07"
+    },
+    {
+     "id": "BUL-DSP-02@v4/s3/c1",
+     "text": "Disputes over $500 are reviewed by a card services specialist before credit is issued.",
+     "title": "Branch Bulletin 2026-20: Debit card dispute window",
+     "type": "bulletin",
+     "version": 4,
+     "effective": "2025-03-09"
+    },
+    {
+     "id": "FAQ-DSP-01@v3/s1/c1",
+     "text": "Disputes over $500 are reviewed by a card services specialist before credit is issued.",
+     "title": "Debit Card Dispute FAQ",
+     "type": "faq",
+     "version": 3,
+     "effective": "2026-08-28"
+    },
+    {
+     "id": "FAQ-DSP-02@v1/s3/c1",
+     "text": "Disputes over $500 are reviewed by a card services specialist before credit is issued.",
+     "title": "Provisional Credit Questions",
+     "type": "faq",
+     "version": 1,
+     "effective": "2026-08-24"
+    },
+    {
+     "id": "POL-DSP-01@v3/s3/c1",
+     "text": "Disputes over $500 are reviewed by a card services specialist before credit is issued.",
+     "title": "Debit Card Dispute Policy",
+     "type": "policy",
+     "version": 3,
+     "effective": "2026-02-06"
+    }
+   ]
+  }
+ ],
+ "input_hash": "41ab905f1a097ebb3579e6da9996ecaf21ffdbba0ff9f68f27260ff80b1b0d1f",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [{\"question\": \"q-C-04\", \"answer\": \"Disputes over $500 need review by a card services specialist before credit is issued. The Debit Card Dispute Policy states this and the dispute FAQs and the branch bulletin say the same.\", \"citations\": [\"POL-DSP-01@v3/s3/c1\", \"FAQ-DSP-01@v3/s1/c1\", \"FAQ-DSP-02@v1/s3/c1\", \"BUL-DSP-02@v4/s3/c1\"], \"sources_disagree\": false}]}",
+   "problems": [],
+   "meta": {
+    "ms": 4750,
+    "api_ms": 4579,
+    "input_tokens": 6145,
+    "output_tokens": 480,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 3833,
+     "cache_read_input_tokens": 2310,
+     "output_tokens": 480,
+     "output_tokens_details": {
+      "thinking_tokens": 297
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 3833,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 480,
+       "cache_read_input_tokens": 2310,
+       "cache_creation_input_tokens": 3833,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 3833
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.020367,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T06:03:15+00:00"
+}

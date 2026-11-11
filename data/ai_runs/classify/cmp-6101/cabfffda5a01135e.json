@@ -1,0 +1,289 @@
+{
+ "step": "classify",
+ "tag": "cmp-6101",
+ "model": "openai-b",
+ "backend": {
+  "vendor": "OpenAI",
+  "model": "gpt-6-luna",
+  "label": "GPT-6 Luna"
+ },
+ "prompt_hash": "2c908358fde9f0f4a792753579a6cfaa33476e41c4b0f235744675d8e8283a19",
+ "input": [
+  {
+   "pair": "pair-f9593478bb",
+   "rule": "Regional manager rate exception limit",
+   "attribute": "lend_rate_rm",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-LND-01@v3/s3/c1",
+    "text": "Regional managers may approve rate exceptions of up to 0.50%.",
+    "heading": "Policy statements",
+    "document": {
+     "title": "Loan Pricing Exception Policy",
+     "type": "policy",
+     "version": 3,
+     "effective": "2026-06-18",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "BUL-LND-01@v2/s1/c2",
+    "text": "Regional managers may approve rate exceptions of up to 0.75%.",
+    "heading": "What branches need to know",
+    "document": {
+     "title": "Branch Bulletin 2025-16: Regional manager rate exception limit",
+     "type": "bulletin",
+     "version": 2,
+     "effective": "2026-01-27",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-a415b4f1d1",
+   "rule": "Approver for identification exceptions",
+   "attribute": "ao_exception_approver",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-AOP-01@v5/s3/c2",
+    "text": "Only the branch manager can approve an exception to the identification requirements.",
+    "heading": "Policy statements",
+    "document": {
+     "title": "Deposit Account Opening Policy",
+     "type": "policy",
+     "version": 5,
+     "effective": "2026-05-17",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "PRO-AOP-04@v4/s3/c4",
+    "text": "Only the operations specialist can approve an exception to the identification requirements.",
+    "heading": "Steps",
+    "document": {
+     "title": "Verifying Customer Identification",
+     "type": "procedure",
+     "version": 4,
+     "effective": "2024-12-10",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-a2c29ef32a",
+   "rule": "Fee refund window",
+   "attribute": "fee_refund_window",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-FEE-01@v3/s4/c1",
+    "text": "Customers may request a fee refund within 60 days of the statement date.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Service Fee Waiver Policy",
+     "type": "policy",
+     "version": 3,
+     "effective": "2024-08-03",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "PRO-FEE-06@v2/s3/c1",
+    "text": "Customers may request a fee refund within 90 days of the statement date.",
+    "heading": "Steps",
+    "document": {
+     "title": "Explaining Fees to a New Customer",
+     "type": "procedure",
+     "version": 2,
+     "effective": "2025-11-04",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-780ad0c46d",
+   "rule": "Unfair treatment escalation",
+   "attribute": "complaint_escalation_role",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-CMP-01@v4/s3/c1",
+    "text": "Complaints that allege unfair treatment are escalated to the regional manager the same day.",
+    "heading": "Policy statements",
+    "document": {
+     "title": "Complaint Management Policy",
+     "type": "policy",
+     "version": 4,
+     "effective": "2026-05-11",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "FAQ-CMP-01@v3/s2/c1",
+    "text": "Complaints that allege unfair treatment are escalated to the branch manager the same day.",
+    "heading": "Who handles a complaint that alleges unfair treatment?",
+    "document": {
+     "title": "Complaint Handling FAQ",
+     "type": "faq",
+     "version": 3,
+     "effective": "2025-09-08",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-0590923bf1",
+   "rule": "Outgoing wire cutoff",
+   "attribute": "wire_cutoff",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-WIR-01@v2/s3/c1",
+    "text": "The cutoff for outgoing commercial wires is 4:00 PM Central time.",
+    "heading": "Policy statements",
+    "document": {
+     "title": "Wire Transfer Policy",
+     "type": "policy",
+     "version": 2,
+     "effective": "2026-08-02",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "PRO-WIR-03@v3/s3/c2",
+    "text": "The cutoff for outgoing commercial wires is 2:00 PM Central time.",
+    "heading": "Steps",
+    "document": {
+     "title": "Completing Wire Callback Verification",
+     "type": "procedure",
+     "version": 3,
+     "effective": "2024-12-08",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-a41d4f4e44",
+   "rule": "Teller drawer limit",
+   "attribute": "cash_drawer_limit",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-CSH-01@v4/s4/c1",
+    "text": "Sell excess cash to the vault whenever a teller drawer goes above $15,000.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Cash Handling Policy",
+     "type": "policy",
+     "version": 4,
+     "effective": "2025-05-11",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "JA-CSH-02@v4/s1/c3",
+    "text": "Teller drawer cash limit | $20,000",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Vault Opening Checklist",
+     "type": "job_aid",
+     "version": 4,
+     "effective": "2025-07-25",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-8f808aa751",
+   "rule": "Outgoing wire cutoff",
+   "attribute": "wire_cutoff",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-WIR-01@v2/s4/c1",
+    "text": "Outgoing consumer and small business wire requests received after 3:00 PM Central are processed the next business day.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Wire Transfer Policy",
+     "type": "policy",
+     "version": 2,
+     "effective": "2026-08-02",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "PRO-WIR-05@v1/s3/c6",
+    "text": "Outgoing consumer and small business wire requests received after 4:00 PM Central are processed the next business day.",
+    "heading": "Steps",
+    "document": {
+     "title": "Wire Cutoffs on Holidays and Weekends",
+     "type": "procedure",
+     "version": 1,
+     "effective": "2025-04-08",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-aed5d5ebd0",
+   "rule": "Teller drawer limit",
+   "attribute": "cash_drawer_limit",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-CSH-01@v4/s4/c1",
+    "text": "Sell excess cash to the vault whenever a teller drawer goes above $15,000.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Cash Handling Policy",
+     "type": "policy",
+     "version": 4,
+     "effective": "2025-05-11",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "JA-CSH-01@v2/s1/c2",
+    "text": "Teller drawer cash limit | $10,000",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Teller Cash Limits Card",
+     "type": "job_aid",
+     "version": 2,
+     "effective": "2025-12-23",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  }
+ ],
+ "input_hash": "d03ded9cb462f8d065a988c468ecc9f0b26137a25919eb9f304600518e291e2a",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\":[{\"pair\":\"pair-f9593478bb\",\"label\":\"conflict\",\"quote_a\":\"Regional managers may approve rate exceptions of up to 0.50%.\",\"quote_b\":\"Regional managers may approve rate exceptions of up to 0.75%.\",\"rationale\":\"Both clauses apply to all branches and business lines but set different approval limits. The policy outranks the bulletin and is the clause to keep.\"},{\"pair\":\"pair-a415b4f1d1\",\"label\":\"conflict\",\"quote_a\":\"Only the branch manager can approve an exception to the identification requirements.\",\"quote_b\":\"Only the operations specialist can approve an exception to the identification requirements.\",\"rationale\":\"The clauses name different exclusive approvers for the same exception. The policy outranks the procedure and is the clause to keep.\"},{\"pair\":\"pair-a2c29ef32a\",\"label\":\"conflict\",\"quote_a\":\"Customers may request a fee refund within 60 days of the statement date.\",\"quote_b\":\"Customers may request a fee refund within 90 days of the statement date.\",\"rationale\":\"The clauses set different request windows for the same accounts. The procedure allows requests after the policy window has ended but the policy outranks the procedure and is the clause to keep.\"},{\"pair\":\"pair-780ad0c46d\",\"label\":\"conflict\",\"quote_a\":\"Complaints that allege unfair treatment are escalated to the regional manager the same day.\",\"quote_b\":\"Complaints that allege unfair treatment are escalated to the branch manager the same day.\",\"rationale\":\"The clauses require escalation to different roles on the same day. The policy outranks the FAQ and is the clause to keep.\"},{\"pair\":\"pair-0590923bf1\",\"label\":\"conflict\",\"quote_a\":\"The cutoff for outgoing commercial wires is 4:00 PM Central time.\",\"quote_b\":\"The cutoff for outgoing commercial wires is 2:00 PM Central time.\",\"rationale\":\"Both clauses set a cutoff for outgoing commercial wires but give different times. The policy outranks the procedure and is the clause to keep.\"},{\"pair\":\"pair-a41d4f4e44\",\"label\":\"conflict\",\"quote_a\":\"Sell excess cash to the vault whenever a teller drawer goes above $15,000.\",\"quote_b\":\"Teller drawer cash limit | $20,000\",\"rationale\":\"The policy requires selling excess cash above $15,000 while the job aid sets a $20,000 drawer limit. These different thresholds direct staff to handle the same drawer balance differently.\"},{\"pair\":\"pair-8f808aa751\",\"label\":\"conflict\",\"quote_a\":\"Outgoing consumer and small business wire requests received after 3:00 PM Central are processed the next business day.\",\"quote_b\":\"Outgoing consumer and small business wire requests received after 4:00 PM Central are processed the next business day.\",\"rationale\":\"Both clauses set processing cutoffs for the same wire requests but give different times. The policy outranks the procedure and is the clause to keep.\"},{\"pair\":\"pair-aed5d5ebd0\",\"label\":\"conflict\",\"quote_a\":\"Sell excess cash to the vault whenever a teller drawer goes above $15,000.\",\"quote_b\":\"Teller drawer cash limit | $10,000\",\"rationale\":\"The policy requires selling excess cash above $15,000 while the job aid sets a $10,000 drawer limit. These different thresholds direct staff to handle the same drawer balance differently.\"}]}",
+   "problems": [],
+   "meta": {
+    "ms": 13190,
+    "input_tokens": 2878,
+    "output_tokens": 1436,
+    "cost_usd": 0.001006,
+    "usage": {
+     "prompt_tokens": 2878,
+     "completion_tokens": 1436,
+     "total_tokens": 4314,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 2875,
+      "audio_tokens": 0
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 714,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+     }
+    },
+    "models": [
+     "gpt-6-luna"
+    ],
+    "stop_reason": "stop"
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T17:21:58+00:00"
+}

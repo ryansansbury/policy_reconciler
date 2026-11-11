@@ -1,0 +1,167 @@
+{
+ "step": "extract",
+ "tag": "evals-11",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "dcc761e46c6ec579c01b9dfd540df3c2fa4bba3b6b5ec777aa2cf9c9c62aa411",
+ "input": [
+  {
+   "clause": "FAQ-CMP-01@v1/s1/c1",
+   "text": "Complaints should be closed within 10 business days of the day they arrive.",
+   "heading": "How long does the bank have to resolve a complaint?",
+   "document": {
+    "title": "Complaint Handling FAQ",
+    "type": "faq",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "FAQ-CMP-02@v1/s1/c1",
+   "text": "Acknowledge every written complaint within 2 days.",
+   "heading": "How quickly is a written complaint acknowledged?",
+   "document": {
+    "title": "Complaint Escalation Questions",
+    "type": "faq",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "FAQ-CSH-02@v2/s2/c1",
+   "text": "A single employee may open the vault when a second employee is not available.",
+   "heading": "Can one employee open the vault alone?",
+   "document": {
+    "title": "Large-Cash Review Questions",
+    "type": "faq",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "FAQ-DRM-01@v4/s1/c3",
+   "text": "Send dormant accounts one statement every 12 months.",
+   "heading": "When does an account become dormant?",
+   "document": {
+    "title": "Dormant Account FAQ",
+    "type": "faq",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "FAQ-DSP-01@v3/s1/c1",
+   "text": "Accept debit card disputes filed within 90 days of the statement that first showed the charge.",
+   "heading": "How long do customers have to dispute a debit card transaction?",
+   "document": {
+    "title": "Debit Card Dispute FAQ",
+    "type": "faq",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "FAQ-DSP-02@v2/s1/c1",
+   "text": "Credit the customer provisionally no later than 5 business days after the dispute form is complete.",
+   "heading": "When does a customer get provisional credit on a dispute?",
+   "document": {
+    "title": "Provisional Credit Questions",
+    "type": "faq",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "FAQ-FEE-02@v2/s2/c1",
+   "text": "Limit fee waivers to one per account in each calendar year.",
+   "heading": "How many fee waivers can one account get in a year?",
+   "document": {
+    "title": "Fee Refund Questions",
+    "type": "faq",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "FAQ-HLD-01@v2/s2/c1",
+   "text": "New accounts can have check holds of as long as 7 days.",
+   "heading": "How long can checks deposited to a new account be held?",
+   "document": {
+    "title": "Funds Availability FAQ",
+    "type": "faq",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "FAQ-HLD-02@v2/s1/c3",
+   "text": "Records under a legal hold must not be destroyed until Compliance releases the hold in writing.",
+   "heading": "How long is the standard hold on a deposited check?",
+   "document": {
+    "title": "Check Hold Questions from Customers",
+    "type": "faq",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "FAQ-HLD-02@v2/s1/c4",
+   "text": "An authorization hold that the merchant never settles releases within 3 business days.",
+   "heading": "How long is the standard hold on a deposited check?",
+   "document": {
+    "title": "Check Hold Questions from Customers",
+    "type": "faq",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  }
+ ],
+ "input_hash": "9094c201d63588877f89f4708c3e729053011bd8578242fd957552c3e2d496ce",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [{\"clause\": \"FAQ-CMP-01@v1/s1/c1\", \"atoms\": [{\"attribute\": \"complaint_resolve\", \"value\": {\"type\": \"duration\", \"n\": 10, \"unit\": \"business_days\"}, \"quote\": \"10 business days\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]}, {\"clause\": \"FAQ-CMP-02@v1/s1/c1\", \"atoms\": [{\"attribute\": \"complaint_ack\", \"value\": {\"type\": \"duration\", \"n\": 2, \"unit\": \"days\"}, \"quote\": \"2 days\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]}, {\"clause\": \"FAQ-CSH-02@v2/s2/c1\", \"atoms\": [{\"attribute\": \"cash_vault_dual\", \"value\": {\"type\": \"modal\", \"modal\": \"may\"}, \"quote\": \"may open the vault\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": \"when a second employee is not available\"}]}, {\"clause\": \"FAQ-DRM-01@v4/s1/c3\", \"atoms\": [{\"attribute\": \"dormant_statement\", \"value\": {\"type\": \"duration\", \"n\": 12, \"unit\": \"months\"}, \"quote\": \"12 months\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]}, {\"clause\": \"FAQ-DSP-01@v3/s1/c1\", \"atoms\": [{\"attribute\": \"dispute_window\", \"value\": {\"type\": \"duration\", \"n\": 90, \"unit\": \"days\"}, \"quote\": \"90 days\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]}, {\"clause\": \"FAQ-DSP-02@v2/s1/c1\", \"atoms\": [{\"attribute\": \"dispute_provisional_credit\", \"value\": {\"type\": \"duration\", \"n\": 5, \"unit\": \"business_days\"}, \"quote\": \"5 business days\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]}, {\"clause\": \"FAQ-FEE-02@v2/s2/c1\", \"atoms\": [{\"attribute\": \"fee_waivers_per_year\", \"value\": {\"type\": \"count\", \"n\": 1}, \"quote\": \"one\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]}, {\"clause\": \"FAQ-HLD-01@v2/s2/c1\", \"atoms\": [{\"attribute\": \"hold_new_account\", \"value\": {\"type\": \"duration\", \"n\": 7, \"unit\": \"days\"}, \"quote\": \"7 days\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]}, {\"clause\": \"FAQ-HLD-02@v2/s1/c3\", \"atoms\": [{\"attribute\": \"legal_hold\", \"value\": {\"type\": \"modal\", \"modal\": \"must_not\"}, \"quote\": \"must not be destroyed\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": \"until Compliance releases the hold in writing\"}]}, {\"clause\": \"FAQ-HLD-02@v2/s1/c4\", \"atoms\": [{\"attribute\": \"card_auth_hold\", \"value\": {\"type\": \"duration\", \"n\": 3, \"unit\": \"business_days\"}, \"quote\": \"3 business days\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": \"that the merchant never settles\"}]}]}",
+   "problems": [],
+   "meta": {
+    "ms": 9937,
+    "api_ms": 9777,
+    "input_tokens": 9002,
+    "output_tokens": 1833,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 6318,
+     "cache_read_input_tokens": 2682,
+     "output_tokens": 1833,
+     "output_tokens_details": {
+      "thinking_tokens": 639
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 6318,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 1833,
+       "cache_read_input_tokens": 2682,
+       "cache_creation_input_tokens": 6318,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 6318
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.0438742,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T03:52:47+00:00"
+}

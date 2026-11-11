@@ -1,0 +1,137 @@
+{
+ "step": "assist",
+ "tag": "cmp-6101",
+ "model": "openai-a",
+ "backend": {
+  "vendor": "OpenAI",
+  "model": "gpt-6-astra",
+  "label": "GPT-6 Astra"
+ },
+ "prompt_hash": "66c01f0da9f327e74355d39363e55b642a1bbf8dc6249974c3afbf3cb3d6ccd5",
+ "input": [
+  {
+   "question": "q-C-12",
+   "text": "How many overdraft fees can an account be charged in one day?",
+   "type": "count",
+   "clauses": [
+    {
+     "id": "POL-ODR-01@v2/s3/c2",
+     "text": "No more than three overdraft fees are charged to an account in one business day.",
+     "title": "Overdraft Policy",
+     "type": "policy",
+     "version": 2,
+     "effective": "2025-11-24"
+    },
+    {
+     "id": "PRO-ODR-01@v2/s3/c4",
+     "text": "No more than three overdraft fees are charged to an account in one business day.",
+     "title": "Reviewing Overdrawn Accounts Each Morning",
+     "type": "procedure",
+     "version": 2,
+     "effective": "2025-12-24"
+    },
+    {
+     "id": "PRO-ODR-03@v2/s3/c8",
+     "text": "No more than three overdraft fees are charged to an account in one business day.",
+     "title": "Referring Accounts for Charge-Off",
+     "type": "procedure",
+     "version": 2,
+     "effective": "2025-03-21"
+    },
+    {
+     "id": "PRO-ODR-05@v4/s3/c9",
+     "text": "No more than three overdraft fees are charged to an account in one business day.",
+     "title": "Closing an Overdrawn Account",
+     "type": "procedure",
+     "version": 4,
+     "effective": "2025-04-12"
+    },
+    {
+     "id": "JA-ODR-01@v4/s1/c1",
+     "text": "Overdraft fees per account per day | four",
+     "title": "Overdraft Quick Reference",
+     "type": "job_aid",
+     "version": 4,
+     "effective": "2026-04-04"
+    }
+   ]
+  }
+ ],
+ "input_hash": "592bf6d033a6bdb8adabfec4b0e761e57271fe3a3dafd34c226508d42a7792b5",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\":[{\"question\":\"q-C-12\",\"answer\":\"The sources disagree. The Overdraft Policy limits charges to three overdraft fees per account per business day, while the Overdraft Quick Reference lists four per account per day. The policy outranks the job aid so follow the limit of three per business day.\",\"citations\":[\"POL-ODR-01@v2/s3/c2\",\"JA-ODR-01@v4/s1/c1\"],\"sources_disagree\":true}]}",
+   "problems": [
+    "q-C-12: the answer states a value no cited clause holds"
+   ],
+   "meta": {
+    "ms": 4477,
+    "input_tokens": 884,
+    "output_tokens": 106,
+    "cost_usd": 0.01414,
+    "usage": {
+     "prompt_tokens": 884,
+     "completion_tokens": 106,
+     "total_tokens": 990,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+     }
+    },
+    "models": [
+     "gpt-6-astra"
+    ],
+    "stop_reason": "stop"
+   }
+  },
+  {
+   "reply": "{\"results\":[{\"question\":\"q-C-12\",\"answer\":\"The sources disagree. The Overdraft Policy states no more than three overdraft fees per account in one business day, while the Overdraft Quick Reference lists four per account per day. Follow the policy limit of three per account per business day because a policy outranks a job aid.\",\"citations\":[\"POL-ODR-01@v2/s3/c2\",\"JA-ODR-01@v4/s1/c1\"],\"sources_disagree\":true}]}",
+   "problems": [
+    "q-C-12: the answer states a value no cited clause holds"
+   ],
+   "meta": {
+    "ms": 4246,
+    "input_tokens": 916,
+    "output_tokens": 215,
+    "cost_usd": 0.01991,
+    "usage": {
+     "prompt_tokens": 916,
+     "completion_tokens": 215,
+     "total_tokens": 1131,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 98,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+     }
+    },
+    "models": [
+     "gpt-6-astra"
+    ],
+    "stop_reason": "stop"
+   },
+   "items": [
+    "q-C-12"
+   ]
+  }
+ ],
+ "held": {
+  "q-C-12": [
+   "the answer states a value no cited clause holds"
+  ]
+ },
+ "recorded_at": "2026-10-30T17:21:04+00:00"
+}

@@ -1,0 +1,60 @@
+{
+ "note": "The risk score that ranks findings. risk = category weight x (topic severity + customer weight when the topic faces customers + breadth weight x breadth). Breadth is the share of the bank's four states and three business lines the finding reaches and runs from 0 to 1. Every weight is editable on the page, and the ranking updates as it changes.",
+ "category": {
+  "conflict": 3,
+  "superseded": 2,
+  "duplicate": 1
+ },
+ "customer_weight": 1,
+ "breadth_weight": 2,
+ "topics": {
+  "acct_open": {
+   "severity": 3,
+   "customer": true
+  },
+  "fees": {
+   "severity": 2,
+   "customer": true
+  },
+  "overdraft": {
+   "severity": 2,
+   "customer": true
+  },
+  "wires": {
+   "severity": 3,
+   "customer": true
+  },
+  "cash": {
+   "severity": 3,
+   "customer": false
+  },
+  "holds": {
+   "severity": 3,
+   "customer": true
+  },
+  "disputes": {
+   "severity": 3,
+   "customer": true
+  },
+  "complaints": {
+   "severity": 2,
+   "customer": true
+  },
+  "dormant": {
+   "severity": 1,
+   "customer": true
+  },
+  "records": {
+   "severity": 2,
+   "customer": false
+  },
+  "branch_ops": {
+   "severity": 2,
+   "customer": false
+  },
+  "lending": {
+   "severity": 2,
+   "customer": true
+  }
+ }
+}

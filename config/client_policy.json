@@ -1,0 +1,19 @@
+{
+ "note": "The vendors the client approves for model calls. Routing chooses only among these, and the page's control shows what a narrower list costs. Holds keep a step on a model the engineer chose after reading its output.",
+ "approved_vendors": [
+  "Anthropic",
+  "OpenAI",
+  "Google"
+ ],
+ "holds": {
+  "draft": "claude-opus",
+  "extract": "claude-sonnet"
+ },
+ "use_routes": true,
+ "use_routes_note": "On since 10/30 after the comparison, the judge's read of every model's drafts, and the engineer's hold on the drafter. Every step now runs on its routed model for the approved vendors, and turning it off returns each step to its model in config/models.json. The recordings for those models stay.",
+ "hold_reasons": {
+  "draft": "The specialist read and approved Opus's 34 demo drafts, and neither the gate nor the judge can tell how a draft reads.",
+  "extract": "The engineer held extraction on Sonnet after GPT-6 Luna read rules into the demo's clauses that don't state them, and that hold stayed when the 180-clause comparison favored Gemini 3.8 Flash. Sonnet carries the held-out scores and the approved demo, and its two misses there were ambiguous clauses it read exactly in its scored run."
+ },
+ "holds_note": "Holds keep a step on the model the engineer chose after reading its output, and hold_reasons gives each reason. Drafting held on Claude Opus on 10/30. Extraction held on Claude Sonnet the same day after the routed live review, and the hold was kept after every model was measured on all 180 extraction clauses."
+}

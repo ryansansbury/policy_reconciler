@@ -1,0 +1,167 @@
+{
+ "step": "extract",
+ "tag": "evals-6101",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "dcc761e46c6ec579c01b9dfd540df3c2fa4bba3b6b5ec777aa2cf9c9c62aa411",
+ "input": [
+  {
+   "clause": "POL-AOP-02@v3/s3/c1",
+   "text": "Only a manager can approve an exception to the identification requirements.",
+   "heading": "Policy statements",
+   "document": {
+    "title": "Customer Identification Policy",
+    "type": "policy",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "POL-AOP-02@v3/s4/c1",
+   "text": "Do not open an account until you have verified two forms of identification for each signer, or one form plus a verified bank reference when the branch manager approves.",
+   "heading": "Additional requirements",
+   "document": {
+    "title": "Customer Identification Policy",
+    "type": "policy",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "POL-CSH-01@v4/s4/c3",
+   "text": "Consumer debit cards can withdraw up to $800 a day at ATMs.",
+   "heading": "Additional requirements",
+   "document": {
+    "title": "Cash Handling Policy",
+    "type": "policy",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "POL-CSH-01@v4/s4/c4",
+   "text": "The daily ATM withdrawal limit for consumer debit cards is $800.",
+   "heading": "Additional requirements",
+   "document": {
+    "title": "Cash Handling Policy",
+    "type": "policy",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "POL-DSP-01@v5/s4/c1",
+   "text": "Customers have 60 days from the statement date to dispute a debit card transaction, or longer when the customer was traveling or hospitalized.",
+   "heading": "Additional requirements",
+   "document": {
+    "title": "Debit Card Dispute Policy",
+    "type": "policy",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "POL-DSP-01@v5/s4/c3",
+   "text": "Replacement debit cards arrive within 7 business days of the request.",
+   "heading": "Additional requirements",
+   "document": {
+    "title": "Debit Card Dispute Policy",
+    "type": "policy",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "POL-FEE-01@v3/s3/c1",
+   "text": "A personal banker can waive no more than $25 for one account in a calendar year, or up to $50 with branch manager approval noted in the account.",
+   "heading": "Policy statements",
+   "document": {
+    "title": "Service Fee Waiver Policy",
+    "type": "policy",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "POL-HLD-01@v3/s4/c3",
+   "text": "Never destroy a record that is under a legal hold.",
+   "heading": "Additional requirements",
+   "document": {
+    "title": "Funds Availability Policy",
+    "type": "policy",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "POL-ODR-01@v2/s3/c1",
+   "text": "Each item paid into overdraft is charged $30.",
+   "heading": "Policy statements",
+   "document": {
+    "title": "Overdraft Policy",
+    "type": "policy",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "POL-ODR-01@v2/s4/c2",
+   "text": "No overdraft fee is charged when the account is overdrawn by $10 or less at the end of the day.",
+   "heading": "Additional requirements",
+   "document": {
+    "title": "Overdraft Policy",
+    "type": "policy",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  }
+ ],
+ "input_hash": "243a7379237e7f13dbf8df73370a3c3b1f154483a8691f0a1d401bd195cb40d9",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\":[{\"clause\":\"POL-AOP-02@v3/s3/c1\",\"atoms\":[{\"attribute\":\"ao_exception_approver\",\"value\":{\"type\":\"role\",\"role\":null,\"generic\":\"a manager\"},\"quote\":\"a manager\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]},{\"clause\":\"POL-AOP-02@v3/s4/c1\",\"atoms\":[{\"attribute\":\"ao_id_count\",\"value\":{\"type\":\"count\",\"n\":2},\"quote\":\"two\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":\"or one form plus a verified bank reference when the branch manager approves\"}]},{\"clause\":\"POL-CSH-01@v4/s4/c3\",\"atoms\":[{\"attribute\":\"atm_daily_limit\",\"value\":{\"type\":\"money\",\"dollars\":800},\"quote\":\"$800\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":\"Consumer debit cards\",\"condition\":null}]},{\"clause\":\"POL-CSH-01@v4/s4/c4\",\"atoms\":[{\"attribute\":\"atm_daily_limit\",\"value\":{\"type\":\"money\",\"dollars\":800},\"quote\":\"$800\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":\"for consumer debit cards\",\"condition\":null}]},{\"clause\":\"POL-DSP-01@v5/s4/c1\",\"atoms\":[{\"attribute\":\"dispute_window\",\"value\":{\"type\":\"duration\",\"n\":60,\"unit\":\"days\"},\"quote\":\"60 days\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":\"or longer when the customer was traveling or hospitalized\"}]},{\"clause\":\"POL-DSP-01@v5/s4/c3\",\"atoms\":[{\"attribute\":\"card_replacement\",\"value\":{\"type\":\"duration\",\"n\":7,\"unit\":\"business_days\"},\"quote\":\"7 business days\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]},{\"clause\":\"POL-FEE-01@v3/s3/c1\",\"atoms\":[{\"attribute\":\"fee_waiver_pb\",\"value\":{\"type\":\"money\",\"dollars\":25},\"quote\":\"$25\",\"actor\":\"personal_banker\",\"actor_inferred\":false,\"scope_quote\":null,\"condition\":\"or up to $50 with branch manager approval noted in the account\"}]},{\"clause\":\"POL-HLD-01@v3/s4/c3\",\"atoms\":[{\"attribute\":\"legal_hold\",\"value\":{\"type\":\"modal\",\"modal\":\"must_not\"},\"quote\":\"Never destroy\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]},{\"clause\":\"POL-ODR-01@v2/s3/c1\",\"atoms\":[{\"attribute\":\"od_fee\",\"value\":{\"type\":\"money\",\"dollars\":30},\"quote\":\"$30\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]},{\"clause\":\"POL-ODR-01@v2/s4/c2\",\"atoms\":[{\"attribute\":\"od_de_minimis\",\"value\":{\"type\":\"money\",\"dollars\":10},\"quote\":\"$10\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]}]}",
+   "problems": [],
+   "meta": {
+    "ms": 11466,
+    "api_ms": 11251,
+    "input_tokens": 8948,
+    "output_tokens": 1973,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 6264,
+     "cache_read_input_tokens": 2682,
+     "output_tokens": 1973,
+     "output_tokens_details": {
+      "thinking_tokens": 871
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 6264,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 1973,
+       "cache_read_input_tokens": 2682,
+       "cache_creation_input_tokens": 6264,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 6264
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.04505819999999999,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T04:13:21+00:00"
+}

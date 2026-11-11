@@ -1,0 +1,273 @@
+{
+ "step": "classify",
+ "tag": "evals-11",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "1346938ac1ecbf43874a700ab9916c851d6a29bb5d6b9e5f1199128bc8cd59f2",
+ "input": [
+  {
+   "pair": "pair-d7a066c2bb",
+   "rule": "Records destruction approver",
+   "attribute": "records_destroy_role",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "JA-REC-01@v3/s1/c2",
+    "text": "Approver for records destruction | records custodian",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Records Retention Schedule Card",
+     "type": "job_aid",
+     "version": 3,
+     "effective": "2026-01-25",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "JA-REC-01@v2/s1/c2",
+    "text": "Approver for records destruction | branch manager",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Records Retention Schedule Card",
+     "type": "job_aid",
+     "version": 2,
+     "effective": "2025-04-03",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-16523a5522",
+   "rule": "Fee waivers per account per year",
+   "attribute": "fee_waivers_per_year",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "JA-FEE-03@v3/s1/c3",
+    "text": "Fee waivers per account per year | two",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Waiver Authority Card",
+     "type": "job_aid",
+     "version": 3,
+     "effective": "2026-03-04",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "JA-FEE-03@v2/s1/c3",
+    "text": "Fee waivers per account per year | three",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Waiver Authority Card",
+     "type": "job_aid",
+     "version": 2,
+     "effective": "2024-09-14",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-47632896a3",
+   "rule": "Complaint resolution deadline",
+   "attribute": "complaint_resolve",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-CMP-03@v4/s3/c6",
+    "text": "Complaints should be closed within 15 business days of the day they arrive.",
+    "heading": "Steps",
+    "document": {
+     "title": "Resolving and Closing a Complaint",
+     "type": "procedure",
+     "version": 4,
+     "effective": "2026-01-23",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "PRO-CMP-03@v3/s3/c6",
+    "text": "Complaints should be closed within 10 business days of the day they arrive.",
+    "heading": "Steps",
+    "document": {
+     "title": "Resolving and Closing a Complaint",
+     "type": "procedure",
+     "version": 3,
+     "effective": "2024-08-13",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-e8a6cfc463",
+   "rule": "Complaint acknowledgment deadline",
+   "attribute": "complaint_ack",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-CMP-02@v2/s3/c1",
+    "text": "Send the customer an acknowledgment no later than 2 days after a written complaint arrives.",
+    "heading": "Steps",
+    "document": {
+     "title": "Acknowledging a Written Complaint",
+     "type": "procedure",
+     "version": 2,
+     "effective": "2026-03-24",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "PRO-CMP-02@v1/s3/c1",
+    "text": "Send the customer an acknowledgment no later than 3 business days after a written complaint arrives.",
+    "heading": "Steps",
+    "document": {
+     "title": "Acknowledging a Written Complaint",
+     "type": "procedure",
+     "version": 1,
+     "effective": "2025-04-13",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-52ee91253d",
+   "rule": "Complaint acknowledgment deadline",
+   "attribute": "complaint_ack",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-CMP-01@v2/s3/c6",
+    "text": "Send the customer an acknowledgment no later than 2 business days after a written complaint arrives.",
+    "heading": "Steps",
+    "document": {
+     "title": "Logging a Customer Complaint",
+     "type": "procedure",
+     "version": 2,
+     "effective": "2025-06-28",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "PRO-CMP-01@v1/s3/c6",
+    "text": "Send the customer an acknowledgment no later than 1 business day after a written complaint arrives.",
+    "heading": "Steps",
+    "document": {
+     "title": "Logging a Customer Complaint",
+     "type": "procedure",
+     "version": 1,
+     "effective": "2024-04-23",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-ae43b3702a",
+   "rule": "Dual control for the vault",
+   "attribute": "cash_vault_dual",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-CSH-06@v4/s3/c7",
+    "text": "Two employees must be present whenever the vault is opened.",
+    "heading": "Steps",
+    "document": {
+     "title": "Ordering Cash Shipments",
+     "type": "procedure",
+     "version": 4,
+     "effective": "2026-04-08",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "PRO-CSH-06@v3/s3/c7",
+    "text": "When no second employee is on site, one employee may open the vault alone.",
+    "heading": "Steps",
+    "document": {
+     "title": "Ordering Cash Shipments",
+     "type": "procedure",
+     "version": 3,
+     "effective": "2025-08-19",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-b097212bdf",
+   "rule": "Approver for identification exceptions",
+   "attribute": "ao_exception_approver",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-AOP-06@v4/s3/c8",
+    "text": "Any exception to the identification requirements must be approved by a manager.",
+    "heading": "Steps",
+    "document": {
+     "title": "Handling Identification Exceptions",
+     "type": "procedure",
+     "version": 4,
+     "effective": "2025-04-25",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "PRO-AOP-06@v3/s3/c8",
+    "text": "Any exception to the identification requirements must be approved by the regional manager.",
+    "heading": "Steps",
+    "document": {
+     "title": "Handling Identification Exceptions",
+     "type": "procedure",
+     "version": 3,
+     "effective": "2023-11-06",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-8755de59ea",
+   "rule": "Documenting pricing exceptions",
+   "attribute": "lend_exception_doc",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "BUL-LND-01@v2/s1/c2",
+    "text": "Every pricing exception must be documented in the loan file with the reason and the approver.",
+    "heading": "What branches need to know",
+    "document": {
+     "title": "Branch Bulletin 2025-33: Documenting pricing exceptions",
+     "type": "bulletin",
+     "version": 2,
+     "effective": "2026-01-21",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "BUL-LND-01@v1/s1/c2",
+    "text": "Document pricing exceptions in the loan file when time allows.",
+    "heading": "What branches need to know",
+    "document": {
+     "title": "Branch Bulletin 2025-33: Documenting pricing exceptions",
+     "type": "bulletin",
+     "version": 1,
+     "effective": "2024-10-15",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  }
+ ],
+ "input_hash": "9d72b51c0809bef40c12aaed0cc30c4c217abed118f05802c5c766fa222a5870",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\":[{\"pair\":\"pair-d7a066c2bb\",\"label\":\"superseded\",\"quote_a\":\"records custodian\",\"quote_b\":\"branch manager\",\"rationale\":\"These are version 3 and version 2 of the same Records Retention Schedule Card. Version 3 names the records custodian as approver and replaces the branch manager named in version 2.\"},{\"pair\":\"pair-16523a5522\",\"label\":\"superseded\",\"quote_a\":\"two\",\"quote_b\":\"three\",\"rationale\":\"These are version 3 and version 2 of the same Waiver Authority Card. The newer version allows two waivers per account per year and replaces the three in version 2.\"},{\"pair\":\"pair-47632896a3\",\"label\":\"superseded\",\"quote_a\":\"within 15 business days\",\"quote_b\":\"within 10 business days\",\"rationale\":\"These are version 4 and version 3 of the same procedure. The newer version sets 15 business days and replaces the 10 business days in version 3.\"},{\"pair\":\"pair-e8a6cfc463\",\"label\":\"superseded\",\"quote_a\":\"no later than 2 days after\",\"quote_b\":\"no later than 3 business days after\",\"rationale\":\"These are version 2 and version 1 of the same procedure. The newer version sets 2 days and replaces the 3 business days in version 1, which also changes the unit.\"},{\"pair\":\"pair-52ee91253d\",\"label\":\"superseded\",\"quote_a\":\"no later than 2 business days after\",\"quote_b\":\"no later than 1 business day after\",\"rationale\":\"These are version 2 and version 1 of the same Logging a Customer Complaint procedure. The newer version allows 2 business days and replaces the 1 business day in version 1.\"},{\"pair\":\"pair-ae43b3702a\",\"label\":\"superseded\",\"quote_a\":\"Two employees must be present whenever the vault is opened.\",\"quote_b\":\"one employee may open the vault alone\",\"rationale\":\"These are version 4 and version 3 of the same procedure. The newer version requires two employees at every opening and removes the lone employee exception in version 3.\"},{\"pair\":\"pair-b097212bdf\",\"label\":\"superseded\",\"quote_a\":\"must be approved by a manager\",\"quote_b\":\"must be approved by the regional manager\",\"rationale\":\"These are version 4 and version 3 of the same procedure. The newer version lets a manager approve and replaces the regional manager requirement in version 3.\"},{\"pair\":\"pair-8755de59ea\",\"label\":\"superseded\",\"quote_a\":\"Every pricing exception must be documented in the loan file with the reason and the approver.\",\"quote_b\":\"Document pricing exceptions in the loan file when time allows.\",\"rationale\":\"These are version 2 and version 1 of the same bulletin. The newer version makes documentation mandatory with the reason and approver and replaces the optional wording in version 1.\"}]}",
+   "problems": [],
+   "meta": {
+    "ms": 10178,
+    "api_ms": 9944,
+    "input_tokens": 2,
+    "output_tokens": 1283,
+    "cost_usd": 0.04531690000000001,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T03:26:25+00:00"
+}

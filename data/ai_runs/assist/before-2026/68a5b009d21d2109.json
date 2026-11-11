@@ -1,0 +1,114 @@
+{
+ "step": "assist",
+ "tag": "before-2026",
+ "model": "claude-haiku",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "haiku",
+  "client_context": true
+ },
+ "prompt_hash": "66c01f0da9f327e74355d39363e55b642a1bbf8dc6249974c3afbf3cb3d6ccd5",
+ "input": [
+  {
+   "question": "q-C-12",
+   "text": "Who can approve an exception to the identification requirements?",
+   "type": "role",
+   "clauses": [
+    {
+     "id": "FAQ-AOP-02@v2/s2/c1",
+     "text": "Only the regional manager can approve an exception to the identification requirements.",
+     "title": "Identification Questions from the Branches",
+     "type": "faq",
+     "version": 2,
+     "effective": "2025-12-11"
+    },
+    {
+     "id": "POL-AOP-01@v2/s3/c1",
+     "text": "Only the branch manager can approve an exception to the identification requirements.",
+     "title": "Deposit Account Opening Policy",
+     "type": "policy",
+     "version": 2,
+     "effective": "2025-04-05"
+    },
+    {
+     "id": "BUL-AOP-01@v4/s1/c2",
+     "text": "Any exception to the identification requirements must be approved by a manager.",
+     "title": "Branch Bulletin 2025-30: Approver for identification exceptions",
+     "type": "bulletin",
+     "version": 4,
+     "effective": "2025-07-03"
+    },
+    {
+     "id": "FAQ-AOP-01@v4/s3/c1",
+     "text": "Any exception to the identification requirements must be approved by the branch manager.",
+     "title": "Account Opening FAQ",
+     "type": "faq",
+     "version": 4,
+     "effective": "2026-05-05"
+    },
+    {
+     "id": "POL-LND-01@v4/s4/c2",
+     "text": "A regional manager can approve a rate exception as large as 0.50%.",
+     "title": "Loan Pricing Exception Policy",
+     "type": "policy",
+     "version": 4,
+     "effective": "2025-06-19"
+    }
+   ]
+  }
+ ],
+ "input_hash": "a52d1fb42e803460a4b95150d1d1299a990d2d4a85f79c8253f815da3cd5c294",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [{\"question\": \"q-C-12\", \"answer\": \"The sources disagree. The Deposit Account Opening Policy says only the branch manager can approve an exception to the identification requirements, and the Account Opening FAQ agrees, but the Identification Questions from the Branches FAQ says only the regional manager can. The policy outranks the FAQ, so the branch manager is the approver to follow.\", \"citations\": [\"POL-AOP-01@v2/s3/c1\", \"FAQ-AOP-01@v4/s3/c1\", \"FAQ-AOP-02@v2/s2/c1\"], \"sources_disagree\": true}]}",
+   "problems": [],
+   "meta": {
+    "ms": 4928,
+    "api_ms": 4785,
+    "input_tokens": 6147,
+    "output_tokens": 988,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 5527,
+     "cache_read_input_tokens": 618,
+     "output_tokens": 988,
+     "output_tokens_details": {
+      "thinking_tokens": 777
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 5527,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 988,
+       "cache_read_input_tokens": 618,
+       "cache_creation_input_tokens": 5527,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 5527
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.0016057800000000002,
+    "models": [
+     "claude-haiku-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T21:27:11+00:00"
+}

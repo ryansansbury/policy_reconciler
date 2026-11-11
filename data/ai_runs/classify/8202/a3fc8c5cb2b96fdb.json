@@ -1,0 +1,315 @@
+{
+ "step": "classify",
+ "tag": "8202",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "2c908358fde9f0f4a792753579a6cfaa33476e41c4b0f235744675d8e8283a19",
+ "input": [
+  {
+   "pair": "pair-cc9300e3fa",
+   "rule": "Forms of identification per signer",
+   "attribute": "ao_id_count",
+   "reason": "One side carries a condition that may change the rule.",
+   "a": {
+    "clause": "POL-AOP-01@v5/s3/c1",
+    "text": "Collect two forms of identification from each signer before opening the account, or one form plus a verified bank reference when the branch manager approves.",
+    "heading": "Policy statements",
+    "document": {
+     "title": "Deposit Account Opening Policy",
+     "type": "policy",
+     "version": 5,
+     "effective": "2025-05-19",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "PRO-AOP-02@v4/s3/c6",
+    "text": "Do not open an account until you have verified three forms of identification for each signer.",
+    "heading": "Steps",
+    "document": {
+     "title": "Opening a Savings Account",
+     "type": "procedure",
+     "version": 4,
+     "effective": "2025-10-07",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "kind": "condition"
+  },
+  {
+   "pair": "pair-1d25030b18",
+   "rule": "Forms of identification per signer",
+   "attribute": "ao_id_count",
+   "reason": "One side carries a condition that may change the rule.",
+   "a": {
+    "clause": "POL-AOP-01@v5/s3/c1",
+    "text": "Collect two forms of identification from each signer before opening the account, or one form plus a verified bank reference when the branch manager approves.",
+    "heading": "Policy statements",
+    "document": {
+     "title": "Deposit Account Opening Policy",
+     "type": "policy",
+     "version": 5,
+     "effective": "2025-05-19",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "PRO-AOP-03@v2/s3/c5",
+    "text": "Collect three forms of identification from each signer before opening the account.",
+    "heading": "Steps",
+    "document": {
+     "title": "Opening a Small Business Account",
+     "type": "procedure",
+     "version": 2,
+     "effective": "2024-12-26",
+     "applies_to": "All branches. Small business accounts."
+    }
+   },
+   "kind": "condition"
+  },
+  {
+   "pair": "pair-3ff33bb130",
+   "rule": "Complaint resolution deadline",
+   "attribute": "complaint_resolve",
+   "reason": "One side carries a condition that may change the rule.",
+   "a": {
+    "clause": "POL-CMP-01@v3/s3/c1",
+    "text": "Resolve complaints within 15 business days of receipt, or tell the customer when to expect a resolution.",
+    "heading": "Policy statements",
+    "document": {
+     "title": "Complaint Management Policy",
+     "type": "policy",
+     "version": 3,
+     "effective": "2025-08-01",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "PRO-CMP-05@v4/s3/c9",
+    "text": "Complaints should be closed within 10 business days of the day they arrive.",
+    "heading": "Steps",
+    "document": {
+     "title": "Reviewing Complaint Trends Each Quarter",
+     "type": "procedure",
+     "version": 4,
+     "effective": "2025-01-18",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "kind": "condition"
+  },
+  {
+   "pair": "pair-fb9dd9aa56",
+   "rule": "Complaint resolution deadline",
+   "attribute": "complaint_resolve",
+   "reason": "One side carries a condition that may change the rule.",
+   "a": {
+    "clause": "POL-CMP-01@v3/s3/c1",
+    "text": "Resolve complaints within 15 business days of receipt, or tell the customer when to expect a resolution.",
+    "heading": "Policy statements",
+    "document": {
+     "title": "Complaint Management Policy",
+     "type": "policy",
+     "version": 3,
+     "effective": "2025-08-01",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "BUL-CMP-01@v3/s1/c2",
+    "text": "Complaints should be closed within 30 business days of the day they arrive.",
+    "heading": "What branches need to know",
+    "document": {
+     "title": "Branch Bulletin 2025-04: Complaint resolution deadline",
+     "type": "bulletin",
+     "version": 3,
+     "effective": "2026-06-11",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "kind": "condition"
+  },
+  {
+   "pair": "pair-6a2ff3dda6",
+   "rule": "New account check hold",
+   "attribute": "hold_new_account",
+   "reason": "One side carries a condition that may change the rule.",
+   "a": {
+    "clause": "POL-HLD-01@v4/s4/c2",
+    "text": "New accounts can have check holds of as long as 7 business days, or up to 9 business days for deposits above the large deposit threshold.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Funds Availability Policy",
+     "type": "policy",
+     "version": 4,
+     "effective": "2025-02-20",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "PRO-HLD-03@v1/s3/c1",
+    "text": "New accounts can have check holds of as long as 5 business days.",
+    "heading": "Steps",
+    "document": {
+     "title": "Holds on New Accounts",
+     "type": "procedure",
+     "version": 1,
+     "effective": "2026-02-07",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "kind": "condition"
+  },
+  {
+   "pair": "pair-7d4c267cf8",
+   "rule": "New account check hold",
+   "attribute": "hold_new_account",
+   "reason": "One side carries a condition that may change the rule.",
+   "a": {
+    "clause": "POL-HLD-01@v4/s4/c2",
+    "text": "New accounts can have check holds of as long as 7 business days, or up to 9 business days for deposits above the large deposit threshold.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Funds Availability Policy",
+     "type": "policy",
+     "version": 4,
+     "effective": "2025-02-20",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "BUL-HLD-02@v1/s1/c2",
+    "text": "New accounts can have check holds of as long as 9 business days.",
+    "heading": "What branches need to know",
+    "document": {
+     "title": "Branch Bulletin 2026-04: Longest check hold on a new account",
+     "type": "bulletin",
+     "version": 1,
+     "effective": "2025-11-05",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "kind": "condition"
+  },
+  {
+   "pair": "pair-75191860d0",
+   "rule": "Wire callback threshold",
+   "attribute": "wire_callback",
+   "reason": "One side carries a condition that may change the rule.",
+   "a": {
+    "clause": "POL-WIR-01@v6/s4/c3",
+    "text": "Call the customer back at a phone number already on file before releasing any outgoing wire of $10,000 or more, unless the wire goes to an account the customer has used in the past year.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Wire Transfer Policy",
+     "type": "policy",
+     "version": 6,
+     "effective": "2026-06-27",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "PRO-WIR-03@v2/s3/c6",
+    "text": "Call the customer back at a phone number already on file before releasing any outgoing wire of $25,000 or more.",
+    "heading": "Steps",
+    "document": {
+     "title": "Completing Wire Callback Verification",
+     "type": "procedure",
+     "version": 2,
+     "effective": "2025-06-01",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "kind": "condition"
+  },
+  {
+   "pair": "pair-1ac0f25d21",
+   "rule": "Wire callback threshold",
+   "attribute": "wire_callback",
+   "reason": "One side carries a condition that may change the rule.",
+   "a": {
+    "clause": "POL-WIR-01@v6/s4/c3",
+    "text": "Call the customer back at a phone number already on file before releasing any outgoing wire of $10,000 or more, unless the wire goes to an account the customer has used in the past year.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Wire Transfer Policy",
+     "type": "policy",
+     "version": 6,
+     "effective": "2026-06-27",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "JA-WIR-03@v1/s1/c1",
+    "text": "Callback threshold for outgoing wires | $5,000",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Wire Cutoff Card",
+     "type": "job_aid",
+     "version": 1,
+     "effective": "2025-10-10",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "kind": "condition"
+  }
+ ],
+ "input_hash": "c5551a919fe5d74684e0dd6f46e004634a19f7a55bab681fee240ed503d0b9b2",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [{\"pair\": \"pair-cc9300e3fa\", \"label\": \"conflict\", \"quote_a\": \"Collect two forms of identification from each signer before opening the account\", \"quote_b\": \"Do not open an account until you have verified three forms of identification for each signer.\", \"rationale\": \"Both clauses cover consumer and small business accounts at all branches but require two forms and three forms. Staff following the policy would open accounts the procedure forbids, so the policy clause should be kept.\"}, {\"pair\": \"pair-1d25030b18\", \"label\": \"variation\", \"quote_a\": \"Collect two forms of identification from each signer before opening the account\", \"quote_b\": \"Collect three forms of identification from each signer before opening the account.\", \"rationale\": \"The procedure is written only for small business accounts and sets a stricter count of three forms on purpose. The policy's two forms still applies to consumer accounts.\"}, {\"pair\": \"pair-3ff33bb130\", \"label\": \"conflict\", \"quote_a\": \"Resolve complaints within 15 business days of receipt\", \"quote_b\": \"Complaints should be closed within 10 business days of the day they arrive.\", \"rationale\": \"Both apply to all branches and business lines but set 15 business days and 10 business days. Staff who use the full 15 days under the policy would miss the procedure's deadline, and the policy clause outranks the procedure.\"}, {\"pair\": \"pair-fb9dd9aa56\", \"label\": \"conflict\", \"quote_a\": \"Resolve complaints within 15 business days of receipt\", \"quote_b\": \"Complaints should be closed within 30 business days of the day they arrive.\", \"rationale\": \"Both apply to all branches and business lines but set 15 business days and 30 business days. The bulletin lets staff take twice as long as the policy allows, and the policy outranks the bulletin.\"}, {\"pair\": \"pair-6a2ff3dda6\", \"label\": \"conflict\", \"quote_a\": \"New accounts can have check holds of as long as 7 business days\", \"quote_b\": \"New accounts can have check holds of as long as 5 business days.\", \"rationale\": \"Both cover the same accounts and branches but cap the hold at 7 business days and 5 business days. Staff applying the policy could hold a check longer than the procedure permits, and the policy clause outranks the procedure.\"}, {\"pair\": \"pair-7d4c267cf8\", \"label\": \"conflict\", \"quote_a\": \"New accounts can have check holds of as long as 7 business days\", \"quote_b\": \"New accounts can have check holds of as long as 9 business days.\", \"rationale\": \"The bulletin allows 9 business days for every new account while the policy allows 9 only above the large deposit threshold and 7 otherwise. Staff following the bulletin would hold smaller deposits longer than the policy permits, and the policy outranks the bulletin.\"}, {\"pair\": \"pair-75191860d0\", \"label\": \"conflict\", \"quote_a\": \"before releasing any outgoing wire of $10,000 or more\", \"quote_b\": \"before releasing any outgoing wire of $25,000 or more\", \"rationale\": \"The thresholds are $10,000 and $25,000 for the same callback at all branches. Staff following the procedure would skip callbacks the policy requires on wires below $25,000, and the policy's exception for recently used accounts does not remove that gap.\"}, {\"pair\": \"pair-1ac0f25d21\", \"label\": \"conflict\", \"quote_a\": \"before releasing any outgoing wire of $10,000 or more\", \"quote_b\": \"Callback threshold for outgoing wires | $5,000\", \"rationale\": \"The policy sets the callback threshold at $10,000 and the job aid sets it at $5,000 for the same wires at all branches. Staff using the card would call back on wires the policy does not require, and the policy outranks the job aid.\"}]}",
+   "problems": [],
+   "meta": {
+    "ms": 17555,
+    "api_ms": 17394,
+    "input_tokens": 9103,
+    "output_tokens": 2744,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 8260,
+     "cache_read_input_tokens": 841,
+     "output_tokens": 2744,
+     "output_tokens_details": {
+      "thinking_tokens": 1499
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 8260,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 2744,
+       "cache_read_input_tokens": 841,
+       "cache_creation_input_tokens": 8260,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 8260
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.0605681,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T05:41:51+00:00"
+}

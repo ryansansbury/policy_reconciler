@@ -1,0 +1,167 @@
+{
+ "step": "extract",
+ "tag": "evals-11",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "dcc761e46c6ec579c01b9dfd540df3c2fa4bba3b6b5ec777aa2cf9c9c62aa411",
+ "input": [
+  {
+   "clause": "BUL-HLD-01@v4/s1/c2",
+   "text": "Place a standard hold of 1 business day on deposited checks that don't qualify for next-day availability.",
+   "heading": "What branches need to know",
+   "document": {
+    "title": "Branch Bulletin 2025-14: Standard check hold",
+    "type": "bulletin",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "BUL-HLD-02@v4/s1/c2",
+   "text": "An extended hold may be placed on the part of a day's check deposits above $5,000.",
+   "heading": "What branches need to know",
+   "document": {
+    "title": "Branch Bulletin 2026-14: Large deposit threshold for extended holds",
+    "type": "bulletin",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "BUL-LND-01@v1/s1/c2",
+   "text": "Document pricing exceptions in the loan file when time allows.",
+   "heading": "What branches need to know",
+   "document": {
+    "title": "Branch Bulletin 2025-33: Documenting pricing exceptions",
+    "type": "bulletin",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "BUL-ODR-02@v3/s2/c1",
+   "text": "No more than three overdraft fees are charged to an account in one business day.",
+   "heading": "Steps to follow",
+   "document": {
+    "title": "Branch Bulletin 2026-35: Overdraft fees per account per day",
+    "type": "bulletin",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "BUL-ODR-02@v3/s2/c2",
+   "text": "Accounts overdrawn by no more than $10 at the end of the day are not charged an overdraft fee.",
+   "heading": "Steps to follow",
+   "document": {
+    "title": "Branch Bulletin 2026-35: Overdraft fees per account per day",
+    "type": "bulletin",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "BUL-ODR-02@v3/s2/c3",
+   "text": "Refer an account for charge-off once it has been negative for 45 days.",
+   "heading": "Steps to follow",
+   "document": {
+    "title": "Branch Bulletin 2026-35: Overdraft fees per account per day",
+    "type": "bulletin",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "BUL-ODR-02@v3/s2/c4",
+   "text": "Each item paid into overdraft is charged $30.",
+   "heading": "Steps to follow",
+   "document": {
+    "title": "Branch Bulletin 2026-35: Overdraft fees per account per day",
+    "type": "bulletin",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "BUL-ODR-02@v3/s2/c5",
+   "text": "Withdrawals at ATMs outside the network are charged $3 each.",
+   "heading": "Steps to follow",
+   "document": {
+    "title": "Branch Bulletin 2026-35: Overdraft fees per account per day",
+    "type": "bulletin",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "BUL-REC-01@v1/s1/c2",
+   "text": "A manager must approve the destruction of any records in writing.",
+   "heading": "What branches need to know",
+   "document": {
+    "title": "Branch Bulletin 2025-04: Approver for records destruction",
+    "type": "bulletin",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "BUL-WIR-01@v2/s1/c2",
+   "text": "Outgoing consumer and small business wire requests received after 4:00 p.m. Central are processed the next business day.",
+   "heading": "What branches need to know",
+   "document": {
+    "title": "Branch Bulletin 2025-14: Outgoing wire cutoff",
+    "type": "bulletin",
+    "applies_to": "All branches. All business lines."
+   }
+  }
+ ],
+ "input_hash": "9d14409e207ed3de3015cfafc7bad9698ac8d05c299678fc52de2781f45d5408",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\":[{\"clause\":\"BUL-HLD-01@v4/s1/c2\",\"atoms\":[{\"attribute\":\"hold_standard\",\"value\":{\"type\":\"duration\",\"n\":1,\"unit\":\"business_days\"},\"quote\":\"1 business day\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":\"that don't qualify for next-day availability\"}]},{\"clause\":\"BUL-HLD-02@v4/s1/c2\",\"atoms\":[{\"attribute\":\"hold_large_threshold\",\"value\":{\"type\":\"money\",\"dollars\":5000},\"quote\":\"$5,000\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]},{\"clause\":\"BUL-LND-01@v1/s1/c2\",\"atoms\":[{\"attribute\":\"lend_exception_doc\",\"value\":{\"type\":\"modal\",\"modal\":\"may\"},\"quote\":\"when time allows\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]},{\"clause\":\"BUL-ODR-02@v3/s2/c1\",\"atoms\":[{\"attribute\":\"od_daily_cap\",\"value\":{\"type\":\"count\",\"n\":3},\"quote\":\"three\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]},{\"clause\":\"BUL-ODR-02@v3/s2/c2\",\"atoms\":[{\"attribute\":\"od_de_minimis\",\"value\":{\"type\":\"money\",\"dollars\":10},\"quote\":\"$10\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]},{\"clause\":\"BUL-ODR-02@v3/s2/c3\",\"atoms\":[{\"attribute\":\"od_chargeoff\",\"value\":{\"type\":\"duration\",\"n\":45,\"unit\":\"days\"},\"quote\":\"45 days\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]},{\"clause\":\"BUL-ODR-02@v3/s2/c4\",\"atoms\":[{\"attribute\":\"od_fee\",\"value\":{\"type\":\"money\",\"dollars\":30},\"quote\":\"$30\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]},{\"clause\":\"BUL-ODR-02@v3/s2/c5\",\"atoms\":[{\"attribute\":\"atm_fee\",\"value\":{\"type\":\"money\",\"dollars\":3},\"quote\":\"$3\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]},{\"clause\":\"BUL-REC-01@v1/s1/c2\",\"atoms\":[{\"attribute\":\"records_destroy_role\",\"value\":{\"type\":\"role\",\"role\":null,\"generic\":\"A manager\"},\"quote\":\"A manager\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]},{\"clause\":\"BUL-WIR-01@v2/s1/c2\",\"atoms\":[{\"attribute\":\"wire_cutoff\",\"value\":{\"type\":\"time\",\"minutes\":960},\"quote\":\"4:00 p.m.\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]}]}",
+   "problems": [],
+   "meta": {
+    "ms": 10216,
+    "api_ms": 10066,
+    "input_tokens": 9086,
+    "output_tokens": 1730,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 6402,
+     "cache_read_input_tokens": 2682,
+     "output_tokens": 1730,
+     "output_tokens_details": {
+      "thinking_tokens": 677
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 6402,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 1730,
+       "cache_read_input_tokens": 2682,
+       "cache_creation_input_tokens": 6402,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 6402
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.0431802,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T03:52:44+00:00"
+}

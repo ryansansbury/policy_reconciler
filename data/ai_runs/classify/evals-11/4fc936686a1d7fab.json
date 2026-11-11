@@ -1,0 +1,298 @@
+{
+ "step": "classify",
+ "tag": "evals-11",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "1346938ac1ecbf43874a700ab9916c851d6a29bb5d6b9e5f1199128bc8cd59f2",
+ "input": [
+  {
+   "pair": "pair-4e775981ce",
+   "rule": "Dispute review threshold",
+   "attribute": "dispute_review_threshold",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-DSP-01@v5/s4/c2",
+    "text": "Send any dispute above $500 to card services for review before issuing credit.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Debit Card Dispute Policy",
+     "type": "policy",
+     "version": 5,
+     "effective": "2025-02-25",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "PRO-DSP-02@v2/s3/c9",
+    "text": "For small business accounts, disputes over $250 are reviewed by a card services specialist before credit is issued.",
+    "heading": "Steps",
+    "document": {
+     "title": "Issuing Provisional Credit",
+     "type": "procedure",
+     "version": 2,
+     "effective": "2026-07-22",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-b2c9395b64",
+   "rule": "Fee waivers per account per year",
+   "attribute": "fee_waivers_per_year",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-FEE-01@v2/s3/c1",
+    "text": "Limit fee waivers to two per account in each calendar year.",
+    "heading": "Policy statements",
+    "document": {
+     "title": "Service Fee Waiver Policy",
+     "type": "policy",
+     "version": 2,
+     "effective": "2024-05-13",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "POL-FEE-02@v2/s3/c2",
+    "text": "For small business accounts, limit fee waivers to one per account in each calendar year.",
+    "heading": "Policy statements",
+    "document": {
+     "title": "Fee Refund Policy",
+     "type": "policy",
+     "version": 2,
+     "effective": "2024-12-18",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-e844bda5fb",
+   "rule": "Branch manager rate exception limit",
+   "attribute": "lend_rate_bm",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-LND-01@v2/s4/c2",
+    "text": "A branch manager can lower a loan rate by no more than 0.25% as an exception.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Loan Pricing Exception Policy",
+     "type": "policy",
+     "version": 2,
+     "effective": "2024-08-27",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "POL-LND-01@v2/s3/c2",
+    "text": "For commercial accounts, A branch manager can lower a loan rate by no more than 0.15% as an exception.",
+    "heading": "Policy statements",
+    "document": {
+     "title": "Loan Pricing Exception Policy",
+     "type": "policy",
+     "version": 2,
+     "effective": "2024-08-27",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-eaca794be6",
+   "rule": "Overdraft fee per item",
+   "attribute": "od_fee",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-ODR-01@v6/s4/c1",
+    "text": "An overdraft fee of $30 applies to each item the bank pays when the balance is not enough to cover it.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Overdraft Policy",
+     "type": "policy",
+     "version": 6,
+     "effective": "2024-07-17",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "PRO-ODR-06@v4/s3/c9",
+    "text": "For small business accounts, each item paid into overdraft is charged $32.",
+    "heading": "Steps",
+    "document": {
+     "title": "Handling Overdraft Fee Disputes",
+     "type": "procedure",
+     "version": 4,
+     "effective": "2025-11-14",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-40934bc593",
+   "rule": "Closed account record retention",
+   "attribute": "records_retention",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-REC-01@v3/s4/c1",
+    "text": "Retain closed account records for 7 years from the closing date.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Records Retention Policy",
+     "type": "policy",
+     "version": 3,
+     "effective": "2026-06-19",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "PRO-REC-02@v1/s4/c2",
+    "text": "For commercial accounts, retain closed account records for 5 years from the closing date.",
+    "heading": "Exceptions and escalation",
+    "document": {
+     "title": "Approving Records Destruction",
+     "type": "procedure",
+     "version": 1,
+     "effective": "2026-03-15",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-c22e495943",
+   "rule": "Outgoing wire cutoff",
+   "attribute": "wire_cutoff",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-WIR-01@v4/s4/c1",
+    "text": "Outgoing consumer and small business wire requests received after 3:00 p.m. Central are processed the next business day.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Wire Transfer Policy",
+     "type": "policy",
+     "version": 4,
+     "effective": "2025-04-29",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "POL-WIR-01@v4/s3/c2",
+    "text": "Outgoing commercial wire requests received after 4:00 PM Central are processed the next business day.",
+    "heading": "Policy statements",
+    "document": {
+     "title": "Wire Transfer Policy",
+     "type": "policy",
+     "version": 4,
+     "effective": "2025-04-29",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-bcae95a49e",
+   "rule": "Forms of identification per signer",
+   "attribute": "ao_id_count",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "FAQ-AOP-02@v4/s1/c1",
+    "text": "Every signer must present two separate identification documents before the account is opened.",
+    "heading": "How many forms of identification does each signer need to open an account?",
+    "document": {
+     "title": "Identification Questions from the Branches",
+     "type": "faq",
+     "version": 4,
+     "effective": "2026-08-27",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "POL-AOP-01@v5/s4/c1",
+    "text": "Every signer must present two separate identification documents before the account is opened, or one form plus a verified bank reference when the branch manager approves.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Deposit Account Opening Policy",
+     "type": "policy",
+     "version": 5,
+     "effective": "2025-02-05",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-e38d5a9c45",
+   "rule": "Standard check hold",
+   "attribute": "hold_standard",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-HLD-01@v2/s4/c2",
+    "text": "Place a standard hold of 2 business days on deposited checks that don't qualify for next-day availability.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Funds Availability Policy",
+     "type": "policy",
+     "version": 2,
+     "effective": "2024-08-19",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "PRO-HLD-02@v2/s3/c2",
+    "text": "Funds from deposited checks are available within 2 days unless a longer hold applies.",
+    "heading": "Steps",
+    "document": {
+     "title": "Extending a Hold on a Large Deposit",
+     "type": "procedure",
+     "version": 2,
+     "effective": "2026-06-01",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  }
+ ],
+ "input_hash": "99430b813d2ad267739617910a526fb66b06852ddacfa90a14abaca02cd08052",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [{\"pair\": \"pair-4e775981ce\", \"label\": \"variation\", \"quote_a\": \"Send any dispute above $500 to card services for review before issuing credit.\", \"quote_b\": \"For small business accounts, disputes over $250 are reviewed by a card services specialist before credit is issued.\", \"rationale\": \"The procedure deliberately sets a lower $250 review threshold for small business accounts, while the policy's $500 threshold is the general rule. The narrower scope is stated on purpose, so this is an intended variation.\"}, {\"pair\": \"pair-b2c9395b64\", \"label\": \"variation\", \"quote_a\": \"Limit fee waivers to two per account in each calendar year.\", \"quote_b\": \"For small business accounts, limit fee waivers to one per account in each calendar year.\", \"rationale\": \"The second policy sets a limit of one waiver for small business accounts only, which is a stated narrower scope. The general limit of two still applies to other accounts.\"}, {\"pair\": \"pair-e844bda5fb\", \"label\": \"variation\", \"quote_a\": \"A branch manager can lower a loan rate by no more than 0.25%\", \"quote_b\": \"For commercial accounts, A branch manager can lower a loan rate by no more than 0.15%\", \"rationale\": \"Both clauses sit in the same policy, and the second one deliberately sets a tighter 0.15% limit for commercial accounts. The 0.25% limit is the general rule for other accounts.\"}, {\"pair\": \"pair-eaca794be6\", \"label\": \"variation\", \"quote_a\": \"An overdraft fee of $30 applies to each item the bank pays when the balance is not enough to cover it.\", \"quote_b\": \"For small business accounts, each item paid into overdraft is charged $32.\", \"rationale\": \"The procedure names small business accounts as its scope and sets a $32 fee, while the policy states the general $30 fee. The narrower scope is stated on purpose, so this is a variation.\"}, {\"pair\": \"pair-40934bc593\", \"label\": \"variation\", \"quote_a\": \"Retain closed account records for 7 years from the closing date.\", \"quote_b\": \"For commercial accounts, retain closed account records for 5 years from the closing date.\", \"rationale\": \"The procedure sets 5 years only for commercial accounts, which is a stated narrower scope, and the policy's 7 years is the general period. This reads as an intended variation.\"}, {\"pair\": \"pair-c22e495943\", \"label\": \"variation\", \"quote_a\": \"Outgoing consumer and small business wire requests received after 3:00 p.m. Central\", \"quote_b\": \"Outgoing commercial wire requests received after 4:00 PM Central\", \"rationale\": \"Each clause names its own customer segment in the same policy, with a 3:00 p.m. cutoff for consumer and small business and a 4:00 PM cutoff for commercial. The scopes do not overlap and the difference is intended.\"}, {\"pair\": \"pair-bcae95a49e\", \"label\": \"conflict\", \"quote_a\": \"Every signer must present two separate identification documents before the account is opened.\", \"quote_b\": \"or one form plus a verified bank reference when the branch manager approves\", \"rationale\": \"Staff following the FAQ would refuse a signer who has one form plus a verified bank reference, which the policy allows with branch manager approval. The policy outranks the FAQ, so the FAQ is the clause to correct.\"}, {\"pair\": \"pair-e38d5a9c45\", \"label\": \"conflict\", \"quote_a\": \"Place a standard hold of 2 business days\", \"quote_b\": \"available within 2 days unless a longer hold applies\", \"rationale\": \"The policy counts 2 business days while the procedure says 2 days, and over a weekend these give different release dates. Staff following one would release funds earlier or later than the other directs. The policy outranks the procedure, so the procedure wording should be corrected.\"}]}",
+   "problems": [
+    "pair-4e775981ce: the rationale has a comma before so",
+    "pair-eaca794be6: the rationale has a comma before so",
+    "pair-bcae95a49e: the rationale has a comma before so",
+    "pair-e38d5a9c45: the rationale has a comma before so"
+   ],
+   "meta": {
+    "ms": 16365,
+    "api_ms": 16093,
+    "input_tokens": 2,
+    "output_tokens": 2405,
+    "cost_usd": 0.05697290000000001,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  },
+  {
+   "reply": "{\"results\": [{\"pair\": \"pair-4e775981ce\", \"label\": \"variation\", \"quote_a\": \"Send any dispute above $500 to card services for review before issuing credit.\", \"quote_b\": \"For small business accounts, disputes over $250 are reviewed by a card services specialist before credit is issued.\", \"rationale\": \"The procedure deliberately sets a lower review threshold of $250 for small business accounts only. The policy's $500 threshold still applies to everyone else.\"}, {\"pair\": \"pair-eaca794be6\", \"label\": \"variation\", \"quote_a\": \"An overdraft fee of $30 applies to each item the bank pays when the balance is not enough to cover it.\", \"quote_b\": \"For small business accounts, each item paid into overdraft is charged $32.\", \"rationale\": \"The procedure states a narrower scope of small business accounts on purpose and sets a $32 fee there. The general $30 fee in the policy remains the rule for other accounts.\"}, {\"pair\": \"pair-bcae95a49e\", \"label\": \"conflict\", \"quote_a\": \"Every signer must present two separate identification documents before the account is opened.\", \"quote_b\": \"or one form plus a verified bank reference when the branch manager approves.\", \"rationale\": \"Staff following the FAQ would refuse a signer who has one form plus a verified bank reference with manager approval, and the policy allows that. The policy outranks the FAQ and should be the clause kept.\"}, {\"pair\": \"pair-e38d5a9c45\", \"label\": \"conflict\", \"quote_a\": \"Place a standard hold of 2 business days on deposited checks\", \"quote_b\": \"Funds from deposited checks are available within 2 days unless a longer hold applies.\", \"rationale\": \"The policy counts 2 business days while the procedure says only 2 days. Over a weekend those end on different dates and staff following the procedure could release funds before the policy hold ends.\"}]}",
+   "problems": [],
+   "meta": {
+    "ms": 11195,
+    "api_ms": 11007,
+    "input_tokens": 2,
+    "output_tokens": 1597,
+    "cost_usd": 0.042848899999999995,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   },
+   "items": [
+    "pair-4e775981ce",
+    "pair-eaca794be6",
+    "pair-bcae95a49e",
+    "pair-e38d5a9c45"
+   ]
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T03:25:48+00:00"
+}

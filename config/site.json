@@ -1,0 +1,10 @@
+{
+ "url": "https://www.ryansansbury.com/policy-reconciler/",
+ "repo": "https://github.com/ryansansbury/policy_reconciler",
+ "branch": "main",
+ "image": "preview.png",
+ "image_width": 1440,
+ "image_height": 756,
+ "image_alt": "Policy Reconciler after a review of a synthetic bank's policy library",
+ "note": "The page's public address and its link preview. The build puts both in the page's head and the address in the README. docs/images/preview.png comes from a screenshot of the built page, and the build copies it next to the page."
+}

@@ -1,0 +1,133 @@
+{
+ "step": "extract",
+ "tag": "evals-11",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "c338e60b657607c5f659b819665f2ec94796d01ec070e1f88f830e5bdacdd3fe",
+ "input": [
+  {
+   "clause": "PRO-CMP-02@v2/s3/c10",
+   "text": "Customer surveys go out within 5 business days of a branch visit.",
+   "heading": "Steps",
+   "document": {
+    "title": "Acknowledging a Written Complaint",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-CMP-03@v3/s3/c6",
+   "text": "Complaints should be closed within 10 business days of the day they arrive.",
+   "heading": "Steps",
+   "document": {
+    "title": "Resolving and Closing a Complaint",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-CMP-03@v4/s3/c8",
+   "text": "Escalate any complaint alleging unfair treatment to the branch manager on the day it is received.",
+   "heading": "Steps",
+   "document": {
+    "title": "Resolving and Closing a Complaint",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-CMP-04@v2/s3/c1",
+   "text": "Complaints should be closed within 10 business days of the day they arrive.",
+   "heading": "Steps",
+   "document": {
+    "title": "Escalating a Sensitive Complaint",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-CMP-04@v2/s3/c10",
+   "text": "For commercial accounts, send the customer an acknowledgment no later than 3 business days after a written complaint arrives.",
+   "heading": "Steps",
+   "document": {
+    "title": "Escalating a Sensitive Complaint",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-CMP-04@v2/s3/c11",
+   "text": "Send the visit survey within 5 business days after the customer's branch visit.",
+   "heading": "Steps",
+   "document": {
+    "title": "Escalating a Sensitive Complaint",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-CMP-04@v2/s3/c8",
+   "text": "Send the customer an acknowledgment no later than 1 business day after a written complaint arrives.",
+   "heading": "Steps",
+   "document": {
+    "title": "Escalating a Sensitive Complaint",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-CMP-05@v1/s3/c2",
+   "text": "Send the visit survey within 5 business days after the customer's branch visit.",
+   "heading": "Steps",
+   "document": {
+    "title": "Reviewing Complaint Trends Each Quarter",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-CMP-05@v1/s3/c7",
+   "text": "Escalate any complaint alleging unfair treatment to management on the day it is received.",
+   "heading": "Steps",
+   "document": {
+    "title": "Reviewing Complaint Trends Each Quarter",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-CSH-01@v1/s3/c10",
+   "text": "The daily ATM withdrawal limit for consumer debit cards is $800.",
+   "heading": "Steps",
+   "document": {
+    "title": "Balancing a Teller Drawer",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  }
+ ],
+ "input_hash": "9733b31da10f126155a584eae5be47a364e402f58177f1f5ba442c0b2d35c7a5",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [\n{\"clause\": \"PRO-CMP-02@v2/s3/c10\", \"atoms\": [{\"attribute\": \"survey_send\", \"value\": {\"type\": \"duration\", \"n\": 5, \"unit\": \"business_days\"}, \"quote\": \"5 business days\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]},\n{\"clause\": \"PRO-CMP-03@v3/s3/c6\", \"atoms\": [{\"attribute\": \"complaint_resolve\", \"value\": {\"type\": \"duration\", \"n\": 10, \"unit\": \"business_days\"}, \"quote\": \"10 business days\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]},\n{\"clause\": \"PRO-CMP-03@v4/s3/c8\", \"atoms\": [{\"attribute\": \"complaint_escalation_role\", \"value\": {\"type\": \"role\", \"role\": \"branch_manager\"}, \"quote\": \"branch manager\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]},\n{\"clause\": \"PRO-CMP-04@v2/s3/c1\", \"atoms\": [{\"attribute\": \"complaint_resolve\", \"value\": {\"type\": \"duration\", \"n\": 10, \"unit\": \"business_days\"}, \"quote\": \"10 business days\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]},\n{\"clause\": \"PRO-CMP-04@v2/s3/c10\", \"atoms\": [{\"attribute\": \"complaint_ack\", \"value\": {\"type\": \"duration\", \"n\": 3, \"unit\": \"business_days\"}, \"quote\": \"3 business days\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": \"For commercial accounts\", \"condition\": null}]},\n{\"clause\": \"PRO-CMP-04@v2/s3/c11\", \"atoms\": [{\"attribute\": \"survey_send\", \"value\": {\"type\": \"duration\", \"n\": 5, \"unit\": \"business_days\"}, \"quote\": \"5 business days\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]},\n{\"clause\": \"PRO-CMP-04@v2/s3/c8\", \"atoms\": [{\"attribute\": \"complaint_ack\", \"value\": {\"type\": \"duration\", \"n\": 1, \"unit\": \"business_days\"}, \"quote\": \"1 business day\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]},\n{\"clause\": \"PRO-CMP-05@v1/s3/c2\", \"atoms\": [{\"attribute\": \"survey_send\", \"value\": {\"type\": \"duration\", \"n\": 5, \"unit\": \"business_days\"}, \"quote\": \"5 business days\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]},\n{\"clause\": \"PRO-CMP-05@v1/s3/c7\", \"atoms\": [{\"attribute\": \"complaint_escalation_role\", \"value\": {\"type\": \"role\", \"role\": null, \"generic\": \"management\"}, \"quote\": \"management\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]},\n{\"clause\": \"PRO-CSH-01@v1/s3/c10\", \"atoms\": [{\"attribute\": \"atm_daily_limit\", \"value\": {\"type\": \"money\", \"dollars\": 800}, \"quote\": \"$800\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": \"for consumer debit cards\", \"condition\": null}]}\n]}",
+   "problems": [],
+   "meta": {
+    "ms": 8689,
+    "api_ms": 8502,
+    "input_tokens": 2,
+    "output_tokens": 1574,
+    "cost_usd": 0.040941000000000005,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T03:23:22+00:00"
+}

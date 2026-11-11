@@ -1,0 +1,167 @@
+{
+ "step": "extract",
+ "tag": "8202",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "dcc761e46c6ec579c01b9dfd540df3c2fa4bba3b6b5ec777aa2cf9c9c62aa411",
+ "input": [
+  {
+   "clause": "PRO-CSH-07@v4/s5/c1",
+   "text": "Use the counterfeit detection pen on bills of fifty dollars or more.",
+   "heading": "Steps to follow",
+   "document": {
+    "title": "Counting Cash Under Dual Control",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-CSH-07@v4/s5/c3",
+   "text": "Report any shortage or overage to the head teller prior to you leave for the day.",
+   "heading": "Steps to follow",
+   "document": {
+    "title": "Counting Cash Under Dual Control",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-DSP-02@v3/s3/c6",
+   "text": "Accept debit card disputes filed within 60 days of the statement that first showed the charge, or longer when the customer was traveling or hospitalized.",
+   "heading": "Steps",
+   "document": {
+    "title": "Issuing Provisional Credit",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "PRO-DSP-02@v3/s5/c1",
+   "text": "Card services specialists review disputes in the order they arrive.",
+   "heading": "Related requirements",
+   "document": {
+    "title": "Issuing Provisional Credit",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "PRO-DSP-06@v2/s5/c1",
+   "text": "Provisional credit is issued within 10 business days of receiving a completed dispute, whatever its review status.",
+   "heading": "Related requirements",
+   "document": {
+    "title": "Large Dispute Review",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "PRO-FEE-01@v4/s3/c6",
+   "text": "Review recurring waiver requests with the branch manager at the monthly meeting.",
+   "heading": "Steps",
+   "document": {
+    "title": "Processing a Fee Waiver Request",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "PRO-FEE-01@v4/s3/c8",
+   "text": "Limit fee waivers to one per account in each calendar year.",
+   "heading": "Steps",
+   "document": {
+    "title": "Processing a Fee Waiver Request",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "PRO-FEE-03@v3/s3/c3",
+   "text": "Review recurring waiver requests with the branch manager at the monthly meeting.",
+   "heading": "Steps",
+   "document": {
+    "title": "Handling Fee Refund Requests",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "PRO-FEE-03@v3/s3/c9",
+   "text": "Limit fee waivers to three per account in each calendar year.",
+   "heading": "Steps",
+   "document": {
+    "title": "Handling Fee Refund Requests",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "PRO-FEE-03@v3/s3/c11",
+   "text": "Each account may receive no more than one fee waivers in a calendar year.",
+   "heading": "Steps",
+   "document": {
+    "title": "Handling Fee Refund Requests",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  }
+ ],
+ "input_hash": "47669504d4eb023b4a8279e945eb1605385c3cdbd31c5fa81f0604c050902e51",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [{\"clause\": \"PRO-CSH-07@v4/s5/c1\", \"atoms\": []}, {\"clause\": \"PRO-CSH-07@v4/s5/c3\", \"atoms\": []}, {\"clause\": \"PRO-DSP-02@v3/s3/c6\", \"atoms\": [{\"attribute\": \"dispute_window\", \"value\": {\"type\": \"duration\", \"n\": 60, \"unit\": \"days\"}, \"quote\": \"60 days\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": \"or longer when the customer was traveling or hospitalized\"}]}, {\"clause\": \"PRO-DSP-02@v3/s5/c1\", \"atoms\": []}, {\"clause\": \"PRO-DSP-06@v2/s5/c1\", \"atoms\": [{\"attribute\": \"dispute_provisional_credit\", \"value\": {\"type\": \"duration\", \"n\": 10, \"unit\": \"business_days\"}, \"quote\": \"10 business days\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]}, {\"clause\": \"PRO-FEE-01@v4/s3/c6\", \"atoms\": []}, {\"clause\": \"PRO-FEE-01@v4/s3/c8\", \"atoms\": [{\"attribute\": \"fee_waivers_per_year\", \"value\": {\"type\": \"count\", \"n\": 1}, \"quote\": \"one\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]}, {\"clause\": \"PRO-FEE-03@v3/s3/c3\", \"atoms\": []}, {\"clause\": \"PRO-FEE-03@v3/s3/c9\", \"atoms\": [{\"attribute\": \"fee_waivers_per_year\", \"value\": {\"type\": \"count\", \"n\": 3}, \"quote\": \"three\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]}, {\"clause\": \"PRO-FEE-03@v3/s3/c11\", \"atoms\": [{\"attribute\": \"fee_waivers_per_year\", \"value\": {\"type\": \"count\", \"n\": 1}, \"quote\": \"one\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]}]}",
+   "problems": [],
+   "meta": {
+    "ms": 7292,
+    "api_ms": 7110,
+    "input_tokens": 8947,
+    "output_tokens": 1207,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 6263,
+     "cache_read_input_tokens": 2682,
+     "output_tokens": 1207,
+     "output_tokens_details": {
+      "thinking_tokens": 461
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 6263,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 1207,
+       "cache_read_input_tokens": 2682,
+       "cache_creation_input_tokens": 6263,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 6263
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.0373942,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T05:40:37+00:00"
+}

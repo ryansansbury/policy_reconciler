@@ -1,0 +1,85 @@
+{
+ "step": "assist",
+ "tag": "cmp-6101",
+ "model": "google-b",
+ "backend": {
+  "vendor": "Google",
+  "model": "gemini-3.8-flash",
+  "label": "Gemini 3.8 Flash"
+ },
+ "prompt_hash": "66c01f0da9f327e74355d39363e55b642a1bbf8dc6249974c3afbf3cb3d6ccd5",
+ "input": [
+  {
+   "question": "q-C-06",
+   "text": "When does a customer get provisional credit on a dispute?",
+   "type": "duration",
+   "clauses": [
+    {
+     "id": "POL-DSP-01@v5/s4/c2",
+     "text": "Provisional credit is issued within 10 business days of receiving a completed dispute.",
+     "title": "Debit Card Dispute Policy",
+     "type": "policy",
+     "version": 5,
+     "effective": "2024-07-18"
+    },
+    {
+     "id": "PRO-DSP-03@v2/s3/c6",
+     "text": "Provisional credit is issued within 10 business days of receiving a completed dispute.",
+     "title": "Investigating a Dispute",
+     "type": "procedure",
+     "version": 2,
+     "effective": "2026-07-31"
+    },
+    {
+     "id": "PRO-DSP-06@v3/s3/c7",
+     "text": "Provisional credit is issued within 5 business days of receiving a completed dispute.",
+     "title": "Large Dispute Review",
+     "type": "procedure",
+     "version": 3,
+     "effective": "2025-06-21"
+    },
+    {
+     "id": "PRO-DSP-06@v3/s5/c1",
+     "text": "Provisional credit is issued within 10 business days of receiving a completed dispute, whatever its review status.",
+     "title": "Large Dispute Review",
+     "type": "procedure",
+     "version": 3,
+     "effective": "2025-06-21"
+    },
+    {
+     "id": "JA-DSP-01@v2/s1/c1",
+     "text": "Provisional credit deadline for disputes | 5 business days",
+     "title": "Dispute Intake Checklist",
+     "type": "job_aid",
+     "version": 2,
+     "effective": "2024-06-03"
+    }
+   ]
+  }
+ ],
+ "input_hash": "746d02d3704282fce70034b1d7d9a83d735889baeb2098f0aa69b98f0b93e57f",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "```json\n{\n \"results\": [\n  {\n   \"question\": \"q-C-06\",\n   \"answer\": \"The sources disagree. The Debit Card Dispute Policy and Investigating a Dispute state that provisional credit is issued within 10 business days of receiving a completed dispute while the Dispute Intake Checklist and Large Dispute Review state 5 business days. The policy outranks the procedures and job aid so 10 business days is the timeline to follow.\",\n   \"citations\": [\n    \"POL-DSP-01@v5/s4/c2\",\n    \"PRO-DSP-03@v2/s3/c6\",\n    \"PRO-DSP-06@v3/s3/c7\",\n    \"JA-DSP-01@v2/s1/c1\"\n   ],\n   \"sources_disagree\": true\n  }\n ]\n}\n```",
+   "problems": [],
+   "meta": {
+    "ms": 19851,
+    "input_tokens": 978,
+    "output_tokens": 2903,
+    "cost_usd": 0.01162,
+    "usage": {
+     "completion_tokens": 201,
+     "prompt_tokens": 978,
+     "total_tokens": 3881
+    },
+    "models": [
+     "gemini-3.8-flash"
+    ],
+    "stop_reason": "stop"
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T17:35:05+00:00"
+}

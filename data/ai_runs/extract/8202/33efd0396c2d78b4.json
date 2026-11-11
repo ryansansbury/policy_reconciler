@@ -1,0 +1,167 @@
+{
+ "step": "extract",
+ "tag": "8202",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "dcc761e46c6ec579c01b9dfd540df3c2fa4bba3b6b5ec777aa2cf9c9c62aa411",
+ "input": [
+  {
+   "clause": "JA-WIR-02@v3/s1/c3",
+   "text": "Who completes wire callbacks | wire specialist",
+   "heading": "Quick reference",
+   "document": {
+    "title": "Callback Checklist",
+    "type": "job_aid",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "JA-WIR-02@v3/s2/c2",
+   "text": "Never accept wire instructions sent by email without verifying them by phone.",
+   "heading": "Checklist",
+   "document": {
+    "title": "Callback Checklist",
+    "type": "job_aid",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "JA-WIR-03@v1/s1/c1",
+   "text": "Callback threshold for outgoing wires | $5,000",
+   "heading": "Quick reference",
+   "document": {
+    "title": "Wire Cutoff Card",
+    "type": "job_aid",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "POL-AOP-01@v5/s3/c1",
+   "text": "Collect two forms of identification from each signer before opening the account, or one form plus a verified bank reference when the branch manager approves.",
+   "heading": "Policy statements",
+   "document": {
+    "title": "Deposit Account Opening Policy",
+    "type": "policy",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "POL-AOP-01@v5/s3/c2",
+   "text": "Only the branch manager can approve an exception to the identification requirements.",
+   "heading": "Policy statements",
+   "document": {
+    "title": "Deposit Account Opening Policy",
+    "type": "policy",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "POL-AOP-01@v5/s5/c1",
+   "text": "Exceptions to this policy need written approval from the Deposit Operations manager and are reviewed each quarter.",
+   "heading": "Exceptions",
+   "document": {
+    "title": "Deposit Account Opening Policy",
+    "type": "policy",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "POL-AOP-01@v5/s6/c1",
+   "text": "Branch managers make sure their teams follow this policy, and Deposit Operations answers questions about it.",
+   "heading": "Roles and responsibilities",
+   "document": {
+    "title": "Deposit Account Opening Policy",
+    "type": "policy",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "POL-AOP-02@v4/s4/c2",
+   "text": "Only the branch manager can approve an exception to the identification requirements.",
+   "heading": "Additional requirements",
+   "document": {
+    "title": "Customer Identification Policy",
+    "type": "policy",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "POL-AOP-02@v4/s5/c1",
+   "text": "Exceptions to this policy need written approval from the Deposit Operations manager and are reviewed each quarter.",
+   "heading": "Exceptions",
+   "document": {
+    "title": "Customer Identification Policy",
+    "type": "policy",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "POL-AOP-02@v4/s6/c1",
+   "text": "Branch managers make sure their teams follow this policy, and Deposit Operations answers questions about it.",
+   "heading": "Roles and responsibilities",
+   "document": {
+    "title": "Customer Identification Policy",
+    "type": "policy",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  }
+ ],
+ "input_hash": "f52d06babf74cbeb59e12e92e4812d585063db77da12c00c97aed4c6f004c0e5",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\":[{\"clause\":\"JA-WIR-02@v3/s1/c3\",\"atoms\":[{\"attribute\":\"wire_callback_role\",\"value\":{\"type\":\"role\",\"role\":\"wire_specialist\"},\"quote\":\"wire specialist\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]},{\"clause\":\"JA-WIR-02@v3/s2/c2\",\"atoms\":[]},{\"clause\":\"JA-WIR-03@v1/s1/c1\",\"atoms\":[{\"attribute\":\"wire_callback\",\"value\":{\"type\":\"money\",\"dollars\":5000},\"quote\":\"$5,000\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]},{\"clause\":\"POL-AOP-01@v5/s3/c1\",\"atoms\":[{\"attribute\":\"ao_id_count\",\"value\":{\"type\":\"count\",\"n\":2},\"quote\":\"two\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":\"from each signer\",\"condition\":\"or one form plus a verified bank reference when the branch manager approves\"}]},{\"clause\":\"POL-AOP-01@v5/s3/c2\",\"atoms\":[{\"attribute\":\"ao_exception_approver\",\"value\":{\"type\":\"role\",\"role\":\"branch_manager\"},\"quote\":\"branch manager\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]},{\"clause\":\"POL-AOP-01@v5/s5/c1\",\"atoms\":[]},{\"clause\":\"POL-AOP-01@v5/s6/c1\",\"atoms\":[]},{\"clause\":\"POL-AOP-02@v4/s4/c2\",\"atoms\":[{\"attribute\":\"ao_exception_approver\",\"value\":{\"type\":\"role\",\"role\":\"branch_manager\"},\"quote\":\"branch manager\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]},{\"clause\":\"POL-AOP-02@v4/s5/c1\",\"atoms\":[]},{\"clause\":\"POL-AOP-02@v4/s6/c1\",\"atoms\":[]}]}",
+   "problems": [],
+   "meta": {
+    "ms": 8592,
+    "api_ms": 8455,
+    "input_tokens": 8942,
+    "output_tokens": 1361,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 6258,
+     "cache_read_input_tokens": 2682,
+     "output_tokens": 1361,
+     "output_tokens_details": {
+      "thinking_tokens": 659
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 6258,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 1361,
+       "cache_read_input_tokens": 2682,
+       "cache_creation_input_tokens": 6258,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 6258
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.038914199999999996,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T05:40:18+00:00"
+}

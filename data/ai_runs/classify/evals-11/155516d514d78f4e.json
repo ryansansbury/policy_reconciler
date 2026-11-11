@@ -1,0 +1,307 @@
+{
+ "step": "classify",
+ "tag": "evals-11",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "2c908358fde9f0f4a792753579a6cfaa33476e41c4b0f235744675d8e8283a19",
+ "input": [
+  {
+   "pair": "pair-fb9c518ede",
+   "rule": "Vault combination change interval",
+   "attribute": "combo_change",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-BOP-01@v2/s4/c1",
+    "text": "Change the vault combination at least every 6 months.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Branch Security and Opening Policy",
+     "type": "policy",
+     "version": 2,
+     "effective": "2025-01-24",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "PRO-BOP-02@v2/s3/c4",
+    "text": "Vault combinations are changed every 3 months and whenever an employee who knows the combination leaves.",
+    "heading": "Steps",
+    "document": {
+     "title": "Closing the Branch Each Evening",
+     "type": "procedure",
+     "version": 2,
+     "effective": "2025-02-19",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-6d5bb30597",
+   "rule": "Outgoing wire cutoff",
+   "attribute": "wire_cutoff",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-WIR-01@v4/s4/c1",
+    "text": "Outgoing consumer and small business wire requests received after 3:00 p.m. Central are processed the next business day.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Wire Transfer Policy",
+     "type": "policy",
+     "version": 4,
+     "effective": "2025-04-29",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "PRO-WIR-03@v2/s3/c1",
+    "text": "Submit outgoing consumer and small business wires by 4:00 p.m. Central for same-day processing.",
+    "heading": "Steps",
+    "document": {
+     "title": "Completing Wire Callback Verification",
+     "type": "procedure",
+     "version": 2,
+     "effective": "2025-01-04",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-da45220d4a",
+   "rule": "Notice before dormancy",
+   "attribute": "dormant_notice",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-DRM-01@v4/s3/c1",
+    "text": "Mail the customer a notice at least 30 days before the account is classified as dormant.",
+    "heading": "Policy statements",
+    "document": {
+     "title": "Dormant Account Policy",
+     "type": "policy",
+     "version": 4,
+     "effective": "2026-08-22",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "ADD-TX-01@v4/s2/c1",
+    "text": "In Texas branches, mail the customer a notice at least 45 days before the account is classified as dormant.",
+    "heading": "Texas requirements",
+    "document": {
+     "title": "Texas Branch Addendum",
+     "type": "addendum",
+     "version": 4,
+     "effective": "2026-05-05",
+     "applies_to": "Texas branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-264d9e334f",
+   "rule": null,
+   "attribute": null,
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-CMP-01@v4/s4/c2",
+    "text": "Complaints should be closed within 15 business days of the day they arrive, or within 30 business days when another department has to investigate.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Complaint Management Policy",
+     "type": "policy",
+     "version": 4,
+     "effective": "2025-07-22",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "ADD-OK-01@v2/s2/c1",
+    "text": "In Oklahoma branches, resolve complaints within 30 business days of receipt, or tell the customer when to expect a resolution.",
+    "heading": "Oklahoma requirements",
+    "document": {
+     "title": "Oklahoma Branch Addendum",
+     "type": "addendum",
+     "version": 2,
+     "effective": "2026-04-08",
+     "applies_to": "Oklahoma branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-b781007ba1",
+   "rule": "Closed account record retention",
+   "attribute": "records_retention",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-REC-01@v3/s4/c1",
+    "text": "Retain closed account records for 7 years from the closing date.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Records Retention Policy",
+     "type": "policy",
+     "version": 3,
+     "effective": "2026-06-19",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "ADD-KS-01@v1/s2/c1",
+    "text": "In Kansas branches, retain closed account records for 5 years from the closing date.",
+    "heading": "Kansas requirements",
+    "document": {
+     "title": "Kansas Branch Addendum",
+     "type": "addendum",
+     "version": 1,
+     "effective": "2026-08-25",
+     "applies_to": "Kansas branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-b2af971d84",
+   "rule": "Fee refund window",
+   "attribute": "fee_refund_window",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-FEE-01@v2/s4/c2",
+    "text": "Fee refund requests are accepted for 60 days after the statement date.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Service Fee Waiver Policy",
+     "type": "policy",
+     "version": 2,
+     "effective": "2024-05-13",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "ADD-CO-01@v1/s2/c1",
+    "text": "In Colorado branches, customers may request a fee refund within 90 days of the statement date.",
+    "heading": "Colorado requirements",
+    "document": {
+     "title": "Colorado Branch Addendum",
+     "type": "addendum",
+     "version": 1,
+     "effective": "2026-07-30",
+     "applies_to": "Colorado branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-35f5783a18",
+   "rule": "Dormant account fee",
+   "attribute": "dormant_fee",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-DRM-01@v4/s4/c2",
+    "text": "The monthly fee for a dormant account is $5.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Dormant Account Policy",
+     "type": "policy",
+     "version": 4,
+     "effective": "2026-08-22",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "ADD-TX-01@v4/s2/c2",
+    "text": "In Texas branches, the monthly fee for a dormant account is $3.",
+    "heading": "Texas requirements",
+    "document": {
+     "title": "Texas Branch Addendum",
+     "type": "addendum",
+     "version": 4,
+     "effective": "2026-05-05",
+     "applies_to": "Texas branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-8d0888810e",
+   "rule": "Vault combination change interval",
+   "attribute": "combo_change",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-BOP-01@v2/s4/c1",
+    "text": "Change the vault combination at least every 6 months.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Branch Security and Opening Policy",
+     "type": "policy",
+     "version": 2,
+     "effective": "2025-01-24",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "ADD-OK-01@v2/s2/c2",
+    "text": "In Oklahoma branches, change the vault combination at least every 3 months.",
+    "heading": "Oklahoma requirements",
+    "document": {
+     "title": "Oklahoma Branch Addendum",
+     "type": "addendum",
+     "version": 2,
+     "effective": "2026-04-08",
+     "applies_to": "Oklahoma branches. All business lines."
+    }
+   }
+  }
+ ],
+ "input_hash": "2bd5f8614ad5720903a738b8dad7d07f9f3caa15705276c88b536444d43d3cdd",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [{\"pair\": \"pair-fb9c518ede\", \"label\": \"conflict\", \"quote_a\": \"Change the vault combination at least every 6 months.\", \"quote_b\": \"Vault combinations are changed every 3 months\", \"rationale\": \"Both clauses apply to all branches and set different intervals, and the procedure states no narrower scope. Staff following the policy could wait 6 months and would then act against the procedure's 3 months.\"}, {\"pair\": \"pair-6d5bb30597\", \"label\": \"conflict\", \"quote_a\": \"received after 3:00 p.m. Central are processed the next business day\", \"quote_b\": \"Submit outgoing consumer and small business wires by 4:00 p.m. Central for same-day processing.\", \"rationale\": \"Both clauses cover the same wires at all branches. A wire received between 3:00 p.m. and 4:00 p.m. Central waits a day under the policy but is processed the same day under the procedure.\"}, {\"pair\": \"pair-da45220d4a\", \"label\": \"variation\", \"quote_a\": \"Mail the customer a notice at least 30 days before the account is classified as dormant.\", \"quote_b\": \"In Texas branches, mail the customer a notice at least 45 days before the account is classified as dormant.\", \"rationale\": \"The Texas addendum deliberately sets 45 days for Texas branches only. The policy's 30 days applies elsewhere.\"}, {\"pair\": \"pair-264d9e334f\", \"label\": \"variation\", \"quote_a\": \"within 15 business days of the day they arrive\", \"quote_b\": \"resolve complaints within 30 business days of receipt\", \"rationale\": \"The Oklahoma addendum states a scope limited to Oklahoma branches and sets 30 business days there. The policy's 15 business day target applies to the other branches.\"}, {\"pair\": \"pair-b781007ba1\", \"label\": \"variation\", \"quote_a\": \"Retain closed account records for 7 years from the closing date.\", \"quote_b\": \"In Kansas branches, retain closed account records for 5 years from the closing date.\", \"rationale\": \"The Kansas addendum intentionally sets 5 years for Kansas branches only. The policy's 7 years applies to the rest.\"}, {\"pair\": \"pair-b2af971d84\", \"label\": \"variation\", \"quote_a\": \"Fee refund requests are accepted for 60 days after the statement date.\", \"quote_b\": \"In Colorado branches, customers may request a fee refund within 90 days of the statement date.\", \"rationale\": \"The Colorado addendum deliberately extends the window to 90 days for Colorado branches. The policy's 60 days applies elsewhere.\"}, {\"pair\": \"pair-35f5783a18\", \"label\": \"variation\", \"quote_a\": \"The monthly fee for a dormant account is $5.\", \"quote_b\": \"In Texas branches, the monthly fee for a dormant account is $3.\", \"rationale\": \"The Texas addendum sets a $3 fee for Texas branches on purpose. The policy's $5 fee applies to the other branches.\"}, {\"pair\": \"pair-8d0888810e\", \"label\": \"variation\", \"quote_a\": \"Change the vault combination at least every 6 months.\", \"quote_b\": \"In Oklahoma branches, change the vault combination at least every 3 months.\", \"rationale\": \"The Oklahoma addendum deliberately sets a stricter 3 month interval for Oklahoma branches only. The policy's 6 months applies elsewhere.\"}]}",
+   "problems": [],
+   "meta": {
+    "ms": 16884,
+    "api_ms": 16754,
+    "input_tokens": 8979,
+    "output_tokens": 2176,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 8136,
+     "cache_read_input_tokens": 841,
+     "output_tokens": 2176,
+     "output_tokens_details": {
+      "thinking_tokens": 1047
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 8136,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 2176,
+       "cache_read_input_tokens": 841,
+       "cache_creation_input_tokens": 8136,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 8136
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.0543921,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T03:54:33+00:00"
+}

@@ -1,0 +1,87 @@
+{
+ "step": "extract",
+ "tag": "8303",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "dcc761e46c6ec579c01b9dfd540df3c2fa4bba3b6b5ec777aa2cf9c9c62aa411",
+ "input": [
+  {
+   "clause": "PRO-WIR-06@v3/s5/c1",
+   "text": "Wire specialists work only at the regional operations center and are not assigned to branches.",
+   "heading": "Related requirements",
+   "document": {
+    "title": "Recalling or Cancelling a Wire",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-WIR-07@v4/s3/c1",
+   "text": "Never accept wire instructions sent by email without verifying them by phone.",
+   "heading": "Steps",
+   "document": {
+    "title": "Second Approval for Large Wires",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  }
+ ],
+ "input_hash": "4c96f29392c46a98ed3e54c9987868da01a5c05e9abf81c34d50b75fa7fe7501",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [{\"clause\": \"PRO-WIR-06@v3/s5/c1\", \"atoms\": []}, {\"clause\": \"PRO-WIR-07@v4/s3/c1\", \"atoms\": []}]}",
+   "problems": [],
+   "meta": {
+    "ms": 2290,
+    "api_ms": 2116,
+    "input_tokens": 7838,
+    "output_tokens": 164,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 5154,
+     "cache_read_input_tokens": 2682,
+     "output_tokens": 164,
+     "output_tokens_details": {
+      "thinking_tokens": 90
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 5154,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 164,
+       "cache_read_input_tokens": 2682,
+       "cache_creation_input_tokens": 5154,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 5154
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.022528199999999998,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T05:41:27+00:00"
+}

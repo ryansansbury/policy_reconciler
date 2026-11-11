@@ -1,0 +1,167 @@
+{
+ "step": "extract",
+ "tag": "8303",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "dcc761e46c6ec579c01b9dfd540df3c2fa4bba3b6b5ec777aa2cf9c9c62aa411",
+ "input": [
+  {
+   "clause": "PRO-CSH-07@v3/s5/c2",
+   "text": "Keep your drawer locked whenever you step away from the teller line.",
+   "heading": "Steps to follow",
+   "document": {
+    "title": "Counting Cash Under Dual Control",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-CSH-07@v3/s5/c4",
+   "text": "Use the counterfeit detection pen on bills of fifty dollars or more.",
+   "heading": "Steps to follow",
+   "document": {
+    "title": "Counting Cash Under Dual Control",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-FEE-01@v1/s3/c3",
+   "text": "Review recurring waiver requests with the branch manager at the monthly meeting.",
+   "heading": "Steps",
+   "document": {
+    "title": "Processing a Fee Waiver Request",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "PRO-FEE-01@v1/s3/c6",
+   "text": "Limit fee waivers to two per account in each calendar year.",
+   "heading": "Steps",
+   "document": {
+    "title": "Processing a Fee Waiver Request",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "PRO-FEE-02@v1/s3/c7",
+   "text": "Each account may receive no more than two fee waivers in a calendar year.",
+   "heading": "Steps",
+   "document": {
+    "title": "Reversing a Service Fee",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "PRO-FEE-02@v1/s3/c10",
+   "text": "For small business accounts, limit fee waivers to three per account in each calendar year.",
+   "heading": "Steps",
+   "document": {
+    "title": "Reversing a Service Fee",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "PRO-FEE-04@v1/s3/c7",
+   "text": "Review recurring waiver requests with the branch manager at the monthly meeting.",
+   "heading": "Steps",
+   "document": {
+    "title": "Reviewing Waiver Activity Each Month",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "PRO-FEE-05@v3/s3/c2",
+   "text": "Each account may receive no more than two fee waivers in a calendar year.",
+   "heading": "Steps",
+   "document": {
+    "title": "Documenting Fee Waivers in Account Notes",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "PRO-FEE-05@v3/s3/c3",
+   "text": "Review recurring waiver requests with the branch manager at the monthly meeting.",
+   "heading": "Steps",
+   "document": {
+    "title": "Documenting Fee Waivers in Account Notes",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "PRO-FEE-05@v3/s5/c3",
+   "text": "Review recurring waiver requests with the branch manager at the monthly meeting.",
+   "heading": "Steps to follow",
+   "document": {
+    "title": "Documenting Fee Waivers in Account Notes",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  }
+ ],
+ "input_hash": "d3b06f8ffe4b68475ee1bbece8225e43640ce546acf3dd088549e68d18a451e1",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [\n{\"clause\": \"PRO-CSH-07@v3/s5/c2\", \"atoms\": []},\n{\"clause\": \"PRO-CSH-07@v3/s5/c4\", \"atoms\": []},\n{\"clause\": \"PRO-FEE-01@v1/s3/c3\", \"atoms\": []},\n{\"clause\": \"PRO-FEE-01@v1/s3/c6\", \"atoms\": [\n{\"attribute\": \"fee_waivers_per_year\", \"value\": {\"type\": \"count\", \"n\": 2}, \"quote\": \"two\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}\n]},\n{\"clause\": \"PRO-FEE-02@v1/s3/c7\", \"atoms\": [\n{\"attribute\": \"fee_waivers_per_year\", \"value\": {\"type\": \"count\", \"n\": 2}, \"quote\": \"two\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}\n]},\n{\"clause\": \"PRO-FEE-02@v1/s3/c10\", \"atoms\": [\n{\"attribute\": \"fee_waivers_per_year\", \"value\": {\"type\": \"count\", \"n\": 3}, \"quote\": \"three\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": \"For small business accounts\", \"condition\": null}\n]},\n{\"clause\": \"PRO-FEE-04@v1/s3/c7\", \"atoms\": []},\n{\"clause\": \"PRO-FEE-05@v3/s3/c2\", \"atoms\": [\n{\"attribute\": \"fee_waivers_per_year\", \"value\": {\"type\": \"count\", \"n\": 2}, \"quote\": \"two\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}\n]},\n{\"clause\": \"PRO-FEE-05@v3/s3/c3\", \"atoms\": []},\n{\"clause\": \"PRO-FEE-05@v3/s5/c3\", \"atoms\": []}\n]}",
+   "problems": [],
+   "meta": {
+    "ms": 5993,
+    "api_ms": 5814,
+    "input_tokens": 8946,
+    "output_tokens": 1005,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 6262,
+     "cache_read_input_tokens": 2682,
+     "output_tokens": 1005,
+     "output_tokens_details": {
+      "thinking_tokens": 355
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 6262,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 1005,
+       "cache_read_input_tokens": 2682,
+       "cache_creation_input_tokens": 6262,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 6262
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.035370200000000004,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T05:41:23+00:00"
+}

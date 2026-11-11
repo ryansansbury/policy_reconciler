@@ -1,0 +1,167 @@
+{
+ "step": "extract",
+ "tag": "evals-6101",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "dcc761e46c6ec579c01b9dfd540df3c2fa4bba3b6b5ec777aa2cf9c9c62aa411",
+ "input": [
+  {
+   "clause": "PRO-BOP-06@v3/s3/c6",
+   "text": "A single opener may unlock the branch if the second opener is delayed.",
+   "heading": "Steps",
+   "document": {
+    "title": "After-Hours Branch Access",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-CMP-01@v1/s3/c6",
+   "text": "Resolve complaints within 10 business days of receipt, or tell the customer when to expect a resolution.",
+   "heading": "Steps",
+   "document": {
+    "title": "Logging a Customer Complaint",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-CMP-01@v2/s3/c6",
+   "text": "Resolve complaints within 15 days of receipt, or tell the customer when to expect a resolution.",
+   "heading": "Steps",
+   "document": {
+    "title": "Logging a Customer Complaint",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-CMP-03@v1/s3/c7",
+   "text": "Complaints that allege unfair treatment are escalated to the compliance officer the same day.",
+   "heading": "Steps",
+   "document": {
+    "title": "Resolving and Closing a Complaint",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-CMP-03@v1/s3/c8",
+   "text": "For commercial accounts, send the customer an acknowledgment no later than 3 business days after a written complaint arrives.",
+   "heading": "Steps",
+   "document": {
+    "title": "Resolving and Closing a Complaint",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-CMP-04@v1/s3/c5",
+   "text": "Escalate any complaint alleging unfair treatment to the regional manager on the day it is received.",
+   "heading": "Steps",
+   "document": {
+    "title": "Escalating a Sensitive Complaint",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-CMP-05@v1/s3/c4",
+   "text": "Escalate any complaint alleging unfair treatment to management on the day it is received.",
+   "heading": "Steps",
+   "document": {
+    "title": "Reviewing Complaint Trends Each Quarter",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-CMP-06@v1/s3/c2",
+   "text": "Resolve complaints within 15 days of receipt, or tell the customer when to expect a resolution.",
+   "heading": "Steps",
+   "document": {
+    "title": "Responding to a Complaint by Phone",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-CMP-06@v1/s3/c9",
+   "text": "Customer surveys go out within 5 business days of a branch visit.",
+   "heading": "Steps",
+   "document": {
+    "title": "Responding to a Complaint by Phone",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-CSH-01@v1/s3/c1",
+   "text": "Log any cash deposit or withdrawal of $5,000 or more for large-cash review.",
+   "heading": "Steps",
+   "document": {
+    "title": "Balancing a Teller Drawer",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  }
+ ],
+ "input_hash": "1f63a6107c0e48ae0737ed64b13f9ba3d9521b9487b860b23de3b519bf134c12",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\":[{\"clause\":\"PRO-BOP-06@v3/s3/c6\",\"atoms\":[{\"attribute\":\"branch_open_dual\",\"value\":{\"type\":\"modal\",\"modal\":\"may\"},\"quote\":\"may unlock the branch\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":\"if the second opener is delayed\"}]},{\"clause\":\"PRO-CMP-01@v1/s3/c6\",\"atoms\":[{\"attribute\":\"complaint_resolve\",\"value\":{\"type\":\"duration\",\"n\":10,\"unit\":\"business_days\"},\"quote\":\"10 business days\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":\"or tell the customer when to expect a resolution\"}]},{\"clause\":\"PRO-CMP-01@v2/s3/c6\",\"atoms\":[{\"attribute\":\"complaint_resolve\",\"value\":{\"type\":\"duration\",\"n\":15,\"unit\":\"days\"},\"quote\":\"15 days\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":\"or tell the customer when to expect a resolution\"}]},{\"clause\":\"PRO-CMP-03@v1/s3/c7\",\"atoms\":[{\"attribute\":\"complaint_escalation_role\",\"value\":{\"type\":\"role\",\"role\":\"compliance_officer\"},\"quote\":\"compliance officer\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]},{\"clause\":\"PRO-CMP-03@v1/s3/c8\",\"atoms\":[{\"attribute\":\"complaint_ack\",\"value\":{\"type\":\"duration\",\"n\":3,\"unit\":\"business_days\"},\"quote\":\"3 business days\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":\"For commercial accounts\",\"condition\":null}]},{\"clause\":\"PRO-CMP-04@v1/s3/c5\",\"atoms\":[{\"attribute\":\"complaint_escalation_role\",\"value\":{\"type\":\"role\",\"role\":\"regional_manager\"},\"quote\":\"regional manager\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]},{\"clause\":\"PRO-CMP-05@v1/s3/c4\",\"atoms\":[{\"attribute\":\"complaint_escalation_role\",\"value\":{\"type\":\"role\",\"role\":null,\"generic\":\"management\"},\"quote\":\"management\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]},{\"clause\":\"PRO-CMP-06@v1/s3/c2\",\"atoms\":[{\"attribute\":\"complaint_resolve\",\"value\":{\"type\":\"duration\",\"n\":15,\"unit\":\"days\"},\"quote\":\"15 days\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":\"or tell the customer when to expect a resolution\"}]},{\"clause\":\"PRO-CMP-06@v1/s3/c9\",\"atoms\":[{\"attribute\":\"survey_send\",\"value\":{\"type\":\"duration\",\"n\":5,\"unit\":\"business_days\"},\"quote\":\"5 business days\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]},{\"clause\":\"PRO-CSH-01@v1/s3/c1\",\"atoms\":[{\"attribute\":\"cash_review_threshold\",\"value\":{\"type\":\"money\",\"dollars\":5000},\"quote\":\"$5,000\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]}]}",
+   "problems": [],
+   "meta": {
+    "ms": 8994,
+    "api_ms": 8729,
+    "input_tokens": 8933,
+    "output_tokens": 1595,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 6249,
+     "cache_read_input_tokens": 2682,
+     "output_tokens": 1595,
+     "output_tokens_details": {
+      "thinking_tokens": 444
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 6249,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 1595,
+       "cache_read_input_tokens": 2682,
+       "cache_creation_input_tokens": 6249,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 6249
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.041218199999999997,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T04:13:30+00:00"
+}

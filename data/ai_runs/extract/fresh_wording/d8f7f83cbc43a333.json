@@ -1,0 +1,232 @@
+{
+ "step": "extract",
+ "tag": "fresh_wording",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "dcc761e46c6ec579c01b9dfd540df3c2fa4bba3b6b5ec777aa2cf9c9c62aa411",
+ "input": [
+  {
+   "clause": "fw-01",
+   "text": "Managers at the branch level can forgive up to fifty bucks in service charges per account per year.",
+   "heading": "Requirements",
+   "document": {
+    "title": "Branch Operations Manual",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "fw-02",
+   "text": "Anything over $25 that a personal banker wants to waive needs a sign-off from the BM first.",
+   "heading": "Requirements",
+   "document": {
+    "title": "Branch Operations Manual",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "fw-03",
+   "text": "We allow two courtesy waivers on any one account during a calendar year, and a third goes to the regional office.",
+   "heading": "Requirements",
+   "document": {
+    "title": "Branch Operations Manual",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "fw-04",
+   "text": "A customer who spots a fee on their statement has sixty days to ask for it back.",
+   "heading": "Requirements",
+   "document": {
+    "title": "Branch Operations Manual",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "fw-05",
+   "text": "Every paid overdraft item costs the customer thirty dollars.",
+   "heading": "Requirements",
+   "document": {
+    "title": "Branch Operations Manual",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "fw-06",
+   "text": "The system stops assessing overdraft charges after the third one in a business day.",
+   "heading": "Requirements",
+   "document": {
+    "title": "Branch Operations Manual",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "fw-07",
+   "text": "If an end-of-day negative balance is ten dollars or smaller, waive the overdraft charge automatically.",
+   "heading": "Requirements",
+   "document": {
+    "title": "Branch Operations Manual",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "fw-08",
+   "text": "Six weeks and three days in the red sends an account to the charge-off team.",
+   "heading": "Requirements",
+   "document": {
+    "title": "Branch Operations Manual",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "fw-09",
+   "text": "Consumer and small business wire requests have to be in by three in the afternoon Central to go out today.",
+   "heading": "Requirements",
+   "document": {
+    "title": "Branch Operations Manual",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "fw-10",
+   "text": "For transfers going out by wire at $10K and up, phone the client at the number on file before release.",
+   "heading": "Requirements",
+   "document": {
+    "title": "Branch Operations Manual",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  }
+ ],
+ "input_hash": "40772d2ccc6903985efab4c497b3e81641f77392668ededbbe91604fb15305d2",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [{\"clause\": \"fw-01\", \"atoms\": [{\"attribute\": \"fee_waiver_bm\", \"value\": {\"type\": \"money\", \"dollars\": 50}, \"quote\": \"fifty bucks\", \"actor\": \"branch_manager\", \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]}, {\"clause\": \"fw-02\", \"atoms\": [{\"attribute\": \"fee_waiver_pb\", \"value\": {\"type\": \"money\", \"dollars\": 25}, \"quote\": \"$25\", \"actor\": \"personal_banker\", \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]}, {\"clause\": \"fw-03\", \"atoms\": [{\"attribute\": \"fee_waivers_per_year\", \"value\": {\"type\": \"count\", \"n\": 2}, \"quote\": \"two\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": \"and a third goes to the regional office\"}]}, {\"clause\": \"fw-04\", \"atoms\": [{\"attribute\": \"fee_refund_window\", \"value\": {\"type\": \"duration\", \"n\": 60, \"unit\": \"days\"}, \"quote\": \"sixty days\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]}, {\"clause\": \"fw-05\", \"atoms\": [{\"attribute\": \"od_fee\", \"value\": {\"type\": \"money\", \"dollars\": 30}, \"quote\": \"thirty dollars\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]}, {\"clause\": \"fw-06\", \"atoms\": [{\"attribute\": \"od_daily_cap\", \"value\": {\"type\": \"count\", \"n\": 3}, \"quote\": \"third\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]}, {\"clause\": \"fw-07\", \"atoms\": [{\"attribute\": \"od_de_minimis\", \"value\": {\"type\": \"money\", \"dollars\": 10}, \"quote\": \"ten dollars\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]}, {\"clause\": \"fw-08\", \"atoms\": [{\"attribute\": \"od_chargeoff\", \"value\": {\"type\": \"duration\", \"n\": 45, \"unit\": \"days\"}, \"quote\": \"Six weeks and three days\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]}, {\"clause\": \"fw-09\", \"atoms\": [{\"attribute\": \"wire_cutoff\", \"value\": {\"type\": \"time\", \"minutes\": 900}, \"quote\": \"three in the afternoon\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": \"Consumer and small business wire requests\", \"condition\": null}]}, {\"clause\": \"fw-10\", \"atoms\": [{\"attribute\": \"wire_callback\", \"value\": {\"type\": \"money\", \"dollars\": 10000}, \"quote\": \"$10K\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]}]}",
+   "problems": [
+    "fw-08: atom 1: the quote doesn't hold the value",
+    "fw-10: atom 1: the quote doesn't hold the value"
+   ],
+   "meta": {
+    "ms": 10837,
+    "api_ms": 10547,
+    "input_tokens": 8813,
+    "output_tokens": 1820,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 6129,
+     "cache_read_input_tokens": 2682,
+     "output_tokens": 1820,
+     "output_tokens_details": {
+      "thinking_tokens": 814
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 6129,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 1820,
+       "cache_read_input_tokens": 2682,
+       "cache_creation_input_tokens": 6129,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 6129
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.042988200000000004,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  },
+  {
+   "reply": "{\"results\": [{\"clause\": \"fw-08\", \"atoms\": [{\"attribute\": \"od_chargeoff\", \"value\": {\"type\": \"duration\", \"n\": 45, \"unit\": \"days\"}, \"quote\": \"Six weeks and three days\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]}, {\"clause\": \"fw-10\", \"atoms\": [{\"attribute\": \"wire_callback\", \"value\": {\"type\": \"money\", \"dollars\": 10000}, \"quote\": \"$10K\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]}]}",
+   "problems": [
+    "fw-08: atom 1: the quote doesn't hold the value",
+    "fw-10: atom 1: the quote doesn't hold the value"
+   ],
+   "meta": {
+    "ms": 4569,
+    "api_ms": 4385,
+    "input_tokens": 7890,
+    "output_tokens": 554,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 5206,
+     "cache_read_input_tokens": 2682,
+     "output_tokens": 554,
+     "output_tokens_details": {
+      "thinking_tokens": 347
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 5206,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 554,
+       "cache_read_input_tokens": 2682,
+       "cache_creation_input_tokens": 5206,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 5206
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.0266362,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   },
+   "items": [
+    "fw-08",
+    "fw-10"
+   ]
+  }
+ ],
+ "held": {
+  "fw-08": [
+   "atom 1: the quote doesn't hold the value"
+  ],
+  "fw-10": [
+   "atom 1: the quote doesn't hold the value"
+  ]
+ },
+ "recorded_at": "2026-10-30T04:14:09+00:00"
+}

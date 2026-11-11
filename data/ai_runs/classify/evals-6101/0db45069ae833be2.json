@@ -1,0 +1,307 @@
+{
+ "step": "classify",
+ "tag": "evals-6101",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "2c908358fde9f0f4a792753579a6cfaa33476e41c4b0f235744675d8e8283a19",
+ "input": [
+  {
+   "pair": "pair-bc617b7682",
+   "rule": "Complaint resolution deadline",
+   "attribute": "complaint_resolve",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "BUL-CMP-01@v1/s1/c2",
+    "text": "Complaints should be closed within 15 business days of the day they arrive.",
+    "heading": "What branches need to know",
+    "document": {
+     "title": "Branch Bulletin 2025-09: Complaint resolution deadline",
+     "type": "bulletin",
+     "version": 1,
+     "effective": "2026-01-30",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "JA-CMP-02@v1/s1/c2",
+    "text": "Complaint resolution deadline | 15 business days",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Complaint Escalation Checklist",
+     "type": "job_aid",
+     "version": 1,
+     "effective": "2026-06-21",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-1c2037414d",
+   "rule": "Dual control at opening",
+   "attribute": "branch_open_dual",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-BOP-03@v2/s3/c8",
+    "text": "Two employees must be present to open the branch each morning.",
+    "heading": "Steps",
+    "document": {
+     "title": "Changing Vault Combinations",
+     "type": "procedure",
+     "version": 2,
+     "effective": "2026-08-31",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "JA-BOP-02@v1/s1/c2",
+    "text": "Vault combination change interval | 6 months",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Closing Checklist",
+     "type": "job_aid",
+     "version": 1,
+     "effective": "2026-03-02",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-faeca09bff",
+   "rule": "Large deposit hold threshold",
+   "attribute": "hold_large_threshold",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "FAQ-HLD-02@v4/s1/c1",
+    "text": "An extended hold may be placed on the part of a day's check deposits above $6,000.",
+    "heading": "When can a large check deposit get an extended hold?",
+    "document": {
+     "title": "Check Hold Questions from Customers",
+     "type": "faq",
+     "version": 4,
+     "effective": "2026-03-02",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "JA-HLD-02@v3/s1/c1",
+    "text": "Longest check hold on a new account | 7 business days",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Check Hold Desk Card",
+     "type": "job_aid",
+     "version": 3,
+     "effective": "2026-01-13",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-5d3447bc34",
+   "rule": "Notice before dormancy",
+   "attribute": "dormant_notice",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-DRM-03@v1/s3/c3",
+    "text": "Mail the customer a notice at least 30 days before the account is classified as dormant.",
+    "heading": "Steps",
+    "document": {
+     "title": "Reactivating a Dormant Account",
+     "type": "procedure",
+     "version": 1,
+     "effective": "2026-01-25",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "FAQ-DRM-02@v4/s3/c1",
+    "text": "Dormant accounts are charged a maintenance fee of $5 per month.",
+    "heading": "What is the monthly fee on a dormant account?",
+    "document": {
+     "title": "Reactivation Questions",
+     "type": "faq",
+     "version": 4,
+     "effective": "2026-03-19",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-03bee32729",
+   "rule": "Card dispute window",
+   "attribute": "dispute_window",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "JA-DSP-01@v3/s1/c2",
+    "text": "Debit card dispute window | 60 days",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Dispute Intake Checklist",
+     "type": "job_aid",
+     "version": 3,
+     "effective": "2025-08-29",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "FAQ-DSP-01@v1/s1/c1",
+    "text": "Send any dispute above $500 to card services for review before issuing credit.",
+    "heading": "Which disputes need card services review?",
+    "document": {
+     "title": "Debit Card Dispute FAQ",
+     "type": "faq",
+     "version": 1,
+     "effective": "2026-02-18",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-19068d4592",
+   "rule": "Complaint acknowledgment deadline",
+   "attribute": "complaint_ack",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-CMP-05@v1/s3/c9",
+    "text": "Send the customer an acknowledgment no later than 2 business days after a written complaint arrives.",
+    "heading": "Steps",
+    "document": {
+     "title": "Reviewing Complaint Trends Each Quarter",
+     "type": "procedure",
+     "version": 1,
+     "effective": "2025-12-18",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "JA-CMP-01@v1/s1/c1",
+    "text": "Complaint resolution deadline | 15 business days",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Complaint Handling Card",
+     "type": "job_aid",
+     "version": 1,
+     "effective": "2026-02-10",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-bb38ddd285",
+   "rule": "Overdraft fees per day",
+   "attribute": "od_daily_cap",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-ODR-01@v2/s3/c4",
+    "text": "No more than three overdraft fees are charged to an account in one business day.",
+    "heading": "Steps",
+    "document": {
+     "title": "Reviewing Overdrawn Accounts Each Morning",
+     "type": "procedure",
+     "version": 2,
+     "effective": "2025-12-24",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "JA-ODR-02@v4/s1/c1",
+    "text": "Overdraft amount with no fee | $10",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Overdraft Fee Desk Card",
+     "type": "job_aid",
+     "version": 4,
+     "effective": "2025-11-07",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-7d4c0e66a8",
+   "rule": "Closed account record retention",
+   "attribute": "records_retention",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "FAQ-REC-01@v2/s1/c1",
+    "text": "Account records are kept for 7 years after the account closes.",
+    "heading": "How long are closed account records kept?",
+    "document": {
+     "title": "Records Retention FAQ",
+     "type": "faq",
+     "version": 2,
+     "effective": "2025-11-04",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "JA-REC-02@v2/s1/c1",
+    "text": "Approver for records destruction | records custodian",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Destruction Approval Checklist",
+     "type": "job_aid",
+     "version": 2,
+     "effective": "2025-12-22",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  }
+ ],
+ "input_hash": "6ba2f26bd1576ed9b1aeea5f479f7704b976b67e831c3268b639ba23101095f8",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [{\"pair\": \"pair-bc617b7682\", \"label\": \"consistent\", \"quote_a\": \"Complaints should be closed within 15 business days of the day they arrive.\", \"quote_b\": \"Complaint resolution deadline | 15 business days\", \"rationale\": \"Both clauses set the complaint resolution deadline at 15 business days for all branches and business lines. The wording differs but the rule and value match, and the clauses are not a copied passage.\"}, {\"pair\": \"pair-1c2037414d\", \"label\": \"unrelated\", \"quote_a\": \"Two employees must be present to open the branch each morning.\", \"quote_b\": \"Vault combination change interval | 6 months\", \"rationale\": \"One clause requires two employees at branch opening and the other sets how often vault combinations change. They govern different things.\"}, {\"pair\": \"pair-faeca09bff\", \"label\": \"unrelated\", \"quote_a\": \"An extended hold may be placed on the part of a day's check deposits above $6,000.\", \"quote_b\": \"Longest check hold on a new account | 7 business days\", \"rationale\": \"One clause sets the deposit amount that allows an extended hold and the other sets the maximum hold length on a new account. These are different rules.\"}, {\"pair\": \"pair-5d3447bc34\", \"label\": \"unrelated\", \"quote_a\": \"Mail the customer a notice at least 30 days before the account is classified as dormant.\", \"quote_b\": \"Dormant accounts are charged a maintenance fee of $5 per month.\", \"rationale\": \"One clause covers the notice timing before an account becomes dormant and the other covers the fee charged after it is dormant. They govern different things.\"}, {\"pair\": \"pair-03bee32729\", \"label\": \"unrelated\", \"quote_a\": \"Debit card dispute window | 60 days\", \"quote_b\": \"Send any dispute above $500 to card services for review before issuing credit.\", \"rationale\": \"One clause sets how long a customer has to file a debit card dispute and the other sets when a dispute needs card services review. Following both creates no clash.\"}, {\"pair\": \"pair-19068d4592\", \"label\": \"unrelated\", \"quote_a\": \"Send the customer an acknowledgment no later than 2 business days after a written complaint arrives.\", \"quote_b\": \"Complaint resolution deadline | 15 business days\", \"rationale\": \"One clause sets the deadline to acknowledge a complaint and the other sets the deadline to resolve it. These are two separate deadlines.\"}, {\"pair\": \"pair-bb38ddd285\", \"label\": \"unrelated\", \"quote_a\": \"No more than three overdraft fees are charged to an account in one business day.\", \"quote_b\": \"Overdraft amount with no fee | $10\", \"rationale\": \"One clause caps the number of overdraft fees per day and the other sets an overdraft amount below which no fee applies. They govern different parts of overdraft fees.\"}, {\"pair\": \"pair-7d4c0e66a8\", \"label\": \"unrelated\", \"quote_a\": \"Account records are kept for 7 years after the account closes.\", \"quote_b\": \"Approver for records destruction | records custodian\", \"rationale\": \"One clause sets how long closed account records are kept and the other names who approves their destruction. They govern different things.\"}]}",
+   "problems": [],
+   "meta": {
+    "ms": 10244,
+    "api_ms": 10104,
+    "input_tokens": 8950,
+    "output_tokens": 1549,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 8107,
+     "cache_read_input_tokens": 841,
+     "output_tokens": 1549,
+     "output_tokens_details": {
+      "thinking_tokens": 497
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 8107,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 1549,
+       "cache_read_input_tokens": 841,
+       "cache_creation_input_tokens": 8107,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 8107
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.048006099999999996,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T05:29:21+00:00"
+}

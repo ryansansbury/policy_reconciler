@@ -1,0 +1,179 @@
+{
+ "step": "draft",
+ "tag": "cmp-6101",
+ "model": "google-b",
+ "backend": {
+  "vendor": "Google",
+  "model": "gemini-3.8-flash",
+  "label": "Gemini 3.8 Flash"
+ },
+ "prompt_hash": "d412e32e9168de04c00c3959530ebecb6630d0f9092d4afc1f9c308a4695a32e",
+ "input": [
+  {
+   "group": "g-89c313f3",
+   "rule": "Unfair treatment escalation",
+   "attribute": "complaint_escalation_role",
+   "type": "role",
+   "keep": {
+    "clause": "POL-CMP-01@v4/s3/c1",
+    "text": "Complaints that allege unfair treatment are escalated to the regional manager the same day.",
+    "heading": "Policy statements",
+    "document": {
+     "title": "Complaint Management Policy",
+     "type": "policy",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "change": [
+    {
+     "clause": "FAQ-CMP-01@v3/s2/c1",
+     "text": "Complaints that allege unfair treatment are escalated to the branch manager the same day.",
+     "heading": "Who handles a complaint that alleges unfair treatment?",
+     "document": {
+      "title": "Complaint Handling FAQ",
+      "type": "faq",
+      "applies_to": "All branches. All business lines."
+     }
+    },
+    {
+     "clause": "PRO-CMP-03@v1/s3/c7",
+     "text": "Complaints that allege unfair treatment are escalated to the compliance officer the same day.",
+     "heading": "Steps",
+     "document": {
+      "title": "Resolving and Closing a Complaint",
+      "type": "procedure",
+      "applies_to": "All branches. All business lines."
+     }
+    },
+    {
+     "clause": "PRO-CMP-05@v1/s3/c4",
+     "text": "Escalate any complaint alleging unfair treatment to management on the day it is received.",
+     "heading": "Steps",
+     "document": {
+      "title": "Reviewing Complaint Trends Each Quarter",
+      "type": "procedure",
+      "applies_to": "All branches. All business lines."
+     }
+    }
+   ],
+   "allowed": {
+    "JA-CMP-01@v1/s1/c2#value": "regional manager",
+    "POL-CMP-01@v4/s3/c1#value": "regional manager",
+    "PRO-CMP-04@v1/s3/c5#value": "regional manager"
+   },
+   "placeholder": "{clause:POL-CMP-01@v4/s3/c1#value}"
+  },
+  {
+   "group": "g-76b64634",
+   "rule": "Complaint resolution deadline",
+   "attribute": "complaint_resolve",
+   "type": "duration",
+   "keep": {
+    "clause": "POL-CMP-01@v4/s4/c2",
+    "text": "Resolve complaints within 15 business days of receipt, or tell the customer when to expect a resolution.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Complaint Management Policy",
+     "type": "policy",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "change": [
+    {
+     "clause": "BUL-CMP-01@v1/s1/c2",
+     "text": "Complaints should be closed within 15 business days of the day they arrive.",
+     "heading": "What branches need to know",
+     "document": {
+      "title": "Branch Bulletin 2025-09: Complaint resolution deadline",
+      "type": "bulletin",
+      "applies_to": "All branches. All business lines."
+     }
+    },
+    {
+     "clause": "JA-CMP-01@v1/s1/c1",
+     "text": "Complaint resolution deadline | 15 business days",
+     "heading": "Quick reference",
+     "document": {
+      "title": "Complaint Handling Card",
+      "type": "job_aid",
+      "applies_to": "All branches. All business lines."
+     }
+    },
+    {
+     "clause": "JA-CMP-02@v1/s1/c2",
+     "text": "Complaint resolution deadline | 15 business days",
+     "heading": "Quick reference",
+     "document": {
+      "title": "Complaint Escalation Checklist",
+      "type": "job_aid",
+      "applies_to": "All branches. All business lines."
+     }
+    },
+    {
+     "clause": "PRO-CMP-01@v2/s3/c6",
+     "text": "Resolve complaints within 15 days of receipt, or tell the customer when to expect a resolution.",
+     "heading": "Steps",
+     "document": {
+      "title": "Logging a Customer Complaint",
+      "type": "procedure",
+      "applies_to": "All branches. All business lines."
+     }
+    },
+    {
+     "clause": "PRO-CMP-05@v1/s3/c6",
+     "text": "Complaints should be closed within 15 business days of the day they arrive.",
+     "heading": "Steps",
+     "document": {
+      "title": "Reviewing Complaint Trends Each Quarter",
+      "type": "procedure",
+      "applies_to": "All branches. All business lines."
+     }
+    },
+    {
+     "clause": "PRO-CMP-06@v1/s3/c2",
+     "text": "Resolve complaints within 15 days of receipt, or tell the customer when to expect a resolution.",
+     "heading": "Steps",
+     "document": {
+      "title": "Responding to a Complaint by Phone",
+      "type": "procedure",
+      "applies_to": "All branches. All business lines."
+     }
+    }
+   ],
+   "allowed": {
+    "BUL-CMP-01@v1/s1/c2#value": "15 business days",
+    "JA-CMP-01@v1/s1/c1#value": "15 business days",
+    "JA-CMP-02@v1/s1/c2#value": "15 business days",
+    "POL-CMP-01@v4/s4/c2#value": "15 business days",
+    "PRO-CMP-02@v1/s3/c1#value": "15 business days",
+    "PRO-CMP-05@v1/s3/c6#value": "15 business days"
+   },
+   "placeholder": "{clause:POL-CMP-01@v4/s4/c2#value}"
+  }
+ ],
+ "input_hash": "33f299dcef169496e10fbf5b3d4234f7860236caab7a1c4189a2b8d1603c7f2a",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\n \"results\": [\n  {\n   \"group\": \"g-89c313f3\",\n   \"title\": \"Escalating unfair treatment complaints\",\n   \"text\": \"Complaints that allege unfair treatment are escalated to the {clause:POL-CMP-01@v4/s3/c1#value} the same day.\"\n  },\n  {\n   \"group\": \"g-76b64634\",\n   \"title\": \"Complaint resolution deadline\",\n   \"text\": \"Resolve complaints within {clause:POL-CMP-01@v4/s4/c2#value} of receipt, or tell the customer when to expect a resolution.\"\n  }\n ]\n}",
+   "problems": [],
+   "meta": {
+    "ms": 9550,
+    "input_tokens": 2402,
+    "output_tokens": 1142,
+    "cost_usd": 0.006084,
+    "usage": {
+     "completion_tokens": 163,
+     "prompt_tokens": 2402,
+     "total_tokens": 3544
+    },
+    "models": [
+     "gemini-3.8-flash"
+    ],
+    "stop_reason": "stop"
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T17:33:56+00:00"
+}

@@ -1,0 +1,149 @@
+{
+ "step": "extract",
+ "tag": "2026",
+ "model": "openai-b",
+ "backend": {
+  "vendor": "OpenAI",
+  "model": "gpt-6-luna",
+  "label": "GPT-6 Luna"
+ },
+ "prompt_hash": "dcc761e46c6ec579c01b9dfd540df3c2fa4bba3b6b5ec777aa2cf9c9c62aa411",
+ "input": [
+  {
+   "clause": "POL-FEE-01@v2/s3/c1",
+   "text": "Personal bankers may waive service fees up to $25 per account in a calendar year, or up to $50 with branch manager approval noted in the account.",
+   "heading": "Policy statements",
+   "document": {
+    "title": "Service Fee Waiver Policy",
+    "type": "policy",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "POL-FEE-01@v2/s4/c2",
+   "text": "Each account may receive no more than two fee waivers in a calendar year.",
+   "heading": "Additional requirements",
+   "document": {
+    "title": "Service Fee Waiver Policy",
+    "type": "policy",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "POL-FEE-01@v2/s5/c1",
+   "text": "Exceptions to this policy need written approval from the Retail Banking Operations manager and are reviewed each quarter.",
+   "heading": "Exceptions",
+   "document": {
+    "title": "Service Fee Waiver Policy",
+    "type": "policy",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "POL-FEE-01@v2/s6/c1",
+   "text": "Branch managers make sure their teams follow this policy, and Retail Banking Operations answers questions about it.",
+   "heading": "Roles and responsibilities",
+   "document": {
+    "title": "Service Fee Waiver Policy",
+    "type": "policy",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "POL-FEE-02@v6/s5/c1",
+   "text": "Exceptions to this policy need written approval from the Retail Banking Operations manager and are reviewed each quarter.",
+   "heading": "Exceptions",
+   "document": {
+    "title": "Fee Refund Policy",
+    "type": "policy",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "POL-FEE-02@v6/s6/c1",
+   "text": "Branch managers make sure their teams follow this policy, and Retail Banking Operations answers questions about it.",
+   "heading": "Roles and responsibilities",
+   "document": {
+    "title": "Fee Refund Policy",
+    "type": "policy",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "POL-HLD-01@v5/s5/c1",
+   "text": "Exceptions to this policy need written approval from the Deposit Operations manager and are reviewed each quarter.",
+   "heading": "Exceptions",
+   "document": {
+    "title": "Funds Availability Policy",
+    "type": "policy",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "POL-HLD-01@v5/s6/c1",
+   "text": "Branch managers make sure their teams follow this policy, and Deposit Operations answers questions about it.",
+   "heading": "Roles and responsibilities",
+   "document": {
+    "title": "Funds Availability Policy",
+    "type": "policy",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "POL-LND-01@v4/s6/c1",
+   "text": "Branch managers make sure their teams follow this policy, and Lending answers questions about it.",
+   "heading": "Roles and responsibilities",
+   "document": {
+    "title": "Loan Pricing Exception Policy",
+    "type": "policy",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "POL-ODR-01@v4/s5/c1",
+   "text": "Exceptions to this policy need written approval from the Deposit Operations manager and are reviewed each quarter.",
+   "heading": "Exceptions",
+   "document": {
+    "title": "Overdraft Policy",
+    "type": "policy",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  }
+ ],
+ "input_hash": "7011cf92a3d1240fc6f5a63ffeb3fba58f531e5e987efc57206d4877f739b94c",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\":[{\"clause\":\"POL-FEE-01@v2/s3/c1\",\"atoms\":[{\"attribute\":\"fee_waiver_pb\",\"value\":{\"type\":\"money\",\"dollars\":25},\"quote\":\"$25\",\"actor\":\"personal_banker\",\"actor_inferred\":false,\"scope_quote\":null,\"condition\":\"or up to $50 with branch manager approval noted in the account\"},{\"attribute\":\"fee_waiver_bm\",\"value\":{\"type\":\"money\",\"dollars\":50},\"quote\":\"$50\",\"actor\":\"branch_manager\",\"actor_inferred\":false,\"scope_quote\":null,\"condition\":\"with branch manager approval noted in the account\"}]},{\"clause\":\"POL-FEE-01@v2/s4/c2\",\"atoms\":[{\"attribute\":\"fee_waivers_per_year\",\"value\":{\"type\":\"count\",\"n\":2},\"quote\":\"two\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]},{\"clause\":\"POL-FEE-01@v2/s5/c1\",\"atoms\":[]},{\"clause\":\"POL-FEE-01@v2/s6/c1\",\"atoms\":[]},{\"clause\":\"POL-FEE-02@v6/s5/c1\",\"atoms\":[]},{\"clause\":\"POL-FEE-02@v6/s6/c1\",\"atoms\":[]},{\"clause\":\"POL-HLD-01@v5/s5/c1\",\"atoms\":[]},{\"clause\":\"POL-HLD-01@v5/s6/c1\",\"atoms\":[]},{\"clause\":\"POL-LND-01@v4/s6/c1\",\"atoms\":[]},{\"clause\":\"POL-ODR-01@v4/s5/c1\",\"atoms\":[]}]}",
+   "problems": [],
+   "meta": {
+    "ms": 11875,
+    "input_tokens": 2695,
+    "output_tokens": 1033,
+    "cost_usd": 0.000786,
+    "usage": {
+     "prompt_tokens": 2695,
+     "completion_tokens": 1033,
+     "total_tokens": 3728,
+     "prompt_tokens_details": {
+      "cached_tokens": 1728,
+      "cache_write_tokens": 964,
+      "audio_tokens": 0
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 668,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+     }
+    },
+    "models": [
+     "gpt-6-luna"
+    ],
+    "stop_reason": "stop"
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T19:46:10+00:00"
+}

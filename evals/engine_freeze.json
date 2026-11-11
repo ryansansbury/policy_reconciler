@@ -1,0 +1,68 @@
+{
+ "engine": "fa72603aebeb399802fc074314acb302ae49a0e95923eec797920b44ffc8b51d",
+ "files": {
+  "__init__.py": "e3b0c44298fc1c14",
+  "compare.py": "c0b4f24bc6dcab37",
+  "duplicates.py": "3d93db495778dbd3",
+  "extract.py": "adfec2eab8f00f1d",
+  "lexicon.py": "dc51f1d784aa1b9b",
+  "parse.py": "08c9ad66c85f43ec",
+  "pipeline.py": "4a289272973914d4",
+  "scope.py": "ea400a2cf28a1063",
+  "store.py": "d76f4767a0e894a2",
+  "values.py": "a7884d97475ab7b6"
+ },
+ "frozen_at": "2026-10-29T19:27",
+ "history": [
+  {
+   "engine": "31151da2577b69394997f4c972c9ba194c314ce8a049de24c969ff8fe2351454",
+   "files": {
+    "__init__.py": "e3b0c44298fc1c14",
+    "compare.py": "149a12192860836e",
+    "duplicates.py": "3d93db495778dbd3",
+    "extract.py": "7c3747b75b56973a",
+    "lexicon.py": "dc51f1d784aa1b9b",
+    "parse.py": "08c9ad66c85f43ec",
+    "pipeline.py": "4a289272973914d4",
+    "scope.py": "ea400a2cf28a1063",
+    "store.py": "d76f4767a0e894a2",
+    "values.py": "ef71805dac69d581"
+   },
+   "frozen_at": "2026-10-29T18:34",
+   "note": "The code-only engine. It was tuned on development seeds 11 and 23 only and frozen before its one scoring on the held-out seeds.",
+   "thresholds": {
+    "duplicate_run": 3,
+    "duplicate_similarity": 0.72
+   },
+   "version": 1
+  },
+  {
+   "engine": "2b3c0d02e454e32a208e27b30d0a3b31c9ac4f6a26c13986383715281b5ec5aa",
+   "files": {
+    "__init__.py": "e3b0c44298fc1c14",
+    "compare.py": "149a12192860836e",
+    "duplicates.py": "3d93db495778dbd3",
+    "extract.py": "adfec2eab8f00f1d",
+    "lexicon.py": "dc51f1d784aa1b9b",
+    "parse.py": "08c9ad66c85f43ec",
+    "pipeline.py": "4a289272973914d4",
+    "scope.py": "ea400a2cf28a1063",
+    "store.py": "d76f4767a0e894a2",
+    "values.py": "a7884d97475ab7b6"
+   },
+   "frozen_at": "2026-10-29T19:02",
+   "note": "Engine version 2. Version 1 dropped a clause that reads like a rule but matches no tracked rule's cue words, and the hand-written clauses showed that's where code misses silently (23 of 36). Version 2 sends those clauses to the rule extractor's queue and adds the role names by id for the prompt. Code's own findings are unchanged because the queue never makes a finding. It was tuned on development seeds 11 and 23 only. It was scored once on held-out set B (6101, 6202, and 6303) and never on the seeds version 1 was scored on.",
+   "thresholds": {
+    "duplicate_run": 3,
+    "duplicate_similarity": 0.72
+   },
+   "version": 2
+  }
+ ],
+ "note": "Engine version 3. Version 2 was never scored. Version 3 names the side that narrows a variation's scope the way scope.deliberate found it. A variation's reason no longer reads None when an addendum narrows states while a policy narrows lines. Findings are unchanged. It was tuned on development seeds only and scored once on held-out set B.",
+ "thresholds": {
+  "duplicate_run": 3,
+  "duplicate_similarity": 0.72
+ },
+ "version": 3
+}

@@ -1,0 +1,167 @@
+{
+ "step": "extract",
+ "tag": "6202",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "dcc761e46c6ec579c01b9dfd540df3c2fa4bba3b6b5ec777aa2cf9c9c62aa411",
+ "input": [
+  {
+   "clause": "POL-ODR-01@v3/s5/c1",
+   "text": "Exceptions to this policy need written approval from the Deposit Operations manager and are reviewed each quarter.",
+   "heading": "Exceptions",
+   "document": {
+    "title": "Overdraft Policy",
+    "type": "policy",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "POL-ODR-01@v3/s6/c1",
+   "text": "Branch managers make sure their teams follow this policy, and Deposit Operations answers questions about it.",
+   "heading": "Roles and responsibilities",
+   "document": {
+    "title": "Overdraft Policy",
+    "type": "policy",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "POL-REC-01@v6/s5/c1",
+   "text": "Exceptions to this policy need written approval from the Records Management manager and are reviewed each quarter.",
+   "heading": "Exceptions",
+   "document": {
+    "title": "Records Retention Policy",
+    "type": "policy",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "POL-REC-01@v6/s6/c1",
+   "text": "Branch managers make sure their teams follow this policy, and Records Management answers questions about it.",
+   "heading": "Roles and responsibilities",
+   "document": {
+    "title": "Records Retention Policy",
+    "type": "policy",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "POL-REC-01@v6/s7/c1",
+   "text": "Records Management reviews this policy at least once a year.",
+   "heading": "Review",
+   "document": {
+    "title": "Records Retention Policy",
+    "type": "policy",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "POL-WIR-01@v5/s3/c2",
+   "text": "Call the customer back at a phone number already on file before releasing any outgoing wire of $10,000 or more, unless the wire goes to an account the customer has used in the past year.",
+   "heading": "Policy statements",
+   "document": {
+    "title": "Wire Transfer Policy",
+    "type": "policy",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "POL-WIR-01@v5/s4/c1",
+   "text": "Callbacks are completed by a wire specialist, never by the employee who took the request.",
+   "heading": "Additional requirements",
+   "document": {
+    "title": "Wire Transfer Policy",
+    "type": "policy",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "POL-WIR-01@v5/s4/c2",
+   "text": "Outgoing wires over $50,000 need a second approval from an operations manager.",
+   "heading": "Additional requirements",
+   "document": {
+    "title": "Wire Transfer Policy",
+    "type": "policy",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "POL-WIR-01@v5/s6/c1",
+   "text": "Branch managers make sure their teams follow this policy, and Treasury Services answers questions about it.",
+   "heading": "Roles and responsibilities",
+   "document": {
+    "title": "Wire Transfer Policy",
+    "type": "policy",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "POL-WIR-02@v5/s3/c1",
+   "text": "Only a wire specialist may complete the callback for an outgoing wire.",
+   "heading": "Policy statements",
+   "document": {
+    "title": "Commercial Wire Services Policy",
+    "type": "policy",
+    "applies_to": "All branches. Commercial accounts."
+   }
+  }
+ ],
+ "input_hash": "1cebe0852f77a91b860e8e3b941c3b75674d0f65d437cfccd7437f943b095048",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\":[{\"clause\":\"POL-ODR-01@v3/s5/c1\",\"atoms\":[]},{\"clause\":\"POL-ODR-01@v3/s6/c1\",\"atoms\":[]},{\"clause\":\"POL-REC-01@v6/s5/c1\",\"atoms\":[]},{\"clause\":\"POL-REC-01@v6/s6/c1\",\"atoms\":[]},{\"clause\":\"POL-REC-01@v6/s7/c1\",\"atoms\":[]},{\"clause\":\"POL-WIR-01@v5/s3/c2\",\"atoms\":[{\"attribute\":\"wire_callback\",\"value\":{\"type\":\"money\",\"dollars\":10000},\"quote\":\"$10,000\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":\"unless the wire goes to an account the customer has used in the past year\"}]},{\"clause\":\"POL-WIR-01@v5/s4/c1\",\"atoms\":[{\"attribute\":\"wire_callback_role\",\"value\":{\"type\":\"role\",\"role\":\"wire_specialist\"},\"quote\":\"a wire specialist\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]},{\"clause\":\"POL-WIR-01@v5/s4/c2\",\"atoms\":[{\"attribute\":\"wire_second_approval\",\"value\":{\"type\":\"money\",\"dollars\":50000},\"quote\":\"$50,000\",\"actor\":\"operations_manager\",\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]},{\"clause\":\"POL-WIR-01@v5/s6/c1\",\"atoms\":[]},{\"clause\":\"POL-WIR-02@v5/s3/c1\",\"atoms\":[{\"attribute\":\"wire_callback_role\",\"value\":{\"type\":\"role\",\"role\":\"wire_specialist\"},\"quote\":\"a wire specialist\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]}]}",
+   "problems": [],
+   "meta": {
+    "ms": 7139,
+    "api_ms": 6918,
+    "input_tokens": 8932,
+    "output_tokens": 1100,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 6248,
+     "cache_read_input_tokens": 2682,
+     "output_tokens": 1100,
+     "output_tokens_details": {
+      "thinking_tokens": 466
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 6248,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 1100,
+       "cache_read_input_tokens": 2682,
+       "cache_creation_input_tokens": 6248,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 6248
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.0362642,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T04:10:55+00:00"
+}

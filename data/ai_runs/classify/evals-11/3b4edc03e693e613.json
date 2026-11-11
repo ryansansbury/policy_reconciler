@@ -1,0 +1,360 @@
+{
+ "step": "classify",
+ "tag": "evals-11",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "2c908358fde9f0f4a792753579a6cfaa33476e41c4b0f235744675d8e8283a19",
+ "input": [
+  {
+   "pair": "pair-4e60027a01",
+   "rule": "Outgoing wire cutoff",
+   "attribute": "wire_cutoff",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "JA-WIR-03@v1/s1/c4",
+    "text": "Outgoing wire cutoff (consumer and small business) | 3:00 PM Central",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Wire Cutoff Card",
+     "type": "job_aid",
+     "version": 1,
+     "effective": "2025-12-30",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "JA-WIR-02@v3/s1/c3",
+    "text": "Outgoing wire cutoff (consumer and small business) | 3:00 PM Central",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Callback Checklist",
+     "type": "job_aid",
+     "version": 3,
+     "effective": "2025-12-02",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-6fefed55f2",
+   "rule": "Documenting pricing exceptions",
+   "attribute": "lend_exception_doc",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "BUL-LND-02@v1/s1/c2",
+    "text": "Record the reason and the approver for every pricing exception in the loan file.",
+    "heading": "What branches need to know",
+    "document": {
+     "title": "Branch Bulletin 2026-23: Documenting pricing exceptions",
+     "type": "bulletin",
+     "version": 1,
+     "effective": "2026-06-19",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "JA-LND-02@v3/s1/c1",
+    "text": "Documenting pricing exceptions | Required",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Exception Documentation Checklist",
+     "type": "job_aid",
+     "version": 3,
+     "effective": "2025-09-21",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-d94361bcd1",
+   "rule": "Who completes wire callbacks",
+   "attribute": "wire_callback_role",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "FAQ-WIR-01@v4/s2/c1",
+    "text": "Only a wire specialist may complete the callback for an outgoing wire.",
+    "heading": "Who completes the callback for an outgoing wire?",
+    "document": {
+     "title": "Wire Transfer FAQ",
+     "type": "faq",
+     "version": 4,
+     "effective": "2026-08-13",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "PRO-WIR-07@v2/s3/c11",
+    "text": "Callbacks are completed by a wire specialist, never by the employee who took the request.",
+    "heading": "Steps",
+    "document": {
+     "title": "Second Approval for Large Wires",
+     "type": "procedure",
+     "version": 2,
+     "effective": "2025-05-06",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-67943eb32f",
+   "rule": "New account period",
+   "attribute": "ao_new_account_window",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "JA-AOP-01@v1/s1/c3",
+    "text": "How long an account counts as new | 30 days",
+    "heading": "Quick reference",
+    "document": {
+     "title": "New Account Quick Reference",
+     "type": "job_aid",
+     "version": 1,
+     "effective": "2026-07-29",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "JA-AOP-03@v4/s1/c4",
+    "text": "How long an account counts as new | 30 days",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Account Opening Desk Card",
+     "type": "job_aid",
+     "version": 4,
+     "effective": "2025-11-07",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-c9afd3a0a8",
+   "rule": "Fee refund window",
+   "attribute": "fee_refund_window",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-FEE-05@v1/s3/c7",
+    "text": "Fee refund requests are accepted for 60 days after the statement date.",
+    "heading": "Steps",
+    "document": {
+     "title": "Documenting Fee Waivers in Account Notes",
+     "type": "procedure",
+     "version": 1,
+     "effective": "2026-01-18",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "PRO-FEE-02@v3/s3/c4",
+    "text": "Customers may request a fee refund within 60 days of the statement date.",
+    "heading": "Steps",
+    "document": {
+     "title": "Reversing a Service Fee",
+     "type": "procedure",
+     "version": 3,
+     "effective": "2025-09-12",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-ae79df4c74",
+   "rule": "Large deposit hold threshold",
+   "attribute": "hold_large_threshold",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-HLD-01@v2/s3/c6",
+    "text": "An extended hold may be placed on the part of a day's check deposits above $6,000.",
+    "heading": "Steps",
+    "document": {
+     "title": "Placing a Hold on a Deposited Check",
+     "type": "procedure",
+     "version": 2,
+     "effective": "2025-10-22",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "FAQ-HLD-01@v2/s1/c1",
+    "text": "An extended hold may be placed on the part of a day's check deposits above $6,000.",
+    "heading": "When can a large check deposit get an extended hold?",
+    "document": {
+     "title": "Funds Availability FAQ",
+     "type": "faq",
+     "version": 2,
+     "effective": "2026-04-25",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-a0345f06c7",
+   "rule": "Dual control at opening",
+   "attribute": "branch_open_dual",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "JA-BOP-02@v2/s1/c2",
+    "text": "Dual control at branch opening | Required",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Closing Checklist",
+     "type": "job_aid",
+     "version": 2,
+     "effective": "2025-05-25",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "FAQ-BOP-01@v4/s1/c1",
+    "text": "Two employees must be present to open the branch each morning.",
+    "heading": "How many employees must be present to open the branch?",
+    "document": {
+     "title": "Branch Opening FAQ",
+     "type": "faq",
+     "version": 4,
+     "effective": "2026-03-03",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-681d08cd71",
+   "rule": "Large-cash review threshold",
+   "attribute": "cash_review_threshold",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "JA-CSH-03@v1/s1/c1",
+    "text": "Large-cash review threshold | $7,500",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Large-Cash Review Quick Reference",
+     "type": "job_aid",
+     "version": 1,
+     "effective": "2025-12-09",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "PRO-CSH-06@v4/s3/c10",
+    "text": "Cash transactions of $7,500 or more go to the large-cash review queue the same day.",
+    "heading": "Steps",
+    "document": {
+     "title": "Ordering Cash Shipments",
+     "type": "procedure",
+     "version": 4,
+     "effective": "2026-04-08",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  }
+ ],
+ "input_hash": "ba887466ed32add1d73dc7b34800eb2893c78adbe575c1b64f76abcd750668ed",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [{\"pair\": \"pair-4e60027a01\", \"label\": \"consistent\", \"quote_a\": \"Outgoing wire cutoff (consumer and small business) | 3:00 PM Central\", \"quote_b\": \"Outgoing wire cutoff (consumer and small business) | 3:00 PM Central\", \"rationale\": \"Both job aids give the same cutoff time for the same customers. Staff following either one act the same way.\"}, {\"pair\": \"pair-6fefed55f2\", \"label\": \"consistent\", \"quote_a\": \"Record the reason and the approver for every pricing exception in the loan file.\", \"quote_b\": \"Documenting pricing exceptions | Required\", \"rationale\": \"Both clauses require pricing exceptions to be documented. The bulletin adds detail about what to record and the checklist does not contradict it.\"}, {\"pair\": \"pair-d94361bcd1\", \"label\": \"consistent\", \"quote_a\": \"Only a wire specialist may complete the callback for an outgoing wire.\", \"quote_b\": \"Callbacks are completed by a wire specialist, never by the employee who took the request.\", \"rationale\": \"Both clauses limit callbacks to a wire specialist. The procedure also bars the employee who took the request, which a specialist rule already implies.\"}, {\"pair\": \"pair-67943eb32f\", \"label\": \"consistent\", \"quote_a\": \"How long an account counts as new | 30 days\", \"quote_b\": \"How long an account counts as new | 30 days\", \"rationale\": \"Both job aids set the same new account period of 30 days for the same accounts.\"}, {\"pair\": \"pair-c9afd3a0a8\", \"label\": \"consistent\", \"quote_a\": \"Fee refund requests are accepted for 60 days after the statement date.\", \"quote_b\": \"Customers may request a fee refund within 60 days of the statement date.\", \"rationale\": \"Both procedures set a 60 day window counted from the statement date. Staff would handle a request the same way under either one.\"}, {\"pair\": \"pair-ae79df4c74\", \"label\": \"consistent\", \"quote_a\": \"An extended hold may be placed on the part of a day's check deposits above $6,000.\", \"quote_b\": \"An extended hold may be placed on the part of a day's check deposits above $6,000.\", \"rationale\": \"Both clauses state the same rule with the same $6,000 threshold. Identical wording in a procedure and an FAQ does not make a conflict.\"}, {\"pair\": \"pair-a0345f06c7\", \"label\": \"consistent\", \"quote_a\": \"Dual control at branch opening | Required\", \"quote_b\": \"Two employees must be present to open the branch each morning.\", \"rationale\": \"Dual control at opening means two people present, so the clauses state the same requirement. Neither one adds an exception or changes the value.\"}, {\"pair\": \"pair-681d08cd71\", \"label\": \"consistent\", \"quote_a\": \"Large-cash review threshold | $7,500\", \"quote_b\": \"Cash transactions of $7,500 or more go to the large-cash review queue the same day.\", \"rationale\": \"Both clauses use $7,500 as the review threshold. The procedure adds same day routing that the job aid leaves out without contradicting it.\"}]}",
+   "problems": [
+    "pair-a0345f06c7: the rationale has a comma before so. End the sentence there and start the next one"
+   ],
+   "meta": {
+    "ms": 14838,
+    "api_ms": 14624,
+    "input_tokens": 8964,
+    "output_tokens": 1760,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 8121,
+     "cache_read_input_tokens": 841,
+     "output_tokens": 1760,
+     "output_tokens_details": {
+      "thinking_tokens": 722
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 8121,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 1760,
+       "cache_read_input_tokens": 841,
+       "cache_creation_input_tokens": 8121,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 8121
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.0501721,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  },
+  {
+   "reply": "{\"results\": [{\"pair\": \"pair-a0345f06c7\", \"label\": \"consistent\", \"quote_a\": \"Dual control at branch opening | Required\", \"quote_b\": \"Two employees must be present to open the branch each morning.\", \"rationale\": \"Dual control at opening means two employees, which is what the FAQ requires each morning. Both clauses state the same rule with the same value and neither adds an exception.\"}]}",
+   "problems": [],
+   "meta": {
+    "ms": 4309,
+    "api_ms": 4110,
+    "input_tokens": 6178,
+    "output_tokens": 417,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 5335,
+     "cache_read_input_tokens": 841,
+     "output_tokens": 417,
+     "output_tokens_details": {
+      "thinking_tokens": 283
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 5335,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 417,
+       "cache_read_input_tokens": 841,
+       "cache_creation_input_tokens": 5335,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 5335
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.025598100000000002,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   },
+   "items": [
+    "pair-a0345f06c7"
+   ]
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T03:56:21+00:00"
+}

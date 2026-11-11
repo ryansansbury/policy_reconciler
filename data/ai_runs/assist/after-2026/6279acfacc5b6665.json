@@ -1,0 +1,114 @@
+{
+ "step": "assist",
+ "tag": "after-2026",
+ "model": "claude-haiku",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "haiku",
+  "client_context": true
+ },
+ "prompt_hash": "66c01f0da9f327e74355d39363e55b642a1bbf8dc6249974c3afbf3cb3d6ccd5",
+ "input": [
+  {
+   "question": "q-C-07",
+   "text": "Do pricing exceptions have to be documented?",
+   "type": "modal",
+   "clauses": [
+    {
+     "id": "JA-LND-02@v2/s1/c1",
+     "text": "Documenting pricing exceptions | Required",
+     "title": "Exception Documentation Checklist",
+     "type": "job_aid",
+     "version": 2,
+     "effective": "2026-07-01"
+    },
+    {
+     "id": "BUL-LND-02@v2/s1/c2",
+     "text": "Every pricing exception must be documented in the loan file with the reason and the approver.",
+     "title": "Branch Bulletin 2026-22: Documenting pricing exceptions",
+     "type": "bulletin",
+     "version": 2,
+     "effective": "2026-07-03"
+    },
+    {
+     "id": "JA-LND-01@v3/s3/c1",
+     "text": "Every pricing exception must be documented in the loan file with the reason and the approver.",
+     "title": "Rate Exception Authority Card",
+     "type": "job_aid",
+     "version": 3,
+     "effective": "2025-06-11"
+    },
+    {
+     "id": "PRO-LND-02@v1/s3/c4",
+     "text": "Every pricing exception must be documented in the loan file with the reason and the approver.",
+     "title": "Approving a Rate Exception",
+     "type": "procedure",
+     "version": 1,
+     "effective": "2026-06-05"
+    },
+    {
+     "id": "PRO-LND-03@v4/s1/c1",
+     "text": "This procedure covers documenting Pricing Exceptions, step by step, for every branch it applies to.",
+     "title": "Documenting Pricing Exceptions",
+     "type": "procedure",
+     "version": 4,
+     "effective": "2025-04-01"
+    }
+   ]
+  }
+ ],
+ "input_hash": "67c63704e7bcf24a8431b9b2071e09410428e297dfa60e554f944cfa892ae95e",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [{\"question\": \"q-C-07\", \"answer\": \"Yes. Every pricing exception must be documented in the loan file with the reason and the approver, as stated in the Approving a Rate Exception procedure, the Rate Exception Authority Card and Branch Bulletin 2026-22, and the Exception Documentation Checklist marks this documentation as required. The sources that state the rule agree, and no conflict needs to be flagged.\", \"citations\": [\"PRO-LND-02@v1/s3/c4\", \"JA-LND-01@v3/s3/c1\", \"BUL-LND-02@v2/s1/c2\", \"JA-LND-02@v2/s1/c1\"], \"sources_disagree\": false}]}",
+   "problems": [],
+   "meta": {
+    "ms": 7697,
+    "api_ms": 7562,
+    "input_tokens": 6165,
+    "output_tokens": 1381,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 5545,
+     "cache_read_input_tokens": 618,
+     "output_tokens": 1381,
+     "output_tokens_details": {
+      "thinking_tokens": 1144
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 5545,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 1381,
+       "cache_read_input_tokens": 618,
+       "cache_creation_input_tokens": 5545,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 5545
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.0018058800000000002,
+    "models": [
+     "claude-haiku-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T21:27:31+00:00"
+}

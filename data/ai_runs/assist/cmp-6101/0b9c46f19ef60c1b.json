@@ -1,0 +1,114 @@
+{
+ "step": "assist",
+ "tag": "cmp-6101",
+ "model": "claude-haiku",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "haiku",
+  "client_context": true
+ },
+ "prompt_hash": "66c01f0da9f327e74355d39363e55b642a1bbf8dc6249974c3afbf3cb3d6ccd5",
+ "input": [
+  {
+   "question": "q-C-12",
+   "text": "How many overdraft fees can an account be charged in one day?",
+   "type": "count",
+   "clauses": [
+    {
+     "id": "POL-ODR-01@v2/s3/c2",
+     "text": "No more than three overdraft fees are charged to an account in one business day.",
+     "title": "Overdraft Policy",
+     "type": "policy",
+     "version": 2,
+     "effective": "2025-11-24"
+    },
+    {
+     "id": "PRO-ODR-01@v2/s3/c4",
+     "text": "No more than three overdraft fees are charged to an account in one business day.",
+     "title": "Reviewing Overdrawn Accounts Each Morning",
+     "type": "procedure",
+     "version": 2,
+     "effective": "2025-12-24"
+    },
+    {
+     "id": "PRO-ODR-03@v2/s3/c8",
+     "text": "No more than three overdraft fees are charged to an account in one business day.",
+     "title": "Referring Accounts for Charge-Off",
+     "type": "procedure",
+     "version": 2,
+     "effective": "2025-03-21"
+    },
+    {
+     "id": "PRO-ODR-05@v4/s3/c9",
+     "text": "No more than three overdraft fees are charged to an account in one business day.",
+     "title": "Closing an Overdrawn Account",
+     "type": "procedure",
+     "version": 4,
+     "effective": "2025-04-12"
+    },
+    {
+     "id": "JA-ODR-01@v4/s1/c1",
+     "text": "Overdraft fees per account per day | four",
+     "title": "Overdraft Quick Reference",
+     "type": "job_aid",
+     "version": 4,
+     "effective": "2026-04-04"
+    }
+   ]
+  }
+ ],
+ "input_hash": "592bf6d033a6bdb8adabfec4b0e761e57271fe3a3dafd34c226508d42a7792b5",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [{\"question\": \"q-C-12\", \"answer\": \"The sources disagree. The Overdraft Policy and the three procedures limit overdraft fees to three per account per business day, but the Overdraft Quick Reference job aid lists four. Because the policy outranks a job aid, three is the limit to follow.\", \"citations\": [\"POL-ODR-01@v2/s3/c2\", \"PRO-ODR-01@v2/s3/c4\", \"PRO-ODR-03@v2/s3/c8\", \"PRO-ODR-05@v4/s3/c9\", \"JA-ODR-01@v4/s1/c1\"], \"sources_disagree\": true}]}",
+   "problems": [],
+   "meta": {
+    "ms": 4220,
+    "api_ms": 4084,
+    "input_tokens": 6138,
+    "output_tokens": 895,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 5518,
+     "cache_read_input_tokens": 618,
+     "output_tokens": 895,
+     "output_tokens_details": {
+      "thinking_tokens": 675
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 5518,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 895,
+       "cache_read_input_tokens": 618,
+       "cache_creation_input_tokens": 5518,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 5518
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.0015574800000000002,
+    "models": [
+     "claude-haiku-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T17:19:25+00:00"
+}

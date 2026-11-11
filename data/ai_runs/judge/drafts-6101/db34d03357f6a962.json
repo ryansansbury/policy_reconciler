@@ -1,0 +1,74 @@
+{
+ "step": "judge",
+ "tag": "drafts-6101",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "ab6a49ec8731854b3cf900a9a4387417ee8016fe68257c4d327181c7eb1621da",
+ "input": [
+  {
+   "draft": "g-76b64634.47a9c799",
+   "text": "Resolve complaints within 15 business days of receipt, or tell the customer when to expect a resolution.",
+   "sources": [
+    "Resolve complaints within 15 business days of receipt, or tell the customer when to expect a resolution."
+   ]
+  }
+ ],
+ "input_hash": "594774af38ff2a0156da4fc8cbf3771a252750a934f1229896ba59540fa3b647",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [{\"draft\": \"g-76b64634.47a9c799\", \"scores\": {\"keeps_rules\": {\"pass\": true, \"evidence\": \"\"}, \"adds_no_rule\": {\"pass\": true, \"evidence\": \"\"}, \"keeps_scope\": {\"pass\": true, \"evidence\": \"\"}, \"plain\": {\"pass\": true, \"evidence\": \"\"}}}]}",
+   "problems": [],
+   "meta": {
+    "ms": 1204,
+    "api_ms": 1054,
+    "input_tokens": 5730,
+    "output_tokens": 127,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 5005,
+     "cache_read_input_tokens": 723,
+     "output_tokens": 127,
+     "output_tokens_details": {
+      "thinking_tokens": 0
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 5005,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 127,
+       "cache_read_input_tokens": 723,
+       "cache_creation_input_tokens": 5005,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 5005
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.021366299999999998,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T17:55:43+00:00"
+}

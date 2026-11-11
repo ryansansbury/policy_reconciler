@@ -1,0 +1,315 @@
+{
+ "step": "classify",
+ "tag": "8303",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "2c908358fde9f0f4a792753579a6cfaa33476e41c4b0f235744675d8e8283a19",
+ "input": [
+  {
+   "pair": "pair-5d8b09a4f3",
+   "rule": "Complaint resolution deadline",
+   "attribute": "complaint_resolve",
+   "reason": "One side carries a condition that may change the rule.",
+   "a": {
+    "clause": "POL-CMP-01@v6/s3/c1",
+    "text": "Resolve complaints within 15 business days of receipt, or tell the customer when to expect a resolution.",
+    "heading": "Policy statements",
+    "document": {
+     "title": "Complaint Management Policy",
+     "type": "policy",
+     "version": 6,
+     "effective": "2025-05-20",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "JA-CMP-01@v1/s1/c2",
+    "text": "Complaint resolution deadline | 30 business days",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Complaint Handling Card",
+     "type": "job_aid",
+     "version": 1,
+     "effective": "2026-07-26",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "kind": "condition"
+  },
+  {
+   "pair": "pair-b3746951c0",
+   "rule": "Branch manager fee waiver limit",
+   "attribute": "fee_waiver_bm",
+   "reason": "One side's actor was inferred by the AI, not named.",
+   "a": {
+    "clause": "POL-FEE-01@v6/s4/c1",
+    "text": "The most a branch manager can waive for one account in a calendar year is $50.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Service Fee Waiver Policy",
+     "type": "policy",
+     "version": 6,
+     "effective": "2025-09-17",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "FAQ-FEE-02@v3/s1/c1",
+    "text": "Fee waivers above $75 for one account in a calendar year require approval from the regional manager.",
+    "heading": "How much can a branch manager waive in fees for one account in a year?",
+    "document": {
+     "title": "Fee Refund Questions",
+     "type": "faq",
+     "version": 3,
+     "effective": "2026-03-26",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "kind": "actor_inferred"
+  },
+  {
+   "pair": "pair-0ac7a8362f",
+   "rule": "Personal banker fee waiver limit",
+   "attribute": "fee_waiver_pb",
+   "reason": "One side carries a condition that may change the rule.",
+   "a": {
+    "clause": "POL-FEE-01@v6/s3/c1",
+    "text": "Personal bankers may waive service fees up to $25 per account in a calendar year, or up to $50 with branch manager approval noted in the account.",
+    "heading": "Policy statements",
+    "document": {
+     "title": "Service Fee Waiver Policy",
+     "type": "policy",
+     "version": 6,
+     "effective": "2025-09-17",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "PRO-FEE-04@v1/s3/c8",
+    "text": "Personal bankers may waive service fees up to $15 per account in a calendar year.",
+    "heading": "Steps",
+    "document": {
+     "title": "Reviewing Waiver Activity Each Month",
+     "type": "procedure",
+     "version": 1,
+     "effective": "2026-08-07",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "kind": "condition"
+  },
+  {
+   "pair": "pair-1eb7c6af9e",
+   "rule": "Personal banker fee waiver limit",
+   "attribute": "fee_waiver_pb",
+   "reason": "One side carries a condition that may change the rule.",
+   "a": {
+    "clause": "POL-FEE-01@v6/s3/c1",
+    "text": "Personal bankers may waive service fees up to $25 per account in a calendar year, or up to $50 with branch manager approval noted in the account.",
+    "heading": "Policy statements",
+    "document": {
+     "title": "Service Fee Waiver Policy",
+     "type": "policy",
+     "version": 6,
+     "effective": "2025-09-17",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "PRO-FEE-01@v1/s3/c2",
+    "text": "Personal bankers may waive service fees up to $50 per account in a calendar year.",
+    "heading": "Steps",
+    "document": {
+     "title": "Processing a Fee Waiver Request",
+     "type": "procedure",
+     "version": 1,
+     "effective": "2025-08-28",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "kind": "condition"
+  },
+  {
+   "pair": "pair-9b4d2a38a9",
+   "rule": "Complaint resolution deadline",
+   "attribute": "complaint_resolve",
+   "reason": "The values match, but the weaker document adds a condition the stronger one doesn't state.",
+   "a": {
+    "clause": "PRO-CMP-06@v4/s3/c5",
+    "text": "Complaints should be closed within 15 days of the day they arrive.",
+    "heading": "Steps",
+    "document": {
+     "title": "Responding to a Complaint by Phone",
+     "type": "procedure",
+     "version": 4,
+     "effective": "2026-06-10",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "FAQ-CMP-01@v4/s1/c1",
+    "text": "Resolve complaints within 15 days of receipt, or tell the customer when to expect a resolution.",
+    "heading": "How long does the bank have to resolve a complaint?",
+    "document": {
+     "title": "Complaint Handling FAQ",
+     "type": "faq",
+     "version": 4,
+     "effective": "2026-07-24",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "kind": "added_condition"
+  },
+  {
+   "pair": "pair-c9c4c7fbd6",
+   "rule": "Forms of identification per signer",
+   "attribute": "ao_id_count",
+   "reason": "The values match, but the weaker document adds a condition the stronger one doesn't state.",
+   "a": {
+    "clause": "POL-AOP-02@v3/s3/c1",
+    "text": "Collect two forms of identification from each signer before opening the account.",
+    "heading": "Policy statements",
+    "document": {
+     "title": "Customer Identification Policy",
+     "type": "policy",
+     "version": 3,
+     "effective": "2025-11-24",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "POL-AOP-01@v3/s3/c1",
+    "text": "Collect two forms of identification from each signer before opening the account, or one form plus a verified bank reference when the branch manager approves.",
+    "heading": "Policy statements",
+    "document": {
+     "title": "Deposit Account Opening Policy",
+     "type": "policy",
+     "version": 3,
+     "effective": "2024-08-16",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "kind": "added_condition"
+  },
+  {
+   "pair": "pair-8bc488cb61",
+   "rule": "Forms of identification per signer",
+   "attribute": "ao_id_count",
+   "reason": "The values match, but the weaker document adds a condition the stronger one doesn't state.",
+   "a": {
+    "clause": "POL-AOP-02@v3/s3/c1",
+    "text": "Collect two forms of identification from each signer before opening the account.",
+    "heading": "Policy statements",
+    "document": {
+     "title": "Customer Identification Policy",
+     "type": "policy",
+     "version": 3,
+     "effective": "2025-11-24",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "PRO-AOP-01@v1/s3/c8",
+    "text": "Every signer must present two separate identification documents before the account is opened, or one form plus a verified bank reference when the branch manager approves.",
+    "heading": "Steps",
+    "document": {
+     "title": "Opening a Consumer Checking Account",
+     "type": "procedure",
+     "version": 1,
+     "effective": "2026-02-09",
+     "applies_to": "All branches. Consumer accounts."
+    }
+   },
+   "kind": "added_condition"
+  },
+  {
+   "pair": "pair-ec380c17e7",
+   "rule": "Standard check hold",
+   "attribute": "hold_standard",
+   "reason": "The values match, but the weaker document adds a condition the stronger one doesn't state.",
+   "a": {
+    "clause": "POL-HLD-01@v5/s3/c1",
+    "text": "Place a standard hold of 2 business days on deposited checks that don't qualify for next-day availability.",
+    "heading": "Policy statements",
+    "document": {
+     "title": "Funds Availability Policy",
+     "type": "policy",
+     "version": 5,
+     "effective": "2026-02-21",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "PRO-HLD-01@v1/s3/c2",
+    "text": "Funds from deposited checks are available within 2 business days unless a longer hold applies.",
+    "heading": "Steps",
+    "document": {
+     "title": "Placing a Hold on a Deposited Check",
+     "type": "procedure",
+     "version": 1,
+     "effective": "2025-08-26",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "kind": "added_condition"
+  }
+ ],
+ "input_hash": "135b609d01e09a39bb9f55633be1ccb35e851fdadd01c88845848883f1a6f7af",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\":[{\"pair\":\"pair-5d8b09a4f3\",\"label\":\"conflict\",\"quote_a\":\"Resolve complaints within 15 business days of receipt\",\"quote_b\":\"Complaint resolution deadline | 30 business days\",\"rationale\":\"The two documents cover the same branches and business lines but set 15 business days and 30 business days. Staff following the job aid would miss the policy deadline, and the policy is the clause to keep.\"},{\"pair\":\"pair-b3746951c0\",\"label\":\"conflict\",\"quote_a\":\"The most a branch manager can waive for one account in a calendar year is $50.\",\"quote_b\":\"Fee waivers above $75 for one account in a calendar year require approval from the regional manager.\",\"rationale\":\"The FAQ heading asks about a branch manager, so its $75 threshold is read as the branch manager's limit. That would let a branch manager waive more than the $50 the policy allows, and the policy is the clause to keep.\"},{\"pair\":\"pair-0ac7a8362f\",\"label\":\"conflict\",\"quote_a\":\"Personal bankers may waive service fees up to $25 per account in a calendar year, or up to $50 with branch manager approval noted in the account.\",\"quote_b\":\"Personal bankers may waive service fees up to $15 per account in a calendar year.\",\"rationale\":\"Staff following the procedure would refuse a waiver between $15 and $25 that the policy allows. The policy outranks the procedure and is the clause to keep.\"},{\"pair\":\"pair-1eb7c6af9e\",\"label\":\"conflict\",\"quote_a\":\"Personal bankers may waive service fees up to $25 per account in a calendar year, or up to $50 with branch manager approval noted in the account.\",\"quote_b\":\"Personal bankers may waive service fees up to $50 per account in a calendar year.\",\"rationale\":\"The procedure drops the branch manager approval the policy requires above $25. Staff following it would waive up to $50 on their own and act against the policy, which is the clause to keep.\"},{\"pair\":\"pair-9b4d2a38a9\",\"label\":\"consistent\",\"quote_a\":\"Complaints should be closed within 15 days of the day they arrive.\",\"quote_b\":\"or tell the customer when to expect a resolution.\",\"rationale\":\"Both clauses use the same 15 day deadline. Staff following the procedure would close within 15 days, which the FAQ also allows, so the added alternative in the FAQ does not contradict it.\"},{\"pair\":\"pair-c9c4c7fbd6\",\"label\":\"conflict\",\"quote_a\":\"Collect two forms of identification from each signer before opening the account.\",\"quote_b\":\"or one form plus a verified bank reference when the branch manager approves.\",\"rationale\":\"Staff following the Customer Identification Policy would refuse one form plus a bank reference, which the Deposit Account Opening Policy allows. Both are policies for the same accounts, so the owners need to settle which rule stands.\"},{\"pair\":\"pair-8bc488cb61\",\"label\":\"conflict\",\"quote_a\":\"Collect two forms of identification from each signer before opening the account.\",\"quote_b\":\"or one form plus a verified bank reference when the branch manager approves.\",\"rationale\":\"The procedure allows one form plus a bank reference, which staff following the policy would refuse. The procedure does not state a narrower scope for this option, and the policy outranks it so the policy is the clause to keep.\"},{\"pair\":\"pair-ec380c17e7\",\"label\":\"consistent\",\"quote_a\":\"Place a standard hold of 2 business days on deposited checks that don't qualify for next-day availability.\",\"quote_b\":\"Funds from deposited checks are available within 2 business days unless a longer hold applies.\",\"rationale\":\"Both clauses set the same 2 business day standard period. The procedure's mention of a longer hold does not change what staff do under the standard hold the policy describes.\"}]}",
+   "problems": [],
+   "meta": {
+    "ms": 21835,
+    "api_ms": 21655,
+    "input_tokens": 9190,
+    "output_tokens": 2928,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 8347,
+     "cache_read_input_tokens": 841,
+     "output_tokens": 2928,
+     "output_tokens_details": {
+      "thinking_tokens": 1678
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 8347,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 2928,
+       "cache_read_input_tokens": 841,
+       "cache_creation_input_tokens": 8347,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 8347
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.06275610000000001,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T05:42:08+00:00"
+}

@@ -1,0 +1,167 @@
+{
+ "step": "extract",
+ "tag": "evals-6101",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "dcc761e46c6ec579c01b9dfd540df3c2fa4bba3b6b5ec777aa2cf9c9c62aa411",
+ "input": [
+  {
+   "clause": "BUL-HLD-02@v4/s1/c2",
+   "text": "New accounts can have check holds of as long as 7 days.",
+   "heading": "What branches need to know",
+   "document": {
+    "title": "Branch Bulletin 2026-17: Longest check hold on a new account",
+    "type": "bulletin",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "BUL-LND-01@v2/s1/c2",
+   "text": "Regional managers may approve rate exceptions of up to 0.75%.",
+   "heading": "What branches need to know",
+   "document": {
+    "title": "Branch Bulletin 2025-16: Regional manager rate exception limit",
+    "type": "bulletin",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "BUL-REC-01@v2/s1/c2",
+   "text": "Retain closed account records for 10 years from the closing date.",
+   "heading": "What branches need to know",
+   "document": {
+    "title": "Branch Bulletin 2025-26: Retention for closed account records",
+    "type": "bulletin",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "BUL-WIR-01@v1/s1/c2",
+   "text": "Call the customer back at a phone number already on file before releasing any outgoing wire of $5,000 or more.",
+   "heading": "What branches need to know",
+   "document": {
+    "title": "Branch Bulletin 2025-24: Callback threshold for outgoing wires",
+    "type": "bulletin",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "BUL-WIR-01@v2/s2/c2",
+   "text": "An operations manager must give a second approval for any outgoing wire above $50,000.",
+   "heading": "Steps to follow",
+   "document": {
+    "title": "Branch Bulletin 2025-24: Callback threshold for outgoing wires",
+    "type": "bulletin",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "FAQ-AOP-01@v4/s1/c1",
+   "text": "Accounts open fewer than 60 days are new accounts for hold and limit purposes.",
+   "heading": "How long is an account considered a new account?",
+   "document": {
+    "title": "Account Opening FAQ",
+    "type": "faq",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "FAQ-CMP-01@v3/s1/c1",
+   "text": "Send the customer an acknowledgment no later than 2 days after a written complaint arrives.",
+   "heading": "How quickly is a written complaint acknowledged?",
+   "document": {
+    "title": "Complaint Handling FAQ",
+    "type": "faq",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "FAQ-CMP-01@v3/s2/c1",
+   "text": "Complaints that allege unfair treatment are escalated to the branch manager the same day.",
+   "heading": "Who handles a complaint that alleges unfair treatment?",
+   "document": {
+    "title": "Complaint Handling FAQ",
+    "type": "faq",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "FAQ-CSH-02@v2/s1/c3",
+   "text": "Consumer debit cards can withdraw up to $800 a day at ATMs.",
+   "heading": "How much cash can a teller drawer hold?",
+   "document": {
+    "title": "Large-Cash Review Questions",
+    "type": "faq",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "FAQ-CSH-02@v2/s2/c1",
+   "text": "Two employees must be present whenever the vault is opened.",
+   "heading": "Can one employee open the vault alone?",
+   "document": {
+    "title": "Large-Cash Review Questions",
+    "type": "faq",
+    "applies_to": "All branches. All business lines."
+   }
+  }
+ ],
+ "input_hash": "3a93a8ebea73a911e3e1d47537d2212baca4eb9265ac0cef667585fc14a2a1ae",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [{\"clause\": \"BUL-HLD-02@v4/s1/c2\", \"atoms\": [{\"attribute\": \"hold_new_account\", \"value\": {\"type\": \"duration\", \"n\": 7, \"unit\": \"days\"}, \"quote\": \"7 days\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]}, {\"clause\": \"BUL-LND-01@v2/s1/c2\", \"atoms\": [{\"attribute\": \"lend_rate_rm\", \"value\": {\"type\": \"percent\", \"bp\": 75}, \"quote\": \"0.75%\", \"actor\": \"regional_manager\", \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]}, {\"clause\": \"BUL-REC-01@v2/s1/c2\", \"atoms\": [{\"attribute\": \"records_retention\", \"value\": {\"type\": \"duration\", \"n\": 10, \"unit\": \"years\"}, \"quote\": \"10 years\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]}, {\"clause\": \"BUL-WIR-01@v1/s1/c2\", \"atoms\": [{\"attribute\": \"wire_callback\", \"value\": {\"type\": \"money\", \"dollars\": 5000}, \"quote\": \"$5,000\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]}, {\"clause\": \"BUL-WIR-01@v2/s2/c2\", \"atoms\": [{\"attribute\": \"wire_second_approval\", \"value\": {\"type\": \"money\", \"dollars\": 50000}, \"quote\": \"$50,000\", \"actor\": \"operations_manager\", \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]}, {\"clause\": \"FAQ-AOP-01@v4/s1/c1\", \"atoms\": [{\"attribute\": \"ao_new_account_window\", \"value\": {\"type\": \"duration\", \"n\": 60, \"unit\": \"days\"}, \"quote\": \"60 days\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]}, {\"clause\": \"FAQ-CMP-01@v3/s1/c1\", \"atoms\": [{\"attribute\": \"complaint_ack\", \"value\": {\"type\": \"duration\", \"n\": 2, \"unit\": \"days\"}, \"quote\": \"2 days\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]}, {\"clause\": \"FAQ-CMP-01@v3/s2/c1\", \"atoms\": [{\"attribute\": \"complaint_escalation_role\", \"value\": {\"type\": \"role\", \"role\": \"branch_manager\"}, \"quote\": \"branch manager\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]}, {\"clause\": \"FAQ-CSH-02@v2/s1/c3\", \"atoms\": [{\"attribute\": \"atm_daily_limit\", \"value\": {\"type\": \"money\", \"dollars\": 800}, \"quote\": \"$800\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": \"Consumer debit cards\", \"condition\": null}]}, {\"clause\": \"FAQ-CSH-02@v2/s2/c1\", \"atoms\": [{\"attribute\": \"cash_vault_dual\", \"value\": {\"type\": \"modal\", \"modal\": \"must\"}, \"quote\": \"Two employees must be present\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]}]}",
+   "problems": [],
+   "meta": {
+    "ms": 10548,
+    "api_ms": 10384,
+    "input_tokens": 9024,
+    "output_tokens": 1879,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 6340,
+     "cache_read_input_tokens": 2682,
+     "output_tokens": 1879,
+     "output_tokens_details": {
+      "thinking_tokens": 730
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 6340,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 1879,
+       "cache_read_input_tokens": 2682,
+       "cache_creation_input_tokens": 6340,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 6340
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.0444222,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T04:12:59+00:00"
+}

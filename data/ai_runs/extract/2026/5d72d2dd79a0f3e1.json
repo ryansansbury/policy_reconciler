@@ -1,0 +1,149 @@
+{
+ "step": "extract",
+ "tag": "2026",
+ "model": "openai-b",
+ "backend": {
+  "vendor": "OpenAI",
+  "model": "gpt-6-luna",
+  "label": "GPT-6 Luna"
+ },
+ "prompt_hash": "dcc761e46c6ec579c01b9dfd540df3c2fa4bba3b6b5ec777aa2cf9c9c62aa411",
+ "input": [
+  {
+   "clause": "PRO-BOP-01@v3/s3/c1",
+   "text": "Approach the branch together and check the exterior for signs of forced entry.",
+   "heading": "Steps",
+   "document": {
+    "title": "Opening the Branch Each Morning",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-BOP-03@v4/s3/c6",
+   "text": "Approach the branch together and check the exterior for signs of forced entry.",
+   "heading": "Steps",
+   "document": {
+    "title": "Changing Vault Combinations",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-BOP-04@v4/s3/c3",
+   "text": "Approach the branch together and check the exterior for signs of forced entry.",
+   "heading": "Steps",
+   "document": {
+    "title": "Testing the Alarm System",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-BOP-04@v4/s5/c2",
+   "text": "Approach the branch together and check the exterior for signs of forced entry.",
+   "heading": "Steps to follow",
+   "document": {
+    "title": "Testing the Alarm System",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-BOP-05@v4/s3/c3",
+   "text": "Approach the branch together and check the exterior for signs of forced entry.",
+   "heading": "Steps",
+   "document": {
+    "title": "Handling a Late Opener",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-BOP-06@v2/s3/c4",
+   "text": "Approach the branch together and check the exterior for signs of forced entry.",
+   "heading": "Steps",
+   "document": {
+    "title": "After-Hours Branch Access",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-BOP-06@v3/s3/c4",
+   "text": "Approach the branch together and check the exterior for signs of forced entry.",
+   "heading": "Steps",
+   "document": {
+    "title": "After-Hours Branch Access",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-CMP-02@v4/s3/c4",
+   "text": "Resolve complaints within 15 business days of receipt, or tell the customer when to expect a resolution.",
+   "heading": "Steps",
+   "document": {
+    "title": "Acknowledging a Written Complaint",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-CMP-06@v3/s3/c6",
+   "text": "Complaints that allege unfair treatment are escalated to management the same day.",
+   "heading": "Steps",
+   "document": {
+    "title": "Responding to a Complaint by Phone",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-CMP-06@v3/s3/c7",
+   "text": "Resolve complaints within 15 business days of receipt, or tell the customer when to expect a resolution.",
+   "heading": "Steps",
+   "document": {
+    "title": "Responding to a Complaint by Phone",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  }
+ ],
+ "input_hash": "06498c8da4500fa23bb90f69cb9c876f3fc3564a87ae760bf076bbf4bb327867",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\":[{\"clause\":\"PRO-BOP-01@v3/s3/c1\",\"atoms\":[]},{\"clause\":\"PRO-BOP-03@v4/s3/c6\",\"atoms\":[]},{\"clause\":\"PRO-BOP-04@v4/s3/c3\",\"atoms\":[]},{\"clause\":\"PRO-BOP-04@v4/s5/c2\",\"atoms\":[]},{\"clause\":\"PRO-BOP-05@v4/s3/c3\",\"atoms\":[]},{\"clause\":\"PRO-BOP-06@v2/s3/c4\",\"atoms\":[]},{\"clause\":\"PRO-BOP-06@v3/s3/c4\",\"atoms\":[]},{\"clause\":\"PRO-CMP-02@v4/s3/c4\",\"atoms\":[{\"attribute\":\"complaint_resolve\",\"value\":{\"type\":\"duration\",\"n\":15,\"unit\":\"business_days\"},\"quote\":\"15 business days\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":\"or tell the customer when to expect a resolution\"}]},{\"clause\":\"PRO-CMP-06@v3/s3/c6\",\"atoms\":[{\"attribute\":\"complaint_escalation_role\",\"value\":{\"type\":\"role\",\"role\":null,\"generic\":\"management\"},\"quote\":\"management\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":\"Complaints that allege unfair treatment\"}]},{\"clause\":\"PRO-CMP-06@v3/s3/c7\",\"atoms\":[{\"attribute\":\"complaint_resolve\",\"value\":{\"type\":\"duration\",\"n\":15,\"unit\":\"business_days\"},\"quote\":\"15 business days\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":\"or tell the customer when to expect a resolution\"}]}]}",
+   "problems": [],
+   "meta": {
+    "ms": 10039,
+    "input_tokens": 2647,
+    "output_tokens": 790,
+    "cost_usd": 0.00066,
+    "usage": {
+     "prompt_tokens": 2647,
+     "completion_tokens": 790,
+     "total_tokens": 3437,
+     "prompt_tokens_details": {
+      "cached_tokens": 1728,
+      "cache_write_tokens": 916,
+      "audio_tokens": 0
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 416,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+     }
+    },
+    "models": [
+     "gpt-6-luna"
+    ],
+    "stop_reason": "stop"
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T19:46:20+00:00"
+}

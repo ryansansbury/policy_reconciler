@@ -1,0 +1,79 @@
+{
+ "step": "judge",
+ "tag": "cmp-6101",
+ "model": "google-a",
+ "backend": {
+  "vendor": "Google",
+  "model": "gemini-3.1-pro-preview",
+  "label": "Gemini 3.1 Pro"
+ },
+ "prompt_hash": "ab6a49ec8731854b3cf900a9a4387417ee8016fe68257c4d327181c7eb1621da",
+ "input": [
+  {
+   "draft": "draft-16",
+   "text": "Check deposits over $6,000 in one day are eligible for an extended hold on the amount over that figure. Checks deposited to a new account may be held for up to 7 business days.",
+   "sources": [
+    "Check deposits over $6,000 in one day are eligible for an extended hold on the amount over that figure.",
+    "Checks deposited to a new account may be held for up to 7 business days."
+   ]
+  },
+  {
+   "draft": "draft-17",
+   "text": "Provisional credit is issued within 10 business days of receiving a completed dispute.",
+   "sources": [
+    "Provisional credit is issued within 10 business days of receiving a completed dispute.",
+    "Customers have 60 days from the statement date to dispute a debit card transaction."
+   ]
+  },
+  {
+   "draft": "draft-18",
+   "text": "Each item paid into overdraft is charged $30. Accounts that remain overdrawn for 45 days are referred for charge-off. Personal bankers may waive service fees up to $15 per account in a calendar year.",
+   "sources": [
+    "Each item paid into overdraft is charged $30.",
+    "Accounts that remain overdrawn for 45 days are referred for charge-off."
+   ]
+  },
+  {
+   "draft": "draft-19",
+   "text": "No overdraft fee is charged when the account is overdrawn by $10 or less at the end of the day, where appropriate. Each item paid into overdraft is charged $30, where appropriate.",
+   "sources": [
+    "No overdraft fee is charged when the account is overdrawn by $10 or less at the end of the day.",
+    "Each item paid into overdraft is charged $30."
+   ]
+  },
+  {
+   "draft": "draft-20",
+   "text": "Customers may request a fee refund within 60 days of the statement date. Customers may request a fee refund within 30 days of the statement date. A personal banker can waive no more than $25 for one account in a calendar year.",
+   "sources": [
+    "Customers may request a fee refund within 60 days of the statement date.",
+    "In Colorado branches, customers may request a fee refund within 30 days of the statement date.",
+    "A personal banker can waive no more than $25 for one account in a calendar year."
+   ]
+  }
+ ],
+ "input_hash": "0b5922295fcc14708982db7a50369c4e1f20b73e2d86ce3b2fa162cc208b12d0",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "```json\n{\n \"results\": [\n  {\n   \"draft\": \"draft-16\",\n   \"scores\": {\n    \"keeps_rules\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    },\n    \"adds_no_rule\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    },\n    \"keeps_scope\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    },\n    \"plain\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    }\n   }\n  },\n  {\n   \"draft\": \"draft-17\",\n   \"scores\": {\n    \"keeps_rules\": {\n     \"pass\": false,\n     \"evidence\": \"Customers have 60 days from the statement date to dispute a debit card transaction.\"\n    },\n    \"adds_no_rule\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    },\n    \"keeps_scope\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    },\n    \"plain\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    }\n   }\n  },\n  {\n   \"draft\": \"draft-18\",\n   \"scores\": {\n    \"keeps_rules\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    },\n    \"adds_no_rule\": {\n     \"pass\": false,\n     \"evidence\": \"Personal bankers may waive service fees up to $15 per account in a calendar year.\"\n    },\n    \"keeps_scope\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    },\n    \"plain\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    }\n   }\n  },\n  {\n   \"draft\": \"draft-19\",\n   \"scores\": {\n    \"keeps_rules\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    },\n    \"adds_no_rule\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    },\n    \"keeps_scope\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    },\n    \"plain\": {\n     \"pass\": false,\n     \"evidence\": \"where appropriate\"\n    }\n   }\n  },\n  {\n   \"draft\": \"draft-20\",\n   \"scores\": {\n    \"keeps_rules\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    },\n    \"adds_no_rule\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    },\n    \"keeps_scope\": {\n     \"pass\": false,\n     \"evidence\": \"In Colorado branches\"\n    },\n    \"plain\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    }\n   }\n  }\n ]\n}\n```",
+   "problems": [],
+   "meta": {
+    "ms": 16587,
+    "input_tokens": 1077,
+    "output_tokens": 2889,
+    "cost_usd": 0.036822,
+    "usage": {
+     "completion_tokens": 667,
+     "prompt_tokens": 1077,
+     "total_tokens": 3966
+    },
+    "models": [
+     "gemini-3.1-pro-preview"
+    ],
+    "stop_reason": "stop"
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T17:27:41+00:00"
+}

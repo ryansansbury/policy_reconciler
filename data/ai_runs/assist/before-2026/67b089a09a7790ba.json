@@ -1,0 +1,114 @@
+{
+ "step": "assist",
+ "tag": "before-2026",
+ "model": "claude-haiku",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "haiku",
+  "client_context": true
+ },
+ "prompt_hash": "66c01f0da9f327e74355d39363e55b642a1bbf8dc6249974c3afbf3cb3d6ccd5",
+ "input": [
+  {
+   "question": "q-C-01",
+   "text": "How much can a branch manager waive in fees for one account in a year?",
+   "type": "money",
+   "clauses": [
+    {
+     "id": "FAQ-FEE-02@v2/s1/c1",
+     "text": "The most a branch manager can waive for one account in a calendar year is $75.",
+     "title": "Fee Refund Questions",
+     "type": "faq",
+     "version": 2,
+     "effective": "2026-02-14"
+    },
+    {
+     "id": "POL-FEE-01@v2/s3/c2",
+     "text": "The most a branch manager can waive for one account in a calendar year is $50.",
+     "title": "Service Fee Waiver Policy",
+     "type": "policy",
+     "version": 2,
+     "effective": "2025-05-24"
+    },
+    {
+     "id": "PRO-FEE-01@v1/s3/c5",
+     "text": "The most a branch manager can waive for one account in a calendar year is $100.",
+     "title": "Processing a Fee Waiver Request",
+     "type": "procedure",
+     "version": 1,
+     "effective": "2025-09-02"
+    },
+    {
+     "id": "BUL-FEE-02@v3/s1/c2",
+     "text": "Branch managers may waive service fees up to $50 per account in a calendar year.",
+     "title": "Branch Bulletin 2026-12: Branch manager fee waiver limit",
+     "type": "bulletin",
+     "version": 3,
+     "effective": "2026-04-06"
+    },
+    {
+     "id": "FAQ-FEE-01@v3/s1/c1",
+     "text": "Branch managers may waive service fees up to $50 per account in a calendar year.",
+     "title": "Fee Waiver FAQ",
+     "type": "faq",
+     "version": 3,
+     "effective": "2026-08-10"
+    }
+   ]
+  }
+ ],
+ "input_hash": "7366d9049b7b4dd55ae2ac112b112fae733bc4346231336920a1d7a3e8250f7e",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [{\"question\": \"q-C-01\", \"answer\": \"The Service Fee Waiver Policy sets the limit at $50 per account per calendar year, and the policy outranks the other sources. The sources disagree, since the Processing a Fee Waiver Request procedure states $100, the Fee Refund Questions FAQ states $75, and the Branch Bulletin and Fee Waiver FAQ both state $50.\", \"citations\": [\"POL-FEE-01@v2/s3/c2\", \"PRO-FEE-01@v1/s3/c5\", \"FAQ-FEE-02@v2/s1/c1\", \"BUL-FEE-02@v3/s1/c2\", \"FAQ-FEE-01@v3/s1/c1\"], \"sources_disagree\": true}]}",
+   "problems": [],
+   "meta": {
+    "ms": 6271,
+    "api_ms": 6117,
+    "input_tokens": 6171,
+    "output_tokens": 1325,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 6169,
+     "cache_read_input_tokens": 0,
+     "output_tokens": 1325,
+     "output_tokens_details": {
+      "thinking_tokens": 1066
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 6169,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 1325,
+       "cache_read_input_tokens": 0,
+       "cache_creation_input_tokens": 6169,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 6169
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.0018965000000000002,
+    "models": [
+     "claude-haiku-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T21:26:46+00:00"
+}

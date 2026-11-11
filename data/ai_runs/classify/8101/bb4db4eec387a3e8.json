@@ -1,0 +1,339 @@
+{
+ "step": "classify",
+ "tag": "8101",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "2c908358fde9f0f4a792753579a6cfaa33476e41c4b0f235744675d8e8283a19",
+ "input": [
+  {
+   "pair": "pair-e5306809cf",
+   "rule": "Complaint resolution deadline",
+   "attribute": "complaint_resolve",
+   "reason": "One side carries a condition that may change the rule.",
+   "a": {
+    "clause": "POL-CMP-01@v5/s4/c2",
+    "text": "Complaints should be closed within 15 business days of the day they arrive, or within 30 business days when another department has to investigate.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Complaint Management Policy",
+     "type": "policy",
+     "version": 5,
+     "effective": "2024-07-27",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "FAQ-CMP-02@v2/s1/c1",
+    "text": "Complaints should be closed within 30 business days of the day they arrive.",
+    "heading": "How long does the bank have to resolve a complaint?",
+    "document": {
+     "title": "Complaint Escalation Questions",
+     "type": "faq",
+     "version": 2,
+     "effective": "2026-05-26",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "kind": "condition"
+  },
+  {
+   "pair": "pair-b877a6d58f",
+   "rule": "Complaint resolution deadline",
+   "attribute": "complaint_resolve",
+   "reason": "One side carries a condition that may change the rule.",
+   "a": {
+    "clause": "POL-CMP-01@v5/s4/c2",
+    "text": "Complaints should be closed within 15 business days of the day they arrive, or within 30 business days when another department has to investigate.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Complaint Management Policy",
+     "type": "policy",
+     "version": 5,
+     "effective": "2024-07-27",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "BUL-CMP-02@v1/s1/c2",
+    "text": "Complaints should be closed within 10 business days of the day they arrive.",
+    "heading": "What branches need to know",
+    "document": {
+     "title": "Branch Bulletin 2026-40: Complaint resolution deadline",
+     "type": "bulletin",
+     "version": 1,
+     "effective": "2026-03-10",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "kind": "condition"
+  },
+  {
+   "pair": "pair-ca97cd8191",
+   "rule": "Card dispute window",
+   "attribute": "dispute_window",
+   "reason": "One side carries a condition that may change the rule.",
+   "a": {
+    "clause": "POL-DSP-01@v3/s4/c2",
+    "text": "Accept debit card disputes filed within 60 days of the statement that first showed the charge, or longer when the customer was traveling or hospitalized.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Debit Card Dispute Policy",
+     "type": "policy",
+     "version": 3,
+     "effective": "2024-07-08",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "PRO-DSP-06@v2/s3/c4",
+    "text": "Accept debit card disputes filed within 90 days of the statement that first showed the charge.",
+    "heading": "Steps",
+    "document": {
+     "title": "Large Dispute Review",
+     "type": "procedure",
+     "version": 2,
+     "effective": "2026-01-09",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "kind": "condition"
+  },
+  {
+   "pair": "pair-4787e4bfb8",
+   "rule": "Personal banker fee waiver limit",
+   "attribute": "fee_waiver_pb",
+   "reason": "One side carries a condition that may change the rule.",
+   "a": {
+    "clause": "POL-FEE-01@v6/s3/c2",
+    "text": "Personal bankers may waive service fees up to $25 per account in a calendar year, or up to $50 with branch manager approval noted in the account.",
+    "heading": "Policy statements",
+    "document": {
+     "title": "Service Fee Waiver Policy",
+     "type": "policy",
+     "version": 6,
+     "effective": "2026-04-26",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "PRO-FEE-06@v1/s3/c8",
+    "text": "Personal bankers may waive service fees up to $50 per account in a calendar year.",
+    "heading": "Steps",
+    "document": {
+     "title": "Explaining Fees to a New Customer",
+     "type": "procedure",
+     "version": 1,
+     "effective": "2025-02-04",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "kind": "condition"
+  },
+  {
+   "pair": "pair-f4df0a1a7f",
+   "rule": "Personal banker fee waiver limit",
+   "attribute": "fee_waiver_pb",
+   "reason": "One side carries a condition that may change the rule.",
+   "a": {
+    "clause": "POL-FEE-01@v6/s3/c2",
+    "text": "Personal bankers may waive service fees up to $25 per account in a calendar year, or up to $50 with branch manager approval noted in the account.",
+    "heading": "Policy statements",
+    "document": {
+     "title": "Service Fee Waiver Policy",
+     "type": "policy",
+     "version": 6,
+     "effective": "2026-04-26",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "FAQ-FEE-01@v1/s1/c1",
+    "text": "Personal bankers may waive service fees up to $50 per account in a calendar year.",
+    "heading": "How much can a personal banker waive in fees?",
+    "document": {
+     "title": "Fee Waiver FAQ",
+     "type": "faq",
+     "version": 1,
+     "effective": "2026-04-11",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "kind": "condition"
+  },
+  {
+   "pair": "pair-6cf3f0b5f1",
+   "rule": "Standard check hold",
+   "attribute": "hold_standard",
+   "reason": "One side carries a condition that may change the rule.",
+   "a": {
+    "clause": "POL-HLD-01@v2/s4/c2",
+    "text": "Place a standard hold of 2 business days on deposited checks that don't qualify for next-day availability.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Funds Availability Policy",
+     "type": "policy",
+     "version": 2,
+     "effective": "2025-07-15",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "FAQ-HLD-02@v3/s1/c1",
+    "text": "Funds from deposited checks are available within 3 business days unless a longer hold applies.",
+    "heading": "How long is the standard hold on a deposited check?",
+    "document": {
+     "title": "Check Hold Questions from Customers",
+     "type": "faq",
+     "version": 3,
+     "effective": "2026-04-12",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "kind": "condition"
+  },
+  {
+   "pair": "pair-374789f334",
+   "rule": "Wire callback threshold",
+   "attribute": "wire_callback",
+   "reason": "One side carries a condition that may change the rule.",
+   "a": {
+    "clause": "POL-WIR-01@v3/s3/c1",
+    "text": "Outgoing wires of $10,000 or more require a callback to the customer at a number already on file, unless the wire goes to an account the customer has used in the past year.",
+    "heading": "Policy statements",
+    "document": {
+     "title": "Wire Transfer Policy",
+     "type": "policy",
+     "version": 3,
+     "effective": "2024-05-09",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "BUL-WIR-01@v1/s1/c2",
+    "text": "Outgoing wires of $25,000 or more require a callback to the customer at a number already on file.",
+    "heading": "What branches need to know",
+    "document": {
+     "title": "Branch Bulletin 2025-13: Callback threshold for outgoing wires",
+     "type": "bulletin",
+     "version": 1,
+     "effective": "2026-09-01",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "kind": "condition"
+  }
+ ],
+ "input_hash": "ae5457dd85a6304930adb9b182b77df9f73f239f3f757427a4b04f39c0debd4b",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [{\"pair\": \"pair-e5306809cf\", \"label\": \"conflict\", \"quote_a\": \"within 15 business days of the day they arrive\", \"quote_b\": \"within 30 business days of the day they arrive\", \"rationale\": \"The policy allows 30 business days only when another department investigates, but the FAQ gives 30 business days for every complaint. Staff following the FAQ would hold an ordinary complaint open past the 15 business days the policy sets.\"}, {\"pair\": \"pair-b877a6d58f\", \"label\": \"conflict\", \"quote_a\": \"within 15 business days of the day they arrive, or within 30 business days when another department has to investigate\", \"quote_b\": \"within 10 business days of the day they arrive\", \"rationale\": \"The bulletin sets 10 business days for all complaints while the policy sets 15 or 30 business days. The two apply to the same branches and business lines, and the higher rank only decides which one to keep.\"}, {\"pair\": \"pair-ca97cd8191\", \"label\": \"conflict\", \"quote_a\": \"within 60 days of the statement that first showed the charge\", \"quote_b\": \"within 90 days of the statement that first showed the charge\", \"rationale\": \"Both clauses cover the same accounts and branches but set a 60 day and a 90 day window. A dispute filed on day 75 would be refused under the policy and accepted under the procedure, and the policy's travel or hospital exception does not explain the 90 days.\"}, {\"pair\": \"pair-4787e4bfb8\", \"label\": \"conflict\", \"quote_a\": \"up to $25 per account in a calendar year, or up to $50 with branch manager approval noted in the account\", \"quote_b\": \"up to $50 per account in a calendar year\", \"rationale\": \"The policy limits a personal banker to $25 unless a branch manager approves the higher amount. The procedure lets a personal banker waive $50 with no approval, so staff following it would do something the policy does not allow.\"}, {\"pair\": \"pair-f4df0a1a7f\", \"label\": \"conflict\", \"quote_a\": \"up to $25 per account in a calendar year, or up to $50 with branch manager approval noted in the account\", \"quote_b\": \"up to $50 per account in a calendar year\", \"rationale\": \"The FAQ drops the branch manager approval and states $50 as the personal banker limit. A banker who follows the FAQ would waive between $25 and $50 without approval, which the policy does not allow.\"}, {\"pair\": \"pair-6cf3f0b5f1\", \"label\": \"conflict\", \"quote_a\": \"Place a standard hold of 2 business days\", \"quote_b\": \"available within 3 business days unless a longer hold applies\", \"rationale\": \"The policy sets a standard hold of 2 business days while the FAQ tells customers funds arrive within 3 business days. The FAQ's unless clause covers longer holds only, so the standard figures differ and staff would act on different timelines.\"}, {\"pair\": \"pair-374789f334\", \"label\": \"conflict\", \"quote_a\": \"Outgoing wires of $10,000 or more require a callback to the customer at a number already on file\", \"quote_b\": \"Outgoing wires of $25,000 or more require a callback to the customer at a number already on file\", \"rationale\": \"The policy requires a callback from $10,000 and the bulletin only from $25,000. A wire of $15,000 to a new account needs a callback under the policy and none under the bulletin, and the policy's exception for recently used accounts does not cover that case.\"}]}",
+   "problems": [
+    "pair-ca97cd8191: the rationale uses numbers that aren't in either clause or its document: 75",
+    "pair-374789f334: the rationale uses numbers that aren't in either clause or its document: 15,000"
+   ],
+   "meta": {
+    "ms": 12608,
+    "api_ms": 12453,
+    "input_tokens": 8773,
+    "output_tokens": 1882,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 7930,
+     "cache_read_input_tokens": 841,
+     "output_tokens": 1882,
+     "output_tokens_details": {
+      "thinking_tokens": 754
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 7930,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 1882,
+       "cache_read_input_tokens": 841,
+       "cache_creation_input_tokens": 7930,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 7930
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.050628099999999995,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  },
+  {
+   "reply": "{\"results\": [{\"pair\": \"pair-ca97cd8191\", \"label\": \"conflict\", \"quote_a\": \"within 60 days of the statement that first showed the charge, or longer when the customer was traveling or hospitalized\", \"quote_b\": \"within 90 days of the statement that first showed the charge\", \"rationale\": \"The policy accepts disputes within 60 days unless the customer was traveling or hospitalized, while the procedure accepts them within 90 days with no such condition. Staff following the policy would refuse a dispute filed after 60 days from a customer who was not away, which the procedure allows, and the policy outranks the procedure so its clause is the one to keep.\"}, {\"pair\": \"pair-374789f334\", \"label\": \"conflict\", \"quote_a\": \"Outgoing wires of $10,000 or more require a callback to the customer at a number already on file, unless the wire goes to an account the customer has used in the past year\", \"quote_b\": \"Outgoing wires of $25,000 or more require a callback to the customer at a number already on file\", \"rationale\": \"The policy requires a callback at $10,000 or more unless the account was used in the past year, while the bulletin requires one only at $25,000 or more. A wire between those amounts to a new account needs a callback under the policy but not under the bulletin, and the policy outranks the bulletin so its clause is the one to keep.\"}]}",
+   "problems": [],
+   "meta": {
+    "ms": 8609,
+    "api_ms": 8441,
+    "input_tokens": 6702,
+    "output_tokens": 1302,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 5859,
+     "cache_read_input_tokens": 841,
+     "output_tokens": 1302,
+     "output_tokens_details": {
+      "thinking_tokens": 861
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 5859,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 1302,
+       "cache_read_input_tokens": 841,
+       "cache_creation_input_tokens": 5859,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 5859
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.036544099999999996,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   },
+   "items": [
+    "pair-ca97cd8191",
+    "pair-374789f334"
+   ]
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T05:41:57+00:00"
+}

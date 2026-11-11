@@ -1,0 +1,307 @@
+{
+ "step": "classify",
+ "tag": "evals-11",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "2c908358fde9f0f4a792753579a6cfaa33476e41c4b0f235744675d8e8283a19",
+ "input": [
+  {
+   "pair": "pair-512c740097",
+   "rule": "Overdraft fee per item",
+   "attribute": "od_fee",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-ODR-05@v4/s3/c10",
+    "text": "Each item paid into overdraft is charged $30.",
+    "heading": "Steps",
+    "document": {
+     "title": "Closing an Overdrawn Account",
+     "type": "procedure",
+     "version": 4,
+     "effective": "2025-04-03",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "PRO-ODR-05@v4/s3/c11",
+    "text": "Withdrawals at ATMs outside the network are charged $3 each.",
+    "heading": "Steps",
+    "document": {
+     "title": "Closing an Overdrawn Account",
+     "type": "procedure",
+     "version": 4,
+     "effective": "2025-04-03",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-9ee5c23a62",
+   "rule": "Outgoing wire cutoff",
+   "attribute": "wire_cutoff",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-WIR-01@v4/s3/c8",
+    "text": "Submit outgoing consumer and small business wires by 3:00 p.m. Central for same-day processing.",
+    "heading": "Steps",
+    "document": {
+     "title": "Processing Outgoing Consumer Wires",
+     "type": "procedure",
+     "version": 4,
+     "effective": "2026-08-23",
+     "applies_to": "All branches. Consumer accounts."
+    }
+   },
+   "b": {
+    "clause": "PRO-WIR-01@v4/s3/c10",
+    "text": "Incoming wires received by 4:30 p.m. Central are posted to the customer's account the same day.",
+    "heading": "Steps",
+    "document": {
+     "title": "Processing Outgoing Consumer Wires",
+     "type": "procedure",
+     "version": 4,
+     "effective": "2026-08-23",
+     "applies_to": "All branches. Consumer accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-d91c66bdee",
+   "rule": "Teller drawer limit",
+   "attribute": "cash_drawer_limit",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "BUL-CSH-01@v3/s1/c2",
+    "text": "A teller drawer may not hold more than $15,000 at any time.",
+    "heading": "What branches need to know",
+    "document": {
+     "title": "Branch Bulletin 2025-13: Teller drawer cash limit",
+     "type": "bulletin",
+     "version": 3,
+     "effective": "2025-09-04",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "BUL-CSH-01@v3/s1/c4",
+    "text": "The daily ATM withdrawal limit for consumer debit cards is $800.",
+    "heading": "What branches need to know",
+    "document": {
+     "title": "Branch Bulletin 2025-13: Teller drawer cash limit",
+     "type": "bulletin",
+     "version": 3,
+     "effective": "2025-09-04",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-0f79c6009a",
+   "rule": "Card authorization hold",
+   "attribute": "card_auth_hold",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "FAQ-HLD-02@v2/s1/c1",
+    "text": "Funds from deposited checks are available within 2 business days unless a longer hold applies.",
+    "heading": "How long is the standard hold on a deposited check?",
+    "document": {
+     "title": "Check Hold Questions from Customers",
+     "type": "faq",
+     "version": 2,
+     "effective": "2025-11-06",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "FAQ-HLD-02@v2/s1/c4",
+    "text": "An authorization hold that the merchant never settles releases within 3 business days.",
+    "heading": "How long is the standard hold on a deposited check?",
+    "document": {
+     "title": "Check Hold Questions from Customers",
+     "type": "faq",
+     "version": 2,
+     "effective": "2025-11-06",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-066aba4b05",
+   "rule": "Provisional credit deadline",
+   "attribute": "dispute_provisional_credit",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-DSP-03@v4/s3/c9",
+    "text": "Provisional credit is issued within 10 business days of receiving a completed dispute.",
+    "heading": "Steps",
+    "document": {
+     "title": "Investigating a Dispute",
+     "type": "procedure",
+     "version": 4,
+     "effective": "2026-04-15",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "PRO-DSP-03@v4/s3/c10",
+    "text": "Tell customers a replacement card will arrive within 7 business days.",
+    "heading": "Steps",
+    "document": {
+     "title": "Investigating a Dispute",
+     "type": "procedure",
+     "version": 4,
+     "effective": "2026-04-15",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-d4624c59d5",
+   "rule": "Complaint acknowledgment deadline",
+   "attribute": "complaint_ack",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-CMP-04@v2/s3/c10",
+    "text": "For commercial accounts, send the customer an acknowledgment no later than 3 business days after a written complaint arrives.",
+    "heading": "Steps",
+    "document": {
+     "title": "Escalating a Sensitive Complaint",
+     "type": "procedure",
+     "version": 2,
+     "effective": "2025-02-14",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "PRO-CMP-04@v2/s3/c11",
+    "text": "Send the visit survey within 5 business days after the customer's branch visit.",
+    "heading": "Steps",
+    "document": {
+     "title": "Escalating a Sensitive Complaint",
+     "type": "procedure",
+     "version": 2,
+     "effective": "2025-02-14",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-f9ada592ef",
+   "rule": "Inactivity before dormancy",
+   "attribute": "dormant_inactivity",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "BUL-DRM-02@v3/s1/c2",
+    "text": "Classify accounts as dormant after 12 months without customer-initiated activity.",
+    "heading": "What branches need to know",
+    "document": {
+     "title": "Branch Bulletin 2026-06: Inactivity before an account is dormant",
+     "type": "bulletin",
+     "version": 3,
+     "effective": "2025-08-14",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "BUL-DRM-02@v3/s1/c4",
+    "text": "Dormant accounts receive a statement every 12 months.",
+    "heading": "What branches need to know",
+    "document": {
+     "title": "Branch Bulletin 2026-06: Inactivity before an account is dormant",
+     "type": "bulletin",
+     "version": 3,
+     "effective": "2025-08-14",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-5dd75be707",
+   "rule": "Standard check hold",
+   "attribute": "hold_standard",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-HLD-01@v2/s4/c2",
+    "text": "Place a standard hold of 2 business days on deposited checks that don't qualify for next-day availability.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Funds Availability Policy",
+     "type": "policy",
+     "version": 2,
+     "effective": "2024-08-19",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "POL-HLD-01@v2/s4/c3",
+    "text": "Never destroy a record that is under a legal hold.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Funds Availability Policy",
+     "type": "policy",
+     "version": 2,
+     "effective": "2024-08-19",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  }
+ ],
+ "input_hash": "cb05442dfabb7b7d3b99469da123ba6fce5d372f6c7f19d7a11dfc080d681db3",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [{\"pair\": \"pair-512c740097\", \"label\": \"unrelated\", \"quote_a\": \"Each item paid into overdraft is charged $30.\", \"quote_b\": \"Withdrawals at ATMs outside the network are charged $3 each.\", \"rationale\": \"One clause sets a fee for overdraft items and the other sets a fee for out of network ATM withdrawals. They govern different fees.\"}, {\"pair\": \"pair-9ee5c23a62\", \"label\": \"unrelated\", \"quote_a\": \"Submit outgoing consumer and small business wires by 3:00 p.m. Central for same-day processing.\", \"quote_b\": \"Incoming wires received by 4:30 p.m. Central are posted to the customer's account the same day.\", \"rationale\": \"One clause is the cutoff for sending outgoing wires and the other is the posting time for incoming wires. Staff can follow both without any clash.\"}, {\"pair\": \"pair-d91c66bdee\", \"label\": \"unrelated\", \"quote_a\": \"A teller drawer may not hold more than $15,000 at any time.\", \"quote_b\": \"The daily ATM withdrawal limit for consumer debit cards is $800.\", \"rationale\": \"One clause limits cash in a teller drawer and the other limits daily ATM withdrawals on debit cards. They govern different things.\"}, {\"pair\": \"pair-0f79c6009a\", \"label\": \"unrelated\", \"quote_a\": \"Funds from deposited checks are available within 2 business days unless a longer hold applies.\", \"quote_b\": \"An authorization hold that the merchant never settles releases within 3 business days.\", \"rationale\": \"One clause covers availability of deposited check funds and the other covers release of unsettled card authorization holds. These are different holds with different triggers.\"}, {\"pair\": \"pair-066aba4b05\", \"label\": \"unrelated\", \"quote_a\": \"Provisional credit is issued within 10 business days of receiving a completed dispute.\", \"quote_b\": \"Tell customers a replacement card will arrive within 7 business days.\", \"rationale\": \"One clause sets the deadline for provisional credit and the other sets what customers are told about replacement card delivery. They govern different things.\"}, {\"pair\": \"pair-d4624c59d5\", \"label\": \"unrelated\", \"quote_a\": \"For commercial accounts, send the customer an acknowledgment no later than 3 business days after a written complaint arrives.\", \"quote_b\": \"Send the visit survey within 5 business days after the customer's branch visit.\", \"rationale\": \"One clause sets the acknowledgment deadline for written complaints and the other sets the timing of a visit survey. They govern different customer communications.\"}, {\"pair\": \"pair-f9ada592ef\", \"label\": \"unrelated\", \"quote_a\": \"Classify accounts as dormant after 12 months without customer-initiated activity.\", \"quote_b\": \"Dormant accounts receive a statement every 12 months.\", \"rationale\": \"One clause defines when an account becomes dormant and the other sets how often dormant accounts get statements. The matching 12 months applies to different rules.\"}, {\"pair\": \"pair-5dd75be707\", \"label\": \"unrelated\", \"quote_a\": \"Place a standard hold of 2 business days on deposited checks that don't qualify for next-day availability.\", \"quote_b\": \"Never destroy a record that is under a legal hold.\", \"rationale\": \"One clause sets the standard hold period on deposited checks and the other prohibits destroying records under a legal hold. They govern different things.\"}]}",
+   "problems": [],
+   "meta": {
+    "ms": 12782,
+    "api_ms": 12571,
+    "input_tokens": 9103,
+    "output_tokens": 1545,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 8260,
+     "cache_read_input_tokens": 841,
+     "output_tokens": 1545,
+     "output_tokens_details": {
+      "thinking_tokens": 401
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 8260,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 1545,
+       "cache_read_input_tokens": 841,
+       "cache_creation_input_tokens": 8260,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 8260
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.0485781,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T03:55:56+00:00"
+}

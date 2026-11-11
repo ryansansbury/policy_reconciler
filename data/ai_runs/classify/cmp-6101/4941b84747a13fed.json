@@ -1,0 +1,278 @@
+{
+ "step": "classify",
+ "tag": "cmp-6101",
+ "model": "google-b",
+ "backend": {
+  "vendor": "Google",
+  "model": "gemini-3.8-flash",
+  "label": "Gemini 3.8 Flash"
+ },
+ "prompt_hash": "2c908358fde9f0f4a792753579a6cfaa33476e41c4b0f235744675d8e8283a19",
+ "input": [
+  {
+   "pair": "pair-03ac13f122",
+   "rule": "Standard check hold",
+   "attribute": "hold_standard",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-HLD-03@v2/s5/c1",
+    "text": "Place a standard hold of 2 business days on deposited checks that don't qualify for next-day availability.",
+    "heading": "Steps to follow",
+    "document": {
+     "title": "Holds on New Accounts",
+     "type": "procedure",
+     "version": 2,
+     "effective": "2025-08-25",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "PRO-HLD-03@v2/s5/c5",
+    "text": "Debit card authorization holds drop off within 3 business days if the merchant does not settle the charge.",
+    "heading": "Steps to follow",
+    "document": {
+     "title": "Holds on New Accounts",
+     "type": "procedure",
+     "version": 2,
+     "effective": "2025-08-25",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-d897727715",
+   "rule": "Who completes wire callbacks",
+   "attribute": "wire_callback_role",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "JA-WIR-02@v4/s1/c2",
+    "text": "Who completes wire callbacks | wire specialist",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Callback Checklist",
+     "type": "job_aid",
+     "version": 4,
+     "effective": "2026-05-28",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "BUL-WIR-02@v1/s1/c2",
+    "text": "Only a wire specialist may complete the callback for an outgoing wire.",
+    "heading": "What branches need to know",
+    "document": {
+     "title": "Branch Bulletin 2026-35: Who completes wire callbacks",
+     "type": "bulletin",
+     "version": 1,
+     "effective": "2025-04-24",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-3b048392fc",
+   "rule": "Large-cash review threshold",
+   "attribute": "cash_review_threshold",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "JA-CSH-03@v2/s1/c2",
+    "text": "Large-cash review threshold | $7,500",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Large-Cash Review Quick Reference",
+     "type": "job_aid",
+     "version": 2,
+     "effective": "2026-02-22",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "JA-CSH-02@v4/s1/c1",
+    "text": "Large-cash review threshold | $7,500",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Vault Opening Checklist",
+     "type": "job_aid",
+     "version": 4,
+     "effective": "2025-07-25",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-e8978f18bb",
+   "rule": "Card dispute window",
+   "attribute": "dispute_window",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "JA-DSP-02@v4/s1/c2",
+    "text": "Debit card dispute window | 60 days",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Dispute Timelines Card",
+     "type": "job_aid",
+     "version": 4,
+     "effective": "2025-09-06",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "PRO-DSP-06@v3/s3/c4",
+    "text": "Accept debit card disputes filed within 60 days of the statement that first showed the charge.",
+    "heading": "Steps",
+    "document": {
+     "title": "Large Dispute Review",
+     "type": "procedure",
+     "version": 3,
+     "effective": "2025-06-21",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-ceff02aa2b",
+   "rule": "Inactivity before dormancy",
+   "attribute": "dormant_inactivity",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-DRM-04@v3/s3/c4",
+    "text": "An account with no customer-initiated activity for 12 months is classified as dormant.",
+    "heading": "Steps",
+    "document": {
+     "title": "Charging Dormant Account Fees",
+     "type": "procedure",
+     "version": 3,
+     "effective": "2025-08-01",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "FAQ-DRM-01@v3/s1/c1",
+    "text": "Classify accounts as dormant after 12 months without customer-initiated activity.",
+    "heading": "When does an account become dormant?",
+    "document": {
+     "title": "Dormant Account FAQ",
+     "type": "faq",
+     "version": 3,
+     "effective": "2026-05-06",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-4f39851bf2",
+   "rule": "Overdraft fee per item",
+   "attribute": "od_fee",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "BUL-ODR-01@v4/s1/c2",
+    "text": "Each item paid into overdraft is charged $30.",
+    "heading": "What branches need to know",
+    "document": {
+     "title": "Branch Bulletin 2025-28: Overdraft fee per item",
+     "type": "bulletin",
+     "version": 4,
+     "effective": "2025-08-07",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "FAQ-ODR-01@v4/s1/c1",
+    "text": "Each item paid into overdraft is charged $30.",
+    "heading": "What is the overdraft fee?",
+    "document": {
+     "title": "Overdraft FAQ",
+     "type": "faq",
+     "version": 4,
+     "effective": "2026-02-16",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-978bbc15e6",
+   "rule": "Overdraft amount with no fee",
+   "attribute": "od_de_minimis",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-ODR-05@v4/s3/c6",
+    "text": "Accounts overdrawn by no more than $10 at the end of the day are not charged an overdraft fee.",
+    "heading": "Steps",
+    "document": {
+     "title": "Closing an Overdrawn Account",
+     "type": "procedure",
+     "version": 4,
+     "effective": "2025-04-12",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "JA-ODR-01@v4/s1/c3",
+    "text": "Overdraft amount with no fee | $10",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Overdraft Quick Reference",
+     "type": "job_aid",
+     "version": 4,
+     "effective": "2026-04-04",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-12a8817920",
+   "rule": "Teller drawer limit",
+   "attribute": "cash_drawer_limit",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "FAQ-CSH-01@v3/s1/c1",
+    "text": "Sell excess cash to the vault whenever a teller drawer goes above $15,000.",
+    "heading": "How much cash can a teller drawer hold?",
+    "document": {
+     "title": "Cash Handling FAQ",
+     "type": "faq",
+     "version": 3,
+     "effective": "2026-03-24",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "PRO-CSH-06@v2/s3/c4",
+    "text": "Sell excess cash to the vault whenever a teller drawer goes above $15,000.",
+    "heading": "Steps",
+    "document": {
+     "title": "Ordering Cash Shipments",
+     "type": "procedure",
+     "version": 2,
+     "effective": "2024-11-28",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  }
+ ],
+ "input_hash": "45e91344ea0eaa1f4103e379c69a5c54b1cd7760aae57d2c434707b2e2a468e1",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\n \"results\": [\n  {\n   \"pair\": \"pair-03ac13f122\",\n   \"label\": \"unrelated\",\n   \"quote_a\": \"deposited checks\",\n   \"quote_b\": \"Debit card authorization holds\",\n   \"rationale\": \"Clause a covers hold times for deposited checks while clause b addresses debit card authorization holds. The two provisions govern entirely different subjects.\"\n  },\n  {\n   \"pair\": \"pair-d897727715\",\n   \"label\": \"consistent\",\n   \"quote_a\": \"wire specialist\",\n   \"quote_b\": \"wire specialist\",\n   \"rationale\": \"Both clauses specify that a wire specialist completes the wire callback. They state the same requirement with no conflict.\"\n  },\n  {\n   \"pair\": \"pair-3b048392fc\",\n   \"label\": \"consistent\",\n   \"quote_a\": \"$7,500\",\n   \"quote_b\": \"$7,500\",\n   \"rationale\": \"Both clauses set the large cash review threshold at $7,500. They state the same rule with the same value.\"\n  },\n  {\n   \"pair\": \"pair-e8978f18bb\",\n   \"label\": \"consistent\",\n   \"quote_a\": \"60 days\",\n   \"quote_b\": \"60 days\",\n   \"rationale\": \"Both clauses establish a 60 days window for debit card disputes. The two documents align on the same requirement.\"\n  },\n  {\n   \"pair\": \"pair-ceff02aa2b\",\n   \"label\": \"consistent\",\n   \"quote_a\": \"12 months\",\n   \"quote_b\": \"12 months\",\n   \"rationale\": \"Both clauses classify an account as dormant after 12 months without customer activity. They state the same standard.\"\n  },\n  {\n   \"pair\": \"pair-4f39851bf2\",\n   \"label\": \"consistent\",\n   \"quote_a\": \"$30\",\n   \"quote_b\": \"$30\",\n   \"rationale\": \"Both clauses set the overdraft fee at $30 per item. They state the same rule with the same amount.\"\n  },\n  {\n   \"pair\": \"pair-978bbc15e6\",\n   \"label\": \"consistent\",\n   \"quote_a\": \"$10\",\n   \"quote_b\": \"$10\",\n   \"rationale\": \"Both clauses state that accounts overdrawn by no more than $10 incur no overdraft fee. The provisions are consistent.\"\n  },\n  {\n   \"pair\": \"pair-12a8817920\",\n   \"label\": \"consistent\",\n   \"quote_a\": \"$15,000\",\n   \"quote_b\": \"$15,000\",\n   \"rationale\": \"Both clauses set the teller drawer threshold at $15,000. They state the exact same rule and value.\"\n  }\n ]\n}",
+   "problems": [],
+   "meta": {
+    "ms": 20361,
+    "input_tokens": 3346,
+    "output_tokens": 2952,
+    "cost_usd": 0.013579,
+    "usage": {
+     "completion_tokens": 706,
+     "prompt_tokens": 3346,
+     "total_tokens": 6298
+    },
+    "models": [
+     "gemini-3.8-flash"
+    ],
+    "stop_reason": "stop"
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T17:32:06+00:00"
+}

@@ -1,0 +1,85 @@
+{
+ "step": "assist",
+ "tag": "cmp-6101",
+ "model": "google-a",
+ "backend": {
+  "vendor": "Google",
+  "model": "gemini-3.1-pro-preview",
+  "label": "Gemini 3.1 Pro"
+ },
+ "prompt_hash": "66c01f0da9f327e74355d39363e55b642a1bbf8dc6249974c3afbf3cb3d6ccd5",
+ "input": [
+  {
+   "question": "q-C-05",
+   "text": "How long do customers have to request a fee refund?",
+   "type": "duration",
+   "clauses": [
+    {
+     "id": "FAQ-FEE-01@v2/s3/c1",
+     "text": "Customers may request a fee refund within 90 days of the statement date.",
+     "title": "Fee Waiver FAQ",
+     "type": "faq",
+     "version": 2,
+     "effective": "2026-05-25"
+    },
+    {
+     "id": "POL-FEE-01@v3/s4/c1",
+     "text": "Customers may request a fee refund within 60 days of the statement date.",
+     "title": "Service Fee Waiver Policy",
+     "type": "policy",
+     "version": 3,
+     "effective": "2024-08-03"
+    },
+    {
+     "id": "POL-FEE-02@v4/s4/c1",
+     "text": "Customers may request a fee refund within 60 days of the statement date.",
+     "title": "Fee Refund Policy",
+     "type": "policy",
+     "version": 4,
+     "effective": "2026-01-16"
+    },
+    {
+     "id": "PRO-FEE-02@v1/s3/c1",
+     "text": "Customers may request a fee refund within 60 days of the statement date.",
+     "title": "Reversing a Service Fee",
+     "type": "procedure",
+     "version": 1,
+     "effective": "2025-07-18"
+    },
+    {
+     "id": "PRO-FEE-06@v2/s3/c1",
+     "text": "Customers may request a fee refund within 90 days of the statement date.",
+     "title": "Explaining Fees to a New Customer",
+     "type": "procedure",
+     "version": 2,
+     "effective": "2025-11-04"
+    }
+   ]
+  }
+ ],
+ "input_hash": "af891539f45914b1188ead85d104134291af1a95d082130d46b8717878b940b0",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\n \"results\": [\n  {\n   \"question\": \"q-C-05\",\n   \"answer\": \"The sources disagree. The Service Fee Waiver Policy, the Fee Refund Policy and the Reversing a Service Fee procedure set a limit of 60 days from the statement date. The Explaining Fees to a New Customer procedure and the Fee Waiver FAQ say 90 days but the policies outrank them and dictate the limit to follow.\",\n   \"citations\": [\n    \"FAQ-FEE-01@v2/s3/c1\",\n    \"POL-FEE-01@v3/s4/c1\",\n    \"POL-FEE-02@v4/s4/c1\",\n    \"PRO-FEE-02@v1/s3/c1\",\n    \"PRO-FEE-06@v2/s3/c1\"\n   ],\n   \"sources_disagree\": true\n  }\n ]\n}",
+   "problems": [],
+   "meta": {
+    "ms": 13262,
+    "input_tokens": 981,
+    "output_tokens": 2014,
+    "cost_usd": 0.02613,
+    "usage": {
+     "completion_tokens": 220,
+     "prompt_tokens": 981,
+     "total_tokens": 2995
+    },
+    "models": [
+     "gemini-3.1-pro-preview"
+    ],
+    "stop_reason": "stop"
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T17:28:12+00:00"
+}

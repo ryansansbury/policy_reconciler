@@ -1,0 +1,273 @@
+{
+ "step": "classify",
+ "tag": "evals-11",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "1346938ac1ecbf43874a700ab9916c851d6a29bb5d6b9e5f1199128bc8cd59f2",
+ "input": [
+  {
+   "pair": "pair-15512bc098",
+   "rule": "Fee refund window",
+   "attribute": "fee_refund_window",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "BUL-FEE-02@v1/s1/c2",
+    "text": "Fee refund requests are accepted for 60 days after the statement date.",
+    "heading": "What branches need to know",
+    "document": {
+     "title": "Branch Bulletin 2026-02: Fee refund request window",
+     "type": "bulletin",
+     "version": 1,
+     "effective": "2025-08-31",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "PRO-FEE-04@v3/s3/c5",
+    "text": "Personal bankers may waive service fees up to $25 per account in a calendar year.",
+    "heading": "Steps",
+    "document": {
+     "title": "Reviewing Waiver Activity Each Month",
+     "type": "procedure",
+     "version": 3,
+     "effective": "2025-10-08",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-c23e9b1065",
+   "rule": "Large-cash review threshold",
+   "attribute": "cash_review_threshold",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-CSH-01@v1/s3/c6",
+    "text": "Log any cash deposit or withdrawal of $7,500 or more for large-cash review.",
+    "heading": "Steps",
+    "document": {
+     "title": "Balancing a Teller Drawer",
+     "type": "procedure",
+     "version": 1,
+     "effective": "2026-07-30",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "JA-CSH-03@v1/s1/c2",
+    "text": "Teller drawer cash limit | $15,000",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Large-Cash Review Quick Reference",
+     "type": "job_aid",
+     "version": 1,
+     "effective": "2025-12-09",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-3826fd6306",
+   "rule": "Outgoing wire cutoff",
+   "attribute": "wire_cutoff",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "JA-WIR-03@v1/s1/c2",
+    "text": "Outgoing wire cutoff (commercial) | 4:00 PM Central",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Wire Cutoff Card",
+     "type": "job_aid",
+     "version": 1,
+     "effective": "2025-12-30",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "FAQ-WIR-02@v1/s3/c1",
+    "text": "An operations manager must give a second approval for any outgoing wire above $50,000.",
+    "heading": "Which outgoing wires need a second approval?",
+    "document": {
+     "title": "Wire Cutoff Questions",
+     "type": "faq",
+     "version": 1,
+     "effective": "2026-07-25",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-534d359b85",
+   "rule": "Wire second approval threshold",
+   "attribute": "wire_second_approval",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-WIR-02@v3/s4/c2",
+    "text": "Outgoing wires over $50,000 need a second approval from an operations manager.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Commercial Wire Services Policy",
+     "type": "policy",
+     "version": 3,
+     "effective": "2024-04-28",
+     "applies_to": "All branches. Commercial accounts."
+    }
+   },
+   "b": {
+    "clause": "BUL-WIR-02@v1/s1/c2",
+    "text": "Callbacks are completed by a wire specialist, never by the employee who took the request.",
+    "heading": "What branches need to know",
+    "document": {
+     "title": "Branch Bulletin 2026-36: Who completes wire callbacks",
+     "type": "bulletin",
+     "version": 1,
+     "effective": "2026-02-20",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-d8018d502c",
+   "rule": "Dual control at opening",
+   "attribute": "branch_open_dual",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "JA-BOP-03@v1/s1/c2",
+    "text": "Dual control at branch opening | Required",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Vault Security Card",
+     "type": "job_aid",
+     "version": 1,
+     "effective": "2026-03-29",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "PRO-BOP-05@v4/s3/c6",
+    "text": "Vault combinations are changed every 6 months and whenever an employee who knows the combination leaves.",
+    "heading": "Steps",
+    "document": {
+     "title": "Handling a Late Opener",
+     "type": "procedure",
+     "version": 4,
+     "effective": "2025-04-26",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-e232452125",
+   "rule": "Closed account record retention",
+   "attribute": "records_retention",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "FAQ-REC-01@v2/s1/c1",
+    "text": "Account records are kept for 7 years after the account closes.",
+    "heading": "How long are closed account records kept?",
+    "document": {
+     "title": "Records Retention FAQ",
+     "type": "faq",
+     "version": 2,
+     "effective": "2025-12-06",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "PRO-REC-06@v1/s3/c3",
+    "text": "The records custodian must approve the destruction of any records in writing.",
+    "heading": "Steps",
+    "document": {
+     "title": "Retrieving Archived Records",
+     "type": "procedure",
+     "version": 1,
+     "effective": "2025-12-08",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-3a9a585963",
+   "rule": "Days overdrawn before charge-off",
+   "attribute": "od_chargeoff",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-ODR-01@v1/s3/c4",
+    "text": "Refer an account for charge-off once it has been negative for 45 days.",
+    "heading": "Steps",
+    "document": {
+     "title": "Reviewing Overdrawn Accounts Each Morning",
+     "type": "procedure",
+     "version": 1,
+     "effective": "2026-03-09",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "PRO-ODR-03@v2/s3/c1",
+    "text": "No overdraft fee is charged when the account is overdrawn by $10 or less at the end of the day.",
+    "heading": "Steps",
+    "document": {
+     "title": "Referring Accounts for Charge-Off",
+     "type": "procedure",
+     "version": 2,
+     "effective": "2025-07-13",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-63bec5fc70",
+   "rule": "Branch manager fee waiver limit",
+   "attribute": "fee_waiver_bm",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "BUL-FEE-01@v4/s1/c2",
+    "text": "The most a branch manager can waive for one account in a calendar year is $50.",
+    "heading": "What branches need to know",
+    "document": {
+     "title": "Branch Bulletin 2025-17: Branch manager fee waiver limit",
+     "type": "bulletin",
+     "version": 4,
+     "effective": "2025-06-13",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "PRO-FEE-06@v3/s3/c1",
+    "text": "Customers may request a fee refund within 60 days of the statement date.",
+    "heading": "Steps",
+    "document": {
+     "title": "Explaining Fees to a New Customer",
+     "type": "procedure",
+     "version": 3,
+     "effective": "2025-04-10",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  }
+ ],
+ "input_hash": "229ddf6325ab51c375debdbe84b21373a40d9e66daaeff91d798be6830c9e65e",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [{\"pair\": \"pair-15512bc098\", \"label\": \"unrelated\", \"quote_a\": \"Fee refund requests are accepted for 60 days after the statement date.\", \"quote_b\": \"Personal bankers may waive service fees up to $25 per account in a calendar year.\", \"rationale\": \"One clause sets the window for customers to request a refund and the other caps what a personal banker can waive. They govern different rules.\"}, {\"pair\": \"pair-c23e9b1065\", \"label\": \"unrelated\", \"quote_a\": \"Log any cash deposit or withdrawal of $7,500 or more for large-cash review.\", \"quote_b\": \"Teller drawer cash limit | $15,000\", \"rationale\": \"The first sets when a transaction is logged for review and the second sets how much cash a teller drawer may hold. The two figures apply to different things.\"}, {\"pair\": \"pair-3826fd6306\", \"label\": \"unrelated\", \"quote_a\": \"Outgoing wire cutoff (commercial) | 4:00 PM Central\", \"quote_b\": \"An operations manager must give a second approval for any outgoing wire above $50,000.\", \"rationale\": \"One sets a time of day cutoff for commercial wires and the other sets an approval requirement by amount. Neither affects the other.\"}, {\"pair\": \"pair-534d359b85\", \"label\": \"unrelated\", \"quote_a\": \"Outgoing wires over $50,000 need a second approval from an operations manager.\", \"quote_b\": \"Callbacks are completed by a wire specialist, never by the employee who took the request.\", \"rationale\": \"One clause covers second approval of large wires and the other covers who performs callbacks. They are separate controls.\"}, {\"pair\": \"pair-d8018d502c\", \"label\": \"unrelated\", \"quote_a\": \"Dual control at branch opening | Required\", \"quote_b\": \"Vault combinations are changed every 6 months and whenever an employee who knows the combination leaves.\", \"rationale\": \"One requires dual control when the branch opens and the other sets when vault combinations are changed. They govern different vault practices.\"}, {\"pair\": \"pair-e232452125\", \"label\": \"unrelated\", \"quote_a\": \"Account records are kept for 7 years after the account closes.\", \"quote_b\": \"The records custodian must approve the destruction of any records in writing.\", \"rationale\": \"The first sets how long closed account records are kept and the second sets who must approve destruction. Following both leads to no contradiction, but they do not state the same rule.\"}, {\"pair\": \"pair-3a9a585963\", \"label\": \"unrelated\", \"quote_a\": \"Refer an account for charge-off once it has been negative for 45 days.\", \"quote_b\": \"No overdraft fee is charged when the account is overdrawn by $10 or less at the end of the day.\", \"rationale\": \"One sets when an account is referred for charge off and the other sets when an overdraft fee is not charged. The rules cover different actions.\"}, {\"pair\": \"pair-63bec5fc70\", \"label\": \"unrelated\", \"quote_a\": \"The most a branch manager can waive for one account in a calendar year is $50.\", \"quote_b\": \"Customers may request a fee refund within 60 days of the statement date.\", \"rationale\": \"One limits how much a branch manager can waive and the other sets the time window for a customer refund request. They govern different rules.\"}]}",
+   "problems": [],
+   "meta": {
+    "ms": 11960,
+    "api_ms": 11708,
+    "input_tokens": 2,
+    "output_tokens": 1597,
+    "cost_usd": 0.04875689999999999,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T03:27:10+00:00"
+}

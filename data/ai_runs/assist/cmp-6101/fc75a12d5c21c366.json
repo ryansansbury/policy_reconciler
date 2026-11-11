@@ -1,0 +1,114 @@
+{
+ "step": "assist",
+ "tag": "cmp-6101",
+ "model": "claude-opus",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "opus",
+  "client_context": true
+ },
+ "prompt_hash": "66c01f0da9f327e74355d39363e55b642a1bbf8dc6249974c3afbf3cb3d6ccd5",
+ "input": [
+  {
+   "question": "q-C-05",
+   "text": "How long do customers have to request a fee refund?",
+   "type": "duration",
+   "clauses": [
+    {
+     "id": "FAQ-FEE-01@v2/s3/c1",
+     "text": "Customers may request a fee refund within 90 days of the statement date.",
+     "title": "Fee Waiver FAQ",
+     "type": "faq",
+     "version": 2,
+     "effective": "2026-05-25"
+    },
+    {
+     "id": "POL-FEE-01@v3/s4/c1",
+     "text": "Customers may request a fee refund within 60 days of the statement date.",
+     "title": "Service Fee Waiver Policy",
+     "type": "policy",
+     "version": 3,
+     "effective": "2024-08-03"
+    },
+    {
+     "id": "POL-FEE-02@v4/s4/c1",
+     "text": "Customers may request a fee refund within 60 days of the statement date.",
+     "title": "Fee Refund Policy",
+     "type": "policy",
+     "version": 4,
+     "effective": "2026-01-16"
+    },
+    {
+     "id": "PRO-FEE-02@v1/s3/c1",
+     "text": "Customers may request a fee refund within 60 days of the statement date.",
+     "title": "Reversing a Service Fee",
+     "type": "procedure",
+     "version": 1,
+     "effective": "2025-07-18"
+    },
+    {
+     "id": "PRO-FEE-06@v2/s3/c1",
+     "text": "Customers may request a fee refund within 90 days of the statement date.",
+     "title": "Explaining Fees to a New Customer",
+     "type": "procedure",
+     "version": 2,
+     "effective": "2025-11-04"
+    }
+   ]
+  }
+ ],
+ "input_hash": "af891539f45914b1188ead85d104134291af1a95d082130d46b8717878b940b0",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [{\"question\": \"q-C-05\", \"answer\": \"The sources disagree. The Service Fee Waiver Policy, the Fee Refund Policy and the Reversing a Service Fee procedure give 60 days from the statement date, while the Explaining Fees to a New Customer procedure and the Fee Waiver FAQ give 90 days. A policy outranks a procedure or an FAQ, which means the bank's ranking favors 60 days.\", \"citations\": [\"POL-FEE-01@v3/s4/c1\", \"POL-FEE-02@v4/s4/c1\", \"PRO-FEE-02@v1/s3/c1\", \"PRO-FEE-06@v2/s3/c1\", \"FAQ-FEE-01@v2/s3/c1\"], \"sources_disagree\": true}]}",
+   "problems": [],
+   "meta": {
+    "ms": 5027,
+    "api_ms": 4891,
+    "input_tokens": 6108,
+    "output_tokens": 575,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 5488,
+     "cache_read_input_tokens": 618,
+     "output_tokens": 575,
+     "output_tokens_details": {
+      "thinking_tokens": 307
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 5488,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 575,
+       "cache_read_input_tokens": 618,
+       "cache_creation_input_tokens": 5488,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 5488
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.0555356,
+    "models": [
+     "claude-opus-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T17:14:00+00:00"
+}

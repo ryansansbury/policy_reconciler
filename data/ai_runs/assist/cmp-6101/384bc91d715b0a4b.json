@@ -1,0 +1,96 @@
+{
+ "step": "assist",
+ "tag": "cmp-6101",
+ "model": "openai-a",
+ "backend": {
+  "vendor": "OpenAI",
+  "model": "gpt-6-astra",
+  "label": "GPT-6 Astra"
+ },
+ "prompt_hash": "66c01f0da9f327e74355d39363e55b642a1bbf8dc6249974c3afbf3cb3d6ccd5",
+ "input": [
+  {
+   "question": "q-C-02",
+   "text": "Who can approve an exception to the identification requirements?",
+   "type": "role",
+   "clauses": [
+    {
+     "id": "POL-AOP-02@v3/s3/c1",
+     "text": "Only a manager can approve an exception to the identification requirements.",
+     "title": "Customer Identification Policy",
+     "type": "policy",
+     "version": 3,
+     "effective": "2026-02-28"
+    },
+    {
+     "id": "POL-AOP-01@v5/s3/c2",
+     "text": "Only the branch manager can approve an exception to the identification requirements.",
+     "title": "Deposit Account Opening Policy",
+     "type": "policy",
+     "version": 5,
+     "effective": "2026-05-17"
+    },
+    {
+     "id": "PRO-AOP-04@v4/s3/c4",
+     "text": "Only the operations specialist can approve an exception to the identification requirements.",
+     "title": "Verifying Customer Identification",
+     "type": "procedure",
+     "version": 4,
+     "effective": "2024-12-10"
+    },
+    {
+     "id": "PRO-AOP-03@v1/s3/c1",
+     "text": "Any exception to the identification requirements must be approved by the branch manager.",
+     "title": "Opening a Small Business Account",
+     "type": "procedure",
+     "version": 1,
+     "effective": "2025-09-11"
+    },
+    {
+     "id": "PRO-LND-03@v4/s3/c9",
+     "text": "A regional manager can approve a rate exception as large as 0.50%.",
+     "title": "Documenting Pricing Exceptions",
+     "type": "procedure",
+     "version": 4,
+     "effective": "2025-06-20"
+    }
+   ]
+  }
+ ],
+ "input_hash": "657b81ba219888a5b18f53267bb41068b0e6aa98295789fa0ce9bb456893fc6b",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\":[{\"question\":\"q-C-02\",\"answer\":\"The sources disagree because the Customer Identification Policy permits only a manager to approve an exception to the identification requirements while the Deposit Account Opening Policy permits only the branch manager. Verifying Customer Identification permits only the operations specialist while Opening a Small Business Account requires approval by the branch manager. The policies outrank the procedures.\",\"citations\":[\"POL-AOP-02@v3/s3/c1\",\"POL-AOP-01@v5/s3/c2\",\"PRO-AOP-04@v4/s3/c4\",\"PRO-AOP-03@v1/s3/c1\"],\"sources_disagree\":true}]}",
+   "problems": [],
+   "meta": {
+    "ms": 4794,
+    "input_tokens": 857,
+    "output_tokens": 284,
+    "cost_usd": 0.02277,
+    "usage": {
+     "prompt_tokens": 857,
+     "completion_tokens": 284,
+     "total_tokens": 1141,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 138,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+     }
+    },
+    "models": [
+     "gpt-6-astra"
+    ],
+    "stop_reason": "stop"
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T17:20:51+00:00"
+}

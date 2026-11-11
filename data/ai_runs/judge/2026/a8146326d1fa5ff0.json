@@ -1,0 +1,73 @@
+{
+ "step": "judge",
+ "tag": "2026",
+ "model": "google-b",
+ "backend": {
+  "vendor": "Google",
+  "model": "gemini-3.8-flash",
+  "label": "Gemini 3.8 Flash"
+ },
+ "prompt_hash": "ab6a49ec8731854b3cf900a9a4387417ee8016fe68257c4d327181c7eb1621da",
+ "input": [
+  {
+   "draft": "g-fdf90551",
+   "text": "Only the branch manager can approve an exception to the identification requirements.",
+   "sources": [
+    "Only the branch manager can approve an exception to the identification requirements."
+   ]
+  },
+  {
+   "draft": "g-e45abd58",
+   "text": "Do not open an account until you have verified two forms of identification for each signer. When the branch manager approves, you can instead accept one form of identification plus a verified bank reference.",
+   "sources": [
+    "Do not open an account until you have verified two forms of identification for each signer, or one form plus a verified bank reference when the branch manager approves."
+   ]
+  },
+  {
+   "draft": "g-46a9b4de",
+   "text": "Staff resolve each complaint within 15 business days of receipt or tell the customer when to expect a resolution.",
+   "sources": [
+    "Resolve complaints within 15 business days of receipt, or tell the customer when to expect a resolution."
+   ]
+  },
+  {
+   "draft": "g-8dd7694e",
+   "text": "A branch manager may waive up to $50 in fees for one account in a calendar year.",
+   "sources": [
+    "The most a branch manager can waive for one account in a calendar year is $50."
+   ]
+  },
+  {
+   "draft": "g-feb17e64",
+   "text": "Place a standard hold of 2 business days on deposited checks that don't qualify for next day availability.",
+   "sources": [
+    "Place a standard hold of 2 business days on deposited checks that don't qualify for next-day availability."
+   ]
+  }
+ ],
+ "input_hash": "b28e69341ab10a6a2e3c1b0f39f4601df4f7d51d569f5e6f4af10036bccf66f5",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "```json\n{\"results\": [{\"draft\": \"g-fdf90551\", \"scores\": {\"keeps_rules\": {\"pass\": true, \"evidence\": \"\"}, \"adds_no_rule\": {\"pass\": true, \"evidence\": \"\"}, \"keeps_scope\": {\"pass\": true, \"evidence\": \"\"}, \"plain\": {\"pass\": true, \"evidence\": \"\"}}}, {\"draft\": \"g-e45abd58\", \"scores\": {\"keeps_rules\": {\"pass\": true, \"evidence\": \"\"}, \"adds_no_rule\": {\"pass\": true, \"evidence\": \"\"}, \"keeps_scope\": {\"pass\": true, \"evidence\": \"\"}, \"plain\": {\"pass\": true, \"evidence\": \"\"}}}, {\"draft\": \"g-46a9b4de\", \"scores\": {\"keeps_rules\": {\"pass\": true, \"evidence\": \"\"}, \"adds_no_rule\": {\"pass\": true, \"evidence\": \"\"}, \"keeps_scope\": {\"pass\": true, \"evidence\": \"\"}, \"plain\": {\"pass\": true, \"evidence\": \"\"}}}, {\"draft\": \"g-8dd7694e\", \"scores\": {\"keeps_rules\": {\"pass\": true, \"evidence\": \"\"}, \"adds_no_rule\": {\"pass\": true, \"evidence\": \"\"}, \"keeps_scope\": {\"pass\": true, \"evidence\": \"\"}, \"plain\": {\"pass\": true, \"evidence\": \"\"}}}, {\"draft\": \"g-feb17e64\", \"scores\": {\"keeps_rules\": {\"pass\": true, \"evidence\": \"\"}, \"adds_no_rule\": {\"pass\": true, \"evidence\": \"\"}, \"keeps_scope\": {\"pass\": true, \"evidence\": \"\"}, \"plain\": {\"pass\": true, \"evidence\": \"\"}}}]}\n```",
+   "problems": [],
+   "meta": {
+    "ms": 45285,
+    "input_tokens": 912,
+    "output_tokens": 6921,
+    "cost_usd": 0.026638,
+    "usage": {
+     "completion_tokens": 392,
+     "prompt_tokens": 912,
+     "total_tokens": 7833
+    },
+    "models": [
+     "gemini-3.8-flash"
+    ],
+    "stop_reason": "stop"
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T21:26:38+00:00"
+}

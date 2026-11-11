@@ -1,0 +1,278 @@
+{
+ "step": "classify",
+ "tag": "cmp-6101",
+ "model": "google-a",
+ "backend": {
+  "vendor": "Google",
+  "model": "gemini-3.1-pro-preview",
+  "label": "Gemini 3.1 Pro"
+ },
+ "prompt_hash": "2c908358fde9f0f4a792753579a6cfaa33476e41c4b0f235744675d8e8283a19",
+ "input": [
+  {
+   "pair": "pair-2624d42537",
+   "rule": "Wire second approval threshold",
+   "attribute": "wire_second_approval",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-WIR-03@v3/s3/c6",
+    "text": "Outgoing wires over $50,000 need a second approval from an operations manager.",
+    "heading": "Steps",
+    "document": {
+     "title": "Completing Wire Callback Verification",
+     "type": "procedure",
+     "version": 3,
+     "effective": "2024-12-08",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "PRO-WIR-05@v1/s3/c10",
+    "text": "An operations manager must give a second approval for any outgoing wire above $50,000.",
+    "heading": "Steps",
+    "document": {
+     "title": "Wire Cutoffs on Holidays and Weekends",
+     "type": "procedure",
+     "version": 1,
+     "effective": "2025-04-08",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-a31ac93ccf",
+   "rule": "Closed account record retention",
+   "attribute": "records_retention",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-REC-01@v4/s3/c3",
+    "text": "Account records are kept for 7 years after the account closes.",
+    "heading": "Steps",
+    "document": {
+     "title": "Retaining Closed Account Records",
+     "type": "procedure",
+     "version": 4,
+     "effective": "2026-08-05",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "FAQ-REC-02@v4/s1/c1",
+    "text": "Account records are kept for 7 years after the account closes.",
+    "heading": "How long are closed account records kept?",
+    "document": {
+     "title": "Legal Hold Questions",
+     "type": "faq",
+     "version": 4,
+     "effective": "2025-10-02",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-3610301733",
+   "rule": "Notice before dormancy",
+   "attribute": "dormant_notice",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "FAQ-DRM-01@v3/s2/c1",
+    "text": "Customers receive written notice 30 days before their account becomes dormant.",
+    "heading": "How much notice does a customer get before dormancy?",
+    "document": {
+     "title": "Dormant Account FAQ",
+     "type": "faq",
+     "version": 3,
+     "effective": "2026-05-06",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "FAQ-DRM-02@v4/s2/c1",
+    "text": "Mail the customer a notice at least 30 days before the account is classified as dormant.",
+    "heading": "How much notice does a customer get before dormancy?",
+    "document": {
+     "title": "Reactivation Questions",
+     "type": "faq",
+     "version": 4,
+     "effective": "2026-03-19",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-a9061e7b02",
+   "rule": "Vault combination change interval",
+   "attribute": "combo_change",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-BOP-04@v3/s3/c3",
+    "text": "Change the vault combination at least every 6 months.",
+    "heading": "Steps",
+    "document": {
+     "title": "Testing the Alarm System",
+     "type": "procedure",
+     "version": 3,
+     "effective": "2025-05-23",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "PRO-BOP-02@v1/s3/c6",
+    "text": "Vault combinations are changed every 6 months and whenever an employee who knows the combination leaves.",
+    "heading": "Steps",
+    "document": {
+     "title": "Closing the Branch Each Evening",
+     "type": "procedure",
+     "version": 1,
+     "effective": "2025-05-10",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-39504cfedb",
+   "rule": "Dispute review threshold",
+   "attribute": "dispute_review_threshold",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "FAQ-DSP-02@v1/s2/c1",
+    "text": "Disputes over $500 are reviewed by a card services specialist before credit is issued.",
+    "heading": "Which disputes need card services review?",
+    "document": {
+     "title": "Provisional Credit Questions",
+     "type": "faq",
+     "version": 1,
+     "effective": "2025-11-22",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "JA-DSP-01@v3/s1/c3",
+    "text": "Dispute amount that needs card services review | $500",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Dispute Intake Checklist",
+     "type": "job_aid",
+     "version": 3,
+     "effective": "2025-08-29",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-9a4488306e",
+   "rule": "Dual control for the vault",
+   "attribute": "cash_vault_dual",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-CSH-03@v1/s3/c2",
+    "text": "The vault must be opened under dual control, with two employees present.",
+    "heading": "Steps",
+    "document": {
+     "title": "Opening and Closing the Vault",
+     "type": "procedure",
+     "version": 1,
+     "effective": "2026-03-07",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "POL-CSH-01@v4/s4/c2",
+    "text": "The vault must be opened under dual control, with two employees present.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Cash Handling Policy",
+     "type": "policy",
+     "version": 4,
+     "effective": "2025-05-11",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-faeca09bff",
+   "rule": "Large deposit hold threshold",
+   "attribute": "hold_large_threshold",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "FAQ-HLD-02@v4/s1/c1",
+    "text": "An extended hold may be placed on the part of a day's check deposits above $6,000.",
+    "heading": "When can a large check deposit get an extended hold?",
+    "document": {
+     "title": "Check Hold Questions from Customers",
+     "type": "faq",
+     "version": 4,
+     "effective": "2026-03-02",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "JA-HLD-02@v3/s1/c1",
+    "text": "Longest check hold on a new account | 7 business days",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Check Hold Desk Card",
+     "type": "job_aid",
+     "version": 3,
+     "effective": "2026-01-13",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-19068d4592",
+   "rule": "Complaint acknowledgment deadline",
+   "attribute": "complaint_ack",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-CMP-05@v1/s3/c9",
+    "text": "Send the customer an acknowledgment no later than 2 business days after a written complaint arrives.",
+    "heading": "Steps",
+    "document": {
+     "title": "Reviewing Complaint Trends Each Quarter",
+     "type": "procedure",
+     "version": 1,
+     "effective": "2025-12-18",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "JA-CMP-01@v1/s1/c1",
+    "text": "Complaint resolution deadline | 15 business days",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Complaint Handling Card",
+     "type": "job_aid",
+     "version": 1,
+     "effective": "2026-02-10",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  }
+ ],
+ "input_hash": "e7837d3fd603dcb6f26279453558d551ab3acc3524a1db8a7681901c323de94e",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "```json\n{\n \"results\": [\n  {\n   \"pair\": \"pair-2624d42537\",\n   \"label\": \"consistent\",\n   \"quote_a\": \"Outgoing wires over $50,000 need a second approval from an operations manager.\",\n   \"quote_b\": \"An operations manager must give a second approval for any outgoing wire above $50,000.\",\n   \"rationale\": \"Both clauses require an operations manager to provide a second approval for outgoing wires over 50,000. They use different phrasing to state the exact same rule.\"\n  },\n  {\n   \"pair\": \"pair-a31ac93ccf\",\n   \"label\": \"duplicate\",\n   \"quote_a\": \"Account records are kept for 7 years after the account closes.\",\n   \"quote_b\": \"Account records are kept for 7 years after the account closes.\",\n   \"rationale\": \"Both clauses require records to be kept for 7 years and match word for word. A policy owner would replace one with a pointer to the other.\"\n  },\n  {\n   \"pair\": \"pair-3610301733\",\n   \"label\": \"conflict\",\n   \"quote_a\": \"Customers receive written notice 30 days before their account becomes dormant.\",\n   \"quote_b\": \"Mail the customer a notice at least 30 days before the account is classified as dormant.\",\n   \"rationale\": \"The first clause sets the notice period at exactly 30 days while the second clause allows it to be sent earlier. Staff following the second clause could send a notice early and violate the first clause.\"\n  },\n  {\n   \"pair\": \"pair-a9061e7b02\",\n   \"label\": \"conflict\",\n   \"quote_a\": \"Change the vault combination at least every 6 months.\",\n   \"quote_b\": \"Vault combinations are changed every 6 months and whenever an employee who knows the combination leaves.\",\n   \"rationale\": \"The second clause adds a rule to change the combination when an employee leaves. Staff following the first clause without this rule might refuse to change the combination early and violate the second clause.\"\n  },\n  {\n   \"pair\": \"pair-39504cfedb\",\n   \"label\": \"conflict\",\n   \"quote_a\": \"Disputes over $500 are reviewed by a card services specialist before credit is issued.\",\n   \"quote_b\": \"Dispute amount that needs card services review | $500\",\n   \"rationale\": \"The first clause requires review only when the dispute is greater than 500 dollars while the second requires review for a dispute of exactly 500. Staff following the first clause would skip the review for a 500 dollar dispute and violate the second clause.\"\n  },\n  {\n   \"pair\": \"pair-9a4488306e\",\n   \"label\": \"duplicate\",\n   \"quote_a\": \"The vault must be opened under dual control, with two employees present.\",\n   \"quote_b\": \"The vault must be opened under dual control, with two employees present.\",\n   \"rationale\": \"These clauses are identical word for word. A policy owner would consolidate them into one copy.\"\n  },\n  {\n   \"pair\": \"pair-faeca09bff\",\n   \"label\": \"unrelated\",\n   \"quote_a\": \"An extended hold may be placed on the part of a day's check deposits above $6,000.\",\n   \"quote_b\": \"Longest check hold on a new account | 7 business days\",\n   \"rationale\": \"The first clause states the dollar threshold of 6,000 for placing an extended hold on a large deposit. The second clause states the maximum duration of 7 business days for a hold on a new account.\"\n  },\n  {\n   \"pair\": \"pair-19068d4592\",\n   \"label\": \"unrelated\",\n   \"quote_a\": \"Send the customer an acknowledgment no later than 2 business days after a written complaint arrives.\",\n   \"quote_b\": \"Complaint resolution deadline | 15 business days\",\n   \"rationale\": \"The first clause sets a deadline of 2 business days to acknowledge a complaint. The second clause sets a 15 business day deadline to resolve it.\"\n  }\n ]\n}\n```",
+   "problems": [],
+   "meta": {
+    "ms": 64035,
+    "input_tokens": 3326,
+    "output_tokens": 11962,
+    "cost_usd": 0.150196,
+    "usage": {
+     "completion_tokens": 999,
+     "prompt_tokens": 3326,
+     "total_tokens": 15288
+    },
+    "models": [
+     "gemini-3.1-pro-preview"
+    ],
+    "stop_reason": "stop"
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T17:26:52+00:00"
+}

@@ -1,0 +1,138 @@
+{
+ "step": "extract",
+ "tag": "cmp-6101",
+ "model": "google-b",
+ "backend": {
+  "vendor": "Google",
+  "model": "gemini-3.8-flash",
+  "label": "Gemini 3.8 Flash"
+ },
+ "prompt_hash": "dcc761e46c6ec579c01b9dfd540df3c2fa4bba3b6b5ec777aa2cf9c9c62aa411",
+ "input": [
+  {
+   "clause": "PRO-REC-06@v4/s3/c8",
+   "text": "For commercial accounts, retain closed account records for 10 years from the closing date.",
+   "heading": "Steps",
+   "document": {
+    "title": "Retrieving Archived Records",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-WIR-01@v2/s3/c8",
+   "text": "Callbacks are completed by a teller, never by the employee who took the request.",
+   "heading": "Steps",
+   "document": {
+    "title": "Processing Outgoing Consumer Wires",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer accounts."
+   }
+  },
+  {
+   "clause": "PRO-WIR-02@v3/s3/c8",
+   "text": "Outgoing wires over $100,000 need a second approval from an operations manager.",
+   "heading": "Steps",
+   "document": {
+    "title": "Processing Outgoing Commercial Wires",
+    "type": "procedure",
+    "applies_to": "All branches. Commercial accounts."
+   }
+  },
+  {
+   "clause": "PRO-WIR-03@v3/s3/c2",
+   "text": "The cutoff for outgoing commercial wires is 2:00 PM Central time.",
+   "heading": "Steps",
+   "document": {
+    "title": "Completing Wire Callback Verification",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-WIR-04@v1/s3/c11",
+   "text": "For commercial accounts, call the customer back at a phone number already on file before releasing any outgoing wire of $25,000 or more.",
+   "heading": "Steps",
+   "document": {
+    "title": "Handling Incoming Wires",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-WIR-05@v1/s3/c13",
+   "text": "Post incoming wires the same day when they arrive by 4:30 PM Central.",
+   "heading": "Steps",
+   "document": {
+    "title": "Wire Cutoffs on Holidays and Weekends",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-WIR-05@v1/s3/c6",
+   "text": "Outgoing consumer and small business wire requests received after 4:00 PM Central are processed the next business day.",
+   "heading": "Steps",
+   "document": {
+    "title": "Wire Cutoffs on Holidays and Weekends",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-WIR-05@v1/s3/c8",
+   "text": "Only a wire specialist may complete the callback for an outgoing wire.",
+   "heading": "Steps",
+   "document": {
+    "title": "Wire Cutoffs on Holidays and Weekends",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-WIR-06@v1/s3/c8",
+   "text": "Callbacks are completed by an operations employee, never by the employee who took the request.",
+   "heading": "Steps",
+   "document": {
+    "title": "Recalling or Cancelling a Wire",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-WIR-07@v1/s5/c2",
+   "text": "An operations manager must give a second approval for any outgoing wire above $50,000.",
+   "heading": "Steps to follow",
+   "document": {
+    "title": "Second Approval for Large Wires",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  }
+ ],
+ "input_hash": "3e2757b5fdebc091239117796dfe716d5ac2ab3551a4c2dd2965c36b56797245",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "```json\n{\n \"results\": [\n  {\n   \"clause\": \"PRO-REC-06@v4/s3/c8\",\n   \"atoms\": [\n    {\n     \"attribute\": \"records_retention\",\n     \"value\": {\n      \"type\": \"duration\",\n      \"n\": 10,\n      \"unit\": \"years\"\n     },\n     \"quote\": \"10 years\",\n     \"actor\": null,\n     \"actor_inferred\": false,\n     \"scope_quote\": \"For commercial accounts\",\n     \"condition\": null\n    }\n   ]\n  },\n  {\n   \"clause\": \"PRO-WIR-01@v2/s3/c8\",\n   \"atoms\": [\n    {\n     \"attribute\": \"wire_callback_role\",\n     \"value\": {\n      \"type\": \"role\",\n      \"role\": \"teller\"\n     },\n     \"quote\": \"teller\",\n     \"actor\": null,\n     \"actor_inferred\": false,\n     \"scope_quote\": null,\n     \"condition\": \"never by the employee who took the request\"\n    }\n   ]\n  },\n  {\n   \"clause\": \"PRO-WIR-02@v3/s3/c8\",\n   \"atoms\": [\n    {\n     \"attribute\": \"wire_second_approval\",\n     \"value\": {\n      \"type\": \"money\",\n      \"dollars\": 100000\n     },\n     \"quote\": \"$100,000\",\n     \"actor\": \"operations_manager\",\n     \"actor_inferred\": false,\n     \"scope_quote\": null,\n     \"condition\": null\n    }\n   ]\n  },\n  {\n   \"clause\": \"PRO-WIR-03@v3/s3/c2\",\n   \"atoms\": [\n    {\n     \"attribute\": \"wire_cutoff\",\n     \"value\": {\n      \"type\": \"time\",\n      \"minutes\": 840\n     },\n     \"quote\": \"2:00 PM\",\n     \"actor\": null,\n     \"actor_inferred\": false,\n     \"scope_quote\": \"commercial wires\",\n     \"condition\": null\n    }\n   ]\n  },\n  {\n   \"clause\": \"PRO-WIR-04@v1/s3/c11\",\n   \"atoms\": [\n    {\n     \"attribute\": \"wire_callback\",\n     \"value\": {\n      \"type\": \"money\",\n      \"dollars\": 25000\n     },\n     \"quote\": \"$25,000\",\n     \"actor\": null,\n     \"actor_inferred\": false,\n     \"scope_quote\": \"For commercial accounts\",\n     \"condition\": null\n    }\n   ]\n  },\n  {\n   \"clause\": \"PRO-WIR-05@v1/s3/c13\",\n   \"atoms\": [\n    {\n     \"attribute\": \"incoming_wire_posting\",\n     \"value\": {\n      \"type\": \"time\",\n      \"minutes\": 990\n     },\n     \"quote\": \"4:30 PM\",\n     \"actor\": null,\n     \"actor_inferred\": false,\n     \"scope_quote\": null,\n     \"condition\": null\n    }\n   ]\n  },\n  {\n   \"clause\": \"PRO-WIR-05@v1/s3/c6\",\n   \"atoms\": [\n    {\n     \"attribute\": \"wire_cutoff\",\n     \"value\": {\n      \"type\": \"time\",\n      \"minutes\": 960\n     },\n     \"quote\": \"4:00 PM\",\n     \"actor\": null,\n     \"actor_inferred\": false,\n     \"scope_quote\": \"consumer\",\n     \"condition\": null\n    },\n    {\n     \"attribute\": \"wire_cutoff\",\n     \"value\": {\n      \"type\": \"time\",\n      \"minutes\": 960\n     },\n     \"quote\": \"4:00 PM\",\n     \"actor\": null,\n     \"actor_inferred\": false,\n     \"scope_quote\": \"small business\",\n     \"condition\": null\n    }\n   ]\n  },\n  {\n   \"clause\": \"PRO-WIR-05@v1/s3/c8\",\n   \"atoms\": [\n    {\n     \"attribute\": \"wire_callback_role\",\n     \"value\": {\n      \"type\": \"role\",\n      \"role\": \"wire_specialist\"\n     },\n     \"quote\": \"wire specialist\",\n     \"actor\": null,\n     \"actor_inferred\": false,\n     \"scope_quote\": null,\n     \"condition\": null\n    }\n   ]\n  },\n  {\n   \"clause\": \"PRO-WIR-06@v1/s3/c8\",\n   \"atoms\": [\n    {\n     \"attribute\": \"wire_callback_role\",\n     \"value\": {\n      \"type\": \"role\",\n      \"role\": null,\n      \"generic\": \"operations employee\"\n     },\n     \"quote\": \"operations employee\",\n     \"actor\": null,\n     \"actor_inferred\": false,\n     \"scope_quote\": null,\n     \"condition\": \"never by the employee who took the request\"\n    }\n   ]\n  },\n  {\n   \"clause\": \"PRO-WIR-07@v1/s5/c2\",\n   \"atoms\": [\n    {\n     \"attribute\": \"wire_second_approval\",\n     \"value\": {\n      \"type\": \"money\",\n      \"dollars\": 50000\n     },\n     \"quote\": \"$50,000\",\n     \"actor\": \"operations_manager\",\n     \"actor_inferred\": false,\n     \"scope_quote\": null,\n     \"condition\": null\n    }\n   ]\n  }\n ]\n}\n```",
+   "problems": [],
+   "meta": {
+    "ms": 62574,
+    "input_tokens": 2998,
+    "output_tokens": 9838,
+    "cost_usd": 0.039141,
+    "usage": {
+     "completion_tokens": 1405,
+     "prompt_tokens": 2998,
+     "total_tokens": 12836
+    },
+    "models": [
+     "gemini-3.8-flash"
+    ],
+    "stop_reason": "stop"
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T21:25:43+00:00"
+}

@@ -1,0 +1,114 @@
+{
+ "step": "assist",
+ "tag": "after-2026",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "66c01f0da9f327e74355d39363e55b642a1bbf8dc6249974c3afbf3cb3d6ccd5",
+ "input": [
+  {
+   "question": "q-C-05",
+   "text": "How long are closed account records kept?",
+   "type": "duration",
+   "clauses": [
+    {
+     "id": "FAQ-REC-02@v1/s1/c1",
+     "text": "Account records are kept for 7 years after the account closes.",
+     "title": "Legal Hold Questions",
+     "type": "faq",
+     "version": 1,
+     "effective": "2025-10-15"
+    },
+    {
+     "id": "POL-REC-01@v5/s3/c1",
+     "text": "Account records are kept for 7 years after the account closes.",
+     "title": "Records Retention Policy",
+     "type": "policy",
+     "version": 5,
+     "effective": "2025-06-08"
+    },
+    {
+     "id": "PRO-REC-02@v1/s3/c2",
+     "text": "Account records are kept for 7 years after the account closes.",
+     "title": "Approving Records Destruction",
+     "type": "procedure",
+     "version": 1,
+     "effective": "2026-01-29"
+    },
+    {
+     "id": "draft:g-23fd0004",
+     "text": "Account records are kept for 7 years after the account closes.",
+     "title": "Keeping closed account records",
+     "type": "consolidated",
+     "version": 1,
+     "effective": ""
+    },
+    {
+     "id": "JA-REC-01@v1/s1/c1",
+     "text": "Retention for closed account records | 7 years",
+     "title": "Records Retention Schedule Card",
+     "type": "job_aid",
+     "version": 1,
+     "effective": "2026-03-16"
+    }
+   ]
+  }
+ ],
+ "input_hash": "98f5a46da8864d03219b760f5da11423cef1c1ea2f557c241a7f25c6cf075dee",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [{\"question\": \"q-C-05\", \"answer\": \"Closed account records are kept for 7 years after the account closes. The Records Retention Policy, the Approving Records Destruction procedure, the Records Retention Schedule Card and the Legal Hold Questions page all give the same period.\", \"citations\": [\"POL-REC-01@v5/s3/c1\", \"PRO-REC-02@v1/s3/c2\", \"JA-REC-01@v1/s1/c1\", \"FAQ-REC-02@v1/s1/c1\"], \"sources_disagree\": false}]}",
+   "problems": [],
+   "meta": {
+    "ms": 2365,
+    "api_ms": 2229,
+    "input_tokens": 6056,
+    "output_tokens": 190,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 5436,
+     "cache_read_input_tokens": 618,
+     "output_tokens": 190,
+     "output_tokens_details": {
+      "thinking_tokens": 0
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 5436,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 190,
+       "cache_read_input_tokens": 618,
+       "cache_creation_input_tokens": 5436,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 5436
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.0237098,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T06:03:19+00:00"
+}

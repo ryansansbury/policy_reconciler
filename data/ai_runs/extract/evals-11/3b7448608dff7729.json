@@ -1,0 +1,167 @@
+{
+ "step": "extract",
+ "tag": "evals-11",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "dcc761e46c6ec579c01b9dfd540df3c2fa4bba3b6b5ec777aa2cf9c9c62aa411",
+ "input": [
+  {
+   "clause": "PRO-AOP-05@v1/s3/c4",
+   "text": "The minimum opening deposit for a consumer checking account is $50.",
+   "heading": "Steps",
+   "document": {
+    "title": "Adding a Signer to an Existing Account",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "PRO-AOP-05@v1/s3/c9",
+   "text": "An account is treated as a new account for the first 30 days after it opens.",
+   "heading": "Steps",
+   "document": {
+    "title": "Adding a Signer to an Existing Account",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "PRO-AOP-06@v3/s3/c2",
+   "text": "The minimum opening deposit for a consumer checking account is $25.",
+   "heading": "Steps",
+   "document": {
+    "title": "Handling Identification Exceptions",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "PRO-AOP-06@v3/s3/c8",
+   "text": "Any exception to the identification requirements must be approved by the regional manager.",
+   "heading": "Steps",
+   "document": {
+    "title": "Handling Identification Exceptions",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "PRO-AOP-06@v4/s3/c8",
+   "text": "Any exception to the identification requirements must be approved by a manager.",
+   "heading": "Steps",
+   "document": {
+    "title": "Handling Identification Exceptions",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "PRO-BOP-02@v2/s3/c4",
+   "text": "Vault combinations are changed every 3 months and whenever an employee who knows the combination leaves.",
+   "heading": "Steps",
+   "document": {
+    "title": "Closing the Branch Each Evening",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-BOP-04@v1/s3/c4",
+   "text": "A single opener may unlock the branch if the second opener is delayed.",
+   "heading": "Steps",
+   "document": {
+    "title": "Testing the Alarm System",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-CMP-01@v1/s3/c6",
+   "text": "Send the customer an acknowledgment no later than 1 business day after a written complaint arrives.",
+   "heading": "Steps",
+   "document": {
+    "title": "Logging a Customer Complaint",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-CMP-02@v1/s3/c1",
+   "text": "Send the customer an acknowledgment no later than 3 business days after a written complaint arrives.",
+   "heading": "Steps",
+   "document": {
+    "title": "Acknowledging a Written Complaint",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-CMP-02@v2/s3/c1",
+   "text": "Send the customer an acknowledgment no later than 2 days after a written complaint arrives.",
+   "heading": "Steps",
+   "document": {
+    "title": "Acknowledging a Written Complaint",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  }
+ ],
+ "input_hash": "d4d06b7ed1397e00a0ee76bca6099dafd8ac4f35f2e62ecc79089b172581120f",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\":[{\"clause\":\"PRO-AOP-05@v1/s3/c4\",\"atoms\":[{\"attribute\":\"ao_min_deposit\",\"value\":{\"type\":\"money\",\"dollars\":50},\"quote\":\"$50\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":\"for a consumer checking account\",\"condition\":null}]},{\"clause\":\"PRO-AOP-05@v1/s3/c9\",\"atoms\":[{\"attribute\":\"ao_new_account_window\",\"value\":{\"type\":\"duration\",\"n\":30,\"unit\":\"days\"},\"quote\":\"30 days\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]},{\"clause\":\"PRO-AOP-06@v3/s3/c2\",\"atoms\":[{\"attribute\":\"ao_min_deposit\",\"value\":{\"type\":\"money\",\"dollars\":25},\"quote\":\"$25\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":\"for a consumer checking account\",\"condition\":null}]},{\"clause\":\"PRO-AOP-06@v3/s3/c8\",\"atoms\":[{\"attribute\":\"ao_exception_approver\",\"value\":{\"type\":\"role\",\"role\":\"regional_manager\"},\"quote\":\"regional manager\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]},{\"clause\":\"PRO-AOP-06@v4/s3/c8\",\"atoms\":[{\"attribute\":\"ao_exception_approver\",\"value\":{\"type\":\"role\",\"role\":null,\"generic\":\"a manager\"},\"quote\":\"a manager\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]},{\"clause\":\"PRO-BOP-02@v2/s3/c4\",\"atoms\":[{\"attribute\":\"combo_change\",\"value\":{\"type\":\"duration\",\"n\":3,\"unit\":\"months\"},\"quote\":\"3 months\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":\"and whenever an employee who knows the combination leaves\"}]},{\"clause\":\"PRO-BOP-04@v1/s3/c4\",\"atoms\":[{\"attribute\":\"branch_open_dual\",\"value\":{\"type\":\"modal\",\"modal\":\"may\"},\"quote\":\"A single opener may unlock the branch if the second opener is delayed.\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":\"if the second opener is delayed\"}]},{\"clause\":\"PRO-CMP-01@v1/s3/c6\",\"atoms\":[{\"attribute\":\"complaint_ack\",\"value\":{\"type\":\"duration\",\"n\":1,\"unit\":\"business_days\"},\"quote\":\"1 business day\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]},{\"clause\":\"PRO-CMP-02@v1/s3/c1\",\"atoms\":[{\"attribute\":\"complaint_ack\",\"value\":{\"type\":\"duration\",\"n\":3,\"unit\":\"business_days\"},\"quote\":\"3 business days\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]},{\"clause\":\"PRO-CMP-02@v2/s3/c1\",\"atoms\":[{\"attribute\":\"complaint_ack\",\"value\":{\"type\":\"duration\",\"n\":2,\"unit\":\"days\"},\"quote\":\"2 days\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]}]}",
+   "problems": [],
+   "meta": {
+    "ms": 5681,
+    "api_ms": 5550,
+    "input_tokens": 8910,
+    "output_tokens": 1131,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 6226,
+     "cache_read_input_tokens": 2682,
+     "output_tokens": 1131,
+     "output_tokens_details": {
+      "thinking_tokens": 0
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 6226,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 1131,
+       "cache_read_input_tokens": 2682,
+       "cache_creation_input_tokens": 6226,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 6226
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.036486199999999996,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T03:53:05+00:00"
+}

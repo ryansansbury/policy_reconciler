@@ -1,0 +1,149 @@
+{
+ "step": "extract",
+ "tag": "cmp-6101",
+ "model": "openai-b",
+ "backend": {
+  "vendor": "OpenAI",
+  "model": "gpt-6-luna",
+  "label": "GPT-6 Luna"
+ },
+ "prompt_hash": "dcc761e46c6ec579c01b9dfd540df3c2fa4bba3b6b5ec777aa2cf9c9c62aa411",
+ "input": [
+  {
+   "clause": "PRO-HLD-05@v1/s3/c7",
+   "text": "Funds from deposited checks are available within 2 days unless a longer hold applies.",
+   "heading": "Steps",
+   "document": {
+    "title": "Explaining Holds to Customers",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "PRO-HLD-05@v1/s3/c8",
+   "text": "Records under a legal hold must not be destroyed until Compliance releases the hold in writing.",
+   "heading": "Steps",
+   "document": {
+    "title": "Explaining Holds to Customers",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "PRO-LND-03@v4/s3/c10",
+   "text": "For commercial accounts, branch managers may approve rate exceptions of up to 0.15%.",
+   "heading": "Steps",
+   "document": {
+    "title": "Documenting Pricing Exceptions",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-LND-04@v1/s3/c2",
+   "text": "Branch managers may approve rate exceptions of up to 0.50%.",
+   "heading": "Steps",
+   "document": {
+    "title": "Reviewing Exception Reports Each Month",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-ODR-01@v2/s3/c5",
+   "text": "No overdraft fee is charged when the account is overdrawn by $25 or less at the end of the day.",
+   "heading": "Steps",
+   "document": {
+    "title": "Reviewing Overdrawn Accounts Each Morning",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "PRO-ODR-01@v2/s3/c9",
+   "text": "Each item paid into overdraft is charged $35.",
+   "heading": "Steps",
+   "document": {
+    "title": "Reviewing Overdrawn Accounts Each Morning",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "PRO-ODR-04@v3/s5/c1",
+   "text": "Accounts that remain overdrawn for 45 days are referred for charge-off.",
+   "heading": "Steps to follow",
+   "document": {
+    "title": "Talking with Customers About Overdrafts",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "PRO-ODR-05@v4/s3/c11",
+   "text": "For small business accounts, an overdraft fee of $32 applies to each item the bank pays when the balance is not enough to cover it.",
+   "heading": "Steps",
+   "document": {
+    "title": "Closing an Overdrawn Account",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "PRO-ODR-06@v2/s3/c8",
+   "text": "Withdrawals at ATMs outside the network are charged $3 each.",
+   "heading": "Steps",
+   "document": {
+    "title": "Handling Overdraft Fee Disputes",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "PRO-REC-02@v3/s3/c8",
+   "text": "Records may be destroyed only with written approval from the branch manager.",
+   "heading": "Steps",
+   "document": {
+    "title": "Approving Records Destruction",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  }
+ ],
+ "input_hash": "69c943ef37bf509678e55c68c15042f559013776264bd876c5ac0326f2f5b476",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\":[{\"clause\":\"PRO-HLD-05@v1/s3/c7\",\"atoms\":[{\"attribute\":\"hold_standard\",\"value\":{\"type\":\"duration\",\"n\":2,\"unit\":\"days\"},\"quote\":\"2 days\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":\"unless a longer hold applies\"}]},{\"clause\":\"PRO-HLD-05@v1/s3/c8\",\"atoms\":[{\"attribute\":\"legal_hold\",\"value\":{\"type\":\"modal\",\"modal\":\"must_not\"},\"quote\":\"must not be destroyed\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":\"until Compliance releases the hold in writing\"}]},{\"clause\":\"PRO-LND-03@v4/s3/c10\",\"atoms\":[{\"attribute\":\"lend_rate_bm\",\"value\":{\"type\":\"percent\",\"bp\":15},\"quote\":\"0.15%\",\"actor\":\"branch_manager\",\"actor_inferred\":false,\"scope_quote\":\"For commercial accounts\",\"condition\":null}]},{\"clause\":\"PRO-LND-04@v1/s3/c2\",\"atoms\":[{\"attribute\":\"lend_rate_bm\",\"value\":{\"type\":\"percent\",\"bp\":50},\"quote\":\"0.50%\",\"actor\":\"branch_manager\",\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]},{\"clause\":\"PRO-ODR-01@v2/s3/c5\",\"atoms\":[{\"attribute\":\"od_de_minimis\",\"value\":{\"type\":\"money\",\"dollars\":25},\"quote\":\"$25 or less\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":\"at the end of the day\"}]},{\"clause\":\"PRO-ODR-01@v2/s3/c9\",\"atoms\":[{\"attribute\":\"od_fee\",\"value\":{\"type\":\"money\",\"dollars\":35},\"quote\":\"$35\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]},{\"clause\":\"PRO-ODR-04@v3/s5/c1\",\"atoms\":[{\"attribute\":\"od_chargeoff\",\"value\":{\"type\":\"duration\",\"n\":45,\"unit\":\"days\"},\"quote\":\"45 days\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]},{\"clause\":\"PRO-ODR-05@v4/s3/c11\",\"atoms\":[{\"attribute\":\"od_fee\",\"value\":{\"type\":\"money\",\"dollars\":32},\"quote\":\"$32\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":\"For small business accounts\",\"condition\":null}]},{\"clause\":\"PRO-ODR-06@v2/s3/c8\",\"atoms\":[{\"attribute\":\"atm_fee\",\"value\":{\"type\":\"money\",\"dollars\":3},\"quote\":\"$3 each\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]},{\"clause\":\"PRO-REC-02@v3/s3/c8\",\"atoms\":[{\"attribute\":\"records_destroy_role\",\"value\":{\"type\":\"role\",\"role\":\"branch_manager\"},\"quote\":\"branch manager\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]}]}",
+   "problems": [],
+   "meta": {
+    "ms": 11102,
+    "input_tokens": 2690,
+    "output_tokens": 1171,
+    "cost_usd": 0.000855,
+    "usage": {
+     "prompt_tokens": 2690,
+     "completion_tokens": 1171,
+     "total_tokens": 3861,
+     "prompt_tokens_details": {
+      "cached_tokens": 1728,
+      "cache_write_tokens": 959,
+      "audio_tokens": 0
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 502,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+     }
+    },
+    "models": [
+     "gpt-6-luna"
+    ],
+    "stop_reason": "stop"
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T21:19:56+00:00"
+}

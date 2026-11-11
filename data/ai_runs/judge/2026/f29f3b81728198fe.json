@@ -1,0 +1,45 @@
+{
+ "step": "judge",
+ "tag": "2026",
+ "model": "google-a",
+ "backend": {
+  "vendor": "Google",
+  "model": "gemini-3.1-pro-preview",
+  "label": "Gemini 3.1 Pro"
+ },
+ "prompt_hash": "ab6a49ec8731854b3cf900a9a4387417ee8016fe68257c4d327181c7eb1621da",
+ "input": [
+  {
+   "draft": "g-02ec0cc3",
+   "text": "Outgoing wires of $10,000 or more require a callback to the customer at a number already on file, unless the wire goes to an account the customer has used in the past year.",
+   "sources": [
+    "Outgoing wires of $10,000 or more require a callback to the customer at a number already on file, unless the wire goes to an account the customer has used in the past year."
+   ]
+  }
+ ],
+ "input_hash": "29af5b7877daa7e8d3cb554e119f9eb2a45c5287459c6721ff229b39ff7a9bf8",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\n \"results\": [\n  {\n   \"draft\": \"g-02ec0cc3\",\n   \"scores\": {\n    \"keeps_rules\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    },\n    \"adds_no_rule\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    },\n    \"keeps_scope\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    },\n    \"plain\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    }\n   }\n  }\n ]\n}",
+   "problems": [],
+   "meta": {
+    "ms": 4867,
+    "input_tokens": 614,
+    "output_tokens": 629,
+    "cost_usd": 0.008776,
+    "usage": {
+     "completion_tokens": 136,
+     "prompt_tokens": 614,
+     "total_tokens": 1243
+    },
+    "models": [
+     "gemini-3.1-pro-preview"
+    ],
+    "stop_reason": "stop"
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T18:35:31+00:00"
+}

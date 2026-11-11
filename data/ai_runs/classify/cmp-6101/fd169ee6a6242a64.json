@@ -1,0 +1,278 @@
+{
+ "step": "classify",
+ "tag": "cmp-6101",
+ "model": "google-b",
+ "backend": {
+  "vendor": "Google",
+  "model": "gemini-3.8-flash",
+  "label": "Gemini 3.8 Flash"
+ },
+ "prompt_hash": "2c908358fde9f0f4a792753579a6cfaa33476e41c4b0f235744675d8e8283a19",
+ "input": [
+  {
+   "pair": "pair-5d49ecca01",
+   "rule": "Large deposit hold threshold",
+   "attribute": "hold_large_threshold",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-HLD-01@v3/s3/c1",
+    "text": "Check deposits over $6,000 in one day are eligible for an extended hold on the amount over that figure.",
+    "heading": "Policy statements",
+    "document": {
+     "title": "Funds Availability Policy",
+     "type": "policy",
+     "version": 3,
+     "effective": "2025-02-25",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "JA-HLD-03@v3/s1/c1",
+    "text": "Large deposit threshold for extended holds | $7,500",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Hold Notice Checklist",
+     "type": "job_aid",
+     "version": 3,
+     "effective": "2026-05-01",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-140486470f",
+   "rule": "Overdraft amount with no fee",
+   "attribute": "od_de_minimis",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-ODR-01@v2/s4/c2",
+    "text": "No overdraft fee is charged when the account is overdrawn by $10 or less at the end of the day.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Overdraft Policy",
+     "type": "policy",
+     "version": 2,
+     "effective": "2025-11-24",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "PRO-ODR-01@v2/s3/c5",
+    "text": "No overdraft fee is charged when the account is overdrawn by $25 or less at the end of the day.",
+    "heading": "Steps",
+    "document": {
+     "title": "Reviewing Overdrawn Accounts Each Morning",
+     "type": "procedure",
+     "version": 2,
+     "effective": "2025-12-24",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-e5f05a2d7e",
+   "rule": "Documenting pricing exceptions",
+   "attribute": "lend_exception_doc",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-LND-01@v3/s4/c2",
+    "text": "Record the reason and the approver for every pricing exception in the loan file.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Loan Pricing Exception Policy",
+     "type": "policy",
+     "version": 3,
+     "effective": "2026-06-18",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "PRO-LND-02@v4/s3/c5",
+    "text": "Pricing exceptions may be documented in the loan file after closing if time is short.",
+    "heading": "Steps",
+    "document": {
+     "title": "Approving a Rate Exception",
+     "type": "procedure",
+     "version": 4,
+     "effective": "2026-03-04",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-ca4c6f6e7f",
+   "rule": "Wire second approval threshold",
+   "attribute": "wire_second_approval",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-WIR-01@v2/s4/c2",
+    "text": "An operations manager must give a second approval for any outgoing wire above $50,000.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Wire Transfer Policy",
+     "type": "policy",
+     "version": 2,
+     "effective": "2026-08-02",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "FAQ-WIR-02@v1/s1/c1",
+    "text": "An operations manager must give a second approval for any outgoing wire above $100,000.",
+    "heading": "Which outgoing wires need a second approval?",
+    "document": {
+     "title": "Wire Cutoff Questions",
+     "type": "faq",
+     "version": 1,
+     "effective": "2025-12-15",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-8b54cb8825",
+   "rule": "Branch manager rate exception limit",
+   "attribute": "lend_rate_bm",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-LND-01@v3/s4/c1",
+    "text": "Branch managers may approve rate exceptions of up to 0.25%.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Loan Pricing Exception Policy",
+     "type": "policy",
+     "version": 3,
+     "effective": "2026-06-18",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "FAQ-LND-02@v3/s1/c1",
+    "text": "Rate exceptions larger than 0.50% need approval above the branch manager.",
+    "heading": "How large a rate exception can a branch manager approve?",
+    "document": {
+     "title": "Pricing Exception Questions",
+     "type": "faq",
+     "version": 3,
+     "effective": "2026-01-24",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-1880095f93",
+   "rule": "Who completes wire callbacks",
+   "attribute": "wire_callback_role",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-WIR-01@v2/s3/c2",
+    "text": "Callbacks are completed by a wire specialist, never by the employee who took the request.",
+    "heading": "Policy statements",
+    "document": {
+     "title": "Wire Transfer Policy",
+     "type": "policy",
+     "version": 2,
+     "effective": "2026-08-02",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "FAQ-WIR-01@v1/s3/c1",
+    "text": "Only a branch manager may complete the callback for an outgoing wire.",
+    "heading": "Who completes the callback for an outgoing wire?",
+    "document": {
+     "title": "Wire Transfer FAQ",
+     "type": "faq",
+     "version": 1,
+     "effective": "2026-03-26",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-d275606915",
+   "rule": "Closed account record retention",
+   "attribute": "records_retention",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-REC-01@v4/s4/c1",
+    "text": "Account records are kept for 7 years after the account closes.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Records Retention Policy",
+     "type": "policy",
+     "version": 4,
+     "effective": "2025-04-11",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "BUL-REC-01@v2/s1/c2",
+    "text": "Retain closed account records for 10 years from the closing date.",
+    "heading": "What branches need to know",
+    "document": {
+     "title": "Branch Bulletin 2025-26: Retention for closed account records",
+     "type": "bulletin",
+     "version": 2,
+     "effective": "2025-10-29",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-51a3cfb7ea",
+   "rule": "Overdraft amount with no fee",
+   "attribute": "od_de_minimis",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-ODR-01@v2/s4/c2",
+    "text": "No overdraft fee is charged when the account is overdrawn by $10 or less at the end of the day.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Overdraft Policy",
+     "type": "policy",
+     "version": 2,
+     "effective": "2025-11-24",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "FAQ-ODR-01@v4/s2/c1",
+    "text": "Accounts overdrawn by no more than $5 at the end of the day are not charged an overdraft fee.",
+    "heading": "How much can an account be overdrawn without a fee?",
+    "document": {
+     "title": "Overdraft FAQ",
+     "type": "faq",
+     "version": 4,
+     "effective": "2026-02-16",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  }
+ ],
+ "input_hash": "fdc0ab80bf9d8e66efcaf597cb467794c00206b794d02a1fd3b6c86669dbeb2f",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [{\"pair\": \"pair-5d49ecca01\", \"label\": \"conflict\", \"quote_a\": \"$6,000\", \"quote_b\": \"$7,500\", \"rationale\": \"The policy sets the large deposit threshold at $6,000 while the job aid sets it at $7,500. Both apply to the same scope.\"}, {\"pair\": \"pair-140486470f\", \"label\": \"conflict\", \"quote_a\": \"$10 or less\", \"quote_b\": \"$25 or less\", \"rationale\": \"The policy waives fees for accounts overdrawn by $10 or less while the procedure sets the limit at $25 or less.\"}, {\"pair\": \"pair-e5f05a2d7e\", \"label\": \"consistent\", \"quote_a\": \"Record the reason and the approver for every pricing exception in the loan file.\", \"quote_b\": \"Pricing exceptions may be documented in the loan file after closing if time is short.\", \"rationale\": \"The first clause sets what details staff must record. The second clause clarifies timing when time is short without contradicting the required content.\"}, {\"pair\": \"pair-ca4c6f6e7f\", \"label\": \"conflict\", \"quote_a\": \"above $50,000\", \"quote_b\": \"above $100,000\", \"rationale\": \"The policy requires second approval above $50,000 while the FAQ requires it above $100,000.\"}, {\"pair\": \"pair-8b54cb8825\", \"label\": \"conflict\", \"quote_a\": \"up to 0.25%\", \"quote_b\": \"larger than 0.50%\", \"rationale\": \"The policy limits branch manager approval to 0.25% while the FAQ allows approvals up to 0.50%.\"}, {\"pair\": \"pair-1880095f93\", \"label\": \"conflict\", \"quote_a\": \"by a wire specialist\", \"quote_b\": \"Only a branch manager\", \"rationale\": \"The policy requires a wire specialist to complete callbacks while the FAQ restricts that task exclusively to a branch manager.\"}, {\"pair\": \"pair-d275606915\", \"label\": \"conflict\", \"quote_a\": \"7 years\", \"quote_b\": \"10 years\", \"rationale\": \"The policy requires keeping records for 7 years while the bulletin mandates retention for 10 years.\"}, {\"pair\": \"pair-51a3cfb7ea\", \"label\": \"conflict\", \"quote_a\": \"$10 or less\", \"quote_b\": \"no more than $5\", \"rationale\": \"The policy exempts overdraft balances of $10 or less from fees while the FAQ sets the threshold at $5.\"}]}",
+   "problems": [],
+   "meta": {
+    "ms": 26302,
+    "input_tokens": 3387,
+    "output_tokens": 4720,
+    "cost_usd": 0.02024,
+    "usage": {
+     "completion_tokens": 643,
+     "prompt_tokens": 3387,
+     "total_tokens": 8107
+    },
+    "models": [
+     "gemini-3.8-flash"
+    ],
+    "stop_reason": "stop"
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T17:31:11+00:00"
+}

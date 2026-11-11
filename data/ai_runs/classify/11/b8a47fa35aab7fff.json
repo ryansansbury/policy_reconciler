@@ -1,0 +1,275 @@
+{
+ "step": "classify",
+ "tag": "11",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "1346938ac1ecbf43874a700ab9916c851d6a29bb5d6b9e5f1199128bc8cd59f2",
+ "input": [
+  {
+   "pair": "pair-e9882741f1",
+   "rule": "Standard check hold",
+   "attribute": "hold_standard",
+   "reason": "The values match, but one side carries a condition that may matter.",
+   "a": {
+    "clause": "POL-HLD-01@v2/s4/c2",
+    "text": "Place a standard hold of 2 business days on deposited checks that don't qualify for next-day availability.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Funds Availability Policy",
+     "type": "policy",
+     "version": 2,
+     "effective": "2024-08-19",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "FAQ-HLD-02@v2/s1/c1",
+    "text": "Funds from deposited checks are available within 2 business days unless a longer hold applies.",
+    "heading": "How long is the standard hold on a deposited check?",
+    "document": {
+     "title": "Check Hold Questions from Customers",
+     "type": "faq",
+     "version": 2,
+     "effective": "2025-11-06",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "kind": "exception_path"
+  },
+  {
+   "pair": "pair-acb4ada62d",
+   "rule": "Forms of identification per signer",
+   "attribute": "ao_id_count",
+   "reason": "The values match, but one side carries a condition that may matter.",
+   "a": {
+    "clause": "POL-AOP-02@v6/s4/c2",
+    "text": "Every signer must present two separate identification documents before the account is opened, or one form plus a verified bank reference when the branch manager approves.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Customer Identification Policy",
+     "type": "policy",
+     "version": 6,
+     "effective": "2024-09-21",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "POL-AOP-01@v5/s4/c1",
+    "text": "Every signer must present two separate identification documents before the account is opened, or one form plus a verified bank reference when the branch manager approves.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Deposit Account Opening Policy",
+     "type": "policy",
+     "version": 5,
+     "effective": "2025-02-05",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "kind": "exception_path"
+  },
+  {
+   "pair": "pair-6b42b47971",
+   "rule": "Approver for identification exceptions",
+   "attribute": "ao_exception_approver",
+   "reason": "The values match, but one side carries a condition that may matter.",
+   "a": {
+    "clause": "POL-AOP-01@v5/s4/c2",
+    "text": "Only the branch manager can approve an exception to the identification requirements.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Deposit Account Opening Policy",
+     "type": "policy",
+     "version": 5,
+     "effective": "2025-02-05",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "POL-AOP-02@v6/s4/c2",
+    "text": "Every signer must present two separate identification documents before the account is opened, or one form plus a verified bank reference when the branch manager approves.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Customer Identification Policy",
+     "type": "policy",
+     "version": 6,
+     "effective": "2024-09-21",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "kind": "exception_path"
+  },
+  {
+   "pair": "pair-5498854918",
+   "rule": "Complaint resolution deadline",
+   "attribute": "complaint_resolve",
+   "reason": "The values match, but one side carries a condition that may matter.",
+   "a": {
+    "clause": "PRO-CMP-02@v2/s3/c5",
+    "text": "Complaints should be closed within 15 business days of the day they arrive.",
+    "heading": "Steps",
+    "document": {
+     "title": "Acknowledging a Written Complaint",
+     "type": "procedure",
+     "version": 2,
+     "effective": "2026-03-24",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "POL-CMP-01@v4/s4/c2",
+    "text": "Complaints should be closed within 15 business days of the day they arrive, or within 30 business days when another department has to investigate.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Complaint Management Policy",
+     "type": "policy",
+     "version": 4,
+     "effective": "2025-07-22",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "kind": "exception_path"
+  },
+  {
+   "pair": "pair-746aeb78da",
+   "rule": "Personal banker fee waiver limit",
+   "attribute": "fee_waiver_pb",
+   "reason": "The values match, but one side carries a condition that may matter.",
+   "a": {
+    "clause": "POL-FEE-02@v2/s4/c1",
+    "text": "Personal bankers may waive service fees up to $25 per account in a calendar year, or up to $50 with branch manager approval noted in the account.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Fee Refund Policy",
+     "type": "policy",
+     "version": 2,
+     "effective": "2024-12-18",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "POL-FEE-01@v2/s4/c1",
+    "text": "A personal banker can waive no more than $25 for one account in a calendar year, or up to $50 with branch manager approval noted in the account.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Service Fee Waiver Policy",
+     "type": "policy",
+     "version": 2,
+     "effective": "2024-05-13",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "kind": "exception_path"
+  },
+  {
+   "pair": "pair-ce7ccb2ec5",
+   "rule": "Forms of identification per signer",
+   "attribute": "ao_id_count",
+   "reason": "The values match, but one side carries a condition that may matter.",
+   "a": {
+    "clause": "POL-AOP-01@v5/s4/c1",
+    "text": "Every signer must present two separate identification documents before the account is opened, or one form plus a verified bank reference when the branch manager approves.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Deposit Account Opening Policy",
+     "type": "policy",
+     "version": 5,
+     "effective": "2025-02-05",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "PRO-AOP-05@v1/s3/c2",
+    "text": "Do not open an account until you have verified two forms of identification for each signer, or one form plus a verified bank reference when the branch manager approves.",
+    "heading": "Steps",
+    "document": {
+     "title": "Adding a Signer to an Existing Account",
+     "type": "procedure",
+     "version": 1,
+     "effective": "2025-01-13",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "kind": "exception_path"
+  },
+  {
+   "pair": "pair-b363338ac7",
+   "rule": "Complaint resolution deadline",
+   "attribute": "complaint_resolve",
+   "reason": "The values match, but one side carries a condition that may matter.",
+   "a": {
+    "clause": "POL-CMP-01@v4/s4/c2",
+    "text": "Complaints should be closed within 15 business days of the day they arrive, or within 30 business days when another department has to investigate.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Complaint Management Policy",
+     "type": "policy",
+     "version": 4,
+     "effective": "2025-07-22",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "PRO-CMP-05@v1/s3/c8",
+    "text": "Resolve complaints within 15 business days of receipt, or tell the customer when to expect a resolution.",
+    "heading": "Steps",
+    "document": {
+     "title": "Reviewing Complaint Trends Each Quarter",
+     "type": "procedure",
+     "version": 1,
+     "effective": "2025-02-15",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "kind": "exception_path"
+  }
+ ],
+ "input_hash": "509d681fefda640465a91389e2550897f29d4ed660c63d46ce2f6d182a104bab",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [{\"pair\": \"pair-e9882741f1\", \"label\": \"consistent\", \"quote_a\": \"standard hold of 2 business days\", \"quote_b\": \"available within 2 business days unless a longer hold applies\", \"rationale\": \"Both set 2 business days as the standard hold. The FAQ mentions a longer hold that the policy does not describe, but that does not contradict the policy and staff would act the same way.\"}, {\"pair\": \"pair-acb4ada62d\", \"label\": \"duplicate\", \"quote_a\": \"Every signer must present two separate identification documents before the account is opened\", \"quote_b\": \"Every signer must present two separate identification documents before the account is opened\", \"rationale\": \"The two clauses are word for word the same and sit in different policies, a Customer Identification Policy at version 6 and a Deposit Account Opening Policy at version 5. They are not versions of one document, so this is the same requirement written twice.\"}, {\"pair\": \"pair-6b42b47971\", \"label\": \"consistent\", \"quote_a\": \"Only the branch manager can approve an exception to the identification requirements.\", \"quote_b\": \"one form plus a verified bank reference when the branch manager approves\", \"rationale\": \"Both name the branch manager as the one who approves the identification alternative. One states the approver rule and the other applies it, so staff following either act the same way.\"}, {\"pair\": \"pair-5498854918\", \"label\": \"consistent\", \"quote_a\": \"Complaints should be closed within 15 business days of the day they arrive.\", \"quote_b\": \"or within 30 business days when another department has to investigate\", \"rationale\": \"The procedure leaves out the 30 business day extension for investigations. I decided staff following the procedure would simply close within 15 business days, which the policy also asks for and never forbids, so they would not refuse anything the policy allows.\"}, {\"pair\": \"pair-746aeb78da\", \"label\": \"duplicate\", \"quote_a\": \"up to $25 per account in a calendar year, or up to $50 with branch manager approval noted in the account\", \"quote_b\": \"no more than $25 for one account in a calendar year, or up to $50 with branch manager approval noted in the account\", \"rationale\": \"Both set the same $25 limit and the same $50 limit with branch manager approval. The wording differs slightly but nothing that matters does, and they come from two separate policies.\"}, {\"pair\": \"pair-ce7ccb2ec5\", \"label\": \"duplicate\", \"quote_a\": \"Every signer must present two separate identification documents before the account is opened, or one form plus a verified bank reference when the branch manager approves.\", \"quote_b\": \"verified two forms of identification for each signer, or one form plus a verified bank reference when the branch manager approves\", \"rationale\": \"The policy and the procedure both require two forms of identification per signer with the same branch manager approved alternative. The procedure restates the policy requirement with no difference in what staff do.\"}, {\"pair\": \"pair-b363338ac7\", \"label\": \"conflict\", \"quote_a\": \"or within 30 business days when another department has to investigate\", \"quote_b\": \"or tell the customer when to expect a resolution\", \"rationale\": \"The policy allows going past 15 business days only up to 30 and only when another department investigates. The procedure lets staff go past 15 business days for any reason once the customer is told, so staff following it could act against the policy. The policy outranks the procedure, so the policy wording should be kept.\"}]}",
+   "problems": [
+    "pair-acb4ada62d: the rationale has a comma before so",
+    "pair-6b42b47971: the rationale has a comma before so",
+    "pair-5498854918: the rationale has a comma before so",
+    "pair-b363338ac7: the rationale has a comma before so"
+   ],
+   "meta": {
+    "ms": 15705,
+    "api_ms": 15489,
+    "input_tokens": 2,
+    "output_tokens": 2462,
+    "cost_usd": 0.059300000000000005,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  },
+  {
+   "reply": "{\"results\": [{\"pair\": \"pair-acb4ada62d\", \"label\": \"duplicate\", \"quote_a\": \"one form plus a verified bank reference when the branch manager approves\", \"quote_b\": \"one form plus a verified bank reference when the branch manager approves\", \"rationale\": \"Both clauses state the same two document rule and the same branch manager exception in identical words. They cover the same branches and accounts, and nothing in them differs.\"}, {\"pair\": \"pair-6b42b47971\", \"label\": \"consistent\", \"quote_a\": \"Only the branch manager can approve an exception to the identification requirements.\", \"quote_b\": \"when the branch manager approves\", \"rationale\": \"Clause b lets one form plus a bank reference replace two forms only when the branch manager approves, which matches clause a naming the branch manager as the only approver. Staff following either clause would act the same way.\"}, {\"pair\": \"pair-5498854918\", \"label\": \"consistent\", \"quote_a\": \"Complaints should be closed within 15 business days of the day they arrive.\", \"quote_b\": \"or within 30 business days when another department has to investigate\", \"rationale\": \"The procedure leaves out the 30 business day extension but its 15 business day target sits inside what the policy allows. Staff following it would not refuse or forbid anything the policy permits, and they would only aim for the shorter deadline.\"}, {\"pair\": \"pair-b363338ac7\", \"label\": \"conflict\", \"quote_a\": \"or within 30 business days when another department has to investigate\", \"quote_b\": \"or tell the customer when to expect a resolution\", \"rationale\": \"The policy allows a longer deadline of 30 business days only when another department investigates. The procedure lets staff go past 15 business days for any reason with no limit once the customer is told, which the policy does not allow. The policy outranks the procedure and is the clause to keep.\"}]}",
+   "problems": [],
+   "meta": {
+    "ms": 14642,
+    "api_ms": 14441,
+    "input_tokens": 2,
+    "output_tokens": 1998,
+    "cost_usd": 0.0469629,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   },
+   "items": [
+    "pair-acb4ada62d",
+    "pair-6b42b47971",
+    "pair-5498854918",
+    "pair-b363338ac7"
+   ]
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T03:24:16+00:00"
+}

@@ -1,0 +1,307 @@
+{
+ "step": "classify",
+ "tag": "evals-6101",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "2c908358fde9f0f4a792753579a6cfaa33476e41c4b0f235744675d8e8283a19",
+ "input": [
+  {
+   "pair": "pair-ae8bfc910f",
+   "rule": null,
+   "attribute": null,
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-CSH-02@v2/s3/c2",
+    "text": "Keep your drawer locked whenever you step away from the teller line.",
+    "heading": "Steps",
+    "document": {
+     "title": "Selling Excess Cash to the Vault",
+     "type": "procedure",
+     "version": 2,
+     "effective": "2026-07-10",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "PRO-CSH-01@v1/s5/c1",
+    "text": "Keep your drawer locked whenever you step away from the teller line.",
+    "heading": "Steps to follow",
+    "document": {
+     "title": "Balancing a Teller Drawer",
+     "type": "procedure",
+     "version": 1,
+     "effective": "2025-02-09",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-81af5c48a6",
+   "rule": null,
+   "attribute": null,
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-BOP-04@v3/s3/c5",
+    "text": "Report any alarm fault to security before opening for business.",
+    "heading": "Steps",
+    "document": {
+     "title": "Testing the Alarm System",
+     "type": "procedure",
+     "version": 3,
+     "effective": "2025-05-23",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "PRO-BOP-06@v4/s5/c1",
+    "text": "Report any alarm fault to security prior to opening for business.",
+    "heading": "Steps to follow",
+    "document": {
+     "title": "After-Hours Branch Access",
+     "type": "procedure",
+     "version": 4,
+     "effective": "2025-12-26",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-ce254f7f00",
+   "rule": null,
+   "attribute": null,
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-WIR-04@v1/s3/c3",
+    "text": "Check the account balance before sending the wire to operations.",
+    "heading": "Steps",
+    "document": {
+     "title": "Handling Incoming Wires",
+     "type": "procedure",
+     "version": 1,
+     "effective": "2025-02-25",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "PRO-WIR-07@v1/s5/c1",
+    "text": "Check the account balance before sending the wire to operations.",
+    "heading": "Steps to follow",
+    "document": {
+     "title": "Second Approval for Large Wires",
+     "type": "procedure",
+     "version": 1,
+     "effective": "2025-06-02",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-60544ea00a",
+   "rule": null,
+   "attribute": null,
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-CMP-06@v1/s3/c5",
+    "text": "Review complaint trends with your team each quarter.",
+    "heading": "Steps",
+    "document": {
+     "title": "Responding to a Complaint by Phone",
+     "type": "procedure",
+     "version": 1,
+     "effective": "2024-12-19",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "JA-CMP-02@v1/s3/c1",
+    "text": "Review complaint trends with your team each quarter.",
+    "heading": "Steps to follow",
+    "document": {
+     "title": "Complaint Escalation Checklist",
+     "type": "job_aid",
+     "version": 1,
+     "effective": "2026-06-21",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-7fb7b60b4a",
+   "rule": null,
+   "attribute": null,
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-DRM-03@v1/s3/c4",
+    "text": "Run the dormancy report on the first business day of each month.",
+    "heading": "Steps",
+    "document": {
+     "title": "Reactivating a Dormant Account",
+     "type": "procedure",
+     "version": 1,
+     "effective": "2026-01-25",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "JA-DRM-01@v1/s4/c1",
+    "text": "Run the dormancy report on the first business day of each month.",
+    "heading": "Steps to follow",
+    "document": {
+     "title": "Dormant Account Quick Reference",
+     "type": "job_aid",
+     "version": 1,
+     "effective": "2025-07-09",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-5a13d7bd7c",
+   "rule": null,
+   "attribute": null,
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-BOP-01@v3/s3/c5",
+    "text": "Approach the branch together and check the exterior for signs of forced entry.",
+    "heading": "Steps",
+    "document": {
+     "title": "Opening the Branch Each Morning",
+     "type": "procedure",
+     "version": 3,
+     "effective": "2025-01-17",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "PRO-BOP-03@v2/s5/c1",
+    "text": "Approach the branch together and check the exterior for signs of forced entry.",
+    "heading": "Steps to follow",
+    "document": {
+     "title": "Changing Vault Combinations",
+     "type": "procedure",
+     "version": 2,
+     "effective": "2026-08-31",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-346e8a0429",
+   "rule": "Days overdrawn before charge-off",
+   "attribute": "od_chargeoff",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-ODR-03@v2/s3/c2",
+    "text": "Accounts that remain overdrawn for 45 days are referred for charge-off.",
+    "heading": "Steps",
+    "document": {
+     "title": "Referring Accounts for Charge-Off",
+     "type": "procedure",
+     "version": 2,
+     "effective": "2025-03-21",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "PRO-ODR-04@v3/s5/c1",
+    "text": "Accounts that remain overdrawn for 45 days are referred for charge-off.",
+    "heading": "Steps to follow",
+    "document": {
+     "title": "Talking with Customers About Overdrafts",
+     "type": "procedure",
+     "version": 3,
+     "effective": "2026-03-21",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-83cc81eafa",
+   "rule": null,
+   "attribute": null,
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-WIR-04@v1/s3/c3",
+    "text": "Check the account balance before sending the wire to operations.",
+    "heading": "Steps",
+    "document": {
+     "title": "Handling Incoming Wires",
+     "type": "procedure",
+     "version": 1,
+     "effective": "2025-02-25",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "BUL-WIR-01@v2/s2/c1",
+    "text": "Check the account balance before sending the wire to operations.",
+    "heading": "Steps to follow",
+    "document": {
+     "title": "Branch Bulletin 2025-24: Callback threshold for outgoing wires",
+     "type": "bulletin",
+     "version": 2,
+     "effective": "2026-07-18",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  }
+ ],
+ "input_hash": "f0fc5148dac6fa6b1825935df7dbfc1fefb772a4b4e77e1760defe81df6bd15e",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [{\"pair\": \"pair-ae8bfc910f\", \"label\": \"consistent\", \"quote_a\": \"Keep your drawer locked whenever you step away from the teller line.\", \"quote_b\": \"Keep your drawer locked whenever you step away from the teller line.\", \"rationale\": \"Both procedures state the same single rule with the same value. Staff following either one would act the same way.\"}, {\"pair\": \"pair-81af5c48a6\", \"label\": \"consistent\", \"quote_a\": \"Report any alarm fault to security before opening for business.\", \"quote_b\": \"Report any alarm fault to security prior to opening for business.\", \"rationale\": \"The two clauses differ only in the words before and prior to. Staff would act the same way under either one.\"}, {\"pair\": \"pair-ce254f7f00\", \"label\": \"consistent\", \"quote_a\": \"Check the account balance before sending the wire to operations.\", \"quote_b\": \"Check the account balance before sending the wire to operations.\", \"rationale\": \"Both procedures require the same balance check before the wire goes to operations. The rule and its value match.\"}, {\"pair\": \"pair-60544ea00a\", \"label\": \"consistent\", \"quote_a\": \"Review complaint trends with your team each quarter.\", \"quote_b\": \"Review complaint trends with your team each quarter.\", \"rationale\": \"The procedure and the job aid set the same quarterly review. Nothing in either clause pulls staff in a different direction.\"}, {\"pair\": \"pair-7fb7b60b4a\", \"label\": \"consistent\", \"quote_a\": \"Run the dormancy report on the first business day of each month.\", \"quote_b\": \"Run the dormancy report on the first business day of each month.\", \"rationale\": \"Both clauses set the same timing for the dormancy report and cover the same accounts. The rule and value agree.\"}, {\"pair\": \"pair-5a13d7bd7c\", \"label\": \"consistent\", \"quote_a\": \"Approach the branch together and check the exterior for signs of forced entry.\", \"quote_b\": \"Approach the branch together and check the exterior for signs of forced entry.\", \"rationale\": \"Both procedures give the same instruction for approaching the branch. Staff would act the same way under either one.\"}, {\"pair\": \"pair-346e8a0429\", \"label\": \"consistent\", \"quote_a\": \"Accounts that remain overdrawn for 45 days are referred for charge-off.\", \"quote_b\": \"Accounts that remain overdrawn for 45 days are referred for charge-off.\", \"rationale\": \"Both clauses set the charge off referral at 45 days for the same accounts. The value is the same in each.\"}, {\"pair\": \"pair-83cc81eafa\", \"label\": \"consistent\", \"quote_a\": \"Check the account balance before sending the wire to operations.\", \"quote_b\": \"Check the account balance before sending the wire to operations.\", \"rationale\": \"The procedure and the bulletin state the same balance check with the same value. They are separate documents and not versions of one document, so nothing is superseded.\"}]}",
+   "problems": [],
+   "meta": {
+    "ms": 11069,
+    "api_ms": 10922,
+    "input_tokens": 8803,
+    "output_tokens": 1599,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 7960,
+     "cache_read_input_tokens": 841,
+     "output_tokens": 1599,
+     "output_tokens_details": {
+      "thinking_tokens": 632
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 7960,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 1599,
+       "cache_read_input_tokens": 841,
+       "cache_creation_input_tokens": 7960,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 7960
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.047918100000000005,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T05:28:40+00:00"
+}

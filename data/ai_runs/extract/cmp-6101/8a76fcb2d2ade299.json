@@ -1,0 +1,138 @@
+{
+ "step": "extract",
+ "tag": "cmp-6101",
+ "model": "google-b",
+ "backend": {
+  "vendor": "Google",
+  "model": "gemini-3.8-flash",
+  "label": "Gemini 3.8 Flash"
+ },
+ "prompt_hash": "dcc761e46c6ec579c01b9dfd540df3c2fa4bba3b6b5ec777aa2cf9c9c62aa411",
+ "input": [
+  {
+   "clause": "PRO-CMP-01@v1/s3/c6",
+   "text": "Resolve complaints within 10 business days of receipt, or tell the customer when to expect a resolution.",
+   "heading": "Steps",
+   "document": {
+    "title": "Logging a Customer Complaint",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-CMP-01@v2/s3/c6",
+   "text": "Resolve complaints within 15 days of receipt, or tell the customer when to expect a resolution.",
+   "heading": "Steps",
+   "document": {
+    "title": "Logging a Customer Complaint",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-CMP-03@v1/s3/c8",
+   "text": "For commercial accounts, send the customer an acknowledgment no later than 3 business days after a written complaint arrives.",
+   "heading": "Steps",
+   "document": {
+    "title": "Resolving and Closing a Complaint",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-CMP-04@v1/s3/c5",
+   "text": "Escalate any complaint alleging unfair treatment to the regional manager on the day it is received.",
+   "heading": "Steps",
+   "document": {
+    "title": "Escalating a Sensitive Complaint",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-CMP-06@v1/s3/c2",
+   "text": "Resolve complaints within 15 days of receipt, or tell the customer when to expect a resolution.",
+   "heading": "Steps",
+   "document": {
+    "title": "Responding to a Complaint by Phone",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-CMP-06@v1/s3/c9",
+   "text": "Customer surveys go out within 5 business days of a branch visit.",
+   "heading": "Steps",
+   "document": {
+    "title": "Responding to a Complaint by Phone",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-CSH-03@v1/s3/c2",
+   "text": "The vault must be opened under dual control, with two employees present.",
+   "heading": "Steps",
+   "document": {
+    "title": "Opening and Closing the Vault",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-CSH-03@v1/s3/c6",
+   "text": "Consumer debit cards can withdraw up to $800 a day at ATMs.",
+   "heading": "Steps",
+   "document": {
+    "title": "Opening and Closing the Vault",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-CSH-07@v4/s4/c2",
+   "text": "For commercial accounts, cash transactions of $5,000 or more go to the large-cash review queue the same day.",
+   "heading": "Exceptions and escalation",
+   "document": {
+    "title": "Counting Cash Under Dual Control",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-DRM-02@v3/s3/c4",
+   "text": "An account with no customer-initiated activity for 24 months is classified as dormant.",
+   "heading": "Steps",
+   "document": {
+    "title": "Sending Dormancy Notices",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  }
+ ],
+ "input_hash": "865d8e3303d41e1c204f74989b25b7f48456d8a0bffb74f514bda55d1416249b",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "```json\n{\n \"results\": [\n  {\n   \"clause\": \"PRO-CMP-01@v1/s3/c6\",\n   \"atoms\": [\n    {\n     \"attribute\": \"complaint_resolve\",\n     \"value\": {\n      \"type\": \"duration\",\n      \"n\": 10,\n      \"unit\": \"business_days\"\n     },\n     \"quote\": \"10 business days\",\n     \"actor\": null,\n     \"actor_inferred\": false,\n     \"scope_quote\": null,\n     \"condition\": \"or tell the customer when to expect a resolution\"\n    }\n   ]\n  },\n  {\n   \"clause\": \"PRO-CMP-01@v2/s3/c6\",\n   \"atoms\": [\n    {\n     \"attribute\": \"complaint_resolve\",\n     \"value\": {\n      \"type\": \"duration\",\n      \"n\": 15,\n      \"unit\": \"days\"\n     },\n     \"quote\": \"15 days\",\n     \"actor\": null,\n     \"actor_inferred\": false,\n     \"scope_quote\": null,\n     \"condition\": \"or tell the customer when to expect a resolution\"\n    }\n   ]\n  },\n  {\n   \"clause\": \"PRO-CMP-03@v1/s3/c8\",\n   \"atoms\": [\n    {\n     \"attribute\": \"complaint_ack\",\n     \"value\": {\n      \"type\": \"duration\",\n      \"n\": 3,\n      \"unit\": \"business_days\"\n     },\n     \"quote\": \"3 business days\",\n     \"actor\": null,\n     \"actor_inferred\": false,\n     \"scope_quote\": \"For commercial accounts\",\n     \"condition\": null\n    }\n   ]\n  },\n  {\n   \"clause\": \"PRO-CMP-04@v1/s3/c5\",\n   \"atoms\": [\n    {\n     \"attribute\": \"complaint_escalation_role\",\n     \"value\": {\n      \"type\": \"role\",\n      \"role\": \"regional_manager\"\n     },\n     \"quote\": \"regional manager\",\n     \"actor\": null,\n     \"actor_inferred\": false,\n     \"scope_quote\": null,\n     \"condition\": null\n    }\n   ]\n  },\n  {\n   \"clause\": \"PRO-CMP-06@v1/s3/c2\",\n   \"atoms\": [\n    {\n     \"attribute\": \"complaint_resolve\",\n     \"value\": {\n      \"type\": \"duration\",\n      \"n\": 15,\n      \"unit\": \"days\"\n     },\n     \"quote\": \"15 days\",\n     \"actor\": null,\n     \"actor_inferred\": false,\n     \"scope_quote\": null,\n     \"condition\": \"or tell the customer when to expect a resolution\"\n    }\n   ]\n  },\n  {\n   \"clause\": \"PRO-CMP-06@v1/s3/c9\",\n   \"atoms\": [\n    {\n     \"attribute\": \"survey_send\",\n     \"value\": {\n      \"type\": \"duration\",\n      \"n\": 5,\n      \"unit\": \"business_days\"\n     },\n     \"quote\": \"5 business days\",\n     \"actor\": null,\n     \"actor_inferred\": false,\n     \"scope_quote\": null,\n     \"condition\": null\n    }\n   ]\n  },\n  {\n   \"clause\": \"PRO-CSH-03@v1/s3/c2\",\n   \"atoms\": [\n    {\n     \"attribute\": \"cash_vault_dual\",\n     \"value\": {\n      \"type\": \"modal\",\n      \"modal\": \"must\"\n     },\n     \"quote\": \"must\",\n     \"actor\": null,\n     \"actor_inferred\": false,\n     \"scope_quote\": null,\n     \"condition\": null\n    }\n   ]\n  },\n  {\n   \"clause\": \"PRO-CSH-03@v1/s3/c6\",\n   \"atoms\": [\n    {\n     \"attribute\": \"atm_daily_limit\",\n     \"value\": {\n      \"type\": \"money\",\n      \"dollars\": 800\n     },\n     \"quote\": \"$800\",\n     \"actor\": null,\n     \"actor_inferred\": false,\n     \"scope_quote\": null,\n     \"condition\": null\n    }\n   ]\n  },\n  {\n   \"clause\": \"PRO-CSH-07@v4/s4/c2\",\n   \"atoms\": [\n    {\n     \"attribute\": \"cash_review_threshold\",\n     \"value\": {\n      \"type\": \"money\",\n      \"dollars\": 5000\n     },\n     \"quote\": \"$5,000\",\n     \"actor\": null,\n     \"actor_inferred\": false,\n     \"scope_quote\": \"For commercial accounts\",\n     \"condition\": null\n    }\n   ]\n  },\n  {\n   \"clause\": \"PRO-DRM-02@v3/s3/c4\",\n   \"atoms\": [\n    {\n     \"attribute\": \"dormant_inactivity\",\n     \"value\": {\n      \"type\": \"duration\",\n      \"n\": 24,\n      \"unit\": \"months\"\n     },\n     \"quote\": \"24 months\",\n     \"actor\": null,\n     \"actor_inferred\": false,\n     \"scope_quote\": null,\n     \"condition\": null\n    }\n   ]\n  }\n ]\n}\n```",
+   "problems": [],
+   "meta": {
+    "ms": 56054,
+    "input_tokens": 2981,
+    "output_tokens": 9692,
+    "cost_usd": 0.038581,
+    "usage": {
+     "completion_tokens": 1334,
+     "prompt_tokens": 2981,
+     "total_tokens": 12673
+    },
+    "models": [
+     "gemini-3.8-flash"
+    ],
+    "stop_reason": "stop"
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T21:25:06+00:00"
+}

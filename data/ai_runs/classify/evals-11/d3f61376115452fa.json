@@ -1,0 +1,300 @@
+{
+ "step": "classify",
+ "tag": "evals-11",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "1346938ac1ecbf43874a700ab9916c851d6a29bb5d6b9e5f1199128bc8cd59f2",
+ "input": [
+  {
+   "pair": "pair-69717cfae1",
+   "rule": "Card dispute window",
+   "attribute": "dispute_window",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-DSP-01@v5/s4/c1",
+    "text": "Customers have 60 days from the statement date to dispute a debit card transaction.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Debit Card Dispute Policy",
+     "type": "policy",
+     "version": 5,
+     "effective": "2025-02-25",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "ADD-KS-01@v1/s2/c2",
+    "text": "In Kansas branches, accept debit card disputes filed within 90 days of the statement that first showed the charge.",
+    "heading": "Kansas requirements",
+    "document": {
+     "title": "Kansas Branch Addendum",
+     "type": "addendum",
+     "version": 1,
+     "effective": "2026-08-25",
+     "applies_to": "Kansas branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-a7d9282bd1",
+   "rule": "New account period",
+   "attribute": "ao_new_account_window",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-AOP-01@v5/s3/c2",
+    "text": "An account is treated as a new account for the first 30 days after it opens.",
+    "heading": "Policy statements",
+    "document": {
+     "title": "Deposit Account Opening Policy",
+     "type": "policy",
+     "version": 5,
+     "effective": "2025-02-05",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "ADD-CO-01@v1/s2/c2",
+    "text": "In Colorado branches, accounts open fewer than 60 days are new accounts for hold and limit purposes.",
+    "heading": "Colorado requirements",
+    "document": {
+     "title": "Colorado Branch Addendum",
+     "type": "addendum",
+     "version": 1,
+     "effective": "2026-07-30",
+     "applies_to": "Colorado branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-e47a41d68f",
+   "rule": "Days overdrawn before charge-off",
+   "attribute": "od_chargeoff",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-ODR-01@v6/s3/c1",
+    "text": "Accounts that remain overdrawn for 45 days are referred for charge-off.",
+    "heading": "Policy statements",
+    "document": {
+     "title": "Overdraft Policy",
+     "type": "policy",
+     "version": 6,
+     "effective": "2024-07-17",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "ADD-TX-01@v4/s2/c3",
+    "text": "In Texas branches, accounts that remain overdrawn for 30 days are referred for charge-off.",
+    "heading": "Texas requirements",
+    "document": {
+     "title": "Texas Branch Addendum",
+     "type": "addendum",
+     "version": 4,
+     "effective": "2026-05-05",
+     "applies_to": "Texas branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-e29eb43e26",
+   "rule": "Notice before dormancy",
+   "attribute": "dormant_notice",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-DRM-01@v4/s3/c1",
+    "text": "Mail the customer a notice at least 30 days before the account is classified as dormant.",
+    "heading": "Policy statements",
+    "document": {
+     "title": "Dormant Account Policy",
+     "type": "policy",
+     "version": 4,
+     "effective": "2026-08-22",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "ADD-OK-01@v2/s2/c3",
+    "text": "In Oklahoma branches, customers receive written notice 60 days before their account becomes dormant.",
+    "heading": "Oklahoma requirements",
+    "document": {
+     "title": "Oklahoma Branch Addendum",
+     "type": "addendum",
+     "version": 2,
+     "effective": "2026-04-08",
+     "applies_to": "Oklahoma branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-de096c6c0b",
+   "rule": "Complaint resolution deadline",
+   "attribute": "complaint_resolve",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-CMP-01@v4/s4/c2",
+    "text": "Complaints should be closed within 15 business days of the day they arrive, or within 30 business days when another department has to investigate.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Complaint Management Policy",
+     "type": "policy",
+     "version": 4,
+     "effective": "2025-07-22",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "ADD-KS-01@v1/s2/c3",
+    "text": "In Kansas branches, complaints should be closed within 30 business days of the day they arrive.",
+    "heading": "Kansas requirements",
+    "document": {
+     "title": "Kansas Branch Addendum",
+     "type": "addendum",
+     "version": 1,
+     "effective": "2026-08-25",
+     "applies_to": "Kansas branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-b5bc78c95e",
+   "rule": "Closed account record retention",
+   "attribute": "records_retention",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-REC-01@v3/s4/c1",
+    "text": "Retain closed account records for 7 years from the closing date.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Records Retention Policy",
+     "type": "policy",
+     "version": 3,
+     "effective": "2026-06-19",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "ADD-CO-01@v1/s2/c3",
+    "text": "In Colorado branches, account records are kept for 5 years after the account closes.",
+    "heading": "Colorado requirements",
+    "document": {
+     "title": "Colorado Branch Addendum",
+     "type": "addendum",
+     "version": 1,
+     "effective": "2026-07-30",
+     "applies_to": "Colorado branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-4cd22464aa",
+   "rule": "Large-cash review threshold",
+   "attribute": "cash_review_threshold",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-CSH-01@v4/s3/c1",
+    "text": "Log any cash deposit or withdrawal of $7,500 or more for large-cash review.",
+    "heading": "Policy statements",
+    "document": {
+     "title": "Cash Handling Policy",
+     "type": "policy",
+     "version": 4,
+     "effective": "2025-05-08",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "PRO-CSH-02@v3/s3/c10",
+    "text": "For commercial accounts, cash transactions of $5,000 or more go to the large-cash review queue the same day.",
+    "heading": "Steps",
+    "document": {
+     "title": "Selling Excess Cash to the Vault",
+     "type": "procedure",
+     "version": 3,
+     "effective": "2025-12-25",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-6fcc272d36",
+   "rule": "Complaint acknowledgment deadline",
+   "attribute": "complaint_ack",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-CMP-01@v4/s4/c1",
+    "text": "Send the customer an acknowledgment no later than 2 business days after a written complaint arrives.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Complaint Management Policy",
+     "type": "policy",
+     "version": 4,
+     "effective": "2025-07-22",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "PRO-CMP-04@v2/s3/c10",
+    "text": "For commercial accounts, send the customer an acknowledgment no later than 3 business days after a written complaint arrives.",
+    "heading": "Steps",
+    "document": {
+     "title": "Escalating a Sensitive Complaint",
+     "type": "procedure",
+     "version": 2,
+     "effective": "2025-02-14",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  }
+ ],
+ "input_hash": "8d028396fb5d6fd7923461960e8f1859a240a64eb39a23e29a4465d36c88f47a",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [{\"pair\": \"pair-69717cfae1\", \"label\": \"variation\", \"quote_a\": \"60 days from the statement date\", \"quote_b\": \"within 90 days of the statement that first showed the charge\", \"rationale\": \"The Kansas addendum deliberately sets 90 days for Kansas branches while the policy sets 60 days for all branches. This is an intended narrower rule for one state.\"}, {\"pair\": \"pair-a7d9282bd1\", \"label\": \"variation\", \"quote_a\": \"first 30 days after it opens\", \"quote_b\": \"accounts open fewer than 60 days are new accounts\", \"rationale\": \"The Colorado addendum states its own 60 day new account period for Colorado branches, which differs from the general 30 days on purpose.\"}, {\"pair\": \"pair-e47a41d68f\", \"label\": \"variation\", \"quote_a\": \"overdrawn for 45 days\", \"quote_b\": \"In Texas branches, accounts that remain overdrawn for 30 days\", \"rationale\": \"The Texas addendum sets a shorter 30 day referral point for Texas branches only. The general policy keeps 45 days elsewhere, so the difference is an intended state variation.\"}, {\"pair\": \"pair-e29eb43e26\", \"label\": \"variation\", \"quote_a\": \"at least 30 days before\", \"quote_b\": \"60 days before their account becomes dormant\", \"rationale\": \"The Oklahoma addendum requires written notice 60 days ahead for Oklahoma branches. Staff there must follow the longer period, and the general 30 day minimum still applies in other states.\"}, {\"pair\": \"pair-de096c6c0b\", \"label\": \"variation\", \"quote_a\": \"within 15 business days of the day they arrive, or within 30 business days when another department has to investigate\", \"quote_b\": \"In Kansas branches, complaints should be closed within 30 business days\", \"rationale\": \"The Kansas addendum gives Kansas branches 30 business days for every complaint, while the policy allows 15 business days unless another department investigates. The longer Kansas deadline is a stated state scope.\"}, {\"pair\": \"pair-b5bc78c95e\", \"label\": \"variation\", \"quote_a\": \"7 years from the closing date\", \"quote_b\": \"5 years after the account closes\", \"rationale\": \"The Colorado addendum sets a 5 year retention period for Colorado branches, while the policy sets 7 years for all branches. The state specific value is intentional.\"}, {\"pair\": \"pair-4cd22464aa\", \"label\": \"variation\", \"quote_a\": \"$7,500 or more\", \"quote_b\": \"For commercial accounts, cash transactions of $5,000 or more\", \"rationale\": \"The procedure sets a lower $5,000 threshold on purpose for commercial accounts only, while the policy's $7,500 applies generally. The policy outranks the procedure, but the narrower scope is stated deliberately.\"}, {\"pair\": \"pair-6fcc272d36\", \"label\": \"variation\", \"quote_a\": \"no later than 2 business days after a written complaint arrives\", \"quote_b\": \"For commercial accounts, send the customer an acknowledgment no later than 3 business days\", \"rationale\": \"The procedure gives commercial accounts 3 business days and the policy gives 2 business days generally. The narrower commercial scope is stated on purpose, so this is an intended variation.\"}]}",
+   "problems": [
+    "pair-e47a41d68f: the rationale has a comma before so",
+    "pair-6fcc272d36: the rationale has a comma before so"
+   ],
+   "meta": {
+    "ms": 16281,
+    "api_ms": 16128,
+    "input_tokens": 2,
+    "output_tokens": 2302,
+    "cost_usd": 0.0559509,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  },
+  {
+   "reply": "{\"results\": [{\"pair\": \"pair-e47a41d68f\", \"label\": \"variation\", \"quote_a\": \"Accounts that remain overdrawn for 45 days are referred for charge-off.\", \"quote_b\": \"In Texas branches, accounts that remain overdrawn for 30 days are referred for charge-off.\", \"rationale\": \"The Texas Branch Addendum deliberately sets 30 days for Texas branches while the Overdraft Policy sets 45 days for all branches. The narrower scope is stated on purpose, so this is an intended variation.\"}, {\"pair\": \"pair-6fcc272d36\", \"label\": \"conflict\", \"quote_a\": \"Send the customer an acknowledgment no later than 2 business days after a written complaint arrives.\", \"quote_b\": \"For commercial accounts, send the customer an acknowledgment no later than 3 business days after a written complaint arrives.\", \"rationale\": \"The policy covers all business lines and sets 2 business days, while the procedure allows 3 business days for commercial accounts. Staff following the procedure would miss the policy deadline, and the higher ranked policy is the clause to keep.\"}]}",
+   "problems": [
+    "pair-e47a41d68f: the rationale has a comma before so"
+   ],
+   "meta": {
+    "ms": 9287,
+    "api_ms": 9050,
+    "input_tokens": 2,
+    "output_tokens": 984,
+    "cost_usd": 0.033130900000000005,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   },
+   "items": [
+    "pair-e47a41d68f",
+    "pair-6fcc272d36"
+   ]
+  }
+ ],
+ "held": {
+  "pair-e47a41d68f": [
+   "the rationale has a comma before so"
+  ]
+ },
+ "recorded_at": "2026-10-30T03:25:35+00:00"
+}

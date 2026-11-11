@@ -1,0 +1,102 @@
+{
+ "step": "judge",
+ "tag": "drafts-6101",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "ab6a49ec8731854b3cf900a9a4387417ee8016fe68257c4d327181c7eb1621da",
+ "input": [
+  {
+   "draft": "g-5998a1d2.5c122f2f",
+   "text": "Only the branch manager can approve an exception to the identification requirements.",
+   "sources": [
+    "Only the branch manager can approve an exception to the identification requirements."
+   ]
+  },
+  {
+   "draft": "g-14fea1fb.07c8d7a0",
+   "text": "Staff collect two forms of identification from each signer before opening the account. Staff may collect one form plus a verified bank reference when the branch manager approves.",
+   "sources": [
+    "Collect two forms of identification from each signer before opening the account, or one form plus a verified bank reference when the branch manager approves."
+   ]
+  },
+  {
+   "draft": "g-706e2740.5f73885f",
+   "text": "An account is treated as a new account for the first 30 days after it opens.",
+   "sources": [
+    "An account is treated as a new account for the first 30 days after it opens."
+   ]
+  },
+  {
+   "draft": "g-0fcc66e4.027b71d9",
+   "text": "Sell excess cash to the vault whenever a teller drawer goes above $15,000.",
+   "sources": [
+    "Sell excess cash to the vault whenever a teller drawer goes above $15,000."
+   ]
+  },
+  {
+   "draft": "g-275f258e.bdcb62a5",
+   "text": "Log any cash deposit or withdrawal of $7,500 or more for large-cash review.",
+   "sources": [
+    "Log any cash deposit or withdrawal of $7,500 or more for large-cash review."
+   ]
+  }
+ ],
+ "input_hash": "574c314fd007e746d35252ba1b3728ba058e38731254844272b648eded3022b2",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [{\"draft\": \"g-5998a1d2.5c122f2f\", \"scores\": {\"keeps_rules\": {\"pass\": true, \"evidence\": \"\"}, \"adds_no_rule\": {\"pass\": true, \"evidence\": \"\"}, \"keeps_scope\": {\"pass\": true, \"evidence\": \"\"}, \"plain\": {\"pass\": true, \"evidence\": \"\"}}}, {\"draft\": \"g-14fea1fb.07c8d7a0\", \"scores\": {\"keeps_rules\": {\"pass\": true, \"evidence\": \"\"}, \"adds_no_rule\": {\"pass\": true, \"evidence\": \"\"}, \"keeps_scope\": {\"pass\": true, \"evidence\": \"\"}, \"plain\": {\"pass\": true, \"evidence\": \"\"}}}, {\"draft\": \"g-706e2740.5f73885f\", \"scores\": {\"keeps_rules\": {\"pass\": true, \"evidence\": \"\"}, \"adds_no_rule\": {\"pass\": true, \"evidence\": \"\"}, \"keeps_scope\": {\"pass\": true, \"evidence\": \"\"}, \"plain\": {\"pass\": true, \"evidence\": \"\"}}}, {\"draft\": \"g-0fcc66e4.027b71d9\", \"scores\": {\"keeps_rules\": {\"pass\": true, \"evidence\": \"\"}, \"adds_no_rule\": {\"pass\": true, \"evidence\": \"\"}, \"keeps_scope\": {\"pass\": true, \"evidence\": \"\"}, \"plain\": {\"pass\": true, \"evidence\": \"\"}}}, {\"draft\": \"g-275f258e.bdcb62a5\", \"scores\": {\"keeps_rules\": {\"pass\": true, \"evidence\": \"\"}, \"adds_no_rule\": {\"pass\": true, \"evidence\": \"\"}, \"keeps_scope\": {\"pass\": true, \"evidence\": \"\"}, \"plain\": {\"pass\": true, \"evidence\": \"\"}}}]}",
+   "problems": [],
+   "meta": {
+    "ms": 8018,
+    "api_ms": 7872,
+    "input_tokens": 6148,
+    "output_tokens": 940,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 5423,
+     "cache_read_input_tokens": 723,
+     "output_tokens": 940,
+     "output_tokens_details": {
+      "thinking_tokens": 325
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 5423,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 940,
+       "cache_read_input_tokens": 723,
+       "cache_creation_input_tokens": 5423,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 5423
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.031168300000000003,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T17:55:50+00:00"
+}

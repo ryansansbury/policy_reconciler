@@ -1,0 +1,90 @@
+{
+ "step": "judge",
+ "tag": "cmp-6101",
+ "model": "openai-b",
+ "backend": {
+  "vendor": "OpenAI",
+  "model": "gpt-6-luna",
+  "label": "GPT-6 Luna"
+ },
+ "prompt_hash": "ab6a49ec8731854b3cf900a9a4387417ee8016fe68257c4d327181c7eb1621da",
+ "input": [
+  {
+   "draft": "draft-16",
+   "text": "Check deposits over $6,000 in one day are eligible for an extended hold on the amount over that figure. Checks deposited to a new account may be held for up to 7 business days.",
+   "sources": [
+    "Check deposits over $6,000 in one day are eligible for an extended hold on the amount over that figure.",
+    "Checks deposited to a new account may be held for up to 7 business days."
+   ]
+  },
+  {
+   "draft": "draft-17",
+   "text": "Provisional credit is issued within 10 business days of receiving a completed dispute.",
+   "sources": [
+    "Provisional credit is issued within 10 business days of receiving a completed dispute.",
+    "Customers have 60 days from the statement date to dispute a debit card transaction."
+   ]
+  },
+  {
+   "draft": "draft-18",
+   "text": "Each item paid into overdraft is charged $30. Accounts that remain overdrawn for 45 days are referred for charge-off. Personal bankers may waive service fees up to $15 per account in a calendar year.",
+   "sources": [
+    "Each item paid into overdraft is charged $30.",
+    "Accounts that remain overdrawn for 45 days are referred for charge-off."
+   ]
+  },
+  {
+   "draft": "draft-19",
+   "text": "No overdraft fee is charged when the account is overdrawn by $10 or less at the end of the day, where appropriate. Each item paid into overdraft is charged $30, where appropriate.",
+   "sources": [
+    "No overdraft fee is charged when the account is overdrawn by $10 or less at the end of the day.",
+    "Each item paid into overdraft is charged $30."
+   ]
+  },
+  {
+   "draft": "draft-20",
+   "text": "Customers may request a fee refund within 60 days of the statement date. Customers may request a fee refund within 30 days of the statement date. A personal banker can waive no more than $25 for one account in a calendar year.",
+   "sources": [
+    "Customers may request a fee refund within 60 days of the statement date.",
+    "In Colorado branches, customers may request a fee refund within 30 days of the statement date.",
+    "A personal banker can waive no more than $25 for one account in a calendar year."
+   ]
+  }
+ ],
+ "input_hash": "0b5922295fcc14708982db7a50369c4e1f20b73e2d86ce3b2fa162cc208b12d0",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\":[{\"draft\":\"draft-16\",\"scores\":{\"keeps_rules\":{\"pass\":true,\"evidence\":\"\"},\"adds_no_rule\":{\"pass\":true,\"evidence\":\"\"},\"keeps_scope\":{\"pass\":true,\"evidence\":\"\"},\"plain\":{\"pass\":true,\"evidence\":\"\"}}},{\"draft\":\"draft-17\",\"scores\":{\"keeps_rules\":{\"pass\":false,\"evidence\":\"Customers have 60 days from the statement date to dispute a debit card transaction.\"},\"adds_no_rule\":{\"pass\":true,\"evidence\":\"\"},\"keeps_scope\":{\"pass\":true,\"evidence\":\"\"},\"plain\":{\"pass\":true,\"evidence\":\"\"}}},{\"draft\":\"draft-18\",\"scores\":{\"keeps_rules\":{\"pass\":true,\"evidence\":\"\"},\"adds_no_rule\":{\"pass\":false,\"evidence\":\"Personal bankers may waive service fees up to $15 per account in a calendar year.\"},\"keeps_scope\":{\"pass\":true,\"evidence\":\"\"},\"plain\":{\"pass\":true,\"evidence\":\"\"}}},{\"draft\":\"draft-19\",\"scores\":{\"keeps_rules\":{\"pass\":false,\"evidence\":\"where appropriate\"},\"adds_no_rule\":{\"pass\":true,\"evidence\":\"\"},\"keeps_scope\":{\"pass\":true,\"evidence\":\"\"},\"plain\":{\"pass\":false,\"evidence\":\"where appropriate\"}}},{\"draft\":\"draft-20\",\"scores\":{\"keeps_rules\":{\"pass\":true,\"evidence\":\"\"},\"adds_no_rule\":{\"pass\":false,\"evidence\":\"Customers may request a fee refund within 30 days of the statement date.\"},\"keeps_scope\":{\"pass\":false,\"evidence\":\"In Colorado branches\"},\"plain\":{\"pass\":false,\"evidence\":\"Customers may request a fee refund within 60 days of the statement date. Customers may request a fee refund within 30 days of the statement date.\"}}}]}",
+   "problems": [],
+   "meta": {
+    "ms": 10104,
+    "input_tokens": 1000,
+    "output_tokens": 1026,
+    "cost_usd": 0.000613,
+    "usage": {
+     "prompt_tokens": 1000,
+     "completion_tokens": 1026,
+     "total_tokens": 2026,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 631,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+     }
+    },
+    "models": [
+     "gpt-6-luna"
+    ],
+    "stop_reason": "stop"
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T17:22:54+00:00"
+}

@@ -1,0 +1,185 @@
+{
+ "step": "draft",
+ "tag": "2026",
+ "model": "claude-opus",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "opus",
+  "client_context": true
+ },
+ "prompt_hash": "d412e32e9168de04c00c3959530ebecb6630d0f9092d4afc1f9c308a4695a32e",
+ "input": [
+  {
+   "group": "g-133084ff",
+   "rule": "Regional manager rate exception limit",
+   "attribute": "lend_rate_rm",
+   "type": "percent",
+   "keep": {
+    "clause": "POL-LND-01@v4/s4/c2",
+    "text": "A regional manager can approve a rate exception as large as 0.50%.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Loan Pricing Exception Policy",
+     "type": "policy",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "change": [
+    {
+     "clause": "FAQ-LND-01@v3/s1/c1",
+     "text": "Regional managers may approve rate exceptions of up to 0.75%.",
+     "heading": "How large a rate exception can a regional manager approve?",
+     "document": {
+      "title": "Rate Exception FAQ",
+      "type": "faq",
+      "applies_to": "All branches. All business lines."
+     }
+    },
+    {
+     "clause": "PRO-LND-01@v4/s3/c4",
+     "text": "A regional manager can approve a rate exception as large as 0.75%.",
+     "heading": "Steps",
+     "document": {
+      "title": "Requesting a Rate Exception",
+      "type": "procedure",
+      "applies_to": "All branches. All business lines."
+     }
+    }
+   ],
+   "allowed": {
+    "JA-LND-01@v3/s1/c3#value": "0.50%",
+    "JA-LND-02@v2/s1/c2#value": "0.50%",
+    "POL-LND-01@v4/s4/c2#value": "0.50%"
+   },
+   "placeholder": "{clause:POL-LND-01@v4/s4/c2#value}"
+  },
+  {
+   "group": "g-136d0342",
+   "rule": "Days overdrawn before charge-off",
+   "attribute": "od_chargeoff",
+   "type": "duration",
+   "keep": {
+    "clause": "POL-ODR-01@v4/s3/c1",
+    "text": "Refer an account for charge-off once it has been negative for 45 days.",
+    "heading": "Policy statements",
+    "document": {
+     "title": "Overdraft Policy",
+     "type": "policy",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "change": [
+    {
+     "clause": "PRO-ODR-03@v2/s3/c7",
+     "text": "Accounts that remain overdrawn for 60 days are referred for charge-off.",
+     "heading": "Steps",
+     "document": {
+      "title": "Referring Accounts for Charge-Off",
+      "type": "procedure",
+      "applies_to": "All branches. Consumer and small business accounts."
+     }
+    }
+   ],
+   "allowed": {
+    "FAQ-ODR-01@v4/s3/c1#value": "45 days",
+    "JA-ODR-01@v4/s1/c1#value": "45 days",
+    "POL-ODR-01@v4/s3/c1#value": "45 days",
+    "PRO-ODR-01@v3/s5/c2#value": "45 days",
+    "PRO-ODR-05@v1/s3/c4#value": "45 days"
+   },
+   "placeholder": "{clause:POL-ODR-01@v4/s3/c1#value}"
+  },
+  {
+   "group": "g-e65702a5",
+   "rule": "Records destruction approver",
+   "attribute": "records_destroy_role",
+   "type": "role",
+   "keep": {
+    "clause": "POL-REC-01@v5/s4/c1",
+    "text": "The records custodian must approve the destruction of any records in writing.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Records Retention Policy",
+     "type": "policy",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "change": [
+    {
+     "clause": "PRO-REC-05@v3/s3/c8",
+     "text": "Records may be destroyed only with written approval from a manager.",
+     "heading": "Steps",
+     "document": {
+      "title": "Shipping Records to Offsite Storage",
+      "type": "procedure",
+      "applies_to": "All branches. All business lines."
+     }
+    }
+   ],
+   "allowed": {
+    "BUL-REC-01@v1/s1/c2#value": "records custodian",
+    "FAQ-REC-01@v2/s1/c1#value": "records custodian",
+    "JA-REC-01@v1/s1/c2#value": "records custodian",
+    "JA-REC-02@v3/s1/c1#value": "records custodian",
+    "POL-REC-01@v5/s4/c1#value": "records custodian",
+    "PRO-REC-03@v1/s3/c2#value": "records custodian",
+    "PRO-REC-06@v3/s3/c5#value": "records custodian"
+   },
+   "placeholder": "{clause:POL-REC-01@v5/s4/c1#value}"
+  }
+ ],
+ "input_hash": "a8f815230dc6939bddd3cbe7ac8b36c27f530391246dd34371bf55a60e0c54cf",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [{\"group\": \"g-133084ff\", \"title\": \"Regional manager rate exceptions\", \"text\": \"A regional manager may approve a rate exception as large as {clause:POL-LND-01@v4/s4/c2#value}.\"}, {\"group\": \"g-136d0342\", \"title\": \"Referring overdrawn accounts for charge-off\", \"text\": \"Refer an account for charge-off once it has been negative for {clause:POL-ODR-01@v4/s3/c1#value}.\"}, {\"group\": \"g-e65702a5\", \"title\": \"Approving records destruction\", \"text\": \"The {clause:POL-REC-01@v5/s4/c1#value} must approve the destruction of any records in writing.\"}]}",
+   "problems": [],
+   "meta": {
+    "ms": 6281,
+    "api_ms": 6124,
+    "input_tokens": 7663,
+    "output_tokens": 505,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 6587,
+     "cache_read_input_tokens": 1074,
+     "output_tokens": 505,
+     "output_tokens_details": {
+      "thinking_tokens": 273
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 6587,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 505,
+       "cache_read_input_tokens": 1074,
+       "cache_creation_input_tokens": 6587,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 6587
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.0630188,
+    "models": [
+     "claude-opus-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T05:57:47+00:00"
+}

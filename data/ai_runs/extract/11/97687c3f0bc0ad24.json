@@ -1,0 +1,133 @@
+{
+ "step": "extract",
+ "tag": "11",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "c338e60b657607c5f659b819665f2ec94796d01ec070e1f88f830e5bdacdd3fe",
+ "input": [
+  {
+   "clause": "PRO-AOP-06@v3/s3/c8",
+   "text": "Any exception to the identification requirements must be approved by the regional manager.",
+   "heading": "Steps",
+   "document": {
+    "title": "Handling Identification Exceptions",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "PRO-AOP-06@v4/s3/c8",
+   "text": "Any exception to the identification requirements must be approved by a manager.",
+   "heading": "Steps",
+   "document": {
+    "title": "Handling Identification Exceptions",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "PRO-AOP-07@v2/s3/c9",
+   "text": "Any exception to the identification requirements must be approved by the branch manager.",
+   "heading": "Steps",
+   "document": {
+    "title": "Opening an Account for a Minor with a Custodian",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "PRO-BOP-01@v3/s3/c2",
+   "text": "Approach the branch together and check the exterior for signs of forced entry.",
+   "heading": "Steps",
+   "document": {
+    "title": "Opening the Branch Each Morning",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-BOP-02@v2/s3/c2",
+   "text": "Approach the branch together and check the exterior for signs of forced entry.",
+   "heading": "Steps",
+   "document": {
+    "title": "Closing the Branch Each Evening",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-BOP-03@v4/s3/c1",
+   "text": "Approach the branch together and check the exterior for signs of forced entry.",
+   "heading": "Steps",
+   "document": {
+    "title": "Changing Vault Combinations",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-BOP-04@v1/s3/c1",
+   "text": "Approach the branch together and check the exterior for signs of forced entry.",
+   "heading": "Steps",
+   "document": {
+    "title": "Testing the Alarm System",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-BOP-05@v4/s3/c4",
+   "text": "Approach the branch together and check the exterior for signs of forced entry.",
+   "heading": "Steps",
+   "document": {
+    "title": "Handling a Late Opener",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-BOP-06@v4/s3/c5",
+   "text": "Approach the branch together and check the exterior for signs of forced entry.",
+   "heading": "Steps",
+   "document": {
+    "title": "After-Hours Branch Access",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-CMP-05@v1/s3/c7",
+   "text": "Escalate any complaint alleging unfair treatment to management on the day it is received.",
+   "heading": "Steps",
+   "document": {
+    "title": "Reviewing Complaint Trends Each Quarter",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  }
+ ],
+ "input_hash": "3a5d7ad3845ee619e6df8543ef10287a6e270ca5d761cbc085c0df55954b4a99",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [\n{\"clause\": \"PRO-AOP-06@v3/s3/c8\", \"atoms\": [{\"attribute\": \"ao_exception_approver\", \"value\": {\"type\": \"role\", \"role\": \"regional_manager\"}, \"quote\": \"regional manager\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]},\n{\"clause\": \"PRO-AOP-06@v4/s3/c8\", \"atoms\": [{\"attribute\": \"ao_exception_approver\", \"value\": {\"type\": \"role\", \"role\": null, \"generic\": \"a manager\"}, \"quote\": \"a manager\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]},\n{\"clause\": \"PRO-AOP-07@v2/s3/c9\", \"atoms\": [{\"attribute\": \"ao_exception_approver\", \"value\": {\"type\": \"role\", \"role\": \"branch_manager\"}, \"quote\": \"branch manager\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]},\n{\"clause\": \"PRO-BOP-01@v3/s3/c2\", \"atoms\": []},\n{\"clause\": \"PRO-BOP-02@v2/s3/c2\", \"atoms\": []},\n{\"clause\": \"PRO-BOP-03@v4/s3/c1\", \"atoms\": []},\n{\"clause\": \"PRO-BOP-04@v1/s3/c1\", \"atoms\": []},\n{\"clause\": \"PRO-BOP-05@v4/s3/c4\", \"atoms\": []},\n{\"clause\": \"PRO-BOP-06@v4/s3/c5\", \"atoms\": []},\n{\"clause\": \"PRO-CMP-05@v1/s3/c7\", \"atoms\": [{\"attribute\": \"complaint_escalation_role\", \"value\": {\"type\": \"role\", \"role\": null, \"generic\": \"management\"}, \"quote\": \"management\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]}\n]}",
+   "problems": [],
+   "meta": {
+    "ms": 6841,
+    "api_ms": 6611,
+    "input_tokens": 2,
+    "output_tokens": 1104,
+    "cost_usd": 0.036069000000000004,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T03:22:20+00:00"
+}

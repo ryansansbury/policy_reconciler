@@ -1,0 +1,307 @@
+{
+ "step": "classify",
+ "tag": "evals-6101",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "2c908358fde9f0f4a792753579a6cfaa33476e41c4b0f235744675d8e8283a19",
+ "input": [
+  {
+   "pair": "pair-0cbc4b5031",
+   "rule": "Forms of identification per signer",
+   "attribute": "ao_id_count",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "JA-AOP-02@v3/s1/c2",
+    "text": "Forms of identification per signer | two",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Identification Checklist",
+     "type": "job_aid",
+     "version": 3,
+     "effective": "2026-04-02",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "PRO-AOP-07@v2/s3/c4",
+    "text": "A consumer checking account needs at least $25 to open.",
+    "heading": "Steps",
+    "document": {
+     "title": "Opening an Account for a Minor with a Custodian",
+     "type": "procedure",
+     "version": 2,
+     "effective": "2025-09-28",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-a4d2c5b9df",
+   "rule": "Large-cash review threshold",
+   "attribute": "cash_review_threshold",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "JA-CSH-01@v2/s1/c3",
+    "text": "Large-cash review threshold | $7,500",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Teller Cash Limits Card",
+     "type": "job_aid",
+     "version": 2,
+     "effective": "2025-12-23",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "PRO-CSH-05@v3/s3/c4",
+    "text": "Two employees must be present whenever the vault is opened.",
+    "heading": "Steps",
+    "document": {
+     "title": "Handling a Cash Shortage or Overage",
+     "type": "procedure",
+     "version": 3,
+     "effective": "2024-11-30",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-f359ec1b3a",
+   "rule": "Dual control at opening",
+   "attribute": "branch_open_dual",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-BOP-01@v4/s4/c1",
+    "text": "The branch is opened by two employees together, never by one.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Branch Security and Opening Policy",
+     "type": "policy",
+     "version": 4,
+     "effective": "2024-12-04",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "JA-BOP-01@v1/s1/c2",
+    "text": "Vault combination change interval | 6 months",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Opening Checklist",
+     "type": "job_aid",
+     "version": 1,
+     "effective": "2025-12-07",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-4fd2a1233d",
+   "rule": "Minimum opening deposit",
+   "attribute": "ao_min_deposit",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-AOP-01@v5/s4/c2",
+    "text": "The minimum opening deposit for a consumer checking account is $25.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Deposit Account Opening Policy",
+     "type": "policy",
+     "version": 5,
+     "effective": "2026-05-17",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "POL-AOP-02@v3/s4/c2",
+    "text": "Accounts open fewer than 30 days are new accounts for hold and limit purposes.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Customer Identification Policy",
+     "type": "policy",
+     "version": 3,
+     "effective": "2026-02-28",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-560e1257a8",
+   "rule": "Personal banker fee waiver limit",
+   "attribute": "fee_waiver_pb",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-FEE-01@v1/s3/c7",
+    "text": "Personal bankers may waive service fees up to $25 per account in a calendar year.",
+    "heading": "Steps",
+    "document": {
+     "title": "Processing a Fee Waiver Request",
+     "type": "procedure",
+     "version": 1,
+     "effective": "2026-04-17",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "FAQ-FEE-01@v2/s2/c1",
+    "text": "Limit fee waivers to two per account in each calendar year.",
+    "heading": "How many fee waivers can one account get in a year?",
+    "document": {
+     "title": "Fee Waiver FAQ",
+     "type": "faq",
+     "version": 2,
+     "effective": "2026-05-25",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-443d39c196",
+   "rule": "Card dispute window",
+   "attribute": "dispute_window",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "JA-DSP-03@v3/s1/c1",
+    "text": "Debit card dispute window | 60 days",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Card Services Quick Reference",
+     "type": "job_aid",
+     "version": 3,
+     "effective": "2025-10-29",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "BUL-DSP-01@v2/s1/c2",
+    "text": "Send any dispute above $500 to card services for review before issuing credit.",
+    "heading": "What branches need to know",
+    "document": {
+     "title": "Branch Bulletin 2025-19: Dispute amount that needs card services review",
+     "type": "bulletin",
+     "version": 2,
+     "effective": "2025-10-10",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-a2a34a124b",
+   "rule": "Documenting pricing exceptions",
+   "attribute": "lend_exception_doc",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-LND-04@v1/s3/c3",
+    "text": "Every pricing exception must be documented in the loan file with the reason and the approver.",
+    "heading": "Steps",
+    "document": {
+     "title": "Reviewing Exception Reports Each Month",
+     "type": "procedure",
+     "version": 1,
+     "effective": "2026-06-09",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "PRO-LND-03@v4/s3/c9",
+    "text": "A regional manager can approve a rate exception as large as 0.50%.",
+    "heading": "Steps",
+    "document": {
+     "title": "Documenting Pricing Exceptions",
+     "type": "procedure",
+     "version": 4,
+     "effective": "2025-06-20",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-dfbbb9f00c",
+   "rule": "Branch manager rate exception limit",
+   "attribute": "lend_rate_bm",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-LND-05@v4/s3/c3",
+    "text": "Branch managers may approve rate exceptions of up to 0.25%.",
+    "heading": "Steps",
+    "document": {
+     "title": "Fee Exceptions on Consumer Loans",
+     "type": "procedure",
+     "version": 4,
+     "effective": "2026-04-11",
+     "applies_to": "All branches. Consumer accounts."
+    }
+   },
+   "b": {
+    "clause": "PRO-LND-03@v4/s3/c6",
+    "text": "Record the reason and the approver for every pricing exception in the loan file.",
+    "heading": "Steps",
+    "document": {
+     "title": "Documenting Pricing Exceptions",
+     "type": "procedure",
+     "version": 4,
+     "effective": "2025-06-20",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  }
+ ],
+ "input_hash": "16f618bf71ae0cacfe9ec43079c09974799bfe4a4f4a06fbd6824c8e8e26e92f",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [{\"pair\": \"pair-0cbc4b5031\", \"label\": \"unrelated\", \"quote_a\": \"Forms of identification per signer | two\", \"quote_b\": \"A consumer checking account needs at least $25 to open.\", \"rationale\": \"One clause sets how many forms of identification each signer shows. The other sets the funds needed to open a consumer checking account.\"}, {\"pair\": \"pair-a4d2c5b9df\", \"label\": \"unrelated\", \"quote_a\": \"Large-cash review threshold | $7,500\", \"quote_b\": \"Two employees must be present whenever the vault is opened.\", \"rationale\": \"One clause sets a cash amount that triggers review. The other sets staffing for opening the vault.\"}, {\"pair\": \"pair-f359ec1b3a\", \"label\": \"unrelated\", \"quote_a\": \"The branch is opened by two employees together, never by one.\", \"quote_b\": \"Vault combination change interval | 6 months\", \"rationale\": \"One clause requires dual control when opening the branch. The other sets how often the vault combination changes.\"}, {\"pair\": \"pair-4fd2a1233d\", \"label\": \"unrelated\", \"quote_a\": \"The minimum opening deposit for a consumer checking account is $25.\", \"quote_b\": \"Accounts open fewer than 30 days are new accounts for hold and limit purposes.\", \"rationale\": \"One clause sets the opening deposit. The other defines when an account counts as new for holds and limits.\"}, {\"pair\": \"pair-560e1257a8\", \"label\": \"unrelated\", \"quote_a\": \"Personal bankers may waive service fees up to $25 per account in a calendar year.\", \"quote_b\": \"Limit fee waivers to two per account in each calendar year.\", \"rationale\": \"The first caps the dollar amount of waivers and the second caps how many waivers an account gets. Staff can follow both limits together without acting against either.\"}, {\"pair\": \"pair-443d39c196\", \"label\": \"unrelated\", \"quote_a\": \"Debit card dispute window | 60 days\", \"quote_b\": \"Send any dispute above $500 to card services for review before issuing credit.\", \"rationale\": \"One clause sets the time allowed to file a debit card dispute. The other sets an amount that needs card services review.\"}, {\"pair\": \"pair-a2a34a124b\", \"label\": \"unrelated\", \"quote_a\": \"Every pricing exception must be documented in the loan file with the reason and the approver.\", \"quote_b\": \"A regional manager can approve a rate exception as large as 0.50%.\", \"rationale\": \"One clause requires documentation of pricing exceptions. The other sets how large a rate exception a regional manager can approve.\"}, {\"pair\": \"pair-dfbbb9f00c\", \"label\": \"unrelated\", \"quote_a\": \"Branch managers may approve rate exceptions of up to 0.25%.\", \"quote_b\": \"Record the reason and the approver for every pricing exception in the loan file.\", \"rationale\": \"One clause sets a branch manager approval limit for rate exceptions. The other requires recording the reason and approver in the loan file.\"}]}",
+   "problems": [],
+   "meta": {
+    "ms": 12216,
+    "api_ms": 12074,
+    "input_tokens": 8956,
+    "output_tokens": 1876,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 8113,
+     "cache_read_input_tokens": 841,
+     "output_tokens": 1876,
+     "output_tokens_details": {
+      "thinking_tokens": 873
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 8113,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 1876,
+       "cache_read_input_tokens": 841,
+       "cache_creation_input_tokens": 8113,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 8113
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.0513001,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T05:29:27+00:00"
+}

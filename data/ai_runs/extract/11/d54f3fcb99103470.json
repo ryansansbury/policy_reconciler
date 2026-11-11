@@ -1,0 +1,133 @@
+{
+ "step": "extract",
+ "tag": "11",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "c338e60b657607c5f659b819665f2ec94796d01ec070e1f88f830e5bdacdd3fe",
+ "input": [
+  {
+   "clause": "JA-FEE-03@v2/s2/c1",
+   "text": "Review recurring waiver requests with the branch manager at the monthly meeting.",
+   "heading": "Checklist",
+   "document": {
+    "title": "Waiver Authority Card",
+    "type": "job_aid",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "JA-FEE-03@v3/s2/c1",
+   "text": "Review recurring waiver requests with the branch manager at the monthly meeting.",
+   "heading": "Checklist",
+   "document": {
+    "title": "Waiver Authority Card",
+    "type": "job_aid",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "JA-ODR-01@v2/s2/c2",
+   "text": "Contact customers whose accounts have been overdrawn for more than three days.",
+   "heading": "Checklist",
+   "document": {
+    "title": "Overdraft Quick Reference",
+    "type": "job_aid",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "JA-ODR-01@v3/s2/c2",
+   "text": "Contact customers whose accounts have been overdrawn for more than three days.",
+   "heading": "Checklist",
+   "document": {
+    "title": "Overdraft Quick Reference",
+    "type": "job_aid",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "JA-ODR-02@v1/s2/c3",
+   "text": "Contact customers whose accounts have been overdrawn for more than three days.",
+   "heading": "Checklist",
+   "document": {
+    "title": "Overdraft Fee Desk Card",
+    "type": "job_aid",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "JA-WIR-01@v3/s1/c1",
+   "text": "Who completes wire callbacks | wire specialist",
+   "heading": "Quick reference",
+   "document": {
+    "title": "Wire Desk Quick Reference",
+    "type": "job_aid",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "JA-WIR-01@v3/s1/c4",
+   "text": "Callback threshold for outgoing wires | $10,000",
+   "heading": "Quick reference",
+   "document": {
+    "title": "Wire Desk Quick Reference",
+    "type": "job_aid",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "JA-WIR-01@v4/s1/c1",
+   "text": "Who completes wire callbacks | wire specialist",
+   "heading": "Quick reference",
+   "document": {
+    "title": "Wire Desk Quick Reference",
+    "type": "job_aid",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "JA-WIR-01@v4/s1/c4",
+   "text": "Callback threshold for outgoing wires | $10,000",
+   "heading": "Quick reference",
+   "document": {
+    "title": "Wire Desk Quick Reference",
+    "type": "job_aid",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "JA-WIR-02@v3/s1/c1",
+   "text": "Second approval threshold for outgoing wires | $50,000",
+   "heading": "Quick reference",
+   "document": {
+    "title": "Callback Checklist",
+    "type": "job_aid",
+    "applies_to": "All branches. All business lines."
+   }
+  }
+ ],
+ "input_hash": "8fb3175816c86b9996bbafbab90ad6b7ffe4b037ac1d2e368bb09aabb0723d52",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [\n{\"clause\": \"JA-FEE-03@v2/s2/c1\", \"atoms\": []},\n{\"clause\": \"JA-FEE-03@v3/s2/c1\", \"atoms\": []},\n{\"clause\": \"JA-ODR-01@v2/s2/c2\", \"atoms\": []},\n{\"clause\": \"JA-ODR-01@v3/s2/c2\", \"atoms\": []},\n{\"clause\": \"JA-ODR-02@v1/s2/c3\", \"atoms\": []},\n{\"clause\": \"JA-WIR-01@v3/s1/c1\", \"atoms\": [\n{\"attribute\": \"wire_callback_role\", \"value\": {\"type\": \"role\", \"role\": \"wire_specialist\"}, \"quote\": \"wire specialist\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}\n]},\n{\"clause\": \"JA-WIR-01@v3/s1/c4\", \"atoms\": [\n{\"attribute\": \"wire_callback\", \"value\": {\"type\": \"money\", \"dollars\": 10000}, \"quote\": \"$10,000\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}\n]},\n{\"clause\": \"JA-WIR-01@v4/s1/c1\", \"atoms\": [\n{\"attribute\": \"wire_callback_role\", \"value\": {\"type\": \"role\", \"role\": \"wire_specialist\"}, \"quote\": \"wire specialist\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}\n]},\n{\"clause\": \"JA-WIR-01@v4/s1/c4\", \"atoms\": [\n{\"attribute\": \"wire_callback\", \"value\": {\"type\": \"money\", \"dollars\": 10000}, \"quote\": \"$10,000\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}\n]},\n{\"clause\": \"JA-WIR-02@v3/s1/c1\", \"atoms\": [\n{\"attribute\": \"wire_second_approval\", \"value\": {\"type\": \"money\", \"dollars\": 50000}, \"quote\": \"$50,000\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}\n]}\n]}",
+   "problems": [],
+   "meta": {
+    "ms": 6343,
+    "api_ms": 6111,
+    "input_tokens": 2,
+    "output_tokens": 1012,
+    "cost_usd": 0.035145,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T03:22:01+00:00"
+}

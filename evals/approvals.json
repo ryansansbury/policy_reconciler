@@ -1,0 +1,195 @@
+{
+ "approved": {
+  "g-02ec0cc3": {
+   "at": "2026-10-30T11:35",
+   "by": "the specialist",
+   "text_sha": "a6514eb33dd32ae9"
+  },
+  "g-06709e03": {
+   "at": "2026-10-29T23:12",
+   "by": "the specialist",
+   "text_sha": "72a69363c2f14ecd"
+  },
+  "g-077300da": {
+   "at": "2026-10-29T23:01",
+   "by": "the specialist"
+  },
+  "g-0840942d": {
+   "at": "2026-10-29T23:01",
+   "by": "the specialist"
+  },
+  "g-12f37a39": {
+   "at": "2026-10-29T23:01",
+   "by": "the specialist"
+  },
+  "g-133084ff": {
+   "at": "2026-10-29T23:12",
+   "by": "the specialist",
+   "text_sha": "757f54f7008621b7"
+  },
+  "g-136d0342": {
+   "at": "2026-10-29T23:12",
+   "by": "the specialist",
+   "text_sha": "eeb1d572968405dd"
+  },
+  "g-137a3a32": {
+   "at": "2026-10-29T23:12",
+   "by": "the specialist",
+   "text_sha": "f35186017c2a70c6"
+  },
+  "g-18d5c148": {
+   "at": "2026-10-29T23:12",
+   "by": "the specialist",
+   "text_sha": "2cada34f3cc0d98f"
+  },
+  "g-1e497f6c": {
+   "at": "2026-10-29T23:12",
+   "by": "the specialist",
+   "text_sha": "0baf02f9ed1d295b"
+  },
+  "g-23fd0004": {
+   "at": "2026-10-29T23:12",
+   "by": "the specialist",
+   "text_sha": "ce1671c34b5b1609"
+  },
+  "g-2529a4f0": {
+   "at": "2026-10-29T23:12",
+   "by": "the specialist",
+   "text_sha": "b0c55fed5583c08c"
+  },
+  "g-26d6eeb7": {
+   "at": "2026-10-29T23:12",
+   "by": "the specialist",
+   "text_sha": "1e16bb9b7fa5b8a1"
+  },
+  "g-293d155a": {
+   "at": "2026-10-29T23:12",
+   "by": "the specialist",
+   "text_sha": "1406ba906b467e09"
+  },
+  "g-2cac3e43": {
+   "at": "2026-10-29T23:12",
+   "by": "the specialist",
+   "text_sha": "fd723e258017c684"
+  },
+  "g-34eb5d1d": {
+   "at": "2026-10-29T23:12",
+   "by": "the specialist",
+   "text_sha": "460105e4a1ff337d"
+  },
+  "g-46a9b4de": {
+   "at": "2026-10-29T23:12",
+   "by": "the specialist",
+   "text_sha": "799c4beb91aa108c"
+  },
+  "g-4ec9a097": {
+   "at": "2026-10-29T23:12",
+   "by": "the specialist",
+   "text_sha": "be4d6371f343025d"
+  },
+  "g-643b9a42": {
+   "at": "2026-10-29T23:12",
+   "by": "the specialist",
+   "text_sha": "94448a41396de80c"
+  },
+  "g-76e59fc8": {
+   "at": "2026-10-29T23:12",
+   "by": "the specialist",
+   "text_sha": "55472d76440aadb5"
+  },
+  "g-88f87594": {
+   "at": "2026-10-29T23:12",
+   "by": "the specialist",
+   "text_sha": "ac9c4d71b04545ae"
+  },
+  "g-8dd7694e": {
+   "at": "2026-10-29T23:12",
+   "by": "the specialist",
+   "text_sha": "ccc287603cee2d53"
+  },
+  "g-a0b05e44": {
+   "at": "2026-10-29T23:12",
+   "by": "the specialist",
+   "text_sha": "37d09d35d9f9e821"
+  },
+  "g-b28d1323": {
+   "at": "2026-10-29T23:12",
+   "by": "the specialist",
+   "text_sha": "5d3d3e9ddbb4967b"
+  },
+  "g-b7462d0c": {
+   "at": "2026-10-29T23:12",
+   "by": "the specialist",
+   "text_sha": "6427ffc84316baad"
+  },
+  "g-c75726e7": {
+   "at": "2026-10-29T23:01",
+   "by": "the specialist"
+  },
+  "g-cfcd9295": {
+   "at": "2026-10-29T23:01",
+   "by": "the specialist"
+  },
+  "g-d2a12642": {
+   "at": "2026-10-29T23:12",
+   "by": "the specialist",
+   "text_sha": "c1b5d114906e190d"
+  },
+  "g-d6d9426f": {
+   "at": "2026-10-29T23:12",
+   "by": "the specialist",
+   "text_sha": "411919a6bc9659a7"
+  },
+  "g-de226699": {
+   "at": "2026-10-29T23:12",
+   "by": "the specialist",
+   "text_sha": "f5d118fcf80c73d6"
+  },
+  "g-e45abd58": {
+   "at": "2026-10-29T23:12",
+   "by": "the specialist",
+   "text_sha": "9f78cfa1f9efa7bc"
+  },
+  "g-e65702a5": {
+   "at": "2026-10-29T23:12",
+   "by": "the specialist",
+   "text_sha": "c21ed4e3d40c9580"
+  },
+  "g-e83d1e4a": {
+   "at": "2026-10-29T23:12",
+   "by": "the specialist",
+   "text_sha": "b3d7d8ae8235f704"
+  },
+  "g-ed5c7bea": {
+   "at": "2026-10-29T23:12",
+   "by": "the specialist",
+   "text_sha": "2ccf0d9ee018c4bc"
+  },
+  "g-eeefec6d": {
+   "at": "2026-10-29T23:12",
+   "by": "the specialist",
+   "text_sha": "58c1660590242db6"
+  },
+  "g-ef93aeae": {
+   "at": "2026-10-29T23:12",
+   "by": "the specialist",
+   "text_sha": "076abf6067ea27c9"
+  },
+  "g-f23fdcaf": {
+   "at": "2026-10-29T23:12",
+   "by": "the specialist",
+   "text_sha": "0a1a227e60918fda"
+  },
+  "g-fdf90551": {
+   "at": "2026-10-29T23:12",
+   "by": "the specialist",
+   "text_sha": "5c122f2fc8cd6bfb"
+  },
+  "g-feb17e64": {
+   "at": "2026-10-29T23:12",
+   "by": "the specialist",
+   "text_sha": "b6bd5aba57d8d31c"
+  }
+ },
+ "held": {}
+}

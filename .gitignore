@@ -1,0 +1,15 @@
+# Build products. python3 build.py regenerates every one of them from the seeds, byte for byte.
+data/library/
+data/key/
+data/scale/
+data/store/
+data/out/
+data/raw/
+data/test_results.json
+site/
+.cache/
+__pycache__/
+.DS_Store
+.venv/
+.env
+.env.*

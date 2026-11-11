@@ -1,0 +1,90 @@
+{
+ "step": "judge",
+ "tag": "cmp-6101",
+ "model": "openai-a",
+ "backend": {
+  "vendor": "OpenAI",
+  "model": "gpt-6-astra",
+  "label": "GPT-6 Astra"
+ },
+ "prompt_hash": "ab6a49ec8731854b3cf900a9a4387417ee8016fe68257c4d327181c7eb1621da",
+ "input": [
+  {
+   "draft": "draft-06",
+   "text": "Complaints that allege unfair treatment are escalated to the regional manager the same day. Complaints should be closed within 15 business days of the day they arrive.",
+   "sources": [
+    "Complaints that allege unfair treatment are escalated to the regional manager the same day.",
+    "Complaints should be closed within 15 business days of the day they arrive."
+   ]
+  },
+  {
+   "draft": "draft-07",
+   "text": "Complaints that allege unfair treatment are escalated to the regional manager the same day.",
+   "sources": [
+    "Complaints that allege unfair treatment are escalated to the regional manager the same day.",
+    "Send the customer an acknowledgment no later than 2 business days after a written complaint arrives."
+   ]
+  },
+  {
+   "draft": "draft-08",
+   "text": "Call the customer back at a phone number already on file before releasing any outgoing wire of $10,000 or more. Outgoing wires over $50,000 need a second approval from an operations manager. Personal bankers may waive service fees up to $15 per account in a calendar year.",
+   "sources": [
+    "Call the customer back at a phone number already on file before releasing any outgoing wire of $10,000 or more.",
+    "Outgoing wires over $50,000 need a second approval from an operations manager."
+   ]
+  },
+  {
+   "draft": "draft-09",
+   "text": "No more than three overdraft fees are charged to an account in one business day, generally. Refer an account for charge-off once it has been negative for 45 days, generally.",
+   "sources": [
+    "No more than three overdraft fees are charged to an account in one business day.",
+    "Refer an account for charge-off once it has been negative for 45 days."
+   ]
+  },
+  {
+   "draft": "draft-10",
+   "text": "Resolve complaints within 15 business days of receipt, or tell the customer when to expect a resolution. Resolve complaints within 30 business days of receipt, or tell the customer when to expect a resolution. Escalate any complaint alleging unfair treatment to the regional manager on the day it is received.",
+   "sources": [
+    "Resolve complaints within 15 business days of receipt, or tell the customer when to expect a resolution.",
+    "In Oklahoma branches, resolve complaints within 30 business days of receipt, or tell the customer when to expect a resolution.",
+    "Escalate any complaint alleging unfair treatment to the regional manager on the day it is received."
+   ]
+  }
+ ],
+ "input_hash": "8b5d00a97cec262ae2447752fabda5a8092f10dc6179a1251782f78a0ff68d6e",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\":[{\"draft\":\"draft-06\",\"scores\":{\"keeps_rules\":{\"pass\":true,\"evidence\":\"\"},\"adds_no_rule\":{\"pass\":true,\"evidence\":\"\"},\"keeps_scope\":{\"pass\":true,\"evidence\":\"\"},\"plain\":{\"pass\":true,\"evidence\":\"\"}}},{\"draft\":\"draft-07\",\"scores\":{\"keeps_rules\":{\"pass\":false,\"evidence\":\"Send the customer an acknowledgment no later than 2 business days after a written complaint arrives.\"},\"adds_no_rule\":{\"pass\":true,\"evidence\":\"\"},\"keeps_scope\":{\"pass\":true,\"evidence\":\"\"},\"plain\":{\"pass\":true,\"evidence\":\"\"}}},{\"draft\":\"draft-08\",\"scores\":{\"keeps_rules\":{\"pass\":true,\"evidence\":\"\"},\"adds_no_rule\":{\"pass\":false,\"evidence\":\"Personal bankers may waive service fees up to $15 per account in a calendar year.\"},\"keeps_scope\":{\"pass\":true,\"evidence\":\"\"},\"plain\":{\"pass\":true,\"evidence\":\"\"}}},{\"draft\":\"draft-09\",\"scores\":{\"keeps_rules\":{\"pass\":true,\"evidence\":\"\"},\"adds_no_rule\":{\"pass\":true,\"evidence\":\"\"},\"keeps_scope\":{\"pass\":true,\"evidence\":\"\"},\"plain\":{\"pass\":false,\"evidence\":\"generally\"}}},{\"draft\":\"draft-10\",\"scores\":{\"keeps_rules\":{\"pass\":true,\"evidence\":\"\"},\"adds_no_rule\":{\"pass\":true,\"evidence\":\"\"},\"keeps_scope\":{\"pass\":false,\"evidence\":\"In Oklahoma branches\"},\"plain\":{\"pass\":false,\"evidence\":\"Resolve complaints within 15 business days of receipt, or tell the customer when to expect a resolution. Resolve complaints within 30 business days of receipt, or tell the customer when to expect a resolution.\"}}}]}",
+   "problems": [],
+   "meta": {
+    "ms": 8502,
+    "input_tokens": 1035,
+    "output_tokens": 546,
+    "cost_usd": 0.03765,
+    "usage": {
+     "prompt_tokens": 1035,
+     "completion_tokens": 546,
+     "total_tokens": 1581,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 1032,
+      "audio_tokens": 0
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 161,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+     }
+    },
+    "models": [
+     "gpt-6-astra"
+    ],
+    "stop_reason": "stop"
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T17:20:36+00:00"
+}

@@ -1,0 +1,98 @@
+{
+ "step": "classify",
+ "tag": "8303",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "2c908358fde9f0f4a792753579a6cfaa33476e41c4b0f235744675d8e8283a19",
+ "input": [
+  {
+   "pair": "pair-95ff8f9e38",
+   "rule": "New account check hold",
+   "attribute": "hold_new_account",
+   "reason": "The values match, but the weaker document adds a condition the stronger one doesn't state.",
+   "a": {
+    "clause": "PRO-HLD-05@v2/s3/c9",
+    "text": "New accounts can have check holds of as long as 7 business days.",
+    "heading": "Steps",
+    "document": {
+     "title": "Explaining Holds to Customers",
+     "type": "procedure",
+     "version": 2,
+     "effective": "2026-01-20",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "PRO-HLD-01@v1/s3/c8",
+    "text": "New accounts can have check holds of as long as 7 business days, or up to 9 business days for deposits above the large deposit threshold.",
+    "heading": "Steps",
+    "document": {
+     "title": "Placing a Hold on a Deposited Check",
+     "type": "procedure",
+     "version": 1,
+     "effective": "2025-08-26",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "kind": "added_condition"
+  }
+ ],
+ "input_hash": "e5417c3fcf40f658947bc828b0543a8863764b5f6ac95b96b0aaadb9cd9e7f97",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [{\"pair\": \"pair-95ff8f9e38\", \"label\": \"conflict\", \"quote_a\": \"New accounts can have check holds of as long as 7 business days.\", \"quote_b\": \"or up to 9 business days for deposits above the large deposit threshold\", \"rationale\": \"Clause a caps new account holds at 7 business days with no exception, while clause b allows up to 9 business days for large deposits. Staff following clause b would place a hold longer than clause a permits, and the two are equal-rank procedures from separate documents, so neither supersedes the other.\"}]}",
+   "problems": [],
+   "meta": {
+    "ms": 7494,
+    "api_ms": 7329,
+    "input_tokens": 6168,
+    "output_tokens": 913,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 5325,
+     "cache_read_input_tokens": 841,
+     "output_tokens": 913,
+     "output_tokens_details": {
+      "thinking_tokens": 726
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 5325,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 913,
+       "cache_read_input_tokens": 841,
+       "cache_creation_input_tokens": 5325,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 5325
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.0305181,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T05:42:00+00:00"
+}

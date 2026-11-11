@@ -1,0 +1,315 @@
+{
+ "step": "classify",
+ "tag": "6202",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "2c908358fde9f0f4a792753579a6cfaa33476e41c4b0f235744675d8e8283a19",
+ "input": [
+  {
+   "pair": "pair-0a8a97ae1f",
+   "rule": "Complaint resolution deadline",
+   "attribute": "complaint_resolve",
+   "reason": "One side carries a condition that may change the rule.",
+   "a": {
+    "clause": "POL-CMP-01@v3/s3/c1",
+    "text": "Complaints should be closed within 15 business days of the day they arrive.",
+    "heading": "Policy statements",
+    "document": {
+     "title": "Complaint Management Policy",
+     "type": "policy",
+     "version": 3,
+     "effective": "2026-08-02",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "FAQ-CMP-02@v4/s1/c1",
+    "text": "Resolve complaints within 30 business days of receipt, or tell the customer when to expect a resolution.",
+    "heading": "How long does the bank have to resolve a complaint?",
+    "document": {
+     "title": "Complaint Escalation Questions",
+     "type": "faq",
+     "version": 4,
+     "effective": "2026-03-02",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "kind": "condition"
+  },
+  {
+   "pair": "pair-667a16bc7a",
+   "rule": "Card dispute window",
+   "attribute": "dispute_window",
+   "reason": "One side carries a condition that may change the rule.",
+   "a": {
+    "clause": "POL-DSP-01@v6/s4/c1",
+    "text": "Customers have 60 days from the statement date to dispute a debit card transaction, or longer when the customer was traveling or hospitalized.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Debit Card Dispute Policy",
+     "type": "policy",
+     "version": 6,
+     "effective": "2025-05-18",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "JA-DSP-03@v3/s1/c3",
+    "text": "Debit card dispute window | 30 days",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Card Services Quick Reference",
+     "type": "job_aid",
+     "version": 3,
+     "effective": "2026-07-07",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "kind": "condition"
+  },
+  {
+   "pair": "pair-a1fecf5948",
+   "rule": "Card dispute window",
+   "attribute": "dispute_window",
+   "reason": "One side carries a condition that may change the rule.",
+   "a": {
+    "clause": "POL-DSP-01@v6/s4/c1",
+    "text": "Customers have 60 days from the statement date to dispute a debit card transaction, or longer when the customer was traveling or hospitalized.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Debit Card Dispute Policy",
+     "type": "policy",
+     "version": 6,
+     "effective": "2025-05-18",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "JA-DSP-02@v1/s1/c1",
+    "text": "Debit card dispute window | 30 days",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Dispute Timelines Card",
+     "type": "job_aid",
+     "version": 1,
+     "effective": "2026-03-12",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "kind": "condition"
+  },
+  {
+   "pair": "pair-0bee222a01",
+   "rule": "Branch manager fee waiver limit",
+   "attribute": "fee_waiver_bm",
+   "reason": "One side's actor was inferred by the AI, not named.",
+   "a": {
+    "clause": "POL-FEE-01@v3/s3/c2",
+    "text": "The most a branch manager can waive for one account in a calendar year is $50.",
+    "heading": "Policy statements",
+    "document": {
+     "title": "Service Fee Waiver Policy",
+     "type": "policy",
+     "version": 3,
+     "effective": "2024-04-19",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "PRO-FEE-04@v2/s3/c7",
+    "text": "Fee waivers above $75 for one account in a calendar year require approval from the regional manager.",
+    "heading": "Steps",
+    "document": {
+     "title": "Reviewing Waiver Activity Each Month",
+     "type": "procedure",
+     "version": 2,
+     "effective": "2026-06-24",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "kind": "actor_inferred"
+  },
+  {
+   "pair": "pair-69718998ed",
+   "rule": "Personal banker fee waiver limit",
+   "attribute": "fee_waiver_pb",
+   "reason": "One side carries a condition that may change the rule.",
+   "a": {
+    "clause": "POL-FEE-01@v3/s4/c1",
+    "text": "A personal banker can waive no more than $25 for one account in a calendar year, or up to $50 with branch manager approval noted in the account.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Service Fee Waiver Policy",
+     "type": "policy",
+     "version": 3,
+     "effective": "2024-04-19",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "JA-FEE-02@v3/s1/c2",
+    "text": "Personal banker fee waiver limit | $15",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Fee Schedule at a Glance",
+     "type": "job_aid",
+     "version": 3,
+     "effective": "2026-03-15",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "kind": "condition"
+  },
+  {
+   "pair": "pair-870e29039d",
+   "rule": "Standard check hold",
+   "attribute": "hold_standard",
+   "reason": "One side carries a condition that may change the rule.",
+   "a": {
+    "clause": "POL-HLD-01@v5/s4/c1",
+    "text": "Funds from deposited checks are available within 2 business days unless a longer hold applies.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Funds Availability Policy",
+     "type": "policy",
+     "version": 5,
+     "effective": "2024-12-24",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "BUL-HLD-02@v3/s1/c2",
+    "text": "Funds from deposited checks are available within 3 business days unless a longer hold applies.",
+    "heading": "What branches need to know",
+    "document": {
+     "title": "Branch Bulletin 2026-08: Standard check hold",
+     "type": "bulletin",
+     "version": 3,
+     "effective": "2026-03-10",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "kind": "condition"
+  },
+  {
+   "pair": "pair-47ac6f4c74",
+   "rule": "Standard check hold",
+   "attribute": "hold_standard",
+   "reason": "The values match, but the weaker document adds a condition the stronger one doesn't state.",
+   "a": {
+    "clause": "POL-HLD-01@v5/s4/c1",
+    "text": "Funds from deposited checks are available within 2 business days unless a longer hold applies.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Funds Availability Policy",
+     "type": "policy",
+     "version": 5,
+     "effective": "2024-12-24",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "JA-HLD-02@v1/s3/c3",
+    "text": "Funds from deposited checks are available within 2 business days unless a longer hold applies.",
+    "heading": "Steps to follow",
+    "document": {
+     "title": "Check Hold Desk Card",
+     "type": "job_aid",
+     "version": 1,
+     "effective": "2025-06-10",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "kind": "added_condition"
+  },
+  {
+   "pair": "pair-b502021df0",
+   "rule": "Forms of identification per signer",
+   "attribute": "ao_id_count",
+   "reason": "The values match, but the weaker document adds a condition the stronger one doesn't state.",
+   "a": {
+    "clause": "POL-AOP-02@v4/s4/c1",
+    "text": "Collect two forms of identification from each signer before opening the account.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Customer Identification Policy",
+     "type": "policy",
+     "version": 4,
+     "effective": "2026-06-05",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "POL-AOP-01@v6/s4/c2",
+    "text": "Do not open an account until you have verified two forms of identification for each signer, or one form plus a verified bank reference when the branch manager approves.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Deposit Account Opening Policy",
+     "type": "policy",
+     "version": 6,
+     "effective": "2026-03-23",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "kind": "added_condition"
+  }
+ ],
+ "input_hash": "a18a3ba8402f2370af3df79f5addfb2116c4771cb5b9993a04e66fa802be576d",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [{\"pair\": \"pair-0a8a97ae1f\", \"label\": \"conflict\", \"quote_a\": \"Complaints should be closed within 15 business days of the day they arrive.\", \"quote_b\": \"Resolve complaints within 30 business days of receipt, or tell the customer when to expect a resolution.\", \"rationale\": \"Both clauses cover all branches and business lines but set 15 business days in one and 30 business days in the other. The policy ranks higher so its clause is the one to keep, yet the two still conflict.\"}, {\"pair\": \"pair-667a16bc7a\", \"label\": \"conflict\", \"quote_a\": \"Customers have 60 days from the statement date to dispute a debit card transaction\", \"quote_b\": \"Debit card dispute window | 30 days\", \"rationale\": \"The scopes are the same and the policy allows 60 days while the job aid says 30 days. Staff following the job aid would turn away a dispute the policy accepts.\"}, {\"pair\": \"pair-a1fecf5948\", \"label\": \"conflict\", \"quote_a\": \"Customers have 60 days from the statement date to dispute a debit card transaction\", \"quote_b\": \"Debit card dispute window | 30 days\", \"rationale\": \"The scopes are the same and the policy allows 60 days while the job aid says 30 days. Staff following the job aid would turn away a dispute the policy accepts.\"}, {\"pair\": \"pair-0bee222a01\", \"label\": \"consistent\", \"quote_a\": \"The most a branch manager can waive for one account in a calendar year is $50.\", \"quote_b\": \"Fee waivers above $75 for one account in a calendar year require approval from the regional manager.\", \"rationale\": \"The procedure names no actor and only says when regional manager approval is needed, so it does not give branch managers a $75 limit. Staff following either clause would not act against the other, so I treated them as consistent.\"}, {\"pair\": \"pair-69718998ed\", \"label\": \"conflict\", \"quote_a\": \"A personal banker can waive no more than $25 for one account in a calendar year, or up to $50 with branch manager approval noted in the account.\", \"quote_b\": \"Personal banker fee waiver limit | $15\", \"rationale\": \"Both apply to all branches and the same accounts, but the policy allows up to $25 and the job aid says $15. A personal banker following the job aid would refuse a waiver the policy permits.\"}, {\"pair\": \"pair-870e29039d\", \"label\": \"conflict\", \"quote_a\": \"Funds from deposited checks are available within 2 business days unless a longer hold applies.\", \"quote_b\": \"Funds from deposited checks are available within 3 business days unless a longer hold applies.\", \"rationale\": \"The scopes are the same and one clause says 2 business days while the other says 3 business days. The shared exception for longer holds does not remove the difference in the standard hold.\"}, {\"pair\": \"pair-47ac6f4c74\", \"label\": \"consistent\", \"quote_a\": \"Funds from deposited checks are available within 2 business days unless a longer hold applies.\", \"quote_b\": \"Funds from deposited checks are available within 2 business days unless a longer hold applies.\", \"rationale\": \"The two clauses are word for word the same and state the same rule with the same value. Neither adds a condition the other lacks, so they are consistent.\"}, {\"pair\": \"pair-b502021df0\", \"label\": \"conflict\", \"quote_a\": \"Collect two forms of identification from each signer before opening the account.\", \"quote_b\": \"or one form plus a verified bank reference when the branch manager approves\", \"rationale\": \"Staff following the first policy would refuse to open an account on one form of identification plus a bank reference, which the second policy allows with branch manager approval. Both policies cover the same accounts and have equal rank, so this is a conflict.\"}]}",
+   "problems": [],
+   "meta": {
+    "ms": 21425,
+    "api_ms": 21189,
+    "input_tokens": 9119,
+    "output_tokens": 3075,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 8276,
+     "cache_read_input_tokens": 841,
+     "output_tokens": 3075,
+     "output_tokens_details": {
+      "thinking_tokens": 1844
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 8276,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 3075,
+       "cache_read_input_tokens": 841,
+       "cache_creation_input_tokens": 8276,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 8276
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.0639421,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T04:14:38+00:00"
+}

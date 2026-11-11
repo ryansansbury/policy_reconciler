@@ -1,0 +1,107 @@
+{
+ "step": "judge",
+ "tag": "cmp-6101",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "ab6a49ec8731854b3cf900a9a4387417ee8016fe68257c4d327181c7eb1621da",
+ "input": [
+  {
+   "draft": "draft-26",
+   "text": "Collect two forms of identification from each signer before opening the account, or one form plus a verified bank reference when the branch manager approves. Any exception to the identification requirements must be approved by the branch manager.",
+   "sources": [
+    "Collect two forms of identification from each signer before opening the account, or one form plus a verified bank reference when the branch manager approves.",
+    "Any exception to the identification requirements must be approved by the branch manager."
+   ]
+  },
+  {
+   "draft": "draft-27",
+   "text": "The most a branch manager can waive for one account in a calendar year is $50.",
+   "sources": [
+    "The most a branch manager can waive for one account in a calendar year is $50.",
+    "Fee refund requests are accepted for 60 days after the statement date."
+   ]
+  },
+  {
+   "draft": "draft-28",
+   "text": "Account records are kept for 7 years after the account closes. Records may be destroyed only with written approval from the records custodian. Personal bankers may waive service fees up to $15 per account in a calendar year.",
+   "sources": [
+    "Account records are kept for 7 years after the account closes.",
+    "Records may be destroyed only with written approval from the records custodian."
+   ]
+  },
+  {
+   "draft": "draft-29",
+   "text": "An operations manager must give a second approval for any outgoing wire above $50,000, generally. Outgoing wires of $10,000 or more require a callback to the customer at a number already on file, generally.",
+   "sources": [
+    "An operations manager must give a second approval for any outgoing wire above $50,000.",
+    "Outgoing wires of $10,000 or more require a callback to the customer at a number already on file."
+   ]
+  },
+  {
+   "draft": "draft-30",
+   "text": "Change the vault combination at least every 6 months. Vault combinations are changed every 12 months and whenever an employee who knows the combination leaves.",
+   "sources": [
+    "Change the vault combination at least every 6 months.",
+    "In Oklahoma branches, vault combinations are changed every 12 months and whenever an employee who knows the combination leaves."
+   ]
+  }
+ ],
+ "input_hash": "e5a6ee212693098d7fa3cb4fb26e74a321256cef5487d3e963b5a16cb2856e62",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [{\"draft\": \"draft-26\", \"scores\": {\"keeps_rules\": {\"pass\": true, \"evidence\": \"\"}, \"adds_no_rule\": {\"pass\": true, \"evidence\": \"\"}, \"keeps_scope\": {\"pass\": true, \"evidence\": \"\"}, \"plain\": {\"pass\": true, \"evidence\": \"\"}}}, {\"draft\": \"draft-27\", \"scores\": {\"keeps_rules\": {\"pass\": false, \"evidence\": \"Fee refund requests are accepted for 60 days after the statement date.\"}, \"adds_no_rule\": {\"pass\": true, \"evidence\": \"\"}, \"keeps_scope\": {\"pass\": true, \"evidence\": \"\"}, \"plain\": {\"pass\": true, \"evidence\": \"\"}}}, {\"draft\": \"draft-28\", \"scores\": {\"keeps_rules\": {\"pass\": true, \"evidence\": \"\"}, \"adds_no_rule\": {\"pass\": false, \"evidence\": \"Personal bankers may waive service fees up to $15 per account in a calendar year.\"}, \"keeps_scope\": {\"pass\": true, \"evidence\": \"\"}, \"plain\": {\"pass\": true, \"evidence\": \"\"}}}, {\"draft\": \"draft-29\", \"scores\": {\"keeps_rules\": {\"pass\": true, \"evidence\": \"\"}, \"adds_no_rule\": {\"pass\": true, \"evidence\": \"\"}, \"keeps_scope\": {\"pass\": true, \"evidence\": \"\"}, \"plain\": {\"pass\": false, \"evidence\": \"generally\"}}}, {\"draft\": \"draft-30\", \"scores\": {\"keeps_rules\": {\"pass\": true, \"evidence\": \"\"}, \"adds_no_rule\": {\"pass\": true, \"evidence\": \"\"}, \"keeps_scope\": {\"pass\": false, \"evidence\": \"In Oklahoma branches\"}, \"plain\": {\"pass\": true, \"evidence\": \"\"}}}]}",
+   "problems": [],
+   "meta": {
+    "ms": 7575,
+    "api_ms": 7432,
+    "input_tokens": 6341,
+    "output_tokens": 1209,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 5616,
+     "cache_read_input_tokens": 723,
+     "output_tokens": 1209,
+     "output_tokens_details": {
+      "thinking_tokens": 589
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 5616,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 1209,
+       "cache_read_input_tokens": 723,
+       "cache_creation_input_tokens": 5616,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 5616
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.0346303,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T17:16:03+00:00"
+}

@@ -1,0 +1,307 @@
+{
+ "step": "classify",
+ "tag": "evals-6101",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "2c908358fde9f0f4a792753579a6cfaa33476e41c4b0f235744675d8e8283a19",
+ "input": [
+  {
+   "pair": "pair-4f290e82dc",
+   "rule": "Dispute review threshold",
+   "attribute": "dispute_review_threshold",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-DSP-01@v5/s3/c1",
+    "text": "Send any dispute above $500 to card services for review before issuing credit.",
+    "heading": "Policy statements",
+    "document": {
+     "title": "Debit Card Dispute Policy",
+     "type": "policy",
+     "version": 5,
+     "effective": "2024-07-18",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "PRO-DSP-01@v1/s3/c9",
+    "text": "For small business accounts, disputes over $1,000 are reviewed by a card services specialist before credit is issued.",
+    "heading": "Steps",
+    "document": {
+     "title": "Taking a Debit Card Dispute",
+     "type": "procedure",
+     "version": 1,
+     "effective": "2025-06-27",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-e9fda13e03",
+   "rule": "Fee waivers per account per year",
+   "attribute": "fee_waivers_per_year",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-FEE-01@v3/s3/c2",
+    "text": "Each account may receive no more than two fee waivers in a calendar year.",
+    "heading": "Policy statements",
+    "document": {
+     "title": "Service Fee Waiver Policy",
+     "type": "policy",
+     "version": 3,
+     "effective": "2024-08-03",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "PRO-FEE-04@v4/s3/c9",
+    "text": "For small business accounts, each account may receive no more than three fee waivers in a calendar year.",
+    "heading": "Steps",
+    "document": {
+     "title": "Reviewing Waiver Activity Each Month",
+     "type": "procedure",
+     "version": 4,
+     "effective": "2026-05-20",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-171bcfa463",
+   "rule": "Branch manager rate exception limit",
+   "attribute": "lend_rate_bm",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-LND-01@v3/s4/c1",
+    "text": "Branch managers may approve rate exceptions of up to 0.25%.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Loan Pricing Exception Policy",
+     "type": "policy",
+     "version": 3,
+     "effective": "2026-06-18",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "PRO-LND-03@v4/s3/c10",
+    "text": "For commercial accounts, branch managers may approve rate exceptions of up to 0.15%.",
+    "heading": "Steps",
+    "document": {
+     "title": "Documenting Pricing Exceptions",
+     "type": "procedure",
+     "version": 4,
+     "effective": "2025-06-20",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-45c11808f0",
+   "rule": "Overdraft fee per item",
+   "attribute": "od_fee",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-ODR-01@v2/s3/c1",
+    "text": "Each item paid into overdraft is charged $30.",
+    "heading": "Policy statements",
+    "document": {
+     "title": "Overdraft Policy",
+     "type": "policy",
+     "version": 2,
+     "effective": "2025-11-24",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "PRO-ODR-05@v4/s3/c11",
+    "text": "For small business accounts, an overdraft fee of $32 applies to each item the bank pays when the balance is not enough to cover it.",
+    "heading": "Steps",
+    "document": {
+     "title": "Closing an Overdrawn Account",
+     "type": "procedure",
+     "version": 4,
+     "effective": "2025-04-12",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-0bdd39aa02",
+   "rule": "Closed account record retention",
+   "attribute": "records_retention",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-REC-01@v4/s4/c1",
+    "text": "Account records are kept for 7 years after the account closes.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Records Retention Policy",
+     "type": "policy",
+     "version": 4,
+     "effective": "2025-04-11",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "PRO-REC-06@v4/s3/c8",
+    "text": "For commercial accounts, retain closed account records for 10 years from the closing date.",
+    "heading": "Steps",
+    "document": {
+     "title": "Retrieving Archived Records",
+     "type": "procedure",
+     "version": 4,
+     "effective": "2025-12-12",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-d3aa53fd01",
+   "rule": "Wire callback threshold",
+   "attribute": "wire_callback",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-WIR-01@v2/s4/c3",
+    "text": "Call the customer back at a phone number already on file before releasing any outgoing wire of $10,000 or more.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Wire Transfer Policy",
+     "type": "policy",
+     "version": 2,
+     "effective": "2026-08-02",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "PRO-WIR-04@v1/s3/c11",
+    "text": "For commercial accounts, call the customer back at a phone number already on file before releasing any outgoing wire of $25,000 or more.",
+    "heading": "Steps",
+    "document": {
+     "title": "Handling Incoming Wires",
+     "type": "procedure",
+     "version": 1,
+     "effective": "2025-02-25",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-683cd435e1",
+   "rule": "Outgoing wire cutoff",
+   "attribute": "wire_cutoff",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-WIR-01@v2/s4/c1",
+    "text": "Outgoing consumer and small business wire requests received after 3:00 PM Central are processed the next business day.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Wire Transfer Policy",
+     "type": "policy",
+     "version": 2,
+     "effective": "2026-08-02",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "POL-WIR-01@v2/s3/c1",
+    "text": "The cutoff for outgoing commercial wires is 4:00 PM Central time.",
+    "heading": "Policy statements",
+    "document": {
+     "title": "Wire Transfer Policy",
+     "type": "policy",
+     "version": 2,
+     "effective": "2026-08-02",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-19b51b111b",
+   "rule": "Card dispute window",
+   "attribute": "dispute_window",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-DSP-01@v1/s3/c7",
+    "text": "Accept debit card disputes filed within 60 days of the statement that first showed the charge.",
+    "heading": "Steps",
+    "document": {
+     "title": "Taking a Debit Card Dispute",
+     "type": "procedure",
+     "version": 1,
+     "effective": "2025-06-27",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "POL-DSP-01@v5/s4/c1",
+    "text": "Customers have 60 days from the statement date to dispute a debit card transaction, or longer when the customer was traveling or hospitalized.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Debit Card Dispute Policy",
+     "type": "policy",
+     "version": 5,
+     "effective": "2024-07-18",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  }
+ ],
+ "input_hash": "0c7b05e20693c4f2240d46db390ff1f02530c7e4e42e64c4b9e33548a28900a6",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [{\"pair\": \"pair-4f290e82dc\", \"label\": \"variation\", \"quote_a\": \"Send any dispute above $500 to card services for review\", \"quote_b\": \"For small business accounts, disputes over $1,000\", \"rationale\": \"The procedure deliberately sets a higher $1,000 review threshold for small business accounts, while the policy's $500 threshold covers disputes generally. This is an intended narrower-scope variation.\"}, {\"pair\": \"pair-e9fda13e03\", \"label\": \"variation\", \"quote_a\": \"Each account may receive no more than two fee waivers in a calendar year.\", \"quote_b\": \"For small business accounts, each account may receive no more than three fee waivers in a calendar year.\", \"rationale\": \"The procedure states on purpose that small business accounts get three waivers a year. The policy's limit of two is the general rule, so this is an intended variation.\"}, {\"pair\": \"pair-171bcfa463\", \"label\": \"variation\", \"quote_a\": \"Branch managers may approve rate exceptions of up to 0.25%.\", \"quote_b\": \"For commercial accounts, branch managers may approve rate exceptions of up to 0.15%.\", \"rationale\": \"The procedure sets a lower 0.15% limit for commercial accounts only. The 0.25% limit in the policy remains the general rule, so the narrower scope is an intended variation.\"}, {\"pair\": \"pair-45c11808f0\", \"label\": \"variation\", \"quote_a\": \"Each item paid into overdraft is charged $30.\", \"quote_b\": \"For small business accounts, an overdraft fee of $32 applies to each item\", \"rationale\": \"The procedure deliberately sets a $32 fee for small business accounts. The policy's $30 fee is the general figure, so this is a scoped variation.\"}, {\"pair\": \"pair-0bdd39aa02\", \"label\": \"variation\", \"quote_a\": \"Account records are kept for 7 years after the account closes.\", \"quote_b\": \"For commercial accounts, retain closed account records for 10 years from the closing date.\", \"rationale\": \"The procedure states a longer 10 year retention period for commercial accounts only. The 7 year period in the policy is the general rule, so this is an intended variation.\"}, {\"pair\": \"pair-d3aa53fd01\", \"label\": \"variation\", \"quote_a\": \"before releasing any outgoing wire of $10,000 or more\", \"quote_b\": \"For commercial accounts, call the customer back at a phone number already on file before releasing any outgoing wire of $25,000 or more.\", \"rationale\": \"The procedure raises the callback threshold to $25,000 for commercial accounts on purpose. The policy's $10,000 threshold applies generally, so this is a scoped variation.\"}, {\"pair\": \"pair-683cd435e1\", \"label\": \"variation\", \"quote_a\": \"Outgoing consumer and small business wire requests received after 3:00 PM Central are processed the next business day.\", \"quote_b\": \"The cutoff for outgoing commercial wires is 4:00 PM Central time.\", \"rationale\": \"Each clause names its own customer segment, with a 3:00 PM cutoff for consumer and small business wires and 4:00 PM for commercial wires. The two never apply to the same wire, so the difference is intended.\"}, {\"pair\": \"pair-19b51b111b\", \"label\": \"conflict\", \"quote_a\": \"Accept debit card disputes filed within 60 days of the statement that first showed the charge.\", \"quote_b\": \"or longer when the customer was traveling or hospitalized\", \"rationale\": \"Staff following the procedure would refuse a late dispute from a traveling or hospitalized customer, which the policy allows. The policy outranks the procedure, so the policy clause is the one to keep.\"}]}",
+   "problems": [],
+   "meta": {
+    "ms": 14354,
+    "api_ms": 14219,
+    "input_tokens": 9045,
+    "output_tokens": 2172,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 8202,
+     "cache_read_input_tokens": 841,
+     "output_tokens": 2172,
+     "output_tokens_details": {
+      "thinking_tokens": 951
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 8202,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 2172,
+       "cache_read_input_tokens": 841,
+       "cache_creation_input_tokens": 8202,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 8202
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.0546161,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T05:28:18+00:00"
+}

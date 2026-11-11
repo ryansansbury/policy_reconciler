@@ -1,0 +1,133 @@
+{
+ "step": "extract",
+ "tag": "11",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "c338e60b657607c5f659b819665f2ec94796d01ec070e1f88f830e5bdacdd3fe",
+ "input": [
+  {
+   "clause": "ADD-OK-01@v2/s2/c1",
+   "text": "In Oklahoma branches, resolve complaints within 30 business days of receipt, or tell the customer when to expect a resolution.",
+   "heading": "Oklahoma requirements",
+   "document": {
+    "title": "Oklahoma Branch Addendum",
+    "type": "addendum",
+    "applies_to": "Oklahoma branches. All business lines."
+   }
+  },
+  {
+   "clause": "BUL-CMP-01@v1/s1/c2",
+   "text": "Resolve complaints within 15 days of receipt, or tell the customer when to expect a resolution.",
+   "heading": "What branches need to know",
+   "document": {
+    "title": "Branch Bulletin 2025-05: Complaint resolution deadline",
+    "type": "bulletin",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "BUL-CSH-01@v2/s2/c1",
+   "text": "Report any shortage or overage to the head teller prior to you leave for the day.",
+   "heading": "Steps to follow",
+   "document": {
+    "title": "Branch Bulletin 2025-13: Teller drawer cash limit",
+    "type": "bulletin",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "BUL-CSH-01@v2/s2/c2",
+   "text": "Use the counterfeit detection pen on bills of fifty dollars or more.",
+   "heading": "Steps to follow",
+   "document": {
+    "title": "Branch Bulletin 2025-13: Teller drawer cash limit",
+    "type": "bulletin",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "BUL-CSH-01@v2/s2/c3",
+   "text": "Keep your drawer locked whenever you step away from the teller line.",
+   "heading": "Steps to follow",
+   "document": {
+    "title": "Branch Bulletin 2025-13: Teller drawer cash limit",
+    "type": "bulletin",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "BUL-CSH-01@v3/s2/c1",
+   "text": "Report any shortage or overage to the head teller prior to you leave for the day.",
+   "heading": "Steps to follow",
+   "document": {
+    "title": "Branch Bulletin 2025-13: Teller drawer cash limit",
+    "type": "bulletin",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "BUL-CSH-01@v3/s2/c2",
+   "text": "Use the counterfeit detection pen on bills of fifty dollars or more.",
+   "heading": "Steps to follow",
+   "document": {
+    "title": "Branch Bulletin 2025-13: Teller drawer cash limit",
+    "type": "bulletin",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "BUL-CSH-01@v3/s2/c3",
+   "text": "Keep your drawer locked whenever you step away from the teller line.",
+   "heading": "Steps to follow",
+   "document": {
+    "title": "Branch Bulletin 2025-13: Teller drawer cash limit",
+    "type": "bulletin",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "BUL-CSH-01@v3/s3/c1",
+   "text": "The large-cash review queue is worked by the operations specialist assigned to the branch.",
+   "heading": "Related requirements",
+   "document": {
+    "title": "Branch Bulletin 2025-13: Teller drawer cash limit",
+    "type": "bulletin",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "BUL-REC-01@v1/s1/c2",
+   "text": "A manager must approve the destruction of any records in writing.",
+   "heading": "What branches need to know",
+   "document": {
+    "title": "Branch Bulletin 2025-04: Approver for records destruction",
+    "type": "bulletin",
+    "applies_to": "All branches. All business lines."
+   }
+  }
+ ],
+ "input_hash": "a834ecb402357c24fc88afdeb973c8fa3bef3e9cd490f171eb2a4a5c252a6dfb",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\":[{\"clause\":\"ADD-OK-01@v2/s2/c1\",\"atoms\":[{\"attribute\":\"complaint_resolve\",\"value\":{\"type\":\"duration\",\"n\":30,\"unit\":\"business_days\"},\"quote\":\"30 business days\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":\"In Oklahoma branches\",\"condition\":\"or tell the customer when to expect a resolution\"}]},{\"clause\":\"BUL-CMP-01@v1/s1/c2\",\"atoms\":[{\"attribute\":\"complaint_resolve\",\"value\":{\"type\":\"duration\",\"n\":15,\"unit\":\"days\"},\"quote\":\"15 days\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":\"or tell the customer when to expect a resolution\"}]},{\"clause\":\"BUL-CSH-01@v2/s2/c1\",\"atoms\":[]},{\"clause\":\"BUL-CSH-01@v2/s2/c2\",\"atoms\":[]},{\"clause\":\"BUL-CSH-01@v2/s2/c3\",\"atoms\":[]},{\"clause\":\"BUL-CSH-01@v3/s2/c1\",\"atoms\":[]},{\"clause\":\"BUL-CSH-01@v3/s2/c2\",\"atoms\":[]},{\"clause\":\"BUL-CSH-01@v3/s2/c3\",\"atoms\":[]},{\"clause\":\"BUL-CSH-01@v3/s3/c1\",\"atoms\":[]},{\"clause\":\"BUL-REC-01@v1/s1/c2\",\"atoms\":[{\"attribute\":\"records_destroy_role\",\"value\":{\"type\":\"role\",\"role\":null,\"generic\":\"A manager\"},\"quote\":\"A manager\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]}]}",
+   "problems": [],
+   "meta": {
+    "ms": 6431,
+    "api_ms": 6207,
+    "input_tokens": 2,
+    "output_tokens": 1048,
+    "cost_usd": 0.04636,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T03:21:56+00:00"
+}

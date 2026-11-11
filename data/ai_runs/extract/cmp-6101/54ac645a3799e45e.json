@@ -1,0 +1,167 @@
+{
+ "step": "extract",
+ "tag": "cmp-6101",
+ "model": "claude-haiku",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "haiku",
+  "client_context": true
+ },
+ "prompt_hash": "dcc761e46c6ec579c01b9dfd540df3c2fa4bba3b6b5ec777aa2cf9c9c62aa411",
+ "input": [
+  {
+   "clause": "FAQ-CSH-01@v3/s1/c2",
+   "text": "Record every vault transfer in the vault log with both employees' initials.",
+   "heading": "How much cash can a teller drawer hold?",
+   "document": {
+    "title": "Cash Handling FAQ",
+    "type": "faq",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "FAQ-FEE-01@v2/s3/c2",
+   "text": "Follow up with the customer if the request cannot be completed the same day.",
+   "heading": "How long do customers have to request a fee refund?",
+   "document": {
+    "title": "Fee Waiver FAQ",
+    "type": "faq",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "JA-DSP-03@v3/s2/c1",
+   "text": "Order a replacement card when the original card is blocked.",
+   "heading": "Checklist",
+   "document": {
+    "title": "Card Services Quick Reference",
+    "type": "job_aid",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "JA-FEE-03@v2/s2/c3",
+   "text": "Review recurring waiver requests with the branch manager at the monthly meeting.",
+   "heading": "Checklist",
+   "document": {
+    "title": "Waiver Authority Card",
+    "type": "job_aid",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "JA-REC-02@v2/s3/c4",
+   "text": "Log every box sent offsite in the records inventory.",
+   "heading": "Steps to follow",
+   "document": {
+    "title": "Destruction Approval Checklist",
+    "type": "job_aid",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "POL-ODR-01@v2/s2/c1",
+   "text": "It applies to every branch for consumer and small business accounts.",
+   "heading": "Scope",
+   "document": {
+    "title": "Overdraft Policy",
+    "type": "policy",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "PRO-AOP-03@v1/s3/c2",
+   "text": "Give the customer a copy of the fee schedule and the funds availability notice.",
+   "heading": "Steps",
+   "document": {
+    "title": "Opening a Small Business Account",
+    "type": "procedure",
+    "applies_to": "All branches. Small business accounts."
+   }
+  },
+  {
+   "clause": "PRO-BOP-01@v3/s2/c1",
+   "text": "Make sure you have completed the training for this task and have access to the systems it uses.",
+   "heading": "Before you begin",
+   "document": {
+    "title": "Opening the Branch Each Morning",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-BOP-06@v3/s5/c1",
+   "text": "Report any alarm fault to security prior to opening for business.",
+   "heading": "Steps to follow",
+   "document": {
+    "title": "After-Hours Branch Access",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-CMP-03@v1/s1/c1",
+   "text": "This procedure covers resolving and Closing a Complaint, step by step, for every branch it applies to.",
+   "heading": "Purpose",
+   "document": {
+    "title": "Resolving and Closing a Complaint",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  }
+ ],
+ "input_hash": "7f19d9416f76effabfbc5da05c2b7e9fa964d7bd0cc32822dda2c9bec62681b2",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [{\"clause\": \"FAQ-CSH-01@v3/s1/c2\", \"atoms\": []}, {\"clause\": \"FAQ-FEE-01@v2/s3/c2\", \"atoms\": []}, {\"clause\": \"JA-DSP-03@v3/s2/c1\", \"atoms\": []}, {\"clause\": \"JA-FEE-03@v2/s2/c3\", \"atoms\": []}, {\"clause\": \"JA-REC-02@v2/s3/c4\", \"atoms\": []}, {\"clause\": \"POL-ODR-01@v2/s2/c1\", \"atoms\": []}, {\"clause\": \"PRO-AOP-03@v1/s3/c2\", \"atoms\": []}, {\"clause\": \"PRO-BOP-01@v3/s2/c1\", \"atoms\": []}, {\"clause\": \"PRO-BOP-06@v3/s5/c1\", \"atoms\": []}, {\"clause\": \"PRO-CMP-03@v1/s1/c1\", \"atoms\": []}]}",
+   "problems": [],
+   "meta": {
+    "ms": 6183,
+    "api_ms": 6043,
+    "input_tokens": 8911,
+    "output_tokens": 1277,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 6227,
+     "cache_read_input_tokens": 2682,
+     "output_tokens": 1277,
+     "output_tokens_details": {
+      "thinking_tokens": 942
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 6227,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 1277,
+       "cache_read_input_tokens": 2682,
+       "cache_creation_input_tokens": 6227,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 6227
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.00191092,
+    "models": [
+     "claude-haiku-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T21:18:30+00:00"
+}

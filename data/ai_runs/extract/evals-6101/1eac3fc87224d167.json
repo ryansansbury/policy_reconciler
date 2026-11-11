@@ -1,0 +1,167 @@
+{
+ "step": "extract",
+ "tag": "evals-6101",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "dcc761e46c6ec579c01b9dfd540df3c2fa4bba3b6b5ec777aa2cf9c9c62aa411",
+ "input": [
+  {
+   "clause": "PRO-AOP-03@v1/s3/c2",
+   "text": "Give the customer a copy of the fee schedule and the funds availability notice.",
+   "heading": "Steps",
+   "document": {
+    "title": "Opening a Small Business Account",
+    "type": "procedure",
+    "applies_to": "All branches. Small business accounts."
+   }
+  },
+  {
+   "clause": "PRO-BOP-01@v3/s2/c1",
+   "text": "Make sure you have completed the training for this task and have access to the systems it uses.",
+   "heading": "Before you begin",
+   "document": {
+    "title": "Opening the Branch Each Morning",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-BOP-01@v3/s3/c5",
+   "text": "Approach the branch together and check the exterior for signs of forced entry.",
+   "heading": "Steps",
+   "document": {
+    "title": "Opening the Branch Each Morning",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-BOP-06@v3/s5/c1",
+   "text": "Report any alarm fault to security prior to opening for business.",
+   "heading": "Steps to follow",
+   "document": {
+    "title": "After-Hours Branch Access",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-CMP-03@v1/s1/c1",
+   "text": "This procedure covers resolving and Closing a Complaint, step by step, for every branch it applies to.",
+   "heading": "Purpose",
+   "document": {
+    "title": "Resolving and Closing a Complaint",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-CMP-04@v1/s3/c3",
+   "text": "Attach any letters or emails the customer sent to the complaint record.",
+   "heading": "Steps",
+   "document": {
+    "title": "Escalating a Sensitive Complaint",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-CMP-05@v1/s3/c5",
+   "text": "Tell the customer who will contact them next and when.",
+   "heading": "Steps",
+   "document": {
+    "title": "Reviewing Complaint Trends Each Quarter",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-CSH-07@v4/s3/c5",
+   "text": "Keep your drawer locked whenever you step away from the teller line.",
+   "heading": "Steps",
+   "document": {
+    "title": "Counting Cash Under Dual Control",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-DRM-01@v3/s3/c1",
+   "text": "Reactivate an account when the customer makes a deposit or withdrawal in person.",
+   "heading": "Steps",
+   "document": {
+    "title": "Identifying Dormant Accounts",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "PRO-DRM-01@v3/s3/c7",
+   "text": "Verify the customer's identity before discussing any account details.",
+   "heading": "Steps",
+   "document": {
+    "title": "Identifying Dormant Accounts",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  }
+ ],
+ "input_hash": "0e57ec3c416db37a27c09fe7cfd4415cff72eeb5c3d57b4f75b9c68988e78558",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [{\"clause\": \"PRO-AOP-03@v1/s3/c2\", \"atoms\": []}, {\"clause\": \"PRO-BOP-01@v3/s2/c1\", \"atoms\": []}, {\"clause\": \"PRO-BOP-01@v3/s3/c5\", \"atoms\": []}, {\"clause\": \"PRO-BOP-06@v3/s5/c1\", \"atoms\": []}, {\"clause\": \"PRO-CMP-03@v1/s1/c1\", \"atoms\": []}, {\"clause\": \"PRO-CMP-04@v1/s3/c3\", \"atoms\": []}, {\"clause\": \"PRO-CMP-05@v1/s3/c5\", \"atoms\": []}, {\"clause\": \"PRO-CSH-07@v4/s3/c5\", \"atoms\": []}, {\"clause\": \"PRO-DRM-01@v3/s3/c1\", \"atoms\": []}, {\"clause\": \"PRO-DRM-01@v3/s3/c7\", \"atoms\": []}]}",
+   "problems": [],
+   "meta": {
+    "ms": 4771,
+    "api_ms": 4556,
+    "input_tokens": 8881,
+    "output_tokens": 678,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 6197,
+     "cache_read_input_tokens": 2682,
+     "output_tokens": 678,
+     "output_tokens_details": {
+      "thinking_tokens": 340
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 6197,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 678,
+       "cache_read_input_tokens": 2682,
+       "cache_creation_input_tokens": 6197,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 6197
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.0318402,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T04:13:51+00:00"
+}

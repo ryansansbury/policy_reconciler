@@ -1,0 +1,149 @@
+{
+ "step": "extract",
+ "tag": "cmp-6101",
+ "model": "openai-a",
+ "backend": {
+  "vendor": "OpenAI",
+  "model": "gpt-6-astra",
+  "label": "GPT-6 Astra"
+ },
+ "prompt_hash": "dcc761e46c6ec579c01b9dfd540df3c2fa4bba3b6b5ec777aa2cf9c9c62aa411",
+ "input": [
+  {
+   "clause": "JA-HLD-03@v3/s1/c2",
+   "text": "Longest check hold on a new account | 5 business days",
+   "heading": "Quick reference",
+   "document": {
+    "title": "Hold Notice Checklist",
+    "type": "job_aid",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "JA-LND-02@v2/s1/c1",
+   "text": "Regional manager rate exception limit | 1.00%",
+   "heading": "Quick reference",
+   "document": {
+    "title": "Exception Documentation Checklist",
+    "type": "job_aid",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "JA-REC-01@v4/s1/c2",
+   "text": "Approver for records destruction | operations specialist",
+   "heading": "Quick reference",
+   "document": {
+    "title": "Records Retention Schedule Card",
+    "type": "job_aid",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "POL-AOP-01@v5/s3/c2",
+   "text": "Only the branch manager can approve an exception to the identification requirements.",
+   "heading": "Policy statements",
+   "document": {
+    "title": "Deposit Account Opening Policy",
+    "type": "policy",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "POL-CSH-01@v4/s4/c3",
+   "text": "Consumer debit cards can withdraw up to $800 a day at ATMs.",
+   "heading": "Additional requirements",
+   "document": {
+    "title": "Cash Handling Policy",
+    "type": "policy",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "POL-DSP-01@v5/s4/c3",
+   "text": "Replacement debit cards arrive within 7 business days of the request.",
+   "heading": "Additional requirements",
+   "document": {
+    "title": "Debit Card Dispute Policy",
+    "type": "policy",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "POL-ODR-01@v2/s3/c1",
+   "text": "Each item paid into overdraft is charged $30.",
+   "heading": "Policy statements",
+   "document": {
+    "title": "Overdraft Policy",
+    "type": "policy",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "POL-WIR-01@v2/s4/c2",
+   "text": "An operations manager must give a second approval for any outgoing wire above $50,000.",
+   "heading": "Additional requirements",
+   "document": {
+    "title": "Wire Transfer Policy",
+    "type": "policy",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-AOP-04@v4/s3/c6",
+   "text": "Every signer must present one separate identification documents before the account is opened.",
+   "heading": "Steps",
+   "document": {
+    "title": "Verifying Customer Identification",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "PRO-BOP-01@v2/s3/c6",
+   "text": "Vault combinations are changed every 12 months and whenever an employee who knows the combination leaves.",
+   "heading": "Steps",
+   "document": {
+    "title": "Opening the Branch Each Morning",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  }
+ ],
+ "input_hash": "482864e68d8e89b0377e97a4e5d0dcc5a3e6e23bd89287790460a896b12927b3",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\":[{\"clause\":\"JA-HLD-03@v3/s1/c2\",\"atoms\":[{\"attribute\":\"hold_new_account\",\"value\":{\"type\":\"duration\",\"n\":5,\"unit\":\"business_days\"},\"quote\":\"5 business days\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]},{\"clause\":\"JA-LND-02@v2/s1/c1\",\"atoms\":[{\"attribute\":\"lend_rate_rm\",\"value\":{\"type\":\"percent\",\"bp\":100},\"quote\":\"1.00%\",\"actor\":\"regional_manager\",\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]},{\"clause\":\"JA-REC-01@v4/s1/c2\",\"atoms\":[{\"attribute\":\"records_destroy_role\",\"value\":{\"type\":\"role\",\"role\":\"operations_specialist\"},\"quote\":\"operations specialist\",\"actor\":\"operations_specialist\",\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]},{\"clause\":\"POL-AOP-01@v5/s3/c2\",\"atoms\":[{\"attribute\":\"ao_exception_approver\",\"value\":{\"type\":\"role\",\"role\":\"branch_manager\"},\"quote\":\"branch manager\",\"actor\":\"branch_manager\",\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]},{\"clause\":\"POL-CSH-01@v4/s4/c3\",\"atoms\":[{\"attribute\":\"atm_daily_limit\",\"value\":{\"type\":\"money\",\"dollars\":800},\"quote\":\"$800\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":\"Consumer debit cards\",\"condition\":null}]},{\"clause\":\"POL-DSP-01@v5/s4/c3\",\"atoms\":[{\"attribute\":\"card_replacement\",\"value\":{\"type\":\"duration\",\"n\":7,\"unit\":\"business_days\"},\"quote\":\"7 business days\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]},{\"clause\":\"POL-ODR-01@v2/s3/c1\",\"atoms\":[{\"attribute\":\"od_fee\",\"value\":{\"type\":\"money\",\"dollars\":30},\"quote\":\"$30\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]},{\"clause\":\"POL-WIR-01@v2/s4/c2\",\"atoms\":[{\"attribute\":\"wire_second_approval\",\"value\":{\"type\":\"money\",\"dollars\":50000},\"quote\":\"$50,000\",\"actor\":\"operations_manager\",\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]},{\"clause\":\"PRO-AOP-04@v4/s3/c6\",\"atoms\":[{\"attribute\":\"ao_id_count\",\"value\":{\"type\":\"count\",\"n\":1},\"quote\":\"one\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]},{\"clause\":\"PRO-BOP-01@v2/s3/c6\",\"atoms\":[{\"attribute\":\"combo_change\",\"value\":{\"type\":\"duration\",\"n\":12,\"unit\":\"months\"},\"quote\":\"12 months\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":\"and whenever an employee who knows the combination leaves\"}]}]}",
+   "problems": [],
+   "meta": {
+    "ms": 9119,
+    "input_tokens": 2631,
+    "output_tokens": 790,
+    "cost_usd": 0.06581,
+    "usage": {
+     "prompt_tokens": 2631,
+     "completion_tokens": 790,
+     "total_tokens": 3421,
+     "prompt_tokens_details": {
+      "cached_tokens": 1728,
+      "cache_write_tokens": 900,
+      "audio_tokens": 0
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 128,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+     }
+    },
+    "models": [
+     "gpt-6-astra"
+    ],
+    "stop_reason": "stop"
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T17:19:52+00:00"
+}

@@ -1,0 +1,167 @@
+{
+ "step": "extract",
+ "tag": "6202",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "dcc761e46c6ec579c01b9dfd540df3c2fa4bba3b6b5ec777aa2cf9c9c62aa411",
+ "input": [
+  {
+   "clause": "PRO-CSH-06@v3/s3/c5",
+   "text": "Use the counterfeit detection pen on bills of fifty dollars or more.",
+   "heading": "Steps",
+   "document": {
+    "title": "Ordering Cash Shipments",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-CSH-07@v2/s3/c3",
+   "text": "Keep your drawer locked whenever you step away from the teller line.",
+   "heading": "Steps",
+   "document": {
+    "title": "Counting Cash Under Dual Control",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-CSH-07@v2/s3/c4",
+   "text": "Use the counterfeit detection pen on bills of fifty dollars or more.",
+   "heading": "Steps",
+   "document": {
+    "title": "Counting Cash Under Dual Control",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-CSH-07@v2/s3/c5",
+   "text": "Report any shortage or overage to the head teller before you leave for the day.",
+   "heading": "Steps",
+   "document": {
+    "title": "Counting Cash Under Dual Control",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-DSP-01@v1/s5/c1",
+   "text": "Provisional credit is issued within 10 business days of receiving a completed dispute, whatever its review status.",
+   "heading": "Related requirements",
+   "document": {
+    "title": "Taking a Debit Card Dispute",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "PRO-DSP-02@v4/s5/c1",
+   "text": "Card services specialists review disputes in the order they arrive.",
+   "heading": "Related requirements",
+   "document": {
+    "title": "Issuing Provisional Credit",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "PRO-FEE-01@v1/s3/c2",
+   "text": "Review recurring waiver requests with the branch manager at the monthly meeting.",
+   "heading": "Steps",
+   "document": {
+    "title": "Processing a Fee Waiver Request",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "PRO-FEE-02@v2/s3/c6",
+   "text": "Review recurring waiver requests with the branch manager at the monthly meeting.",
+   "heading": "Steps",
+   "document": {
+    "title": "Reversing a Service Fee",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "PRO-FEE-02@v2/s3/c8",
+   "text": "Each account may receive no more than two fee waivers in a calendar year.",
+   "heading": "Steps",
+   "document": {
+    "title": "Reversing a Service Fee",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "PRO-FEE-02@v2/s3/c10",
+   "text": "For small business accounts, limit fee waivers to three per account in each calendar year.",
+   "heading": "Steps",
+   "document": {
+    "title": "Reversing a Service Fee",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  }
+ ],
+ "input_hash": "dffda069eda4ba27f096444b7282e8c2ea2ec76324617fb69ec7f01f9f1862d6",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [\n{\"clause\": \"PRO-CSH-06@v3/s3/c5\", \"atoms\": []},\n{\"clause\": \"PRO-CSH-07@v2/s3/c3\", \"atoms\": []},\n{\"clause\": \"PRO-CSH-07@v2/s3/c4\", \"atoms\": []},\n{\"clause\": \"PRO-CSH-07@v2/s3/c5\", \"atoms\": []},\n{\"clause\": \"PRO-DSP-01@v1/s5/c1\", \"atoms\": [\n{\"attribute\": \"dispute_provisional_credit\", \"value\": {\"type\": \"duration\", \"n\": 10, \"unit\": \"business_days\"}, \"quote\": \"10 business days\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}\n]},\n{\"clause\": \"PRO-DSP-02@v4/s5/c1\", \"atoms\": []},\n{\"clause\": \"PRO-FEE-01@v1/s3/c2\", \"atoms\": []},\n{\"clause\": \"PRO-FEE-02@v2/s3/c6\", \"atoms\": []},\n{\"clause\": \"PRO-FEE-02@v2/s3/c8\", \"atoms\": [\n{\"attribute\": \"fee_waivers_per_year\", \"value\": {\"type\": \"count\", \"n\": 2}, \"quote\": \"two\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}\n]},\n{\"clause\": \"PRO-FEE-02@v2/s3/c10\", \"atoms\": [\n{\"attribute\": \"fee_waivers_per_year\", \"value\": {\"type\": \"count\", \"n\": 3}, \"quote\": \"three\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": \"For small business accounts\", \"condition\": null}\n]}\n]}",
+   "problems": [],
+   "meta": {
+    "ms": 7153,
+    "api_ms": 6894,
+    "input_tokens": 8914,
+    "output_tokens": 1037,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 6230,
+     "cache_read_input_tokens": 2682,
+     "output_tokens": 1037,
+     "output_tokens_details": {
+      "thinking_tokens": 449
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 6230,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 1037,
+       "cache_read_input_tokens": 2682,
+       "cache_creation_input_tokens": 6230,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 6230
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.0355622,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T04:11:10+00:00"
+}

@@ -1,0 +1,114 @@
+{
+ "step": "assist",
+ "tag": "cmp-6101",
+ "model": "claude-haiku",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "haiku",
+  "client_context": true
+ },
+ "prompt_hash": "66c01f0da9f327e74355d39363e55b642a1bbf8dc6249974c3afbf3cb3d6ccd5",
+ "input": [
+  {
+   "question": "q-C-01",
+   "text": "How large a rate exception can a regional manager approve?",
+   "type": "percent",
+   "clauses": [
+    {
+     "id": "PRO-LND-03@v4/s3/c9",
+     "text": "A regional manager can approve a rate exception as large as 0.50%.",
+     "title": "Documenting Pricing Exceptions",
+     "type": "procedure",
+     "version": 4,
+     "effective": "2025-06-20"
+    },
+    {
+     "id": "JA-LND-02@v2/s1/c1",
+     "text": "Regional manager rate exception limit | 1.00%",
+     "title": "Exception Documentation Checklist",
+     "type": "job_aid",
+     "version": 2,
+     "effective": "2025-11-09"
+    },
+    {
+     "id": "BUL-LND-01@v2/s1/c2",
+     "text": "Regional managers may approve rate exceptions of up to 0.75%.",
+     "title": "Branch Bulletin 2025-16: Regional manager rate exception limit",
+     "type": "bulletin",
+     "version": 2,
+     "effective": "2026-01-27"
+    },
+    {
+     "id": "POL-LND-01@v3/s3/c1",
+     "text": "Regional managers may approve rate exceptions of up to 0.50%.",
+     "title": "Loan Pricing Exception Policy",
+     "type": "policy",
+     "version": 3,
+     "effective": "2026-06-18"
+    },
+    {
+     "id": "POL-AOP-02@v3/s3/c1",
+     "text": "Only a manager can approve an exception to the identification requirements.",
+     "title": "Customer Identification Policy",
+     "type": "policy",
+     "version": 3,
+     "effective": "2026-02-28"
+    }
+   ]
+  }
+ ],
+ "input_hash": "dccbc94e493fb78efadc3e548e999f6dbaa3c4d7c629b56a2c6f63b3c4214e22",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [{\"question\": \"q-C-01\", \"answer\": \"The sources disagree. The Loan Pricing Exception Policy and the Documenting Pricing Exceptions procedure both set the regional manager limit at 0.50%. The branch bulletin sets it at 0.75% and the Exception Documentation Checklist job aid sets it at 1.00%. Because the policy outranks the bulletin and the job aid, 0.50% is the limit that applies.\", \"citations\": [\"POL-LND-01@v3/s3/c1\", \"PRO-LND-03@v4/s3/c9\", \"BUL-LND-01@v2/s1/c2\", \"JA-LND-02@v2/s1/c1\"], \"sources_disagree\": true}]}",
+   "problems": [],
+   "meta": {
+    "ms": 6998,
+    "api_ms": 6876,
+    "input_tokens": 6145,
+    "output_tokens": 1506,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 6143,
+     "cache_read_input_tokens": 0,
+     "output_tokens": 1506,
+     "output_tokens_details": {
+      "thinking_tokens": 1261
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 6143,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 1506,
+       "cache_read_input_tokens": 0,
+       "cache_creation_input_tokens": 6143,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 6143
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.0019818,
+    "models": [
+     "claude-haiku-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T17:19:10+00:00"
+}

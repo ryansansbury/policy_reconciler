@@ -1,0 +1,208 @@
+{
+ "step": "draft",
+ "tag": "2026",
+ "model": "claude-opus",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "opus",
+  "client_context": true
+ },
+ "prompt_hash": "d412e32e9168de04c00c3959530ebecb6630d0f9092d4afc1f9c308a4695a32e",
+ "input": [
+  {
+   "group": "g-06709e03",
+   "rule": "Notice before dormancy",
+   "attribute": "dormant_notice",
+   "type": "duration",
+   "keep": {
+    "clause": "POL-DRM-01@v6/s4/c2",
+    "text": "Customers receive written notice 30 days before their account becomes dormant.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Dormant Account Policy",
+     "type": "policy",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "change": [
+    {
+     "clause": "BUL-DRM-01@v3/s1/c2",
+     "text": "Customers receive written notice 60 days before their account becomes dormant.",
+     "heading": "What branches need to know",
+     "document": {
+      "title": "Branch Bulletin 2025-10: Notice before dormancy",
+      "type": "bulletin",
+      "applies_to": "All branches. Consumer and small business accounts."
+     }
+    },
+    {
+     "clause": "JA-DRM-02@v2/s1/c1",
+     "text": "Notice before dormancy | 45 days",
+     "heading": "Quick reference",
+     "document": {
+      "title": "Dormancy Notice Checklist",
+      "type": "job_aid",
+      "applies_to": "All branches. Consumer and small business accounts."
+     }
+    }
+   ],
+   "allowed": {
+    "BUL-DRM-02@v3/s1/c2#value": "30 days",
+    "FAQ-DRM-01@v1/s1/c1#value": "30 days",
+    "JA-DRM-01@v4/s1/c1#value": "30 days",
+    "POL-DRM-01@v6/s4/c2#value": "30 days",
+    "PRO-DRM-01@v1/s3/c5#value": "30 days",
+    "PRO-DRM-02@v2/s3/c7#value": "30 days",
+    "PRO-DRM-03@v1/s3/c5#value": "30 days",
+    "PRO-DRM-04@v3/s3/c5#value": "30 days"
+   },
+   "placeholder": "{clause:POL-DRM-01@v6/s4/c2#value}"
+  },
+  {
+   "group": "g-76e59fc8",
+   "rule": "Fee refund window",
+   "attribute": "fee_refund_window",
+   "type": "duration",
+   "keep": {
+    "clause": "POL-FEE-01@v2/s4/c1",
+    "text": "Customers may request a fee refund within 60 days of the statement date.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Service Fee Waiver Policy",
+     "type": "policy",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "change": [
+    {
+     "clause": "BUL-FEE-01@v1/s1/c2",
+     "text": "Fee refund requests are accepted for 30 days after the statement date.",
+     "heading": "What branches need to know",
+     "document": {
+      "title": "Branch Bulletin 2025-13: Fee refund request window",
+      "type": "bulletin",
+      "applies_to": "All branches. Consumer and small business accounts."
+     }
+    },
+    {
+     "clause": "PRO-FEE-06@v1/s3/c6",
+     "text": "Customers may request a fee refund within 90 days of the statement date.",
+     "heading": "Steps",
+     "document": {
+      "title": "Explaining Fees to a New Customer",
+      "type": "procedure",
+      "applies_to": "All branches. Consumer and small business accounts."
+     }
+    }
+   ],
+   "allowed": {
+    "JA-FEE-03@v3/s1/c2#value": "60 days",
+    "POL-FEE-01@v2/s4/c1#value": "60 days",
+    "PRO-FEE-01@v1/s3/c1#value": "60 days",
+    "PRO-FEE-02@v2/s3/c5#value": "60 days"
+   },
+   "placeholder": "{clause:POL-FEE-01@v2/s4/c1#value}"
+  },
+  {
+   "group": "g-8dd7694e",
+   "rule": "Branch manager fee waiver limit",
+   "attribute": "fee_waiver_bm",
+   "type": "money",
+   "keep": {
+    "clause": "POL-FEE-01@v2/s3/c2",
+    "text": "The most a branch manager can waive for one account in a calendar year is $50.",
+    "heading": "Policy statements",
+    "document": {
+     "title": "Service Fee Waiver Policy",
+     "type": "policy",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "change": [
+    {
+     "clause": "FAQ-FEE-02@v2/s1/c1",
+     "text": "The most a branch manager can waive for one account in a calendar year is $75.",
+     "heading": "How much can a branch manager waive in fees for one account in a year?",
+     "document": {
+      "title": "Fee Refund Questions",
+      "type": "faq",
+      "applies_to": "All branches. Consumer and small business accounts."
+     }
+    },
+    {
+     "clause": "PRO-FEE-01@v1/s3/c5",
+     "text": "The most a branch manager can waive for one account in a calendar year is $100.",
+     "heading": "Steps",
+     "document": {
+      "title": "Processing a Fee Waiver Request",
+      "type": "procedure",
+      "applies_to": "All branches. Consumer and small business accounts."
+     }
+    }
+   ],
+   "allowed": {
+    "BUL-FEE-02@v3/s1/c2#value": "$50",
+    "FAQ-FEE-01@v3/s1/c1#value": "$50",
+    "JA-FEE-01@v1/s1/c2#value": "$50",
+    "JA-FEE-03@v3/s1/c3#value": "$50",
+    "POL-FEE-01@v2/s3/c2#value": "$50",
+    "POL-FEE-02@v6/s3/c1#value": "$50"
+   },
+   "placeholder": "{clause:POL-FEE-01@v2/s3/c2#value}"
+  }
+ ],
+ "input_hash": "38bccdeeca6b013638d07e296cf2a9b96914d5d458f52c22b03699d83648f25f",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [{\"group\": \"g-06709e03\", \"title\": \"Notice before an account becomes dormant\", \"text\": \"Customers receive written notice {clause:POL-DRM-01@v6/s4/c2#value} before their account becomes dormant.\"}, {\"group\": \"g-76e59fc8\", \"title\": \"Fee refund request window\", \"text\": \"Customers may request a fee refund within {clause:POL-FEE-01@v2/s4/c1#value} of the statement date.\"}, {\"group\": \"g-8dd7694e\", \"title\": \"Branch manager fee waivers\", \"text\": \"A branch manager may waive up to {clause:POL-FEE-01@v2/s3/c2#value} in fees for one account in a calendar year.\"}]}",
+   "problems": [],
+   "meta": {
+    "ms": 4931,
+    "api_ms": 4792,
+    "input_tokens": 8076,
+    "output_tokens": 389,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 7000,
+     "cache_read_input_tokens": 1074,
+     "output_tokens": 389,
+     "output_tokens_details": {
+      "thinking_tokens": 149
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 7000,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 389,
+       "cache_read_input_tokens": 1074,
+       "cache_creation_input_tokens": 7000,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 7000
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.0640028,
+    "models": [
+     "claude-opus-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T05:57:37+00:00"
+}

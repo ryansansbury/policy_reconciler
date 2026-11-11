@@ -1,0 +1,85 @@
+{
+ "step": "assist",
+ "tag": "cmp-6101",
+ "model": "google-a",
+ "backend": {
+  "vendor": "Google",
+  "model": "gemini-3.1-pro-preview",
+  "label": "Gemini 3.1 Pro"
+ },
+ "prompt_hash": "66c01f0da9f327e74355d39363e55b642a1bbf8dc6249974c3afbf3cb3d6ccd5",
+ "input": [
+  {
+   "question": "q-C-08",
+   "text": "How long are closed account records kept?",
+   "type": "duration",
+   "clauses": [
+    {
+     "id": "FAQ-REC-01@v2/s1/c1",
+     "text": "Account records are kept for 7 years after the account closes.",
+     "title": "Records Retention FAQ",
+     "type": "faq",
+     "version": 2,
+     "effective": "2025-11-04"
+    },
+    {
+     "id": "FAQ-REC-02@v4/s1/c1",
+     "text": "Account records are kept for 7 years after the account closes.",
+     "title": "Legal Hold Questions",
+     "type": "faq",
+     "version": 4,
+     "effective": "2025-10-02"
+    },
+    {
+     "id": "POL-REC-01@v4/s4/c1",
+     "text": "Account records are kept for 7 years after the account closes.",
+     "title": "Records Retention Policy",
+     "type": "policy",
+     "version": 4,
+     "effective": "2025-04-11"
+    },
+    {
+     "id": "PRO-REC-01@v4/s3/c3",
+     "text": "Account records are kept for 7 years after the account closes.",
+     "title": "Retaining Closed Account Records",
+     "type": "procedure",
+     "version": 4,
+     "effective": "2026-08-05"
+    },
+    {
+     "id": "PRO-REC-02@v3/s3/c5",
+     "text": "Account records are kept for 7 years after the account closes.",
+     "title": "Approving Records Destruction",
+     "type": "procedure",
+     "version": 3,
+     "effective": "2026-03-12"
+    }
+   ]
+  }
+ ],
+ "input_hash": "5a692ffb49ba9ab127a9c6df2b98da84deee8a08fb852f4696bd87c9cbb9b4c7",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [{\"question\": \"q-C-08\", \"answer\": \"Closed account records are kept for 7 years after the account closes.\", \"citations\": [\"FAQ-REC-01@v2/s1/c1\", \"FAQ-REC-02@v4/s1/c1\", \"POL-REC-01@v4/s4/c1\", \"PRO-REC-01@v4/s3/c3\", \"PRO-REC-02@v3/s3/c5\"], \"sources_disagree\": false}]}",
+   "problems": [],
+   "meta": {
+    "ms": 6561,
+    "input_tokens": 954,
+    "output_tokens": 929,
+    "cost_usd": 0.013056,
+    "usage": {
+     "completion_tokens": 128,
+     "prompt_tokens": 954,
+     "total_tokens": 1883
+    },
+    "models": [
+     "gemini-3.1-pro-preview"
+    ],
+    "stop_reason": "stop"
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T17:28:12+00:00"
+}

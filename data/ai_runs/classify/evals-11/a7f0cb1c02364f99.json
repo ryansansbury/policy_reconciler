@@ -1,0 +1,362 @@
+{
+ "step": "classify",
+ "tag": "evals-11",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "2c908358fde9f0f4a792753579a6cfaa33476e41c4b0f235744675d8e8283a19",
+ "input": [
+  {
+   "pair": "pair-a5d02be49a",
+   "rule": null,
+   "attribute": null,
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-LND-06@v3/s3/c2",
+    "text": "Enter the requested rate and the reason for the exception in the pricing worksheet.",
+    "heading": "Steps",
+    "document": {
+     "title": "Escalating Exceptions Above Branch Authority",
+     "type": "procedure",
+     "version": 3,
+     "effective": "2025-07-04",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "PRO-LND-01@v3/s5/c1",
+    "text": "Enter the requested rate and the reason for the exception in the pricing worksheet.",
+    "heading": "Steps to follow",
+    "document": {
+     "title": "Requesting a Rate Exception",
+     "type": "procedure",
+     "version": 3,
+     "effective": "2025-12-17",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-e554a580f9",
+   "rule": null,
+   "attribute": null,
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-REC-02@v1/s3/c4",
+    "text": "Log every box sent offsite in the records inventory.",
+    "heading": "Steps",
+    "document": {
+     "title": "Approving Records Destruction",
+     "type": "procedure",
+     "version": 1,
+     "effective": "2026-03-15",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "PRO-REC-03@v3/s5/c1",
+    "text": "Log every box sent offsite in the records inventory.",
+    "heading": "Steps to follow",
+    "document": {
+     "title": "Placing Records on Legal Hold",
+     "type": "procedure",
+     "version": 3,
+     "effective": "2026-08-08",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-f21f921f5b",
+   "rule": "Outgoing wire cutoff",
+   "attribute": "wire_cutoff",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-WIR-06@v2/s3/c1",
+    "text": "The cutoff for outgoing consumer and small business wires is 3:00 p.m. Central time.",
+    "heading": "Steps",
+    "document": {
+     "title": "Recalling or Cancelling a Wire",
+     "type": "procedure",
+     "version": 2,
+     "effective": "2025-08-13",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "JA-WIR-03@v1/s3/c1",
+    "text": "The cutoff for outgoing consumer and small business wires is 3:00 p.m. Central time.",
+    "heading": "Steps to follow",
+    "document": {
+     "title": "Wire Cutoff Card",
+     "type": "job_aid",
+     "version": 1,
+     "effective": "2025-12-30",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-46de7f55b3",
+   "rule": null,
+   "attribute": null,
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-HLD-02@v2/s3/c5",
+    "text": "Release a hold early only with your manager's approval.",
+    "heading": "Steps",
+    "document": {
+     "title": "Extending a Hold on a Large Deposit",
+     "type": "procedure",
+     "version": 2,
+     "effective": "2026-06-01",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "JA-HLD-03@v1/s3/c1",
+    "text": "Release a hold early only with your manager's approval.",
+    "heading": "Steps to follow",
+    "document": {
+     "title": "Hold Notice Checklist",
+     "type": "job_aid",
+     "version": 1,
+     "effective": "2026-05-01",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-ba4d7c9c6d",
+   "rule": null,
+   "attribute": null,
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-DRM-01@v1/s3/c4",
+    "text": "Verify the customer's identity before reactivating a dormant account.",
+    "heading": "Steps",
+    "document": {
+     "title": "Identifying Dormant Accounts",
+     "type": "procedure",
+     "version": 1,
+     "effective": "2025-05-25",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "PRO-DRM-02@v1/s5/c1",
+    "text": "Verify the customer's identity before reactivating a dormant account.",
+    "heading": "Steps to follow",
+    "document": {
+     "title": "Sending Dormancy Notices",
+     "type": "procedure",
+     "version": 1,
+     "effective": "2026-07-08",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-0066542eac",
+   "rule": null,
+   "attribute": null,
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-LND-04@v1/s3/c2",
+    "text": "Enter the requested rate and the reason for the exception in the pricing worksheet.",
+    "heading": "Steps",
+    "document": {
+     "title": "Reviewing Exception Reports Each Month",
+     "type": "procedure",
+     "version": 1,
+     "effective": "2026-04-12",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "PRO-LND-01@v3/s6/c1",
+    "text": "Enter the requested rate and the reason for the exception in the pricing worksheet.",
+    "heading": "Steps to follow",
+    "document": {
+     "title": "Requesting a Rate Exception",
+     "type": "procedure",
+     "version": 3,
+     "effective": "2025-12-17",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-0696daa705",
+   "rule": null,
+   "attribute": null,
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-DRM-01@v1/s3/c4",
+    "text": "Verify the customer's identity before reactivating a dormant account.",
+    "heading": "Steps",
+    "document": {
+     "title": "Identifying Dormant Accounts",
+     "type": "procedure",
+     "version": 1,
+     "effective": "2025-05-25",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "PRO-DRM-03@v2/s5/c1",
+    "text": "Verify the client's identity before reactivating a dormant account.",
+    "heading": "Steps to follow",
+    "document": {
+     "title": "Reactivating a Dormant Account",
+     "type": "procedure",
+     "version": 2,
+     "effective": "2024-11-06",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-f1ef06bfbb",
+   "rule": "Closed account record retention",
+   "attribute": "records_retention",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-REC-03@v3/s3/c2",
+    "text": "Account records are kept for 7 years after the account closes.",
+    "heading": "Steps",
+    "document": {
+     "title": "Placing Records on Legal Hold",
+     "type": "procedure",
+     "version": 3,
+     "effective": "2026-08-08",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "PRO-REC-05@v1/s5/c1",
+    "text": "Account records are kept for 7 years after the account closes.",
+    "heading": "Steps to follow",
+    "document": {
+     "title": "Shipping Records to Offsite Storage",
+     "type": "procedure",
+     "version": 1,
+     "effective": "2026-03-28",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  }
+ ],
+ "input_hash": "ca3280d99c624cc3a5ce9004b4194cd78e6284401b94296f062f0b529dc7b5d6",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [{\"pair\": \"pair-a5d02be49a\", \"label\": \"duplicate\", \"quote_a\": \"Enter the requested rate and the reason for the exception in the pricing worksheet.\", \"quote_b\": \"Enter the requested rate and the reason for the exception in the pricing worksheet.\", \"rationale\": \"The same procedural step appears word for word in two procedures. A policy owner would keep one copy and point to it from the other.\"}, {\"pair\": \"pair-e554a580f9\", \"label\": \"duplicate\", \"quote_a\": \"Log every box sent offsite in the records inventory.\", \"quote_b\": \"Log every box sent offsite in the records inventory.\", \"rationale\": \"The same step is copied word for word into the destruction procedure and the legal hold procedure. One copy with a pointer would replace both.\"}, {\"pair\": \"pair-f21f921f5b\", \"label\": \"consistent\", \"quote_a\": \"The cutoff for outgoing consumer and small business wires is 3:00 p.m. Central time.\", \"quote_b\": \"The cutoff for outgoing consumer and small business wires is 3:00 p.m. Central time.\", \"rationale\": \"Both clauses state the same cutoff rule with the same value. The job aid simply repeats what the procedure says, so staff would act the same way under either.\"}, {\"pair\": \"pair-46de7f55b3\", \"label\": \"consistent\", \"quote_a\": \"Release a hold early only with your manager's approval.\", \"quote_b\": \"Release a hold early only with your manager's approval.\", \"rationale\": \"Both clauses require the same approver for an early release in the same scope. Staff following either one would act the same way.\"}, {\"pair\": \"pair-ba4d7c9c6d\", \"label\": \"duplicate\", \"quote_a\": \"Verify the customer's identity before reactivating a dormant account.\", \"quote_b\": \"Verify the customer's identity before reactivating a dormant account.\", \"rationale\": \"The same step is copied word for word into two procedures on dormant accounts. One copy with a pointer would replace both.\"}, {\"pair\": \"pair-0066542eac\", \"label\": \"duplicate\", \"quote_a\": \"Enter the requested rate and the reason for the exception in the pricing worksheet.\", \"quote_b\": \"Enter the requested rate and the reason for the exception in the pricing worksheet.\", \"rationale\": \"The monthly review procedure repeats a step copied word for word from the rate exception request procedure. A policy owner would keep one copy and point to it.\"}, {\"pair\": \"pair-0696daa705\", \"label\": \"consistent\", \"quote_a\": \"Verify the customer's identity before reactivating a dormant account.\", \"quote_b\": \"Verify the client's identity before reactivating a dormant account.\", \"rationale\": \"Both clauses require identity verification before reactivation, and only the word for the person differs. The wording is not an exact copy and staff would act the same way under either.\"}, {\"pair\": \"pair-f1ef06bfbb\", \"label\": \"consistent\", \"quote_a\": \"Account records are kept for 7 years after the account closes.\", \"quote_b\": \"Account records are kept for 7 years after the account closes.\", \"rationale\": \"Both clauses set the same retention period of 7 years after closing. They state the same rule with the same value, so they agree.\"}]}",
+   "problems": [
+    "pair-f21f921f5b: the rationale has a comma before so. End the sentence there and start the next one",
+    "pair-f1ef06bfbb: the rationale has a comma before so. End the sentence there and start the next one"
+   ],
+   "meta": {
+    "ms": 12541,
+    "api_ms": 12364,
+    "input_tokens": 8851,
+    "output_tokens": 1777,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 8008,
+     "cache_read_input_tokens": 841,
+     "output_tokens": 1777,
+     "output_tokens_details": {
+      "thinking_tokens": 713
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 8008,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 1777,
+       "cache_read_input_tokens": 841,
+       "cache_creation_input_tokens": 8008,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 8008
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.0498901,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  },
+  {
+   "reply": "{\"results\": [{\"pair\": \"pair-f21f921f5b\", \"label\": \"consistent\", \"quote_a\": \"The cutoff for outgoing consumer and small business wires is 3:00 p.m. Central time.\", \"quote_b\": \"The cutoff for outgoing consumer and small business wires is 3:00 p.m. Central time.\", \"rationale\": \"Both clauses state the same cutoff for the same wires with the same value. A single sentence stating a rule is consistent even when the wording matches exactly.\"}, {\"pair\": \"pair-f1ef06bfbb\", \"label\": \"consistent\", \"quote_a\": \"Account records are kept for 7 years after the account closes.\", \"quote_b\": \"Account records are kept for 7 years after the account closes.\", \"rationale\": \"Both clauses set the same retention period of 7 years after the account closes. Staff following either one would act the same way.\"}]}",
+   "problems": [],
+   "meta": {
+    "ms": 4764,
+    "api_ms": 4547,
+    "input_tokens": 6641,
+    "output_tokens": 578,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 5798,
+     "cache_read_input_tokens": 841,
+     "output_tokens": 578,
+     "output_tokens_details": {
+      "thinking_tokens": 291
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 5798,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 578,
+       "cache_read_input_tokens": 841,
+       "cache_creation_input_tokens": 5798,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 5798
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.0290601,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   },
+   "items": [
+    "pair-f21f921f5b",
+    "pair-f1ef06bfbb"
+   ]
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T03:55:27+00:00"
+}

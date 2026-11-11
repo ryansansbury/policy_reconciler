@@ -1,0 +1,96 @@
+{
+ "step": "assist",
+ "tag": "cmp-6101",
+ "model": "openai-b",
+ "backend": {
+  "vendor": "OpenAI",
+  "model": "gpt-6-luna",
+  "label": "GPT-6 Luna"
+ },
+ "prompt_hash": "66c01f0da9f327e74355d39363e55b642a1bbf8dc6249974c3afbf3cb3d6ccd5",
+ "input": [
+  {
+   "question": "q-C-13",
+   "text": "What is the cutoff for outgoing consumer wires?",
+   "type": "time",
+   "clauses": [
+    {
+     "id": "POL-WIR-01@v2/s3/c1",
+     "text": "The cutoff for outgoing commercial wires is 4:00 PM Central time.",
+     "title": "Wire Transfer Policy",
+     "type": "policy",
+     "version": 2,
+     "effective": "2026-08-02"
+    },
+    {
+     "id": "PRO-WIR-03@v3/s3/c2",
+     "text": "The cutoff for outgoing commercial wires is 2:00 PM Central time.",
+     "title": "Completing Wire Callback Verification",
+     "type": "procedure",
+     "version": 3,
+     "effective": "2024-12-08"
+    },
+    {
+     "id": "PRO-WIR-04@v1/s3/c7",
+     "text": "The cutoff for outgoing commercial wires is 4:00 PM Central time.",
+     "title": "Handling Incoming Wires",
+     "type": "procedure",
+     "version": 1,
+     "effective": "2025-02-25"
+    },
+    {
+     "id": "PRO-WIR-05@v1/s3/c9",
+     "text": "The cutoff for outgoing commercial wires is 4:00 p.m. Central time.",
+     "title": "Wire Cutoffs on Holidays and Weekends",
+     "type": "procedure",
+     "version": 1,
+     "effective": "2025-04-08"
+    },
+    {
+     "id": "JA-WIR-02@v4/s1/c3",
+     "text": "Outgoing wire cutoff (consumer and small business) | 3:00 PM Central",
+     "title": "Callback Checklist",
+     "type": "job_aid",
+     "version": 4,
+     "effective": "2026-05-28"
+    }
+   ]
+  }
+ ],
+ "input_hash": "0646accc71151e752d29fafbd670223020d53c9316d96e7d431ba66ccef7ad09",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\":[{\"question\":\"q-C-13\",\"answer\":\"The cutoff for outgoing consumer wires is 3:00 PM Central time according to the Callback Checklist.\",\"citations\":[\"JA-WIR-02@v4/s1/c3\"],\"sources_disagree\":false}]}",
+   "problems": [],
+   "meta": {
+    "ms": 3781,
+    "input_tokens": 870,
+    "output_tokens": 114,
+    "cost_usd": 0.000144,
+    "usage": {
+     "prompt_tokens": 870,
+     "completion_tokens": 114,
+     "total_tokens": 984,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 48,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+     }
+    },
+    "models": [
+     "gpt-6-luna"
+    ],
+    "stop_reason": "stop"
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T17:23:27+00:00"
+}

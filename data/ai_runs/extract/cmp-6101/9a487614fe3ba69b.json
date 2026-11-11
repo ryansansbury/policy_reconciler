@@ -1,0 +1,138 @@
+{
+ "step": "extract",
+ "tag": "cmp-6101",
+ "model": "google-a",
+ "backend": {
+  "vendor": "Google",
+  "model": "gemini-3.1-pro-preview",
+  "label": "Gemini 3.1 Pro"
+ },
+ "prompt_hash": "dcc761e46c6ec579c01b9dfd540df3c2fa4bba3b6b5ec777aa2cf9c9c62aa411",
+ "input": [
+  {
+   "clause": "ADD-CO-01@v1/s2/c2",
+   "text": "In Colorado branches, accounts open fewer than 60 days are new accounts for hold and limit purposes.",
+   "heading": "Colorado requirements",
+   "document": {
+    "title": "Colorado Branch Addendum",
+    "type": "addendum",
+    "applies_to": "Colorado branches. All business lines."
+   }
+  },
+  {
+   "clause": "ADD-CO-01@v1/s2/c3",
+   "text": "In Colorado branches, account records are kept for 5 years after the account closes.",
+   "heading": "Colorado requirements",
+   "document": {
+    "title": "Colorado Branch Addendum",
+    "type": "addendum",
+    "applies_to": "Colorado branches. All business lines."
+   }
+  },
+  {
+   "clause": "ADD-KS-01@v1/s2/c2",
+   "text": "In Kansas branches, customers have 30 days from the statement date to dispute a debit card transaction.",
+   "heading": "Kansas requirements",
+   "document": {
+    "title": "Kansas Branch Addendum",
+    "type": "addendum",
+    "applies_to": "Kansas branches. All business lines."
+   }
+  },
+  {
+   "clause": "ADD-KS-01@v1/s2/c3",
+   "text": "In Kansas branches, complaints should be closed within 30 business days of the day they arrive.",
+   "heading": "Kansas requirements",
+   "document": {
+    "title": "Kansas Branch Addendum",
+    "type": "addendum",
+    "applies_to": "Kansas branches. All business lines."
+   }
+  },
+  {
+   "clause": "ADD-OK-01@v1/s2/c2",
+   "text": "In Oklahoma branches, vault combinations are changed every 12 months and whenever an employee who knows the combination leaves.",
+   "heading": "Oklahoma requirements",
+   "document": {
+    "title": "Oklahoma Branch Addendum",
+    "type": "addendum",
+    "applies_to": "Oklahoma branches. All business lines."
+   }
+  },
+  {
+   "clause": "ADD-OK-01@v1/s2/c3",
+   "text": "In Oklahoma branches, mail the customer a notice at least 60 days before the account is classified as dormant.",
+   "heading": "Oklahoma requirements",
+   "document": {
+    "title": "Oklahoma Branch Addendum",
+    "type": "addendum",
+    "applies_to": "Oklahoma branches. All business lines."
+   }
+  },
+  {
+   "clause": "ADD-TX-01@v1/s2/c2",
+   "text": "In Texas branches, dormant accounts are charged a maintenance fee of $3 per month.",
+   "heading": "Texas requirements",
+   "document": {
+    "title": "Texas Branch Addendum",
+    "type": "addendum",
+    "applies_to": "Texas branches. All business lines."
+   }
+  },
+  {
+   "clause": "ADD-TX-01@v1/s2/c3",
+   "text": "In Texas branches, refer an account for charge-off once it has been negative for 60 days.",
+   "heading": "Texas requirements",
+   "document": {
+    "title": "Texas Branch Addendum",
+    "type": "addendum",
+    "applies_to": "Texas branches. All business lines."
+   }
+  },
+  {
+   "clause": "BUL-BOP-01@v2/s1/c2",
+   "text": "Change the vault combination at least every 3 months.",
+   "heading": "What branches need to know",
+   "document": {
+    "title": "Branch Bulletin 2025-07: Vault combination change interval",
+    "type": "bulletin",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "BUL-CMP-02@v1/s1/c4",
+   "text": "Send the visit survey within 5 business days after the customer's branch visit.",
+   "heading": "What branches need to know",
+   "document": {
+    "title": "Branch Bulletin 2026-35: Complaint acknowledgment deadline",
+    "type": "bulletin",
+    "applies_to": "All branches. All business lines."
+   }
+  }
+ ],
+ "input_hash": "87a05ea4e43fcec148a8675e1dad7eedb24d2080f73b941ba4a4f360cc148489",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\n \"results\": [\n  {\n   \"clause\": \"ADD-CO-01@v1/s2/c2\",\n   \"atoms\": [\n    {\n     \"attribute\": \"ao_new_account_window\",\n     \"value\": {\n      \"type\": \"duration\",\n      \"n\": 60,\n      \"unit\": \"days\"\n     },\n     \"quote\": \"60 days\",\n     \"actor\": null,\n     \"actor_inferred\": false,\n     \"scope_quote\": \"In Colorado branches\",\n     \"condition\": null\n    }\n   ]\n  },\n  {\n   \"clause\": \"ADD-CO-01@v1/s2/c3\",\n   \"atoms\": [\n    {\n     \"attribute\": \"records_retention\",\n     \"value\": {\n      \"type\": \"duration\",\n      \"n\": 5,\n      \"unit\": \"years\"\n     },\n     \"quote\": \"5 years\",\n     \"actor\": null,\n     \"actor_inferred\": false,\n     \"scope_quote\": \"In Colorado branches\",\n     \"condition\": null\n    }\n   ]\n  },\n  {\n   \"clause\": \"ADD-KS-01@v1/s2/c2\",\n   \"atoms\": [\n    {\n     \"attribute\": \"dispute_window\",\n     \"value\": {\n      \"type\": \"duration\",\n      \"n\": 30,\n      \"unit\": \"days\"\n     },\n     \"quote\": \"30 days\",\n     \"actor\": null,\n     \"actor_inferred\": false,\n     \"scope_quote\": \"In Kansas branches\",\n     \"condition\": null\n    }\n   ]\n  },\n  {\n   \"clause\": \"ADD-KS-01@v1/s2/c3\",\n   \"atoms\": [\n    {\n     \"attribute\": \"complaint_resolve\",\n     \"value\": {\n      \"type\": \"duration\",\n      \"n\": 30,\n      \"unit\": \"business_days\"\n     },\n     \"quote\": \"30 business days\",\n     \"actor\": null,\n     \"actor_inferred\": false,\n     \"scope_quote\": \"In Kansas branches\",\n     \"condition\": null\n    }\n   ]\n  },\n  {\n   \"clause\": \"ADD-OK-01@v1/s2/c2\",\n   \"atoms\": [\n    {\n     \"attribute\": \"combo_change\",\n     \"value\": {\n      \"type\": \"duration\",\n      \"n\": 12,\n      \"unit\": \"months\"\n     },\n     \"quote\": \"12 months\",\n     \"actor\": null,\n     \"actor_inferred\": false,\n     \"scope_quote\": \"In Oklahoma branches\",\n     \"condition\": \"and whenever an employee who knows the combination leaves\"\n    }\n   ]\n  },\n  {\n   \"clause\": \"ADD-OK-01@v1/s2/c3\",\n   \"atoms\": [\n    {\n     \"attribute\": \"dormant_notice\",\n     \"value\": {\n      \"type\": \"duration\",\n      \"n\": 60,\n      \"unit\": \"days\"\n     },\n     \"quote\": \"60 days\",\n     \"actor\": null,\n     \"actor_inferred\": false,\n     \"scope_quote\": \"In Oklahoma branches\",\n     \"condition\": null\n    }\n   ]\n  },\n  {\n   \"clause\": \"ADD-TX-01@v1/s2/c2\",\n   \"atoms\": [\n    {\n     \"attribute\": \"dormant_fee\",\n     \"value\": {\n      \"type\": \"money\",\n      \"dollars\": 3\n     },\n     \"quote\": \"$3\",\n     \"actor\": null,\n     \"actor_inferred\": false,\n     \"scope_quote\": \"In Texas branches\",\n     \"condition\": null\n    }\n   ]\n  },\n  {\n   \"clause\": \"ADD-TX-01@v1/s2/c3\",\n   \"atoms\": [\n    {\n     \"attribute\": \"od_chargeoff\",\n     \"value\": {\n      \"type\": \"duration\",\n      \"n\": 60,\n      \"unit\": \"days\"\n     },\n     \"quote\": \"60 days\",\n     \"actor\": null,\n     \"actor_inferred\": false,\n     \"scope_quote\": \"In Texas branches\",\n     \"condition\": null\n    }\n   ]\n  },\n  {\n   \"clause\": \"BUL-BOP-01@v2/s1/c2\",\n   \"atoms\": [\n    {\n     \"attribute\": \"combo_change\",\n     \"value\": {\n      \"type\": \"duration\",\n      \"n\": 3,\n      \"unit\": \"months\"\n     },\n     \"quote\": \"3 months\",\n     \"actor\": null,\n     \"actor_inferred\": false,\n     \"scope_quote\": null,\n     \"condition\": null\n    }\n   ]\n  },\n  {\n   \"clause\": \"BUL-CMP-02@v1/s1/c4\",\n   \"atoms\": [\n    {\n     \"attribute\": \"survey_send\",\n     \"value\": {\n      \"type\": \"duration\",\n      \"n\": 5,\n      \"unit\": \"business_days\"\n     },\n     \"quote\": \"5 business days\",\n     \"actor\": null,\n     \"actor_inferred\": false,\n     \"scope_quote\": null,\n     \"condition\": null\n    }\n   ]\n  }\n ]\n}",
+   "problems": [],
+   "meta": {
+    "ms": 21998,
+    "input_tokens": 3012,
+    "output_tokens": 3695,
+    "cost_usd": 0.050364,
+    "usage": {
+     "completion_tokens": 1333,
+     "prompt_tokens": 3012,
+     "total_tokens": 6707
+    },
+    "models": [
+     "gemini-3.1-pro-preview"
+    ],
+    "stop_reason": "stop"
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T21:20:32+00:00"
+}

@@ -1,0 +1,167 @@
+{
+ "step": "extract",
+ "tag": "evals-6101",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "dcc761e46c6ec579c01b9dfd540df3c2fa4bba3b6b5ec777aa2cf9c9c62aa411",
+ "input": [
+  {
+   "clause": "JA-DRM-02@v2/s1/c1",
+   "text": "Monthly dormant account fee | $10",
+   "heading": "Quick reference",
+   "document": {
+    "title": "Dormancy Notice Checklist",
+    "type": "job_aid",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "JA-DRM-02@v2/s1/c2",
+   "text": "Inactivity before an account is dormant | 18 months",
+   "heading": "Quick reference",
+   "document": {
+    "title": "Dormancy Notice Checklist",
+    "type": "job_aid",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "JA-DSP-01@v2/s1/c1",
+   "text": "Provisional credit deadline for disputes | 5 business days",
+   "heading": "Quick reference",
+   "document": {
+    "title": "Dispute Intake Checklist",
+    "type": "job_aid",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "JA-DSP-01@v3/s1/c1",
+   "text": "Provisional credit deadline for disputes | 10 business days",
+   "heading": "Quick reference",
+   "document": {
+    "title": "Dispute Intake Checklist",
+    "type": "job_aid",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "JA-DSP-01@v3/s3/c4",
+   "text": "Disputes over $500 are reviewed by a card services specialist before credit is issued.",
+   "heading": "Steps to follow",
+   "document": {
+    "title": "Dispute Intake Checklist",
+    "type": "job_aid",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "JA-DSP-02@v4/s1/c2",
+   "text": "Debit card dispute window | 60 days",
+   "heading": "Quick reference",
+   "document": {
+    "title": "Dispute Timelines Card",
+    "type": "job_aid",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "JA-DSP-03@v3/s1/c2",
+   "text": "Provisional credit deadline for disputes | 15 business days",
+   "heading": "Quick reference",
+   "document": {
+    "title": "Card Services Quick Reference",
+    "type": "job_aid",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "JA-FEE-02@v2/s1/c1",
+   "text": "Fee waivers per account per year | three",
+   "heading": "Quick reference",
+   "document": {
+    "title": "Fee Schedule at a Glance",
+    "type": "job_aid",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "JA-HLD-01@v1/s1/c1",
+   "text": "Longest check hold on a new account | 9 business days",
+   "heading": "Quick reference",
+   "document": {
+    "title": "Hold Calendar Quick Reference",
+    "type": "job_aid",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "JA-HLD-03@v3/s1/c1",
+   "text": "Large deposit threshold for extended holds | $7,500",
+   "heading": "Quick reference",
+   "document": {
+    "title": "Hold Notice Checklist",
+    "type": "job_aid",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  }
+ ],
+ "input_hash": "0597c35320901d8aa1ec02b8e07d7b539e92b463a4cc197e26c399bcb5a026da",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\":[{\"clause\":\"JA-DRM-02@v2/s1/c1\",\"atoms\":[{\"attribute\":\"dormant_fee\",\"value\":{\"type\":\"money\",\"dollars\":10},\"quote\":\"$10\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]},{\"clause\":\"JA-DRM-02@v2/s1/c2\",\"atoms\":[{\"attribute\":\"dormant_inactivity\",\"value\":{\"type\":\"duration\",\"n\":18,\"unit\":\"months\"},\"quote\":\"18 months\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]},{\"clause\":\"JA-DSP-01@v2/s1/c1\",\"atoms\":[{\"attribute\":\"dispute_provisional_credit\",\"value\":{\"type\":\"duration\",\"n\":5,\"unit\":\"business_days\"},\"quote\":\"5 business days\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]},{\"clause\":\"JA-DSP-01@v3/s1/c1\",\"atoms\":[{\"attribute\":\"dispute_provisional_credit\",\"value\":{\"type\":\"duration\",\"n\":10,\"unit\":\"business_days\"},\"quote\":\"10 business days\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]},{\"clause\":\"JA-DSP-01@v3/s3/c4\",\"atoms\":[{\"attribute\":\"dispute_review_threshold\",\"value\":{\"type\":\"money\",\"dollars\":500},\"quote\":\"$500\",\"actor\":\"card_services_specialist\",\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]},{\"clause\":\"JA-DSP-02@v4/s1/c2\",\"atoms\":[{\"attribute\":\"dispute_window\",\"value\":{\"type\":\"duration\",\"n\":60,\"unit\":\"days\"},\"quote\":\"60 days\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":\"Debit card\",\"condition\":null}]},{\"clause\":\"JA-DSP-03@v3/s1/c2\",\"atoms\":[{\"attribute\":\"dispute_provisional_credit\",\"value\":{\"type\":\"duration\",\"n\":15,\"unit\":\"business_days\"},\"quote\":\"15 business days\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]},{\"clause\":\"JA-FEE-02@v2/s1/c1\",\"atoms\":[{\"attribute\":\"fee_waivers_per_year\",\"value\":{\"type\":\"count\",\"n\":3},\"quote\":\"three\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]},{\"clause\":\"JA-HLD-01@v1/s1/c1\",\"atoms\":[{\"attribute\":\"hold_new_account\",\"value\":{\"type\":\"duration\",\"n\":9,\"unit\":\"business_days\"},\"quote\":\"9 business days\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]},{\"clause\":\"JA-HLD-03@v3/s1/c1\",\"atoms\":[{\"attribute\":\"hold_large_threshold\",\"value\":{\"type\":\"money\",\"dollars\":7500},\"quote\":\"$7,500\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]}]}",
+   "problems": [],
+   "meta": {
+    "ms": 5944,
+    "api_ms": 5700,
+    "input_tokens": 8881,
+    "output_tokens": 1080,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 6197,
+     "cache_read_input_tokens": 2682,
+     "output_tokens": 1080,
+     "output_tokens_details": {
+      "thinking_tokens": 0
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 6197,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 1080,
+       "cache_read_input_tokens": 2682,
+       "cache_creation_input_tokens": 6197,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 6197
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.0358602,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T04:13:07+00:00"
+}

@@ -1,0 +1,366 @@
+{
+ "step": "classify",
+ "tag": "evals-11",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "2c908358fde9f0f4a792753579a6cfaa33476e41c4b0f235744675d8e8283a19",
+ "input": [
+  {
+   "pair": "pair-603258d1c8",
+   "rule": "New account check hold",
+   "attribute": "hold_new_account",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "JA-HLD-02@v4/s1/c1",
+    "text": "Longest check hold on a new account | 7 business days",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Check Hold Desk Card",
+     "type": "job_aid",
+     "version": 4,
+     "effective": "2025-09-09",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "JA-HLD-02@v4/s1/c2",
+    "text": "Large deposit threshold for extended holds | $6,000",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Check Hold Desk Card",
+     "type": "job_aid",
+     "version": 4,
+     "effective": "2025-09-09",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-84d7d54d02",
+   "rule": "New account period",
+   "attribute": "ao_new_account_window",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-AOP-07@v2/s3/c1",
+    "text": "Accounts open fewer than 30 days are new accounts for hold and limit purposes.",
+    "heading": "Steps",
+    "document": {
+     "title": "Opening an Account for a Minor with a Custodian",
+     "type": "procedure",
+     "version": 2,
+     "effective": "2026-02-05",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "POL-AOP-02@v6/s3/c1",
+    "text": "The minimum opening deposit for a consumer checking account is $25.",
+    "heading": "Policy statements",
+    "document": {
+     "title": "Customer Identification Policy",
+     "type": "policy",
+     "version": 6,
+     "effective": "2024-09-21",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-446a60263a",
+   "rule": "Dormant account fee",
+   "attribute": "dormant_fee",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "JA-DRM-02@v1/s1/c1",
+    "text": "Monthly dormant account fee | $5",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Dormancy Notice Checklist",
+     "type": "job_aid",
+     "version": 1,
+     "effective": "2026-04-18",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "FAQ-DRM-02@v4/s2/c1",
+    "text": "Mail the customer a notice at least 30 days before the account is classified as dormant.",
+    "heading": "How much notice does a customer get before dormancy?",
+    "document": {
+     "title": "Reactivation Questions",
+     "type": "faq",
+     "version": 4,
+     "effective": "2026-05-12",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-717bc86ed3",
+   "rule": "Days overdrawn before charge-off",
+   "attribute": "od_chargeoff",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-ODR-02@v1/s3/c5",
+    "text": "Refer an account for charge-off once it has been negative for 45 days.",
+    "heading": "Steps",
+    "document": {
+     "title": "Assessing and Reversing Overdraft Fees",
+     "type": "procedure",
+     "version": 1,
+     "effective": "2026-02-08",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "FAQ-ODR-01@v1/s2/c1",
+    "text": "No more than three overdraft fees are charged to an account in one business day.",
+    "heading": "How many overdraft fees can an account be charged in one day?",
+    "document": {
+     "title": "Overdraft FAQ",
+     "type": "faq",
+     "version": 1,
+     "effective": "2025-12-05",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-85ae44c28c",
+   "rule": "New account period",
+   "attribute": "ao_new_account_window",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-AOP-03@v2/s3/c4",
+    "text": "Accounts open fewer than 30 days are new accounts for hold and limit purposes.",
+    "heading": "Steps",
+    "document": {
+     "title": "Opening a Small Business Account",
+     "type": "procedure",
+     "version": 2,
+     "effective": "2026-05-21",
+     "applies_to": "All branches. Small business accounts."
+    }
+   },
+   "b": {
+    "clause": "PRO-AOP-01@v4/s3/c3",
+    "text": "Any exception to the identification requirements must be approved by the branch manager.",
+    "heading": "Steps",
+    "document": {
+     "title": "Opening a Consumer Checking Account",
+     "type": "procedure",
+     "version": 4,
+     "effective": "2025-06-07",
+     "applies_to": "All branches. Consumer accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-fc620e99f9",
+   "rule": "Provisional credit deadline",
+   "attribute": "dispute_provisional_credit",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "JA-DSP-03@v2/s1/c3",
+    "text": "Provisional credit deadline for disputes | 10 business days",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Card Services Quick Reference",
+     "type": "job_aid",
+     "version": 2,
+     "effective": "2025-12-09",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "JA-DSP-01@v1/s1/c1",
+    "text": "Debit card dispute window | 60 days",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Dispute Intake Checklist",
+     "type": "job_aid",
+     "version": 1,
+     "effective": "2026-08-08",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-fbdb8e4156",
+   "rule": "Approver for identification exceptions",
+   "attribute": "ao_exception_approver",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "JA-AOP-03@v4/s1/c3",
+    "text": "Approver for identification exceptions | branch manager",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Account Opening Desk Card",
+     "type": "job_aid",
+     "version": 4,
+     "effective": "2025-11-07",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "PRO-AOP-01@v4/s3/c2",
+    "text": "Accounts open fewer than 30 days are new accounts for hold and limit purposes.",
+    "heading": "Steps",
+    "document": {
+     "title": "Opening a Consumer Checking Account",
+     "type": "procedure",
+     "version": 4,
+     "effective": "2025-06-07",
+     "applies_to": "All branches. Consumer accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-0e9974476d",
+   "rule": "Fee refund window",
+   "attribute": "fee_refund_window",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "JA-FEE-02@v2/s1/c1",
+    "text": "Fee refund request window | 60 days",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Fee Schedule at a Glance",
+     "type": "job_aid",
+     "version": 2,
+     "effective": "2025-10-20",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "POL-FEE-02@v2/s3/c1",
+    "text": "The most a branch manager can waive for one account in a calendar year is $50.",
+    "heading": "Policy statements",
+    "document": {
+     "title": "Fee Refund Policy",
+     "type": "policy",
+     "version": 2,
+     "effective": "2024-12-18",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  }
+ ],
+ "input_hash": "2639246641bc5b40975e21e4565f7fb172b120b41553349ad2684f767b5f2310",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [{\"pair\": \"pair-603258d1c8\", \"label\": \"unrelated\", \"quote_a\": \"Longest check hold on a new account | 7 business days\", \"quote_b\": \"Large deposit threshold for extended holds | $6,000\", \"rationale\": \"One clause sets the longest hold on a new account at 7 business days. The other sets the deposit amount of $6,000 that triggers an extended hold, which is a different rule.\"}, {\"pair\": \"pair-84d7d54d02\", \"label\": \"unrelated\", \"quote_a\": \"Accounts open fewer than 30 days are new accounts for hold and limit purposes.\", \"quote_b\": \"The minimum opening deposit for a consumer checking account is $25.\", \"rationale\": \"One clause defines how long an account counts as new. The other sets the minimum opening deposit of $25, so they govern different things.\"}, {\"pair\": \"pair-446a60263a\", \"label\": \"unrelated\", \"quote_a\": \"Monthly dormant account fee | $5\", \"quote_b\": \"Mail the customer a notice at least 30 days before the account is classified as dormant.\", \"rationale\": \"One clause sets the monthly dormant fee of $5. The other sets the notice lead time of 30 days before dormancy, which is a different rule.\"}, {\"pair\": \"pair-717bc86ed3\", \"label\": \"unrelated\", \"quote_a\": \"Refer an account for charge-off once it has been negative for 45 days.\", \"quote_b\": \"No more than three overdraft fees are charged to an account in one business day.\", \"rationale\": \"One clause sets when to refer an account for charge-off after 45 days negative. The other caps overdraft fees per business day, so they govern different things.\"}, {\"pair\": \"pair-85ae44c28c\", \"label\": \"unrelated\", \"quote_a\": \"Accounts open fewer than 30 days are new accounts for hold and limit purposes.\", \"quote_b\": \"Any exception to the identification requirements must be approved by the branch manager.\", \"rationale\": \"One clause defines the new account period of 30 days. The other names who approves identification exceptions, which is a different rule.\"}, {\"pair\": \"pair-fc620e99f9\", \"label\": \"unrelated\", \"quote_a\": \"Provisional credit deadline for disputes | 10 business days\", \"quote_b\": \"Debit card dispute window | 60 days\", \"rationale\": \"One clause sets the deadline of 10 business days for provisional credit. The other sets the 60 day window for a customer to file a debit card dispute, so they govern different steps.\"}, {\"pair\": \"pair-fbdb8e4156\", \"label\": \"unrelated\", \"quote_a\": \"Approver for identification exceptions | branch manager\", \"quote_b\": \"Accounts open fewer than 30 days are new accounts for hold and limit purposes.\", \"rationale\": \"One clause names the approver for identification exceptions. The other defines the new account period of 30 days, which is a different rule.\"}, {\"pair\": \"pair-0e9974476d\", \"label\": \"unrelated\", \"quote_a\": \"Fee refund request window | 60 days\", \"quote_b\": \"The most a branch manager can waive for one account in a calendar year is $50.\", \"rationale\": \"One clause sets the 60 day window for requesting a fee refund. The other caps what a branch manager can waive at $50 per account each calendar year, so they govern different limits.\"}]}",
+   "problems": [
+    "pair-84d7d54d02: the rationale has a comma before so. End the sentence there and start the next one",
+    "pair-717bc86ed3: the rationale has a comma before so. End the sentence there and start the next one",
+    "pair-fc620e99f9: the rationale has a comma before so. End the sentence there and start the next one",
+    "pair-0e9974476d: the rationale has a comma before so. End the sentence there and start the next one"
+   ],
+   "meta": {
+    "ms": 9560,
+    "api_ms": 9337,
+    "input_tokens": 8974,
+    "output_tokens": 1594,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 8131,
+     "cache_read_input_tokens": 841,
+     "output_tokens": 1594,
+     "output_tokens_details": {
+      "thinking_tokens": 502
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 8131,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 1594,
+       "cache_read_input_tokens": 841,
+       "cache_creation_input_tokens": 8131,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 8131
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.0485521,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  },
+  {
+   "reply": "{\"results\": [{\"pair\": \"pair-84d7d54d02\", \"label\": \"unrelated\", \"quote_a\": \"Accounts open fewer than 30 days are new accounts for hold and limit purposes.\", \"quote_b\": \"The minimum opening deposit for a consumer checking account is $25.\", \"rationale\": \"One clause defines when an account counts as new for holds and limits. The other sets a minimum opening deposit. They govern different things.\"}, {\"pair\": \"pair-717bc86ed3\", \"label\": \"unrelated\", \"quote_a\": \"Refer an account for charge-off once it has been negative for 45 days.\", \"quote_b\": \"No more than three overdraft fees are charged to an account in one business day.\", \"rationale\": \"One clause says when to refer an overdrawn account for charge-off. The other caps how many overdraft fees can be charged in a day. They govern different things.\"}, {\"pair\": \"pair-fc620e99f9\", \"label\": \"unrelated\", \"quote_a\": \"Provisional credit deadline for disputes | 10 business days\", \"quote_b\": \"Debit card dispute window | 60 days\", \"rationale\": \"One clause sets how fast provisional credit must be given after a dispute. The other sets how long a customer has to file a debit card dispute. They govern different things.\"}, {\"pair\": \"pair-0e9974476d\", \"label\": \"unrelated\", \"quote_a\": \"Fee refund request window | 60 days\", \"quote_b\": \"The most a branch manager can waive for one account in a calendar year is $50.\", \"rationale\": \"One clause sets the time window for requesting a fee refund. The other caps the amount a branch manager can waive per account in a year. They govern different things.\"}]}",
+   "problems": [],
+   "meta": {
+    "ms": 6778,
+    "api_ms": 6524,
+    "input_tokens": 7530,
+    "output_tokens": 923,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 6687,
+     "cache_read_input_tokens": 841,
+     "output_tokens": 923,
+     "output_tokens_details": {
+      "thinking_tokens": 378
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 6687,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 923,
+       "cache_read_input_tokens": 841,
+       "cache_creation_input_tokens": 6687,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 6687
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.036066100000000004,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   },
+   "items": [
+    "pair-84d7d54d02",
+    "pair-717bc86ed3",
+    "pair-fc620e99f9",
+    "pair-0e9974476d"
+   ]
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T03:56:42+00:00"
+}

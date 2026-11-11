@@ -1,0 +1,108 @@
+{
+ "step": "judge",
+ "tag": "cmp-6101",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "ab6a49ec8731854b3cf900a9a4387417ee8016fe68257c4d327181c7eb1621da",
+ "input": [
+  {
+   "draft": "draft-16",
+   "text": "Check deposits over $6,000 in one day are eligible for an extended hold on the amount over that figure. Checks deposited to a new account may be held for up to 7 business days.",
+   "sources": [
+    "Check deposits over $6,000 in one day are eligible for an extended hold on the amount over that figure.",
+    "Checks deposited to a new account may be held for up to 7 business days."
+   ]
+  },
+  {
+   "draft": "draft-17",
+   "text": "Provisional credit is issued within 10 business days of receiving a completed dispute.",
+   "sources": [
+    "Provisional credit is issued within 10 business days of receiving a completed dispute.",
+    "Customers have 60 days from the statement date to dispute a debit card transaction."
+   ]
+  },
+  {
+   "draft": "draft-18",
+   "text": "Each item paid into overdraft is charged $30. Accounts that remain overdrawn for 45 days are referred for charge-off. Personal bankers may waive service fees up to $15 per account in a calendar year.",
+   "sources": [
+    "Each item paid into overdraft is charged $30.",
+    "Accounts that remain overdrawn for 45 days are referred for charge-off."
+   ]
+  },
+  {
+   "draft": "draft-19",
+   "text": "No overdraft fee is charged when the account is overdrawn by $10 or less at the end of the day, where appropriate. Each item paid into overdraft is charged $30, where appropriate.",
+   "sources": [
+    "No overdraft fee is charged when the account is overdrawn by $10 or less at the end of the day.",
+    "Each item paid into overdraft is charged $30."
+   ]
+  },
+  {
+   "draft": "draft-20",
+   "text": "Customers may request a fee refund within 60 days of the statement date. Customers may request a fee refund within 30 days of the statement date. A personal banker can waive no more than $25 for one account in a calendar year.",
+   "sources": [
+    "Customers may request a fee refund within 60 days of the statement date.",
+    "In Colorado branches, customers may request a fee refund within 30 days of the statement date.",
+    "A personal banker can waive no more than $25 for one account in a calendar year."
+   ]
+  }
+ ],
+ "input_hash": "0b5922295fcc14708982db7a50369c4e1f20b73e2d86ce3b2fa162cc208b12d0",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [{\"draft\": \"draft-16\", \"scores\": {\"keeps_rules\": {\"pass\": true, \"evidence\": \"\"}, \"adds_no_rule\": {\"pass\": true, \"evidence\": \"\"}, \"keeps_scope\": {\"pass\": true, \"evidence\": \"\"}, \"plain\": {\"pass\": true, \"evidence\": \"\"}}}, {\"draft\": \"draft-17\", \"scores\": {\"keeps_rules\": {\"pass\": false, \"evidence\": \"Customers have 60 days from the statement date to dispute a debit card transaction.\"}, \"adds_no_rule\": {\"pass\": true, \"evidence\": \"\"}, \"keeps_scope\": {\"pass\": true, \"evidence\": \"\"}, \"plain\": {\"pass\": true, \"evidence\": \"\"}}}, {\"draft\": \"draft-18\", \"scores\": {\"keeps_rules\": {\"pass\": true, \"evidence\": \"\"}, \"adds_no_rule\": {\"pass\": false, \"evidence\": \"Personal bankers may waive service fees up to $15 per account in a calendar year.\"}, \"keeps_scope\": {\"pass\": true, \"evidence\": \"\"}, \"plain\": {\"pass\": true, \"evidence\": \"\"}}}, {\"draft\": \"draft-19\", \"scores\": {\"keeps_rules\": {\"pass\": true, \"evidence\": \"\"}, \"adds_no_rule\": {\"pass\": true, \"evidence\": \"\"}, \"keeps_scope\": {\"pass\": true, \"evidence\": \"\"}, \"plain\": {\"pass\": false, \"evidence\": \"where appropriate\"}}}, {\"draft\": \"draft-20\", \"scores\": {\"keeps_rules\": {\"pass\": true, \"evidence\": \"\"}, \"adds_no_rule\": {\"pass\": true, \"evidence\": \"\"}, \"keeps_scope\": {\"pass\": false, \"evidence\": \"In Colorado branches, customers may request a fee refund within 30 days of the statement date.\"}, \"plain\": {\"pass\": true, \"evidence\": \"\"}}}]}",
+   "problems": [],
+   "meta": {
+    "ms": 8875,
+    "api_ms": 8734,
+    "input_tokens": 6380,
+    "output_tokens": 1383,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 5655,
+     "cache_read_input_tokens": 723,
+     "output_tokens": 1383,
+     "output_tokens_details": {
+      "thinking_tokens": 739
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 5655,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 1383,
+       "cache_read_input_tokens": 723,
+       "cache_creation_input_tokens": 5655,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 5655
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.0365263,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T17:16:01+00:00"
+}

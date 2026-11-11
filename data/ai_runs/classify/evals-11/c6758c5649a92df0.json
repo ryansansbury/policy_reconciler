@@ -1,0 +1,360 @@
+{
+ "step": "classify",
+ "tag": "evals-11",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "2c908358fde9f0f4a792753579a6cfaa33476e41c4b0f235744675d8e8283a19",
+ "input": [
+  {
+   "pair": "pair-d4f136dec0",
+   "rule": "Approver for identification exceptions",
+   "attribute": "ao_exception_approver",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-AOP-07@v2/s3/c9",
+    "text": "Any exception to the identification requirements must be approved by the branch manager.",
+    "heading": "Steps",
+    "document": {
+     "title": "Opening an Account for a Minor with a Custodian",
+     "type": "procedure",
+     "version": 2,
+     "effective": "2026-02-05",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "POL-AOP-02@v6/s4/c1",
+    "text": "Any exception to the identification requirements must be approved by the branch manager.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Customer Identification Policy",
+     "type": "policy",
+     "version": 6,
+     "effective": "2024-09-21",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-30570d6b32",
+   "rule": "Complaint resolution deadline",
+   "attribute": "complaint_resolve",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "JA-CMP-01@v4/s1/c3",
+    "text": "Complaint resolution deadline | 15 business days",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Complaint Handling Card",
+     "type": "job_aid",
+     "version": 4,
+     "effective": "2025-05-29",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "JA-CMP-02@v4/s1/c1",
+    "text": "Complaint resolution deadline | 15 business days",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Complaint Escalation Checklist",
+     "type": "job_aid",
+     "version": 4,
+     "effective": "2026-03-26",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-d263c5a96b",
+   "rule": "Minimum opening deposit",
+   "attribute": "ao_min_deposit",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "BUL-AOP-01@v4/s1/c2",
+    "text": "A consumer checking account needs at least $25 to open.",
+    "heading": "What branches need to know",
+    "document": {
+     "title": "Branch Bulletin 2025-21: Minimum opening deposit for consumer checking",
+     "type": "bulletin",
+     "version": 4,
+     "effective": "2025-12-19",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "JA-AOP-03@v4/s1/c2",
+    "text": "Minimum opening deposit for consumer checking | $25",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Account Opening Desk Card",
+     "type": "job_aid",
+     "version": 4,
+     "effective": "2025-11-07",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-12134b5c85",
+   "rule": "Dispute review threshold",
+   "attribute": "dispute_review_threshold",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-DSP-01@v3/s3/c7",
+    "text": "Send any dispute above $500 to card services for review before issuing credit.",
+    "heading": "Steps",
+    "document": {
+     "title": "Taking a Debit Card Dispute",
+     "type": "procedure",
+     "version": 3,
+     "effective": "2025-07-26",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "PRO-DSP-03@v4/s3/c4",
+    "text": "Disputes over $500 are reviewed by a card services specialist before credit is issued.",
+    "heading": "Steps",
+    "document": {
+     "title": "Investigating a Dispute",
+     "type": "procedure",
+     "version": 4,
+     "effective": "2026-04-15",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-eddf939b89",
+   "rule": "Who completes wire callbacks",
+   "attribute": "wire_callback_role",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "JA-WIR-01@v4/s1/c1",
+    "text": "Who completes wire callbacks | wire specialist",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Wire Desk Quick Reference",
+     "type": "job_aid",
+     "version": 4,
+     "effective": "2026-02-23",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "PRO-WIR-04@v2/s3/c6",
+    "text": "Callbacks are completed by a wire specialist, never by the employee who took the request.",
+    "heading": "Steps",
+    "document": {
+     "title": "Handling Incoming Wires",
+     "type": "procedure",
+     "version": 2,
+     "effective": "2024-11-06",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-10d4805f24",
+   "rule": "Forms of identification per signer",
+   "attribute": "ao_id_count",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "JA-AOP-03@v4/s1/c1",
+    "text": "Forms of identification per signer | two",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Account Opening Desk Card",
+     "type": "job_aid",
+     "version": 4,
+     "effective": "2025-11-07",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "FAQ-AOP-01@v4/s1/c1",
+    "text": "Every signer must present two separate identification documents before the account is opened.",
+    "heading": "How many forms of identification does each signer need to open an account?",
+    "document": {
+     "title": "Account Opening FAQ",
+     "type": "faq",
+     "version": 4,
+     "effective": "2026-01-08",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-903f38f946",
+   "rule": "Days overdrawn before charge-off",
+   "attribute": "od_chargeoff",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "JA-ODR-01@v3/s1/c1",
+    "text": "Days overdrawn before charge-off | 45 days",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Overdraft Quick Reference",
+     "type": "job_aid",
+     "version": 3,
+     "effective": "2026-02-10",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "JA-ODR-02@v1/s1/c2",
+    "text": "Days overdrawn before charge-off | 45 days",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Overdraft Fee Desk Card",
+     "type": "job_aid",
+     "version": 1,
+     "effective": "2025-07-14",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-fb1818378c",
+   "rule": "Unfair treatment escalation",
+   "attribute": "complaint_escalation_role",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-CMP-01@v2/s3/c5",
+    "text": "Escalate any complaint alleging unfair treatment to the regional manager on the day it is received.",
+    "heading": "Steps",
+    "document": {
+     "title": "Logging a Customer Complaint",
+     "type": "procedure",
+     "version": 2,
+     "effective": "2025-06-28",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "JA-CMP-02@v4/s1/c2",
+    "text": "Escalation for unfair treatment complaints | regional manager",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Complaint Escalation Checklist",
+     "type": "job_aid",
+     "version": 4,
+     "effective": "2026-03-26",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  }
+ ],
+ "input_hash": "f429dba5ead0207a5a003e72bfb0a5b16c72064a3fd208ed805bddcd2eb481ac",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [{\"pair\": \"pair-d4f136dec0\", \"label\": \"consistent\", \"quote_a\": \"must be approved by the branch manager\", \"quote_b\": \"must be approved by the branch manager\", \"rationale\": \"Both clauses name the branch manager as the approver for identification exceptions across the same scope. The wording is identical, but a single sentence stating the same rule and value is consistent and not a copied run of steps.\"}, {\"pair\": \"pair-30570d6b32\", \"label\": \"consistent\", \"quote_a\": \"15 business days\", \"quote_b\": \"15 business days\", \"rationale\": \"Both job aids set the complaint resolution deadline at 15 business days for all branches and business lines. Staff acting on either one would do the same thing.\"}, {\"pair\": \"pair-d263c5a96b\", \"label\": \"consistent\", \"quote_a\": \"A consumer checking account needs at least $25 to open.\", \"quote_b\": \"Minimum opening deposit for consumer checking | $25\", \"rationale\": \"Both clauses set the minimum opening deposit for consumer checking at $25. The bulletin and the desk card agree.\"}, {\"pair\": \"pair-12134b5c85\", \"label\": \"consistent\", \"quote_a\": \"above $500 to card services for review\", \"quote_b\": \"over $500 are reviewed by a card services specialist\", \"rationale\": \"Both procedures send disputes over $500 to card services for review before credit is issued. Saying a specialist does the review only names who inside card services acts, so staff would behave the same way under either clause.\"}, {\"pair\": \"pair-eddf939b89\", \"label\": \"consistent\", \"quote_a\": \"wire specialist\", \"quote_b\": \"Callbacks are completed by a wire specialist, never by the employee who took the request.\", \"rationale\": \"Both clauses assign wire callbacks to a wire specialist. The procedure adds that the employee who took the request may not do it, and the job aid does not contradict that.\"}, {\"pair\": \"pair-10d4805f24\", \"label\": \"consistent\", \"quote_a\": \"two\", \"quote_b\": \"Every signer must present two separate identification documents\", \"rationale\": \"Both clauses require two forms of identification from each signer. The FAQ's word separate adds detail without changing what staff do.\"}, {\"pair\": \"pair-903f38f946\", \"label\": \"consistent\", \"quote_a\": \"45 days\", \"quote_b\": \"45 days\", \"rationale\": \"Both job aids give 45 days overdrawn before charge-off for the same scope. They state the same rule with the same value and are different documents and not two versions of one document.\"}, {\"pair\": \"pair-fb1818378c\", \"label\": \"consistent\", \"quote_a\": \"Escalate any complaint alleging unfair treatment to the regional manager\", \"quote_b\": \"Escalation for unfair treatment complaints | regional manager\", \"rationale\": \"Both clauses send unfair treatment complaints to the regional manager. The procedure adds same day timing that the checklist leaves out without contradicting it.\"}]}",
+   "problems": [
+    "pair-12134b5c85: the rationale has a comma before so. End the sentence there and start the next one"
+   ],
+   "meta": {
+    "ms": 11339,
+    "api_ms": 11117,
+    "input_tokens": 8967,
+    "output_tokens": 1627,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 8124,
+     "cache_read_input_tokens": 841,
+     "output_tokens": 1627,
+     "output_tokens_details": {
+      "thinking_tokens": 659
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 8124,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 1627,
+       "cache_read_input_tokens": 841,
+       "cache_creation_input_tokens": 8124,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 8124
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.0488541,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  },
+  {
+   "reply": "{\"results\": [{\"pair\": \"pair-12134b5c85\", \"label\": \"consistent\", \"quote_a\": \"Send any dispute above $500 to card services for review before issuing credit.\", \"quote_b\": \"Disputes over $500 are reviewed by a card services specialist before credit is issued.\", \"rationale\": \"Both clauses require card services review before credit for disputes over $500 and apply to the same accounts. Staff following either one would act the same way.\"}]}",
+   "problems": [],
+   "meta": {
+    "ms": 2482,
+    "api_ms": 2320,
+    "input_tokens": 6206,
+    "output_tokens": 147,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 5363,
+     "cache_read_input_tokens": 841,
+     "output_tokens": 147,
+     "output_tokens_details": {
+      "thinking_tokens": 0
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 5363,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 147,
+       "cache_read_input_tokens": 841,
+       "cache_creation_input_tokens": 5363,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 5363
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.0230101,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   },
+   "items": [
+    "pair-12134b5c85"
+   ]
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T03:56:13+00:00"
+}

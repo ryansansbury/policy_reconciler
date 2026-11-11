@@ -1,0 +1,215 @@
+{
+ "step": "draft",
+ "tag": "2026",
+ "model": "claude-opus",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "opus",
+  "client_context": true
+ },
+ "prompt_hash": "d412e32e9168de04c00c3959530ebecb6630d0f9092d4afc1f9c308a4695a32e",
+ "input": [
+  {
+   "group": "g-e83d1e4a",
+   "rule": "Who completes wire callbacks",
+   "attribute": "wire_callback_role",
+   "type": "role",
+   "keep": {
+    "clause": "POL-WIR-01@v6/s4/c3",
+    "text": "Callbacks are completed by a wire specialist, never by the employee who took the request.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Wire Transfer Policy",
+     "type": "policy",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "change": [
+    {
+     "clause": "BUL-WIR-01@v1/s1/c2",
+     "text": "Only an operations employee may complete the callback for an outgoing wire.",
+     "heading": "What branches need to know",
+     "document": {
+      "title": "Branch Bulletin 2025-30: Who completes wire callbacks",
+      "type": "bulletin",
+      "applies_to": "All branches. All business lines."
+     }
+    },
+    {
+     "clause": "FAQ-WIR-02@v3/s3/c1",
+     "text": "Callbacks are completed by an operations employee, never by the employee who took the request.",
+     "heading": "Who completes the callback for an outgoing wire?",
+     "document": {
+      "title": "Wire Cutoff Questions",
+      "type": "faq",
+      "applies_to": "All branches. All business lines."
+     }
+    },
+    {
+     "clause": "JA-WIR-01@v4/s1/c2",
+     "text": "Who completes wire callbacks | teller",
+     "heading": "Quick reference",
+     "document": {
+      "title": "Wire Desk Quick Reference",
+      "type": "job_aid",
+      "applies_to": "All branches. All business lines."
+     }
+    }
+   ],
+   "allowed": {
+    "FAQ-WIR-02@v3/s4/c1#value": "wire specialist",
+    "JA-WIR-02@v4/s1/c1#value": "wire specialist",
+    "JA-WIR-03@v3/s3/c1#value": "wire specialist",
+    "POL-WIR-01@v6/s4/c3#value": "wire specialist",
+    "PRO-WIR-01@v3/s3/c4#value": "wire specialist",
+    "PRO-WIR-05@v4/s3/c4#value": "wire specialist"
+   },
+   "placeholder": "{clause:POL-WIR-01@v6/s4/c3#value}"
+  },
+  {
+   "group": "g-de226699",
+   "rule": "Outgoing wire cutoff",
+   "attribute": "wire_cutoff",
+   "type": "time",
+   "keep": {
+    "clause": "POL-WIR-01@v6/s3/c2",
+    "text": "The cutoff for outgoing commercial wires is 4:00 PM Central time.",
+    "heading": "Policy statements",
+    "document": {
+     "title": "Wire Transfer Policy",
+     "type": "policy",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "change": [
+    {
+     "clause": "PRO-WIR-03@v4/s3/c7",
+     "text": "The cutoff for outgoing commercial wires is 3:30 PM Central time.",
+     "heading": "Steps",
+     "document": {
+      "title": "Completing Wire Callback Verification",
+      "type": "procedure",
+      "applies_to": "All branches. All business lines."
+     }
+    },
+    {
+     "clause": "PRO-WIR-06@v1/s3/c4",
+     "text": "The cutoff for outgoing commercial wires is 3:30 PM Central time.",
+     "heading": "Steps",
+     "document": {
+      "title": "Recalling or Cancelling a Wire",
+      "type": "procedure",
+      "applies_to": "All branches. All business lines."
+     }
+    }
+   ],
+   "allowed": {
+    "JA-WIR-01@v4/s1/c1#value": "4:00 PM",
+    "JA-WIR-03@v3/s1/c1#value": "4:00 PM",
+    "POL-WIR-01@v6/s3/c2#value": "4:00 PM",
+    "PRO-WIR-07@v1/s3/c4#value": "4:00 p.m."
+   },
+   "placeholder": "{clause:POL-WIR-01@v6/s3/c2#value}"
+  },
+  {
+   "group": "g-1e497f6c",
+   "rule": "Outgoing wire cutoff",
+   "attribute": "wire_cutoff",
+   "type": "time",
+   "keep": {
+    "clause": "POL-WIR-01@v6/s4/c1",
+    "text": "Submit outgoing consumer and small business wires by 3:00 PM Central for same-day processing.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Wire Transfer Policy",
+     "type": "policy",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "change": [
+    {
+     "clause": "FAQ-WIR-02@v3/s1/c1",
+     "text": "Submit outgoing consumer and small business wires by 2:00 PM Central for same-day processing.",
+     "heading": "What is the cutoff for outgoing consumer wires?",
+     "document": {
+      "title": "Wire Cutoff Questions",
+      "type": "faq",
+      "applies_to": "All branches. All business lines."
+     }
+    },
+    {
+     "clause": "PRO-WIR-06@v1/s3/c7",
+     "text": "Submit outgoing consumer and small business wires by 2:00 PM Central for same-day processing.",
+     "heading": "Steps",
+     "document": {
+      "title": "Recalling or Cancelling a Wire",
+      "type": "procedure",
+      "applies_to": "All branches. All business lines."
+     }
+    }
+   ],
+   "allowed": {
+    "JA-WIR-01@v4/s1/c3#value": "3:00 PM",
+    "JA-WIR-03@v3/s1/c2#value": "3:00 PM",
+    "POL-WIR-01@v6/s4/c1#value": "3:00 PM",
+    "PRO-WIR-03@v4/s3/c2#value": "3:00 p.m.",
+    "PRO-WIR-07@v1/s3/c5#value": "3:00 PM"
+   },
+   "placeholder": "{clause:POL-WIR-01@v6/s4/c1#value}"
+  }
+ ],
+ "input_hash": "cef893eb653653d0b967c7934ce3fd695d2461c9bff01646928bbcb81f1fa79c",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [{\"group\": \"g-e83d1e4a\", \"title\": \"Who completes wire callbacks\", \"text\": \"Every wire callback is completed by a {clause:POL-WIR-01@v6/s4/c3#value}. The employee who took the wire request never completes the callback.\"}, {\"group\": \"g-de226699\", \"title\": \"Commercial wire cutoff\", \"text\": \"The cutoff for outgoing commercial wires is {clause:POL-WIR-01@v6/s3/c2#value} Central time.\"}, {\"group\": \"g-1e497f6c\", \"title\": \"Consumer and small business wire cutoff\", \"text\": \"Submit outgoing consumer and small business wires by {clause:POL-WIR-01@v6/s4/c1#value} Central time for processing on the same day.\"}]}",
+   "problems": [],
+   "meta": {
+    "ms": 4283,
+    "api_ms": 4159,
+    "input_tokens": 8163,
+    "output_tokens": 493,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 7087,
+     "cache_read_input_tokens": 1074,
+     "output_tokens": 493,
+     "output_tokens_details": {
+      "thinking_tokens": 232
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 7087,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 493,
+       "cache_read_input_tokens": 1074,
+       "cache_creation_input_tokens": 7087,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 7087
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.0667788,
+    "models": [
+     "claude-opus-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T05:57:48+00:00"
+}

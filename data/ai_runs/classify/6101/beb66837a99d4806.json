@@ -1,0 +1,253 @@
+{
+ "step": "classify",
+ "tag": "6101",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "2c908358fde9f0f4a792753579a6cfaa33476e41c4b0f235744675d8e8283a19",
+ "input": [
+  {
+   "pair": "pair-41ad21e7f8",
+   "rule": "Forms of identification per signer",
+   "attribute": "ao_id_count",
+   "reason": "One side carries a condition that may change the rule.",
+   "a": {
+    "clause": "POL-AOP-01@v5/s3/c1",
+    "text": "Collect two forms of identification from each signer before opening the account, or one form plus a verified bank reference when the branch manager approves.",
+    "heading": "Policy statements",
+    "document": {
+     "title": "Deposit Account Opening Policy",
+     "type": "policy",
+     "version": 5,
+     "effective": "2026-05-17",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "PRO-AOP-04@v4/s3/c6",
+    "text": "Every signer must present one separate identification documents before the account is opened.",
+    "heading": "Steps",
+    "document": {
+     "title": "Verifying Customer Identification",
+     "type": "procedure",
+     "version": 4,
+     "effective": "2024-12-10",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "kind": "condition"
+  },
+  {
+   "pair": "pair-042284e8bf",
+   "rule": "Forms of identification per signer",
+   "attribute": "ao_id_count",
+   "reason": "One side carries a condition that may change the rule.",
+   "a": {
+    "clause": "POL-AOP-01@v5/s3/c1",
+    "text": "Collect two forms of identification from each signer before opening the account, or one form plus a verified bank reference when the branch manager approves.",
+    "heading": "Policy statements",
+    "document": {
+     "title": "Deposit Account Opening Policy",
+     "type": "policy",
+     "version": 5,
+     "effective": "2026-05-17",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "JA-AOP-03@v1/s1/c2",
+    "text": "Forms of identification per signer | three",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Account Opening Desk Card",
+     "type": "job_aid",
+     "version": 1,
+     "effective": "2026-03-29",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "kind": "condition"
+  },
+  {
+   "pair": "pair-ec8aac74fa",
+   "rule": "Card dispute window",
+   "attribute": "dispute_window",
+   "reason": "One side carries a condition that may change the rule.",
+   "a": {
+    "clause": "POL-DSP-01@v5/s4/c1",
+    "text": "Customers have 60 days from the statement date to dispute a debit card transaction, or longer when the customer was traveling or hospitalized.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Debit Card Dispute Policy",
+     "type": "policy",
+     "version": 5,
+     "effective": "2024-07-18",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "PRO-DSP-05@v4/s3/c1",
+    "text": "Accept debit card disputes filed within 90 days of the statement that first showed the charge.",
+    "heading": "Steps",
+    "document": {
+     "title": "Blocking and Replacing a Compromised Card",
+     "type": "procedure",
+     "version": 4,
+     "effective": "2026-04-24",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "kind": "condition"
+  },
+  {
+   "pair": "pair-6282b4ede2",
+   "rule": "Standard check hold",
+   "attribute": "hold_standard",
+   "reason": "One side carries a condition that may change the rule.",
+   "a": {
+    "clause": "POL-HLD-01@v3/s4/c1",
+    "text": "Funds from deposited checks are available within 2 business days unless a longer hold applies.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Funds Availability Policy",
+     "type": "policy",
+     "version": 3,
+     "effective": "2025-02-25",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "FAQ-HLD-01@v3/s1/c1",
+    "text": "Place a standard hold of 3 business days on deposited checks that don't qualify for next-day availability.",
+    "heading": "How long is the standard hold on a deposited check?",
+    "document": {
+     "title": "Funds Availability FAQ",
+     "type": "faq",
+     "version": 3,
+     "effective": "2026-03-31",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "kind": "condition"
+  },
+  {
+   "pair": "pair-d0f3262efb",
+   "rule": "Personal banker fee waiver limit",
+   "attribute": "fee_waiver_pb",
+   "reason": "The values match, but the weaker document adds a condition the stronger one doesn't state.",
+   "a": {
+    "clause": "POL-FEE-02@v4/s3/c1",
+    "text": "Personal bankers may waive service fees up to $25 per account in a calendar year.",
+    "heading": "Policy statements",
+    "document": {
+     "title": "Fee Refund Policy",
+     "type": "policy",
+     "version": 4,
+     "effective": "2026-01-16",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "POL-FEE-01@v3/s3/c1",
+    "text": "A personal banker can waive no more than $25 for one account in a calendar year, or up to $50 with branch manager approval noted in the account.",
+    "heading": "Policy statements",
+    "document": {
+     "title": "Service Fee Waiver Policy",
+     "type": "policy",
+     "version": 3,
+     "effective": "2024-08-03",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "kind": "added_condition"
+  },
+  {
+   "pair": "pair-86cf3d3f61",
+   "rule": "Forms of identification per signer",
+   "attribute": "ao_id_count",
+   "reason": "The values match, but the weaker document adds a condition the stronger one doesn't state.",
+   "a": {
+    "clause": "POL-AOP-01@v5/s3/c1",
+    "text": "Collect two forms of identification from each signer before opening the account, or one form plus a verified bank reference when the branch manager approves.",
+    "heading": "Policy statements",
+    "document": {
+     "title": "Deposit Account Opening Policy",
+     "type": "policy",
+     "version": 5,
+     "effective": "2026-05-17",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "PRO-AOP-01@v2/s3/c1",
+    "text": "Collect two forms of identification from each signer before opening the account, or one form plus a verified bank reference when the branch manager approves.",
+    "heading": "Steps",
+    "document": {
+     "title": "Opening a Consumer Checking Account",
+     "type": "procedure",
+     "version": 2,
+     "effective": "2026-08-02",
+     "applies_to": "All branches. Consumer accounts."
+    }
+   },
+   "kind": "added_condition"
+  }
+ ],
+ "input_hash": "7f3ac6f94d92774ffeed93604e8cec496ba0b43a4f789da271601ac64127f2e6",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [{\"pair\": \"pair-41ad21e7f8\", \"label\": \"conflict\", \"quote_a\": \"Collect two forms of identification from each signer\", \"quote_b\": \"Every signer must present one separate identification documents\", \"rationale\": \"The policy requires two forms of identification from each signer but the procedure asks for one document. Staff following the procedure would accept a signer the policy would not, and both cover the same branches and accounts.\"}, {\"pair\": \"pair-042284e8bf\", \"label\": \"conflict\", \"quote_a\": \"Collect two forms of identification from each signer\", \"quote_b\": \"Forms of identification per signer | three\", \"rationale\": \"The policy requires two forms of identification per signer and the desk card says three. The card sets a different count for the same scope, and the policy outranks the card, which only tells the reader which clause to keep.\"}, {\"pair\": \"pair-ec8aac74fa\", \"label\": \"conflict\", \"quote_a\": \"Customers have 60 days from the statement date to dispute a debit card transaction\", \"quote_b\": \"Accept debit card disputes filed within 90 days of the statement that first showed the charge.\", \"rationale\": \"The policy sets a 60 day window and the procedure accepts disputes up to 90 days for every customer. The policy's longer window applies only to customers who were traveling or hospitalized, so staff following the procedure would accept disputes the policy would refuse.\"}, {\"pair\": \"pair-6282b4ede2\", \"label\": \"conflict\", \"quote_a\": \"available within 2 business days\", \"quote_b\": \"standard hold of 3 business days\", \"rationale\": \"The policy makes funds available within 2 business days and the FAQ sets the standard hold at 3 business days. The FAQ presents its hold as the normal one rather than an exception, so staff following it would hold funds longer than the policy allows.\"}, {\"pair\": \"pair-d0f3262efb\", \"label\": \"conflict\", \"quote_a\": \"waive service fees up to $25 per account in a calendar year\", \"quote_b\": \"or up to $50 with branch manager approval noted in the account\", \"rationale\": \"The second policy lets a personal banker go up to $50 with branch manager approval, and the first policy states a $25 limit with no such exception. Staff following the first clause would refuse a waiver the second clause allows, and the two are separate policies rather than versions of one document.\"}, {\"pair\": \"pair-86cf3d3f61\", \"label\": \"consistent\", \"quote_a\": \"Collect two forms of identification from each signer before opening the account, or one form plus a verified bank reference when the branch manager approves.\", \"quote_b\": \"Collect two forms of identification from each signer before opening the account, or one form plus a verified bank reference when the branch manager approves.\", \"rationale\": \"Both clauses state the same rule with the same values and the same branch manager condition. The procedure covers consumer accounts only, which sits inside the policy's scope and changes nothing staff do.\"}]}",
+   "problems": [],
+   "meta": {
+    "ms": 19211,
+    "api_ms": 18966,
+    "input_tokens": 8330,
+    "output_tokens": 2525,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 7487,
+     "cache_read_input_tokens": 841,
+     "output_tokens": 2525,
+     "output_tokens_details": {
+      "thinking_tokens": 1571
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 7487,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 2525,
+       "cache_read_input_tokens": 841,
+       "cache_creation_input_tokens": 7487,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 7487
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.0552861,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T04:14:35+00:00"
+}

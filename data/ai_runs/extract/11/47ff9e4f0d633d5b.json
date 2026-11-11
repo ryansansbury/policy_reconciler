@@ -1,0 +1,167 @@
+{
+ "step": "extract",
+ "tag": "11",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "dcc761e46c6ec579c01b9dfd540df3c2fa4bba3b6b5ec777aa2cf9c9c62aa411",
+ "input": [
+  {
+   "clause": "POL-WIR-01@v4/s6/c1",
+   "text": "Branch managers make sure their teams follow this policy, and Treasury Services answers questions about it.",
+   "heading": "Roles and responsibilities",
+   "document": {
+    "title": "Wire Transfer Policy",
+    "type": "policy",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "POL-WIR-02@v3/s3/c1",
+   "text": "Outgoing wires of $10,000 or more require a callback to the customer at a number already on file.",
+   "heading": "Policy statements",
+   "document": {
+    "title": "Commercial Wire Services Policy",
+    "type": "policy",
+    "applies_to": "All branches. Commercial accounts."
+   }
+  },
+  {
+   "clause": "POL-WIR-02@v3/s4/c1",
+   "text": "Callbacks are completed by a wire specialist, never by the employee who took the request.",
+   "heading": "Additional requirements",
+   "document": {
+    "title": "Commercial Wire Services Policy",
+    "type": "policy",
+    "applies_to": "All branches. Commercial accounts."
+   }
+  },
+  {
+   "clause": "POL-WIR-02@v3/s4/c2",
+   "text": "Outgoing wires over $50,000 need a second approval from an operations manager.",
+   "heading": "Additional requirements",
+   "document": {
+    "title": "Commercial Wire Services Policy",
+    "type": "policy",
+    "applies_to": "All branches. Commercial accounts."
+   }
+  },
+  {
+   "clause": "POL-WIR-02@v3/s6/c1",
+   "text": "Branch managers make sure their teams follow this policy, and Treasury Services answers questions about it.",
+   "heading": "Roles and responsibilities",
+   "document": {
+    "title": "Commercial Wire Services Policy",
+    "type": "policy",
+    "applies_to": "All branches. Commercial accounts."
+   }
+  },
+  {
+   "clause": "POL-WIR-02@v3/s8/c1",
+   "text": "Branches without a wire specialist on site may release outgoing wires up to $25,000 after the teller's own review.",
+   "heading": "Related requirements",
+   "document": {
+    "title": "Commercial Wire Services Policy",
+    "type": "policy",
+    "applies_to": "All branches. Commercial accounts."
+   }
+  },
+  {
+   "clause": "PRO-AOP-01@v4/s3/c3",
+   "text": "Any exception to the identification requirements must be approved by the branch manager.",
+   "heading": "Steps",
+   "document": {
+    "title": "Opening a Consumer Checking Account",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer accounts."
+   }
+  },
+  {
+   "clause": "PRO-AOP-02@v1/s3/c7",
+   "text": "Any exception to the identification requirements must be approved by the branch manager.",
+   "heading": "Steps",
+   "document": {
+    "title": "Opening a Savings Account",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "PRO-AOP-04@v3/s3/c7",
+   "text": "Any exception to the identification requirements must be approved by the operations specialist.",
+   "heading": "Steps",
+   "document": {
+    "title": "Verifying Customer Identification",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "PRO-AOP-05@v1/s3/c2",
+   "text": "Do not open an account until you have verified two forms of identification for each signer, or one form plus a verified bank reference when the branch manager approves.",
+   "heading": "Steps",
+   "document": {
+    "title": "Adding a Signer to an Existing Account",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  }
+ ],
+ "input_hash": "8b14e928febddd0a0bf20654efb32abe7e0951914822e03c1868481ec9154dfc",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [\n{\"clause\": \"POL-WIR-01@v4/s6/c1\", \"atoms\": []},\n{\"clause\": \"POL-WIR-02@v3/s3/c1\", \"atoms\": [\n{\"attribute\": \"wire_callback\", \"value\": {\"type\": \"money\", \"dollars\": 10000}, \"quote\": \"$10,000\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}\n]},\n{\"clause\": \"POL-WIR-02@v3/s4/c1\", \"atoms\": [\n{\"attribute\": \"wire_callback_role\", \"value\": {\"type\": \"role\", \"role\": \"wire_specialist\"}, \"quote\": \"wire specialist\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}\n]},\n{\"clause\": \"POL-WIR-02@v3/s4/c2\", \"atoms\": [\n{\"attribute\": \"wire_second_approval\", \"value\": {\"type\": \"money\", \"dollars\": 50000}, \"quote\": \"$50,000\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}\n]},\n{\"clause\": \"POL-WIR-02@v3/s6/c1\", \"atoms\": []},\n{\"clause\": \"POL-WIR-02@v3/s8/c1\", \"atoms\": []},\n{\"clause\": \"PRO-AOP-01@v4/s3/c3\", \"atoms\": [\n{\"attribute\": \"ao_exception_approver\", \"value\": {\"type\": \"role\", \"role\": \"branch_manager\"}, \"quote\": \"branch manager\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}\n]},\n{\"clause\": \"PRO-AOP-02@v1/s3/c7\", \"atoms\": [\n{\"attribute\": \"ao_exception_approver\", \"value\": {\"type\": \"role\", \"role\": \"branch_manager\"}, \"quote\": \"branch manager\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}\n]},\n{\"clause\": \"PRO-AOP-04@v3/s3/c7\", \"atoms\": [\n{\"attribute\": \"ao_exception_approver\", \"value\": {\"type\": \"role\", \"role\": \"operations_specialist\"}, \"quote\": \"operations specialist\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}\n]},\n{\"clause\": \"PRO-AOP-05@v1/s3/c2\", \"atoms\": [\n{\"attribute\": \"ao_id_count\", \"value\": {\"type\": \"count\", \"n\": 2}, \"quote\": \"two\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": \"or one form plus a verified bank reference when the branch manager approves\"}\n]}\n]}",
+   "problems": [],
+   "meta": {
+    "ms": 9916,
+    "api_ms": 9782,
+    "input_tokens": 8966,
+    "output_tokens": 1547,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 6282,
+     "cache_read_input_tokens": 2682,
+     "output_tokens": 1547,
+     "output_tokens_details": {
+      "thinking_tokens": 633
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 6282,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 1547,
+       "cache_read_input_tokens": 2682,
+       "cache_creation_input_tokens": 6282,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 6282
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.0408702,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T03:52:14+00:00"
+}

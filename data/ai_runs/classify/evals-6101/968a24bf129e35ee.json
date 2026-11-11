@@ -1,0 +1,307 @@
+{
+ "step": "classify",
+ "tag": "evals-6101",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "2c908358fde9f0f4a792753579a6cfaa33476e41c4b0f235744675d8e8283a19",
+ "input": [
+  {
+   "pair": "pair-b9b63a998c",
+   "rule": "Wire callback threshold",
+   "attribute": "wire_callback",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "BUL-WIR-01@v2/s1/c2",
+    "text": "Call the customer back at a phone number already on file before releasing any outgoing wire of $10,000 or more.",
+    "heading": "What branches need to know",
+    "document": {
+     "title": "Branch Bulletin 2025-24: Callback threshold for outgoing wires",
+     "type": "bulletin",
+     "version": 2,
+     "effective": "2026-07-18",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "BUL-WIR-01@v1/s1/c2",
+    "text": "Call the customer back at a phone number already on file before releasing any outgoing wire of $5,000 or more.",
+    "heading": "What branches need to know",
+    "document": {
+     "title": "Branch Bulletin 2025-24: Callback threshold for outgoing wires",
+     "type": "bulletin",
+     "version": 1,
+     "effective": "2025-04-28",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-4c4fe2c702",
+   "rule": "Large-cash review threshold",
+   "attribute": "cash_review_threshold",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-CSH-07@v4/s4/c2",
+    "text": "For commercial accounts, cash transactions of $5,000 or more go to the large-cash review queue the same day.",
+    "heading": "Exceptions and escalation",
+    "document": {
+     "title": "Counting Cash Under Dual Control",
+     "type": "procedure",
+     "version": 4,
+     "effective": "2025-10-17",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "PRO-CSH-07@v3/s4/c2",
+    "text": "Cash transactions of $9,000 or more go to the large-cash review queue the same day.",
+    "heading": "Exceptions and escalation",
+    "document": {
+     "title": "Counting Cash Under Dual Control",
+     "type": "procedure",
+     "version": 3,
+     "effective": "2024-12-26",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-a710e051af",
+   "rule": "Forms of identification per signer",
+   "attribute": "ao_id_count",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "JA-AOP-01@v4/s1/c2",
+    "text": "Forms of identification per signer | two",
+    "heading": "Quick reference",
+    "document": {
+     "title": "New Account Quick Reference",
+     "type": "job_aid",
+     "version": 4,
+     "effective": "2025-08-13",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "JA-AOP-01@v3/s1/c2",
+    "text": "Forms of identification per signer | one",
+    "heading": "Quick reference",
+    "document": {
+     "title": "New Account Quick Reference",
+     "type": "job_aid",
+     "version": 3,
+     "effective": "2024-10-06",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-cf977c047d",
+   "rule": "Provisional credit deadline",
+   "attribute": "dispute_provisional_credit",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "JA-DSP-01@v3/s1/c1",
+    "text": "Provisional credit deadline for disputes | 10 business days",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Dispute Intake Checklist",
+     "type": "job_aid",
+     "version": 3,
+     "effective": "2025-08-29",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "JA-DSP-01@v2/s1/c1",
+    "text": "Provisional credit deadline for disputes | 5 business days",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Dispute Intake Checklist",
+     "type": "job_aid",
+     "version": 2,
+     "effective": "2024-06-03",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-52ee91253d",
+   "rule": null,
+   "attribute": null,
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-CMP-01@v2/s3/c6",
+    "text": "Resolve complaints within 15 days of receipt, or tell the customer when to expect a resolution.",
+    "heading": "Steps",
+    "document": {
+     "title": "Logging a Customer Complaint",
+     "type": "procedure",
+     "version": 2,
+     "effective": "2025-08-20",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "PRO-CMP-01@v1/s3/c6",
+    "text": "Resolve complaints within 10 business days of receipt, or tell the customer when to expect a resolution.",
+    "heading": "Steps",
+    "document": {
+     "title": "Logging a Customer Complaint",
+     "type": "procedure",
+     "version": 1,
+     "effective": "2024-09-12",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-4dd8f00c65",
+   "rule": "Overdraft fee per item",
+   "attribute": "od_fee",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-ODR-05@v4/s3/c2",
+    "text": "An overdraft fee of $30 applies to each item the bank pays when the balance is not enough to cover it.",
+    "heading": "Steps",
+    "document": {
+     "title": "Closing an Overdrawn Account",
+     "type": "procedure",
+     "version": 4,
+     "effective": "2025-04-12",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "PRO-ODR-05@v4/s3/c12",
+    "text": "Withdrawals at ATMs outside the network are charged $3 each.",
+    "heading": "Steps",
+    "document": {
+     "title": "Closing an Overdrawn Account",
+     "type": "procedure",
+     "version": 4,
+     "effective": "2025-04-12",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-313e5af199",
+   "rule": "Outgoing wire cutoff",
+   "attribute": "wire_cutoff",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-WIR-01@v2/s3/c1",
+    "text": "The cutoff for outgoing commercial wires is 4:00 PM Central time.",
+    "heading": "Policy statements",
+    "document": {
+     "title": "Wire Transfer Policy",
+     "type": "policy",
+     "version": 2,
+     "effective": "2026-08-02",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "POL-WIR-01@v2/s3/c3",
+    "text": "Incoming wires received by 4:30 p.m. Central are posted to the customer's account the same day.",
+    "heading": "Policy statements",
+    "document": {
+     "title": "Wire Transfer Policy",
+     "type": "policy",
+     "version": 2,
+     "effective": "2026-08-02",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-f0f034917b",
+   "rule": "Teller drawer limit",
+   "attribute": "cash_drawer_limit",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-CSH-01@v4/s4/c1",
+    "text": "Sell excess cash to the vault whenever a teller drawer goes above $15,000.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Cash Handling Policy",
+     "type": "policy",
+     "version": 4,
+     "effective": "2025-05-11",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "POL-CSH-01@v4/s4/c3",
+    "text": "Consumer debit cards can withdraw up to $800 a day at ATMs.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Cash Handling Policy",
+     "type": "policy",
+     "version": 4,
+     "effective": "2025-05-11",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  }
+ ],
+ "input_hash": "c9304ae505b0ab53adfc15324f7e10386c1ca6fe89bb3d3d0f192ed4c64762c9",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [{\"pair\": \"pair-b9b63a998c\", \"label\": \"superseded\", \"quote_a\": \"any outgoing wire of $10,000 or more\", \"quote_b\": \"any outgoing wire of $5,000 or more\", \"rationale\": \"These are versions 2 and 1 of the same bulletin, and version 2 raises the callback threshold to $10,000 from $5,000. The newer version replaces the older one.\"}, {\"pair\": \"pair-4c4fe2c702\", \"label\": \"superseded\", \"quote_a\": \"For commercial accounts, cash transactions of $5,000 or more\", \"quote_b\": \"Cash transactions of $9,000 or more\", \"rationale\": \"These are versions 4 and 3 of the same procedure, so the newer version replaces the older one. The commercial accounts wording is part of the revised text and is not a deliberate scope set in a separate document.\"}, {\"pair\": \"pair-a710e051af\", \"label\": \"superseded\", \"quote_a\": \"Forms of identification per signer | two\", \"quote_b\": \"Forms of identification per signer | one\", \"rationale\": \"These are versions 4 and 3 of the same job aid, and version 4 asks for two forms of identification where version 3 asked for one. The newer version replaces the older one.\"}, {\"pair\": \"pair-cf977c047d\", \"label\": \"superseded\", \"quote_a\": \"Provisional credit deadline for disputes | 10 business days\", \"quote_b\": \"Provisional credit deadline for disputes | 5 business days\", \"rationale\": \"These are versions 3 and 2 of the same checklist, and version 3 moves the deadline to 10 business days from 5. The newer version replaces the older one.\"}, {\"pair\": \"pair-52ee91253d\", \"label\": \"superseded\", \"quote_a\": \"within 15 days of receipt\", \"quote_b\": \"within 10 business days of receipt\", \"rationale\": \"These are versions 2 and 1 of the same procedure, and version 2 sets the resolution window at 15 days where version 1 set 10 business days. The newer version replaces the older one.\"}, {\"pair\": \"pair-4dd8f00c65\", \"label\": \"unrelated\", \"quote_a\": \"An overdraft fee of $30 applies to each item the bank pays\", \"quote_b\": \"Withdrawals at ATMs outside the network are charged $3 each.\", \"rationale\": \"One clause sets the fee for paying items against an insufficient balance. The other sets a fee for out of network ATM withdrawals, so they govern different things.\"}, {\"pair\": \"pair-313e5af199\", \"label\": \"unrelated\", \"quote_a\": \"The cutoff for outgoing commercial wires is 4:00 PM Central time.\", \"quote_b\": \"Incoming wires received by 4:30 p.m. Central are posted to the customer's account the same day.\", \"rationale\": \"One clause covers the cutoff for sending commercial wires. The other covers same day posting of wires the bank receives, so they govern different things.\"}, {\"pair\": \"pair-f0f034917b\", \"label\": \"unrelated\", \"quote_a\": \"Sell excess cash to the vault whenever a teller drawer goes above $15,000.\", \"quote_b\": \"Consumer debit cards can withdraw up to $800 a day at ATMs.\", \"rationale\": \"One clause limits the cash a teller drawer may hold. The other limits daily ATM withdrawals on consumer debit cards, so they govern different things.\"}]}",
+   "problems": [],
+   "meta": {
+    "ms": 15008,
+    "api_ms": 14869,
+    "input_tokens": 9031,
+    "output_tokens": 2371,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 8188,
+     "cache_read_input_tokens": 841,
+     "output_tokens": 2371,
+     "output_tokens_details": {
+      "thinking_tokens": 1254
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 8188,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 2371,
+       "cache_read_input_tokens": 841,
+       "cache_creation_input_tokens": 8188,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 8188
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.056550100000000006,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T05:28:57+00:00"
+}

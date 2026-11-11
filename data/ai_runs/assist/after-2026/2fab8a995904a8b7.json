@@ -1,0 +1,114 @@
+{
+ "step": "assist",
+ "tag": "after-2026",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "66c01f0da9f327e74355d39363e55b642a1bbf8dc6249974c3afbf3cb3d6ccd5",
+ "input": [
+  {
+   "question": "q-C-01",
+   "text": "How much can a branch manager waive in fees for one account in a year?",
+   "type": "money",
+   "clauses": [
+    {
+     "id": "draft:g-8dd7694e",
+     "text": "A branch manager may waive up to $50 in fees for one account in a calendar year.",
+     "title": "Branch manager fee waivers",
+     "type": "consolidated",
+     "version": 1,
+     "effective": ""
+    },
+    {
+     "id": "POL-FEE-01@v2/s3/c2",
+     "text": "The most a branch manager can waive for one account in a calendar year is $50.",
+     "title": "Service Fee Waiver Policy",
+     "type": "policy",
+     "version": 2,
+     "effective": "2025-05-24"
+    },
+    {
+     "id": "BUL-FEE-02@v3/s1/c2",
+     "text": "Branch managers may waive service fees up to $50 per account in a calendar year.",
+     "title": "Branch Bulletin 2026-12: Branch manager fee waiver limit",
+     "type": "bulletin",
+     "version": 3,
+     "effective": "2026-04-06"
+    },
+    {
+     "id": "FAQ-FEE-01@v3/s1/c1",
+     "text": "Branch managers may waive service fees up to $50 per account in a calendar year.",
+     "title": "Fee Waiver FAQ",
+     "type": "faq",
+     "version": 3,
+     "effective": "2026-08-10"
+    },
+    {
+     "id": "POL-FEE-02@v6/s3/c1",
+     "text": "Branch managers may waive service fees up to $50 per account in a calendar year.",
+     "title": "Fee Refund Policy",
+     "type": "policy",
+     "version": 6,
+     "effective": "2025-02-02"
+    }
+   ]
+  }
+ ],
+ "input_hash": "55e133b4cccc1a6f6fd46262ae19a422ff108f0480f94f3c9036e47c807902ff",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [{\"question\": \"q-C-01\", \"answer\": \"A branch manager can waive up to $50 in fees for one account in a calendar year. The Service Fee Waiver Policy, the Fee Refund Policy, the branch bulletin and the Fee Waiver FAQ all give the same $50 limit.\", \"citations\": [\"POL-FEE-01@v2/s3/c2\", \"POL-FEE-02@v6/s3/c1\", \"BUL-FEE-02@v3/s1/c2\", \"FAQ-FEE-01@v3/s1/c1\"], \"sources_disagree\": false}]}",
+   "problems": [],
+   "meta": {
+    "ms": 4157,
+    "api_ms": 4005,
+    "input_tokens": 6135,
+    "output_tokens": 202,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 5515,
+     "cache_read_input_tokens": 618,
+     "output_tokens": 202,
+     "output_tokens_details": {
+      "thinking_tokens": 0
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 5515,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 202,
+       "cache_read_input_tokens": 618,
+       "cache_creation_input_tokens": 5515,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 5515
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.0241458,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T06:03:09+00:00"
+}

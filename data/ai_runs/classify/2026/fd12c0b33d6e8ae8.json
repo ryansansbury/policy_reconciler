@@ -1,0 +1,129 @@
+{
+ "step": "classify",
+ "tag": "2026",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "2c908358fde9f0f4a792753579a6cfaa33476e41c4b0f235744675d8e8283a19",
+ "input": [
+  {
+   "pair": "pair-9f6e315ae8",
+   "rule": "Complaint resolution deadline",
+   "attribute": "complaint_resolve",
+   "reason": "The values match, but the weaker document adds a condition the stronger one doesn't state.",
+   "a": {
+    "clause": "POL-CMP-01@v5/s3/c1",
+    "text": "Resolve complaints within 15 business days of receipt, or tell the customer when to expect a resolution.",
+    "heading": "Policy statements",
+    "document": {
+     "title": "Complaint Management Policy",
+     "type": "policy",
+     "version": 5,
+     "effective": "2026-06-14",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "PRO-CMP-06@v3/s3/c7",
+    "text": "Resolve complaints within 15 business days of receipt, or tell the customer when to expect a resolution.",
+    "heading": "Steps",
+    "document": {
+     "title": "Responding to a Complaint by Phone",
+     "type": "procedure",
+     "version": 3,
+     "effective": "2024-11-24",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "kind": "added_condition"
+  },
+  {
+   "pair": "pair-9cd02f15d1",
+   "rule": "Standard check hold",
+   "attribute": "hold_standard",
+   "reason": "The values match, but the weaker document adds a condition the stronger one doesn't state.",
+   "a": {
+    "clause": "POL-HLD-01@v5/s3/c1",
+    "text": "Place a standard hold of 2 business days on deposited checks that don't qualify for next-day availability.",
+    "heading": "Policy statements",
+    "document": {
+     "title": "Funds Availability Policy",
+     "type": "policy",
+     "version": 5,
+     "effective": "2026-05-20",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "PRO-HLD-04@v3/s3/c8",
+    "text": "Funds from deposited checks are available within 2 business days unless a longer hold applies.",
+    "heading": "Steps",
+    "document": {
+     "title": "Releasing a Hold Early",
+     "type": "procedure",
+     "version": 3,
+     "effective": "2026-02-02",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "kind": "added_condition"
+  }
+ ],
+ "input_hash": "de8a93d51209afed1b6ccdde53d0481bf5978e14743aefaa23080e7c01725343",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [{\"pair\": \"pair-9f6e315ae8\", \"label\": \"consistent\", \"quote_a\": \"Resolve complaints within 15 business days of receipt, or tell the customer when to expect a resolution.\", \"quote_b\": \"Resolve complaints within 15 business days of receipt, or tell the customer when to expect a resolution.\", \"rationale\": \"Both clauses set the same 15 business day deadline with the same alternative, and neither adds a condition the other lacks. Staff acting on either one would do the same thing, and a single sentence rule is not a copied passage.\"}, {\"pair\": \"pair-9cd02f15d1\", \"label\": \"consistent\", \"quote_a\": \"Place a standard hold of 2 business days on deposited checks that don't qualify for next-day availability.\", \"quote_b\": \"Funds from deposited checks are available within 2 business days unless a longer hold applies.\", \"rationale\": \"Both clauses set 2 business days for the standard hold. The procedure adds that a longer hold may apply, and I decided that is not a contradiction because the policy only sets the standard hold and staff following it would not refuse anything the procedure allows.\"}]}",
+   "problems": [],
+   "meta": {
+    "ms": 6768,
+    "api_ms": 6535,
+    "input_tokens": 6593,
+    "output_tokens": 873,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 5750,
+     "cache_read_input_tokens": 841,
+     "output_tokens": 873,
+     "output_tokens_details": {
+      "thinking_tokens": 495
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 5750,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 873,
+       "cache_read_input_tokens": 841,
+       "cache_creation_input_tokens": 5750,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 5750
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.0318181,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T04:14:47+00:00"
+}

@@ -1,0 +1,307 @@
+{
+ "step": "classify",
+ "tag": "evals-6101",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "2c908358fde9f0f4a792753579a6cfaa33476e41c4b0f235744675d8e8283a19",
+ "input": [
+  {
+   "pair": "pair-03ac13f122",
+   "rule": "Standard check hold",
+   "attribute": "hold_standard",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-HLD-03@v2/s5/c1",
+    "text": "Place a standard hold of 2 business days on deposited checks that don't qualify for next-day availability.",
+    "heading": "Steps to follow",
+    "document": {
+     "title": "Holds on New Accounts",
+     "type": "procedure",
+     "version": 2,
+     "effective": "2025-08-25",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "PRO-HLD-03@v2/s5/c5",
+    "text": "Debit card authorization holds drop off within 3 business days if the merchant does not settle the charge.",
+    "heading": "Steps to follow",
+    "document": {
+     "title": "Holds on New Accounts",
+     "type": "procedure",
+     "version": 2,
+     "effective": "2025-08-25",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-165c4e55cc",
+   "rule": "Wire callback threshold",
+   "attribute": "wire_callback",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "JA-WIR-01@v4/s1/c2",
+    "text": "Callback threshold for outgoing wires | $10,000",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Wire Desk Quick Reference",
+     "type": "job_aid",
+     "version": 4,
+     "effective": "2026-03-16",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "PRO-WIR-03@v3/s3/c10",
+    "text": "Call the customer back at a phone number already on file before releasing any outgoing wire of $10,000 or more.",
+    "heading": "Steps",
+    "document": {
+     "title": "Completing Wire Callback Verification",
+     "type": "procedure",
+     "version": 3,
+     "effective": "2024-12-08",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-c24b7eca1b",
+   "rule": "Unfair treatment escalation",
+   "attribute": "complaint_escalation_role",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "JA-CMP-01@v1/s1/c2",
+    "text": "Escalation for unfair treatment complaints | regional manager",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Complaint Handling Card",
+     "type": "job_aid",
+     "version": 1,
+     "effective": "2026-02-10",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "PRO-CMP-04@v1/s3/c5",
+    "text": "Escalate any complaint alleging unfair treatment to the regional manager on the day it is received.",
+    "heading": "Steps",
+    "document": {
+     "title": "Escalating a Sensitive Complaint",
+     "type": "procedure",
+     "version": 1,
+     "effective": "2026-01-28",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-d897727715",
+   "rule": "Who completes wire callbacks",
+   "attribute": "wire_callback_role",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "JA-WIR-02@v4/s1/c2",
+    "text": "Who completes wire callbacks | wire specialist",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Callback Checklist",
+     "type": "job_aid",
+     "version": 4,
+     "effective": "2026-05-28",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "BUL-WIR-02@v1/s1/c2",
+    "text": "Only a wire specialist may complete the callback for an outgoing wire.",
+    "heading": "What branches need to know",
+    "document": {
+     "title": "Branch Bulletin 2026-35: Who completes wire callbacks",
+     "type": "bulletin",
+     "version": 1,
+     "effective": "2025-04-24",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-100219f233",
+   "rule": "Inactivity before dormancy",
+   "attribute": "dormant_inactivity",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-DRM-01@v3/s3/c5",
+    "text": "Classify accounts as dormant after 12 months without customer-initiated activity.",
+    "heading": "Steps",
+    "document": {
+     "title": "Identifying Dormant Accounts",
+     "type": "procedure",
+     "version": 3,
+     "effective": "2024-12-27",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "JA-DRM-01@v1/s1/c2",
+    "text": "Inactivity before an account is dormant | 12 months",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Dormant Account Quick Reference",
+     "type": "job_aid",
+     "version": 1,
+     "effective": "2025-07-09",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-52aee1d975",
+   "rule": "Dual control for the vault",
+   "attribute": "cash_vault_dual",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-CSH-04@v4/s3/c2",
+    "text": "Two employees must be present whenever the vault is opened.",
+    "heading": "Steps",
+    "document": {
+     "title": "Logging Transactions for Large-Cash Review",
+     "type": "procedure",
+     "version": 4,
+     "effective": "2025-02-09",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "JA-CSH-03@v2/s1/c1",
+    "text": "Dual control for the vault | Required",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Large-Cash Review Quick Reference",
+     "type": "job_aid",
+     "version": 2,
+     "effective": "2026-02-22",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-3b048392fc",
+   "rule": "Large-cash review threshold",
+   "attribute": "cash_review_threshold",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "JA-CSH-03@v2/s1/c2",
+    "text": "Large-cash review threshold | $7,500",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Large-Cash Review Quick Reference",
+     "type": "job_aid",
+     "version": 2,
+     "effective": "2026-02-22",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "JA-CSH-02@v4/s1/c1",
+    "text": "Large-cash review threshold | $7,500",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Vault Opening Checklist",
+     "type": "job_aid",
+     "version": 4,
+     "effective": "2025-07-25",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-4f08a992da",
+   "rule": "Provisional credit deadline",
+   "attribute": "dispute_provisional_credit",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "FAQ-DSP-02@v1/s1/c1",
+    "text": "Credit the customer provisionally no later than 10 business days after the dispute form is complete.",
+    "heading": "When does a customer get provisional credit on a dispute?",
+    "document": {
+     "title": "Provisional Credit Questions",
+     "type": "faq",
+     "version": 1,
+     "effective": "2025-11-22",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "PRO-DSP-03@v2/s3/c6",
+    "text": "Provisional credit is issued within 10 business days of receiving a completed dispute.",
+    "heading": "Steps",
+    "document": {
+     "title": "Investigating a Dispute",
+     "type": "procedure",
+     "version": 2,
+     "effective": "2026-07-31",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  }
+ ],
+ "input_hash": "ec74258ddc6e9d7584b2d585e4fd054f4095c8c23789aef203e5d5f4201a801b",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [{\"pair\": \"pair-03ac13f122\", \"label\": \"unrelated\", \"quote_a\": \"Place a standard hold of 2 business days on deposited checks\", \"quote_b\": \"Debit card authorization holds drop off within 3 business days\", \"rationale\": \"One clause sets the hold on deposited checks and the other sets when debit card authorization holds expire. They govern different things.\"}, {\"pair\": \"pair-165c4e55cc\", \"label\": \"consistent\", \"quote_a\": \"Callback threshold for outgoing wires | $10,000\", \"quote_b\": \"outgoing wire of $10,000 or more\", \"rationale\": \"Both clauses require a callback at $10,000 for outgoing wires. The job aid and the procedure give the same value and staff would act the same way under either.\"}, {\"pair\": \"pair-c24b7eca1b\", \"label\": \"consistent\", \"quote_a\": \"Escalation for unfair treatment complaints | regional manager\", \"quote_b\": \"Escalate any complaint alleging unfair treatment to the regional manager\", \"rationale\": \"Both clauses send unfair treatment complaints to the regional manager. The same-day timing appears only in the procedure and does not contradict the job aid.\"}, {\"pair\": \"pair-d897727715\", \"label\": \"consistent\", \"quote_a\": \"Who completes wire callbacks | wire specialist\", \"quote_b\": \"Only a wire specialist may complete the callback for an outgoing wire.\", \"rationale\": \"Both clauses name the wire specialist as the person who completes the callback. Neither widens or narrows who can act.\"}, {\"pair\": \"pair-100219f233\", \"label\": \"consistent\", \"quote_a\": \"Classify accounts as dormant after 12 months without customer-initiated activity.\", \"quote_b\": \"Inactivity before an account is dormant | 12 months\", \"rationale\": \"Both clauses set the dormancy period at 12 months. The values match and staff would act the same way under either.\"}, {\"pair\": \"pair-52aee1d975\", \"label\": \"consistent\", \"quote_a\": \"Two employees must be present whenever the vault is opened.\", \"quote_b\": \"Dual control for the vault | Required\", \"rationale\": \"Requiring two employees at the vault is dual control. Both clauses state the same requirement.\"}, {\"pair\": \"pair-3b048392fc\", \"label\": \"consistent\", \"quote_a\": \"Large-cash review threshold | $7,500\", \"quote_b\": \"Large-cash review threshold | $7,500\", \"rationale\": \"Both job aids set the large cash review threshold at $7,500. The value is the same in each.\"}, {\"pair\": \"pair-4f08a992da\", \"label\": \"consistent\", \"quote_a\": \"Credit the customer provisionally no later than 10 business days after the dispute form is complete.\", \"quote_b\": \"Provisional credit is issued within 10 business days of receiving a completed dispute.\", \"rationale\": \"Both clauses set provisional credit at 10 business days from a completed dispute. The deadline and unit match.\"}]}",
+   "problems": [],
+   "meta": {
+    "ms": 10221,
+    "api_ms": 10068,
+    "input_tokens": 8974,
+    "output_tokens": 1613,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 8131,
+     "cache_read_input_tokens": 841,
+     "output_tokens": 1613,
+     "output_tokens_details": {
+      "thinking_tokens": 631
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 8131,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 1613,
+       "cache_read_input_tokens": 841,
+       "cache_creation_input_tokens": 8131,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 8131
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.0487421,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T05:29:06+00:00"
+}

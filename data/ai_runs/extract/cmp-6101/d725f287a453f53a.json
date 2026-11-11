@@ -1,0 +1,149 @@
+{
+ "step": "extract",
+ "tag": "cmp-6101",
+ "model": "openai-a",
+ "backend": {
+  "vendor": "OpenAI",
+  "model": "gpt-6-astra",
+  "label": "GPT-6 Astra"
+ },
+ "prompt_hash": "dcc761e46c6ec579c01b9dfd540df3c2fa4bba3b6b5ec777aa2cf9c9c62aa411",
+ "input": [
+  {
+   "clause": "PRO-DRM-03@v1/s5/c5",
+   "text": "Dormant accounts receive a statement every 12 months.",
+   "heading": "Steps to follow",
+   "document": {
+    "title": "Reactivating a Dormant Account",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "PRO-DRM-04@v3/s3/c10",
+   "text": "Dormant accounts are charged a maintenance fee of $3 per month.",
+   "heading": "Steps",
+   "document": {
+    "title": "Charging Dormant Account Fees",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "PRO-DRM-06@v1/s3/c9",
+   "text": "Dormant accounts receive a statement every 12 months.",
+   "heading": "Steps",
+   "document": {
+    "title": "Handling Mail Returned on a Dormant Account",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "PRO-DSP-01@v1/s3/c9",
+   "text": "For small business accounts, disputes over $1,000 are reviewed by a card services specialist before credit is issued.",
+   "heading": "Steps",
+   "document": {
+    "title": "Taking a Debit Card Dispute",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "PRO-DSP-05@v4/s3/c1",
+   "text": "Accept debit card disputes filed within 90 days of the statement that first showed the charge.",
+   "heading": "Steps",
+   "document": {
+    "title": "Blocking and Replacing a Compromised Card",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "PRO-DSP-05@v4/s3/c10",
+   "text": "Tell customers a replacement card will arrive within 7 business days.",
+   "heading": "Steps",
+   "document": {
+    "title": "Blocking and Replacing a Compromised Card",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "PRO-FEE-04@v4/s3/c9",
+   "text": "For small business accounts, each account may receive no more than three fee waivers in a calendar year.",
+   "heading": "Steps",
+   "document": {
+    "title": "Reviewing Waiver Activity Each Month",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "PRO-FEE-05@v3/s3/c5",
+   "text": "A branch manager may waive up to one hundred dollars in fees for a single account each year.",
+   "heading": "Steps",
+   "document": {
+    "title": "Documenting Fee Waivers in Account Notes",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "PRO-HLD-03@v2/s5/c1",
+   "text": "Place a standard hold of 2 business days on deposited checks that don't qualify for next-day availability.",
+   "heading": "Steps to follow",
+   "document": {
+    "title": "Holds on New Accounts",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "PRO-HLD-03@v2/s5/c2",
+   "text": "Checks deposited to a new account may be held for up to 7 business days.",
+   "heading": "Steps to follow",
+   "document": {
+    "title": "Holds on New Accounts",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  }
+ ],
+ "input_hash": "dc1e19d4d6065f4cc821eb4575907b65e8b1a1ad34ffc4c3a2d722c49ed89301",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\":[{\"clause\":\"PRO-DRM-03@v1/s5/c5\",\"atoms\":[{\"attribute\":\"dormant_statement\",\"value\":{\"type\":\"duration\",\"n\":12,\"unit\":\"months\"},\"quote\":\"12 months\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]},{\"clause\":\"PRO-DRM-04@v3/s3/c10\",\"atoms\":[{\"attribute\":\"dormant_fee\",\"value\":{\"type\":\"money\",\"dollars\":3},\"quote\":\"$3\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]},{\"clause\":\"PRO-DRM-06@v1/s3/c9\",\"atoms\":[{\"attribute\":\"dormant_statement\",\"value\":{\"type\":\"duration\",\"n\":12,\"unit\":\"months\"},\"quote\":\"12 months\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]},{\"clause\":\"PRO-DSP-01@v1/s3/c9\",\"atoms\":[{\"attribute\":\"dispute_review_threshold\",\"value\":{\"type\":\"money\",\"dollars\":1000},\"quote\":\"$1,000\",\"actor\":\"card_services_specialist\",\"actor_inferred\":false,\"scope_quote\":\"For small business accounts\",\"condition\":null}]},{\"clause\":\"PRO-DSP-05@v4/s3/c1\",\"atoms\":[{\"attribute\":\"dispute_window\",\"value\":{\"type\":\"duration\",\"n\":90,\"unit\":\"days\"},\"quote\":\"90 days\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]},{\"clause\":\"PRO-DSP-05@v4/s3/c10\",\"atoms\":[{\"attribute\":\"card_replacement\",\"value\":{\"type\":\"duration\",\"n\":7,\"unit\":\"business_days\"},\"quote\":\"7 business days\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]},{\"clause\":\"PRO-FEE-04@v4/s3/c9\",\"atoms\":[{\"attribute\":\"fee_waivers_per_year\",\"value\":{\"type\":\"count\",\"n\":3},\"quote\":\"three\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":\"For small business accounts\",\"condition\":null}]},{\"clause\":\"PRO-FEE-05@v3/s3/c5\",\"atoms\":[{\"attribute\":\"fee_waiver_bm\",\"value\":{\"type\":\"money\",\"dollars\":100},\"quote\":\"one hundred dollars\",\"actor\":\"branch_manager\",\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]},{\"clause\":\"PRO-HLD-03@v2/s5/c1\",\"atoms\":[{\"attribute\":\"hold_standard\",\"value\":{\"type\":\"duration\",\"n\":2,\"unit\":\"business_days\"},\"quote\":\"2 business days\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":\"that don't qualify for next-day availability\"}]},{\"clause\":\"PRO-HLD-03@v2/s5/c2\",\"atoms\":[{\"attribute\":\"hold_new_account\",\"value\":{\"type\":\"duration\",\"n\":7,\"unit\":\"business_days\"},\"quote\":\"7 business days\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]}]}",
+   "problems": [],
+   "meta": {
+    "ms": 7042,
+    "input_tokens": 2698,
+    "output_tokens": 734,
+    "cost_usd": 0.06368,
+    "usage": {
+     "prompt_tokens": 2698,
+     "completion_tokens": 734,
+     "total_tokens": 3432,
+     "prompt_tokens_details": {
+      "cached_tokens": 1728,
+      "cache_write_tokens": 967,
+      "audio_tokens": 0
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 49,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+     }
+    },
+    "models": [
+     "gpt-6-astra"
+    ],
+    "stop_reason": "stop"
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T21:19:04+00:00"
+}

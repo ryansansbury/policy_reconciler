@@ -1,0 +1,133 @@
+{
+ "step": "extract",
+ "tag": "evals-11",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "c338e60b657607c5f659b819665f2ec94796d01ec070e1f88f830e5bdacdd3fe",
+ "input": [
+  {
+   "clause": "FAQ-HLD-02@v2/s1/c5",
+   "text": "An authorization hold that the merchant never settles releases within 3 business days.",
+   "heading": "How long is the standard hold on a deposited check?",
+   "document": {
+    "title": "Check Hold Questions from Customers",
+    "type": "faq",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "FAQ-LND-01@v2/s1/c1",
+   "text": "Rate exceptions larger than 0.15% need approval above the branch manager.",
+   "heading": "How large a rate exception can a branch manager approve?",
+   "document": {
+    "title": "Rate Exception FAQ",
+    "type": "faq",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "FAQ-ODR-02@v1/s1/c1",
+   "text": "Overdraft fees are capped at five per account per business day.",
+   "heading": "How many overdraft fees can an account be charged in one day?",
+   "document": {
+    "title": "Overdraft Fee Questions from Customers",
+    "type": "faq",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "FAQ-REC-01@v2/s2/c1",
+   "text": "Records may be destroyed only with written approval from the operations specialist.",
+   "heading": "Who approves the destruction of records?",
+   "document": {
+    "title": "Records Retention FAQ",
+    "type": "faq",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "FAQ-REC-02@v3/s1/c1",
+   "text": "Records may be destroyed only with written approval from a manager.",
+   "heading": "Who approves the destruction of records?",
+   "document": {
+    "title": "Legal Hold Questions",
+    "type": "faq",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "FAQ-WIR-02@v1/s1/c3",
+   "text": "Incoming wires received by 4:30 p.m. Central are posted to the customer's account the same day.",
+   "heading": "What is the cutoff for outgoing consumer wires?",
+   "document": {
+    "title": "Wire Cutoff Questions",
+    "type": "faq",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "JA-BOP-01@v2/s1/c1",
+   "text": "Vault combination change interval | 3 months",
+   "heading": "Quick reference",
+   "document": {
+    "title": "Opening Checklist",
+    "type": "job_aid",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "JA-BOP-01@v2/s1/c2",
+   "text": "Dual control at branch opening | Optional",
+   "heading": "Quick reference",
+   "document": {
+    "title": "Opening Checklist",
+    "type": "job_aid",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "JA-BOP-02@v2/s3/c3",
+   "text": "Two employees must be present to open the branch each morning.",
+   "heading": "Steps to follow",
+   "document": {
+    "title": "Closing Checklist",
+    "type": "job_aid",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "JA-BOP-02@v2/s3/c4",
+   "text": "Vault combinations are changed every 6 months and whenever an employee who knows the combination leaves.",
+   "heading": "Steps to follow",
+   "document": {
+    "title": "Closing Checklist",
+    "type": "job_aid",
+    "applies_to": "All branches. All business lines."
+   }
+  }
+ ],
+ "input_hash": "ee731d70d6b9299eca030bf5a17fd0152cd8cb5f16244eb374083542f221d572",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [\n{\"clause\": \"FAQ-HLD-02@v2/s1/c5\", \"atoms\": [{\"attribute\": \"card_auth_hold\", \"value\": {\"type\": \"duration\", \"n\": 3, \"unit\": \"business_days\"}, \"quote\": \"3 business days\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]},\n{\"clause\": \"FAQ-LND-01@v2/s1/c1\", \"atoms\": [{\"attribute\": \"lend_rate_bm\", \"value\": {\"type\": \"percent\", \"bp\": 15}, \"quote\": \"0.15%\", \"actor\": \"branch_manager\", \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]},\n{\"clause\": \"FAQ-ODR-02@v1/s1/c1\", \"atoms\": [{\"attribute\": \"od_daily_cap\", \"value\": {\"type\": \"count\", \"n\": 5}, \"quote\": \"five\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]},\n{\"clause\": \"FAQ-REC-01@v2/s2/c1\", \"atoms\": [{\"attribute\": \"records_destroy_role\", \"value\": {\"type\": \"role\", \"role\": \"operations_specialist\"}, \"quote\": \"operations specialist\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]},\n{\"clause\": \"FAQ-REC-02@v3/s1/c1\", \"atoms\": [{\"attribute\": \"records_destroy_role\", \"value\": {\"type\": \"role\", \"role\": null, \"generic\": \"a manager\"}, \"quote\": \"a manager\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]},\n{\"clause\": \"FAQ-WIR-02@v1/s1/c3\", \"atoms\": [{\"attribute\": \"incoming_wire_posting\", \"value\": {\"type\": \"time\", \"minutes\": 990}, \"quote\": \"4:30 p.m.\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]},\n{\"clause\": \"JA-BOP-01@v2/s1/c1\", \"atoms\": [{\"attribute\": \"combo_change\", \"value\": {\"type\": \"duration\", \"n\": 3, \"unit\": \"months\"}, \"quote\": \"3 months\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]},\n{\"clause\": \"JA-BOP-01@v2/s1/c2\", \"atoms\": [{\"attribute\": \"branch_open_dual\", \"value\": {\"type\": \"modal\", \"modal\": \"may\"}, \"quote\": \"Optional\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]},\n{\"clause\": \"JA-BOP-02@v2/s3/c3\", \"atoms\": [{\"attribute\": \"branch_open_dual\", \"value\": {\"type\": \"modal\", \"modal\": \"must\"}, \"quote\": \"must\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]},\n{\"clause\": \"JA-BOP-02@v2/s3/c4\", \"atoms\": [{\"attribute\": \"combo_change\", \"value\": {\"type\": \"duration\", \"n\": 6, \"unit\": \"months\"}, \"quote\": \"6 months\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": \"whenever an employee who knows the combination leaves\"}]}\n]}",
+   "problems": [],
+   "meta": {
+    "ms": 10201,
+    "api_ms": 10004,
+    "input_tokens": 2,
+    "output_tokens": 1855,
+    "cost_usd": 0.043715000000000004,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T03:22:58+00:00"
+}

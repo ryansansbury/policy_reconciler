@@ -1,0 +1,167 @@
+{
+ "step": "extract",
+ "tag": "evals-11",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "dcc761e46c6ec579c01b9dfd540df3c2fa4bba3b6b5ec777aa2cf9c9c62aa411",
+ "input": [
+  {
+   "clause": "JA-WIR-01@v3/s1/c1",
+   "text": "Who completes wire callbacks | wire specialist",
+   "heading": "Quick reference",
+   "document": {
+    "title": "Wire Desk Quick Reference",
+    "type": "job_aid",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "JA-WIR-01@v3/s1/c3",
+   "text": "Outgoing wire cutoff (consumer and small business) | 2:00 PM Central",
+   "heading": "Quick reference",
+   "document": {
+    "title": "Wire Desk Quick Reference",
+    "type": "job_aid",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "JA-WIR-02@v3/s1/c2",
+   "text": "Callback threshold for outgoing wires | $5,000",
+   "heading": "Quick reference",
+   "document": {
+    "title": "Callback Checklist",
+    "type": "job_aid",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "JA-WIR-02@v3/s1/c4",
+   "text": "Outgoing wire cutoff (commercial) | 3:30 PM Central",
+   "heading": "Quick reference",
+   "document": {
+    "title": "Callback Checklist",
+    "type": "job_aid",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "JA-WIR-03@v1/s3/c1",
+   "text": "The cutoff for outgoing consumer and small business wires is 3:00 p.m. Central time.",
+   "heading": "Steps to follow",
+   "document": {
+    "title": "Wire Cutoff Card",
+    "type": "job_aid",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "JA-WIR-03@v1/s3/c2",
+   "text": "Call the customer back at a phone number already on file before releasing any outgoing wire of $10,000 or more.",
+   "heading": "Steps to follow",
+   "document": {
+    "title": "Wire Cutoff Card",
+    "type": "job_aid",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "POL-AOP-01@v5/s4/c1",
+   "text": "Every signer must present two separate identification documents before the account is opened, or one form plus a verified bank reference when the branch manager approves.",
+   "heading": "Additional requirements",
+   "document": {
+    "title": "Deposit Account Opening Policy",
+    "type": "policy",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "POL-AOP-02@v6/s4/c2",
+   "text": "Every signer must present two separate identification documents before the account is opened, or one form plus a verified bank reference when the branch manager approves.",
+   "heading": "Additional requirements",
+   "document": {
+    "title": "Customer Identification Policy",
+    "type": "policy",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "POL-CMP-01@v4/s4/c2",
+   "text": "Complaints should be closed within 15 business days of the day they arrive, or within 30 business days when another department has to investigate.",
+   "heading": "Additional requirements",
+   "document": {
+    "title": "Complaint Management Policy",
+    "type": "policy",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "POL-CSH-01@v4/s4/c1",
+   "text": "The vault must be opened under dual control, with two employees present.",
+   "heading": "Additional requirements",
+   "document": {
+    "title": "Cash Handling Policy",
+    "type": "policy",
+    "applies_to": "All branches. All business lines."
+   }
+  }
+ ],
+ "input_hash": "32dcdf9a572afb32e85e6c72e77fcccd561d9249698f0dd7e30a5fc47bb82576",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [\n{\"clause\": \"JA-WIR-01@v3/s1/c1\", \"atoms\": [\n{\"attribute\": \"wire_callback_role\", \"value\": {\"type\": \"role\", \"role\": \"wire_specialist\"}, \"quote\": \"wire specialist\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}\n]},\n{\"clause\": \"JA-WIR-01@v3/s1/c3\", \"atoms\": [\n{\"attribute\": \"wire_cutoff\", \"value\": {\"type\": \"time\", \"minutes\": 840}, \"quote\": \"2:00 PM Central\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": \"consumer and small business\", \"condition\": null}\n]},\n{\"clause\": \"JA-WIR-02@v3/s1/c2\", \"atoms\": [\n{\"attribute\": \"wire_callback\", \"value\": {\"type\": \"money\", \"dollars\": 5000}, \"quote\": \"$5,000\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}\n]},\n{\"clause\": \"JA-WIR-02@v3/s1/c4\", \"atoms\": [\n{\"attribute\": \"wire_cutoff\", \"value\": {\"type\": \"time\", \"minutes\": 930}, \"quote\": \"3:30 PM Central\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": \"commercial\", \"condition\": null}\n]},\n{\"clause\": \"JA-WIR-03@v1/s3/c1\", \"atoms\": [\n{\"attribute\": \"wire_cutoff\", \"value\": {\"type\": \"time\", \"minutes\": 900}, \"quote\": \"3:00 p.m. Central time\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": \"consumer and small business\", \"condition\": null}\n]},\n{\"clause\": \"JA-WIR-03@v1/s3/c2\", \"atoms\": [\n{\"attribute\": \"wire_callback\", \"value\": {\"type\": \"money\", \"dollars\": 10000}, \"quote\": \"$10,000\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}\n]},\n{\"clause\": \"POL-AOP-01@v5/s4/c1\", \"atoms\": [\n{\"attribute\": \"ao_id_count\", \"value\": {\"type\": \"count\", \"n\": 2}, \"quote\": \"two\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": \"or one form plus a verified bank reference when the branch manager approves\"},\n{\"attribute\": \"ao_exception_approver\", \"value\": {\"type\": \"role\", \"role\": \"branch_manager\"}, \"quote\": \"branch manager\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}\n]},\n{\"clause\": \"POL-AOP-02@v6/s4/c2\", \"atoms\": [\n{\"attribute\": \"ao_id_count\", \"value\": {\"type\": \"count\", \"n\": 2}, \"quote\": \"two\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": \"or one form plus a verified bank reference when the branch manager approves\"},\n{\"attribute\": \"ao_exception_approver\", \"value\": {\"type\": \"role\", \"role\": \"branch_manager\"}, \"quote\": \"branch manager\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}\n]},\n{\"clause\": \"POL-CMP-01@v4/s4/c2\", \"atoms\": [\n{\"attribute\": \"complaint_resolve\", \"value\": {\"type\": \"duration\", \"n\": 15, \"unit\": \"business_days\"}, \"quote\": \"15 business days\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": \"or within 30 business days when another department has to investigate\"}\n]},\n{\"clause\": \"POL-CSH-01@v4/s4/c1\", \"atoms\": [\n{\"attribute\": \"cash_vault_dual\", \"value\": {\"type\": \"modal\", \"modal\": \"must\"}, \"quote\": \"must\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}\n]}\n]}",
+   "problems": [],
+   "meta": {
+    "ms": 12180,
+    "api_ms": 12022,
+    "input_tokens": 8932,
+    "output_tokens": 2183,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 6248,
+     "cache_read_input_tokens": 2682,
+     "output_tokens": 2183,
+     "output_tokens_details": {
+      "thinking_tokens": 826
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 6248,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 2183,
+       "cache_read_input_tokens": 2682,
+       "cache_creation_input_tokens": 6248,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 6248
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.0470942,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T03:53:05+00:00"
+}

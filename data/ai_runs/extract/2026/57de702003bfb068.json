@@ -1,0 +1,167 @@
+{
+ "step": "extract",
+ "tag": "2026",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "dcc761e46c6ec579c01b9dfd540df3c2fa4bba3b6b5ec777aa2cf9c9c62aa411",
+ "input": [
+  {
+   "clause": "ADD-KS-01@v1/s2/c3",
+   "text": "In Kansas branches, resolve complaints within 10 business days of receipt, or tell the customer when to expect a resolution.",
+   "heading": "Kansas requirements",
+   "document": {
+    "title": "Kansas Branch Addendum",
+    "type": "addendum",
+    "applies_to": "Kansas branches. All business lines."
+   }
+  },
+  {
+   "clause": "BUL-AOP-01@v4/s1/c2",
+   "text": "Any exception to the identification requirements must be approved by a manager.",
+   "heading": "What branches need to know",
+   "document": {
+    "title": "Branch Bulletin 2025-30: Approver for identification exceptions",
+    "type": "bulletin",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "BUL-CMP-01@v1/s1/c2",
+   "text": "Complaints that allege unfair treatment are escalated to management the same day.",
+   "heading": "What branches need to know",
+   "document": {
+    "title": "Branch Bulletin 2025-32: Escalation for unfair treatment complaints",
+    "type": "bulletin",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "BUL-DSP-01@v4/s2/c1",
+   "text": "Provisional credit is issued within 10 business days of receiving a completed dispute, whatever its review status.",
+   "heading": "Related requirements",
+   "document": {
+    "title": "Branch Bulletin 2025-10: Dispute amount that needs card services review",
+    "type": "bulletin",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "BUL-WIR-01@v1/s1/c2",
+   "text": "Only an operations employee may complete the callback for an outgoing wire.",
+   "heading": "What branches need to know",
+   "document": {
+    "title": "Branch Bulletin 2025-30: Who completes wire callbacks",
+    "type": "bulletin",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "BUL-WIR-02@v2/s1/c2",
+   "text": "Outgoing wires of $5,000 or more require a callback to the customer at a number already on file.",
+   "heading": "What branches need to know",
+   "document": {
+    "title": "Branch Bulletin 2026-11: Callback threshold for outgoing wires",
+    "type": "bulletin",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "FAQ-AOP-01@v4/s3/c1",
+   "text": "Any exception to the identification requirements must be approved by the branch manager.",
+   "heading": "Who can approve an exception to the identification requirements?",
+   "document": {
+    "title": "Account Opening FAQ",
+    "type": "faq",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "FAQ-AOP-02@v2/s2/c1",
+   "text": "Only the regional manager can approve an exception to the identification requirements.",
+   "heading": "Who can approve an exception to the identification requirements?",
+   "document": {
+    "title": "Identification Questions from the Branches",
+    "type": "faq",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "FAQ-CSH-02@v1/s2/c1",
+   "text": "The large-cash review queue is worked by the operations specialist assigned to the branch.",
+   "heading": "Related requirements",
+   "document": {
+    "title": "Large-Cash Review Questions",
+    "type": "faq",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "FAQ-HLD-02@v3/s1/c1",
+   "text": "Funds from deposited checks are available within 2 business days unless a longer hold applies.",
+   "heading": "How long is the standard hold on a deposited check?",
+   "document": {
+    "title": "Check Hold Questions from Customers",
+    "type": "faq",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  }
+ ],
+ "input_hash": "d5b8706e14e2adab8cd48f3e3406fc2fb76b0c607be1c2511eca0ef05a72cc1d",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [{\"clause\": \"ADD-KS-01@v1/s2/c3\", \"atoms\": [{\"attribute\": \"complaint_resolve\", \"value\": {\"type\": \"duration\", \"n\": 10, \"unit\": \"business_days\"}, \"quote\": \"10 business days\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": \"In Kansas branches\", \"condition\": \"or tell the customer when to expect a resolution\"}]}, {\"clause\": \"BUL-AOP-01@v4/s1/c2\", \"atoms\": [{\"attribute\": \"ao_exception_approver\", \"value\": {\"type\": \"role\", \"role\": null, \"generic\": \"a manager\"}, \"quote\": \"a manager\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]}, {\"clause\": \"BUL-CMP-01@v1/s1/c2\", \"atoms\": [{\"attribute\": \"complaint_escalation_role\", \"value\": {\"type\": \"role\", \"role\": null, \"generic\": \"management\"}, \"quote\": \"management\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]}, {\"clause\": \"BUL-DSP-01@v4/s2/c1\", \"atoms\": [{\"attribute\": \"dispute_provisional_credit\", \"value\": {\"type\": \"duration\", \"n\": 10, \"unit\": \"business_days\"}, \"quote\": \"10 business days\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]}, {\"clause\": \"BUL-WIR-01@v1/s1/c2\", \"atoms\": [{\"attribute\": \"wire_callback_role\", \"value\": {\"type\": \"role\", \"role\": null, \"generic\": \"an operations employee\"}, \"quote\": \"an operations employee\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]}, {\"clause\": \"BUL-WIR-02@v2/s1/c2\", \"atoms\": [{\"attribute\": \"wire_callback\", \"value\": {\"type\": \"money\", \"dollars\": 5000}, \"quote\": \"$5,000\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]}, {\"clause\": \"FAQ-AOP-01@v4/s3/c1\", \"atoms\": [{\"attribute\": \"ao_exception_approver\", \"value\": {\"type\": \"role\", \"role\": \"branch_manager\"}, \"quote\": \"the branch manager\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]}, {\"clause\": \"FAQ-AOP-02@v2/s2/c1\", \"atoms\": [{\"attribute\": \"ao_exception_approver\", \"value\": {\"type\": \"role\", \"role\": \"regional_manager\"}, \"quote\": \"the regional manager\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]}, {\"clause\": \"FAQ-CSH-02@v1/s2/c1\", \"atoms\": []}, {\"clause\": \"FAQ-HLD-02@v3/s1/c1\", \"atoms\": [{\"attribute\": \"hold_standard\", \"value\": {\"type\": \"duration\", \"n\": 2, \"unit\": \"business_days\"}, \"quote\": \"2 business days\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": \"unless a longer hold applies\"}]}]}",
+   "problems": [],
+   "meta": {
+    "ms": 9984,
+    "api_ms": 9753,
+    "input_tokens": 9057,
+    "output_tokens": 1802,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 6373,
+     "cache_read_input_tokens": 2682,
+     "output_tokens": 1802,
+     "output_tokens_details": {
+      "thinking_tokens": 687
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 6373,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 1802,
+       "cache_read_input_tokens": 2682,
+       "cache_creation_input_tokens": 6373,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 6373
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.0437842,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T04:12:14+00:00"
+}

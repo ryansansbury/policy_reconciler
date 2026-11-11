@@ -1,0 +1,167 @@
+{
+ "step": "extract",
+ "tag": "11",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "dcc761e46c6ec579c01b9dfd540df3c2fa4bba3b6b5ec777aa2cf9c9c62aa411",
+ "input": [
+  {
+   "clause": "FAQ-WIR-02@v1/s3/c1",
+   "text": "An operations manager must give a second approval for any outgoing wire above $50,000.",
+   "heading": "Which outgoing wires need a second approval?",
+   "document": {
+    "title": "Wire Cutoff Questions",
+    "type": "faq",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "JA-AOP-01@v1/s1/c1",
+   "text": "Approver for identification exceptions | branch manager",
+   "heading": "Quick reference",
+   "document": {
+    "title": "New Account Quick Reference",
+    "type": "job_aid",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "JA-AOP-03@v4/s1/c3",
+   "text": "Approver for identification exceptions | branch manager",
+   "heading": "Quick reference",
+   "document": {
+    "title": "Account Opening Desk Card",
+    "type": "job_aid",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "JA-BOP-02@v2/s2/c1",
+   "text": "Approach the branch together and check the exterior for signs of forced entry.",
+   "heading": "Checklist",
+   "document": {
+    "title": "Closing Checklist",
+    "type": "job_aid",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "JA-CSH-01@v1/s2/c1",
+   "text": "Report any shortage or overage to the head teller before you leave for the day.",
+   "heading": "Checklist",
+   "document": {
+    "title": "Teller Cash Limits Card",
+    "type": "job_aid",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "JA-CSH-01@v1/s2/c2",
+   "text": "Use the counterfeit detection pen on bills of fifty dollars or more.",
+   "heading": "Checklist",
+   "document": {
+    "title": "Teller Cash Limits Card",
+    "type": "job_aid",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "JA-CSH-01@v1/s3/c1",
+   "text": "Branches in rural markets share one operations specialist, who visits each branch once a week.",
+   "heading": "Related requirements",
+   "document": {
+    "title": "Teller Cash Limits Card",
+    "type": "job_aid",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "JA-CSH-02@v2/s2/c1",
+   "text": "Keep your drawer locked whenever you step away from the teller line.",
+   "heading": "Checklist",
+   "document": {
+    "title": "Vault Opening Checklist",
+    "type": "job_aid",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "JA-CSH-03@v1/s2/c1",
+   "text": "Use the counterfeit detection pen on bills of fifty dollars or more.",
+   "heading": "Checklist",
+   "document": {
+    "title": "Large-Cash Review Quick Reference",
+    "type": "job_aid",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "JA-CSH-03@v1/s2/c2",
+   "text": "Keep your drawer locked whenever you step away from the teller line.",
+   "heading": "Checklist",
+   "document": {
+    "title": "Large-Cash Review Quick Reference",
+    "type": "job_aid",
+    "applies_to": "All branches. All business lines."
+   }
+  }
+ ],
+ "input_hash": "519968d6885068805da03f30cd0496932e058c431e690e1a1620ec348b59b336",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [{\"clause\": \"FAQ-WIR-02@v1/s3/c1\", \"atoms\": [{\"attribute\": \"wire_second_approval\", \"value\": {\"type\": \"money\", \"dollars\": 50000}, \"quote\": \"$50,000\", \"actor\": \"operations_manager\", \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]}, {\"clause\": \"JA-AOP-01@v1/s1/c1\", \"atoms\": [{\"attribute\": \"ao_exception_approver\", \"value\": {\"type\": \"role\", \"role\": \"branch_manager\"}, \"quote\": \"branch manager\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]}, {\"clause\": \"JA-AOP-03@v4/s1/c3\", \"atoms\": [{\"attribute\": \"ao_exception_approver\", \"value\": {\"type\": \"role\", \"role\": \"branch_manager\"}, \"quote\": \"branch manager\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]}, {\"clause\": \"JA-BOP-02@v2/s2/c1\", \"atoms\": []}, {\"clause\": \"JA-CSH-01@v1/s2/c1\", \"atoms\": []}, {\"clause\": \"JA-CSH-01@v1/s2/c2\", \"atoms\": []}, {\"clause\": \"JA-CSH-01@v1/s3/c1\", \"atoms\": []}, {\"clause\": \"JA-CSH-02@v2/s2/c1\", \"atoms\": []}, {\"clause\": \"JA-CSH-03@v1/s2/c1\", \"atoms\": []}, {\"clause\": \"JA-CSH-03@v1/s2/c2\", \"atoms\": []}]}",
+   "problems": [],
+   "meta": {
+    "ms": 7797,
+    "api_ms": 7623,
+    "input_tokens": 8876,
+    "output_tokens": 1180,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 8874,
+     "cache_read_input_tokens": 0,
+     "output_tokens": 1180,
+     "output_tokens_details": {
+      "thinking_tokens": 608
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 8874,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 1180,
+       "cache_read_input_tokens": 0,
+       "cache_creation_input_tokens": 8874,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 8874
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.0473,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T03:51:52+00:00"
+}

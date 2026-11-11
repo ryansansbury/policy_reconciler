@@ -1,0 +1,281 @@
+{
+ "step": "classify",
+ "tag": "11",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "1346938ac1ecbf43874a700ab9916c851d6a29bb5d6b9e5f1199128bc8cd59f2",
+ "input": [
+  {
+   "pair": "pair-3832908013",
+   "rule": "Complaint resolution deadline",
+   "attribute": "complaint_resolve",
+   "reason": "The two deadlines share a number but not a unit.",
+   "a": {
+    "clause": "POL-CMP-01@v4/s4/c2",
+    "text": "Complaints should be closed within 15 business days of the day they arrive, or within 30 business days when another department has to investigate.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Complaint Management Policy",
+     "type": "policy",
+     "version": 4,
+     "effective": "2025-07-22",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "BUL-CMP-01@v1/s1/c2",
+    "text": "Resolve complaints within 15 days of receipt, or tell the customer when to expect a resolution.",
+    "heading": "What branches need to know",
+    "document": {
+     "title": "Branch Bulletin 2025-05: Complaint resolution deadline",
+     "type": "bulletin",
+     "version": 1,
+     "effective": "2025-10-07",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "kind": "unit"
+  },
+  {
+   "pair": "pair-60c27a94fa",
+   "rule": "New account check hold",
+   "attribute": "hold_new_account",
+   "reason": "The two deadlines share a number but not a unit.",
+   "a": {
+    "clause": "POL-HLD-01@v2/s4/c1",
+    "text": "New accounts can have check holds of as long as 7 business days.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Funds Availability Policy",
+     "type": "policy",
+     "version": 2,
+     "effective": "2024-08-19",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "PRO-HLD-02@v2/s3/c4",
+    "text": "Checks deposited to a new account may be held for up to 7 days.",
+    "heading": "Steps",
+    "document": {
+     "title": "Extending a Hold on a Large Deposit",
+     "type": "procedure",
+     "version": 2,
+     "effective": "2026-06-01",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "kind": "unit"
+  },
+  {
+   "pair": "pair-6e4c8ee02e",
+   "rule": "New account check hold",
+   "attribute": "hold_new_account",
+   "reason": "The two deadlines share a number but not a unit.",
+   "a": {
+    "clause": "POL-HLD-01@v2/s4/c1",
+    "text": "New accounts can have check holds of as long as 7 business days.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Funds Availability Policy",
+     "type": "policy",
+     "version": 2,
+     "effective": "2024-08-19",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "FAQ-HLD-01@v2/s2/c1",
+    "text": "New accounts can have check holds of as long as 7 days.",
+    "heading": "How long can checks deposited to a new account be held?",
+    "document": {
+     "title": "Funds Availability FAQ",
+     "type": "faq",
+     "version": 2,
+     "effective": "2026-04-25",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "kind": "unit"
+  },
+  {
+   "pair": "pair-e38d5a9c45",
+   "rule": "Standard check hold",
+   "attribute": "hold_standard",
+   "reason": "The two deadlines share a number but not a unit.",
+   "a": {
+    "clause": "POL-HLD-01@v2/s4/c2",
+    "text": "Place a standard hold of 2 business days on deposited checks that don't qualify for next-day availability.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Funds Availability Policy",
+     "type": "policy",
+     "version": 2,
+     "effective": "2024-08-19",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "PRO-HLD-02@v2/s3/c2",
+    "text": "Funds from deposited checks are available within 2 days unless a longer hold applies.",
+    "heading": "Steps",
+    "document": {
+     "title": "Extending a Hold on a Large Deposit",
+     "type": "procedure",
+     "version": 2,
+     "effective": "2026-06-01",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "kind": "unit"
+  },
+  {
+   "pair": "pair-d6f75d6932",
+   "rule": "Records destruction approver",
+   "attribute": "records_destroy_role",
+   "reason": "One side names a general role instead of one from the role list.",
+   "a": {
+    "clause": "POL-REC-01@v3/s3/c1",
+    "text": "The records custodian must approve the destruction of any records in writing.",
+    "heading": "Policy statements",
+    "document": {
+     "title": "Records Retention Policy",
+     "type": "policy",
+     "version": 3,
+     "effective": "2026-06-19",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "FAQ-REC-02@v3/s1/c1",
+    "text": "Records may be destroyed only with written approval from a manager.",
+    "heading": "Who approves the destruction of records?",
+    "document": {
+     "title": "Legal Hold Questions",
+     "type": "faq",
+     "version": 3,
+     "effective": "2026-03-31",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "kind": "role_generic"
+  },
+  {
+   "pair": "pair-abc7141fed",
+   "rule": "Records destruction approver",
+   "attribute": "records_destroy_role",
+   "reason": "One side names a general role instead of one from the role list.",
+   "a": {
+    "clause": "POL-REC-01@v3/s3/c1",
+    "text": "The records custodian must approve the destruction of any records in writing.",
+    "heading": "Policy statements",
+    "document": {
+     "title": "Records Retention Policy",
+     "type": "policy",
+     "version": 3,
+     "effective": "2026-06-19",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "BUL-REC-01@v1/s1/c2",
+    "text": "A manager must approve the destruction of any records in writing.",
+    "heading": "What branches need to know",
+    "document": {
+     "title": "Branch Bulletin 2025-04: Approver for records destruction",
+     "type": "bulletin",
+     "version": 1,
+     "effective": "2025-12-17",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "kind": "role_generic"
+  },
+  {
+   "pair": "pair-771d0d5e79",
+   "rule": "Who completes wire callbacks",
+   "attribute": "wire_callback_role",
+   "reason": "One side names a general role instead of one from the role list.",
+   "a": {
+    "clause": "POL-WIR-01@v4/s3/c1",
+    "text": "Only a wire specialist may complete the callback for an outgoing wire.",
+    "heading": "Policy statements",
+    "document": {
+     "title": "Wire Transfer Policy",
+     "type": "policy",
+     "version": 4,
+     "effective": "2025-04-29",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "PRO-WIR-01@v4/s3/c5",
+    "text": "Only an operations employee may complete the callback for an outgoing wire.",
+    "heading": "Steps",
+    "document": {
+     "title": "Processing Outgoing Consumer Wires",
+     "type": "procedure",
+     "version": 4,
+     "effective": "2026-08-23",
+     "applies_to": "All branches. Consumer accounts."
+    }
+   },
+   "kind": "role_generic"
+  },
+  {
+   "pair": "pair-fef762f6a3",
+   "rule": "Who completes wire callbacks",
+   "attribute": "wire_callback_role",
+   "reason": "One side names a general role instead of one from the role list.",
+   "a": {
+    "clause": "POL-WIR-01@v4/s3/c1",
+    "text": "Only a wire specialist may complete the callback for an outgoing wire.",
+    "heading": "Policy statements",
+    "document": {
+     "title": "Wire Transfer Policy",
+     "type": "policy",
+     "version": 4,
+     "effective": "2025-04-29",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "PRO-WIR-03@v2/s3/c6",
+    "text": "Callbacks are completed by an operations employee, never by the employee who took the request.",
+    "heading": "Steps",
+    "document": {
+     "title": "Completing Wire Callback Verification",
+     "type": "procedure",
+     "version": 2,
+     "effective": "2025-01-04",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "kind": "role_generic"
+  }
+ ],
+ "input_hash": "adc627f51b2ab11f108352f598e987e210138fb64573c2ff354085e96009b895",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [{\"pair\": \"pair-3832908013\", \"label\": \"conflict\", \"quote_a\": \"Complaints should be closed within 15 business days of the day they arrive\", \"quote_b\": \"Resolve complaints within 15 days of receipt\", \"rationale\": \"The policy counts 15 business days and the bulletin says 15 days, which is a shorter span on the calendar. Staff following one would act on different dates than the other. The policy outranks the bulletin and is the clause to keep.\"}, {\"pair\": \"pair-60c27a94fa\", \"label\": \"conflict\", \"quote_a\": \"New accounts can have check holds of as long as 7 business days.\", \"quote_b\": \"Checks deposited to a new account may be held for up to 7 days.\", \"rationale\": \"The policy allows a hold of up to 7 business days and the procedure caps it at 7 days, which ends sooner. Staff who use the full policy hold would break the procedure limit. The policy outranks the procedure and is the clause to keep.\"}, {\"pair\": \"pair-6e4c8ee02e\", \"label\": \"conflict\", \"quote_a\": \"New accounts can have check holds of as long as 7 business days.\", \"quote_b\": \"New accounts can have check holds of as long as 7 days.\", \"rationale\": \"The policy allows 7 business days and the FAQ says 7 days, which is a shorter span on the calendar. A hold that fits the policy could run past what the FAQ describes. The policy outranks the FAQ and is the clause to keep.\"}, {\"pair\": \"pair-e38d5a9c45\", \"label\": \"conflict\", \"quote_a\": \"Place a standard hold of 2 business days on deposited checks\", \"quote_b\": \"Funds from deposited checks are available within 2 days unless a longer hold applies.\", \"rationale\": \"The policy holds checks for 2 business days and the procedure makes funds available within 2 days. Over a weekend the procedure would release funds before the policy hold ends. The policy outranks the procedure and is the clause to keep.\"}, {\"pair\": \"pair-d6f75d6932\", \"label\": \"conflict\", \"quote_a\": \"The records custodian must approve the destruction of any records in writing.\", \"quote_b\": \"Records may be destroyed only with written approval from a manager.\", \"rationale\": \"The policy limits approval to the records custodian and the FAQ lets any manager approve. Staff following the FAQ could get approval from someone the policy does not allow. The policy outranks the FAQ and is the clause to keep.\"}, {\"pair\": \"pair-abc7141fed\", \"label\": \"conflict\", \"quote_a\": \"The records custodian must approve the destruction of any records in writing.\", \"quote_b\": \"A manager must approve the destruction of any records in writing.\", \"rationale\": \"The policy requires the records custodian and the bulletin accepts any manager, which widens who can approve. A manager who is not the custodian could approve under the bulletin against the policy. The policy outranks the bulletin and is the clause to keep.\"}, {\"pair\": \"pair-771d0d5e79\", \"label\": \"conflict\", \"quote_a\": \"Only a wire specialist may complete the callback for an outgoing wire.\", \"quote_b\": \"Only an operations employee may complete the callback for an outgoing wire.\", \"rationale\": \"The policy limits callbacks to a wire specialist and the procedure lets any operations employee complete them. The consumer wire scope is not presented as a deliberate exception to the policy role. The policy outranks the procedure and is the clause to keep.\"}, {\"pair\": \"pair-fef762f6a3\", \"label\": \"conflict\", \"quote_a\": \"Only a wire specialist may complete the callback for an outgoing wire.\", \"quote_b\": \"Callbacks are completed by an operations employee, never by the employee who took the request.\", \"rationale\": \"Both clauses cover all branches and all business lines, yet the policy requires a wire specialist and the procedure accepts any operations employee. That wider wording lets staff who are not wire specialists complete callbacks. The policy outranks the procedure and is the clause to keep.\"}]}",
+   "problems": [],
+   "meta": {
+    "ms": 24767,
+    "api_ms": 24541,
+    "input_tokens": 2,
+    "output_tokens": 3668,
+    "cost_usd": 0.072068,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T03:24:09+00:00"
+}

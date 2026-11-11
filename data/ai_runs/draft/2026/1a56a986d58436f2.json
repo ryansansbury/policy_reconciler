@@ -1,0 +1,290 @@
+{
+ "step": "draft",
+ "tag": "2026",
+ "model": "claude-opus",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "opus",
+  "client_context": true
+ },
+ "prompt_hash": "d412e32e9168de04c00c3959530ebecb6630d0f9092d4afc1f9c308a4695a32e",
+ "input": [
+  {
+   "group": "g-46a9b4de",
+   "rule": "Complaint resolution deadline",
+   "attribute": "complaint_resolve",
+   "type": "duration",
+   "keep": {
+    "clause": "POL-CMP-01@v5/s3/c1",
+    "text": "Resolve complaints within 15 business days of receipt, or tell the customer when to expect a resolution.",
+    "heading": "Policy statements",
+    "document": {
+     "title": "Complaint Management Policy",
+     "type": "policy",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "change": [
+    {
+     "clause": "BUL-CMP-02@v2/s1/c2",
+     "text": "Complaints should be closed within 15 days of the day they arrive.",
+     "heading": "What branches need to know",
+     "document": {
+      "title": "Branch Bulletin 2026-15: Complaint resolution deadline",
+      "type": "bulletin",
+      "applies_to": "All branches. All business lines."
+     }
+    },
+    {
+     "clause": "FAQ-CMP-01@v1/s2/c1",
+     "text": "Complaints should be closed within 15 days of the day they arrive.",
+     "heading": "How long does the bank have to resolve a complaint?",
+     "document": {
+      "title": "Complaint Handling FAQ",
+      "type": "faq",
+      "applies_to": "All branches. All business lines."
+     }
+    },
+    {
+     "clause": "FAQ-CMP-02@v2/s2/c1",
+     "text": "Complaints should be closed within 15 business days of the day they arrive.",
+     "heading": "How long does the bank have to resolve a complaint?",
+     "document": {
+      "title": "Complaint Escalation Questions",
+      "type": "faq",
+      "applies_to": "All branches. All business lines."
+     }
+    },
+    {
+     "clause": "JA-CMP-02@v2/s1/c2",
+     "text": "Complaint resolution deadline | 15 business days",
+     "heading": "Quick reference",
+     "document": {
+      "title": "Complaint Escalation Checklist",
+      "type": "job_aid",
+      "applies_to": "All branches. All business lines."
+     }
+    }
+   ],
+   "allowed": {
+    "FAQ-CMP-02@v2/s2/c1#value": "15 business days",
+    "JA-CMP-02@v2/s1/c2#value": "15 business days",
+    "POL-CMP-01@v5/s3/c1#value": "15 business days",
+    "PRO-CMP-02@v4/s3/c4#value": "15 business days",
+    "PRO-CMP-06@v3/s3/c7#value": "15 business days"
+   },
+   "placeholder": "{clause:POL-CMP-01@v5/s3/c1#value}"
+  },
+  {
+   "group": "g-2fb81fd4",
+   "rule": "Branch manager fee waiver limit",
+   "attribute": "fee_waiver_bm",
+   "type": "money",
+   "keep": {
+    "clause": "POL-FEE-01@v2/s3/c1",
+    "text": "Personal bankers may waive service fees up to $25 per account in a calendar year, or up to $50 with branch manager approval noted in the account.",
+    "heading": "Policy statements",
+    "document": {
+     "title": "Service Fee Waiver Policy",
+     "type": "policy",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "change": [
+    {
+     "clause": "BUL-FEE-02@v3/s1/c2",
+     "text": "Branch managers may waive service fees up to $50 per account in a calendar year.",
+     "heading": "What branches need to know",
+     "document": {
+      "title": "Branch Bulletin 2026-12: Branch manager fee waiver limit",
+      "type": "bulletin",
+      "applies_to": "All branches. Consumer and small business accounts."
+     }
+    },
+    {
+     "clause": "FAQ-FEE-01@v3/s1/c1",
+     "text": "Branch managers may waive service fees up to $50 per account in a calendar year.",
+     "heading": "How much can a branch manager waive in fees for one account in a year?",
+     "document": {
+      "title": "Fee Waiver FAQ",
+      "type": "faq",
+      "applies_to": "All branches. Consumer and small business accounts."
+     }
+    },
+    {
+     "clause": "FAQ-FEE-02@v2/s1/c1",
+     "text": "The most a branch manager can waive for one account in a calendar year is $75.",
+     "heading": "How much can a branch manager waive in fees for one account in a year?",
+     "document": {
+      "title": "Fee Refund Questions",
+      "type": "faq",
+      "applies_to": "All branches. Consumer and small business accounts."
+     }
+    },
+    {
+     "clause": "JA-FEE-01@v1/s1/c2",
+     "text": "Branch manager fee waiver limit | $50",
+     "heading": "Quick reference",
+     "document": {
+      "title": "Fee Waiver Quick Reference",
+      "type": "job_aid",
+      "applies_to": "All branches. Consumer and small business accounts."
+     }
+    },
+    {
+     "clause": "JA-FEE-03@v3/s1/c3",
+     "text": "Branch manager fee waiver limit | $50",
+     "heading": "Quick reference",
+     "document": {
+      "title": "Waiver Authority Card",
+      "type": "job_aid",
+      "applies_to": "All branches. Consumer and small business accounts."
+     }
+    },
+    {
+     "clause": "POL-FEE-01@v2/s3/c2",
+     "text": "The most a branch manager can waive for one account in a calendar year is $50.",
+     "heading": "Policy statements",
+     "document": {
+      "title": "Service Fee Waiver Policy",
+      "type": "policy",
+      "applies_to": "All branches. Consumer and small business accounts."
+     }
+    },
+    {
+     "clause": "POL-FEE-02@v6/s3/c1",
+     "text": "Branch managers may waive service fees up to $50 per account in a calendar year.",
+     "heading": "Policy statements",
+     "document": {
+      "title": "Fee Refund Policy",
+      "type": "policy",
+      "applies_to": "All branches. Consumer and small business accounts."
+     }
+    },
+    {
+     "clause": "PRO-FEE-01@v1/s3/c5",
+     "text": "The most a branch manager can waive for one account in a calendar year is $100.",
+     "heading": "Steps",
+     "document": {
+      "title": "Processing a Fee Waiver Request",
+      "type": "procedure",
+      "applies_to": "All branches. Consumer and small business accounts."
+     }
+    }
+   ],
+   "allowed": {
+    "BUL-FEE-02@v3/s1/c2#value": "$50",
+    "FAQ-FEE-01@v3/s1/c1#value": "$50",
+    "JA-FEE-01@v1/s1/c2#value": "$50",
+    "JA-FEE-03@v3/s1/c3#value": "$50",
+    "POL-FEE-01@v2/s3/c1#v2": "$25",
+    "POL-FEE-01@v2/s3/c1#value": "$50",
+    "POL-FEE-01@v2/s3/c2#value": "$50",
+    "POL-FEE-02@v6/s3/c1#value": "$50"
+   },
+   "placeholder": "{clause:POL-FEE-01@v2/s3/c1#value}"
+  },
+  {
+   "group": "g-feb17e64",
+   "rule": "Standard check hold",
+   "attribute": "hold_standard",
+   "type": "duration",
+   "keep": {
+    "clause": "POL-HLD-01@v5/s3/c1",
+    "text": "Place a standard hold of 2 business days on deposited checks that don't qualify for next-day availability.",
+    "heading": "Policy statements",
+    "document": {
+     "title": "Funds Availability Policy",
+     "type": "policy",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "change": [
+    {
+     "clause": "FAQ-HLD-01@v2/s1/c1",
+     "text": "Place a standard hold of 2 days on deposited checks that don't qualify for next-day availability.",
+     "heading": "How long is the standard hold on a deposited check?",
+     "document": {
+      "title": "Funds Availability FAQ",
+      "type": "faq",
+      "applies_to": "All branches. Consumer and small business accounts."
+     }
+    },
+    {
+     "clause": "PRO-HLD-06@v2/s3/c3",
+     "text": "Place a standard hold of 1 business day on deposited checks that don't qualify for next-day availability.",
+     "heading": "Steps",
+     "document": {
+      "title": "Holds on Mobile Deposits",
+      "type": "procedure",
+      "applies_to": "All branches. Consumer and small business accounts."
+     }
+    }
+   ],
+   "allowed": {
+    "FAQ-HLD-02@v3/s1/c1#value": "2 business days",
+    "JA-HLD-01@v3/s1/c3#value": "2 business days",
+    "JA-HLD-02@v2/s1/c2#value": "2 business days",
+    "JA-HLD-03@v3/s1/c3#value": "2 business days",
+    "POL-HLD-01@v5/s3/c1#value": "2 business days",
+    "PRO-HLD-02@v2/s3/c6#value": "2 business days",
+    "PRO-HLD-04@v3/s3/c8#value": "2 business days"
+   },
+   "placeholder": "{clause:POL-HLD-01@v5/s3/c1#value}"
+  }
+ ],
+ "input_hash": "4dcb428ead236d1605bccba12a6371c86fc737c560616f13e74c2816a1b526a9",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [{\"group\": \"g-46a9b4de\", \"title\": \"Complaint resolution deadline\", \"text\": \"Staff resolve complaints within {clause:POL-CMP-01@v5/s3/c1#value} of receipt or tell the customer when to expect a resolution.\"}, {\"group\": \"g-2fb81fd4\", \"title\": \"Personal banker fee waivers\", \"text\": \"Personal bankers may waive service fees up to {clause:POL-FEE-01@v2/s3/c1#v2} per account in a calendar year. With branch manager approval noted in the account, they may waive up to {clause:POL-FEE-01@v2/s3/c1#value} per account in a calendar year.\"}, {\"group\": \"g-feb17e64\", \"title\": \"Standard check hold\", \"text\": \"Place a standard hold of {clause:POL-HLD-01@v5/s3/c1#value} on deposited checks that do not qualify for next day availability.\"}]}",
+   "problems": [],
+   "meta": {
+    "ms": 6858,
+    "api_ms": 6702,
+    "input_tokens": 9299,
+    "output_tokens": 803,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 9297,
+     "cache_read_input_tokens": 0,
+     "output_tokens": 803,
+     "output_tokens_details": {
+      "thinking_tokens": 491
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 9297,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 803,
+       "cache_read_input_tokens": 0,
+       "cache_creation_input_tokens": 9297,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 9297
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.090444,
+    "models": [
+     "claude-opus-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T19:47:43+00:00"
+}

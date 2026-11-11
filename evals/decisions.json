@@ -1,0 +1,31 @@
+{
+ "decided_by": "the specialist",
+ "decisions": {
+  "exception_path": {
+   "decided_at": "2026-10-29T20:41",
+   "label": "conflict",
+   "reason": "Staff follow the procedure in front of them, and when it leaves out an exception the policy grants they end up refusing customers the policy allows.",
+   "side": "compliance"
+  },
+  "older_version": {
+   "decided_at": "2026-10-29T20:41",
+   "label": "conflict",
+   "reason": "A branch that can still open the older version can still follow it, and that makes it a live conflict until it's archived.",
+   "side": "compliance"
+  },
+  "role_generic": {
+   "decided_at": "2026-10-29T20:41",
+   "label": "conflict",
+   "reason": "Approval authority has to name one role, and a general word like manager lets an assistant manager or a head teller approve when the policy only meant the branch manager.",
+   "side": "compliance"
+  },
+  "unit": {
+   "decided_at": "2026-10-29T20:41",
+   "label": "conflict",
+   "reason": "Ten days and ten business days can be four days apart, and a deadline staff give a customer has to mean one thing everywhere it's written.",
+   "side": "compliance"
+  }
+ },
+ "key_version": 2,
+ "note": "The specialist's decisions on the experts' four disagreements. They were made in one session on 10/29, and they produced version 2 of the answer key."
+}

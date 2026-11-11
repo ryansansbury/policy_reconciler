@@ -1,0 +1,217 @@
+{
+ "step": "classify",
+ "tag": "cmp-6101",
+ "model": "claude-haiku",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "haiku",
+  "client_context": true
+ },
+ "prompt_hash": "2c908358fde9f0f4a792753579a6cfaa33476e41c4b0f235744675d8e8283a19",
+ "input": [
+  {
+   "pair": "pair-0cbc4b5031",
+   "rule": "Forms of identification per signer",
+   "attribute": "ao_id_count",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "JA-AOP-02@v3/s1/c2",
+    "text": "Forms of identification per signer | two",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Identification Checklist",
+     "type": "job_aid",
+     "version": 3,
+     "effective": "2026-04-02",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "PRO-AOP-07@v2/s3/c4",
+    "text": "A consumer checking account needs at least $25 to open.",
+    "heading": "Steps",
+    "document": {
+     "title": "Opening an Account for a Minor with a Custodian",
+     "type": "procedure",
+     "version": 2,
+     "effective": "2025-09-28",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-4fd2a1233d",
+   "rule": "Minimum opening deposit",
+   "attribute": "ao_min_deposit",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-AOP-01@v5/s4/c2",
+    "text": "The minimum opening deposit for a consumer checking account is $25.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Deposit Account Opening Policy",
+     "type": "policy",
+     "version": 5,
+     "effective": "2026-05-17",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "POL-AOP-02@v3/s4/c2",
+    "text": "Accounts open fewer than 30 days are new accounts for hold and limit purposes.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Customer Identification Policy",
+     "type": "policy",
+     "version": 3,
+     "effective": "2026-02-28",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-a2a34a124b",
+   "rule": "Documenting pricing exceptions",
+   "attribute": "lend_exception_doc",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-LND-04@v1/s3/c3",
+    "text": "Every pricing exception must be documented in the loan file with the reason and the approver.",
+    "heading": "Steps",
+    "document": {
+     "title": "Reviewing Exception Reports Each Month",
+     "type": "procedure",
+     "version": 1,
+     "effective": "2026-06-09",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "PRO-LND-03@v4/s3/c9",
+    "text": "A regional manager can approve a rate exception as large as 0.50%.",
+    "heading": "Steps",
+    "document": {
+     "title": "Documenting Pricing Exceptions",
+     "type": "procedure",
+     "version": 4,
+     "effective": "2025-06-20",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-10ea6931f0",
+   "rule": "Days overdrawn before charge-off",
+   "attribute": "od_chargeoff",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-ODR-04@v3/s3/c7",
+    "text": "Accounts that remain overdrawn for 45 days are referred for charge-off.",
+    "heading": "Steps",
+    "document": {
+     "title": "Talking with Customers About Overdrafts",
+     "type": "procedure",
+     "version": 3,
+     "effective": "2026-03-21",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "FAQ-ODR-02@v2/s1/c1",
+    "text": "Each item paid into overdraft is charged $30.",
+    "heading": "What is the overdraft fee?",
+    "document": {
+     "title": "Overdraft Fee Questions from Customers",
+     "type": "faq",
+     "version": 2,
+     "effective": "2026-04-06",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-d7b5039090",
+   "rule": "Fee waivers per account per year",
+   "attribute": "fee_waivers_per_year",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "BUL-FEE-02@v3/s1/c2",
+    "text": "Limit fee waivers to two per account in each calendar year.",
+    "heading": "What branches need to know",
+    "document": {
+     "title": "Branch Bulletin 2026-24: Fee waivers per account per year",
+     "type": "bulletin",
+     "version": 3,
+     "effective": "2025-05-20",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "PRO-FEE-04@v4/s3/c6",
+    "text": "A personal banker can waive no more than $25 for one account in a calendar year.",
+    "heading": "Steps",
+    "document": {
+     "title": "Reviewing Waiver Activity Each Month",
+     "type": "procedure",
+     "version": 4,
+     "effective": "2026-05-20",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  }
+ ],
+ "input_hash": "f472a7a5a7c6583dc58e1ffcd918eabba763bcad7f5c4940658042f2b92719d9",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [{\"pair\": \"pair-0cbc4b5031\", \"label\": \"unrelated\", \"quote_a\": \"Forms of identification per signer | two\", \"quote_b\": \"A consumer checking account needs at least $25 to open.\", \"rationale\": \"The job aid sets how many identification forms each signer needs. The procedure sets a minimum amount to open a consumer checking account. They govern different things and do not overlap.\"}, {\"pair\": \"pair-4fd2a1233d\", \"label\": \"unrelated\", \"quote_a\": \"The minimum opening deposit for a consumer checking account is $25.\", \"quote_b\": \"Accounts open fewer than 30 days are new accounts for hold and limit purposes.\", \"rationale\": \"One clause sets the minimum opening deposit and the other sets how long an account is treated as new for hold and limit purposes. They govern different things.\"}, {\"pair\": \"pair-a2a34a124b\", \"label\": \"consistent\", \"quote_a\": \"Every pricing exception must be documented in the loan file with the reason and the approver.\", \"quote_b\": \"A regional manager can approve a rate exception as large as 0.50%.\", \"rationale\": \"The first clause requires documenting every pricing exception and the second sets how large an exception a regional manager can approve. Both can be followed at once, and neither contradicts the other.\"}, {\"pair\": \"pair-10ea6931f0\", \"label\": \"unrelated\", \"quote_a\": \"Accounts that remain overdrawn for 45 days are referred for charge-off.\", \"quote_b\": \"Each item paid into overdraft is charged $30.\", \"rationale\": \"One clause sets when overdrawn accounts are referred for charge-off and the other sets a fee for each item paid into overdraft. They govern different things.\"}, {\"pair\": \"pair-d7b5039090\", \"label\": \"consistent\", \"quote_a\": \"Limit fee waivers to two per account in each calendar year.\", \"quote_b\": \"A personal banker can waive no more than $25 for one account in a calendar year.\", \"rationale\": \"The bulletin caps the number of waivers per account per year and the procedure caps the dollar amount a personal banker can waive per account per year. Staff can follow both limits at the same time. Neither clause contradicts the other.\"}]}",
+   "problems": [],
+   "meta": {
+    "ms": 9875,
+    "api_ms": 9725,
+    "input_tokens": 7818,
+    "output_tokens": 2244,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 6975,
+     "cache_read_input_tokens": 841,
+     "output_tokens": 2244,
+     "output_tokens_details": {
+      "thinking_tokens": 1513
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 6975,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 2244,
+       "cache_read_input_tokens": 841,
+       "cache_creation_input_tokens": 6975,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 6975
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.00252561,
+    "models": [
+     "claude-haiku-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T17:18:10+00:00"
+}

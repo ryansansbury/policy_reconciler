@@ -1,0 +1,307 @@
+{
+ "step": "classify",
+ "tag": "evals-6101",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "2c908358fde9f0f4a792753579a6cfaa33476e41c4b0f235744675d8e8283a19",
+ "input": [
+  {
+   "pair": "pair-670e1a855d",
+   "rule": "Personal banker fee waiver limit",
+   "attribute": "fee_waiver_pb",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-FEE-01@v3/s3/c1",
+    "text": "A personal banker can waive no more than $25 for one account in a calendar year, or up to $50 with branch manager approval noted in the account.",
+    "heading": "Policy statements",
+    "document": {
+     "title": "Service Fee Waiver Policy",
+     "type": "policy",
+     "version": 3,
+     "effective": "2024-08-03",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "FAQ-FEE-02@v2/s1/c1",
+    "text": "A personal banker can waive no more than $15 for one account in a calendar year.",
+    "heading": "How much can a personal banker waive in fees?",
+    "document": {
+     "title": "Fee Refund Questions",
+     "type": "faq",
+     "version": 2,
+     "effective": "2026-04-19",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-ca4c6f6e7f",
+   "rule": "Wire second approval threshold",
+   "attribute": "wire_second_approval",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-WIR-01@v2/s4/c2",
+    "text": "An operations manager must give a second approval for any outgoing wire above $50,000.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Wire Transfer Policy",
+     "type": "policy",
+     "version": 2,
+     "effective": "2026-08-02",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "FAQ-WIR-02@v1/s1/c1",
+    "text": "An operations manager must give a second approval for any outgoing wire above $100,000.",
+    "heading": "Which outgoing wires need a second approval?",
+    "document": {
+     "title": "Wire Cutoff Questions",
+     "type": "faq",
+     "version": 1,
+     "effective": "2025-12-15",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-cbdd0eb31a",
+   "rule": "Who completes wire callbacks",
+   "attribute": "wire_callback_role",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-WIR-01@v2/s3/c2",
+    "text": "Callbacks are completed by a wire specialist, never by the employee who took the request.",
+    "heading": "Policy statements",
+    "document": {
+     "title": "Wire Transfer Policy",
+     "type": "policy",
+     "version": 2,
+     "effective": "2026-08-02",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "PRO-WIR-01@v2/s3/c8",
+    "text": "Callbacks are completed by a teller, never by the employee who took the request.",
+    "heading": "Steps",
+    "document": {
+     "title": "Processing Outgoing Consumer Wires",
+     "type": "procedure",
+     "version": 2,
+     "effective": "2025-04-27",
+     "applies_to": "All branches. Consumer accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-66f5b2569b",
+   "rule": "Documenting pricing exceptions",
+   "attribute": "lend_exception_doc",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-LND-01@v3/s4/c2",
+    "text": "Record the reason and the approver for every pricing exception in the loan file.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Loan Pricing Exception Policy",
+     "type": "policy",
+     "version": 3,
+     "effective": "2026-06-18",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "JA-LND-01@v1/s1/c2",
+    "text": "Documenting pricing exceptions | Optional",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Rate Exception Authority Card",
+     "type": "job_aid",
+     "version": 1,
+     "effective": "2025-06-16",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-8b54cb8825",
+   "rule": "Branch manager rate exception limit",
+   "attribute": "lend_rate_bm",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-LND-01@v3/s4/c1",
+    "text": "Branch managers may approve rate exceptions of up to 0.25%.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Loan Pricing Exception Policy",
+     "type": "policy",
+     "version": 3,
+     "effective": "2026-06-18",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "FAQ-LND-02@v3/s1/c1",
+    "text": "Rate exceptions larger than 0.50% need approval above the branch manager.",
+    "heading": "How large a rate exception can a branch manager approve?",
+    "document": {
+     "title": "Pricing Exception Questions",
+     "type": "faq",
+     "version": 3,
+     "effective": "2026-01-24",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-3fb49c6b88",
+   "rule": "Records destruction approver",
+   "attribute": "records_destroy_role",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-REC-01@v4/s3/c1",
+    "text": "The records custodian must approve the destruction of any records in writing.",
+    "heading": "Policy statements",
+    "document": {
+     "title": "Records Retention Policy",
+     "type": "policy",
+     "version": 4,
+     "effective": "2025-04-11",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "PRO-REC-02@v3/s3/c8",
+    "text": "Records may be destroyed only with written approval from the branch manager.",
+    "heading": "Steps",
+    "document": {
+     "title": "Approving Records Destruction",
+     "type": "procedure",
+     "version": 3,
+     "effective": "2026-03-12",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-33d4e82967",
+   "rule": "Large-cash review threshold",
+   "attribute": "cash_review_threshold",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-CSH-01@v4/s3/c1",
+    "text": "Log any cash deposit or withdrawal of $7,500 or more for large-cash review.",
+    "heading": "Policy statements",
+    "document": {
+     "title": "Cash Handling Policy",
+     "type": "policy",
+     "version": 4,
+     "effective": "2025-05-11",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "BUL-CSH-02@v2/s1/c2",
+    "text": "Cash transactions under $5,000 do not need large-cash review.",
+    "heading": "What branches need to know",
+    "document": {
+     "title": "Branch Bulletin 2026-36: Large-cash review threshold",
+     "type": "bulletin",
+     "version": 2,
+     "effective": "2026-07-12",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-1880095f93",
+   "rule": "Who completes wire callbacks",
+   "attribute": "wire_callback_role",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-WIR-01@v2/s3/c2",
+    "text": "Callbacks are completed by a wire specialist, never by the employee who took the request.",
+    "heading": "Policy statements",
+    "document": {
+     "title": "Wire Transfer Policy",
+     "type": "policy",
+     "version": 2,
+     "effective": "2026-08-02",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "FAQ-WIR-01@v1/s3/c1",
+    "text": "Only a branch manager may complete the callback for an outgoing wire.",
+    "heading": "Who completes the callback for an outgoing wire?",
+    "document": {
+     "title": "Wire Transfer FAQ",
+     "type": "faq",
+     "version": 1,
+     "effective": "2026-03-26",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  }
+ ],
+ "input_hash": "d008365a5271a11fc9b7025c2a44f3850b0885f6247be1ec402111d3f3089732",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [{\"pair\": \"pair-670e1a855d\", \"label\": \"conflict\", \"quote_a\": \"can waive no more than $25 for one account in a calendar year\", \"quote_b\": \"can waive no more than $15 for one account in a calendar year\", \"rationale\": \"Both clauses cover the same staff, accounts and branches but cap the waiver at $25 and $15. A banker following the FAQ would refuse a waiver the policy allows. The policy outranks the FAQ so the policy clause is the one to keep.\"}, {\"pair\": \"pair-ca4c6f6e7f\", \"label\": \"conflict\", \"quote_a\": \"any outgoing wire above $50,000\", \"quote_b\": \"any outgoing wire above $100,000\", \"rationale\": \"A wire between $50,000 and $100,000 needs a second approval under the policy but not under the FAQ. Both apply to all branches and business lines. The policy outranks the FAQ so the policy clause is the one to keep.\"}, {\"pair\": \"pair-cbdd0eb31a\", \"label\": \"conflict\", \"quote_a\": \"Callbacks are completed by a wire specialist\", \"quote_b\": \"Callbacks are completed by a teller\", \"rationale\": \"The policy covers all business lines and has no carve-out for consumer wires. The procedure names a different role as its own subject matter and not as a deliberate exception, so a teller following it would act against the policy. The policy outranks the procedure so the policy clause is the one to keep.\"}, {\"pair\": \"pair-66f5b2569b\", \"label\": \"conflict\", \"quote_a\": \"Record the reason and the approver for every pricing exception in the loan file.\", \"quote_b\": \"Documenting pricing exceptions | Optional\", \"rationale\": \"The policy requires documentation for every exception while the job aid calls it optional. Staff following the job aid could skip a step the policy demands. The policy outranks the job aid so the policy clause is the one to keep.\"}, {\"pair\": \"pair-8b54cb8825\", \"label\": \"conflict\", \"quote_a\": \"Branch managers may approve rate exceptions of up to 0.25%.\", \"quote_b\": \"Rate exceptions larger than 0.50% need approval above the branch manager.\", \"rationale\": \"The FAQ implies a branch manager can approve exceptions up to 0.50% while the policy stops that authority at 0.25%. A manager following the FAQ would approve an exception between those figures that the policy does not allow. The policy outranks the FAQ so the policy clause is the one to keep.\"}, {\"pair\": \"pair-3fb49c6b88\", \"label\": \"conflict\", \"quote_a\": \"The records custodian must approve the destruction of any records in writing.\", \"quote_b\": \"Records may be destroyed only with written approval from the branch manager.\", \"rationale\": \"Each clause names a different single approver for the same destruction decision across all branches and business lines. Following the procedure would leave out the approval the policy requires. The policy outranks the procedure so the policy clause is the one to keep.\"}, {\"pair\": \"pair-33d4e82967\", \"label\": \"consistent\", \"quote_a\": \"Log any cash deposit or withdrawal of $7,500 or more for large-cash review.\", \"quote_b\": \"Cash transactions under $5,000 do not need large-cash review.\", \"rationale\": \"The bulletin only says that amounts under $5,000 need no review and never says that amounts from $5,000 up must be logged. Staff following it would not refuse or do anything the policy forbids, so the two do not contradict. The bulletin's title suggests a threshold change but its text does not state one.\"}, {\"pair\": \"pair-1880095f93\", \"label\": \"conflict\", \"quote_a\": \"Callbacks are completed by a wire specialist, never by the employee who took the request.\", \"quote_b\": \"Only a branch manager may complete the callback for an outgoing wire.\", \"rationale\": \"The policy assigns callbacks to a wire specialist and the FAQ restricts them to a branch manager for the same wires. Staff following one would act against the other. The policy outranks the FAQ so the policy clause is the one to keep.\"}]}",
+   "problems": [],
+   "meta": {
+    "ms": 18919,
+    "api_ms": 18767,
+    "input_tokens": 9011,
+    "output_tokens": 2784,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 9009,
+     "cache_read_input_tokens": 0,
+     "output_tokens": 2784,
+     "output_tokens_details": {
+      "thinking_tokens": 1443
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 9009,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 2784,
+       "cache_read_input_tokens": 0,
+       "cache_creation_input_tokens": 9009,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 9009
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.06387999999999999,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T05:28:02+00:00"
+}

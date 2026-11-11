@@ -1,0 +1,44 @@
+{
+ "frozen_at": "2026-10-30T10:11",
+ "history": [
+  {
+   "frozen_at": "2026-10-29T21:02",
+   "note": "Prompts version 1 for the rule extractor and the classifier. They were tuned on development seed 11 over two recorded rounds and nothing else. Round 1 found the duplicate and consistent definitions ambiguous and a lower-ranked carve-out read as a conflict, and round 2 confirmed the fixes. A1 read 178 of 180 clauses exactly, and A2 had conflict precision and recall of 1.0 with no variation called a conflict. They were scored once on held-out set B, the demo library, and the hand-written clauses.",
+   "prompts": {
+    "classify": "2c908358fde9f0f4a792753579a6cfaa33476e41c4b0f235744675d8e8283a19",
+    "extract": "dcc761e46c6ec579c01b9dfd540df3c2fa4bba3b6b5ec777aa2cf9c9c62aa411"
+   },
+   "steps": [
+    "extract",
+    "classify"
+   ],
+   "version": 1
+  },
+  {
+   "frozen_at": "2026-10-30T09:48",
+   "note": "Prompts version 2 adds the judge's prompt. It was tuned on development seed 11's 30 calibration drafts and nothing else. There Gemini 3.1 Pro matched both experts' shared grade on every criterion with no draft held. Its agreement was 30 of 30 on keeping every rule, 30 of 30 on adding no rule, 30 of 30 on keeping every scope, and 27 of 27 on reading plainly. The extract and classify prompts keep their version 1 hashes. It was scored once on held-out seed 6101's calibration drafts.",
+   "prompts": {
+    "classify": "2c908358fde9f0f4a792753579a6cfaa33476e41c4b0f235744675d8e8283a19",
+    "extract": "dcc761e46c6ec579c01b9dfd540df3c2fa4bba3b6b5ec777aa2cf9c9c62aa411",
+    "judge": "ab6a49ec8731854b3cf900a9a4387417ee8016fe68257c4d327181c7eb1621da"
+   },
+   "steps": [
+    "judge"
+   ],
+   "version": 2
+  }
+ ],
+ "note": "Prompts version 3 adds the drafter's and the assistant's prompts as they ran on the demo library, and that lets the model comparison run every model on the same prompts. The drafter passed all 34 demo drafts through the gate on the first try. The assistant answered 8 of 10 preset questions fully right after reconciliation against 4 of 10 before. Neither was tuned beyond its first writing. The extract, classify, and judge prompts keep their earlier hashes.",
+ "prompts": {
+  "assist": "66c01f0da9f327e74355d39363e55b642a1bbf8dc6249974c3afbf3cb3d6ccd5",
+  "classify": "2c908358fde9f0f4a792753579a6cfaa33476e41c4b0f235744675d8e8283a19",
+  "draft": "d412e32e9168de04c00c3959530ebecb6630d0f9092d4afc1f9c308a4695a32e",
+  "extract": "dcc761e46c6ec579c01b9dfd540df3c2fa4bba3b6b5ec777aa2cf9c9c62aa411",
+  "judge": "ab6a49ec8731854b3cf900a9a4387417ee8016fe68257c4d327181c7eb1621da"
+ },
+ "steps": [
+  "draft",
+  "assist"
+ ],
+ "version": 3
+}

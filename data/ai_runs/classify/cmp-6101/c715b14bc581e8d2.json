@@ -1,0 +1,278 @@
+{
+ "step": "classify",
+ "tag": "cmp-6101",
+ "model": "google-a",
+ "backend": {
+  "vendor": "Google",
+  "model": "gemini-3.1-pro-preview",
+  "label": "Gemini 3.1 Pro"
+ },
+ "prompt_hash": "2c908358fde9f0f4a792753579a6cfaa33476e41c4b0f235744675d8e8283a19",
+ "input": [
+  {
+   "pair": "pair-ae8bfc910f",
+   "rule": null,
+   "attribute": null,
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-CSH-02@v2/s3/c2",
+    "text": "Keep your drawer locked whenever you step away from the teller line.",
+    "heading": "Steps",
+    "document": {
+     "title": "Selling Excess Cash to the Vault",
+     "type": "procedure",
+     "version": 2,
+     "effective": "2026-07-10",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "PRO-CSH-01@v1/s5/c1",
+    "text": "Keep your drawer locked whenever you step away from the teller line.",
+    "heading": "Steps to follow",
+    "document": {
+     "title": "Balancing a Teller Drawer",
+     "type": "procedure",
+     "version": 1,
+     "effective": "2025-02-09",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-60544ea00a",
+   "rule": null,
+   "attribute": null,
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-CMP-06@v1/s3/c5",
+    "text": "Review complaint trends with your team each quarter.",
+    "heading": "Steps",
+    "document": {
+     "title": "Responding to a Complaint by Phone",
+     "type": "procedure",
+     "version": 1,
+     "effective": "2024-12-19",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "JA-CMP-02@v1/s3/c1",
+    "text": "Review complaint trends with your team each quarter.",
+    "heading": "Steps to follow",
+    "document": {
+     "title": "Complaint Escalation Checklist",
+     "type": "job_aid",
+     "version": 1,
+     "effective": "2026-06-21",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-346e8a0429",
+   "rule": "Days overdrawn before charge-off",
+   "attribute": "od_chargeoff",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-ODR-03@v2/s3/c2",
+    "text": "Accounts that remain overdrawn for 45 days are referred for charge-off.",
+    "heading": "Steps",
+    "document": {
+     "title": "Referring Accounts for Charge-Off",
+     "type": "procedure",
+     "version": 2,
+     "effective": "2025-03-21",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "PRO-ODR-04@v3/s5/c1",
+    "text": "Accounts that remain overdrawn for 45 days are referred for charge-off.",
+    "heading": "Steps to follow",
+    "document": {
+     "title": "Talking with Customers About Overdrafts",
+     "type": "procedure",
+     "version": 3,
+     "effective": "2026-03-21",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-f1aecab62a",
+   "rule": null,
+   "attribute": null,
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-BOP-05@v3/s3/c2",
+    "text": "Report any alarm fault to security before opening for business.",
+    "heading": "Steps",
+    "document": {
+     "title": "Handling a Late Opener",
+     "type": "procedure",
+     "version": 3,
+     "effective": "2025-02-26",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "PRO-BOP-03@v2/s6/c1",
+    "text": "Report any alarm fault to security prior to opening for business.",
+    "heading": "Steps to follow",
+    "document": {
+     "title": "Changing Vault Combinations",
+     "type": "procedure",
+     "version": 2,
+     "effective": "2026-08-31",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-f3f9dee97b",
+   "rule": null,
+   "attribute": null,
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-DSP-04@v1/s3/c2",
+    "text": "Tell the customer how they will be notified of the outcome.",
+    "heading": "Steps",
+    "document": {
+     "title": "Reversing Provisional Credit",
+     "type": "procedure",
+     "version": 1,
+     "effective": "2025-12-02",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "PRO-DSP-02@v4/s5/c1",
+    "text": "Tell the client how they will be notified of the outcome.",
+    "heading": "Steps to follow",
+    "document": {
+     "title": "Issuing Provisional Credit",
+     "type": "procedure",
+     "version": 4,
+     "effective": "2024-12-16",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-e6621f82bb",
+   "rule": "Inactivity before dormancy",
+   "attribute": "dormant_inactivity",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-DRM-02@v4/s3/c4",
+    "text": "An account with no customer-initiated activity for 12 months is classified as dormant.",
+    "heading": "Steps",
+    "document": {
+     "title": "Sending Dormancy Notices",
+     "type": "procedure",
+     "version": 4,
+     "effective": "2026-06-17",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "PRO-DRM-02@v3/s3/c4",
+    "text": "An account with no customer-initiated activity for 24 months is classified as dormant.",
+    "heading": "Steps",
+    "document": {
+     "title": "Sending Dormancy Notices",
+     "type": "procedure",
+     "version": 3,
+     "effective": "2025-07-10",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-3716d27768",
+   "rule": "Forms of identification per signer",
+   "attribute": "ao_id_count",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-AOP-05@v4/s3/c2",
+    "text": "Do not open an account until you have verified two forms of identification for each signer.",
+    "heading": "Steps",
+    "document": {
+     "title": "Adding a Signer to an Existing Account",
+     "type": "procedure",
+     "version": 4,
+     "effective": "2025-02-04",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "PRO-AOP-05@v3/s3/c2",
+    "text": "Do not open an account until you have verified three forms of identification for each signer.",
+    "heading": "Steps",
+    "document": {
+     "title": "Adding a Signer to an Existing Account",
+     "type": "procedure",
+     "version": 3,
+     "effective": "2024-06-11",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-dded24829f",
+   "rule": "Notice before dormancy",
+   "attribute": "dormant_notice",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "BUL-DRM-02@v3/s1/c2",
+    "text": "Customers receive written notice 30 days before their account becomes dormant.",
+    "heading": "What branches need to know",
+    "document": {
+     "title": "Branch Bulletin 2026-34: Notice before dormancy",
+     "type": "bulletin",
+     "version": 3,
+     "effective": "2025-02-14",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "BUL-DRM-02@v2/s1/c2",
+    "text": "Customers receive written notice 60 days before their account becomes dormant.",
+    "heading": "What branches need to know",
+    "document": {
+     "title": "Branch Bulletin 2026-34: Notice before dormancy",
+     "type": "bulletin",
+     "version": 2,
+     "effective": "2023-11-13",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  }
+ ],
+ "input_hash": "4b3c5a61d2451ef8d207986d9aba9c0d2016991cad213da82d886b27b05902ea",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "```json\n{\n  \"results\": [\n    {\n      \"pair\": \"pair-ae8bfc910f\",\n      \"label\": \"consistent\",\n      \"quote_a\": \"Keep your drawer locked whenever you step away from the teller line.\",\n      \"quote_b\": \"Keep your drawer locked whenever you step away from the teller line.\",\n      \"rationale\": \"The clauses require tellers to lock their drawers when leaving the teller line. They state the identical rule in different documents.\"\n    },\n    {\n      \"pair\": \"pair-60544ea00a\",\n      \"label\": \"consistent\",\n      \"quote_a\": \"Review complaint trends with your team each quarter.\",\n      \"quote_b\": \"Review complaint trends with your team each quarter.\",\n      \"rationale\": \"The documents state that complaint trends must be reviewed quarterly. The procedure and job aid state the same rule consistently.\"\n    },\n    {\n      \"pair\": \"pair-346e8a0429\",\n      \"label\": \"consistent\",\n      \"quote_a\": \"Accounts that remain overdrawn for 45 days are referred for charge-off.\",\n      \"quote_b\": \"Accounts that remain overdrawn for 45 days are referred for charge-off.\",\n      \"rationale\": \"The clauses direct staff to refer accounts for charge off after 45 days of being overdrawn. They state the exact same rule and value.\"\n    },\n    {\n      \"pair\": \"pair-f1aecab62a\",\n      \"label\": \"consistent\",\n      \"quote_a\": \"Report any alarm fault to security before opening for business.\",\n      \"quote_b\": \"Report any alarm fault to security prior to opening for business.\",\n      \"rationale\": \"The procedures require staff to report alarm faults to security before the branch opens. The minor wording difference does not alter the underlying rule.\"\n    },\n    {\n      \"pair\": \"pair-f3f9dee97b\",\n      \"label\": \"consistent\",\n      \"quote_a\": \"Tell the customer how they will be notified of the outcome.\",\n      \"quote_b\": \"Tell the client how they will be notified of the outcome.\",\n      \"rationale\": \"The clauses instruct staff to inform the person of how they will be notified about the outcome. Using customer in one clause and client in the other does not change the requirement.\"\n    },\n    {\n      \"pair\": \"pair-e6621f82bb\",\n      \"label\": \"superseded\",\n      \"quote_a\": \"An account with no customer-initiated activity for 12 months is classified as dormant.\",\n      \"quote_b\": \"An account with no customer-initiated activity for 24 months is classified as dormant.\",\n      \"rationale\": \"The clauses come from version 4 and version 3 of the same document. The newer version changes the inactivity period before dormancy from 24 months to 12 months.\"\n    },\n    {\n      \"pair\": \"pair-3716d27768\",\n      \"label\": \"superseded\",\n      \"quote_a\": \"Do not open an account until you have verified two forms of identification for each signer.\",\n      \"quote_b\": \"Do not open an account until you have verified three forms of identification for each signer.\",\n      \"rationale\": \"The clauses belong to version 4 and version 3 of the same procedure. The newer version reduces the required forms of identification from three to two.\"\n    },\n    {\n      \"pair\": \"pair-dded24829f\",\n      \"label\": \"superseded\",\n      \"quote_a\": \"Customers receive written notice 30 days before their account becomes dormant.\",\n      \"quote_b\": \"Customers receive written notice 60 days before their account becomes dormant.\",\n      \"rationale\": \"These clauses are from version 3 and version 2 of the same bulletin. The newer version changes the notice period from 60 days to 30 days.\"\n    }\n  ]\n}\n```",
+   "problems": [],
+   "meta": {
+    "ms": 54449,
+    "input_tokens": 3277,
+    "output_tokens": 8726,
+    "cost_usd": 0.111266,
+    "usage": {
+     "completion_tokens": 914,
+     "prompt_tokens": 3277,
+     "total_tokens": 12003
+    },
+    "models": [
+     "gemini-3.1-pro-preview"
+    ],
+    "stop_reason": "stop"
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T17:25:56+00:00"
+}

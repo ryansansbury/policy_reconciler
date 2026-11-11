@@ -1,0 +1,294 @@
+{
+ "step": "classify",
+ "tag": "evals-11",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "1346938ac1ecbf43874a700ab9916c851d6a29bb5d6b9e5f1199128bc8cd59f2",
+ "input": [
+  {
+   "pair": "pair-a5d02be49a",
+   "rule": null,
+   "attribute": null,
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-LND-06@v3/s3/c2",
+    "text": "Enter the requested rate and the reason for the exception in the pricing worksheet.",
+    "heading": "Steps",
+    "document": {
+     "title": "Escalating Exceptions Above Branch Authority",
+     "type": "procedure",
+     "version": 3,
+     "effective": "2025-07-04",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "PRO-LND-01@v3/s5/c1",
+    "text": "Enter the requested rate and the reason for the exception in the pricing worksheet.",
+    "heading": "Steps to follow",
+    "document": {
+     "title": "Requesting a Rate Exception",
+     "type": "procedure",
+     "version": 3,
+     "effective": "2025-12-17",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-e554a580f9",
+   "rule": null,
+   "attribute": null,
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-REC-02@v1/s3/c4",
+    "text": "Log every box sent offsite in the records inventory.",
+    "heading": "Steps",
+    "document": {
+     "title": "Approving Records Destruction",
+     "type": "procedure",
+     "version": 1,
+     "effective": "2026-03-15",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "PRO-REC-03@v3/s5/c1",
+    "text": "Log every box sent offsite in the records inventory.",
+    "heading": "Steps to follow",
+    "document": {
+     "title": "Placing Records on Legal Hold",
+     "type": "procedure",
+     "version": 3,
+     "effective": "2026-08-08",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-f21f921f5b",
+   "rule": "Outgoing wire cutoff",
+   "attribute": "wire_cutoff",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-WIR-06@v2/s3/c1",
+    "text": "The cutoff for outgoing consumer and small business wires is 3:00 p.m. Central time.",
+    "heading": "Steps",
+    "document": {
+     "title": "Recalling or Cancelling a Wire",
+     "type": "procedure",
+     "version": 2,
+     "effective": "2025-08-13",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "JA-WIR-03@v1/s3/c1",
+    "text": "The cutoff for outgoing consumer and small business wires is 3:00 p.m. Central time.",
+    "heading": "Steps to follow",
+    "document": {
+     "title": "Wire Cutoff Card",
+     "type": "job_aid",
+     "version": 1,
+     "effective": "2025-12-30",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-46de7f55b3",
+   "rule": null,
+   "attribute": null,
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-HLD-02@v2/s3/c5",
+    "text": "Release a hold early only with your manager's approval.",
+    "heading": "Steps",
+    "document": {
+     "title": "Extending a Hold on a Large Deposit",
+     "type": "procedure",
+     "version": 2,
+     "effective": "2026-06-01",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "JA-HLD-03@v1/s3/c1",
+    "text": "Release a hold early only with your manager's approval.",
+    "heading": "Steps to follow",
+    "document": {
+     "title": "Hold Notice Checklist",
+     "type": "job_aid",
+     "version": 1,
+     "effective": "2026-05-01",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-ba4d7c9c6d",
+   "rule": null,
+   "attribute": null,
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-DRM-01@v1/s3/c4",
+    "text": "Verify the customer's identity before reactivating a dormant account.",
+    "heading": "Steps",
+    "document": {
+     "title": "Identifying Dormant Accounts",
+     "type": "procedure",
+     "version": 1,
+     "effective": "2025-05-25",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "PRO-DRM-02@v1/s5/c1",
+    "text": "Verify the customer's identity before reactivating a dormant account.",
+    "heading": "Steps to follow",
+    "document": {
+     "title": "Sending Dormancy Notices",
+     "type": "procedure",
+     "version": 1,
+     "effective": "2026-07-08",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-0066542eac",
+   "rule": null,
+   "attribute": null,
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-LND-04@v1/s3/c2",
+    "text": "Enter the requested rate and the reason for the exception in the pricing worksheet.",
+    "heading": "Steps",
+    "document": {
+     "title": "Reviewing Exception Reports Each Month",
+     "type": "procedure",
+     "version": 1,
+     "effective": "2026-04-12",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "PRO-LND-01@v3/s6/c1",
+    "text": "Enter the requested rate and the reason for the exception in the pricing worksheet.",
+    "heading": "Steps to follow",
+    "document": {
+     "title": "Requesting a Rate Exception",
+     "type": "procedure",
+     "version": 3,
+     "effective": "2025-12-17",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-0696daa705",
+   "rule": null,
+   "attribute": null,
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-DRM-01@v1/s3/c4",
+    "text": "Verify the customer's identity before reactivating a dormant account.",
+    "heading": "Steps",
+    "document": {
+     "title": "Identifying Dormant Accounts",
+     "type": "procedure",
+     "version": 1,
+     "effective": "2025-05-25",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "PRO-DRM-03@v2/s5/c1",
+    "text": "Verify the client's identity before reactivating a dormant account.",
+    "heading": "Steps to follow",
+    "document": {
+     "title": "Reactivating a Dormant Account",
+     "type": "procedure",
+     "version": 2,
+     "effective": "2024-11-06",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-f1ef06bfbb",
+   "rule": "Closed account record retention",
+   "attribute": "records_retention",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-REC-03@v3/s3/c2",
+    "text": "Account records are kept for 7 years after the account closes.",
+    "heading": "Steps",
+    "document": {
+     "title": "Placing Records on Legal Hold",
+     "type": "procedure",
+     "version": 3,
+     "effective": "2026-08-08",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "PRO-REC-05@v1/s5/c1",
+    "text": "Account records are kept for 7 years after the account closes.",
+    "heading": "Steps to follow",
+    "document": {
+     "title": "Shipping Records to Offsite Storage",
+     "type": "procedure",
+     "version": 1,
+     "effective": "2026-03-28",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  }
+ ],
+ "input_hash": "ca3280d99c624cc3a5ce9004b4194cd78e6284401b94296f062f0b529dc7b5d6",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [{\"pair\": \"pair-a5d02be49a\", \"label\": \"duplicate\", \"quote_a\": \"Enter the requested rate and the reason for the exception in the pricing worksheet.\", \"quote_b\": \"Enter the requested rate and the reason for the exception in the pricing worksheet.\", \"rationale\": \"Both procedures give the same step in identical words for all branches and all business lines. They are different documents, so one does not replace the other.\"}, {\"pair\": \"pair-e554a580f9\", \"label\": \"duplicate\", \"quote_a\": \"Log every box sent offsite in the records inventory.\", \"quote_b\": \"Log every box sent offsite in the records inventory.\", \"rationale\": \"The same logging step appears word for word in two different procedures with the same scope. Nothing differs that would change what staff do.\"}, {\"pair\": \"pair-f21f921f5b\", \"label\": \"duplicate\", \"quote_a\": \"The cutoff for outgoing consumer and small business wires is 3:00 p.m. Central time.\", \"quote_b\": \"The cutoff for outgoing consumer and small business wires is 3:00 p.m. Central time.\", \"rationale\": \"The procedure and the job aid state the identical cutoff time. Rank only matters when values differ and here they match.\"}, {\"pair\": \"pair-46de7f55b3\", \"label\": \"duplicate\", \"quote_a\": \"Release a hold early only with your manager's approval.\", \"quote_b\": \"Release a hold early only with your manager's approval.\", \"rationale\": \"The procedure and the job aid repeat the same approval requirement in identical words for the same accounts. Staff would act the same way under either one.\"}, {\"pair\": \"pair-ba4d7c9c6d\", \"label\": \"duplicate\", \"quote_a\": \"Verify the customer's identity before reactivating a dormant account.\", \"quote_b\": \"Verify the customer's identity before reactivating a dormant account.\", \"rationale\": \"Two different procedures carry the same identity check in identical words with the same scope. Nothing differs that matters.\"}, {\"pair\": \"pair-0066542eac\", \"label\": \"duplicate\", \"quote_a\": \"Enter the requested rate and the reason for the exception in the pricing worksheet.\", \"quote_b\": \"Enter the requested rate and the reason for the exception in the pricing worksheet.\", \"rationale\": \"The same worksheet step is written twice in separate procedures that apply to all branches and all business lines. The wording is identical and no value differs.\"}, {\"pair\": \"pair-0696daa705\", \"label\": \"duplicate\", \"quote_a\": \"Verify the customer's identity before reactivating a dormant account.\", \"quote_b\": \"Verify the client's identity before reactivating a dormant account.\", \"rationale\": \"The only change is the word client in place of customer, which does not change the requirement or what staff do. The clauses come from different documents, so neither replaces the other.\"}, {\"pair\": \"pair-f1ef06bfbb\", \"label\": \"duplicate\", \"quote_a\": \"Account records are kept for 7 years after the account closes.\", \"quote_b\": \"Account records are kept for 7 years after the account closes.\", \"rationale\": \"Both procedures set the same retention period of 7 years after closing in identical words. They cover the same scope and nothing differs.\"}]}",
+   "problems": [
+    "pair-a5d02be49a: the rationale has a comma before so",
+    "pair-0696daa705: the rationale has a comma before so"
+   ],
+   "meta": {
+    "ms": 10624,
+    "api_ms": 10444,
+    "input_tokens": 2,
+    "output_tokens": 1593,
+    "cost_usd": 0.048036899999999993,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  },
+  {
+   "reply": "{\"results\": [{\"pair\": \"pair-a5d02be49a\", \"label\": \"duplicate\", \"quote_a\": \"Enter the requested rate and the reason for the exception in the pricing worksheet.\", \"quote_b\": \"Enter the requested rate and the reason for the exception in the pricing worksheet.\", \"rationale\": \"The two clauses are word for word the same and both documents apply to all branches and all business lines. They come from different procedures rather than versions of one document, and nothing in them differs in a way that matters.\"}, {\"pair\": \"pair-0696daa705\", \"label\": \"duplicate\", \"quote_a\": \"Verify the customer's identity before reactivating a dormant account.\", \"quote_b\": \"Verify the client's identity before reactivating a dormant account.\", \"rationale\": \"Both clauses require identity verification before a dormant account is reactivated and differ only in using customer or client. They sit in different procedures with the same scope of all branches and consumer and small business accounts, and staff would act the same way under either.\"}]}",
+   "problems": [],
+   "meta": {
+    "ms": 4634,
+    "api_ms": 4448,
+    "input_tokens": 2,
+    "output_tokens": 540,
+    "cost_usd": 0.028438899999999996,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   },
+   "items": [
+    "pair-a5d02be49a",
+    "pair-0696daa705"
+   ]
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T03:26:07+00:00"
+}

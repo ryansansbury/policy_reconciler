@@ -1,0 +1,73 @@
+{
+ "step": "judge",
+ "tag": "2026",
+ "model": "google-a",
+ "backend": {
+  "vendor": "Google",
+  "model": "gemini-3.1-pro-preview",
+  "label": "Gemini 3.1 Pro"
+ },
+ "prompt_hash": "ab6a49ec8731854b3cf900a9a4387417ee8016fe68257c4d327181c7eb1621da",
+ "input": [
+  {
+   "draft": "g-46a9b4de",
+   "text": "Staff resolve each complaint within 15 business days of receipt or tell the customer when to expect a resolution.",
+   "sources": [
+    "Resolve complaints within 15 business days of receipt, or tell the customer when to expect a resolution."
+   ]
+  },
+  {
+   "draft": "g-34eb5d1d",
+   "text": "Staff credit the customer provisionally no later than 10 business days after the dispute form is complete.",
+   "sources": [
+    "Credit the customer provisionally no later than 10 business days after the dispute form is complete."
+   ]
+  },
+  {
+   "draft": "g-137a3a32",
+   "text": "A card services specialist reviews every dispute over $500 before credit is issued.",
+   "sources": [
+    "Disputes over $500 are reviewed by a card services specialist before credit is issued."
+   ]
+  },
+  {
+   "draft": "g-f23fdcaf",
+   "text": "Customers have 60 days from the statement date to dispute a debit card transaction. The window is longer when the customer was traveling or hospitalized.",
+   "sources": [
+    "Customers have 60 days from the statement date to dispute a debit card transaction, or longer when the customer was traveling or hospitalized."
+   ]
+  },
+  {
+   "draft": "g-293d155a",
+   "text": "Dormant accounts are charged a maintenance fee of $5 per month.",
+   "sources": [
+    "Dormant accounts are charged a maintenance fee of $5 per month."
+   ]
+  }
+ ],
+ "input_hash": "c2ae18a8d0c3695aea3124eca8f2a853337e48f62c6a8fb013824581ecd92881",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "```json\n{\"results\": [{\"draft\": \"g-46a9b4de\", \"scores\": {\"keeps_rules\": {\"pass\": true, \"evidence\": \"\"}, \"adds_no_rule\": {\"pass\": true, \"evidence\": \"\"}, \"keeps_scope\": {\"pass\": true, \"evidence\": \"\"}, \"plain\": {\"pass\": true, \"evidence\": \"\"}}}, {\"draft\": \"g-34eb5d1d\", \"scores\": {\"keeps_rules\": {\"pass\": true, \"evidence\": \"\"}, \"adds_no_rule\": {\"pass\": true, \"evidence\": \"\"}, \"keeps_scope\": {\"pass\": true, \"evidence\": \"\"}, \"plain\": {\"pass\": true, \"evidence\": \"\"}}}, {\"draft\": \"g-137a3a32\", \"scores\": {\"keeps_rules\": {\"pass\": true, \"evidence\": \"\"}, \"adds_no_rule\": {\"pass\": true, \"evidence\": \"\"}, \"keeps_scope\": {\"pass\": true, \"evidence\": \"\"}, \"plain\": {\"pass\": true, \"evidence\": \"\"}}}, {\"draft\": \"g-f23fdcaf\", \"scores\": {\"keeps_rules\": {\"pass\": true, \"evidence\": \"\"}, \"adds_no_rule\": {\"pass\": true, \"evidence\": \"\"}, \"keeps_scope\": {\"pass\": true, \"evidence\": \"\"}, \"plain\": {\"pass\": false, \"evidence\": \"longer\"}}}, {\"draft\": \"g-293d155a\", \"scores\": {\"keeps_rules\": {\"pass\": true, \"evidence\": \"\"}, \"adds_no_rule\": {\"pass\": true, \"evidence\": \"\"}, \"keeps_scope\": {\"pass\": true, \"evidence\": \"\"}, \"plain\": {\"pass\": true, \"evidence\": \"\"}}}]}\n```",
+   "problems": [],
+   "meta": {
+    "ms": 36520,
+    "input_tokens": 899,
+    "output_tokens": 5596,
+    "cost_usd": 0.06895,
+    "usage": {
+     "completion_tokens": 396,
+     "prompt_tokens": 899,
+     "total_tokens": 6495
+    },
+    "models": [
+     "gemini-3.1-pro-preview"
+    ],
+    "stop_reason": "stop"
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T17:02:11+00:00"
+}

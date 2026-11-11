@@ -1,0 +1,284 @@
+{
+ "step": "classify",
+ "tag": "6303",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "2c908358fde9f0f4a792753579a6cfaa33476e41c4b0f235744675d8e8283a19",
+ "input": [
+  {
+   "pair": "pair-ff75db358b",
+   "rule": "Forms of identification per signer",
+   "attribute": "ao_id_count",
+   "reason": "One side carries a condition that may change the rule.",
+   "a": {
+    "clause": "POL-AOP-01@v5/s4/c2",
+    "text": "Do not open an account until you have verified two forms of identification for each signer, or one form plus a verified bank reference when the branch manager approves.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Deposit Account Opening Policy",
+     "type": "policy",
+     "version": 5,
+     "effective": "2025-06-20",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "PRO-AOP-06@v1/s3/c1",
+    "text": "Collect three forms of identification from each signer before opening the account.",
+    "heading": "Steps",
+    "document": {
+     "title": "Handling Identification Exceptions",
+     "type": "procedure",
+     "version": 1,
+     "effective": "2026-07-29",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "kind": "condition"
+  },
+  {
+   "pair": "pair-35696ab09e",
+   "rule": "Complaint resolution deadline",
+   "attribute": "complaint_resolve",
+   "reason": "One side carries a condition that may change the rule.",
+   "a": {
+    "clause": "POL-CMP-01@v6/s4/c1",
+    "text": "Resolve complaints within 15 business days of receipt, or tell the customer when to expect a resolution.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Complaint Management Policy",
+     "type": "policy",
+     "version": 6,
+     "effective": "2026-07-21",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "PRO-CMP-05@v1/s3/c1",
+    "text": "Resolve complaints within 10 business days of receipt, or tell the customer when to expect a resolution.",
+    "heading": "Steps",
+    "document": {
+     "title": "Reviewing Complaint Trends Each Quarter",
+     "type": "procedure",
+     "version": 1,
+     "effective": "2026-01-03",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "kind": "condition"
+  },
+  {
+   "pair": "pair-089d0218d2",
+   "rule": "Standard check hold",
+   "attribute": "hold_standard",
+   "reason": "One side carries a condition that may change the rule.",
+   "a": {
+    "clause": "POL-HLD-01@v5/s3/c1",
+    "text": "Place a standard hold of 2 business days on deposited checks that don't qualify for next-day availability.",
+    "heading": "Policy statements",
+    "document": {
+     "title": "Funds Availability Policy",
+     "type": "policy",
+     "version": 5,
+     "effective": "2024-05-05",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "PRO-HLD-01@v2/s3/c3",
+    "text": "Funds from deposited checks are available within 3 business days unless a longer hold applies.",
+    "heading": "Steps",
+    "document": {
+     "title": "Placing a Hold on a Deposited Check",
+     "type": "procedure",
+     "version": 2,
+     "effective": "2025-04-09",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "kind": "condition"
+  },
+  {
+   "pair": "pair-6cbf853a42",
+   "rule": "Complaint resolution deadline",
+   "attribute": "complaint_resolve",
+   "reason": "The values match, but the weaker document adds a condition the stronger one doesn't state.",
+   "a": {
+    "clause": "POL-CMP-01@v6/s4/c1",
+    "text": "Resolve complaints within 15 business days of receipt, or tell the customer when to expect a resolution.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Complaint Management Policy",
+     "type": "policy",
+     "version": 6,
+     "effective": "2026-07-21",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "FAQ-CMP-02@v1/s1/c1",
+    "text": "Resolve complaints within 15 business days of receipt, or tell the customer when to expect a resolution.",
+    "heading": "How long does the bank have to resolve a complaint?",
+    "document": {
+     "title": "Complaint Escalation Questions",
+     "type": "faq",
+     "version": 1,
+     "effective": "2025-09-11",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "kind": "added_condition"
+  },
+  {
+   "pair": "pair-84a9f5f011",
+   "rule": "Wire callback threshold",
+   "attribute": "wire_callback",
+   "reason": "The values match, but the weaker document adds a condition the stronger one doesn't state.",
+   "a": {
+    "clause": "POL-WIR-01@v5/s3/c1",
+    "text": "Outgoing wires of $10,000 or more require a callback to the customer at a number already on file, unless the wire goes to an account the customer has used in the past year.",
+    "heading": "Policy statements",
+    "document": {
+     "title": "Wire Transfer Policy",
+     "type": "policy",
+     "version": 5,
+     "effective": "2025-04-21",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "POL-WIR-02@v4/s3/c1",
+    "text": "Call the customer back at a phone number already on file before releasing any outgoing wire of $10,000 or more, unless the wire goes to an account the customer has used in the past year.",
+    "heading": "Policy statements",
+    "document": {
+     "title": "Commercial Wire Services Policy",
+     "type": "policy",
+     "version": 4,
+     "effective": "2024-06-03",
+     "applies_to": "All branches. Commercial accounts."
+    }
+   },
+   "kind": "added_condition"
+  },
+  {
+   "pair": "pair-234d31df51",
+   "rule": "Complaint resolution deadline",
+   "attribute": "complaint_resolve",
+   "reason": "The values match, but the weaker document adds a condition the stronger one doesn't state.",
+   "a": {
+    "clause": "POL-CMP-01@v6/s4/c1",
+    "text": "Resolve complaints within 15 business days of receipt, or tell the customer when to expect a resolution.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Complaint Management Policy",
+     "type": "policy",
+     "version": 6,
+     "effective": "2026-07-21",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "PRO-CMP-01@v1/s3/c6",
+    "text": "Resolve complaints within 15 business days of receipt, or tell the customer when to expect a resolution, or within 30 business days when another department has to investigate.",
+    "heading": "Steps",
+    "document": {
+     "title": "Logging a Customer Complaint",
+     "type": "procedure",
+     "version": 1,
+     "effective": "2025-07-04",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "kind": "added_condition"
+  },
+  {
+   "pair": "pair-eca2149e9b",
+   "rule": "Standard check hold",
+   "attribute": "hold_standard",
+   "reason": "The values match, but the weaker document adds a condition the stronger one doesn't state.",
+   "a": {
+    "clause": "POL-HLD-01@v5/s3/c1",
+    "text": "Place a standard hold of 2 business days on deposited checks that don't qualify for next-day availability.",
+    "heading": "Policy statements",
+    "document": {
+     "title": "Funds Availability Policy",
+     "type": "policy",
+     "version": 5,
+     "effective": "2024-05-05",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "PRO-HLD-02@v3/s3/c7",
+    "text": "Funds from deposited checks are available within 2 business days unless a longer hold applies.",
+    "heading": "Steps",
+    "document": {
+     "title": "Extending a Hold on a Large Deposit",
+     "type": "procedure",
+     "version": 3,
+     "effective": "2025-06-13",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "kind": "added_condition"
+  }
+ ],
+ "input_hash": "23bd33593d0df491a99290116e3dbfa6b0e59cc6cabd28888d3742f85be5a6b1",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [{\"pair\": \"pair-ff75db358b\", \"label\": \"conflict\", \"quote_a\": \"verified two forms of identification for each signer\", \"quote_b\": \"Collect three forms of identification from each signer\", \"rationale\": \"Both clauses cover the same branches and account types but ask for a different number of IDs per signer. The policy outranks the procedure, so the policy clause is the one to keep.\"}, {\"pair\": \"pair-35696ab09e\", \"label\": \"conflict\", \"quote_a\": \"within 15 business days of receipt\", \"quote_b\": \"within 10 business days of receipt\", \"rationale\": \"The same deadline is set at 15 business days in one clause and 10 business days in the other for the same scope. The policy outranks the procedure, so the policy clause is the one to keep.\"}, {\"pair\": \"pair-089d0218d2\", \"label\": \"conflict\", \"quote_a\": \"standard hold of 2 business days\", \"quote_b\": \"available within 3 business days\", \"rationale\": \"The policy sets a standard hold of 2 business days and the procedure says 3 business days for the same checks. Staff following the procedure would act against the policy, which outranks it.\"}, {\"pair\": \"pair-6cbf853a42\", \"label\": \"consistent\", \"quote_a\": \"Resolve complaints within 15 business days of receipt\", \"quote_b\": \"Resolve complaints within 15 business days of receipt\", \"rationale\": \"The two clauses state the same rule with the same value and neither adds a condition. Matching wording alone does not make them a conflict.\"}, {\"pair\": \"pair-84a9f5f011\", \"label\": \"consistent\", \"quote_a\": \"Outgoing wires of $10,000 or more require a callback to the customer\", \"quote_b\": \"Call the customer back at a phone number already on file before releasing any outgoing wire of $10,000 or more\", \"rationale\": \"Both clauses set the same threshold and the same callback requirement with the same past year exception. The commercial policy only restates the rule for a narrower group.\"}, {\"pair\": \"pair-234d31df51\", \"label\": \"conflict\", \"quote_a\": \"Resolve complaints within 15 business days of receipt, or tell the customer when to expect a resolution.\", \"quote_b\": \"or within 30 business days when another department has to investigate\", \"rationale\": \"I decided this way because staff following the procedure could leave a complaint open to 30 business days without telling the customer, which the policy does not allow. Staff following the policy would never go against the procedure. The policy outranks the procedure, so the policy clause is the one to keep.\"}, {\"pair\": \"pair-eca2149e9b\", \"label\": \"consistent\", \"quote_a\": \"standard hold of 2 business days\", \"quote_b\": \"available within 2 business days\", \"rationale\": \"Both clauses give 2 business days for deposited checks. The procedure's note about a longer hold does not contradict the policy.\"}]}",
+   "problems": [],
+   "meta": {
+    "ms": 23116,
+    "api_ms": 22878,
+    "input_tokens": 8777,
+    "output_tokens": 2971,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 7934,
+     "cache_read_input_tokens": 841,
+     "output_tokens": 2971,
+     "output_tokens_details": {
+      "thinking_tokens": 2038
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 7934,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 2971,
+       "cache_read_input_tokens": 841,
+       "cache_creation_input_tokens": 7934,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 7934
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.0615341,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T04:14:54+00:00"
+}

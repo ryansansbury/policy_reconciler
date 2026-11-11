@@ -1,0 +1,79 @@
+{
+ "step": "judge",
+ "tag": "judge-11",
+ "model": "google-a",
+ "backend": {
+  "vendor": "Google",
+  "model": "gemini-3.1-pro-preview",
+  "label": "Gemini 3.1 Pro"
+ },
+ "prompt_hash": "ab6a49ec8731854b3cf900a9a4387417ee8016fe68257c4d327181c7eb1621da",
+ "input": [
+  {
+   "draft": "draft-01",
+   "text": "Escalate any complaint alleging unfair treatment to the regional manager on the day it is received. Send the customer an acknowledgment no later than 2 business days after a written complaint arrives.",
+   "sources": [
+    "Escalate any complaint alleging unfair treatment to the regional manager on the day it is received.",
+    "Send the customer an acknowledgment no later than 2 business days after a written complaint arrives."
+   ]
+  },
+  {
+   "draft": "draft-02",
+   "text": "Escalate any complaint alleging unfair treatment to the regional manager on the day it is received.",
+   "sources": [
+    "Escalate any complaint alleging unfair treatment to the regional manager on the day it is received.",
+    "Resolve complaints within 15 business days of receipt, or tell the customer when to expect a resolution."
+   ]
+  },
+  {
+   "draft": "draft-03",
+   "text": "An extended hold may be placed on the part of a day's check deposits above $6,000. Funds from deposited checks are available within 2 business days unless a longer hold applies. Personal bankers may waive service fees up to $15 per account in a calendar year.",
+   "sources": [
+    "An extended hold may be placed on the part of a day's check deposits above $6,000.",
+    "Funds from deposited checks are available within 2 business days unless a longer hold applies."
+   ]
+  },
+  {
+   "draft": "draft-04",
+   "text": "Send the customer an acknowledgment no later than 2 business days after a written complaint arrives, as needed. Escalate any complaint alleging unfair treatment to the regional manager on the day it is received, as needed.",
+   "sources": [
+    "Send the customer an acknowledgment no later than 2 business days after a written complaint arrives.",
+    "Escalate any complaint alleging unfair treatment to the regional manager on the day it is received."
+   ]
+  },
+  {
+   "draft": "draft-05",
+   "text": "Mail the customer a notice at least 30 days before the account is classified as dormant. Mail the customer a notice at least 45 days before the account is classified as dormant. Classify accounts as dormant after 12 months without customer-initiated activity.",
+   "sources": [
+    "Mail the customer a notice at least 30 days before the account is classified as dormant.",
+    "In Texas branches, mail the customer a notice at least 45 days before the account is classified as dormant.",
+    "Classify accounts as dormant after 12 months without customer-initiated activity."
+   ]
+  }
+ ],
+ "input_hash": "a043bbd88e0359a2ab2b4e64c6c6131b2ac3dc801cfe425ddffb4e3bc85588dd",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "```json\n{\"results\": [{\"draft\": \"draft-01\", \"scores\": {\"keeps_rules\": {\"pass\": true, \"evidence\": \"\"}, \"adds_no_rule\": {\"pass\": true, \"evidence\": \"\"}, \"keeps_scope\": {\"pass\": true, \"evidence\": \"\"}, \"plain\": {\"pass\": true, \"evidence\": \"\"}}}, {\"draft\": \"draft-02\", \"scores\": {\"keeps_rules\": {\"pass\": false, \"evidence\": \"Resolve complaints within 15 business days of receipt, or tell the customer when to expect a resolution.\"}, \"adds_no_rule\": {\"pass\": true, \"evidence\": \"\"}, \"keeps_scope\": {\"pass\": true, \"evidence\": \"\"}, \"plain\": {\"pass\": true, \"evidence\": \"\"}}}, {\"draft\": \"draft-03\", \"scores\": {\"keeps_rules\": {\"pass\": true, \"evidence\": \"\"}, \"adds_no_rule\": {\"pass\": false, \"evidence\": \"Personal bankers may waive service fees up to $15 per account in a calendar year.\"}, \"keeps_scope\": {\"pass\": true, \"evidence\": \"\"}, \"plain\": {\"pass\": true, \"evidence\": \"\"}}}, {\"draft\": \"draft-04\", \"scores\": {\"keeps_rules\": {\"pass\": true, \"evidence\": \"\"}, \"adds_no_rule\": {\"pass\": true, \"evidence\": \"\"}, \"keeps_scope\": {\"pass\": true, \"evidence\": \"\"}, \"plain\": {\"pass\": false, \"evidence\": \"as needed\"}}}, {\"draft\": \"draft-05\", \"scores\": {\"keeps_rules\": {\"pass\": true, \"evidence\": \"\"}, \"adds_no_rule\": {\"pass\": true, \"evidence\": \"\"}, \"keeps_scope\": {\"pass\": false, \"evidence\": \"In Texas branches\"}, \"plain\": {\"pass\": true, \"evidence\": \"\"}}}]}\n```",
+   "problems": [],
+   "meta": {
+    "ms": 27206,
+    "input_tokens": 1105,
+    "output_tokens": 1656,
+    "cost_usd": 0.022082,
+    "usage": {
+     "completion_tokens": 412,
+     "prompt_tokens": 1105,
+     "total_tokens": 2761
+    },
+    "models": [
+     "gemini-3.1-pro-preview"
+    ],
+    "stop_reason": "stop"
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T16:47:08+00:00"
+}

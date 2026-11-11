@@ -1,0 +1,296 @@
+{
+ "step": "classify",
+ "tag": "evals-11",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "1346938ac1ecbf43874a700ab9916c851d6a29bb5d6b9e5f1199128bc8cd59f2",
+ "input": [
+  {
+   "pair": "pair-65187446c7",
+   "rule": "Complaint resolution deadline",
+   "attribute": "complaint_resolve",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-CMP-01@v4/s4/c2",
+    "text": "Complaints should be closed within 15 business days of the day they arrive, or within 30 business days when another department has to investigate.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Complaint Management Policy",
+     "type": "policy",
+     "version": 4,
+     "effective": "2025-07-22",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "FAQ-CMP-01@v1/s1/c1",
+    "text": "Complaints should be closed within 10 business days of the day they arrive.",
+    "heading": "How long does the bank have to resolve a complaint?",
+    "document": {
+     "title": "Complaint Handling FAQ",
+     "type": "faq",
+     "version": 1,
+     "effective": "2026-06-27",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-10352cdb5e",
+   "rule": "Fee waivers per account per year",
+   "attribute": "fee_waivers_per_year",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-FEE-01@v2/s3/c1",
+    "text": "Limit fee waivers to two per account in each calendar year.",
+    "heading": "Policy statements",
+    "document": {
+     "title": "Service Fee Waiver Policy",
+     "type": "policy",
+     "version": 2,
+     "effective": "2024-05-13",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "FAQ-FEE-02@v2/s2/c1",
+    "text": "Limit fee waivers to one per account in each calendar year.",
+    "heading": "How many fee waivers can one account get in a year?",
+    "document": {
+     "title": "Fee Refund Questions",
+     "type": "faq",
+     "version": 2,
+     "effective": "2025-10-15",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-f4e17695e1",
+   "rule": "Branch manager rate exception limit",
+   "attribute": "lend_rate_bm",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-LND-01@v2/s4/c2",
+    "text": "A branch manager can lower a loan rate by no more than 0.25% as an exception.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Loan Pricing Exception Policy",
+     "type": "policy",
+     "version": 2,
+     "effective": "2024-08-27",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "JA-LND-02@v3/s1/c2",
+    "text": "Branch manager rate exception limit | 0.15%",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Exception Documentation Checklist",
+     "type": "job_aid",
+     "version": 3,
+     "effective": "2025-09-21",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-9469244188",
+   "rule": "Minimum opening deposit",
+   "attribute": "ao_min_deposit",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-AOP-01@v5/s3/c1",
+    "text": "The minimum opening deposit for a consumer checking account is $25.",
+    "heading": "Policy statements",
+    "document": {
+     "title": "Deposit Account Opening Policy",
+     "type": "policy",
+     "version": 5,
+     "effective": "2025-02-05",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "PRO-AOP-05@v1/s3/c4",
+    "text": "The minimum opening deposit for a consumer checking account is $50.",
+    "heading": "Steps",
+    "document": {
+     "title": "Adding a Signer to an Existing Account",
+     "type": "procedure",
+     "version": 1,
+     "effective": "2025-01-13",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-5f196b6496",
+   "rule": "Wire callback threshold",
+   "attribute": "wire_callback",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-WIR-01@v4/s4/c3",
+    "text": "Outgoing wires of $10,000 or more require a callback to the customer at a number already on file.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Wire Transfer Policy",
+     "type": "policy",
+     "version": 4,
+     "effective": "2025-04-29",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "JA-WIR-02@v3/s1/c2",
+    "text": "Callback threshold for outgoing wires | $5,000",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Callback Checklist",
+     "type": "job_aid",
+     "version": 3,
+     "effective": "2025-12-02",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-14f442c00f",
+   "rule": "Records destruction approver",
+   "attribute": "records_destroy_role",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-REC-01@v3/s3/c1",
+    "text": "The records custodian must approve the destruction of any records in writing.",
+    "heading": "Policy statements",
+    "document": {
+     "title": "Records Retention Policy",
+     "type": "policy",
+     "version": 3,
+     "effective": "2026-06-19",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "JA-REC-02@v1/s1/c1",
+    "text": "Approver for records destruction | operations specialist",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Destruction Approval Checklist",
+     "type": "job_aid",
+     "version": 1,
+     "effective": "2025-12-05",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-f4b0e0110d",
+   "rule": "Fee waivers per account per year",
+   "attribute": "fee_waivers_per_year",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-FEE-01@v2/s3/c1",
+    "text": "Limit fee waivers to two per account in each calendar year.",
+    "heading": "Policy statements",
+    "document": {
+     "title": "Service Fee Waiver Policy",
+     "type": "policy",
+     "version": 2,
+     "effective": "2024-05-13",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "PRO-FEE-01@v2/s3/c1",
+    "text": "Limit fee waivers to three per account in each calendar year.",
+    "heading": "Steps",
+    "document": {
+     "title": "Processing a Fee Waiver Request",
+     "type": "procedure",
+     "version": 2,
+     "effective": "2026-04-10",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-6fbd3d27eb",
+   "rule": "Dispute review threshold",
+   "attribute": "dispute_review_threshold",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-DSP-01@v5/s4/c2",
+    "text": "Send any dispute above $500 to card services for review before issuing credit.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Debit Card Dispute Policy",
+     "type": "policy",
+     "version": 5,
+     "effective": "2025-02-25",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "JA-DSP-01@v1/s1/c2",
+    "text": "Dispute amount that needs card services review | $250",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Dispute Intake Checklist",
+     "type": "job_aid",
+     "version": 1,
+     "effective": "2026-08-08",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  }
+ ],
+ "input_hash": "93a63a34b8966c15ccb6f0d1809537627c75320cc14ff6453196be2e232d5a9c",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [{\"pair\": \"pair-65187446c7\", \"label\": \"conflict\", \"quote_a\": \"within 15 business days of the day they arrive\", \"quote_b\": \"within 10 business days of the day they arrive\", \"rationale\": \"Both clauses cover all branches and business lines but set 15 business days in the policy and 10 in the FAQ. The policy outranks the FAQ, so the FAQ is the clause to fix.\"}, {\"pair\": \"pair-10352cdb5e\", \"label\": \"conflict\", \"quote_a\": \"Limit fee waivers to two per account in each calendar year.\", \"quote_b\": \"Limit fee waivers to one per account in each calendar year.\", \"rationale\": \"The policy allows two waivers per account each year and the FAQ allows one for the same accounts. Staff following the FAQ would refuse a second waiver that the policy permits.\"}, {\"pair\": \"pair-f4e17695e1\", \"label\": \"conflict\", \"quote_a\": \"no more than 0.25%\", \"quote_b\": \"0.15%\", \"rationale\": \"The policy lets a branch manager lower a rate by up to 0.25% and the job aid caps it at 0.15%. Both apply everywhere, and the policy outranks the job aid, so the job aid should be corrected.\"}, {\"pair\": \"pair-9469244188\", \"label\": \"conflict\", \"quote_a\": \"The minimum opening deposit for a consumer checking account is $25.\", \"quote_b\": \"The minimum opening deposit for a consumer checking account is $50.\", \"rationale\": \"The policy sets $25 and the procedure sets $50 for the same consumer checking account and the same scope. Staff following the procedure would turn away a $25 opening deposit that the policy accepts.\"}, {\"pair\": \"pair-5f196b6496\", \"label\": \"conflict\", \"quote_a\": \"Outgoing wires of $10,000 or more require a callback\", \"quote_b\": \"$5,000\", \"rationale\": \"The policy requires a callback starting at $10,000 and the job aid starts at $5,000. Wires between those amounts would get a callback under one clause and none under the other. The policy outranks the job aid.\"}, {\"pair\": \"pair-14f442c00f\", \"label\": \"conflict\", \"quote_a\": \"The records custodian must approve the destruction of any records in writing.\", \"quote_b\": \"operations specialist\", \"rationale\": \"The policy names the records custodian as the approver and the job aid names a different role, the operations specialist. Staff following the job aid would accept approval from someone the policy does not authorize.\"}, {\"pair\": \"pair-f4b0e0110d\", \"label\": \"conflict\", \"quote_a\": \"Limit fee waivers to two per account in each calendar year.\", \"quote_b\": \"Limit fee waivers to three per account in each calendar year.\", \"rationale\": \"The policy caps waivers at two per account each year and the procedure allows three for the same accounts. Staff following the procedure would grant a third waiver that the policy forbids. The policy outranks the procedure.\"}, {\"pair\": \"pair-6fbd3d27eb\", \"label\": \"conflict\", \"quote_a\": \"Send any dispute above $500 to card services for review\", \"quote_b\": \"$250\", \"rationale\": \"The policy sends disputes above $500 to card services and the job aid does so above $250. A dispute of $300 would be reviewed under the job aid but not under the policy. The policy outranks the job aid.\"}]}",
+   "problems": [
+    "pair-65187446c7: the rationale has a comma before so",
+    "pair-f4e17695e1: the rationale has a comma before so",
+    "pair-6fbd3d27eb: the rationale uses numbers that aren't in either clause or its document: 300"
+   ],
+   "meta": {
+    "ms": 11374,
+    "api_ms": 11135,
+    "input_tokens": 2,
+    "output_tokens": 1698,
+    "cost_usd": 0.0495149,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  },
+  {
+   "reply": "{\"results\": [{\"pair\": \"pair-65187446c7\", \"label\": \"conflict\", \"quote_a\": \"within 15 business days of the day they arrive\", \"quote_b\": \"within 10 business days of the day they arrive\", \"rationale\": \"The policy gives 15 business days for complaints while the FAQ gives 10 business days for the same complaints across all branches and business lines. Staff following the FAQ would close complaints on a different schedule than the policy allows, and the policy outranks the FAQ.\"}, {\"pair\": \"pair-f4e17695e1\", \"label\": \"conflict\", \"quote_a\": \"no more than 0.25%\", \"quote_b\": \"0.15%\", \"rationale\": \"The policy lets a branch manager lower a rate by up to 0.25% while the job aid caps the same exception at 0.15%. A manager following the job aid would refuse exceptions the policy allows, and the policy outranks the job aid.\"}, {\"pair\": \"pair-6fbd3d27eb\", \"label\": \"conflict\", \"quote_a\": \"Send any dispute above $500 to card services\", \"quote_b\": \"Dispute amount that needs card services review | $250\", \"rationale\": \"The policy sends disputes to card services only above $500 while the job aid sends them at $250 for the same accounts. Staff following the job aid would escalate disputes that the policy lets them credit directly, and the policy outranks the job aid.\"}]}",
+   "problems": [],
+   "meta": {
+    "ms": 9054,
+    "api_ms": 8833,
+    "input_tokens": 2,
+    "output_tokens": 920,
+    "cost_usd": 0.0341829,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   },
+   "items": [
+    "pair-65187446c7",
+    "pair-f4e17695e1",
+    "pair-6fbd3d27eb"
+   ]
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T03:24:47+00:00"
+}

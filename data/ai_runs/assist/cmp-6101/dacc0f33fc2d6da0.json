@@ -1,0 +1,131 @@
+{
+ "step": "assist",
+ "tag": "cmp-6101",
+ "model": "openai-a",
+ "backend": {
+  "vendor": "OpenAI",
+  "model": "gpt-6-astra",
+  "label": "GPT-6 Astra"
+ },
+ "prompt_hash": "66c01f0da9f327e74355d39363e55b642a1bbf8dc6249974c3afbf3cb3d6ccd5",
+ "input": [
+  {
+   "question": "q-C-03",
+   "text": "What is the overdraft fee?",
+   "type": "money",
+   "clauses": [
+    {
+     "id": "JA-ODR-01@v4/s1/c3",
+     "text": "Overdraft amount with no fee | $10",
+     "title": "Overdraft Quick Reference",
+     "type": "job_aid",
+     "version": 4,
+     "effective": "2026-04-04"
+    },
+    {
+     "id": "JA-ODR-02@v4/s1/c1",
+     "text": "Overdraft amount with no fee | $10",
+     "title": "Overdraft Fee Desk Card",
+     "type": "job_aid",
+     "version": 4,
+     "effective": "2025-11-07"
+    },
+    {
+     "id": "JA-ODR-01@v4/s2/c2",
+     "text": "Explain the overdraft fee and the options for avoiding future fees.",
+     "title": "Overdraft Quick Reference",
+     "type": "job_aid",
+     "version": 4,
+     "effective": "2026-04-04"
+    },
+    {
+     "id": "JA-ODR-01@v4/s3/c3",
+     "text": "Explain the overdraft fee and the options for avoiding future fees.",
+     "title": "Overdraft Quick Reference",
+     "type": "job_aid",
+     "version": 4,
+     "effective": "2026-04-04"
+    },
+    {
+     "id": "JA-ODR-02@v4/s2/c2",
+     "text": "Explain the overdraft fee and the options for avoiding future fees.",
+     "title": "Overdraft Fee Desk Card",
+     "type": "job_aid",
+     "version": 4,
+     "effective": "2025-11-07"
+    }
+   ]
+  }
+ ],
+ "input_hash": "f987d6a04c508caef3d8895d7e751d88d8e4184af30ed9fcc0f0b7de1a3c7d61",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\":[{\"question\":\"q-C-03\",\"answer\":\"The provided clauses do not state the overdraft fee amount.\",\"citations\":[],\"sources_disagree\":false}]}",
+   "problems": [
+    "q-C-03: an answer needs its text and at least one citation"
+   ],
+   "meta": {
+    "ms": 2630,
+    "input_tokens": 861,
+    "output_tokens": 76,
+    "cost_usd": 0.01241,
+    "usage": {
+     "prompt_tokens": 861,
+     "completion_tokens": 76,
+     "total_tokens": 937,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 31,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+     }
+    },
+    "models": [
+     "gpt-6-astra"
+    ],
+    "stop_reason": "stop"
+   }
+  },
+  {
+   "reply": "{\"results\":[{\"question\":\"q-C-03\",\"answer\":\"The clauses do not state the overdraft fee amount. Both the Overdraft Quick Reference and the Overdraft Fee Desk Card list $10 as the overdraft amount with no fee, not as the fee itself.\",\"citations\":[\"JA-ODR-01@v4/s1/c3\",\"JA-ODR-02@v4/s1/c1\"],\"sources_disagree\":false}]}",
+   "problems": [],
+   "meta": {
+    "ms": 3581,
+    "input_tokens": 894,
+    "output_tokens": 175,
+    "cost_usd": 0.01769,
+    "usage": {
+     "prompt_tokens": 894,
+     "completion_tokens": 175,
+     "total_tokens": 1069,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 72,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+     }
+    },
+    "models": [
+     "gpt-6-astra"
+    ],
+    "stop_reason": "stop"
+   },
+   "items": [
+    "q-C-03"
+   ]
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T17:20:52+00:00"
+}

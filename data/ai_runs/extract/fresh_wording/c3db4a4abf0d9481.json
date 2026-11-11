@@ -1,0 +1,167 @@
+{
+ "step": "extract",
+ "tag": "fresh_wording",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "dcc761e46c6ec579c01b9dfd540df3c2fa4bba3b6b5ec777aa2cf9c9c62aa411",
+ "input": [
+  {
+   "clause": "fw-31",
+   "text": "Twice a year, reset the vault combination.",
+   "heading": "Requirements",
+   "document": {
+    "title": "Branch Operations Manual",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "fw-32",
+   "text": "BMs can shave up to a quarter point off a loan rate on their own.",
+   "heading": "Requirements",
+   "document": {
+    "title": "Branch Operations Manual",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "fw-33",
+   "text": "The regional manager's pricing authority tops out at half a percentage point.",
+   "heading": "Requirements",
+   "document": {
+    "title": "Branch Operations Manual",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "fw-34",
+   "text": "Write down why and who approved it for every pricing exception, in the loan file.",
+   "heading": "Requirements",
+   "document": {
+    "title": "Branch Operations Manual",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "fw-35",
+   "text": "New checking customers bring at least $25 to get started.",
+   "heading": "Requirements",
+   "document": {
+    "title": "Branch Operations Manual",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "fw-36",
+   "text": "Each person signing on the account shows us a pair of IDs.",
+   "heading": "Requirements",
+   "document": {
+    "title": "Branch Operations Manual",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "fw-37",
+   "text": "Say thank you and walk the customer to the door at the end of the visit.",
+   "heading": "Requirements",
+   "document": {
+    "title": "Branch Operations Manual",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "fw-38",
+   "text": "The branch holiday party is the second Friday of December.",
+   "heading": "Requirements",
+   "document": {
+    "title": "Branch Operations Manual",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "fw-39",
+   "text": "Remind customers that statements are available online every month.",
+   "heading": "Requirements",
+   "document": {
+    "title": "Branch Operations Manual",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "fw-40",
+   "text": "Our tellers handle about 900 transactions on a busy Saturday.",
+   "heading": "Requirements",
+   "document": {
+    "title": "Branch Operations Manual",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  }
+ ],
+ "input_hash": "47696db36948e04e6ed19173bc10472c206722adeac30d110d848c9e8174f5f6",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\":[{\"clause\":\"fw-31\",\"atoms\":[{\"attribute\":\"combo_change\",\"value\":{\"type\":\"duration\",\"n\":6,\"unit\":\"months\"},\"quote\":\"Twice a year\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]},{\"clause\":\"fw-32\",\"atoms\":[{\"attribute\":\"lend_rate_bm\",\"value\":{\"type\":\"percent\",\"bp\":25},\"quote\":\"a quarter point\",\"actor\":\"branch_manager\",\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]},{\"clause\":\"fw-33\",\"atoms\":[{\"attribute\":\"lend_rate_rm\",\"value\":{\"type\":\"percent\",\"bp\":50},\"quote\":\"half a percentage point\",\"actor\":\"regional_manager\",\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]},{\"clause\":\"fw-34\",\"atoms\":[{\"attribute\":\"lend_exception_doc\",\"value\":{\"type\":\"modal\",\"modal\":\"must\"},\"quote\":\"Write down why and who approved it for every pricing exception, in the loan file\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]},{\"clause\":\"fw-35\",\"atoms\":[{\"attribute\":\"ao_min_deposit\",\"value\":{\"type\":\"money\",\"dollars\":25},\"quote\":\"$25\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]},{\"clause\":\"fw-36\",\"atoms\":[{\"attribute\":\"ao_id_count\",\"value\":{\"type\":\"count\",\"n\":2},\"quote\":\"a pair of IDs\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]},{\"clause\":\"fw-37\",\"atoms\":[]},{\"clause\":\"fw-38\",\"atoms\":[]},{\"clause\":\"fw-39\",\"atoms\":[]},{\"clause\":\"fw-40\",\"atoms\":[]}]}",
+   "problems": [],
+   "meta": {
+    "ms": 8320,
+    "api_ms": 8083,
+    "input_tokens": 8725,
+    "output_tokens": 1294,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 6041,
+     "cache_read_input_tokens": 2682,
+     "output_tokens": 1294,
+     "output_tokens_details": {
+      "thinking_tokens": 647
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 6041,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 1294,
+       "cache_read_input_tokens": 2682,
+       "cache_creation_input_tokens": 6041,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 6041
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.0373762,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T04:14:14+00:00"
+}

@@ -1,0 +1,133 @@
+{
+ "step": "extract",
+ "tag": "11",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "c338e60b657607c5f659b819665f2ec94796d01ec070e1f88f830e5bdacdd3fe",
+ "input": [
+  {
+   "clause": "POL-AOP-02@v6/s4/c2",
+   "text": "Every signer must present two separate identification documents before the account is opened, or one form plus a verified bank reference when the branch manager approves.",
+   "heading": "Additional requirements",
+   "document": {
+    "title": "Customer Identification Policy",
+    "type": "policy",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "POL-AOP-02@v6/s5/c1",
+   "text": "Exceptions to this policy need written approval from the Deposit Operations manager and are reviewed each quarter.",
+   "heading": "Exceptions",
+   "document": {
+    "title": "Customer Identification Policy",
+    "type": "policy",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "POL-AOP-02@v6/s6/c1",
+   "text": "Branch managers make sure their teams follow this policy, and Deposit Operations answers questions about it.",
+   "heading": "Roles and responsibilities",
+   "document": {
+    "title": "Customer Identification Policy",
+    "type": "policy",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "POL-BOP-01@v2/s6/c1",
+   "text": "Branch managers make sure their teams follow this policy, and Branch Network answers questions about it.",
+   "heading": "Roles and responsibilities",
+   "document": {
+    "title": "Branch Security and Opening Policy",
+    "type": "policy",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "POL-CMP-01@v4/s4/c2",
+   "text": "Complaints should be closed within 15 business days of the day they arrive, or within 30 business days when another department has to investigate.",
+   "heading": "Additional requirements",
+   "document": {
+    "title": "Complaint Management Policy",
+    "type": "policy",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "POL-CMP-01@v4/s6/c1",
+   "text": "Branch managers make sure their teams follow this policy, and Customer Experience answers questions about it.",
+   "heading": "Roles and responsibilities",
+   "document": {
+    "title": "Complaint Management Policy",
+    "type": "policy",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "POL-CSH-01@v4/s6/c1",
+   "text": "Branch managers make sure their teams follow this policy, and Branch Network answers questions about it.",
+   "heading": "Roles and responsibilities",
+   "document": {
+    "title": "Cash Handling Policy",
+    "type": "policy",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "POL-CSH-02@v3/s6/c1",
+   "text": "Branch managers make sure their teams follow this policy, and Branch Network answers questions about it.",
+   "heading": "Roles and responsibilities",
+   "document": {
+    "title": "Large-Cash Review Policy",
+    "type": "policy",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "POL-DRM-01@v4/s5/c1",
+   "text": "Exceptions to this policy need written approval from the Deposit Operations manager and are reviewed each quarter.",
+   "heading": "Exceptions",
+   "document": {
+    "title": "Dormant Account Policy",
+    "type": "policy",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "POL-DRM-01@v4/s6/c1",
+   "text": "Branch managers make sure their teams follow this policy, and Deposit Operations answers questions about it.",
+   "heading": "Roles and responsibilities",
+   "document": {
+    "title": "Dormant Account Policy",
+    "type": "policy",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  }
+ ],
+ "input_hash": "f45145f59e093131d98889e5c65dd6c7be022fce1ae75ee22c8f4e4dbc184d4e",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\":[{\"clause\":\"POL-AOP-02@v6/s4/c2\",\"atoms\":[{\"attribute\":\"ao_id_count\",\"value\":{\"type\":\"count\",\"n\":2},\"quote\":\"two\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":\"or one form plus a verified bank reference when the branch manager approves\"},{\"attribute\":\"ao_exception_approver\",\"value\":{\"type\":\"role\",\"role\":\"branch_manager\"},\"quote\":\"branch manager\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":\"one form plus a verified bank reference when the branch manager approves\"}]},{\"clause\":\"POL-AOP-02@v6/s5/c1\",\"atoms\":[{\"attribute\":\"ao_exception_approver\",\"value\":{\"type\":\"role\",\"role\":null,\"generic\":\"Deposit Operations manager\"},\"quote\":\"Deposit Operations manager\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]},{\"clause\":\"POL-AOP-02@v6/s6/c1\",\"atoms\":[]},{\"clause\":\"POL-BOP-01@v2/s6/c1\",\"atoms\":[]},{\"clause\":\"POL-CMP-01@v4/s4/c2\",\"atoms\":[{\"attribute\":\"complaint_resolve\",\"value\":{\"type\":\"duration\",\"n\":15,\"unit\":\"business_days\"},\"quote\":\"15 business days\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":\"or within 30 business days when another department has to investigate\"}]},{\"clause\":\"POL-CMP-01@v4/s6/c1\",\"atoms\":[]},{\"clause\":\"POL-CSH-01@v4/s6/c1\",\"atoms\":[]},{\"clause\":\"POL-CSH-02@v3/s6/c1\",\"atoms\":[]},{\"clause\":\"POL-DRM-01@v4/s5/c1\",\"atoms\":[]},{\"clause\":\"POL-DRM-01@v4/s6/c1\",\"atoms\":[]}]}",
+   "problems": [],
+   "meta": {
+    "ms": 8824,
+    "api_ms": 8591,
+    "input_tokens": 2,
+    "output_tokens": 1353,
+    "cost_usd": 0.039063,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T03:22:09+00:00"
+}

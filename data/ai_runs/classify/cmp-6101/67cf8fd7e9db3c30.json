@@ -1,0 +1,278 @@
+{
+ "step": "classify",
+ "tag": "cmp-6101",
+ "model": "google-b",
+ "backend": {
+  "vendor": "Google",
+  "model": "gemini-3.8-flash",
+  "label": "Gemini 3.8 Flash"
+ },
+ "prompt_hash": "2c908358fde9f0f4a792753579a6cfaa33476e41c4b0f235744675d8e8283a19",
+ "input": [
+  {
+   "pair": "pair-3bbec94397",
+   "rule": null,
+   "attribute": null,
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-CMP-01@v4/s4/c2",
+    "text": "Resolve complaints within 15 business days of receipt, or tell the customer when to expect a resolution.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Complaint Management Policy",
+     "type": "policy",
+     "version": 4,
+     "effective": "2026-05-11",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "PRO-CMP-01@v2/s3/c6",
+    "text": "Resolve complaints within 15 days of receipt, or tell the customer when to expect a resolution.",
+    "heading": "Steps",
+    "document": {
+     "title": "Logging a Customer Complaint",
+     "type": "procedure",
+     "version": 2,
+     "effective": "2025-08-20",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-4df992cd83",
+   "rule": "New account check hold",
+   "attribute": "hold_new_account",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-HLD-01@v3/s4/c2",
+    "text": "New accounts can have check holds of as long as 7 business days.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Funds Availability Policy",
+     "type": "policy",
+     "version": 3,
+     "effective": "2025-02-25",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "BUL-HLD-02@v4/s1/c2",
+    "text": "New accounts can have check holds of as long as 7 days.",
+    "heading": "What branches need to know",
+    "document": {
+     "title": "Branch Bulletin 2026-17: Longest check hold on a new account",
+     "type": "bulletin",
+     "version": 4,
+     "effective": "2025-05-17",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-86e93b37d6",
+   "rule": "Complaint acknowledgment deadline",
+   "attribute": "complaint_ack",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-CMP-01@v4/s4/c1",
+    "text": "Acknowledge every written complaint within 2 business days.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Complaint Management Policy",
+     "type": "policy",
+     "version": 4,
+     "effective": "2026-05-11",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "FAQ-CMP-01@v3/s1/c1",
+    "text": "Send the customer an acknowledgment no later than 2 days after a written complaint arrives.",
+    "heading": "How quickly is a written complaint acknowledged?",
+    "document": {
+     "title": "Complaint Handling FAQ",
+     "type": "faq",
+     "version": 3,
+     "effective": "2025-09-08",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-b1d5c24a22",
+   "rule": null,
+   "attribute": null,
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-CMP-02@v1/s3/c1",
+    "text": "Resolve complaints within 15 business days of receipt, or tell the customer when to expect a resolution.",
+    "heading": "Steps",
+    "document": {
+     "title": "Acknowledging a Written Complaint",
+     "type": "procedure",
+     "version": 1,
+     "effective": "2026-01-12",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "PRO-CMP-06@v1/s3/c2",
+    "text": "Resolve complaints within 15 days of receipt, or tell the customer when to expect a resolution.",
+    "heading": "Steps",
+    "document": {
+     "title": "Responding to a Complaint by Phone",
+     "type": "procedure",
+     "version": 1,
+     "effective": "2024-12-19",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-b5fcf80da1",
+   "rule": null,
+   "attribute": null,
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-HLD-01@v3/s4/c1",
+    "text": "Funds from deposited checks are available within 2 business days unless a longer hold applies.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Funds Availability Policy",
+     "type": "policy",
+     "version": 3,
+     "effective": "2025-02-25",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "PRO-HLD-05@v1/s3/c7",
+    "text": "Funds from deposited checks are available within 2 days unless a longer hold applies.",
+    "heading": "Steps",
+    "document": {
+     "title": "Explaining Holds to Customers",
+     "type": "procedure",
+     "version": 1,
+     "effective": "2025-03-23",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-bbabaee60a",
+   "rule": null,
+   "attribute": null,
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-DSP-03@v2/s3/c2",
+    "text": "Send the completed form to card services the same day.",
+    "heading": "Steps",
+    "document": {
+     "title": "Investigating a Dispute",
+     "type": "procedure",
+     "version": 2,
+     "effective": "2026-07-31",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "JA-DSP-01@v3/s3/c1",
+    "text": "Send the completed form to card services the same day.",
+    "heading": "Steps to follow",
+    "document": {
+     "title": "Dispute Intake Checklist",
+     "type": "job_aid",
+     "version": 3,
+     "effective": "2025-08-29",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-1ced63d644",
+   "rule": null,
+   "attribute": null,
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-BOP-06@v4/s3/c2",
+    "text": "Lock the doors and set the alarm after the last customer leaves.",
+    "heading": "Steps",
+    "document": {
+     "title": "After-Hours Branch Access",
+     "type": "procedure",
+     "version": 4,
+     "effective": "2025-12-26",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "PRO-BOP-01@v3/s5/c1",
+    "text": "Lock the doors and set the alarm after the last customer leaves.",
+    "heading": "Steps to follow",
+    "document": {
+     "title": "Opening the Branch Each Morning",
+     "type": "procedure",
+     "version": 3,
+     "effective": "2025-01-17",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-57cdc935d3",
+   "rule": null,
+   "attribute": null,
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-REC-06@v4/s3/c1",
+    "text": "Check the legal hold list before preparing any records for destruction.",
+    "heading": "Steps",
+    "document": {
+     "title": "Retrieving Archived Records",
+     "type": "procedure",
+     "version": 4,
+     "effective": "2025-12-12",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "PRO-REC-02@v3/s5/c1",
+    "text": "Check the legal hold list before preparing any records for destruction.",
+    "heading": "Steps to follow",
+    "document": {
+     "title": "Approving Records Destruction",
+     "type": "procedure",
+     "version": 3,
+     "effective": "2026-03-12",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  }
+ ],
+ "input_hash": "28e8ceddd36bf93d729704efa4a3c440e6d3ff060f8b7d3af0f1dc9f008839ee",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [{\"pair\": \"pair-3bbec94397\", \"label\": \"conflict\", \"quote_a\": \"15 business days\", \"quote_b\": \"15 days\", \"rationale\": \"The policy sets a deadline of 15 business days while the procedure sets 15 days. These different units change the deadline and create a conflict.\"}, {\"pair\": \"pair-4df992cd83\", \"label\": \"conflict\", \"quote_a\": \"7 business days\", \"quote_b\": \"7 days\", \"rationale\": \"The policy allows holds of as long as 7 business days while the bulletin sets 7 days. These different units change the hold duration and create a conflict.\"}, {\"pair\": \"pair-86e93b37d6\", \"label\": \"conflict\", \"quote_a\": \"2 business days\", \"quote_b\": \"2 days\", \"rationale\": \"The policy requires acknowledgment within 2 business days while the FAQ specifies 2 days. The different units change the deadline and create a conflict.\"}, {\"pair\": \"pair-b1d5c24a22\", \"label\": \"conflict\", \"quote_a\": \"15 business days\", \"quote_b\": \"15 days\", \"rationale\": \"The first procedure sets a deadline of 15 business days while the second procedure sets 15 days. These different units change the deadline and create a conflict.\"}, {\"pair\": \"pair-b5fcf80da1\", \"label\": \"conflict\", \"quote_a\": \"2 business days\", \"quote_b\": \"2 days\", \"rationale\": \"The policy provides funds availability within 2 business days while the procedure provides 2 days. The different units change the timeline and create a conflict.\"}, {\"pair\": \"pair-bbabaee60a\", \"label\": \"duplicate\", \"quote_a\": \"Send the completed form to card services the same day.\", \"quote_b\": \"Send the completed form to card services the same day.\", \"rationale\": \"The step was copied from the procedure into the job aid. A policy owner would keep the procedure text and replace the job aid step with a pointer.\"}, {\"pair\": \"pair-1ced63d644\", \"label\": \"duplicate\", \"quote_a\": \"Lock the doors and set the alarm after the last customer leaves.\", \"quote_b\": \"Lock the doors and set the alarm after the last customer leaves.\", \"rationale\": \"The exact same step appears in two different branch procedures. A policy owner would replace the redundant passage with a pointer.\"}, {\"pair\": \"pair-57cdc935d3\", \"label\": \"duplicate\", \"quote_a\": \"Check the legal hold list before preparing any records for destruction.\", \"quote_b\": \"Check the legal hold list before preparing any records for destruction.\", \"rationale\": \"The exact same destruction step was copied into the retrieval procedure. A policy owner would replace the duplicate passage with a pointer.\"}]}",
+   "problems": [],
+   "meta": {
+    "ms": 155441,
+    "input_tokens": 3240,
+    "output_tokens": 21151,
+    "cost_usd": 0.081746,
+    "usage": {
+     "completion_tokens": 651,
+     "prompt_tokens": 3240,
+     "total_tokens": 24391
+    },
+    "models": [
+     "gemini-3.8-flash"
+    ],
+    "stop_reason": "stop"
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T17:33:47+00:00"
+}

@@ -1,0 +1,114 @@
+{
+ "step": "assist",
+ "tag": "after-2026",
+ "model": "claude-haiku",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "haiku",
+  "client_context": true
+ },
+ "prompt_hash": "66c01f0da9f327e74355d39363e55b642a1bbf8dc6249974c3afbf3cb3d6ccd5",
+ "input": [
+  {
+   "question": "q-C-10",
+   "text": "What is the monthly fee on a dormant account?",
+   "type": "money",
+   "clauses": [
+    {
+     "id": "JA-DRM-02@v2/s1/c2",
+     "text": "Monthly dormant account fee | $5",
+     "title": "Dormancy Notice Checklist",
+     "type": "job_aid",
+     "version": 2,
+     "effective": "2025-11-08"
+    },
+    {
+     "id": "ADD-TX-01@v3/s2/c2",
+     "text": "In Texas branches, the monthly fee for a dormant account is $10.",
+     "title": "Texas Branch Addendum",
+     "type": "addendum",
+     "version": 3,
+     "effective": "2026-02-10"
+    },
+    {
+     "id": "FAQ-DRM-01@v1/s2/c1",
+     "text": "Dormant accounts are charged a maintenance fee of $5 per month.",
+     "title": "Dormant Account FAQ",
+     "type": "faq",
+     "version": 1,
+     "effective": "2025-11-14"
+    },
+    {
+     "id": "FAQ-DRM-02@v1/s2/c1",
+     "text": "Dormant accounts are charged a maintenance fee of $5 per month.",
+     "title": "Reactivation Questions",
+     "type": "faq",
+     "version": 1,
+     "effective": "2026-01-27"
+    },
+    {
+     "id": "POL-DRM-01@v6/s3/c1",
+     "text": "Dormant accounts are charged a maintenance fee of $5 per month.",
+     "title": "Dormant Account Policy",
+     "type": "policy",
+     "version": 6,
+     "effective": "2025-02-09"
+    }
+   ]
+  }
+ ],
+ "input_hash": "790bd52241341156bfab0d027605d1e55f77703660c508e743908ecfaa2634bb",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [{\"question\": \"q-C-10\", \"answer\": \"The Dormant Account Policy sets the monthly dormant account fee at $5 with no location limit. The Texas Branch Addendum sets it at $10 for dormant accounts in Texas branches, and the policy does not mention that exception, so the sources disagree for Texas. The $10 figure applies only to Texas branches, and the $5 figure applies everywhere the policy governs.\", \"citations\": [\"POL-DRM-01@v6/s3/c1\", \"ADD-TX-01@v3/s2/c2\"], \"sources_disagree\": true}]}",
+   "problems": [],
+   "meta": {
+    "ms": 7368,
+    "api_ms": 7249,
+    "input_tokens": 6131,
+    "output_tokens": 1396,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 5511,
+     "cache_read_input_tokens": 618,
+     "output_tokens": 1396,
+     "output_tokens_details": {
+      "thinking_tokens": 1193
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 5511,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 1396,
+       "cache_read_input_tokens": 618,
+       "cache_creation_input_tokens": 5511,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 5511
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.0018065800000000001,
+    "models": [
+     "claude-haiku-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T21:27:37+00:00"
+}

@@ -1,0 +1,96 @@
+{
+ "step": "assist",
+ "tag": "cmp-6101",
+ "model": "openai-b",
+ "backend": {
+  "vendor": "OpenAI",
+  "model": "gpt-6-luna",
+  "label": "GPT-6 Luna"
+ },
+ "prompt_hash": "66c01f0da9f327e74355d39363e55b642a1bbf8dc6249974c3afbf3cb3d6ccd5",
+ "input": [
+  {
+   "question": "q-C-11",
+   "text": "Which outgoing wires need a callback?",
+   "type": "money",
+   "clauses": [
+    {
+     "id": "JA-WIR-01@v4/s1/c2",
+     "text": "Callback threshold for outgoing wires | $10,000",
+     "title": "Wire Desk Quick Reference",
+     "type": "job_aid",
+     "version": 4,
+     "effective": "2026-03-16"
+    },
+    {
+     "id": "JA-WIR-03@v3/s1/c3",
+     "text": "Callback threshold for outgoing wires | $10,000",
+     "title": "Wire Cutoff Card",
+     "type": "job_aid",
+     "version": 3,
+     "effective": "2026-03-04"
+    },
+    {
+     "id": "FAQ-WIR-01@v1/s2/c1",
+     "text": "Outgoing wires of $10,000 or more require a callback to the customer at a number already on file.",
+     "title": "Wire Transfer FAQ",
+     "type": "faq",
+     "version": 1,
+     "effective": "2026-03-26"
+    },
+    {
+     "id": "POL-WIR-02@v5/s8/c1",
+     "text": "Outgoing wires of $10,000 or more require a callback that a wire specialist completes.",
+     "title": "Commercial Wire Services Policy",
+     "type": "policy",
+     "version": 5,
+     "effective": "2024-10-18"
+    },
+    {
+     "id": "PRO-WIR-02@v3/s3/c8",
+     "text": "Outgoing wires over $100,000 need a second approval from an operations manager.",
+     "title": "Processing Outgoing Commercial Wires",
+     "type": "procedure",
+     "version": 3,
+     "effective": "2025-07-09"
+    }
+   ]
+  }
+ ],
+ "input_hash": "2108a1192f2601223cc362b2d89143f13f5df001dbfa7d3077c5221c5aab7fc1",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\":[{\"question\":\"q-C-11\",\"answer\":\"Outgoing wires of $10,000 or more require a callback completed by a wire specialist.\",\"citations\":[\"POL-WIR-02@v5/s8/c1\"],\"sources_disagree\":false}]}",
+   "problems": [],
+   "meta": {
+    "ms": 2147,
+    "input_tokens": 868,
+    "output_tokens": 151,
+    "cost_usd": 0.000162,
+    "usage": {
+     "prompt_tokens": 868,
+     "completion_tokens": 151,
+     "total_tokens": 1019,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 87,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+     }
+    },
+    "models": [
+     "gpt-6-luna"
+    ],
+    "stop_reason": "stop"
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T17:23:23+00:00"
+}

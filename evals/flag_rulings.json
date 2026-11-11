@@ -1,0 +1,40 @@
+{
+ "drafts": {
+  "g-02ec0cc3.1719f55e": {
+   "at": "2026-10-30T11:13-07:00",
+   "by": "the specialist",
+   "criterion": "adds_no_rule",
+   "evidence": "Before",
+   "group": "g-02ec0cc3",
+   "note": "A specialist rejected the earlier draft of this rule because it began with the words Before an outgoing wire, which add a timing the kept clause doesn't state. Write it again and state only what the kept clause states.",
+   "reason": "The kept clause says only that these wires require a callback, and the draft added when the call has to happen.",
+   "seed": "2026",
+   "text_sha": "1719f55e38564f16",
+   "verdict": "real"
+  },
+  "g-f23fdcaf.0a1a227e": {
+   "at": "2026-10-30T11:13-07:00",
+   "by": "the specialist",
+   "criterion": "plain",
+   "evidence": "longer",
+   "group": "g-f23fdcaf",
+   "reason": "The policy itself says or longer without giving a number, and a draft can't add one without adding a rule.",
+   "seed": "2026",
+   "text_sha": "0a1a227e60918fda",
+   "verdict": "source_gap"
+  }
+ },
+ "note": "The specialist's rulings on the judge's flags. He chose each one on 10/30 from a set of options after reading the flags and their evidence. agents/rulings.py applies them. A rule covers every flag on its criterion whose evidence is one of its words, and a ruling on a draft covers that draft's exact text.",
+ "rules": {
+  "generic_subject": {
+   "at": "2026-10-30T11:13-07:00",
+   "by": "the specialist",
+   "criterion": "adds_no_rule",
+   "reason": "Adding Staff as the subject names who carries out an instruction the policy already gives them and changes no one's duty or authority.",
+   "verdict": "harmless",
+   "words": [
+    "staff"
+   ]
+  }
+ }
+}

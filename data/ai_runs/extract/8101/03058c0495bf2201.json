@@ -1,0 +1,167 @@
+{
+ "step": "extract",
+ "tag": "8101",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "dcc761e46c6ec579c01b9dfd540df3c2fa4bba3b6b5ec777aa2cf9c9c62aa411",
+ "input": [
+  {
+   "clause": "PRO-BOP-06@v3/s3/c1",
+   "text": "Approach the branch together and check the exterior for signs of forced entry.",
+   "heading": "Steps",
+   "document": {
+    "title": "After-Hours Branch Access",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-BOP-06@v4/s3/c1",
+   "text": "Approach the branch together and check the exterior for signs of forced entry.",
+   "heading": "Steps",
+   "document": {
+    "title": "After-Hours Branch Access",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-CMP-02@v4/s3/c8",
+   "text": "Escalate any complaint alleging unfair treatment to management on the day it is received.",
+   "heading": "Steps",
+   "document": {
+    "title": "Acknowledging a Written Complaint",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-CMP-04@v2/s3/c4",
+   "text": "Resolve complaints within 15 business days of receipt, or tell the customer when to expect a resolution.",
+   "heading": "Steps",
+   "document": {
+    "title": "Escalating a Sensitive Complaint",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-CMP-04@v2/s3/c9",
+   "text": "Complaints that allege unfair treatment are escalated to management the same day.",
+   "heading": "Steps",
+   "document": {
+    "title": "Escalating a Sensitive Complaint",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-CSH-01@v3/s1/c1",
+   "text": "This procedure covers balancing a Teller Drawer, step by step, for every branch it applies to.",
+   "heading": "Purpose",
+   "document": {
+    "title": "Balancing a Teller Drawer",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-CSH-01@v3/s3/c6",
+   "text": "Keep your drawer locked whenever you step away from the teller line.",
+   "heading": "Steps",
+   "document": {
+    "title": "Balancing a Teller Drawer",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-CSH-01@v3/s3/c9",
+   "text": "Use the counterfeit detection pen on bills of fifty dollars or more.",
+   "heading": "Steps",
+   "document": {
+    "title": "Balancing a Teller Drawer",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-CSH-02@v3/s3/c1",
+   "text": "Keep your drawer locked whenever you step away from the teller line.",
+   "heading": "Steps",
+   "document": {
+    "title": "Selling Excess Cash to the Vault",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-CSH-02@v3/s3/c4",
+   "text": "Use the counterfeit detection pen on bills of fifty dollars or more.",
+   "heading": "Steps",
+   "document": {
+    "title": "Selling Excess Cash to the Vault",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  }
+ ],
+ "input_hash": "dc764b47e8ad763b1039416fb1870f3edaeaa3c3101adab99c0510472e25811b",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [\n{\"clause\": \"PRO-BOP-06@v3/s3/c1\", \"atoms\": []},\n{\"clause\": \"PRO-BOP-06@v4/s3/c1\", \"atoms\": []},\n{\"clause\": \"PRO-CMP-02@v4/s3/c8\", \"atoms\": [\n{\"attribute\": \"complaint_escalation_role\", \"value\": {\"type\": \"role\", \"role\": null, \"generic\": \"management\"}, \"quote\": \"management\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}\n]},\n{\"clause\": \"PRO-CMP-04@v2/s3/c4\", \"atoms\": [\n{\"attribute\": \"complaint_resolve\", \"value\": {\"type\": \"duration\", \"n\": 15, \"unit\": \"business_days\"}, \"quote\": \"15 business days\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": \"or tell the customer when to expect a resolution\"}\n]},\n{\"clause\": \"PRO-CMP-04@v2/s3/c9\", \"atoms\": [\n{\"attribute\": \"complaint_escalation_role\", \"value\": {\"type\": \"role\", \"role\": null, \"generic\": \"management\"}, \"quote\": \"management\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}\n]},\n{\"clause\": \"PRO-CSH-01@v3/s1/c1\", \"atoms\": []},\n{\"clause\": \"PRO-CSH-01@v3/s3/c6\", \"atoms\": []},\n{\"clause\": \"PRO-CSH-01@v3/s3/c9\", \"atoms\": []},\n{\"clause\": \"PRO-CSH-02@v3/s3/c1\", \"atoms\": []},\n{\"clause\": \"PRO-CSH-02@v3/s3/c4\", \"atoms\": []}\n]}",
+   "problems": [],
+   "meta": {
+    "ms": 6825,
+    "api_ms": 6680,
+    "input_tokens": 8891,
+    "output_tokens": 1053,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 6207,
+     "cache_read_input_tokens": 2682,
+     "output_tokens": 1053,
+     "output_tokens_details": {
+      "thinking_tokens": 447
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 6207,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 1053,
+       "cache_read_input_tokens": 2682,
+       "cache_creation_input_tokens": 6207,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 6207
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.0356302,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T05:39:49+00:00"
+}

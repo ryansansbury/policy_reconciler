@@ -1,0 +1,84 @@
+{
+ "step": "judge",
+ "tag": "2026",
+ "model": "google-a",
+ "backend": {
+  "vendor": "Google",
+  "model": "gemini-3.1-pro-preview",
+  "label": "Gemini 3.1 Pro"
+ },
+ "prompt_hash": "ab6a49ec8731854b3cf900a9a4387417ee8016fe68257c4d327181c7eb1621da",
+ "input": [
+  {
+   "draft": "g-88f87594",
+   "text": "Each account may receive no more than two fee waivers in a calendar year.",
+   "sources": [
+    "Each account may receive no more than two fee waivers in a calendar year.",
+    "Limit fee waivers to one per account in each calendar year.",
+    "Each account may receive no more than one fee waivers in a calendar year."
+   ]
+  },
+  {
+   "draft": "g-ed5c7bea",
+   "text": "Check deposits over $6,000 in one day are eligible for an extended hold on the amount over that figure.",
+   "sources": [
+    "Check deposits over $6,000 in one day are eligible for an extended hold on the amount over that figure.",
+    "Check deposits over $5,000 in one day are eligible for an extended hold on the amount over that figure."
+   ]
+  },
+  {
+   "draft": "g-d2a12642",
+   "text": "Checks deposited to a new account can be held for as long as 7 business days.",
+   "sources": [
+    "New accounts can have check holds of as long as 7 business days.",
+    "Longest check hold on a new account | 9 business days",
+    "Checks deposited to a new account may be held for up to 7 days.",
+    "New accounts can have check holds of as long as 9 business days."
+   ]
+  },
+  {
+   "draft": "g-feb17e64",
+   "text": "Place a standard hold of 2 business days on deposited checks that don't qualify for next day availability.",
+   "sources": [
+    "Place a standard hold of 2 business days on deposited checks that don't qualify for next-day availability.",
+    "Place a standard hold of 2 days on deposited checks that don't qualify for next-day availability.",
+    "Funds from deposited checks are available within 3 business days unless a longer hold applies.",
+    "Place a standard hold of 1 business day on deposited checks that don't qualify for next-day availability."
+   ]
+  },
+  {
+   "draft": "g-26d6eeb7",
+   "text": "Staff must record the reason and the approver for every pricing exception in the loan file.",
+   "sources": [
+    "Record the reason and the approver for every pricing exception in the loan file.",
+    "Documenting pricing exceptions | Optional",
+    "Pricing exceptions may be documented in the loan file after closing if time is short."
+   ]
+  }
+ ],
+ "input_hash": "9658252bc07810eca2ff2fc59df3c033a5c6eb17c729b2176c10727e1578a308",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "```json\n{\n  \"results\": [\n    {\n      \"draft\": \"g-88f87594\",\n      \"scores\": {\n        \"keeps_rules\": {\n          \"pass\": false,\n          \"evidence\": \"Limit fee waivers to one per account in each calendar year.\"\n        },\n        \"adds_no_rule\": {\n          \"pass\": true,\n          \"evidence\": \"\"\n        },\n        \"keeps_scope\": {\n          \"pass\": true,\n          \"evidence\": \"\"\n        },\n        \"plain\": {\n          \"pass\": true,\n          \"evidence\": \"\"\n        }\n      }\n    },\n    {\n      \"draft\": \"g-ed5c7bea\",\n      \"scores\": {\n        \"keeps_rules\": {\n          \"pass\": false,\n          \"evidence\": \"Check deposits over $5,000 in one day are eligible for an extended hold on the amount over that figure.\"\n        },\n        \"adds_no_rule\": {\n          \"pass\": true,\n          \"evidence\": \"\"\n        },\n        \"keeps_scope\": {\n          \"pass\": true,\n          \"evidence\": \"\"\n        },\n        \"plain\": {\n          \"pass\": true,\n          \"evidence\": \"\"\n        }\n      }\n    },\n    {\n      \"draft\": \"g-d2a12642\",\n      \"scores\": {\n        \"keeps_rules\": {\n          \"pass\": false,\n          \"evidence\": \"New accounts can have check holds of as long as 9 business days.\"\n        },\n        \"adds_no_rule\": {\n          \"pass\": true,\n          \"evidence\": \"\"\n        },\n        \"keeps_scope\": {\n          \"pass\": true,\n          \"evidence\": \"\"\n        },\n        \"plain\": {\n          \"pass\": true,\n          \"evidence\": \"\"\n        }\n      }\n    },\n    {\n      \"draft\": \"g-feb17e64\",\n      \"scores\": {\n        \"keeps_rules\": {\n          \"pass\": false,\n          \"evidence\": \"Place a standard hold of 1 business day on deposited checks that don't qualify for next-day availability.\"\n        },\n        \"adds_no_rule\": {\n          \"pass\": true,\n          \"evidence\": \"\"\n        },\n        \"keeps_scope\": {\n          \"pass\": true,\n          \"evidence\": \"\"\n        },\n        \"plain\": {\n          \"pass\": true,\n          \"evidence\": \"\"\n        }\n      }\n    },\n    {\n      \"draft\": \"g-26d6eeb7\",\n      \"scores\": {\n        \"keeps_rules\": {\n          \"pass\": false,\n          \"evidence\": \"Documenting pricing exceptions | Optional\"\n        },\n        \"adds_no_rule\": {\n          \"pass\": false,\n          \"evidence\": \"Staff\"\n        },\n        \"keeps_scope\": {\n          \"pass\": true,\n          \"evidence\": \"\"\n        },\n        \"plain\": {\n          \"pass\": true,\n          \"evidence\": \"\"\n        }\n      }\n    }\n  ]\n}\n```",
+   "problems": [],
+   "meta": {
+    "ms": 29053,
+    "input_tokens": 1099,
+    "output_tokens": 4885,
+    "cost_usd": 0.060818,
+    "usage": {
+     "completion_tokens": 734,
+     "prompt_tokens": 1099,
+     "total_tokens": 5984
+    },
+    "models": [
+     "gemini-3.1-pro-preview"
+    ],
+    "stop_reason": "stop"
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T16:54:31+00:00"
+}

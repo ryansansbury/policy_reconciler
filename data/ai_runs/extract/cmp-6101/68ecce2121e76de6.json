@@ -1,0 +1,167 @@
+{
+ "step": "extract",
+ "tag": "cmp-6101",
+ "model": "claude-opus",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "opus",
+  "client_context": true
+ },
+ "prompt_hash": "dcc761e46c6ec579c01b9dfd540df3c2fa4bba3b6b5ec777aa2cf9c9c62aa411",
+ "input": [
+  {
+   "clause": "FAQ-FEE-02@v2/s1/c1",
+   "text": "A personal banker can waive no more than $15 for one account in a calendar year.",
+   "heading": "How much can a personal banker waive in fees?",
+   "document": {
+    "title": "Fee Refund Questions",
+    "type": "faq",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "FAQ-HLD-01@v3/s1/c1",
+   "text": "Place a standard hold of 3 business days on deposited checks that don't qualify for next-day availability.",
+   "heading": "How long is the standard hold on a deposited check?",
+   "document": {
+    "title": "Funds Availability FAQ",
+    "type": "faq",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "FAQ-HLD-01@v3/s1/c4",
+   "text": "Debit card authorization holds drop off within 3 business days if the merchant does not settle the charge.",
+   "heading": "How long is the standard hold on a deposited check?",
+   "document": {
+    "title": "Funds Availability FAQ",
+    "type": "faq",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "FAQ-LND-02@v3/s1/c1",
+   "text": "Rate exceptions larger than 0.50% need approval above the branch manager.",
+   "heading": "How large a rate exception can a branch manager approve?",
+   "document": {
+    "title": "Pricing Exception Questions",
+    "type": "faq",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "FAQ-WIR-01@v1/s1/c1",
+   "text": "Outgoing consumer and small business wire requests received after 4:00 PM Central are processed the next business day.",
+   "heading": "What is the cutoff for outgoing consumer wires?",
+   "document": {
+    "title": "Wire Transfer FAQ",
+    "type": "faq",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "FAQ-WIR-01@v1/s3/c1",
+   "text": "Only a branch manager may complete the callback for an outgoing wire.",
+   "heading": "Who completes the callback for an outgoing wire?",
+   "document": {
+    "title": "Wire Transfer FAQ",
+    "type": "faq",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "JA-AOP-01@v3/s1/c2",
+   "text": "Forms of identification per signer | one",
+   "heading": "Quick reference",
+   "document": {
+    "title": "New Account Quick Reference",
+    "type": "job_aid",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "JA-AOP-02@v3/s1/c1",
+   "text": "Approver for identification exceptions | regional manager",
+   "heading": "Quick reference",
+   "document": {
+    "title": "Identification Checklist",
+    "type": "job_aid",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "JA-CMP-01@v1/s1/c1",
+   "text": "Complaint resolution deadline | 15 business days",
+   "heading": "Quick reference",
+   "document": {
+    "title": "Complaint Handling Card",
+    "type": "job_aid",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "JA-CMP-01@v1/s1/c2",
+   "text": "Escalation for unfair treatment complaints | regional manager",
+   "heading": "Quick reference",
+   "document": {
+    "title": "Complaint Handling Card",
+    "type": "job_aid",
+    "applies_to": "All branches. All business lines."
+   }
+  }
+ ],
+ "input_hash": "61f9fd64659067ff2a425e452ab571aefc85046fbf5d9610fbf6292998135abb",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [{\"clause\": \"FAQ-FEE-02@v2/s1/c1\", \"atoms\": [{\"attribute\": \"fee_waiver_pb\", \"value\": {\"type\": \"money\", \"dollars\": 15}, \"quote\": \"$15\", \"actor\": \"personal_banker\", \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]}, {\"clause\": \"FAQ-HLD-01@v3/s1/c1\", \"atoms\": [{\"attribute\": \"hold_standard\", \"value\": {\"type\": \"duration\", \"n\": 3, \"unit\": \"business_days\"}, \"quote\": \"3 business days\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": \"that don't qualify for next-day availability\"}]}, {\"clause\": \"FAQ-HLD-01@v3/s1/c4\", \"atoms\": [{\"attribute\": \"card_auth_hold\", \"value\": {\"type\": \"duration\", \"n\": 3, \"unit\": \"business_days\"}, \"quote\": \"3 business days\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": \"if the merchant does not settle the charge\"}]}, {\"clause\": \"FAQ-LND-02@v3/s1/c1\", \"atoms\": [{\"attribute\": \"lend_rate_bm\", \"value\": {\"type\": \"percent\", \"bp\": 50}, \"quote\": \"0.50%\", \"actor\": \"branch_manager\", \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]}, {\"clause\": \"FAQ-WIR-01@v1/s1/c1\", \"atoms\": [{\"attribute\": \"wire_cutoff\", \"value\": {\"type\": \"time\", \"minutes\": 960}, \"quote\": \"4:00 PM\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": \"consumer and small business\", \"condition\": null}]}, {\"clause\": \"FAQ-WIR-01@v1/s3/c1\", \"atoms\": [{\"attribute\": \"wire_callback_role\", \"value\": {\"type\": \"role\", \"role\": \"branch_manager\"}, \"quote\": \"branch manager\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]}, {\"clause\": \"JA-AOP-01@v3/s1/c2\", \"atoms\": [{\"attribute\": \"ao_id_count\", \"value\": {\"type\": \"count\", \"n\": 1}, \"quote\": \"one\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]}, {\"clause\": \"JA-AOP-02@v3/s1/c1\", \"atoms\": [{\"attribute\": \"ao_exception_approver\", \"value\": {\"type\": \"role\", \"role\": \"regional_manager\"}, \"quote\": \"regional manager\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]}, {\"clause\": \"JA-CMP-01@v1/s1/c1\", \"atoms\": [{\"attribute\": \"complaint_resolve\", \"value\": {\"type\": \"duration\", \"n\": 15, \"unit\": \"business_days\"}, \"quote\": \"15 business days\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]}, {\"clause\": \"JA-CMP-01@v1/s1/c2\", \"atoms\": [{\"attribute\": \"complaint_escalation_role\", \"value\": {\"type\": \"role\", \"role\": \"regional_manager\"}, \"quote\": \"regional manager\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]}]}",
+   "problems": [],
+   "meta": {
+    "ms": 17511,
+    "api_ms": 17358,
+    "input_tokens": 8948,
+    "output_tokens": 2172,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 8946,
+     "cache_read_input_tokens": 0,
+     "output_tokens": 2172,
+     "output_tokens_details": {
+      "thinking_tokens": 997
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 8946,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 2172,
+       "cache_read_input_tokens": 0,
+       "cache_creation_input_tokens": 8946,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 8946
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.11501600000000001,
+    "models": [
+     "claude-opus-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T21:16:12+00:00"
+}

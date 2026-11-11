@@ -1,0 +1,73 @@
+{
+ "step": "judge",
+ "tag": "2026",
+ "model": "google-a",
+ "backend": {
+  "vendor": "Google",
+  "model": "gemini-3.1-pro-preview",
+  "label": "Gemini 3.1 Pro"
+ },
+ "prompt_hash": "ab6a49ec8731854b3cf900a9a4387417ee8016fe68257c4d327181c7eb1621da",
+ "input": [
+  {
+   "draft": "g-a0b05e44",
+   "text": "A branch manager can lower a loan rate by no more than 0.25% as an exception.",
+   "sources": [
+    "A branch manager can lower a loan rate by no more than 0.25% as an exception."
+   ]
+  },
+  {
+   "draft": "g-133084ff",
+   "text": "A regional manager may approve a rate exception as large as 0.50%.",
+   "sources": [
+    "A regional manager can approve a rate exception as large as 0.50%."
+   ]
+  },
+  {
+   "draft": "g-136d0342",
+   "text": "Refer an account for charge-off once it has been negative for 45 days.",
+   "sources": [
+    "Refer an account for charge-off once it has been negative for 45 days."
+   ]
+  },
+  {
+   "draft": "g-e65702a5",
+   "text": "The records custodian must approve the destruction of any records in writing.",
+   "sources": [
+    "The records custodian must approve the destruction of any records in writing."
+   ]
+  },
+  {
+   "draft": "g-23fd0004",
+   "text": "Account records are kept for 7 years after the account closes.",
+   "sources": [
+    "Account records are kept for 7 years after the account closes."
+   ]
+  }
+ ],
+ "input_hash": "abaea53c2510f2359bec4a0454f4ec00c74314d2a09ef19c1ed09dfc96cd2de5",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [{\"draft\": \"g-a0b05e44\", \"scores\": {\"keeps_rules\": {\"pass\": true, \"evidence\": \"\"}, \"adds_no_rule\": {\"pass\": true, \"evidence\": \"\"}, \"keeps_scope\": {\"pass\": true, \"evidence\": \"\"}, \"plain\": {\"pass\": true, \"evidence\": \"\"}}}, {\"draft\": \"g-133084ff\", \"scores\": {\"keeps_rules\": {\"pass\": true, \"evidence\": \"\"}, \"adds_no_rule\": {\"pass\": true, \"evidence\": \"\"}, \"keeps_scope\": {\"pass\": true, \"evidence\": \"\"}, \"plain\": {\"pass\": true, \"evidence\": \"\"}}}, {\"draft\": \"g-136d0342\", \"scores\": {\"keeps_rules\": {\"pass\": true, \"evidence\": \"\"}, \"adds_no_rule\": {\"pass\": true, \"evidence\": \"\"}, \"keeps_scope\": {\"pass\": true, \"evidence\": \"\"}, \"plain\": {\"pass\": true, \"evidence\": \"\"}}}, {\"draft\": \"g-e65702a5\", \"scores\": {\"keeps_rules\": {\"pass\": true, \"evidence\": \"\"}, \"adds_no_rule\": {\"pass\": true, \"evidence\": \"\"}, \"keeps_scope\": {\"pass\": true, \"evidence\": \"\"}, \"plain\": {\"pass\": true, \"evidence\": \"\"}}}, {\"draft\": \"g-23fd0004\", \"scores\": {\"keeps_rules\": {\"pass\": true, \"evidence\": \"\"}, \"adds_no_rule\": {\"pass\": true, \"evidence\": \"\"}, \"keeps_scope\": {\"pass\": true, \"evidence\": \"\"}, \"plain\": {\"pass\": true, \"evidence\": \"\"}}}]}",
+   "problems": [],
+   "meta": {
+    "ms": 8087,
+    "input_tokens": 864,
+    "output_tokens": 1202,
+    "cost_usd": 0.016152,
+    "usage": {
+     "completion_tokens": 392,
+     "prompt_tokens": 864,
+     "total_tokens": 2066
+    },
+    "models": [
+     "gemini-3.1-pro-preview"
+    ],
+    "stop_reason": "stop"
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T17:02:07+00:00"
+}

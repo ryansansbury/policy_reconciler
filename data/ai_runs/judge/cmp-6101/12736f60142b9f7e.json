@@ -1,0 +1,90 @@
+{
+ "step": "judge",
+ "tag": "cmp-6101",
+ "model": "openai-a",
+ "backend": {
+  "vendor": "OpenAI",
+  "model": "gpt-6-astra",
+  "label": "GPT-6 Astra"
+ },
+ "prompt_hash": "ab6a49ec8731854b3cf900a9a4387417ee8016fe68257c4d327181c7eb1621da",
+ "input": [
+  {
+   "draft": "draft-01",
+   "text": "Regional managers may approve rate exceptions of up to 0.50%. A branch manager can lower a loan rate by no more than 0.25% as an exception.",
+   "sources": [
+    "Regional managers may approve rate exceptions of up to 0.50%.",
+    "A branch manager can lower a loan rate by no more than 0.25% as an exception."
+   ]
+  },
+  {
+   "draft": "draft-02",
+   "text": "Only the branch manager can approve an exception to the identification requirements.",
+   "sources": [
+    "Only the branch manager can approve an exception to the identification requirements.",
+    "The minimum opening deposit for a consumer checking account is $25."
+   ]
+  },
+  {
+   "draft": "draft-03",
+   "text": "Each item paid into overdraft is charged $30. Refer an account for charge-off once it has been negative for 45 days. Personal bankers may waive service fees up to $15 per account in a calendar year.",
+   "sources": [
+    "Each item paid into overdraft is charged $30.",
+    "Refer an account for charge-off once it has been negative for 45 days."
+   ]
+  },
+  {
+   "draft": "draft-04",
+   "text": "Only the branch manager can approve an exception to the identification requirements, as needed. Do not open an account until you have verified two forms of identification for each signer, as needed.",
+   "sources": [
+    "Only the branch manager can approve an exception to the identification requirements.",
+    "Do not open an account until you have verified two forms of identification for each signer."
+   ]
+  },
+  {
+   "draft": "draft-05",
+   "text": "Mail the customer a notice at least 30 days before the account is classified as dormant. Mail the customer a notice at least 45 days before the account is classified as dormant. An account with no customer-initiated activity for 12 months is classified as dormant.",
+   "sources": [
+    "Mail the customer a notice at least 30 days before the account is classified as dormant.",
+    "In Texas branches, mail the customer a notice at least 45 days before the account is classified as dormant.",
+    "An account with no customer-initiated activity for 12 months is classified as dormant."
+   ]
+  }
+ ],
+ "input_hash": "57b2f4d0e39dc5ae7c86fc435ed870eecfb79f8f7e66739b3d39b0f1a814522f",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\":[{\"draft\":\"draft-01\",\"scores\":{\"keeps_rules\":{\"pass\":true,\"evidence\":\"\"},\"adds_no_rule\":{\"pass\":true,\"evidence\":\"\"},\"keeps_scope\":{\"pass\":true,\"evidence\":\"\"},\"plain\":{\"pass\":true,\"evidence\":\"\"}}},{\"draft\":\"draft-02\",\"scores\":{\"keeps_rules\":{\"pass\":false,\"evidence\":\"The minimum opening deposit for a consumer checking account is $25.\"},\"adds_no_rule\":{\"pass\":true,\"evidence\":\"\"},\"keeps_scope\":{\"pass\":true,\"evidence\":\"\"},\"plain\":{\"pass\":true,\"evidence\":\"\"}}},{\"draft\":\"draft-03\",\"scores\":{\"keeps_rules\":{\"pass\":true,\"evidence\":\"\"},\"adds_no_rule\":{\"pass\":false,\"evidence\":\"Personal bankers may waive service fees up to $15 per account in a calendar year.\"},\"keeps_scope\":{\"pass\":true,\"evidence\":\"\"},\"plain\":{\"pass\":true,\"evidence\":\"\"}}},{\"draft\":\"draft-04\",\"scores\":{\"keeps_rules\":{\"pass\":true,\"evidence\":\"\"},\"adds_no_rule\":{\"pass\":true,\"evidence\":\"\"},\"keeps_scope\":{\"pass\":true,\"evidence\":\"\"},\"plain\":{\"pass\":false,\"evidence\":\"as needed\"}}},{\"draft\":\"draft-05\",\"scores\":{\"keeps_rules\":{\"pass\":true,\"evidence\":\"\"},\"adds_no_rule\":{\"pass\":true,\"evidence\":\"\"},\"keeps_scope\":{\"pass\":false,\"evidence\":\"In Texas branches\"},\"plain\":{\"pass\":true,\"evidence\":\"\"}}}]}",
+   "problems": [],
+   "meta": {
+    "ms": 6352,
+    "input_tokens": 982,
+    "output_tokens": 397,
+    "cost_usd": 0.02967,
+    "usage": {
+     "prompt_tokens": 982,
+     "completion_tokens": 397,
+     "total_tokens": 1379,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 56,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+     }
+    },
+    "models": [
+     "gpt-6-astra"
+    ],
+    "stop_reason": "stop"
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T17:20:34+00:00"
+}

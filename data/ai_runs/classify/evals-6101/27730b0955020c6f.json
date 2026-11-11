@@ -1,0 +1,307 @@
+{
+ "step": "classify",
+ "tag": "evals-6101",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "2c908358fde9f0f4a792753579a6cfaa33476e41c4b0f235744675d8e8283a19",
+ "input": [
+  {
+   "pair": "pair-8118e5de35",
+   "rule": "Dormant account fee",
+   "attribute": "dormant_fee",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-DRM-01@v6/s3/c1",
+    "text": "Dormant accounts are charged a maintenance fee of $5 per month.",
+    "heading": "Policy statements",
+    "document": {
+     "title": "Dormant Account Policy",
+     "type": "policy",
+     "version": 6,
+     "effective": "2026-06-04",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "JA-DRM-02@v2/s1/c1",
+    "text": "Monthly dormant account fee | $10",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Dormancy Notice Checklist",
+     "type": "job_aid",
+     "version": 2,
+     "effective": "2026-03-30",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-3208b4f649",
+   "rule": "Regional manager rate exception limit",
+   "attribute": "lend_rate_rm",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-LND-01@v3/s3/c1",
+    "text": "Regional managers may approve rate exceptions of up to 0.50%.",
+    "heading": "Policy statements",
+    "document": {
+     "title": "Loan Pricing Exception Policy",
+     "type": "policy",
+     "version": 3,
+     "effective": "2026-06-18",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "JA-LND-02@v2/s1/c1",
+    "text": "Regional manager rate exception limit | 1.00%",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Exception Documentation Checklist",
+     "type": "job_aid",
+     "version": 2,
+     "effective": "2025-11-09",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-8f808aa751",
+   "rule": "Outgoing wire cutoff",
+   "attribute": "wire_cutoff",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-WIR-01@v2/s4/c1",
+    "text": "Outgoing consumer and small business wire requests received after 3:00 PM Central are processed the next business day.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Wire Transfer Policy",
+     "type": "policy",
+     "version": 2,
+     "effective": "2026-08-02",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "PRO-WIR-05@v1/s3/c6",
+    "text": "Outgoing consumer and small business wire requests received after 4:00 PM Central are processed the next business day.",
+    "heading": "Steps",
+    "document": {
+     "title": "Wire Cutoffs on Holidays and Weekends",
+     "type": "procedure",
+     "version": 1,
+     "effective": "2025-04-08",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-86523de192",
+   "rule": "Records destruction approver",
+   "attribute": "records_destroy_role",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-REC-01@v4/s3/c1",
+    "text": "The records custodian must approve the destruction of any records in writing.",
+    "heading": "Policy statements",
+    "document": {
+     "title": "Records Retention Policy",
+     "type": "policy",
+     "version": 4,
+     "effective": "2025-04-11",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "JA-REC-01@v4/s1/c2",
+    "text": "Approver for records destruction | operations specialist",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Records Retention Schedule Card",
+     "type": "job_aid",
+     "version": 4,
+     "effective": "2026-05-07",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-ee496ebffa",
+   "rule": "New account check hold",
+   "attribute": "hold_new_account",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-HLD-01@v3/s4/c2",
+    "text": "New accounts can have check holds of as long as 7 business days.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Funds Availability Policy",
+     "type": "policy",
+     "version": 3,
+     "effective": "2025-02-25",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "JA-HLD-03@v3/s1/c2",
+    "text": "Longest check hold on a new account | 5 business days",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Hold Notice Checklist",
+     "type": "job_aid",
+     "version": 3,
+     "effective": "2026-05-01",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-aed5d5ebd0",
+   "rule": "Teller drawer limit",
+   "attribute": "cash_drawer_limit",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-CSH-01@v4/s4/c1",
+    "text": "Sell excess cash to the vault whenever a teller drawer goes above $15,000.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Cash Handling Policy",
+     "type": "policy",
+     "version": 4,
+     "effective": "2025-05-11",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "JA-CSH-01@v2/s1/c2",
+    "text": "Teller drawer cash limit | $10,000",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Teller Cash Limits Card",
+     "type": "job_aid",
+     "version": 2,
+     "effective": "2025-12-23",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-7edb112a48",
+   "rule": "Dormant account fee",
+   "attribute": "dormant_fee",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-DRM-01@v6/s3/c1",
+    "text": "Dormant accounts are charged a maintenance fee of $5 per month.",
+    "heading": "Policy statements",
+    "document": {
+     "title": "Dormant Account Policy",
+     "type": "policy",
+     "version": 6,
+     "effective": "2026-06-04",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "PRO-DRM-04@v3/s3/c10",
+    "text": "Dormant accounts are charged a maintenance fee of $3 per month.",
+    "heading": "Steps",
+    "document": {
+     "title": "Charging Dormant Account Fees",
+     "type": "procedure",
+     "version": 3,
+     "effective": "2025-08-01",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-1ba4159d51",
+   "rule": "Inactivity before dormancy",
+   "attribute": "dormant_inactivity",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-DRM-01@v6/s4/c1",
+    "text": "An account with no customer-initiated activity for 12 months is classified as dormant.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Dormant Account Policy",
+     "type": "policy",
+     "version": 6,
+     "effective": "2026-06-04",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "JA-DRM-02@v2/s1/c2",
+    "text": "Inactivity before an account is dormant | 18 months",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Dormancy Notice Checklist",
+     "type": "job_aid",
+     "version": 2,
+     "effective": "2026-03-30",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  }
+ ],
+ "input_hash": "bd9b58246746e7feca28b8d0a52f42c1582a1fca79aef71c9a79c9c67bdd9085",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [{\"pair\": \"pair-8118e5de35\", \"label\": \"conflict\", \"quote_a\": \"Dormant accounts are charged a maintenance fee of $5 per month.\", \"quote_b\": \"Monthly dormant account fee | $10\", \"rationale\": \"Both clauses cover the same accounts and set the monthly dormant fee at $5 and $10, so staff would charge differently depending on which one they follow. The policy outranks the job aid, so the policy clause is the one to keep.\"}, {\"pair\": \"pair-3208b4f649\", \"label\": \"conflict\", \"quote_a\": \"Regional managers may approve rate exceptions of up to 0.50%.\", \"quote_b\": \"Regional manager rate exception limit | 1.00%\", \"rationale\": \"The policy caps regional manager approval at 0.50% and the job aid says 1.00% for the same scope, so staff following the job aid would approve what the policy forbids. The policy outranks the job aid, so the policy clause is the one to keep.\"}, {\"pair\": \"pair-8f808aa751\", \"label\": \"conflict\", \"quote_a\": \"Outgoing consumer and small business wire requests received after 3:00 PM Central are processed the next business day.\", \"quote_b\": \"Outgoing consumer and small business wire requests received after 4:00 PM Central are processed the next business day.\", \"rationale\": \"The two clauses set the cutoff at 3:00 PM and 4:00 PM for the same wires, so a request received between those times is handled differently by each. These are different documents and not versions of one document, so this is not a supersession. The policy outranks the procedure, so the policy clause is the one to keep.\"}, {\"pair\": \"pair-86523de192\", \"label\": \"conflict\", \"quote_a\": \"The records custodian must approve the destruction of any records in writing.\", \"quote_b\": \"Approver for records destruction | operations specialist\", \"rationale\": \"The policy names the records custodian as approver and the job aid names an operations specialist, so staff following the job aid would get approval from someone the policy does not authorize. The policy outranks the job aid, so the policy clause is the one to keep.\"}, {\"pair\": \"pair-ee496ebffa\", \"label\": \"conflict\", \"quote_a\": \"New accounts can have check holds of as long as 7 business days.\", \"quote_b\": \"Longest check hold on a new account | 5 business days\", \"rationale\": \"The policy allows holds up to 7 business days and the job aid caps them at 5 business days for the same accounts, so staff following the job aid would release funds earlier than the policy allows. The policy outranks the job aid, so the policy clause is the one to keep.\"}, {\"pair\": \"pair-aed5d5ebd0\", \"label\": \"conflict\", \"quote_a\": \"Sell excess cash to the vault whenever a teller drawer goes above $15,000.\", \"quote_b\": \"Teller drawer cash limit | $10,000\", \"rationale\": \"The policy triggers a sale to the vault above $15,000 and the job aid sets the limit at $10,000 for the same drawers, so staff following the job aid would act at a lower amount than the policy requires. The policy outranks the job aid, so the policy clause is the one to keep.\"}, {\"pair\": \"pair-7edb112a48\", \"label\": \"conflict\", \"quote_a\": \"Dormant accounts are charged a maintenance fee of $5 per month.\", \"quote_b\": \"Dormant accounts are charged a maintenance fee of $3 per month.\", \"rationale\": \"The policy sets a $5 monthly fee and the procedure sets $3 for the same accounts, so staff would charge different amounts depending on which one they follow. The policy outranks the procedure, so the policy clause is the one to keep.\"}, {\"pair\": \"pair-1ba4159d51\", \"label\": \"conflict\", \"quote_a\": \"An account with no customer-initiated activity for 12 months is classified as dormant.\", \"quote_b\": \"Inactivity before an account is dormant | 18 months\", \"rationale\": \"The policy classifies accounts as dormant after 12 months and the job aid says 18 months for the same accounts, so staff following the job aid would treat an account as active when the policy calls it dormant. The policy outranks the job aid, so the policy clause is the one to keep.\"}]}",
+   "problems": [],
+   "meta": {
+    "ms": 9936,
+    "api_ms": 9753,
+    "input_tokens": 8927,
+    "output_tokens": 1386,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 8084,
+     "cache_read_input_tokens": 841,
+     "output_tokens": 1386,
+     "output_tokens_details": {
+      "thinking_tokens": 0
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 8084,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 1386,
+       "cache_read_input_tokens": 841,
+       "cache_creation_input_tokens": 8084,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 8084
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.046284099999999995,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T04:15:09+00:00"
+}

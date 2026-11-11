@@ -1,0 +1,362 @@
+{
+ "step": "classify",
+ "tag": "evals-6101",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "2c908358fde9f0f4a792753579a6cfaa33476e41c4b0f235744675d8e8283a19",
+ "input": [
+  {
+   "pair": "pair-5d49ecca01",
+   "rule": "Large deposit hold threshold",
+   "attribute": "hold_large_threshold",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-HLD-01@v3/s3/c1",
+    "text": "Check deposits over $6,000 in one day are eligible for an extended hold on the amount over that figure.",
+    "heading": "Policy statements",
+    "document": {
+     "title": "Funds Availability Policy",
+     "type": "policy",
+     "version": 3,
+     "effective": "2025-02-25",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "JA-HLD-03@v3/s1/c1",
+    "text": "Large deposit threshold for extended holds | $7,500",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Hold Notice Checklist",
+     "type": "job_aid",
+     "version": 3,
+     "effective": "2026-05-01",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-79222b2eae",
+   "rule": "Provisional credit deadline",
+   "attribute": "dispute_provisional_credit",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-DSP-01@v5/s4/c2",
+    "text": "Provisional credit is issued within 10 business days of receiving a completed dispute.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Debit Card Dispute Policy",
+     "type": "policy",
+     "version": 5,
+     "effective": "2024-07-18",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "JA-DSP-03@v3/s1/c2",
+    "text": "Provisional credit deadline for disputes | 15 business days",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Card Services Quick Reference",
+     "type": "job_aid",
+     "version": 3,
+     "effective": "2025-10-29",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-fafe85e58f",
+   "rule": "Overdraft fee per item",
+   "attribute": "od_fee",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-ODR-01@v2/s3/c1",
+    "text": "Each item paid into overdraft is charged $30.",
+    "heading": "Policy statements",
+    "document": {
+     "title": "Overdraft Policy",
+     "type": "policy",
+     "version": 2,
+     "effective": "2025-11-24",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "PRO-ODR-04@v3/s3/c2",
+    "text": "Each item paid into overdraft is charged $29.",
+    "heading": "Steps",
+    "document": {
+     "title": "Talking with Customers About Overdrafts",
+     "type": "procedure",
+     "version": 3,
+     "effective": "2026-03-21",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-140486470f",
+   "rule": "Overdraft amount with no fee",
+   "attribute": "od_de_minimis",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-ODR-01@v2/s4/c2",
+    "text": "No overdraft fee is charged when the account is overdrawn by $10 or less at the end of the day.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Overdraft Policy",
+     "type": "policy",
+     "version": 2,
+     "effective": "2025-11-24",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "PRO-ODR-01@v2/s3/c5",
+    "text": "No overdraft fee is charged when the account is overdrawn by $25 or less at the end of the day.",
+    "heading": "Steps",
+    "document": {
+     "title": "Reviewing Overdrawn Accounts Each Morning",
+     "type": "procedure",
+     "version": 2,
+     "effective": "2025-12-24",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-042284e8bf",
+   "rule": "Forms of identification per signer",
+   "attribute": "ao_id_count",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-AOP-01@v5/s3/c1",
+    "text": "Collect two forms of identification from each signer before opening the account, or one form plus a verified bank reference when the branch manager approves.",
+    "heading": "Policy statements",
+    "document": {
+     "title": "Deposit Account Opening Policy",
+     "type": "policy",
+     "version": 5,
+     "effective": "2026-05-17",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "JA-AOP-03@v1/s1/c2",
+    "text": "Forms of identification per signer | three",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Account Opening Desk Card",
+     "type": "job_aid",
+     "version": 1,
+     "effective": "2026-03-29",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-2d903c5f19",
+   "rule": "New account check hold",
+   "attribute": "hold_new_account",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-HLD-01@v3/s4/c2",
+    "text": "New accounts can have check holds of as long as 7 business days.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Funds Availability Policy",
+     "type": "policy",
+     "version": 3,
+     "effective": "2025-02-25",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "JA-HLD-01@v1/s1/c1",
+    "text": "Longest check hold on a new account | 9 business days",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Hold Calendar Quick Reference",
+     "type": "job_aid",
+     "version": 1,
+     "effective": "2025-08-18",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-e5f05a2d7e",
+   "rule": "Documenting pricing exceptions",
+   "attribute": "lend_exception_doc",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-LND-01@v3/s4/c2",
+    "text": "Record the reason and the approver for every pricing exception in the loan file.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Loan Pricing Exception Policy",
+     "type": "policy",
+     "version": 3,
+     "effective": "2026-06-18",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "PRO-LND-02@v4/s3/c5",
+    "text": "Pricing exceptions may be documented in the loan file after closing if time is short.",
+    "heading": "Steps",
+    "document": {
+     "title": "Approving a Rate Exception",
+     "type": "procedure",
+     "version": 4,
+     "effective": "2026-03-04",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-7fffaefe1a",
+   "rule": "Outgoing wire cutoff",
+   "attribute": "wire_cutoff",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-WIR-01@v2/s4/c1",
+    "text": "Outgoing consumer and small business wire requests received after 3:00 PM Central are processed the next business day.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Wire Transfer Policy",
+     "type": "policy",
+     "version": 2,
+     "effective": "2026-08-02",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "FAQ-WIR-01@v1/s1/c1",
+    "text": "Outgoing consumer and small business wire requests received after 4:00 PM Central are processed the next business day.",
+    "heading": "What is the cutoff for outgoing consumer wires?",
+    "document": {
+     "title": "Wire Transfer FAQ",
+     "type": "faq",
+     "version": 1,
+     "effective": "2026-03-26",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  }
+ ],
+ "input_hash": "16b902f35704c8c4fdd0d8914f0bb214ba4ae5b64122cf4714d30a96489f4512",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\":[{\"pair\":\"pair-5d49ecca01\",\"label\":\"conflict\",\"quote_a\":\"Check deposits over $6,000 in one day\",\"quote_b\":\"Large deposit threshold for extended holds | $7,500\",\"rationale\":\"The two clauses set different thresholds of $6,000 and $7,500 for the same extended hold, and both cover all branches. Staff using the job aid would skip a hold the policy requires, so the higher ranked policy clause should be kept.\"},{\"pair\":\"pair-79222b2eae\",\"label\":\"conflict\",\"quote_a\":\"Provisional credit is issued within 10 business days\",\"quote_b\":\"Provisional credit deadline for disputes | 15 business days\",\"rationale\":\"The clauses give deadlines of 10 and 15 business days for the same credit with the same scope. Staff following the quick reference could issue credit later than the policy allows, so the policy clause should be kept.\"},{\"pair\":\"pair-fafe85e58f\",\"label\":\"conflict\",\"quote_a\":\"Each item paid into overdraft is charged $30.\",\"quote_b\":\"Each item paid into overdraft is charged $29.\",\"rationale\":\"The fee per overdraft item is $30 in one clause and $29 in the other for the same accounts. Staff would charge or quote different amounts, so the policy clause should be kept.\"},{\"pair\":\"pair-140486470f\",\"label\":\"conflict\",\"quote_a\":\"overdrawn by $10 or less at the end of the day\",\"quote_b\":\"overdrawn by $25 or less at the end of the day\",\"rationale\":\"The no fee limit is $10 in the policy and $25 in the procedure, and neither states a narrower scope. An account overdrawn by $20 would be charged under one clause and not the other, so the policy clause should be kept.\"},{\"pair\":\"pair-042284e8bf\",\"label\":\"conflict\",\"quote_a\":\"Collect two forms of identification from each signer\",\"quote_b\":\"Forms of identification per signer | three\",\"rationale\":\"The policy requires two forms per signer, or one plus a bank reference with manager approval, while the desk card says three. Staff following the card would demand more than the policy needs, so the policy clause should be kept.\"},{\"pair\":\"pair-2d903c5f19\",\"label\":\"conflict\",\"quote_a\":\"New accounts can have check holds of as long as 7 business days.\",\"quote_b\":\"Longest check hold on a new account | 9 business days\",\"rationale\":\"The longest new account check hold is 7 business days in the policy and 9 in the quick reference. Staff following the reference could hold funds longer than the policy permits, so the policy clause should be kept.\"},{\"pair\":\"pair-e5f05a2d7e\",\"label\":\"consistent\",\"quote_a\":\"Record the reason and the approver for every pricing exception in the loan file.\",\"quote_b\":\"Pricing exceptions may be documented in the loan file after closing if time is short.\",\"rationale\":\"The policy requires the record in the loan file but sets no timing, and the procedure only allows that same record to be completed late. I decided staff following the policy alone would not refuse or do anything the procedure forbids, so the two do not contradict.\"},{\"pair\":\"pair-7fffaefe1a\",\"label\":\"conflict\",\"quote_a\":\"received after 3:00 PM Central are processed the next business day\",\"quote_b\":\"received after 4:00 PM Central are processed the next business day\",\"rationale\":\"The cutoff is 3:00 PM Central in the policy and 4:00 PM Central in the FAQ for the same wires. A request received at 3:30 PM would be handled differently under each, so the policy clause should be kept.\"}]}",
+   "problems": [
+    "pair-140486470f: the rationale uses numbers that aren't in either clause or its document: 20",
+    "pair-7fffaefe1a: the rationale uses numbers that aren't in either clause or its document: 30"
+   ],
+   "meta": {
+    "ms": 14737,
+    "api_ms": 14540,
+    "input_tokens": 9029,
+    "output_tokens": 2085,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 8186,
+     "cache_read_input_tokens": 841,
+     "output_tokens": 2085,
+     "output_tokens_details": {
+      "thinking_tokens": 919
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 8186,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 2085,
+       "cache_read_input_tokens": 841,
+       "cache_creation_input_tokens": 8186,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 8186
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.0536821,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  },
+  {
+   "reply": "{\"results\": [{\"pair\": \"pair-140486470f\", \"label\": \"conflict\", \"quote_a\": \"overdrawn by $10 or less\", \"quote_b\": \"overdrawn by $25 or less\", \"rationale\": \"The policy waives the fee at $10 or less and the procedure waives it at $25 or less. An account overdrawn by an amount between those two figures would be charged under one clause and not the other. The policy ranks higher so its value is the one to keep.\"}, {\"pair\": \"pair-7fffaefe1a\", \"label\": \"conflict\", \"quote_a\": \"after 3:00 PM Central\", \"quote_b\": \"after 4:00 PM Central\", \"rationale\": \"Both clauses cover the same outgoing consumer and small business wires but set the cutoff at 3 PM in one and 4 PM in the other. A wire received between those times would wait a day under the policy and go out the same day under the FAQ. The policy ranks higher so its cutoff is the one to keep.\"}]}",
+   "problems": [],
+   "meta": {
+    "ms": 7804,
+    "api_ms": 7542,
+    "input_tokens": 6698,
+    "output_tokens": 990,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 5855,
+     "cache_read_input_tokens": 841,
+     "output_tokens": 990,
+     "output_tokens_details": {
+      "thinking_tokens": 672
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 5855,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 990,
+       "cache_read_input_tokens": 841,
+       "cache_creation_input_tokens": 5855,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 5855
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.033408099999999996,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   },
+   "items": [
+    "pair-140486470f",
+    "pair-7fffaefe1a"
+   ]
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T04:15:34+00:00"
+}

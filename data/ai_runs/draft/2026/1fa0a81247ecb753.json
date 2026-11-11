@@ -1,0 +1,220 @@
+{
+ "step": "draft",
+ "tag": "2026",
+ "model": "claude-opus",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "opus",
+  "client_context": true
+ },
+ "prompt_hash": "d412e32e9168de04c00c3959530ebecb6630d0f9092d4afc1f9c308a4695a32e",
+ "input": [
+  {
+   "group": "g-ed5c7bea",
+   "rule": "Large deposit hold threshold",
+   "attribute": "hold_large_threshold",
+   "type": "money",
+   "keep": {
+    "clause": "POL-HLD-01@v5/s4/c2",
+    "text": "Check deposits over $6,000 in one day are eligible for an extended hold on the amount over that figure.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Funds Availability Policy",
+     "type": "policy",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "change": [
+    {
+     "clause": "PRO-HLD-02@v2/s3/c7",
+     "text": "Check deposits over $5,000 in one day are eligible for an extended hold on the amount over that figure.",
+     "heading": "Steps",
+     "document": {
+      "title": "Extending a Hold on a Large Deposit",
+      "type": "procedure",
+      "applies_to": "All branches. Consumer and small business accounts."
+     }
+    }
+   ],
+   "allowed": {
+    "BUL-HLD-01@v2/s1/c2#value": "$6,000",
+    "BUL-HLD-02@v3/s1/c2#value": "$6,000",
+    "JA-HLD-01@v3/s1/c1#value": "$6,000",
+    "JA-HLD-02@v2/s1/c1#value": "$6,000",
+    "JA-HLD-03@v3/s1/c2#value": "$6,000",
+    "POL-HLD-01@v5/s4/c2#v2": "one day",
+    "POL-HLD-01@v5/s4/c2#value": "$6,000",
+    "PRO-HLD-01@v2/s3/c2#value": "$6,000",
+    "PRO-HLD-03@v3/s3/c9#value": "$6,000",
+    "PRO-HLD-04@v3/s3/c2#value": "$6,000",
+    "PRO-HLD-05@v1/s5/c2#value": "$6,000"
+   },
+   "placeholder": "{clause:POL-HLD-01@v5/s4/c2#value}"
+  },
+  {
+   "group": "g-d2a12642",
+   "rule": "New account check hold",
+   "attribute": "hold_new_account",
+   "type": "duration",
+   "keep": {
+    "clause": "POL-HLD-01@v5/s4/c1",
+    "text": "New accounts can have check holds of as long as 7 business days.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Funds Availability Policy",
+     "type": "policy",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "change": [
+    {
+     "clause": "JA-HLD-01@v3/s1/c2",
+     "text": "Longest check hold on a new account | 9 business days",
+     "heading": "Quick reference",
+     "document": {
+      "title": "Hold Calendar Quick Reference",
+      "type": "job_aid",
+      "applies_to": "All branches. Consumer and small business accounts."
+     }
+    },
+    {
+     "clause": "PRO-HLD-03@v3/s3/c2",
+     "text": "Checks deposited to a new account may be held for up to 7 days.",
+     "heading": "Steps",
+     "document": {
+      "title": "Holds on New Accounts",
+      "type": "procedure",
+      "applies_to": "All branches. Consumer and small business accounts."
+     }
+    },
+    {
+     "clause": "PRO-HLD-06@v2/s3/c4",
+     "text": "New accounts can have check holds of as long as 9 business days.",
+     "heading": "Steps",
+     "document": {
+      "title": "Holds on Mobile Deposits",
+      "type": "procedure",
+      "applies_to": "All branches. Consumer and small business accounts."
+     }
+    }
+   ],
+   "allowed": {
+    "JA-HLD-03@v3/s1/c1#value": "7 business days",
+    "POL-HLD-01@v5/s4/c1#value": "7 business days"
+   },
+   "placeholder": "{clause:POL-HLD-01@v5/s4/c1#value}"
+  },
+  {
+   "group": "g-feb17e64",
+   "rule": "Standard check hold",
+   "attribute": "hold_standard",
+   "type": "duration",
+   "keep": {
+    "clause": "POL-HLD-01@v5/s3/c1",
+    "text": "Place a standard hold of 2 business days on deposited checks that don't qualify for next-day availability.",
+    "heading": "Policy statements",
+    "document": {
+     "title": "Funds Availability Policy",
+     "type": "policy",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "change": [
+    {
+     "clause": "FAQ-HLD-01@v2/s1/c1",
+     "text": "Place a standard hold of 2 days on deposited checks that don't qualify for next-day availability.",
+     "heading": "How long is the standard hold on a deposited check?",
+     "document": {
+      "title": "Funds Availability FAQ",
+      "type": "faq",
+      "applies_to": "All branches. Consumer and small business accounts."
+     }
+    },
+    {
+     "clause": "PRO-HLD-05@v1/s3/c3",
+     "text": "Funds from deposited checks are available within 3 business days unless a longer hold applies.",
+     "heading": "Steps",
+     "document": {
+      "title": "Explaining Holds to Customers",
+      "type": "procedure",
+      "applies_to": "All branches. Consumer and small business accounts."
+     }
+    },
+    {
+     "clause": "PRO-HLD-06@v2/s3/c3",
+     "text": "Place a standard hold of 1 business day on deposited checks that don't qualify for next-day availability.",
+     "heading": "Steps",
+     "document": {
+      "title": "Holds on Mobile Deposits",
+      "type": "procedure",
+      "applies_to": "All branches. Consumer and small business accounts."
+     }
+    }
+   ],
+   "allowed": {
+    "FAQ-HLD-02@v3/s1/c1#value": "2 business days",
+    "JA-HLD-01@v3/s1/c3#value": "2 business days",
+    "JA-HLD-02@v2/s1/c2#value": "2 business days",
+    "JA-HLD-03@v3/s1/c3#value": "2 business days",
+    "POL-HLD-01@v5/s3/c1#value": "2 business days",
+    "PRO-HLD-02@v2/s3/c6#value": "2 business days",
+    "PRO-HLD-04@v3/s3/c8#value": "2 business days"
+   },
+   "placeholder": "{clause:POL-HLD-01@v5/s3/c1#value}"
+  }
+ ],
+ "input_hash": "65a416e3b2df29ddcbd26306290c23cbd6e2c20fe226e56751f16a76ee01ba6d",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [{\"group\": \"g-ed5c7bea\", \"title\": \"Extended holds on large check deposits\", \"text\": \"Check deposits over {clause:POL-HLD-01@v5/s4/c2#value} in {clause:POL-HLD-01@v5/s4/c2#v2} are eligible for an extended hold on the amount over that figure.\"}, {\"group\": \"g-d2a12642\", \"title\": \"Check holds on new accounts\", \"text\": \"Checks deposited to a new account can be held for as long as {clause:POL-HLD-01@v5/s4/c1#value}.\"}, {\"group\": \"g-feb17e64\", \"title\": \"Standard check hold\", \"text\": \"Place a standard hold of {clause:POL-HLD-01@v5/s3/c1#value} on deposited checks that don't qualify for next day availability.\"}]}",
+   "problems": [],
+   "meta": {
+    "ms": 6565,
+    "api_ms": 6442,
+    "input_tokens": 8296,
+    "output_tokens": 694,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 7220,
+     "cache_read_input_tokens": 1074,
+     "output_tokens": 694,
+     "output_tokens_details": {
+      "thinking_tokens": 419
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 7220,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 694,
+       "cache_read_input_tokens": 1074,
+       "cache_creation_input_tokens": 7220,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 7220
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.0718628,
+    "models": [
+     "claude-opus-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T05:57:40+00:00"
+}

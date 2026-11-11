@@ -1,0 +1,307 @@
+{
+ "step": "classify",
+ "tag": "evals-6101",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "2c908358fde9f0f4a792753579a6cfaa33476e41c4b0f235744675d8e8283a19",
+ "input": [
+  {
+   "pair": "pair-d6ef9fb8df",
+   "rule": "Branch manager rate exception limit",
+   "attribute": "lend_rate_bm",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "JA-LND-01@v1/s1/c1",
+    "text": "Branch manager rate exception limit | 0.25%",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Rate Exception Authority Card",
+     "type": "job_aid",
+     "version": 1,
+     "effective": "2025-06-16",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "PRO-LND-03@v4/s3/c2",
+    "text": "A branch manager can lower a loan rate by no more than 0.25% as an exception.",
+    "heading": "Steps",
+    "document": {
+     "title": "Documenting Pricing Exceptions",
+     "type": "procedure",
+     "version": 4,
+     "effective": "2025-06-20",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-e8978f18bb",
+   "rule": "Card dispute window",
+   "attribute": "dispute_window",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "JA-DSP-02@v4/s1/c2",
+    "text": "Debit card dispute window | 60 days",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Dispute Timelines Card",
+     "type": "job_aid",
+     "version": 4,
+     "effective": "2025-09-06",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "PRO-DSP-06@v3/s3/c4",
+    "text": "Accept debit card disputes filed within 60 days of the statement that first showed the charge.",
+    "heading": "Steps",
+    "document": {
+     "title": "Large Dispute Review",
+     "type": "procedure",
+     "version": 3,
+     "effective": "2025-06-21",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-9514ca4826",
+   "rule": "Dual control for the vault",
+   "attribute": "cash_vault_dual",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "JA-CSH-02@v4/s1/c2",
+    "text": "Dual control for the vault | Required",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Vault Opening Checklist",
+     "type": "job_aid",
+     "version": 4,
+     "effective": "2025-07-25",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "PRO-CSH-06@v2/s3/c10",
+    "text": "The vault must be opened under dual control, with two employees present.",
+    "heading": "Steps",
+    "document": {
+     "title": "Ordering Cash Shipments",
+     "type": "procedure",
+     "version": 2,
+     "effective": "2024-11-28",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-8ae07768bb",
+   "rule": "Complaint acknowledgment deadline",
+   "attribute": "complaint_ack",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "JA-CMP-02@v1/s1/c1",
+    "text": "Complaint acknowledgment deadline | 2 business days",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Complaint Escalation Checklist",
+     "type": "job_aid",
+     "version": 1,
+     "effective": "2026-06-21",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "FAQ-CMP-02@v1/s1/c1",
+    "text": "Acknowledge every written complaint within 2 business days.",
+    "heading": "How quickly is a written complaint acknowledged?",
+    "document": {
+     "title": "Complaint Escalation Questions",
+     "type": "faq",
+     "version": 1,
+     "effective": "2026-07-14",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-ceff02aa2b",
+   "rule": "Inactivity before dormancy",
+   "attribute": "dormant_inactivity",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-DRM-04@v3/s3/c4",
+    "text": "An account with no customer-initiated activity for 12 months is classified as dormant.",
+    "heading": "Steps",
+    "document": {
+     "title": "Charging Dormant Account Fees",
+     "type": "procedure",
+     "version": 3,
+     "effective": "2025-08-01",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "FAQ-DRM-01@v3/s1/c1",
+    "text": "Classify accounts as dormant after 12 months without customer-initiated activity.",
+    "heading": "When does an account become dormant?",
+    "document": {
+     "title": "Dormant Account FAQ",
+     "type": "faq",
+     "version": 3,
+     "effective": "2026-05-06",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-21f6846901",
+   "rule": "New account period",
+   "attribute": "ao_new_account_window",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-AOP-02@v1/s3/c3",
+    "text": "An account is treated as a new account for the first 30 days after it opens.",
+    "heading": "Steps",
+    "document": {
+     "title": "Opening a Savings Account",
+     "type": "procedure",
+     "version": 1,
+     "effective": "2025-10-13",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "JA-AOP-01@v4/s1/c1",
+    "text": "How long an account counts as new | 30 days",
+    "heading": "Quick reference",
+    "document": {
+     "title": "New Account Quick Reference",
+     "type": "job_aid",
+     "version": 4,
+     "effective": "2025-08-13",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-7c7b5a56fa",
+   "rule": "New account check hold",
+   "attribute": "hold_new_account",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-HLD-02@v4/s3/c3",
+    "text": "Checks deposited to a new account may be held for up to 7 business days.",
+    "heading": "Steps",
+    "document": {
+     "title": "Extending a Hold on a Large Deposit",
+     "type": "procedure",
+     "version": 4,
+     "effective": "2024-11-20",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "PRO-HLD-03@v2/s3/c6",
+    "text": "Checks deposited to a new account may be held for up to 7 business days.",
+    "heading": "Steps",
+    "document": {
+     "title": "Holds on New Accounts",
+     "type": "procedure",
+     "version": 2,
+     "effective": "2025-08-25",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-4f39851bf2",
+   "rule": "Overdraft fee per item",
+   "attribute": "od_fee",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "BUL-ODR-01@v4/s1/c2",
+    "text": "Each item paid into overdraft is charged $30.",
+    "heading": "What branches need to know",
+    "document": {
+     "title": "Branch Bulletin 2025-28: Overdraft fee per item",
+     "type": "bulletin",
+     "version": 4,
+     "effective": "2025-08-07",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "FAQ-ODR-01@v4/s1/c1",
+    "text": "Each item paid into overdraft is charged $30.",
+    "heading": "What is the overdraft fee?",
+    "document": {
+     "title": "Overdraft FAQ",
+     "type": "faq",
+     "version": 4,
+     "effective": "2026-02-16",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  }
+ ],
+ "input_hash": "2412bd587cf67ea6f48e642e452a327edf01bcce58020874fa5ae2256b63f189",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\":[{\"pair\":\"pair-d6ef9fb8df\",\"label\":\"consistent\",\"quote_a\":\"Branch manager rate exception limit | 0.25%\",\"quote_b\":\"A branch manager can lower a loan rate by no more than 0.25% as an exception.\",\"rationale\":\"Both clauses set the same 0.25% limit for a branch manager and apply to all branches and business lines.\"},{\"pair\":\"pair-e8978f18bb\",\"label\":\"consistent\",\"quote_a\":\"Debit card dispute window | 60 days\",\"quote_b\":\"Accept debit card disputes filed within 60 days of the statement that first showed the charge.\",\"rationale\":\"Both clauses set a 60 day window for debit card disputes. The procedure adds when the window starts but does not contradict the job aid.\"},{\"pair\":\"pair-9514ca4826\",\"label\":\"consistent\",\"quote_a\":\"Dual control for the vault | Required\",\"quote_b\":\"The vault must be opened under dual control, with two employees present.\",\"rationale\":\"Both clauses require dual control for the vault. The procedure adds the detail of two employees without changing the rule.\"},{\"pair\":\"pair-8ae07768bb\",\"label\":\"consistent\",\"quote_a\":\"Complaint acknowledgment deadline | 2 business days\",\"quote_b\":\"Acknowledge every written complaint within 2 business days.\",\"rationale\":\"Both clauses set the same 2 business day deadline for acknowledging complaints.\"},{\"pair\":\"pair-ceff02aa2b\",\"label\":\"consistent\",\"quote_a\":\"An account with no customer-initiated activity for 12 months is classified as dormant.\",\"quote_b\":\"Classify accounts as dormant after 12 months without customer-initiated activity.\",\"rationale\":\"Both clauses use the same 12 month inactivity period for dormancy and cover the same accounts.\"},{\"pair\":\"pair-21f6846901\",\"label\":\"consistent\",\"quote_a\":\"An account is treated as a new account for the first 30 days after it opens.\",\"quote_b\":\"How long an account counts as new | 30 days\",\"rationale\":\"Both clauses define a new account as one in its first 30 days.\"},{\"pair\":\"pair-7c7b5a56fa\",\"label\":\"consistent\",\"quote_a\":\"Checks deposited to a new account may be held for up to 7 business days.\",\"quote_b\":\"Checks deposited to a new account may be held for up to 7 business days.\",\"rationale\":\"Both clauses state the same rule with the same 7 business day value. They sit in different procedures for different tasks, so staff would not replace one with a pointer to the other.\"},{\"pair\":\"pair-4f39851bf2\",\"label\":\"consistent\",\"quote_a\":\"Each item paid into overdraft is charged $30.\",\"quote_b\":\"Each item paid into overdraft is charged $30.\",\"rationale\":\"Both clauses state the same $30 per item fee for the same accounts. They come from a bulletin and an FAQ that restate the rule.\"}]}",
+   "problems": [],
+   "meta": {
+    "ms": 6624,
+    "api_ms": 6485,
+    "input_tokens": 8941,
+    "output_tokens": 953,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 8098,
+     "cache_read_input_tokens": 841,
+     "output_tokens": 953,
+     "output_tokens_details": {
+      "thinking_tokens": 0
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 8098,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 953,
+       "cache_read_input_tokens": 841,
+       "cache_creation_input_tokens": 8098,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 8098
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.042010099999999995,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T05:29:02+00:00"
+}

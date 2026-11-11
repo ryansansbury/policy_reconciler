@@ -1,0 +1,167 @@
+{
+ "step": "extract",
+ "tag": "6303",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "dcc761e46c6ec579c01b9dfd540df3c2fa4bba3b6b5ec777aa2cf9c9c62aa411",
+ "input": [
+  {
+   "clause": "PRO-HLD-02@v3/s3/c7",
+   "text": "Funds from deposited checks are available within 2 business days unless a longer hold applies.",
+   "heading": "Steps",
+   "document": {
+    "title": "Extending a Hold on a Large Deposit",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "PRO-ODR-01@v3/s3/c1",
+   "text": "Contact customers whose accounts have been overdrawn for more than three days.",
+   "heading": "Steps",
+   "document": {
+    "title": "Reviewing Overdrawn Accounts Each Morning",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "PRO-ODR-02@v1/s3/c6",
+   "text": "Contact customers whose accounts have been overdrawn for more than three days.",
+   "heading": "Steps",
+   "document": {
+    "title": "Assessing and Reversing Overdraft Fees",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "PRO-ODR-03@v3/s3/c1",
+   "text": "Contact customers whose accounts have been overdrawn for more than three days.",
+   "heading": "Steps",
+   "document": {
+    "title": "Referring Accounts for Charge-Off",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "PRO-ODR-04@v3/s3/c3",
+   "text": "Contact customers whose accounts have been overdrawn for more than three days.",
+   "heading": "Steps",
+   "document": {
+    "title": "Talking with Customers About Overdrafts",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "PRO-ODR-04@v4/s3/c3",
+   "text": "Contact customers whose accounts have been overdrawn for more than three days.",
+   "heading": "Steps",
+   "document": {
+    "title": "Talking with Customers About Overdrafts",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "PRO-ODR-06@v2/s3/c2",
+   "text": "Contact customers whose accounts have been overdrawn for more than three days.",
+   "heading": "Steps",
+   "document": {
+    "title": "Handling Overdraft Fee Disputes",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "PRO-REC-06@v4/s3/c5",
+   "text": "A manager must approve the destruction of any records in writing.",
+   "heading": "Steps",
+   "document": {
+    "title": "Retrieving Archived Records",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-WIR-01@v2/s3/c2",
+   "text": "Never accept wire instructions sent by email without verifying them by phone.",
+   "heading": "Steps",
+   "document": {
+    "title": "Processing Outgoing Consumer Wires",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer accounts."
+   }
+  },
+  {
+   "clause": "PRO-WIR-01@v2/s3/c7",
+   "text": "Outgoing wires over $50,000 need a second approval from an operations manager.",
+   "heading": "Steps",
+   "document": {
+    "title": "Processing Outgoing Consumer Wires",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer accounts."
+   }
+  }
+ ],
+ "input_hash": "a56ee0a48aa2f922a076c156c560ec14601dc656627502fd8d134a72d3602424",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\":[{\"clause\":\"PRO-HLD-02@v3/s3/c7\",\"atoms\":[{\"attribute\":\"hold_standard\",\"value\":{\"type\":\"duration\",\"n\":2,\"unit\":\"business_days\"},\"quote\":\"2 business days\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":\"unless a longer hold applies\"}]},{\"clause\":\"PRO-ODR-01@v3/s3/c1\",\"atoms\":[]},{\"clause\":\"PRO-ODR-02@v1/s3/c6\",\"atoms\":[]},{\"clause\":\"PRO-ODR-03@v3/s3/c1\",\"atoms\":[]},{\"clause\":\"PRO-ODR-04@v3/s3/c3\",\"atoms\":[]},{\"clause\":\"PRO-ODR-04@v4/s3/c3\",\"atoms\":[]},{\"clause\":\"PRO-ODR-06@v2/s3/c2\",\"atoms\":[]},{\"clause\":\"PRO-REC-06@v4/s3/c5\",\"atoms\":[{\"attribute\":\"records_destroy_role\",\"value\":{\"type\":\"role\",\"role\":null,\"generic\":\"a manager\"},\"quote\":\"A manager\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]},{\"clause\":\"PRO-WIR-01@v2/s3/c2\",\"atoms\":[]},{\"clause\":\"PRO-WIR-01@v2/s3/c7\",\"atoms\":[{\"attribute\":\"wire_second_approval\",\"value\":{\"type\":\"money\",\"dollars\":50000},\"quote\":\"$50,000\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]}]}",
+   "problems": [],
+   "meta": {
+    "ms": 8069,
+    "api_ms": 7822,
+    "input_tokens": 8940,
+    "output_tokens": 1200,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 6256,
+     "cache_read_input_tokens": 2682,
+     "output_tokens": 1200,
+     "output_tokens_details": {
+      "thinking_tokens": 637
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 6256,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 1200,
+       "cache_read_input_tokens": 2682,
+       "cache_creation_input_tokens": 6256,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 6256
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.0372962,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T04:12:02+00:00"
+}

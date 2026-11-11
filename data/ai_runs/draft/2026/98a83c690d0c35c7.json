@@ -1,0 +1,156 @@
+{
+ "step": "draft",
+ "tag": "2026",
+ "model": "claude-opus",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "opus",
+  "client_context": true
+ },
+ "prompt_hash": "d412e32e9168de04c00c3959530ebecb6630d0f9092d4afc1f9c308a4695a32e",
+ "input": [
+  {
+   "group": "g-02ec0cc3",
+   "rule": "Wire callback threshold",
+   "attribute": "wire_callback",
+   "type": "money",
+   "keep": {
+    "clause": "POL-WIR-01@v6/s4/c2",
+    "text": "Outgoing wires of $10,000 or more require a callback to the customer at a number already on file, unless the wire goes to an account the customer has used in the past year.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Wire Transfer Policy",
+     "type": "policy",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "change": [
+    {
+     "clause": "BUL-WIR-02@v2/s1/c2",
+     "text": "Outgoing wires of $5,000 or more require a callback to the customer at a number already on file.",
+     "heading": "What branches need to know",
+     "document": {
+      "title": "Branch Bulletin 2026-11: Callback threshold for outgoing wires",
+      "type": "bulletin",
+      "applies_to": "All branches. All business lines."
+     }
+    },
+    {
+     "clause": "FAQ-WIR-02@v3/s2/c1",
+     "text": "Outgoing wires of $10,000 or more require a callback to the customer at a number already on file.",
+     "heading": "Which outgoing wires need a callback?",
+     "document": {
+      "title": "Wire Cutoff Questions",
+      "type": "faq",
+      "applies_to": "All branches. All business lines."
+     }
+    },
+    {
+     "clause": "FAQ-WIR-02@v3/s4/c1",
+     "text": "Outgoing wires of $10,000 or more require a callback that a wire specialist completes.",
+     "heading": "Related requirements",
+     "document": {
+      "title": "Wire Cutoff Questions",
+      "type": "faq",
+      "applies_to": "All branches. All business lines."
+     }
+    },
+    {
+     "clause": "JA-WIR-02@v4/s1/c2",
+     "text": "Callback threshold for outgoing wires | $10,000",
+     "heading": "Quick reference",
+     "document": {
+      "title": "Callback Checklist",
+      "type": "job_aid",
+      "applies_to": "All branches. All business lines."
+     }
+    },
+    {
+     "clause": "PRO-WIR-01@v3/s3/c3",
+     "text": "Call the customer back at a phone number already on file before releasing any outgoing wire of $10,000 or more.",
+     "heading": "Steps",
+     "document": {
+      "title": "Processing Outgoing Consumer Wires",
+      "type": "procedure",
+      "applies_to": "All branches. Consumer accounts."
+     }
+    },
+    {
+     "clause": "PRO-WIR-06@v1/s3/c9",
+     "text": "Outgoing wires of $10,000 or more require a callback to the customer at a number already on file.",
+     "heading": "Steps",
+     "document": {
+      "title": "Recalling or Cancelling a Wire",
+      "type": "procedure",
+      "applies_to": "All branches. All business lines."
+     }
+    }
+   ],
+   "allowed": {
+    "FAQ-WIR-02@v3/s2/c1#value": "$10,000",
+    "FAQ-WIR-02@v3/s4/c1#value": "$10,000",
+    "JA-WIR-02@v4/s1/c2#value": "$10,000",
+    "POL-WIR-01@v6/s4/c2#value": "$10,000",
+    "PRO-WIR-01@v3/s3/c3#value": "$10,000",
+    "PRO-WIR-03@v4/s3/c9#value": "$10,000",
+    "PRO-WIR-06@v1/s3/c9#value": "$10,000"
+   },
+   "placeholder": "{clause:POL-WIR-01@v6/s4/c2#value}",
+   "specialist_note": "A specialist rejected the earlier draft of this rule because it began with the words Before an outgoing wire, which add a timing the kept clause doesn't state. Write it again and state only what the kept clause states."
+  }
+ ],
+ "input_hash": "39d85f89b29925b86772e08940510a25e136ba27c56087a0177a47dc83cf47b5",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [{\"group\": \"g-02ec0cc3\", \"title\": \"Callbacks for outgoing wires\", \"text\": \"Outgoing wires of {clause:POL-WIR-01@v6/s4/c2#value} or more require a callback to the customer at a number already on file, unless the wire goes to an account the customer has used in the past year.\"}]}",
+   "problems": [],
+   "meta": {
+    "ms": 4341,
+    "api_ms": 4213,
+    "input_tokens": 7360,
+    "output_tokens": 417,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 7358,
+     "cache_read_input_tokens": 0,
+     "output_tokens": 417,
+     "output_tokens_details": {
+      "thinking_tokens": 302
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 7358,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 417,
+       "cache_read_input_tokens": 0,
+       "cache_creation_input_tokens": 7358,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 7358
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.067212,
+    "models": [
+     "claude-opus-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T18:35:26+00:00"
+}

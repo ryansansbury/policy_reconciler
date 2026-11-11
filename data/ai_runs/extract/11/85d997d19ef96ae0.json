@@ -1,0 +1,167 @@
+{
+ "step": "extract",
+ "tag": "11",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "dcc761e46c6ec579c01b9dfd540df3c2fa4bba3b6b5ec777aa2cf9c9c62aa411",
+ "input": [
+  {
+   "clause": "PRO-CSH-03@v2/s3/c5",
+   "text": "Use the counterfeit detection pen on bills of fifty dollars or more.",
+   "heading": "Steps",
+   "document": {
+    "title": "Opening and Closing the Vault",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-CSH-04@v1/s3/c2",
+   "text": "Report any shortage or overage to the head teller before you leave for the day.",
+   "heading": "Steps",
+   "document": {
+    "title": "Logging Transactions for Large-Cash Review",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-CSH-04@v1/s3/c3",
+   "text": "Use the counterfeit detection pen on bills of fifty dollars or more.",
+   "heading": "Steps",
+   "document": {
+    "title": "Logging Transactions for Large-Cash Review",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-CSH-04@v1/s3/c4",
+   "text": "Keep your drawer locked whenever you step away from the teller line.",
+   "heading": "Steps",
+   "document": {
+    "title": "Logging Transactions for Large-Cash Review",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-CSH-05@v3/s3/c3",
+   "text": "Keep your drawer locked whenever you step away from the teller line.",
+   "heading": "Steps",
+   "document": {
+    "title": "Handling a Cash Shortage or Overage",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-CSH-05@v3/s3/c4",
+   "text": "Report any shortage or overage to the head teller before you leave for the day.",
+   "heading": "Steps",
+   "document": {
+    "title": "Handling a Cash Shortage or Overage",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-CSH-05@v3/s3/c6",
+   "text": "Use the counterfeit detection pen on bills of fifty dollars or more.",
+   "heading": "Steps",
+   "document": {
+    "title": "Handling a Cash Shortage or Overage",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-CSH-05@v3/s5/c2",
+   "text": "Use the counterfeit detection pen on bills of fifty dollars or more.",
+   "heading": "Steps to follow",
+   "document": {
+    "title": "Handling a Cash Shortage or Overage",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-CSH-06@v3/s3/c1",
+   "text": "Report any shortage or overage to the head teller before you leave for the day.",
+   "heading": "Steps",
+   "document": {
+    "title": "Ordering Cash Shipments",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-CSH-06@v3/s3/c2",
+   "text": "Use the counterfeit detection pen on bills of fifty dollars or more.",
+   "heading": "Steps",
+   "document": {
+    "title": "Ordering Cash Shipments",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  }
+ ],
+ "input_hash": "040ee2b94694129b15175eec547ab37104926be27c8a4e31834ceef0c7a683e9",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [\n{\"clause\": \"PRO-CSH-03@v2/s3/c5\", \"atoms\": []},\n{\"clause\": \"PRO-CSH-04@v1/s3/c2\", \"atoms\": []},\n{\"clause\": \"PRO-CSH-04@v1/s3/c3\", \"atoms\": []},\n{\"clause\": \"PRO-CSH-04@v1/s3/c4\", \"atoms\": []},\n{\"clause\": \"PRO-CSH-05@v3/s3/c3\", \"atoms\": []},\n{\"clause\": \"PRO-CSH-05@v3/s3/c4\", \"atoms\": []},\n{\"clause\": \"PRO-CSH-05@v3/s3/c6\", \"atoms\": []},\n{\"clause\": \"PRO-CSH-05@v3/s5/c2\", \"atoms\": []},\n{\"clause\": \"PRO-CSH-06@v3/s3/c1\", \"atoms\": []},\n{\"clause\": \"PRO-CSH-06@v3/s3/c2\", \"atoms\": []}\n]}",
+   "problems": [],
+   "meta": {
+    "ms": 3757,
+    "api_ms": 3615,
+    "input_tokens": 8892,
+    "output_tokens": 481,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 6208,
+     "cache_read_input_tokens": 2682,
+     "output_tokens": 481,
+     "output_tokens_details": {
+      "thinking_tokens": 141
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 6208,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 481,
+       "cache_read_input_tokens": 2682,
+       "cache_creation_input_tokens": 6208,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 6208
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.0299142,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T03:52:19+00:00"
+}

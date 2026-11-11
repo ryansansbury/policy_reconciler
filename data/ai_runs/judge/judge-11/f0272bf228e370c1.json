@@ -1,0 +1,79 @@
+{
+ "step": "judge",
+ "tag": "judge-11",
+ "model": "google-a",
+ "backend": {
+  "vendor": "Google",
+  "model": "gemini-3.1-pro-preview",
+  "label": "Gemini 3.1 Pro"
+ },
+ "prompt_hash": "ab6a49ec8731854b3cf900a9a4387417ee8016fe68257c4d327181c7eb1621da",
+ "input": [
+  {
+   "draft": "draft-11",
+   "text": "Complaints should be closed within 15 business days of the day they arrive, or within 30 business days when another department has to investigate. Acknowledge every written complaint within 2 business days.",
+   "sources": [
+    "Complaints should be closed within 15 business days of the day they arrive, or within 30 business days when another department has to investigate.",
+    "Acknowledge every written complaint within 2 business days."
+   ]
+  },
+  {
+   "draft": "draft-12",
+   "text": "Limit fee waivers to two per account in each calendar year.",
+   "sources": [
+    "Limit fee waivers to two per account in each calendar year.",
+    "Customers may request a fee refund within 60 days of the statement date."
+   ]
+  },
+  {
+   "draft": "draft-13",
+   "text": "A branch manager can lower a loan rate by no more than 0.25% as an exception. A regional manager can approve a rate exception as large as 0.50%. Personal bankers may waive service fees up to $15 per account in a calendar year.",
+   "sources": [
+    "A branch manager can lower a loan rate by no more than 0.25% as an exception.",
+    "A regional manager can approve a rate exception as large as 0.50%."
+   ]
+  },
+  {
+   "draft": "draft-14",
+   "text": "The minimum opening deposit for a consumer checking account is $25, in most cases. Only the branch manager can approve an exception to the identification requirements, in most cases.",
+   "sources": [
+    "The minimum opening deposit for a consumer checking account is $25.",
+    "Only the branch manager can approve an exception to the identification requirements."
+   ]
+  },
+  {
+   "draft": "draft-15",
+   "text": "Retain closed account records for 7 years from the closing date. Retain closed account records for 5 years from the closing date. The records custodian must approve the destruction of any records in writing.",
+   "sources": [
+    "Retain closed account records for 7 years from the closing date.",
+    "In Kansas branches, retain closed account records for 5 years from the closing date.",
+    "The records custodian must approve the destruction of any records in writing."
+   ]
+  }
+ ],
+ "input_hash": "e1e913dff9938600823eb866d071e877ffc945e285fb0dd149c2429421f6464c",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "```json\n{\n \"results\": [\n  {\n   \"draft\": \"draft-11\",\n   \"scores\": {\n    \"keeps_rules\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    },\n    \"adds_no_rule\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    },\n    \"keeps_scope\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    },\n    \"plain\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    }\n   }\n  },\n  {\n   \"draft\": \"draft-12\",\n   \"scores\": {\n    \"keeps_rules\": {\n     \"pass\": false,\n     \"evidence\": \"Customers may request a fee refund within 60 days of the statement date.\"\n    },\n    \"adds_no_rule\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    },\n    \"keeps_scope\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    },\n    \"plain\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    }\n   }\n  },\n  {\n   \"draft\": \"draft-13\",\n   \"scores\": {\n    \"keeps_rules\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    },\n    \"adds_no_rule\": {\n     \"pass\": false,\n     \"evidence\": \"Personal bankers may waive service fees up to $15 per account in a calendar year.\"\n    },\n    \"keeps_scope\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    },\n    \"plain\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    }\n   }\n  },\n  {\n   \"draft\": \"draft-14\",\n   \"scores\": {\n    \"keeps_rules\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    },\n    \"adds_no_rule\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    },\n    \"keeps_scope\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    },\n    \"plain\": {\n     \"pass\": false,\n     \"evidence\": \"in most cases\"\n    }\n   }\n  },\n  {\n   \"draft\": \"draft-15\",\n   \"scores\": {\n    \"keeps_rules\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    },\n    \"adds_no_rule\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    },\n    \"keeps_scope\": {\n     \"pass\": false,\n     \"evidence\": \"In Kansas branches,\"\n    },\n    \"plain\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    }\n   }\n  }\n ]\n}\n```",
+   "problems": [],
+   "meta": {
+    "ms": 12302,
+    "input_tokens": 1056,
+    "output_tokens": 1983,
+    "cost_usd": 0.025908,
+    "usage": {
+     "completion_tokens": 667,
+     "prompt_tokens": 1056,
+     "total_tokens": 3039
+    },
+    "models": [
+     "gemini-3.1-pro-preview"
+    ],
+    "stop_reason": "stop"
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T16:46:53+00:00"
+}

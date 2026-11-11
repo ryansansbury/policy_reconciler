@@ -1,0 +1,167 @@
+{
+ "step": "extract",
+ "tag": "8202",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "dcc761e46c6ec579c01b9dfd540df3c2fa4bba3b6b5ec777aa2cf9c9c62aa411",
+ "input": [
+  {
+   "clause": "PRO-CSH-05@v3/s3/c5",
+   "text": "Keep your drawer locked whenever you step away from the teller line.",
+   "heading": "Steps",
+   "document": {
+    "title": "Handling a Cash Shortage or Overage",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-CSH-05@v3/s5/c1",
+   "text": "The large-cash review queue is worked by the operations specialist assigned to the branch.",
+   "heading": "Related requirements",
+   "document": {
+    "title": "Handling a Cash Shortage or Overage",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-CSH-06@v1/s3/c2",
+   "text": "Report any shortage or overage to the head teller before you leave for the day.",
+   "heading": "Steps",
+   "document": {
+    "title": "Ordering Cash Shipments",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-CSH-06@v1/s3/c3",
+   "text": "Use the counterfeit detection pen on bills of fifty dollars or more.",
+   "heading": "Steps",
+   "document": {
+    "title": "Ordering Cash Shipments",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-CSH-06@v1/s3/c7",
+   "text": "Keep your drawer locked whenever you step away from the teller line.",
+   "heading": "Steps",
+   "document": {
+    "title": "Ordering Cash Shipments",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-CSH-06@v2/s3/c2",
+   "text": "Report any shortage or overage to the head teller before you leave for the day.",
+   "heading": "Steps",
+   "document": {
+    "title": "Ordering Cash Shipments",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-CSH-06@v2/s3/c3",
+   "text": "Use the counterfeit detection pen on bills of fifty dollars or more.",
+   "heading": "Steps",
+   "document": {
+    "title": "Ordering Cash Shipments",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-CSH-06@v2/s3/c7",
+   "text": "Keep your drawer locked whenever you step away from the teller line.",
+   "heading": "Steps",
+   "document": {
+    "title": "Ordering Cash Shipments",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-CSH-07@v4/s3/c3",
+   "text": "Report any shortage or overage to the head teller before you leave for the day.",
+   "heading": "Steps",
+   "document": {
+    "title": "Counting Cash Under Dual Control",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-CSH-07@v4/s3/c5",
+   "text": "Use the counterfeit detection pen on bills of fifty dollars or more.",
+   "heading": "Steps",
+   "document": {
+    "title": "Counting Cash Under Dual Control",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  }
+ ],
+ "input_hash": "acfd3b1bcdaf6ba2681f6c6480bd0cd0182966d04f42556126c31cf573b1cda6",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [\n{\"clause\": \"PRO-CSH-05@v3/s3/c5\", \"atoms\": []},\n{\"clause\": \"PRO-CSH-05@v3/s5/c1\", \"atoms\": []},\n{\"clause\": \"PRO-CSH-06@v1/s3/c2\", \"atoms\": []},\n{\"clause\": \"PRO-CSH-06@v1/s3/c3\", \"atoms\": []},\n{\"clause\": \"PRO-CSH-06@v1/s3/c7\", \"atoms\": []},\n{\"clause\": \"PRO-CSH-06@v2/s3/c2\", \"atoms\": []},\n{\"clause\": \"PRO-CSH-06@v2/s3/c3\", \"atoms\": []},\n{\"clause\": \"PRO-CSH-06@v2/s3/c7\", \"atoms\": []},\n{\"clause\": \"PRO-CSH-07@v4/s3/c3\", \"atoms\": []},\n{\"clause\": \"PRO-CSH-07@v4/s3/c5\", \"atoms\": []}\n]}",
+   "problems": [],
+   "meta": {
+    "ms": 4012,
+    "api_ms": 3862,
+    "input_tokens": 8869,
+    "output_tokens": 517,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 6185,
+     "cache_read_input_tokens": 2682,
+     "output_tokens": 517,
+     "output_tokens_details": {
+      "thinking_tokens": 177
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 6185,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 517,
+       "cache_read_input_tokens": 2682,
+       "cache_creation_input_tokens": 6185,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 6185
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.0301822,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T05:40:31+00:00"
+}

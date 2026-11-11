@@ -1,0 +1,114 @@
+{
+ "step": "assist",
+ "tag": "before-2026",
+ "model": "claude-haiku",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "haiku",
+  "client_context": true
+ },
+ "prompt_hash": "66c01f0da9f327e74355d39363e55b642a1bbf8dc6249974c3afbf3cb3d6ccd5",
+ "input": [
+  {
+   "question": "q-C-08",
+   "text": "When does an account become dormant?",
+   "type": "duration",
+   "clauses": [
+    {
+     "id": "JA-DRM-01@v4/s1/c2",
+     "text": "Monthly dormant account fee | $10",
+     "title": "Dormant Account Quick Reference",
+     "type": "job_aid",
+     "version": 4,
+     "effective": "2026-07-23"
+    },
+    {
+     "id": "JA-DRM-02@v2/s1/c2",
+     "text": "Monthly dormant account fee | $5",
+     "title": "Dormancy Notice Checklist",
+     "type": "job_aid",
+     "version": 2,
+     "effective": "2025-11-08"
+    },
+    {
+     "id": "JA-DRM-01@v4/s1/c3",
+     "text": "Inactivity before an account is dormant | 18 months",
+     "title": "Dormant Account Quick Reference",
+     "type": "job_aid",
+     "version": 4,
+     "effective": "2026-07-23"
+    },
+    {
+     "id": "ADD-TX-01@v3/s2/c2",
+     "text": "In Texas branches, the monthly fee for a dormant account is $10.",
+     "title": "Texas Branch Addendum",
+     "type": "addendum",
+     "version": 3,
+     "effective": "2026-02-10"
+    },
+    {
+     "id": "JA-DRM-01@v4/s2/c2",
+     "text": "Verify the customer's identity before reactivating a dormant account.",
+     "title": "Dormant Account Quick Reference",
+     "type": "job_aid",
+     "version": 4,
+     "effective": "2026-07-23"
+    }
+   ]
+  }
+ ],
+ "input_hash": "8d6bff41611ba19192cb4b44398bceb149cdc8032f3eb3ba3a0ed68df8cd8c9e",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [{\"question\": \"q-C-08\", \"answer\": \"An account becomes dormant after 18 months of inactivity, according to the Dormant Account Quick Reference (version 4, effective 2026-07-23). That source is a job aid, and none of the retrieved clauses from a policy or procedure states the period, so the figure rests on the quick reference alone.\", \"citations\": [\"JA-DRM-01@v4/s1/c3\"], \"sources_disagree\": false}]}",
+   "problems": [],
+   "meta": {
+    "ms": 3729,
+    "api_ms": 3583,
+    "input_tokens": 6112,
+    "output_tokens": 706,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 5492,
+     "cache_read_input_tokens": 618,
+     "output_tokens": 706,
+     "output_tokens_details": {
+      "thinking_tokens": 550
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 5492,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 706,
+       "cache_read_input_tokens": 618,
+       "cache_creation_input_tokens": 5492,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 5492
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.00145778,
+    "models": [
+     "claude-haiku-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T21:27:07+00:00"
+}

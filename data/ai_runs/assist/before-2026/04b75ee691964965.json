@@ -1,0 +1,114 @@
+{
+ "step": "assist",
+ "tag": "before-2026",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "66c01f0da9f327e74355d39363e55b642a1bbf8dc6249974c3afbf3cb3d6ccd5",
+ "input": [
+  {
+   "question": "q-C-10",
+   "text": "What is the monthly fee on a dormant account?",
+   "type": "money",
+   "clauses": [
+    {
+     "id": "JA-DRM-01@v4/s1/c2",
+     "text": "Monthly dormant account fee | $10",
+     "title": "Dormant Account Quick Reference",
+     "type": "job_aid",
+     "version": 4,
+     "effective": "2026-07-23"
+    },
+    {
+     "id": "JA-DRM-02@v2/s1/c2",
+     "text": "Monthly dormant account fee | $5",
+     "title": "Dormancy Notice Checklist",
+     "type": "job_aid",
+     "version": 2,
+     "effective": "2025-11-08"
+    },
+    {
+     "id": "ADD-TX-01@v3/s2/c2",
+     "text": "In Texas branches, the monthly fee for a dormant account is $10.",
+     "title": "Texas Branch Addendum",
+     "type": "addendum",
+     "version": 3,
+     "effective": "2026-02-10"
+    },
+    {
+     "id": "FAQ-DRM-01@v1/s2/c1",
+     "text": "Dormant accounts are charged a maintenance fee of $5 per month.",
+     "title": "Dormant Account FAQ",
+     "type": "faq",
+     "version": 1,
+     "effective": "2025-11-14"
+    },
+    {
+     "id": "FAQ-DRM-02@v1/s2/c1",
+     "text": "Dormant accounts are charged a maintenance fee of $5 per month.",
+     "title": "Reactivation Questions",
+     "type": "faq",
+     "version": 1,
+     "effective": "2026-01-27"
+    }
+   ]
+  }
+ ],
+ "input_hash": "4cac8d38a92c519507201fe38c47eb2cef8d758f9620f1d5cb0ccc420f41d99f",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [{\"question\": \"q-C-10\", \"answer\": \"The sources disagree. The Dormant Account Quick Reference says $10 and the Texas Branch Addendum says $10 for Texas branches, while the Dormancy Notice Checklist, the Dormant Account FAQ and the Reactivation Questions page all say $5. None of these is a policy or procedure, so the bank's ranking does not settle which value applies outside Texas.\", \"citations\": [\"JA-DRM-01@v4/s1/c2\", \"ADD-TX-01@v3/s2/c2\", \"JA-DRM-02@v2/s1/c2\", \"FAQ-DRM-01@v1/s2/c1\", \"FAQ-DRM-02@v1/s2/c1\"], \"sources_disagree\": true}]}",
+   "problems": [],
+   "meta": {
+    "ms": 6955,
+    "api_ms": 6819,
+    "input_tokens": 6104,
+    "output_tokens": 918,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 5484,
+     "cache_read_input_tokens": 618,
+     "output_tokens": 918,
+     "output_tokens_details": {
+      "thinking_tokens": 654
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 5484,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 918,
+       "cache_read_input_tokens": 618,
+       "cache_creation_input_tokens": 5484,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 5484
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.031181800000000003,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T06:03:06+00:00"
+}

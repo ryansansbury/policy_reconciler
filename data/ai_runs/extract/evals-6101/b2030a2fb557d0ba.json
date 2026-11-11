@@ -1,0 +1,167 @@
+{
+ "step": "extract",
+ "tag": "evals-6101",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "dcc761e46c6ec579c01b9dfd540df3c2fa4bba3b6b5ec777aa2cf9c9c62aa411",
+ "input": [
+  {
+   "clause": "JA-AOP-01@v3/s1/c2",
+   "text": "Forms of identification per signer | one",
+   "heading": "Quick reference",
+   "document": {
+    "title": "New Account Quick Reference",
+    "type": "job_aid",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "JA-AOP-02@v3/s1/c1",
+   "text": "Approver for identification exceptions | regional manager",
+   "heading": "Quick reference",
+   "document": {
+    "title": "Identification Checklist",
+    "type": "job_aid",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "JA-AOP-03@v1/s1/c2",
+   "text": "Forms of identification per signer | three",
+   "heading": "Quick reference",
+   "document": {
+    "title": "Account Opening Desk Card",
+    "type": "job_aid",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "JA-CMP-01@v1/s1/c1",
+   "text": "Complaint resolution deadline | 15 business days",
+   "heading": "Quick reference",
+   "document": {
+    "title": "Complaint Handling Card",
+    "type": "job_aid",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "JA-CMP-01@v1/s1/c2",
+   "text": "Escalation for unfair treatment complaints | regional manager",
+   "heading": "Quick reference",
+   "document": {
+    "title": "Complaint Handling Card",
+    "type": "job_aid",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "JA-CMP-02@v1/s3/c3",
+   "text": "Send the customer an acknowledgment no later than 2 business days after a written complaint arrives.",
+   "heading": "Steps to follow",
+   "document": {
+    "title": "Complaint Escalation Checklist",
+    "type": "job_aid",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "JA-CSH-01@v2/s1/c2",
+   "text": "Teller drawer cash limit | $10,000",
+   "heading": "Quick reference",
+   "document": {
+    "title": "Teller Cash Limits Card",
+    "type": "job_aid",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "JA-CSH-02@v4/s1/c1",
+   "text": "Large-cash review threshold | $7,500",
+   "heading": "Quick reference",
+   "document": {
+    "title": "Vault Opening Checklist",
+    "type": "job_aid",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "JA-CSH-02@v4/s1/c3",
+   "text": "Teller drawer cash limit | $20,000",
+   "heading": "Quick reference",
+   "document": {
+    "title": "Vault Opening Checklist",
+    "type": "job_aid",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "JA-DRM-01@v1/s3/c3",
+   "text": "Send dormant accounts one statement every 12 months.",
+   "heading": "Steps to follow",
+   "document": {
+    "title": "Dormant Account Quick Reference",
+    "type": "job_aid",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  }
+ ],
+ "input_hash": "aec278093c668ba72ec1c37a0509f8e265e9f275044b00b1e48aa121e5409d96",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\":[{\"clause\":\"JA-AOP-01@v3/s1/c2\",\"atoms\":[{\"attribute\":\"ao_id_count\",\"value\":{\"type\":\"count\",\"n\":1},\"quote\":\"one\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]},{\"clause\":\"JA-AOP-02@v3/s1/c1\",\"atoms\":[{\"attribute\":\"ao_exception_approver\",\"value\":{\"type\":\"role\",\"role\":\"regional_manager\"},\"quote\":\"regional manager\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]},{\"clause\":\"JA-AOP-03@v1/s1/c2\",\"atoms\":[{\"attribute\":\"ao_id_count\",\"value\":{\"type\":\"count\",\"n\":3},\"quote\":\"three\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]},{\"clause\":\"JA-CMP-01@v1/s1/c1\",\"atoms\":[{\"attribute\":\"complaint_resolve\",\"value\":{\"type\":\"duration\",\"n\":15,\"unit\":\"business_days\"},\"quote\":\"15 business days\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]},{\"clause\":\"JA-CMP-01@v1/s1/c2\",\"atoms\":[{\"attribute\":\"complaint_escalation_role\",\"value\":{\"type\":\"role\",\"role\":\"regional_manager\"},\"quote\":\"regional manager\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]},{\"clause\":\"JA-CMP-02@v1/s3/c3\",\"atoms\":[{\"attribute\":\"complaint_ack\",\"value\":{\"type\":\"duration\",\"n\":2,\"unit\":\"business_days\"},\"quote\":\"2 business days\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]},{\"clause\":\"JA-CSH-01@v2/s1/c2\",\"atoms\":[{\"attribute\":\"cash_drawer_limit\",\"value\":{\"type\":\"money\",\"dollars\":10000},\"quote\":\"$10,000\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]},{\"clause\":\"JA-CSH-02@v4/s1/c1\",\"atoms\":[{\"attribute\":\"cash_review_threshold\",\"value\":{\"type\":\"money\",\"dollars\":7500},\"quote\":\"$7,500\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]},{\"clause\":\"JA-CSH-02@v4/s1/c3\",\"atoms\":[{\"attribute\":\"cash_drawer_limit\",\"value\":{\"type\":\"money\",\"dollars\":20000},\"quote\":\"$20,000\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]},{\"clause\":\"JA-DRM-01@v1/s3/c3\",\"atoms\":[{\"attribute\":\"dormant_statement\",\"value\":{\"type\":\"duration\",\"n\":12,\"unit\":\"months\"},\"quote\":\"12 months\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]}]}",
+   "problems": [],
+   "meta": {
+    "ms": 8168,
+    "api_ms": 7938,
+    "input_tokens": 8824,
+    "output_tokens": 1517,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 6140,
+     "cache_read_input_tokens": 2682,
+     "output_tokens": 1517,
+     "output_tokens_details": {
+      "thinking_tokens": 469
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 6140,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 1517,
+       "cache_read_input_tokens": 2682,
+       "cache_creation_input_tokens": 6140,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 6140
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.0400022,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T04:13:05+00:00"
+}

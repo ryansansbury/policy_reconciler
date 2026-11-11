@@ -1,0 +1,73 @@
+{
+ "step": "judge",
+ "tag": "2026",
+ "model": "google-b",
+ "backend": {
+  "vendor": "Google",
+  "model": "gemini-3.8-flash",
+  "label": "Gemini 3.8 Flash"
+ },
+ "prompt_hash": "ab6a49ec8731854b3cf900a9a4387417ee8016fe68257c4d327181c7eb1621da",
+ "input": [
+  {
+   "draft": "g-643b9a42",
+   "text": "Staff escalate every complaint that alleges unfair treatment to the regional manager the same day.",
+   "sources": [
+    "Complaints that allege unfair treatment are escalated to the regional manager the same day."
+   ]
+  },
+  {
+   "draft": "g-46a9b4de",
+   "text": "Staff resolve complaints within 15 business days of receipt or tell the customer when to expect a resolution.",
+   "sources": [
+    "Resolve complaints within 15 business days of receipt, or tell the customer when to expect a resolution."
+   ]
+  },
+  {
+   "draft": "g-34eb5d1d",
+   "text": "Staff credit the customer provisionally no later than 10 business days after the dispute form is complete.",
+   "sources": [
+    "Credit the customer provisionally no later than 10 business days after the dispute form is complete."
+   ]
+  },
+  {
+   "draft": "g-137a3a32",
+   "text": "A card services specialist reviews every dispute over $500 before credit is issued.",
+   "sources": [
+    "Disputes over $500 are reviewed by a card services specialist before credit is issued."
+   ]
+  },
+  {
+   "draft": "g-f23fdcaf",
+   "text": "Customers have 60 days from the statement date to dispute a debit card transaction. The window is longer when the customer was traveling or hospitalized.",
+   "sources": [
+    "Customers have 60 days from the statement date to dispute a debit card transaction, or longer when the customer was traveling or hospitalized."
+   ]
+  }
+ ],
+ "input_hash": "ffd5f319a0e587278bdf12bba83a7621db0af9e8a59ab50ac7ab317f22252174",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "```json\n{\n \"results\": [\n  {\n   \"draft\": \"g-643b9a42\",\n   \"scores\": {\n    \"keeps_rules\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    },\n    \"adds_no_rule\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    },\n    \"keeps_scope\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    },\n    \"plain\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    }\n   }\n  },\n  {\n   \"draft\": \"g-46a9b4de\",\n   \"scores\": {\n    \"keeps_rules\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    },\n    \"adds_no_rule\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    },\n    \"keeps_scope\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    },\n    \"plain\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    }\n   }\n  },\n  {\n   \"draft\": \"g-34eb5d1d\",\n   \"scores\": {\n    \"keeps_rules\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    },\n    \"adds_no_rule\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    },\n    \"keeps_scope\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    },\n    \"plain\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    }\n   }\n  },\n  {\n   \"draft\": \"g-137a3a32\",\n   \"scores\": {\n    \"keeps_rules\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    },\n    \"adds_no_rule\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    },\n    \"keeps_scope\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    },\n    \"plain\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    }\n   }\n  },\n  {\n   \"draft\": \"g-f23fdcaf\",\n   \"scores\": {\n    \"keeps_rules\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    },\n    \"adds_no_rule\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    },\n    \"keeps_scope\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    },\n    \"plain\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    }\n   }\n  }\n ]\n}\n```",
+   "problems": [],
+   "meta": {
+    "ms": 18135,
+    "input_tokens": 900,
+    "output_tokens": 2541,
+    "cost_usd": 0.010204,
+    "usage": {
+     "completion_tokens": 649,
+     "prompt_tokens": 900,
+     "total_tokens": 3441
+    },
+    "models": [
+     "gemini-3.8-flash"
+    ],
+    "stop_reason": "stop"
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T19:48:04+00:00"
+}

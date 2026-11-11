@@ -1,0 +1,362 @@
+{
+ "step": "classify",
+ "tag": "evals-6101",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "2c908358fde9f0f4a792753579a6cfaa33476e41c4b0f235744675d8e8283a19",
+ "input": [
+  {
+   "pair": "pair-f9593478bb",
+   "rule": "Regional manager rate exception limit",
+   "attribute": "lend_rate_rm",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-LND-01@v3/s3/c1",
+    "text": "Regional managers may approve rate exceptions of up to 0.50%.",
+    "heading": "Policy statements",
+    "document": {
+     "title": "Loan Pricing Exception Policy",
+     "type": "policy",
+     "version": 3,
+     "effective": "2026-06-18",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "BUL-LND-01@v2/s1/c2",
+    "text": "Regional managers may approve rate exceptions of up to 0.75%.",
+    "heading": "What branches need to know",
+    "document": {
+     "title": "Branch Bulletin 2025-16: Regional manager rate exception limit",
+     "type": "bulletin",
+     "version": 2,
+     "effective": "2026-01-27",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-236c6836cb",
+   "rule": "Approver for identification exceptions",
+   "attribute": "ao_exception_approver",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-AOP-01@v5/s3/c2",
+    "text": "Only the branch manager can approve an exception to the identification requirements.",
+    "heading": "Policy statements",
+    "document": {
+     "title": "Deposit Account Opening Policy",
+     "type": "policy",
+     "version": 5,
+     "effective": "2026-05-17",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "JA-AOP-02@v3/s1/c1",
+    "text": "Approver for identification exceptions | regional manager",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Identification Checklist",
+     "type": "job_aid",
+     "version": 3,
+     "effective": "2026-04-02",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-06fca50437",
+   "rule": "Overdraft fee per item",
+   "attribute": "od_fee",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-ODR-01@v2/s3/c1",
+    "text": "Each item paid into overdraft is charged $30.",
+    "heading": "Policy statements",
+    "document": {
+     "title": "Overdraft Policy",
+     "type": "policy",
+     "version": 2,
+     "effective": "2025-11-24",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "PRO-ODR-01@v2/s3/c9",
+    "text": "Each item paid into overdraft is charged $35.",
+    "heading": "Steps",
+    "document": {
+     "title": "Reviewing Overdrawn Accounts Each Morning",
+     "type": "procedure",
+     "version": 2,
+     "effective": "2025-12-24",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-a415b4f1d1",
+   "rule": "Approver for identification exceptions",
+   "attribute": "ao_exception_approver",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-AOP-01@v5/s3/c2",
+    "text": "Only the branch manager can approve an exception to the identification requirements.",
+    "heading": "Policy statements",
+    "document": {
+     "title": "Deposit Account Opening Policy",
+     "type": "policy",
+     "version": 5,
+     "effective": "2026-05-17",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "PRO-AOP-04@v4/s3/c4",
+    "text": "Only the operations specialist can approve an exception to the identification requirements.",
+    "heading": "Steps",
+    "document": {
+     "title": "Verifying Customer Identification",
+     "type": "procedure",
+     "version": 4,
+     "effective": "2024-12-10",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-6b4f1584d7",
+   "rule": "Fee refund window",
+   "attribute": "fee_refund_window",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-FEE-01@v3/s4/c1",
+    "text": "Customers may request a fee refund within 60 days of the statement date.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Service Fee Waiver Policy",
+     "type": "policy",
+     "version": 3,
+     "effective": "2024-08-03",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "FAQ-FEE-01@v2/s3/c1",
+    "text": "Customers may request a fee refund within 90 days of the statement date.",
+    "heading": "How long do customers have to request a fee refund?",
+    "document": {
+     "title": "Fee Waiver FAQ",
+     "type": "faq",
+     "version": 2,
+     "effective": "2026-05-25",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-4e8273afd3",
+   "rule": "Provisional credit deadline",
+   "attribute": "dispute_provisional_credit",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-DSP-01@v5/s4/c2",
+    "text": "Provisional credit is issued within 10 business days of receiving a completed dispute.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Debit Card Dispute Policy",
+     "type": "policy",
+     "version": 5,
+     "effective": "2024-07-18",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "PRO-DSP-06@v3/s3/c7",
+    "text": "Provisional credit is issued within 5 business days of receiving a completed dispute.",
+    "heading": "Steps",
+    "document": {
+     "title": "Large Dispute Review",
+     "type": "procedure",
+     "version": 3,
+     "effective": "2025-06-21",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-a2c29ef32a",
+   "rule": "Fee refund window",
+   "attribute": "fee_refund_window",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-FEE-01@v3/s4/c1",
+    "text": "Customers may request a fee refund within 60 days of the statement date.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Service Fee Waiver Policy",
+     "type": "policy",
+     "version": 3,
+     "effective": "2024-08-03",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "PRO-FEE-06@v2/s3/c1",
+    "text": "Customers may request a fee refund within 90 days of the statement date.",
+    "heading": "Steps",
+    "document": {
+     "title": "Explaining Fees to a New Customer",
+     "type": "procedure",
+     "version": 2,
+     "effective": "2025-11-04",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-ca814abf3c",
+   "rule": "Closed account record retention",
+   "attribute": "records_retention",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-REC-01@v4/s4/c1",
+    "text": "Account records are kept for 7 years after the account closes.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Records Retention Policy",
+     "type": "policy",
+     "version": 4,
+     "effective": "2025-04-11",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "JA-REC-01@v4/s1/c1",
+    "text": "Retention for closed account records | 5 years",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Records Retention Schedule Card",
+     "type": "job_aid",
+     "version": 4,
+     "effective": "2026-05-07",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  }
+ ],
+ "input_hash": "90dc7934c643a33f8c448e780703fc89e7227dae45c33fa74d110c36ff19fc97",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [{\"pair\": \"pair-f9593478bb\", \"label\": \"conflict\", \"quote_a\": \"Regional managers may approve rate exceptions of up to 0.50%.\", \"quote_b\": \"Regional managers may approve rate exceptions of up to 0.75%.\", \"rationale\": \"Both clauses cover all branches and all business lines but set the regional manager limit at 0.50% and 0.75%. A manager approving 0.75% would act against the policy, which outranks the bulletin and is the one to keep.\"}, {\"pair\": \"pair-236c6836cb\", \"label\": \"conflict\", \"quote_a\": \"Only the branch manager can approve an exception to the identification requirements.\", \"quote_b\": \"regional manager\", \"rationale\": \"The policy limits approval to the branch manager while the checklist names the regional manager as approver for the same scope. Staff following the checklist would send exceptions to someone the policy does not allow, and the policy is the one to keep.\"}, {\"pair\": \"pair-06fca50437\", \"label\": \"conflict\", \"quote_a\": \"Each item paid into overdraft is charged $30.\", \"quote_b\": \"Each item paid into overdraft is charged $35.\", \"rationale\": \"The two clauses apply to the same accounts and set the per item fee at $30 and $35. Staff would charge different amounts depending on which clause they follow, and the policy is the one to keep.\"}, {\"pair\": \"pair-a415b4f1d1\", \"label\": \"conflict\", \"quote_a\": \"Only the branch manager can approve an exception to the identification requirements.\", \"quote_b\": \"Only the operations specialist can approve an exception to the identification requirements.\", \"rationale\": \"Each clause names a different sole approver for the same exception across all branches. Neither states a narrower scope, so following one means acting against the other, and the policy is the one to keep.\"}, {\"pair\": \"pair-6b4f1584d7\", \"label\": \"conflict\", \"quote_a\": \"Customers may request a fee refund within 60 days of the statement date.\", \"quote_b\": \"Customers may request a fee refund within 90 days of the statement date.\", \"rationale\": \"The refund window is 60 days in the policy and 90 days in the FAQ for the same accounts. Staff would refuse a request on day 75 under one clause and accept it under the other, and the policy is the one to keep.\"}, {\"pair\": \"pair-4e8273afd3\", \"label\": \"conflict\", \"quote_a\": \"Provisional credit is issued within 10 business days of receiving a completed dispute.\", \"quote_b\": \"Provisional credit is issued within 5 business days of receiving a completed dispute.\", \"rationale\": \"Both use business days but set the deadline at 10 and 5. The procedure states no narrower scope in its clause, so staff following the policy could issue credit on day 8 and miss the procedure's deadline. The policy is the one to keep.\"}, {\"pair\": \"pair-a2c29ef32a\", \"label\": \"conflict\", \"quote_a\": \"Customers may request a fee refund within 60 days of the statement date.\", \"quote_b\": \"Customers may request a fee refund within 90 days of the statement date.\", \"rationale\": \"The policy sets a 60 day window and the procedure sets 90 days for the same accounts with no stated narrower scope. Staff following the procedure would accept requests the policy would refuse, and the policy is the one to keep.\"}, {\"pair\": \"pair-ca814abf3c\", \"label\": \"conflict\", \"quote_a\": \"Account records are kept for 7 years after the account closes.\", \"quote_b\": \"Retention for closed account records | 5 years\", \"rationale\": \"The policy requires 7 years of retention and the schedule card says 5 years for the same closed account records. Staff following the card could destroy records the policy still requires, and the policy is the one to keep.\"}]}",
+   "problems": [
+    "pair-6b4f1584d7: the rationale uses numbers that aren't in either clause or its document: 75",
+    "pair-4e8273afd3: the rationale uses numbers that aren't in either clause or its document: 8"
+   ],
+   "meta": {
+    "ms": 11165,
+    "api_ms": 10952,
+    "input_tokens": 8961,
+    "output_tokens": 1707,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 8118,
+     "cache_read_input_tokens": 841,
+     "output_tokens": 1707,
+     "output_tokens_details": {
+      "thinking_tokens": 472
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 8118,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 1707,
+       "cache_read_input_tokens": 841,
+       "cache_creation_input_tokens": 8118,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 8118
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.049630099999999996,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  },
+  {
+   "reply": "{\"results\": [{\"pair\": \"pair-6b4f1584d7\", \"label\": \"conflict\", \"quote_a\": \"Customers may request a fee refund within 60 days of the statement date.\", \"quote_b\": \"Customers may request a fee refund within 90 days of the statement date.\", \"rationale\": \"Both clauses cover the same customers and the same refund request but set a window of 60 days in one and 90 days in the other. Staff following the policy would refuse a request on day 90 that the FAQ allows. The policy outranks the FAQ, so the FAQ clause is the one to correct.\"}, {\"pair\": \"pair-4e8273afd3\", \"label\": \"conflict\", \"quote_a\": \"Provisional credit is issued within 10 business days of receiving a completed dispute.\", \"quote_b\": \"Provisional credit is issued within 5 business days of receiving a completed dispute.\", \"rationale\": \"Both clauses apply to the same completed disputes and set a deadline of 10 business days in one and 5 business days in the other. The procedure states no narrower scope in the clause, so it is not an intended variation. The policy outranks the procedure, so the procedure clause is the one to correct.\"}]}",
+   "problems": [],
+   "meta": {
+    "ms": 5472,
+    "api_ms": 5226,
+    "input_tokens": 6663,
+    "output_tokens": 696,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 5820,
+     "cache_read_input_tokens": 841,
+     "output_tokens": 696,
+     "output_tokens_details": {
+      "thinking_tokens": 314
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 5820,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 696,
+       "cache_read_input_tokens": 841,
+       "cache_creation_input_tokens": 5820,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 5820
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.030328099999999997,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   },
+   "items": [
+    "pair-6b4f1584d7",
+    "pair-4e8273afd3"
+   ]
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T04:15:07+00:00"
+}

@@ -1,0 +1,76 @@
+{
+ "choice": {
+  "pairing": "no_gain",
+  "search": "no_gain"
+ },
+ "cost_per_library": {
+  "embeddings": 0.0004,
+  "embeddings_seconds": 7.1,
+  "extractor": 0.2991,
+  "extractor_seconds": 109.6
+ },
+ "dev": [
+  "11",
+  "23"
+ ],
+ "exploratory": [
+  "hybrid_wide"
+ ],
+ "held": [
+  "6101",
+  "6202",
+  "6303",
+  "8101",
+  "8202",
+  "8303"
+ ],
+ "model": "text-embedding-3-small",
+ "pairing": {
+  "all": {
+   "added": 117,
+   "of": 84,
+   "paired": 84,
+   "wrong": 6
+  },
+  "code": {
+   "added": 0,
+   "of": 84,
+   "paired": 79,
+   "wrong": 0
+  },
+  "embeddings": {
+   "added": 81,
+   "of": 84,
+   "paired": 80,
+   "wrong": 3
+  },
+  "extractor": {
+   "added": 117,
+   "of": 84,
+   "paired": 84,
+   "wrong": 6
+  }
+ },
+ "search": {
+  "bm25": {
+   "both": 19,
+   "gold": 34
+  },
+  "bm25_wide": {
+   "both": 37,
+   "gold": 41
+  },
+  "hybrid": {
+   "both": 25,
+   "gold": 39
+  },
+  "hybrid_wide": {
+   "both": 42,
+   "gold": 48
+  },
+  "lost": 3,
+  "lost_wide": 0,
+  "questions": 60
+ },
+ "threshold": 0.76
+}

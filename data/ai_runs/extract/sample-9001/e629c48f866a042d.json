@@ -1,0 +1,149 @@
+{
+ "step": "extract",
+ "tag": "sample-9001",
+ "model": "openai-b",
+ "backend": {
+  "vendor": "OpenAI",
+  "model": "gpt-6-luna",
+  "label": "GPT-6 Luna"
+ },
+ "prompt_hash": "dcc761e46c6ec579c01b9dfd540df3c2fa4bba3b6b5ec777aa2cf9c9c62aa411",
+ "input": [
+  {
+   "clause": "ADD-KS-02@v2/s2/c1",
+   "text": "In Kansas branches, resolve complaints within 10 business days of receipt, or tell the customer when to expect a resolution.",
+   "heading": "Kansas requirements",
+   "document": {
+    "title": "Kansas Branch Addendum (2)",
+    "type": "addendum",
+    "applies_to": "Kansas branches. All business lines."
+   }
+  },
+  {
+   "clause": "ADD-OK-02@v1/s2/c1",
+   "text": "In Oklahoma branches, resolve complaints within 30 business days of receipt, or tell the customer when to expect a resolution.",
+   "heading": "Oklahoma requirements",
+   "document": {
+    "title": "Oklahoma Branch Addendum (2)",
+    "type": "addendum",
+    "applies_to": "Oklahoma branches. All business lines."
+   }
+  },
+  {
+   "clause": "ADD-OK-08@v3/s2/c2",
+   "text": "In Oklahoma branches, resolve complaints within 30 business days of receipt, or tell the customer when to expect a resolution.",
+   "heading": "Oklahoma requirements",
+   "document": {
+    "title": "Oklahoma Branch Addendum (8)",
+    "type": "addendum",
+    "applies_to": "Oklahoma branches. All business lines."
+   }
+  },
+  {
+   "clause": "ADD-OK-09@v1/s2/c3",
+   "text": "In Oklahoma branches, resolve complaints within 10 business days of receipt, or tell the customer when to expect a resolution.",
+   "heading": "Oklahoma requirements",
+   "document": {
+    "title": "Oklahoma Branch Addendum (9)",
+    "type": "addendum",
+    "applies_to": "Oklahoma branches. All business lines."
+   }
+  },
+  {
+   "clause": "ADD-OK-10@v2/s2/c4",
+   "text": "In Oklahoma branches, resolve complaints within 30 business days of receipt, or tell the customer when to expect a resolution.",
+   "heading": "Oklahoma requirements",
+   "document": {
+    "title": "Oklahoma Branch Addendum (10)",
+    "type": "addendum",
+    "applies_to": "Oklahoma branches. All business lines."
+   }
+  },
+  {
+   "clause": "ADD-TX-02@v3/s2/c2",
+   "text": "In Texas branches, resolve complaints within 10 business days of receipt, or tell the customer when to expect a resolution.",
+   "heading": "Texas requirements",
+   "document": {
+    "title": "Texas Branch Addendum (2)",
+    "type": "addendum",
+    "applies_to": "Texas branches. All business lines."
+   }
+  },
+  {
+   "clause": "ADD-TX-09@v2/s2/c3",
+   "text": "In Texas branches, resolve complaints within 30 business days of receipt, or tell the customer when to expect a resolution.",
+   "heading": "Texas requirements",
+   "document": {
+    "title": "Texas Branch Addendum (9)",
+    "type": "addendum",
+    "applies_to": "Texas branches. All business lines."
+   }
+  },
+  {
+   "clause": "BUL-AOP-01@v3/s1/c2",
+   "text": "Only the operations specialist can approve an exception to the identification requirements.",
+   "heading": "What branches need to know",
+   "document": {
+    "title": "Branch Bulletin 2025-07: Approver for identification exceptions (1)",
+    "type": "bulletin",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "BUL-AOP-01@v4/s1/c2",
+   "text": "Only the branch manager can approve an exception to the identification requirements.",
+   "heading": "What branches need to know",
+   "document": {
+    "title": "Branch Bulletin 2025-07: Approver for identification exceptions (1)",
+    "type": "bulletin",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "BUL-AOP-102@v3/s1/c2",
+   "text": "Only the branch manager can approve an exception to the identification requirements.",
+   "heading": "What branches need to know",
+   "document": {
+    "title": "Branch Bulletin 2026-16: Approver for identification exceptions (6)",
+    "type": "bulletin",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  }
+ ],
+ "input_hash": "98fb40776e722425e1cbd39ddee492af7924188d59bea4c9810cbc0427bc2f1a",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\":[{\"clause\":\"ADD-KS-02@v2/s2/c1\",\"atoms\":[{\"attribute\":\"complaint_resolve\",\"value\":{\"type\":\"duration\",\"n\":10,\"unit\":\"business_days\"},\"quote\":\"10 business days\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":\"In Kansas branches\",\"condition\":\"or tell the customer when to expect a resolution\"}]},{\"clause\":\"ADD-OK-02@v1/s2/c1\",\"atoms\":[{\"attribute\":\"complaint_resolve\",\"value\":{\"type\":\"duration\",\"n\":30,\"unit\":\"business_days\"},\"quote\":\"30 business days\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":\"In Oklahoma branches\",\"condition\":\"or tell the customer when to expect a resolution\"}]},{\"clause\":\"ADD-OK-08@v3/s2/c2\",\"atoms\":[{\"attribute\":\"complaint_resolve\",\"value\":{\"type\":\"duration\",\"n\":30,\"unit\":\"business_days\"},\"quote\":\"30 business days\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":\"In Oklahoma branches\",\"condition\":\"or tell the customer when to expect a resolution\"}]},{\"clause\":\"ADD-OK-09@v1/s2/c3\",\"atoms\":[{\"attribute\":\"complaint_resolve\",\"value\":{\"type\":\"duration\",\"n\":10,\"unit\":\"business_days\"},\"quote\":\"10 business days\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":\"In Oklahoma branches\",\"condition\":\"or tell the customer when to expect a resolution\"}]},{\"clause\":\"ADD-OK-10@v2/s2/c4\",\"atoms\":[{\"attribute\":\"complaint_resolve\",\"value\":{\"type\":\"duration\",\"n\":30,\"unit\":\"business_days\"},\"quote\":\"30 business days\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":\"In Oklahoma branches\",\"condition\":\"or tell the customer when to expect a resolution\"}]},{\"clause\":\"ADD-TX-02@v3/s2/c2\",\"atoms\":[{\"attribute\":\"complaint_resolve\",\"value\":{\"type\":\"duration\",\"n\":10,\"unit\":\"business_days\"},\"quote\":\"10 business days\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":\"In Texas branches\",\"condition\":\"or tell the customer when to expect a resolution\"}]},{\"clause\":\"ADD-TX-09@v2/s2/c3\",\"atoms\":[{\"attribute\":\"complaint_resolve\",\"value\":{\"type\":\"duration\",\"n\":30,\"unit\":\"business_days\"},\"quote\":\"30 business days\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":\"In Texas branches\",\"condition\":\"or tell the customer when to expect a resolution\"}]},{\"clause\":\"BUL-AOP-01@v3/s1/c2\",\"atoms\":[{\"attribute\":\"ao_exception_approver\",\"value\":{\"type\":\"role\",\"role\":\"operations_specialist\"},\"quote\":\"operations specialist\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]},{\"clause\":\"BUL-AOP-01@v4/s1/c2\",\"atoms\":[{\"attribute\":\"ao_exception_approver\",\"value\":{\"type\":\"role\",\"role\":\"branch_manager\"},\"quote\":\"branch manager\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]},{\"clause\":\"BUL-AOP-102@v3/s1/c2\",\"atoms\":[{\"attribute\":\"ao_exception_approver\",\"value\":{\"type\":\"role\",\"role\":\"branch_manager\"},\"quote\":\"branch manager\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]}]}",
+   "problems": [],
+   "meta": {
+    "ms": 11421,
+    "input_tokens": 2777,
+    "output_tokens": 1049,
+    "cost_usd": 0.000802,
+    "usage": {
+     "prompt_tokens": 2777,
+     "completion_tokens": 1049,
+     "total_tokens": 3826,
+     "prompt_tokens_details": {
+      "cached_tokens": 1728,
+      "cache_write_tokens": 1046,
+      "audio_tokens": 0
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 286,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+     }
+    },
+    "models": [
+     "gpt-6-luna"
+    ],
+    "stop_reason": "stop"
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T19:48:28+00:00"
+}

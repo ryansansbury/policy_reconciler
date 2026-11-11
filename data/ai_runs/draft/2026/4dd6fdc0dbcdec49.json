@@ -1,0 +1,270 @@
+{
+ "step": "draft",
+ "tag": "2026",
+ "model": "claude-opus",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "opus",
+  "client_context": true
+ },
+ "prompt_hash": "d412e32e9168de04c00c3959530ebecb6630d0f9092d4afc1f9c308a4695a32e",
+ "input": [
+  {
+   "group": "g-fdf90551",
+   "rule": "Approver for identification exceptions",
+   "attribute": "ao_exception_approver",
+   "type": "role",
+   "keep": {
+    "clause": "POL-AOP-01@v2/s3/c1",
+    "text": "Only the branch manager can approve an exception to the identification requirements.",
+    "heading": "Policy statements",
+    "document": {
+     "title": "Deposit Account Opening Policy",
+     "type": "policy",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "change": [
+    {
+     "clause": "BUL-AOP-01@v4/s1/c2",
+     "text": "Any exception to the identification requirements must be approved by a manager.",
+     "heading": "What branches need to know",
+     "document": {
+      "title": "Branch Bulletin 2025-30: Approver for identification exceptions",
+      "type": "bulletin",
+      "applies_to": "All branches. Consumer and small business accounts."
+     }
+    },
+    {
+     "clause": "FAQ-AOP-02@v2/s2/c1",
+     "text": "Only the regional manager can approve an exception to the identification requirements.",
+     "heading": "Who can approve an exception to the identification requirements?",
+     "document": {
+      "title": "Identification Questions from the Branches",
+      "type": "faq",
+      "applies_to": "All branches. Consumer and small business accounts."
+     }
+    },
+    {
+     "clause": "JA-AOP-02@v1/s1/c2",
+     "text": "Approver for identification exceptions | regional manager",
+     "heading": "Quick reference",
+     "document": {
+      "title": "Identification Checklist",
+      "type": "job_aid",
+      "applies_to": "All branches. Consumer and small business accounts."
+     }
+    }
+   ],
+   "allowed": {
+    "FAQ-AOP-01@v4/s3/c1#value": "branch manager",
+    "POL-AOP-01@v2/s3/c1#value": "branch manager"
+   },
+   "placeholder": "{clause:POL-AOP-01@v2/s3/c1#value}"
+  },
+  {
+   "group": "g-e45abd58",
+   "rule": "Forms of identification per signer",
+   "attribute": "ao_id_count",
+   "type": "count",
+   "keep": {
+    "clause": "POL-AOP-02@v2/s4/c1",
+    "text": "Do not open an account until you have verified two forms of identification for each signer, or one form plus a verified bank reference when the branch manager approves.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Customer Identification Policy",
+     "type": "policy",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "change": [
+    {
+     "clause": "FAQ-AOP-01@v4/s1/c1",
+     "text": "Collect two forms of identification from each signer before opening the account.",
+     "heading": "How many forms of identification does each signer need to open an account?",
+     "document": {
+      "title": "Account Opening FAQ",
+      "type": "faq",
+      "applies_to": "All branches. Consumer and small business accounts."
+     }
+    },
+    {
+     "clause": "FAQ-AOP-02@v2/s1/c1",
+     "text": "Do not open an account until you have verified two forms of identification for each signer.",
+     "heading": "How many forms of identification does each signer need to open an account?",
+     "document": {
+      "title": "Identification Questions from the Branches",
+      "type": "faq",
+      "applies_to": "All branches. Consumer and small business accounts."
+     }
+    },
+    {
+     "clause": "JA-AOP-02@v1/s1/c1",
+     "text": "Forms of identification per signer | two",
+     "heading": "Quick reference",
+     "document": {
+      "title": "Identification Checklist",
+      "type": "job_aid",
+      "applies_to": "All branches. Consumer and small business accounts."
+     }
+    },
+    {
+     "clause": "PRO-AOP-01@v3/s3/c1",
+     "text": "Every signer must present two separate identification documents before the account is opened.",
+     "heading": "Steps",
+     "document": {
+      "title": "Opening a Consumer Checking Account",
+      "type": "procedure",
+      "applies_to": "All branches. Consumer accounts."
+     }
+    },
+    {
+     "clause": "PRO-AOP-02@v4/s3/c6",
+     "text": "Do not open an account until you have verified two forms of identification for each signer.",
+     "heading": "Steps",
+     "document": {
+      "title": "Opening a Savings Account",
+      "type": "procedure",
+      "applies_to": "All branches. Consumer and small business accounts."
+     }
+    },
+    {
+     "clause": "PRO-AOP-03@v4/s3/c5",
+     "text": "Every signer must present one separate identification documents before the account is opened.",
+     "heading": "Steps",
+     "document": {
+      "title": "Opening a Small Business Account",
+      "type": "procedure",
+      "applies_to": "All branches. Small business accounts."
+     }
+    },
+    {
+     "clause": "PRO-AOP-04@v4/s3/c6",
+     "text": "Every signer must present two separate identification documents before the account is opened.",
+     "heading": "Steps",
+     "document": {
+      "title": "Verifying Customer Identification",
+      "type": "procedure",
+      "applies_to": "All branches. Consumer and small business accounts."
+     }
+    }
+   ],
+   "allowed": {
+    "FAQ-AOP-01@v4/s1/c1#value": "two",
+    "FAQ-AOP-02@v2/s1/c1#value": "two",
+    "JA-AOP-02@v1/s1/c1#value": "two",
+    "POL-AOP-01@v2/s4/c2#value": "two",
+    "POL-AOP-02@v2/s4/c1#v2": "one",
+    "POL-AOP-02@v2/s4/c1#value": "two",
+    "PRO-AOP-01@v3/s3/c1#value": "two",
+    "PRO-AOP-02@v4/s3/c6#value": "two",
+    "PRO-AOP-04@v4/s3/c6#value": "two"
+   },
+   "placeholder": "{clause:POL-AOP-02@v2/s4/c1#value}"
+  },
+  {
+   "group": "g-2cac3e43",
+   "rule": "Minimum opening deposit",
+   "attribute": "ao_min_deposit",
+   "type": "money",
+   "keep": {
+    "clause": "POL-AOP-01@v2/s3/c2",
+    "text": "The minimum opening deposit for a consumer checking account is $25.",
+    "heading": "Policy statements",
+    "document": {
+     "title": "Deposit Account Opening Policy",
+     "type": "policy",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "change": [
+    {
+     "clause": "FAQ-AOP-01@v4/s2/c1",
+     "text": "The minimum opening deposit for a consumer checking account is $100.",
+     "heading": "What is the minimum deposit to open a consumer checking account?",
+     "document": {
+      "title": "Account Opening FAQ",
+      "type": "faq",
+      "applies_to": "All branches. Consumer and small business accounts."
+     }
+    },
+    {
+     "clause": "JA-AOP-03@v4/s1/c2",
+     "text": "Minimum opening deposit for consumer checking | $50",
+     "heading": "Quick reference",
+     "document": {
+      "title": "Account Opening Desk Card",
+      "type": "job_aid",
+      "applies_to": "All branches. Consumer and small business accounts."
+     }
+    }
+   ],
+   "allowed": {
+    "BUL-AOP-01@v4/s2/c3#value": "$25",
+    "BUL-AOP-01@v4/s3/c4#value": "$25",
+    "JA-AOP-01@v3/s1/c1#value": "$25",
+    "POL-AOP-01@v2/s3/c2#value": "$25",
+    "PRO-AOP-01@v3/s3/c2#value": "$25",
+    "PRO-AOP-01@v3/s5/c4#value": "$25",
+    "PRO-AOP-04@v4/s3/c8#value": "$25",
+    "PRO-AOP-05@v1/s3/c4#value": "$25",
+    "PRO-AOP-06@v2/s3/c7#value": "$25"
+   },
+   "placeholder": "{clause:POL-AOP-01@v2/s3/c2#value}"
+  }
+ ],
+ "input_hash": "02962a991d422731071829cf46c7a9711db9c8e78677faf84727aefc03bfce8c",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [{\"group\": \"g-fdf90551\", \"title\": \"Approving identification exceptions\", \"text\": \"Only the {clause:POL-AOP-01@v2/s3/c1#value} can approve an exception to the identification requirements.\"}, {\"group\": \"g-e45abd58\", \"title\": \"Identification for each signer\", \"text\": \"Do not open an account until you have verified {clause:POL-AOP-02@v2/s4/c1#value} forms of identification for each signer. When the branch manager approves, you can instead accept {clause:POL-AOP-02@v2/s4/c1#v2} form of identification plus a verified bank reference.\"}, {\"group\": \"g-2cac3e43\", \"title\": \"Minimum deposit for consumer checking\", \"text\": \"The minimum opening deposit for a consumer checking account is {clause:POL-AOP-01@v2/s3/c2#value}.\"}]}",
+   "problems": [],
+   "meta": {
+    "ms": 6547,
+    "api_ms": 6400,
+    "input_tokens": 8916,
+    "output_tokens": 704,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 8914,
+     "cache_read_input_tokens": 0,
+     "output_tokens": 704,
+     "output_tokens_details": {
+      "thinking_tokens": 411
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 8914,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 704,
+       "cache_read_input_tokens": 0,
+       "cache_creation_input_tokens": 8914,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 8914
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.0854,
+    "models": [
+     "claude-opus-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T05:57:22+00:00"
+}

@@ -1,0 +1,149 @@
+{
+ "step": "extract",
+ "tag": "cmp-6101",
+ "model": "openai-b",
+ "backend": {
+  "vendor": "OpenAI",
+  "model": "gpt-6-luna",
+  "label": "GPT-6 Luna"
+ },
+ "prompt_hash": "dcc761e46c6ec579c01b9dfd540df3c2fa4bba3b6b5ec777aa2cf9c9c62aa411",
+ "input": [
+  {
+   "clause": "PRO-BOP-06@v3/s3/c6",
+   "text": "A single opener may unlock the branch if the second opener is delayed.",
+   "heading": "Steps",
+   "document": {
+    "title": "After-Hours Branch Access",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-CMP-03@v1/s3/c7",
+   "text": "Complaints that allege unfair treatment are escalated to the compliance officer the same day.",
+   "heading": "Steps",
+   "document": {
+    "title": "Resolving and Closing a Complaint",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-CMP-05@v1/s3/c4",
+   "text": "Escalate any complaint alleging unfair treatment to management on the day it is received.",
+   "heading": "Steps",
+   "document": {
+    "title": "Reviewing Complaint Trends Each Quarter",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-CSH-01@v1/s3/c1",
+   "text": "Log any cash deposit or withdrawal of $5,000 or more for large-cash review.",
+   "heading": "Steps",
+   "document": {
+    "title": "Balancing a Teller Drawer",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-CSH-07@v3/s4/c2",
+   "text": "Cash transactions of $9,000 or more go to the large-cash review queue the same day.",
+   "heading": "Exceptions and escalation",
+   "document": {
+    "title": "Counting Cash Under Dual Control",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-DRM-03@v1/s5/c2",
+   "text": "Classify accounts as dormant after 12 months without customer-initiated activity.",
+   "heading": "Steps to follow",
+   "document": {
+    "title": "Reactivating a Dormant Account",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "PRO-DRM-04@v3/s3/c5",
+   "text": "Mail the customer a notice at least 30 days before the account is classified as dormant.",
+   "heading": "Steps",
+   "document": {
+    "title": "Charging Dormant Account Fees",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "PRO-DSP-02@v4/s3/c5",
+   "text": "Disputes over $1,000 are reviewed by a card services specialist before credit is issued.",
+   "heading": "Steps",
+   "document": {
+    "title": "Issuing Provisional Credit",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "PRO-DSP-06@v3/s3/c7",
+   "text": "Provisional credit is issued within 5 business days of receiving a completed dispute.",
+   "heading": "Steps",
+   "document": {
+    "title": "Large Dispute Review",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "PRO-FEE-06@v2/s3/c1",
+   "text": "Customers may request a fee refund within 90 days of the statement date.",
+   "heading": "Steps",
+   "document": {
+    "title": "Explaining Fees to a New Customer",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  }
+ ],
+ "input_hash": "08fe4c0007a33d4b347262ca5e8ed288ec6a7d9fe86f21340e900d7f9c5b49a5",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\":[{\"clause\":\"PRO-BOP-06@v3/s3/c6\",\"atoms\":[{\"attribute\":\"branch_open_dual\",\"value\":{\"type\":\"modal\",\"modal\":\"may\"},\"quote\":\"may\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":\"if the second opener is delayed\"}]},{\"clause\":\"PRO-CMP-03@v1/s3/c7\",\"atoms\":[{\"attribute\":\"complaint_escalation_role\",\"value\":{\"type\":\"role\",\"role\":\"compliance_officer\"},\"quote\":\"compliance officer\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":\"Complaints that allege unfair treatment\",\"condition\":null}]},{\"clause\":\"PRO-CMP-05@v1/s3/c4\",\"atoms\":[{\"attribute\":\"complaint_escalation_role\",\"value\":{\"type\":\"role\",\"role\":null,\"generic\":\"management\"},\"quote\":\"management\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":\"any complaint alleging unfair treatment\",\"condition\":null}]},{\"clause\":\"PRO-CSH-01@v1/s3/c1\",\"atoms\":[{\"attribute\":\"cash_review_threshold\",\"value\":{\"type\":\"money\",\"dollars\":5000},\"quote\":\"$5,000 or more\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]},{\"clause\":\"PRO-CSH-07@v3/s4/c2\",\"atoms\":[{\"attribute\":\"cash_review_threshold\",\"value\":{\"type\":\"money\",\"dollars\":9000},\"quote\":\"$9,000 or more\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]},{\"clause\":\"PRO-DRM-03@v1/s5/c2\",\"atoms\":[{\"attribute\":\"dormant_inactivity\",\"value\":{\"type\":\"duration\",\"n\":12,\"unit\":\"months\"},\"quote\":\"12 months\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":\"without customer-initiated activity\"}]},{\"clause\":\"PRO-DRM-04@v3/s3/c5\",\"atoms\":[{\"attribute\":\"dormant_notice\",\"value\":{\"type\":\"duration\",\"n\":30,\"unit\":\"days\"},\"quote\":\"30 days\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]},{\"clause\":\"PRO-DSP-02@v4/s3/c5\",\"atoms\":[{\"attribute\":\"dispute_review_threshold\",\"value\":{\"type\":\"money\",\"dollars\":1000},\"quote\":\"$1,000\",\"actor\":\"card_services_specialist\",\"actor_inferred\":false,\"scope_quote\":null,\"condition\":\"before credit is issued\"}]},{\"clause\":\"PRO-DSP-06@v3/s3/c7\",\"atoms\":[{\"attribute\":\"dispute_provisional_credit\",\"value\":{\"type\":\"duration\",\"n\":5,\"unit\":\"business_days\"},\"quote\":\"5 business days\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]},{\"clause\":\"PRO-FEE-06@v2/s3/c1\",\"atoms\":[{\"attribute\":\"fee_refund_window\",\"value\":{\"type\":\"duration\",\"n\":90,\"unit\":\"days\"},\"quote\":\"90 days\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]}]}",
+   "problems": [],
+   "meta": {
+    "ms": 25080,
+    "input_tokens": 2678,
+    "output_tokens": 2036,
+    "cost_usd": 0.001286,
+    "usage": {
+     "prompt_tokens": 2678,
+     "completion_tokens": 2036,
+     "total_tokens": 4714,
+     "prompt_tokens_details": {
+      "cached_tokens": 1728,
+      "cache_write_tokens": 947,
+      "audio_tokens": 0
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 1318,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+     }
+    },
+    "models": [
+     "gpt-6-luna"
+    ],
+    "stop_reason": "stop"
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T17:21:45+00:00"
+}

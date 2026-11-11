@@ -1,0 +1,149 @@
+{
+ "step": "extract",
+ "tag": "sample-9001",
+ "model": "openai-b",
+ "backend": {
+  "vendor": "OpenAI",
+  "model": "gpt-6-luna",
+  "label": "GPT-6 Luna"
+ },
+ "prompt_hash": "dcc761e46c6ec579c01b9dfd540df3c2fa4bba3b6b5ec777aa2cf9c9c62aa411",
+ "input": [
+  {
+   "clause": "BUL-CMP-81@v3/s1/c2",
+   "text": "Complaints that allege unfair treatment are escalated to management the same day.",
+   "heading": "What branches need to know",
+   "document": {
+    "title": "Branch Bulletin 2025-39: Escalation for unfair treatment complaints (5)",
+    "type": "bulletin",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "BUL-CSH-01@v4/s2/c1",
+   "text": "Report any shortage or overage to the head teller prior to you leave for the day.",
+   "heading": "Steps to follow",
+   "document": {
+    "title": "Branch Bulletin 2025-38: Dual control for the vault (1)",
+    "type": "bulletin",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "BUL-CSH-01@v4/s2/c2",
+   "text": "Keep your drawer locked whenever you step away from the teller line.",
+   "heading": "Steps to follow",
+   "document": {
+    "title": "Branch Bulletin 2025-38: Dual control for the vault (1)",
+    "type": "bulletin",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "BUL-CSH-01@v4/s2/c3",
+   "text": "Use the counterfeit detection pen on bills of fifty dollars or more.",
+   "heading": "Steps to follow",
+   "document": {
+    "title": "Branch Bulletin 2025-38: Dual control for the vault (1)",
+    "type": "bulletin",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "BUL-CSH-102@v1/s2/c2",
+   "text": "Keep your drawer locked whenever you step away from the teller line.",
+   "heading": "Steps to follow",
+   "document": {
+    "title": "Branch Bulletin 2026-30: Teller drawer cash limit (6)",
+    "type": "bulletin",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "BUL-CSH-102@v1/s3/c3",
+   "text": "Use the counterfeit detection pen on bills of fifty dollars or more.",
+   "heading": "Steps to follow",
+   "document": {
+    "title": "Branch Bulletin 2026-30: Teller drawer cash limit (6)",
+    "type": "bulletin",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "BUL-CSH-81@v1/s2/c1",
+   "text": "Use the counterfeit detection pen on bills of fifty dollars or more.",
+   "heading": "Steps to follow",
+   "document": {
+    "title": "Branch Bulletin 2025-37: Dual control for the vault (5)",
+    "type": "bulletin",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "BUL-FEE-01@v4/s2/c2",
+   "text": "Each account may receive no more than two fee waivers in a calendar year.",
+   "heading": "Steps to follow",
+   "document": {
+    "title": "Branch Bulletin 2025-30: Personal banker fee waiver limit (1)",
+    "type": "bulletin",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "BUL-FEE-01@v4/s2/c3",
+   "text": "Review recurring waiver requests with the branch manager at the monthly meeting.",
+   "heading": "Steps to follow",
+   "document": {
+    "title": "Branch Bulletin 2025-30: Personal banker fee waiver limit (1)",
+    "type": "bulletin",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "BUL-FEE-102@v2/s1/c2",
+   "text": "Each account may receive no more than two fee waivers in a calendar year.",
+   "heading": "What branches need to know",
+   "document": {
+    "title": "Branch Bulletin 2026-29: Fee waivers per account per year (6)",
+    "type": "bulletin",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  }
+ ],
+ "input_hash": "4d6f4550ddf2f7325a50ad8c8cea192458c98b25bb4d378376c5e7f1142884b6",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\":[{\"clause\":\"BUL-CMP-81@v3/s1/c2\",\"atoms\":[{\"attribute\":\"complaint_escalation_role\",\"value\":{\"type\":\"role\",\"role\":null,\"generic\":\"management\"},\"quote\":\"management\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]},{\"clause\":\"BUL-CSH-01@v4/s2/c1\",\"atoms\":[]},{\"clause\":\"BUL-CSH-01@v4/s2/c2\",\"atoms\":[]},{\"clause\":\"BUL-CSH-01@v4/s2/c3\",\"atoms\":[]},{\"clause\":\"BUL-CSH-102@v1/s2/c2\",\"atoms\":[]},{\"clause\":\"BUL-CSH-102@v1/s3/c3\",\"atoms\":[]},{\"clause\":\"BUL-CSH-81@v1/s2/c1\",\"atoms\":[]},{\"clause\":\"BUL-FEE-01@v4/s2/c2\",\"atoms\":[{\"attribute\":\"fee_waivers_per_year\",\"value\":{\"type\":\"count\",\"n\":2},\"quote\":\"two\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]},{\"clause\":\"BUL-FEE-01@v4/s2/c3\",\"atoms\":[]},{\"clause\":\"BUL-FEE-102@v2/s1/c2\",\"atoms\":[{\"attribute\":\"fee_waivers_per_year\",\"value\":{\"type\":\"count\",\"n\":2},\"quote\":\"two\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]}]}",
+   "problems": [],
+   "meta": {
+    "ms": 7619,
+    "input_tokens": 2779,
+    "output_tokens": 628,
+    "cost_usd": 0.000592,
+    "usage": {
+     "prompt_tokens": 2779,
+     "completion_tokens": 628,
+     "total_tokens": 3407,
+     "prompt_tokens_details": {
+      "cached_tokens": 1728,
+      "cache_write_tokens": 1048,
+      "audio_tokens": 0
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 280,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+     }
+    },
+    "models": [
+     "gpt-6-luna"
+    ],
+    "stop_reason": "stop"
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T19:48:24+00:00"
+}

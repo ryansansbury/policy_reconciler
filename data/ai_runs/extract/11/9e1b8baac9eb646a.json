@@ -1,0 +1,133 @@
+{
+ "step": "extract",
+ "tag": "11",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "c338e60b657607c5f659b819665f2ec94796d01ec070e1f88f830e5bdacdd3fe",
+ "input": [
+  {
+   "clause": "PRO-CMP-05@v1/s3/c8",
+   "text": "Resolve complaints within 15 business days of receipt, or tell the customer when to expect a resolution.",
+   "heading": "Steps",
+   "document": {
+    "title": "Reviewing Complaint Trends Each Quarter",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-CSH-01@v1/s1/c1",
+   "text": "This procedure covers balancing a Teller Drawer, step by step, for every branch it applies to.",
+   "heading": "Purpose",
+   "document": {
+    "title": "Balancing a Teller Drawer",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-CSH-01@v1/s3/c2",
+   "text": "Report any shortage or overage to the head teller before you leave for the day.",
+   "heading": "Steps",
+   "document": {
+    "title": "Balancing a Teller Drawer",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-CSH-01@v1/s3/c3",
+   "text": "Keep your drawer locked whenever you step away from the teller line.",
+   "heading": "Steps",
+   "document": {
+    "title": "Balancing a Teller Drawer",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-CSH-01@v1/s3/c4",
+   "text": "Use the counterfeit detection pen on bills of fifty dollars or more.",
+   "heading": "Steps",
+   "document": {
+    "title": "Balancing a Teller Drawer",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-CSH-02@v2/s3/c2",
+   "text": "Report any shortage or overage to the head teller before you leave for the day.",
+   "heading": "Steps",
+   "document": {
+    "title": "Selling Excess Cash to the Vault",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-CSH-02@v2/s3/c6",
+   "text": "Keep your drawer locked whenever you step away from the teller line.",
+   "heading": "Steps",
+   "document": {
+    "title": "Selling Excess Cash to the Vault",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-CSH-02@v3/s3/c2",
+   "text": "Report any shortage or overage to the head teller before you leave for the day.",
+   "heading": "Steps",
+   "document": {
+    "title": "Selling Excess Cash to the Vault",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-CSH-02@v3/s3/c6",
+   "text": "Keep your drawer locked whenever you step away from the teller line.",
+   "heading": "Steps",
+   "document": {
+    "title": "Selling Excess Cash to the Vault",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-CSH-03@v2/s3/c2",
+   "text": "Keep your drawer locked whenever you step away from the teller line.",
+   "heading": "Steps",
+   "document": {
+    "title": "Opening and Closing the Vault",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  }
+ ],
+ "input_hash": "7275187d1154da17f127de0d4d0372e288c0f15dd843ef6b882840c4066b7935",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [{\"clause\": \"PRO-CMP-05@v1/s3/c8\", \"atoms\": [{\"attribute\": \"complaint_resolve\", \"value\": {\"type\": \"duration\", \"n\": 15, \"unit\": \"business_days\"}, \"quote\": \"15 business days\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": \"or tell the customer when to expect a resolution\"}]}, {\"clause\": \"PRO-CSH-01@v1/s1/c1\", \"atoms\": []}, {\"clause\": \"PRO-CSH-01@v1/s3/c2\", \"atoms\": []}, {\"clause\": \"PRO-CSH-01@v1/s3/c3\", \"atoms\": []}, {\"clause\": \"PRO-CSH-01@v1/s3/c4\", \"atoms\": []}, {\"clause\": \"PRO-CSH-02@v2/s3/c2\", \"atoms\": []}, {\"clause\": \"PRO-CSH-02@v2/s3/c6\", \"atoms\": []}, {\"clause\": \"PRO-CSH-02@v3/s3/c2\", \"atoms\": []}, {\"clause\": \"PRO-CSH-02@v3/s3/c6\", \"atoms\": []}, {\"clause\": \"PRO-CSH-03@v2/s3/c2\", \"atoms\": []}]}",
+   "problems": [],
+   "meta": {
+    "ms": 4591,
+    "api_ms": 4335,
+    "input_tokens": 2,
+    "output_tokens": 687,
+    "cost_usd": 0.031951,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T03:22:22+00:00"
+}

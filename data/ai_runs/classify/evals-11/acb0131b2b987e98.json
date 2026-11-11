@@ -1,0 +1,273 @@
+{
+ "step": "classify",
+ "tag": "evals-11",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "1346938ac1ecbf43874a700ab9916c851d6a29bb5d6b9e5f1199128bc8cd59f2",
+ "input": [
+  {
+   "pair": "pair-bd902a4249",
+   "rule": "Overdraft fee per item",
+   "attribute": "od_fee",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-ODR-05@v4/s3/c10",
+    "text": "Each item paid into overdraft is charged $30.",
+    "heading": "Steps",
+    "document": {
+     "title": "Closing an Overdrawn Account",
+     "type": "procedure",
+     "version": 4,
+     "effective": "2025-04-03",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "PRO-ODR-05@v4/s3/c12",
+    "text": "The bank charges $3 for each withdrawal at an ATM outside its network.",
+    "heading": "Steps",
+    "document": {
+     "title": "Closing an Overdrawn Account",
+     "type": "procedure",
+     "version": 4,
+     "effective": "2025-04-03",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-da2a6c6a25",
+   "rule": "Outgoing wire cutoff",
+   "attribute": "wire_cutoff",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "FAQ-WIR-02@v1/s1/c1",
+    "text": "The cutoff for outgoing consumer and small business wires is 3:00 p.m. Central time.",
+    "heading": "What is the cutoff for outgoing consumer wires?",
+    "document": {
+     "title": "Wire Cutoff Questions",
+     "type": "faq",
+     "version": 1,
+     "effective": "2026-07-25",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "FAQ-WIR-02@v1/s1/c3",
+    "text": "Incoming wires received by 4:30 p.m. Central are posted to the customer's account the same day.",
+    "heading": "What is the cutoff for outgoing consumer wires?",
+    "document": {
+     "title": "Wire Cutoff Questions",
+     "type": "faq",
+     "version": 1,
+     "effective": "2026-07-25",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-c2eae34ef5",
+   "rule": "Teller drawer limit",
+   "attribute": "cash_drawer_limit",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-CSH-05@v3/s3/c2",
+    "text": "A teller drawer may not hold more than $15,000 at any time.",
+    "heading": "Steps",
+    "document": {
+     "title": "Handling a Cash Shortage or Overage",
+     "type": "procedure",
+     "version": 3,
+     "effective": "2025-01-22",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "PRO-CSH-05@v3/s3/c8",
+    "text": "The daily ATM withdrawal limit for consumer debit cards is $800.",
+    "heading": "Steps",
+    "document": {
+     "title": "Handling a Cash Shortage or Overage",
+     "type": "procedure",
+     "version": 3,
+     "effective": "2025-01-22",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-f2a20d3773",
+   "rule": "Card authorization hold",
+   "attribute": "card_auth_hold",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "FAQ-HLD-02@v2/s1/c1",
+    "text": "Funds from deposited checks are available within 2 business days unless a longer hold applies.",
+    "heading": "How long is the standard hold on a deposited check?",
+    "document": {
+     "title": "Check Hold Questions from Customers",
+     "type": "faq",
+     "version": 2,
+     "effective": "2025-11-06",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "FAQ-HLD-02@v2/s1/c5",
+    "text": "An authorization hold that the merchant never settles releases within 3 business days.",
+    "heading": "How long is the standard hold on a deposited check?",
+    "document": {
+     "title": "Check Hold Questions from Customers",
+     "type": "faq",
+     "version": 2,
+     "effective": "2025-11-06",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-d80a4fa155",
+   "rule": "Standard check hold",
+   "attribute": "hold_standard",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "JA-HLD-03@v1/s1/c1",
+    "text": "Standard check hold | 2 business days",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Hold Notice Checklist",
+     "type": "job_aid",
+     "version": 1,
+     "effective": "2026-05-01",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "PRO-HLD-03@v1/s3/c7",
+    "text": "Place a standard hold of 2 business days on deposited checks that don't qualify for next-day availability.",
+    "heading": "Steps",
+    "document": {
+     "title": "Holds on New Accounts",
+     "type": "procedure",
+     "version": 1,
+     "effective": "2026-03-31",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-e31399bf8d",
+   "rule": "Outgoing wire cutoff",
+   "attribute": "wire_cutoff",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-WIR-03@v2/s3/c3",
+    "text": "Submit outgoing commercial wires by 4:00 p.m. Central for same-day processing.",
+    "heading": "Steps",
+    "document": {
+     "title": "Completing Wire Callback Verification",
+     "type": "procedure",
+     "version": 2,
+     "effective": "2025-01-04",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "PRO-WIR-07@v2/s3/c5",
+    "text": "Outgoing commercial wire requests received after 4:00 p.m. Central are processed the next business day.",
+    "heading": "Steps",
+    "document": {
+     "title": "Second Approval for Large Wires",
+     "type": "procedure",
+     "version": 2,
+     "effective": "2025-05-06",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-ec873353d4",
+   "rule": "Wire second approval threshold",
+   "attribute": "wire_second_approval",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-WIR-01@v4/s4/c2",
+    "text": "An operations manager must give a second approval for any outgoing wire above $50,000.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Wire Transfer Policy",
+     "type": "policy",
+     "version": 4,
+     "effective": "2025-04-29",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "PRO-WIR-07@v2/s3/c9",
+    "text": "An operations manager must give a second approval for any outgoing wire above $50,000.",
+    "heading": "Steps",
+    "document": {
+     "title": "Second Approval for Large Wires",
+     "type": "procedure",
+     "version": 2,
+     "effective": "2025-05-06",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-9977b3a8eb",
+   "rule": "Overdraft amount with no fee",
+   "attribute": "od_de_minimis",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "FAQ-ODR-02@v1/s2/c1",
+    "text": "No overdraft fee is charged when the account is overdrawn by $10 or less at the end of the day.",
+    "heading": "How much can an account be overdrawn without a fee?",
+    "document": {
+     "title": "Overdraft Fee Questions from Customers",
+     "type": "faq",
+     "version": 1,
+     "effective": "2026-03-27",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "PRO-ODR-02@v1/s3/c6",
+    "text": "Accounts overdrawn by no more than $10 at the end of the day are not charged an overdraft fee.",
+    "heading": "Steps",
+    "document": {
+     "title": "Assessing and Reversing Overdraft Fees",
+     "type": "procedure",
+     "version": 1,
+     "effective": "2026-02-08",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  }
+ ],
+ "input_hash": "2a53b06097c9b6cd05c9e336f19ad0c26626cbc3cf7526b01ae2986b41e1308f",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [{\"pair\": \"pair-bd902a4249\", \"label\": \"unrelated\", \"quote_a\": \"Each item paid into overdraft is charged $30.\", \"quote_b\": \"The bank charges $3 for each withdrawal at an ATM outside its network.\", \"rationale\": \"One clause sets an overdraft item fee and the other sets a fee for out of network ATM withdrawals. They govern different fees.\"}, {\"pair\": \"pair-da2a6c6a25\", \"label\": \"unrelated\", \"quote_a\": \"The cutoff for outgoing consumer and small business wires is 3:00 p.m. Central time.\", \"quote_b\": \"Incoming wires received by 4:30 p.m. Central are posted to the customer's account the same day.\", \"rationale\": \"One clause covers the cutoff for outgoing wires and the other covers when incoming wires post. They govern different processes.\"}, {\"pair\": \"pair-c2eae34ef5\", \"label\": \"unrelated\", \"quote_a\": \"A teller drawer may not hold more than $15,000 at any time.\", \"quote_b\": \"The daily ATM withdrawal limit for consumer debit cards is $800.\", \"rationale\": \"One clause limits cash held in a teller drawer and the other limits customer ATM withdrawals. They govern different things.\"}, {\"pair\": \"pair-f2a20d3773\", \"label\": \"unrelated\", \"quote_a\": \"Funds from deposited checks are available within 2 business days unless a longer hold applies.\", \"quote_b\": \"An authorization hold that the merchant never settles releases within 3 business days.\", \"rationale\": \"One clause covers availability of deposited check funds and the other covers release of unsettled card authorization holds. They are different holds with different triggers.\"}, {\"pair\": \"pair-d80a4fa155\", \"label\": \"duplicate\", \"quote_a\": \"Standard check hold | 2 business days\", \"quote_b\": \"Place a standard hold of 2 business days on deposited checks\", \"rationale\": \"Both clauses set the standard check hold at 2 business days. The job aid restates the procedure with nothing different that matters.\"}, {\"pair\": \"pair-e31399bf8d\", \"label\": \"consistent\", \"quote_a\": \"Submit outgoing commercial wires by 4:00 p.m. Central for same-day processing.\", \"quote_b\": \"Outgoing commercial wire requests received after 4:00 p.m. Central are processed the next business day.\", \"rationale\": \"Both clauses use the same 4:00 p.m. Central cutoff for outgoing commercial wires. One states the same-day side and the other states the next business day side, and staff acting on either would do the same thing.\"}, {\"pair\": \"pair-ec873353d4\", \"label\": \"duplicate\", \"quote_a\": \"An operations manager must give a second approval for any outgoing wire above $50,000.\", \"quote_b\": \"An operations manager must give a second approval for any outgoing wire above $50,000.\", \"rationale\": \"The policy and the procedure state the identical requirement with the same role and the same $50,000 threshold. Nothing differs that matters.\"}, {\"pair\": \"pair-9977b3a8eb\", \"label\": \"duplicate\", \"quote_a\": \"No overdraft fee is charged when the account is overdrawn by $10 or less at the end of the day.\", \"quote_b\": \"Accounts overdrawn by no more than $10 at the end of the day are not charged an overdraft fee.\", \"rationale\": \"Both clauses waive the overdraft fee when the account is overdrawn by $10 or less at the end of the day. The wording differs but the requirement is the same.\"}]}",
+   "problems": [],
+   "meta": {
+    "ms": 10135,
+    "api_ms": 9995,
+    "input_tokens": 2,
+    "output_tokens": 1661,
+    "cost_usd": 0.049684900000000004,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T03:26:37+00:00"
+}

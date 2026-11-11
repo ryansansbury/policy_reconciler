@@ -1,0 +1,96 @@
+{
+ "step": "assist",
+ "tag": "cmp-6101",
+ "model": "openai-a",
+ "backend": {
+  "vendor": "OpenAI",
+  "model": "gpt-6-astra",
+  "label": "GPT-6 Astra"
+ },
+ "prompt_hash": "66c01f0da9f327e74355d39363e55b642a1bbf8dc6249974c3afbf3cb3d6ccd5",
+ "input": [
+  {
+   "question": "q-C-05",
+   "text": "How long do customers have to request a fee refund?",
+   "type": "duration",
+   "clauses": [
+    {
+     "id": "FAQ-FEE-01@v2/s3/c1",
+     "text": "Customers may request a fee refund within 90 days of the statement date.",
+     "title": "Fee Waiver FAQ",
+     "type": "faq",
+     "version": 2,
+     "effective": "2026-05-25"
+    },
+    {
+     "id": "POL-FEE-01@v3/s4/c1",
+     "text": "Customers may request a fee refund within 60 days of the statement date.",
+     "title": "Service Fee Waiver Policy",
+     "type": "policy",
+     "version": 3,
+     "effective": "2024-08-03"
+    },
+    {
+     "id": "POL-FEE-02@v4/s4/c1",
+     "text": "Customers may request a fee refund within 60 days of the statement date.",
+     "title": "Fee Refund Policy",
+     "type": "policy",
+     "version": 4,
+     "effective": "2026-01-16"
+    },
+    {
+     "id": "PRO-FEE-02@v1/s3/c1",
+     "text": "Customers may request a fee refund within 60 days of the statement date.",
+     "title": "Reversing a Service Fee",
+     "type": "procedure",
+     "version": 1,
+     "effective": "2025-07-18"
+    },
+    {
+     "id": "PRO-FEE-06@v2/s3/c1",
+     "text": "Customers may request a fee refund within 90 days of the statement date.",
+     "title": "Explaining Fees to a New Customer",
+     "type": "procedure",
+     "version": 2,
+     "effective": "2025-11-04"
+    }
+   ]
+  }
+ ],
+ "input_hash": "af891539f45914b1188ead85d104134291af1a95d082130d46b8717878b940b0",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\":[{\"question\":\"q-C-05\",\"answer\":\"The sources disagree on the time customers have to request a fee refund. The Service Fee Waiver Policy, Fee Refund Policy and Reversing a Service Fee procedure give 60 days from the statement date, while the Fee Waiver FAQ and Explaining Fees to a New Customer procedure give 90 days from the statement date. The policies outrank the procedures and FAQ so follow the 60 day limit.\",\"citations\":[\"FAQ-FEE-01@v2/s3/c1\",\"POL-FEE-01@v3/s4/c1\",\"POL-FEE-02@v4/s4/c1\",\"PRO-FEE-02@v1/s3/c1\",\"PRO-FEE-06@v2/s3/c1\"],\"sources_disagree\":true}]}",
+   "problems": [],
+   "meta": {
+    "ms": 2435,
+    "input_tokens": 869,
+    "output_tokens": 173,
+    "cost_usd": 0.01734,
+    "usage": {
+     "prompt_tokens": 869,
+     "completion_tokens": 173,
+     "total_tokens": 1042,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+     }
+    },
+    "models": [
+     "gpt-6-astra"
+    ],
+    "stop_reason": "stop"
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T17:20:53+00:00"
+}

@@ -1,0 +1,366 @@
+{
+ "step": "classify",
+ "tag": "evals-11",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "2c908358fde9f0f4a792753579a6cfaa33476e41c4b0f235744675d8e8283a19",
+ "input": [
+  {
+   "pair": "pair-a9a4241566",
+   "rule": "Closed account record retention",
+   "attribute": "records_retention",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "JA-REC-01@v3/s1/c1",
+    "text": "Retention for closed account records | 7 years",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Records Retention Schedule Card",
+     "type": "job_aid",
+     "version": 3,
+     "effective": "2026-01-25",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "PRO-REC-05@v1/s3/c4",
+    "text": "Account records are kept for 7 years after the account closes.",
+    "heading": "Steps",
+    "document": {
+     "title": "Shipping Records to Offsite Storage",
+     "type": "procedure",
+     "version": 1,
+     "effective": "2026-03-28",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-94a62fbc58",
+   "rule": "Provisional credit deadline",
+   "attribute": "dispute_provisional_credit",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "BUL-DSP-02@v4/s1/c2",
+    "text": "Credit the customer provisionally no later than 10 business days after the dispute form is complete.",
+    "heading": "What branches need to know",
+    "document": {
+     "title": "Branch Bulletin 2026-33: Provisional credit deadline for disputes",
+     "type": "bulletin",
+     "version": 4,
+     "effective": "2026-03-19",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "PRO-DSP-02@v2/s3/c7",
+    "text": "Credit the customer provisionally no later than 10 business days after the dispute form is complete.",
+    "heading": "Steps",
+    "document": {
+     "title": "Issuing Provisional Credit",
+     "type": "procedure",
+     "version": 2,
+     "effective": "2026-07-22",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-f433934f8b",
+   "rule": "Overdraft fee per item",
+   "attribute": "od_fee",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "FAQ-ODR-01@v1/s1/c1",
+    "text": "An overdraft fee of $30 applies to each item the bank pays when the balance is not enough to cover it.",
+    "heading": "What is the overdraft fee?",
+    "document": {
+     "title": "Overdraft FAQ",
+     "type": "faq",
+     "version": 1,
+     "effective": "2025-12-05",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "JA-ODR-02@v1/s1/c1",
+    "text": "Overdraft fee per item | $30",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Overdraft Fee Desk Card",
+     "type": "job_aid",
+     "version": 1,
+     "effective": "2025-07-14",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-ab635a53d1",
+   "rule": "Unfair treatment escalation",
+   "attribute": "complaint_escalation_role",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "FAQ-CMP-01@v1/s2/c1",
+    "text": "Complaints that allege unfair treatment are escalated to the regional manager the same day.",
+    "heading": "Who handles a complaint that alleges unfair treatment?",
+    "document": {
+     "title": "Complaint Handling FAQ",
+     "type": "faq",
+     "version": 1,
+     "effective": "2026-06-27",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "PRO-CMP-02@v2/s3/c7",
+    "text": "Escalate any complaint alleging unfair treatment to the regional manager on the day it is received.",
+    "heading": "Steps",
+    "document": {
+     "title": "Acknowledging a Written Complaint",
+     "type": "procedure",
+     "version": 2,
+     "effective": "2026-03-24",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-5116944f06",
+   "rule": "Outgoing wire cutoff",
+   "attribute": "wire_cutoff",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-WIR-07@v2/s3/c3",
+    "text": "Outgoing consumer and small business wire requests received after 3:00 PM Central are processed the next business day.",
+    "heading": "Steps",
+    "document": {
+     "title": "Second Approval for Large Wires",
+     "type": "procedure",
+     "version": 2,
+     "effective": "2025-05-06",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "PRO-WIR-02@v3/s3/c7",
+    "text": "Only a wire specialist may complete the callback for an outgoing wire.",
+    "heading": "Steps",
+    "document": {
+     "title": "Processing Outgoing Commercial Wires",
+     "type": "procedure",
+     "version": 3,
+     "effective": "2025-10-11",
+     "applies_to": "All branches. Commercial accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-c13724f27f",
+   "rule": "Minimum opening deposit",
+   "attribute": "ao_min_deposit",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-AOP-07@v2/s3/c4",
+    "text": "A consumer checking account needs at least $25 to open.",
+    "heading": "Steps",
+    "document": {
+     "title": "Opening an Account for a Minor with a Custodian",
+     "type": "procedure",
+     "version": 2,
+     "effective": "2026-02-05",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "FAQ-AOP-01@v4/s2/c1",
+    "text": "Any exception to the identification requirements must be approved by the branch manager.",
+    "heading": "Who can approve an exception to the identification requirements?",
+    "document": {
+     "title": "Account Opening FAQ",
+     "type": "faq",
+     "version": 4,
+     "effective": "2026-01-08",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-614405e2e3",
+   "rule": "Inactivity before dormancy",
+   "attribute": "dormant_inactivity",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "FAQ-DRM-02@v4/s1/c1",
+    "text": "Classify accounts as dormant after 12 months without customer-initiated activity.",
+    "heading": "When does an account become dormant?",
+    "document": {
+     "title": "Reactivation Questions",
+     "type": "faq",
+     "version": 4,
+     "effective": "2026-05-12",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "JA-DRM-01@v3/s1/c2",
+    "text": "Notice before dormancy | 30 days",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Dormant Account Quick Reference",
+     "type": "job_aid",
+     "version": 3,
+     "effective": "2026-05-24",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-3ed8d92fdc",
+   "rule": "Dual control for the vault",
+   "attribute": "cash_vault_dual",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "JA-CSH-02@v2/s1/c2",
+    "text": "Dual control for the vault | Required",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Vault Opening Checklist",
+     "type": "job_aid",
+     "version": 2,
+     "effective": "2026-07-28",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "PRO-CSH-06@v4/s3/c4",
+    "text": "A teller drawer may not hold more than $15,000 at any time.",
+    "heading": "Steps",
+    "document": {
+     "title": "Ordering Cash Shipments",
+     "type": "procedure",
+     "version": 4,
+     "effective": "2026-04-08",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  }
+ ],
+ "input_hash": "fdb478a8acc2095362d3aeaa00776fbe1c71475599d378bca7614bb018bce127",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [{\"pair\": \"pair-a9a4241566\", \"label\": \"consistent\", \"quote_a\": \"Retention for closed account records | 7 years\", \"quote_b\": \"Account records are kept for 7 years after the account closes.\", \"rationale\": \"Both clauses set the same 7 year retention for closed account records. Staff following either one would act the same way.\"}, {\"pair\": \"pair-94a62fbc58\", \"label\": \"consistent\", \"quote_a\": \"Credit the customer provisionally no later than 10 business days after the dispute form is complete.\", \"quote_b\": \"Credit the customer provisionally no later than 10 business days after the dispute form is complete.\", \"rationale\": \"Both clauses state the same deadline of 10 business days from a complete dispute form. The scope is the same and the value matches, so nothing conflicts.\"}, {\"pair\": \"pair-f433934f8b\", \"label\": \"consistent\", \"quote_a\": \"An overdraft fee of $30 applies to each item the bank pays\", \"quote_b\": \"Overdraft fee per item | $30\", \"rationale\": \"Both clauses set the overdraft fee at $30 per item for the same accounts. The values agree.\"}, {\"pair\": \"pair-ab635a53d1\", \"label\": \"consistent\", \"quote_a\": \"Complaints that allege unfair treatment are escalated to the regional manager the same day.\", \"quote_b\": \"Escalate any complaint alleging unfair treatment to the regional manager on the day it is received.\", \"rationale\": \"Both clauses send unfair treatment complaints to the regional manager on the day received. The role and timing are the same.\"}, {\"pair\": \"pair-5116944f06\", \"label\": \"unrelated\", \"quote_a\": \"Outgoing consumer and small business wire requests received after 3:00 PM Central are processed the next business day.\", \"quote_b\": \"Only a wire specialist may complete the callback for an outgoing wire.\", \"rationale\": \"One clause sets a processing cutoff for outgoing wires. The other limits who may complete a callback. They govern different things.\"}, {\"pair\": \"pair-c13724f27f\", \"label\": \"unrelated\", \"quote_a\": \"A consumer checking account needs at least $25 to open.\", \"quote_b\": \"Any exception to the identification requirements must be approved by the branch manager.\", \"rationale\": \"One clause sets a minimum opening deposit. The other says who approves identification exceptions. They govern different things.\"}, {\"pair\": \"pair-614405e2e3\", \"label\": \"unrelated\", \"quote_a\": \"Classify accounts as dormant after 12 months without customer-initiated activity.\", \"quote_b\": \"Notice before dormancy | 30 days\", \"rationale\": \"One clause sets the inactivity period before an account is dormant. The other sets how far ahead the customer is notified. These are different rules and do not contradict each other.\"}, {\"pair\": \"pair-3ed8d92fdc\", \"label\": \"unrelated\", \"quote_a\": \"Dual control for the vault | Required\", \"quote_b\": \"A teller drawer may not hold more than $15,000 at any time.\", \"rationale\": \"One clause requires dual control for the vault. The other caps the cash a teller drawer may hold. They govern different things.\"}]}",
+   "problems": [
+    "pair-94a62fbc58: the rationale has a comma before so. End the sentence there and start the next one"
+   ],
+   "meta": {
+    "ms": 10618,
+    "api_ms": 10387,
+    "input_tokens": 9018,
+    "output_tokens": 1657,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 8175,
+     "cache_read_input_tokens": 841,
+     "output_tokens": 1657,
+     "output_tokens_details": {
+      "thinking_tokens": 613
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 8175,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 1657,
+       "cache_read_input_tokens": 841,
+       "cache_creation_input_tokens": 8175,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 8175
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.0493581,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  },
+  {
+   "reply": "{\"results\": [{\"pair\": \"pair-94a62fbc58\", \"label\": \"consistent\", \"quote_a\": \"Credit the customer provisionally no later than 10 business days after the dispute form is complete.\", \"quote_b\": \"Credit the customer provisionally no later than 10 business days after the dispute form is complete.\", \"rationale\": \"Both clauses set the same deadline of 10 business days after the dispute form is complete. This is a single sentence rule and not a copied run of steps, so the matching wording does not make it a duplicate. The two clauses are consistent.\"}]}",
+   "problems": [
+    "pair-94a62fbc58: the rationale has a comma before so. End the sentence there and start the next one"
+   ],
+   "meta": {
+    "ms": 4285,
+    "api_ms": 4076,
+    "input_tokens": 6237,
+    "output_tokens": 492,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 5394,
+     "cache_read_input_tokens": 841,
+     "output_tokens": 492,
+     "output_tokens_details": {
+      "thinking_tokens": 307
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 5394,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 492,
+       "cache_read_input_tokens": 841,
+       "cache_creation_input_tokens": 5394,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 5394
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.026584100000000003,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   },
+   "items": [
+    "pair-94a62fbc58"
+   ]
+  }
+ ],
+ "held": {
+  "pair-94a62fbc58": [
+   "the rationale has a comma before so. End the sentence there and start the next one"
+  ]
+ },
+ "recorded_at": "2026-10-30T03:56:31+00:00"
+}

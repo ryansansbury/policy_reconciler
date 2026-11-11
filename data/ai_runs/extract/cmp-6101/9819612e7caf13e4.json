@@ -1,0 +1,138 @@
+{
+ "step": "extract",
+ "tag": "cmp-6101",
+ "model": "google-a",
+ "backend": {
+  "vendor": "Google",
+  "model": "gemini-3.1-pro-preview",
+  "label": "Gemini 3.1 Pro"
+ },
+ "prompt_hash": "dcc761e46c6ec579c01b9dfd540df3c2fa4bba3b6b5ec777aa2cf9c9c62aa411",
+ "input": [
+  {
+   "clause": "ADD-CO-01@v1/s2/c1",
+   "text": "In Colorado branches, customers may request a fee refund within 30 days of the statement date.",
+   "heading": "Colorado requirements",
+   "document": {
+    "title": "Colorado Branch Addendum",
+    "type": "addendum",
+    "applies_to": "Colorado branches. All business lines."
+   }
+  },
+  {
+   "clause": "ADD-KS-01@v1/s2/c1",
+   "text": "In Kansas branches, retain closed account records for 5 years from the closing date.",
+   "heading": "Kansas requirements",
+   "document": {
+    "title": "Kansas Branch Addendum",
+    "type": "addendum",
+    "applies_to": "Kansas branches. All business lines."
+   }
+  },
+  {
+   "clause": "ADD-OK-01@v1/s2/c1",
+   "text": "In Oklahoma branches, resolve complaints within 30 business days of receipt, or tell the customer when to expect a resolution.",
+   "heading": "Oklahoma requirements",
+   "document": {
+    "title": "Oklahoma Branch Addendum",
+    "type": "addendum",
+    "applies_to": "Oklahoma branches. All business lines."
+   }
+  },
+  {
+   "clause": "ADD-TX-01@v1/s2/c1",
+   "text": "In Texas branches, mail the customer a notice at least 45 days before the account is classified as dormant.",
+   "heading": "Texas requirements",
+   "document": {
+    "title": "Texas Branch Addendum",
+    "type": "addendum",
+    "applies_to": "Texas branches. All business lines."
+   }
+  },
+  {
+   "clause": "BUL-AOP-01@v4/s1/c2",
+   "text": "Accounts open fewer than 90 days are new accounts for hold and limit purposes.",
+   "heading": "What branches need to know",
+   "document": {
+    "title": "Branch Bulletin 2025-34: How long an account counts as new",
+    "type": "bulletin",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "BUL-CSH-01@v1/s1/c2",
+   "text": "A teller drawer may not hold more than $10,000 at any time.",
+   "heading": "What branches need to know",
+   "document": {
+    "title": "Branch Bulletin 2025-04: Teller drawer cash limit",
+    "type": "bulletin",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "BUL-DSP-02@v3/s1/c2",
+   "text": "Disputes over $250 are reviewed by a card services specialist before credit is issued.",
+   "heading": "What branches need to know",
+   "document": {
+    "title": "Branch Bulletin 2026-18: Dispute amount that needs card services review",
+    "type": "bulletin",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "BUL-LND-01@v2/s1/c2",
+   "text": "Regional managers may approve rate exceptions of up to 0.75%.",
+   "heading": "What branches need to know",
+   "document": {
+    "title": "Branch Bulletin 2025-16: Regional manager rate exception limit",
+    "type": "bulletin",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "BUL-WIR-01@v2/s2/c2",
+   "text": "An operations manager must give a second approval for any outgoing wire above $50,000.",
+   "heading": "Steps to follow",
+   "document": {
+    "title": "Branch Bulletin 2025-24: Callback threshold for outgoing wires",
+    "type": "bulletin",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "FAQ-CMP-01@v3/s2/c1",
+   "text": "Complaints that allege unfair treatment are escalated to the branch manager the same day.",
+   "heading": "Who handles a complaint that alleges unfair treatment?",
+   "document": {
+    "title": "Complaint Handling FAQ",
+    "type": "faq",
+    "applies_to": "All branches. All business lines."
+   }
+  }
+ ],
+ "input_hash": "7df4b51461b43c862ddc60be7f4f68defa01ec3eb06941804c381826d8b41224",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "```json\n{\n \"results\": [\n  {\n   \"clause\": \"ADD-CO-01@v1/s2/c1\",\n   \"atoms\": [\n    {\n     \"attribute\": \"fee_refund_window\",\n     \"value\": {\n      \"type\": \"duration\",\n      \"n\": 30,\n      \"unit\": \"days\"\n     },\n     \"quote\": \"30 days\",\n     \"actor\": null,\n     \"actor_inferred\": false,\n     \"scope_quote\": \"In Colorado branches\",\n     \"condition\": null\n    }\n   ]\n  },\n  {\n   \"clause\": \"ADD-KS-01@v1/s2/c1\",\n   \"atoms\": [\n    {\n     \"attribute\": \"records_retention\",\n     \"value\": {\n      \"type\": \"duration\",\n      \"n\": 5,\n      \"unit\": \"years\"\n     },\n     \"quote\": \"5 years\",\n     \"actor\": null,\n     \"actor_inferred\": false,\n     \"scope_quote\": \"In Kansas branches\",\n     \"condition\": null\n    }\n   ]\n  },\n  {\n   \"clause\": \"ADD-OK-01@v1/s2/c1\",\n   \"atoms\": [\n    {\n     \"attribute\": \"complaint_resolve\",\n     \"value\": {\n      \"type\": \"duration\",\n      \"n\": 30,\n      \"unit\": \"business_days\"\n     },\n     \"quote\": \"30 business days\",\n     \"actor\": null,\n     \"actor_inferred\": false,\n     \"scope_quote\": \"In Oklahoma branches\",\n     \"condition\": \"or tell the customer when to expect a resolution\"\n    }\n   ]\n  },\n  {\n   \"clause\": \"ADD-TX-01@v1/s2/c1\",\n   \"atoms\": [\n    {\n     \"attribute\": \"dormant_notice\",\n     \"value\": {\n      \"type\": \"duration\",\n      \"n\": 45,\n      \"unit\": \"days\"\n     },\n     \"quote\": \"45 days\",\n     \"actor\": null,\n     \"actor_inferred\": false,\n     \"scope_quote\": \"In Texas branches\",\n     \"condition\": null\n    }\n   ]\n  },\n  {\n   \"clause\": \"BUL-AOP-01@v4/s1/c2\",\n   \"atoms\": [\n    {\n     \"attribute\": \"ao_new_account_window\",\n     \"value\": {\n      \"type\": \"duration\",\n      \"n\": 90,\n      \"unit\": \"days\"\n     },\n     \"quote\": \"90 days\",\n     \"actor\": null,\n     \"actor_inferred\": false,\n     \"scope_quote\": null,\n     \"condition\": null\n    }\n   ]\n  },\n  {\n   \"clause\": \"BUL-CSH-01@v1/s1/c2\",\n   \"atoms\": [\n    {\n     \"attribute\": \"cash_drawer_limit\",\n     \"value\": {\n      \"type\": \"money\",\n      \"dollars\": 10000\n     },\n     \"quote\": \"$10,000\",\n     \"actor\": \"teller\",\n     \"actor_inferred\": false,\n     \"scope_quote\": null,\n     \"condition\": null\n    }\n   ]\n  },\n  {\n   \"clause\": \"BUL-DSP-02@v3/s1/c2\",\n   \"atoms\": [\n    {\n     \"attribute\": \"dispute_review_threshold\",\n     \"value\": {\n      \"type\": \"money\",\n      \"dollars\": 250\n     },\n     \"quote\": \"$250\",\n     \"actor\": \"card_services_specialist\",\n     \"actor_inferred\": false,\n     \"scope_quote\": null,\n     \"condition\": \"before credit is issued\"\n    }\n   ]\n  },\n  {\n   \"clause\": \"BUL-LND-01@v2/s1/c2\",\n   \"atoms\": [\n    {\n     \"attribute\": \"lend_rate_rm\",\n     \"value\": {\n      \"type\": \"percent\",\n      \"bp\": 75\n     },\n     \"quote\": \"0.75%\",\n     \"actor\": \"regional_manager\",\n     \"actor_inferred\": false,\n     \"scope_quote\": null,\n     \"condition\": null\n    }\n   ]\n  },\n  {\n   \"clause\": \"BUL-WIR-01@v2/s2/c2\",\n   \"atoms\": [\n    {\n     \"attribute\": \"wire_second_approval\",\n     \"value\": {\n      \"type\": \"money\",\n      \"dollars\": 50000\n     },\n     \"quote\": \"$50,000\",\n     \"actor\": \"operations_manager\",\n     \"actor_inferred\": false,\n     \"scope_quote\": null,\n     \"condition\": null\n    }\n   ]\n  },\n  {\n   \"clause\": \"FAQ-CMP-01@v3/s2/c1\",\n   \"atoms\": [\n    {\n     \"attribute\": \"complaint_escalation_role\",\n     \"value\": {\n      \"type\": \"role\",\n      \"role\": \"branch_manager\"\n     },\n     \"quote\": \"branch manager\",\n     \"actor\": null,\n     \"actor_inferred\": false,\n     \"scope_quote\": null,\n     \"condition\": null\n    }\n   ]\n  }\n ]\n}\n```",
+   "problems": [],
+   "meta": {
+    "ms": 31808,
+    "input_tokens": 3073,
+    "output_tokens": 5260,
+    "cost_usd": 0.069266,
+    "usage": {
+     "completion_tokens": 1342,
+     "prompt_tokens": 3073,
+     "total_tokens": 8333
+    },
+    "models": [
+     "gemini-3.1-pro-preview"
+    ],
+    "stop_reason": "stop"
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T17:23:59+00:00"
+}

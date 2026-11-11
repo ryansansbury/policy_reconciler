@@ -1,0 +1,149 @@
+{
+ "step": "extract",
+ "tag": "2026",
+ "model": "openai-b",
+ "backend": {
+  "vendor": "OpenAI",
+  "model": "gpt-6-luna",
+  "label": "GPT-6 Luna"
+ },
+ "prompt_hash": "dcc761e46c6ec579c01b9dfd540df3c2fa4bba3b6b5ec777aa2cf9c9c62aa411",
+ "input": [
+  {
+   "clause": "PRO-WIR-02@v3/s3/c8",
+   "text": "Call the customer back at a phone number already on file before releasing any outgoing wire of $25,000 or more.",
+   "heading": "Steps",
+   "document": {
+    "title": "Processing Outgoing Commercial Wires",
+    "type": "procedure",
+    "applies_to": "All branches. Commercial accounts."
+   }
+  },
+  {
+   "clause": "PRO-WIR-02@v4/s3/c2",
+   "text": "Never accept wire instructions sent by email without verifying them by phone.",
+   "heading": "Steps",
+   "document": {
+    "title": "Processing Outgoing Commercial Wires",
+    "type": "procedure",
+    "applies_to": "All branches. Commercial accounts."
+   }
+  },
+  {
+   "clause": "PRO-WIR-02@v4/s3/c6",
+   "text": "An operations manager must give a second approval for any outgoing wire above $50,000.",
+   "heading": "Steps",
+   "document": {
+    "title": "Processing Outgoing Commercial Wires",
+    "type": "procedure",
+    "applies_to": "All branches. Commercial accounts."
+   }
+  },
+  {
+   "clause": "PRO-WIR-02@v4/s3/c8",
+   "text": "For commercial accounts, call the customer back at a phone number already on file before releasing any outgoing wire of $5,000 or more.",
+   "heading": "Steps",
+   "document": {
+    "title": "Processing Outgoing Commercial Wires",
+    "type": "procedure",
+    "applies_to": "All branches. Commercial accounts."
+   }
+  },
+  {
+   "clause": "PRO-WIR-03@v4/s3/c4",
+   "text": "Never accept wire instructions sent by email without verifying them by phone.",
+   "heading": "Steps",
+   "document": {
+    "title": "Completing Wire Callback Verification",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-WIR-03@v4/s3/c9",
+   "text": "Outgoing wires of $10,000 or more require a callback to the customer at a number already on file, unless the wire goes to an account the customer has used in the past year.",
+   "heading": "Steps",
+   "document": {
+    "title": "Completing Wire Callback Verification",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-WIR-03@v4/s5/c1",
+   "text": "Never accept wire instructions sent by email without verifying them by phone.",
+   "heading": "Steps to follow",
+   "document": {
+    "title": "Completing Wire Callback Verification",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-WIR-03@v4/s5/c3",
+   "text": "An operations manager must give a second approval for any outgoing wire above $50,000.",
+   "heading": "Steps to follow",
+   "document": {
+    "title": "Completing Wire Callback Verification",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-WIR-04@v1/s3/c5",
+   "text": "Never accept wire instructions sent by email without verifying them by phone.",
+   "heading": "Steps",
+   "document": {
+    "title": "Handling Incoming Wires",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-WIR-05@v4/s3/c4",
+   "text": "Callbacks are completed by a wire specialist, never by the employee who took the request.",
+   "heading": "Steps",
+   "document": {
+    "title": "Wire Cutoffs on Holidays and Weekends",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  }
+ ],
+ "input_hash": "eaa3d960874c5c8b22f68d5abd606b35ba5e10a42e5ba2b742c763b1c6d9c4b8",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\":[{\"clause\":\"PRO-WIR-02@v3/s3/c8\",\"atoms\":[{\"attribute\":\"wire_callback\",\"value\":{\"type\":\"money\",\"dollars\":25000},\"quote\":\"$25,000\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]},{\"clause\":\"PRO-WIR-02@v4/s3/c2\",\"atoms\":[]},{\"clause\":\"PRO-WIR-02@v4/s3/c6\",\"atoms\":[{\"attribute\":\"wire_second_approval\",\"value\":{\"type\":\"money\",\"dollars\":50000},\"quote\":\"$50,000\",\"actor\":\"operations_manager\",\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]},{\"clause\":\"PRO-WIR-02@v4/s3/c8\",\"atoms\":[{\"attribute\":\"wire_callback\",\"value\":{\"type\":\"money\",\"dollars\":5000},\"quote\":\"$5,000\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":\"For commercial accounts\",\"condition\":null}]},{\"clause\":\"PRO-WIR-03@v4/s3/c4\",\"atoms\":[]},{\"clause\":\"PRO-WIR-03@v4/s3/c9\",\"atoms\":[{\"attribute\":\"wire_callback\",\"value\":{\"type\":\"money\",\"dollars\":10000},\"quote\":\"$10,000\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":\"unless the wire goes to an account the customer has used in the past year\"}]},{\"clause\":\"PRO-WIR-03@v4/s5/c1\",\"atoms\":[]},{\"clause\":\"PRO-WIR-03@v4/s5/c3\",\"atoms\":[{\"attribute\":\"wire_second_approval\",\"value\":{\"type\":\"money\",\"dollars\":50000},\"quote\":\"$50,000\",\"actor\":\"operations_manager\",\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]},{\"clause\":\"PRO-WIR-04@v1/s3/c5\",\"atoms\":[]},{\"clause\":\"PRO-WIR-05@v4/s3/c4\",\"atoms\":[{\"attribute\":\"wire_callback_role\",\"value\":{\"type\":\"role\",\"role\":\"wire_specialist\"},\"quote\":\"wire specialist\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]}]}",
+   "problems": [],
+   "meta": {
+    "ms": 14843,
+    "input_tokens": 2684,
+    "output_tokens": 1197,
+    "cost_usd": 0.000867,
+    "usage": {
+     "prompt_tokens": 2684,
+     "completion_tokens": 1197,
+     "total_tokens": 3881,
+     "prompt_tokens_details": {
+      "cached_tokens": 1728,
+      "cache_write_tokens": 953,
+      "audio_tokens": 0
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 699,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+     }
+    },
+    "models": [
+     "gpt-6-luna"
+    ],
+    "stop_reason": "stop"
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T19:46:39+00:00"
+}

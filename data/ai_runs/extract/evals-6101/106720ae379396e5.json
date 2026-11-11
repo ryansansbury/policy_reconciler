@@ -1,0 +1,167 @@
+{
+ "step": "extract",
+ "tag": "evals-6101",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "dcc761e46c6ec579c01b9dfd540df3c2fa4bba3b6b5ec777aa2cf9c9c62aa411",
+ "input": [
+  {
+   "clause": "PRO-HLD-03@v2/s5/c5",
+   "text": "Debit card authorization holds drop off within 3 business days if the merchant does not settle the charge.",
+   "heading": "Steps to follow",
+   "document": {
+    "title": "Holds on New Accounts",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "PRO-HLD-05@v1/s3/c7",
+   "text": "Funds from deposited checks are available within 2 days unless a longer hold applies.",
+   "heading": "Steps",
+   "document": {
+    "title": "Explaining Holds to Customers",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "PRO-HLD-05@v1/s3/c8",
+   "text": "Records under a legal hold must not be destroyed until Compliance releases the hold in writing.",
+   "heading": "Steps",
+   "document": {
+    "title": "Explaining Holds to Customers",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "PRO-LND-02@v4/s3/c5",
+   "text": "Pricing exceptions may be documented in the loan file after closing if time is short.",
+   "heading": "Steps",
+   "document": {
+    "title": "Approving a Rate Exception",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-LND-03@v4/s3/c10",
+   "text": "For commercial accounts, branch managers may approve rate exceptions of up to 0.15%.",
+   "heading": "Steps",
+   "document": {
+    "title": "Documenting Pricing Exceptions",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-LND-04@v1/s3/c2",
+   "text": "Branch managers may approve rate exceptions of up to 0.50%.",
+   "heading": "Steps",
+   "document": {
+    "title": "Reviewing Exception Reports Each Month",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-ODR-01@v2/s3/c10",
+   "text": "Withdrawals at ATMs outside the network are charged $3 each.",
+   "heading": "Steps",
+   "document": {
+    "title": "Reviewing Overdrawn Accounts Each Morning",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "PRO-ODR-01@v2/s3/c5",
+   "text": "No overdraft fee is charged when the account is overdrawn by $25 or less at the end of the day.",
+   "heading": "Steps",
+   "document": {
+    "title": "Reviewing Overdrawn Accounts Each Morning",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "PRO-ODR-01@v2/s3/c9",
+   "text": "Each item paid into overdraft is charged $35.",
+   "heading": "Steps",
+   "document": {
+    "title": "Reviewing Overdrawn Accounts Each Morning",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "PRO-ODR-04@v3/s3/c2",
+   "text": "Each item paid into overdraft is charged $29.",
+   "heading": "Steps",
+   "document": {
+    "title": "Talking with Customers About Overdrafts",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  }
+ ],
+ "input_hash": "c7d9550765c33d5024dcb476f3bc9c008f040bbae43f9efdec6224c978eb0e49",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [{\"clause\": \"PRO-HLD-03@v2/s5/c5\", \"atoms\": [{\"attribute\": \"card_auth_hold\", \"value\": {\"type\": \"duration\", \"n\": 3, \"unit\": \"business_days\"}, \"quote\": \"3 business days\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": \"if the merchant does not settle the charge\"}]}, {\"clause\": \"PRO-HLD-05@v1/s3/c7\", \"atoms\": [{\"attribute\": \"hold_standard\", \"value\": {\"type\": \"duration\", \"n\": 2, \"unit\": \"days\"}, \"quote\": \"2 days\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": \"unless a longer hold applies\"}]}, {\"clause\": \"PRO-HLD-05@v1/s3/c8\", \"atoms\": [{\"attribute\": \"legal_hold\", \"value\": {\"type\": \"modal\", \"modal\": \"must_not\"}, \"quote\": \"must not be destroyed\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": \"until Compliance releases the hold in writing\"}]}, {\"clause\": \"PRO-LND-02@v4/s3/c5\", \"atoms\": [{\"attribute\": \"lend_exception_doc\", \"value\": {\"type\": \"modal\", \"modal\": \"may\"}, \"quote\": \"may be documented\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": \"if time is short\"}]}, {\"clause\": \"PRO-LND-03@v4/s3/c10\", \"atoms\": [{\"attribute\": \"lend_rate_bm\", \"value\": {\"type\": \"percent\", \"bp\": 15}, \"quote\": \"0.15%\", \"actor\": \"branch_manager\", \"actor_inferred\": false, \"scope_quote\": \"For commercial accounts\", \"condition\": null}]}, {\"clause\": \"PRO-LND-04@v1/s3/c2\", \"atoms\": [{\"attribute\": \"lend_rate_bm\", \"value\": {\"type\": \"percent\", \"bp\": 50}, \"quote\": \"0.50%\", \"actor\": \"branch_manager\", \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]}, {\"clause\": \"PRO-ODR-01@v2/s3/c10\", \"atoms\": [{\"attribute\": \"atm_fee\", \"value\": {\"type\": \"money\", \"dollars\": 3}, \"quote\": \"$3\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]}, {\"clause\": \"PRO-ODR-01@v2/s3/c5\", \"atoms\": [{\"attribute\": \"od_de_minimis\", \"value\": {\"type\": \"money\", \"dollars\": 25}, \"quote\": \"$25\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]}, {\"clause\": \"PRO-ODR-01@v2/s3/c9\", \"atoms\": [{\"attribute\": \"od_fee\", \"value\": {\"type\": \"money\", \"dollars\": 35}, \"quote\": \"$35\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]}, {\"clause\": \"PRO-ODR-04@v3/s3/c2\", \"atoms\": [{\"attribute\": \"od_fee\", \"value\": {\"type\": \"money\", \"dollars\": 29}, \"quote\": \"$29\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]}]}",
+   "problems": [],
+   "meta": {
+    "ms": 9382,
+    "api_ms": 9130,
+    "input_tokens": 8952,
+    "output_tokens": 1662,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 6268,
+     "cache_read_input_tokens": 2682,
+     "output_tokens": 1662,
+     "output_tokens_details": {
+      "thinking_tokens": 503
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 6268,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 1662,
+       "cache_read_input_tokens": 2682,
+       "cache_creation_input_tokens": 6268,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 6268
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.0419642,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T04:13:42+00:00"
+}

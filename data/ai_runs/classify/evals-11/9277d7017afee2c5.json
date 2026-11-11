@@ -1,0 +1,273 @@
+{
+ "step": "classify",
+ "tag": "evals-11",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "1346938ac1ecbf43874a700ab9916c851d6a29bb5d6b9e5f1199128bc8cd59f2",
+ "input": [
+  {
+   "pair": "pair-128cc40e64",
+   "rule": "Overdraft fee per item",
+   "attribute": "od_fee",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "BUL-ODR-02@v3/s2/c4",
+    "text": "Each item paid into overdraft is charged $30.",
+    "heading": "Steps to follow",
+    "document": {
+     "title": "Branch Bulletin 2026-35: Overdraft fees per account per day",
+     "type": "bulletin",
+     "version": 3,
+     "effective": "2026-06-05",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "BUL-ODR-02@v3/s2/c5",
+    "text": "Withdrawals at ATMs outside the network are charged $3 each.",
+    "heading": "Steps to follow",
+    "document": {
+     "title": "Branch Bulletin 2026-35: Overdraft fees per account per day",
+     "type": "bulletin",
+     "version": 3,
+     "effective": "2026-06-05",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-fa9c51b611",
+   "rule": "Outgoing wire cutoff",
+   "attribute": "wire_cutoff",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-WIR-01@v4/s3/c2",
+    "text": "Outgoing commercial wire requests received after 4:00 PM Central are processed the next business day.",
+    "heading": "Policy statements",
+    "document": {
+     "title": "Wire Transfer Policy",
+     "type": "policy",
+     "version": 4,
+     "effective": "2025-04-29",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "POL-WIR-01@v4/s3/c3",
+    "text": "Post incoming wires the same day when they arrive by 4:30 p.m. Central.",
+    "heading": "Policy statements",
+    "document": {
+     "title": "Wire Transfer Policy",
+     "type": "policy",
+     "version": 4,
+     "effective": "2025-04-29",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-eed02c53bb",
+   "rule": "Teller drawer limit",
+   "attribute": "cash_drawer_limit",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-CSH-01@v1/s3/c9",
+    "text": "A teller drawer may not hold more than $15,000 at any time.",
+    "heading": "Steps",
+    "document": {
+     "title": "Balancing a Teller Drawer",
+     "type": "procedure",
+     "version": 1,
+     "effective": "2026-07-30",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "PRO-CSH-01@v1/s3/c10",
+    "text": "The daily ATM withdrawal limit for consumer debit cards is $800.",
+    "heading": "Steps",
+    "document": {
+     "title": "Balancing a Teller Drawer",
+     "type": "procedure",
+     "version": 1,
+     "effective": "2026-07-30",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-887cdec56c",
+   "rule": "Card authorization hold",
+   "attribute": "card_auth_hold",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-HLD-02@v2/s3/c2",
+    "text": "Funds from deposited checks are available within 2 days unless a longer hold applies.",
+    "heading": "Steps",
+    "document": {
+     "title": "Extending a Hold on a Large Deposit",
+     "type": "procedure",
+     "version": 2,
+     "effective": "2026-06-01",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "PRO-HLD-02@v2/s3/c9",
+    "text": "An authorization hold that the merchant never settles releases within 3 business days.",
+    "heading": "Steps",
+    "document": {
+     "title": "Extending a Hold on a Large Deposit",
+     "type": "procedure",
+     "version": 2,
+     "effective": "2026-06-01",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-e3ea730bba",
+   "rule": "Provisional credit deadline",
+   "attribute": "dispute_provisional_credit",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-DSP-01@v3/s3/c4",
+    "text": "Credit the customer provisionally no later than 10 business days after the dispute form is complete.",
+    "heading": "Steps",
+    "document": {
+     "title": "Taking a Debit Card Dispute",
+     "type": "procedure",
+     "version": 3,
+     "effective": "2025-07-26",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "PRO-DSP-01@v3/s3/c10",
+    "text": "Tell customers a replacement card will arrive within 7 business days.",
+    "heading": "Steps",
+    "document": {
+     "title": "Taking a Debit Card Dispute",
+     "type": "procedure",
+     "version": 3,
+     "effective": "2025-07-26",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-2c5f205308",
+   "rule": "Complaint acknowledgment deadline",
+   "attribute": "complaint_ack",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-CMP-02@v2/s3/c1",
+    "text": "Send the customer an acknowledgment no later than 2 days after a written complaint arrives.",
+    "heading": "Steps",
+    "document": {
+     "title": "Acknowledging a Written Complaint",
+     "type": "procedure",
+     "version": 2,
+     "effective": "2026-03-24",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "PRO-CMP-02@v2/s3/c10",
+    "text": "Customer surveys go out within 5 business days of a branch visit.",
+    "heading": "Steps",
+    "document": {
+     "title": "Acknowledging a Written Complaint",
+     "type": "procedure",
+     "version": 2,
+     "effective": "2026-03-24",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-36ef15c542",
+   "rule": "Inactivity before dormancy",
+   "attribute": "dormant_inactivity",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "FAQ-DRM-01@v4/s1/c1",
+    "text": "An account with no customer-initiated activity for 12 months is classified as dormant.",
+    "heading": "When does an account become dormant?",
+    "document": {
+     "title": "Dormant Account FAQ",
+     "type": "faq",
+     "version": 4,
+     "effective": "2025-12-23",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "FAQ-DRM-01@v4/s1/c3",
+    "text": "Send dormant accounts one statement every 12 months.",
+    "heading": "When does an account become dormant?",
+    "document": {
+     "title": "Dormant Account FAQ",
+     "type": "faq",
+     "version": 4,
+     "effective": "2025-12-23",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-4f0b4f096a",
+   "rule": "Legal hold",
+   "attribute": "legal_hold",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "FAQ-HLD-02@v2/s1/c1",
+    "text": "Funds from deposited checks are available within 2 business days unless a longer hold applies.",
+    "heading": "How long is the standard hold on a deposited check?",
+    "document": {
+     "title": "Check Hold Questions from Customers",
+     "type": "faq",
+     "version": 2,
+     "effective": "2025-11-06",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "FAQ-HLD-02@v2/s1/c3",
+    "text": "Records under a legal hold must not be destroyed until Compliance releases the hold in writing.",
+    "heading": "How long is the standard hold on a deposited check?",
+    "document": {
+     "title": "Check Hold Questions from Customers",
+     "type": "faq",
+     "version": 2,
+     "effective": "2025-11-06",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  }
+ ],
+ "input_hash": "f70f2c2486ee517667abbea7d9989e628d29f7b5b7e7505bfa96bad5136fd325",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [{\"pair\": \"pair-128cc40e64\", \"label\": \"unrelated\", \"quote_a\": \"Each item paid into overdraft is charged $30.\", \"quote_b\": \"Withdrawals at ATMs outside the network are charged $3 each.\", \"rationale\": \"One clause sets the fee for items paid into overdraft and the other sets a fee for ATM withdrawals outside the network. They govern different fees.\"}, {\"pair\": \"pair-fa9c51b611\", \"label\": \"unrelated\", \"quote_a\": \"Outgoing commercial wire requests received after 4:00 PM Central are processed the next business day.\", \"quote_b\": \"Post incoming wires the same day when they arrive by 4:30 p.m. Central.\", \"rationale\": \"The first clause covers the cutoff for outgoing commercial wires and the second covers posting of incoming wires. They are separate processes with separate times.\"}, {\"pair\": \"pair-eed02c53bb\", \"label\": \"unrelated\", \"quote_a\": \"A teller drawer may not hold more than $15,000 at any time.\", \"quote_b\": \"The daily ATM withdrawal limit for consumer debit cards is $800.\", \"rationale\": \"One clause limits cash held in a teller drawer and the other limits daily ATM withdrawals on debit cards. They govern different things.\"}, {\"pair\": \"pair-887cdec56c\", \"label\": \"unrelated\", \"quote_a\": \"Funds from deposited checks are available within 2 days unless a longer hold applies.\", \"quote_b\": \"An authorization hold that the merchant never settles releases within 3 business days.\", \"rationale\": \"The first clause covers availability of funds from deposited checks and the second covers release of unsettled card authorization holds. They are different holds on different transactions.\"}, {\"pair\": \"pair-e3ea730bba\", \"label\": \"unrelated\", \"quote_a\": \"Credit the customer provisionally no later than 10 business days after the dispute form is complete.\", \"quote_b\": \"Tell customers a replacement card will arrive within 7 business days.\", \"rationale\": \"One clause sets the deadline for provisional credit and the other sets what staff tell customers about replacement card delivery. They govern different steps.\"}, {\"pair\": \"pair-2c5f205308\", \"label\": \"unrelated\", \"quote_a\": \"Send the customer an acknowledgment no later than 2 days after a written complaint arrives.\", \"quote_b\": \"Customer surveys go out within 5 business days of a branch visit.\", \"rationale\": \"The first clause covers acknowledging written complaints and the second covers sending surveys after branch visits. They govern different activities.\"}, {\"pair\": \"pair-36ef15c542\", \"label\": \"unrelated\", \"quote_a\": \"An account with no customer-initiated activity for 12 months is classified as dormant.\", \"quote_b\": \"Send dormant accounts one statement every 12 months.\", \"rationale\": \"One clause defines when an account becomes dormant and the other sets how often statements go to accounts already dormant. The matching 12 month figure measures different things.\"}, {\"pair\": \"pair-4f0b4f096a\", \"label\": \"unrelated\", \"quote_a\": \"Funds from deposited checks are available within 2 business days unless a longer hold applies.\", \"quote_b\": \"Records under a legal hold must not be destroyed until Compliance releases the hold in writing.\", \"rationale\": \"The first clause covers when deposited check funds become available and the second covers preserving records under a legal hold. They govern different subjects.\"}]}",
+   "problems": [],
+   "meta": {
+    "ms": 10466,
+    "api_ms": 10265,
+    "input_tokens": 2,
+    "output_tokens": 1620,
+    "cost_usd": 0.0491789,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T03:26:33+00:00"
+}

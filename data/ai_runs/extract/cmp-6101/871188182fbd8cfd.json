@@ -1,0 +1,149 @@
+{
+ "step": "extract",
+ "tag": "cmp-6101",
+ "model": "openai-b",
+ "backend": {
+  "vendor": "OpenAI",
+  "model": "gpt-6-luna",
+  "label": "GPT-6 Luna"
+ },
+ "prompt_hash": "dcc761e46c6ec579c01b9dfd540df3c2fa4bba3b6b5ec777aa2cf9c9c62aa411",
+ "input": [
+  {
+   "clause": "POL-FEE-01@v3/s3/c1",
+   "text": "A personal banker can waive no more than $25 for one account in a calendar year, or up to $50 with branch manager approval noted in the account.",
+   "heading": "Policy statements",
+   "document": {
+    "title": "Service Fee Waiver Policy",
+    "type": "policy",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "POL-HLD-01@v3/s4/c3",
+   "text": "Never destroy a record that is under a legal hold.",
+   "heading": "Additional requirements",
+   "document": {
+    "title": "Funds Availability Policy",
+    "type": "policy",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "POL-ODR-01@v2/s4/c2",
+   "text": "No overdraft fee is charged when the account is overdrawn by $10 or less at the end of the day.",
+   "heading": "Additional requirements",
+   "document": {
+    "title": "Overdraft Policy",
+    "type": "policy",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "POL-WIR-01@v2/s3/c3",
+   "text": "Incoming wires received by 4:30 p.m. Central are posted to the customer's account the same day.",
+   "heading": "Policy statements",
+   "document": {
+    "title": "Wire Transfer Policy",
+    "type": "policy",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-AOP-01@v2/s3/c1",
+   "text": "Collect two forms of identification from each signer before opening the account, or one form plus a verified bank reference when the branch manager approves.",
+   "heading": "Steps",
+   "document": {
+    "title": "Opening a Consumer Checking Account",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer accounts."
+   }
+  },
+  {
+   "clause": "PRO-AOP-04@v4/s3/c4",
+   "text": "Only the operations specialist can approve an exception to the identification requirements.",
+   "heading": "Steps",
+   "document": {
+    "title": "Verifying Customer Identification",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "PRO-AOP-05@v3/s3/c2",
+   "text": "Do not open an account until you have verified three forms of identification for each signer.",
+   "heading": "Steps",
+   "document": {
+    "title": "Adding a Signer to an Existing Account",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "PRO-AOP-06@v2/s3/c4",
+   "text": "Every signer must present one separate identification documents before the account is opened.",
+   "heading": "Steps",
+   "document": {
+    "title": "Handling Identification Exceptions",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "PRO-BOP-03@v2/s5/c2",
+   "text": "Vault combinations are changed every 6 months and whenever an employee who knows the combination leaves.",
+   "heading": "Steps to follow",
+   "document": {
+    "title": "Changing Vault Combinations",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-BOP-04@v3/s5/c3",
+   "text": "Vault combinations are changed every 6 months and whenever an employee who knows the combination leaves.",
+   "heading": "Steps to follow",
+   "document": {
+    "title": "Testing the Alarm System",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  }
+ ],
+ "input_hash": "58b9c8d4bf8b345e9c4fa7c58ab0dd511744db62eb2cd274c17978c8e6e4543a",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\":[{\"clause\":\"POL-FEE-01@v3/s3/c1\",\"atoms\":[{\"attribute\":\"fee_waiver_pb\",\"value\":{\"type\":\"money\",\"dollars\":25},\"quote\":\"$25\",\"actor\":\"personal_banker\",\"actor_inferred\":false,\"scope_quote\":null,\"condition\":\"or up to $50 with branch manager approval noted in the account\"}]},{\"clause\":\"POL-HLD-01@v3/s4/c3\",\"atoms\":[{\"attribute\":\"legal_hold\",\"value\":{\"type\":\"modal\",\"modal\":\"must_not\"},\"quote\":\"Never destroy\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]},{\"clause\":\"POL-ODR-01@v2/s4/c2\",\"atoms\":[{\"attribute\":\"od_de_minimis\",\"value\":{\"type\":\"money\",\"dollars\":10},\"quote\":\"$10 or less\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":\"when the account is overdrawn by $10 or less at the end of the day\"}]},{\"clause\":\"POL-WIR-01@v2/s3/c3\",\"atoms\":[{\"attribute\":\"incoming_wire_posting\",\"value\":{\"type\":\"time\",\"minutes\":990},\"quote\":\"4:30 p.m.\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]},{\"clause\":\"PRO-AOP-01@v2/s3/c1\",\"atoms\":[{\"attribute\":\"ao_id_count\",\"value\":{\"type\":\"count\",\"n\":2},\"quote\":\"two forms of identification\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":\"or one form plus a verified bank reference when the branch manager approves\"},{\"attribute\":\"ao_exception_approver\",\"value\":{\"type\":\"role\",\"role\":\"branch_manager\"},\"quote\":\"branch manager\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]},{\"clause\":\"PRO-AOP-04@v4/s3/c4\",\"atoms\":[{\"attribute\":\"ao_exception_approver\",\"value\":{\"type\":\"role\",\"role\":\"operations_specialist\"},\"quote\":\"operations specialist\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]},{\"clause\":\"PRO-AOP-05@v3/s3/c2\",\"atoms\":[{\"attribute\":\"ao_id_count\",\"value\":{\"type\":\"count\",\"n\":3},\"quote\":\"three forms of identification\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]},{\"clause\":\"PRO-AOP-06@v2/s3/c4\",\"atoms\":[{\"attribute\":\"ao_id_count\",\"value\":{\"type\":\"count\",\"n\":1},\"quote\":\"one separate identification documents\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]},{\"clause\":\"PRO-BOP-03@v2/s5/c2\",\"atoms\":[{\"attribute\":\"combo_change\",\"value\":{\"type\":\"duration\",\"n\":6,\"unit\":\"months\"},\"quote\":\"6 months\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":\"and whenever an employee who knows the combination leaves\"}]},{\"clause\":\"PRO-BOP-04@v3/s5/c3\",\"atoms\":[{\"attribute\":\"combo_change\",\"value\":{\"type\":\"duration\",\"n\":6,\"unit\":\"months\"},\"quote\":\"6 months\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":\"and whenever an employee who knows the combination leaves\"}]}]}",
+   "problems": [],
+   "meta": {
+    "ms": 25495,
+    "input_tokens": 2692,
+    "output_tokens": 2797,
+    "cost_usd": 0.001668,
+    "usage": {
+     "prompt_tokens": 2692,
+     "completion_tokens": 2797,
+     "total_tokens": 5489,
+     "prompt_tokens_details": {
+      "cached_tokens": 1728,
+      "cache_write_tokens": 961,
+      "audio_tokens": 0
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 2027,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+     }
+    },
+    "models": [
+     "gpt-6-luna"
+    ],
+    "stop_reason": "stop"
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T21:19:53+00:00"
+}

@@ -1,0 +1,307 @@
+{
+ "step": "classify",
+ "tag": "evals-6101",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "2c908358fde9f0f4a792753579a6cfaa33476e41c4b0f235744675d8e8283a19",
+ "input": [
+  {
+   "pair": "pair-67447ac86a",
+   "rule": null,
+   "attribute": null,
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-FEE-02@v1/s3/c6",
+    "text": "Ask the customer why they are requesting the waiver and note the reason.",
+    "heading": "Steps",
+    "document": {
+     "title": "Reversing a Service Fee",
+     "type": "procedure",
+     "version": 1,
+     "effective": "2025-07-18",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "JA-FEE-01@v1/s3/c1",
+    "text": "Ask the client why they are requesting the waiver and note the reason.",
+    "heading": "Steps to follow",
+    "document": {
+     "title": "Fee Waiver Quick Reference",
+     "type": "job_aid",
+     "version": 1,
+     "effective": "2025-12-30",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-f1aecab62a",
+   "rule": null,
+   "attribute": null,
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-BOP-05@v3/s3/c2",
+    "text": "Report any alarm fault to security before opening for business.",
+    "heading": "Steps",
+    "document": {
+     "title": "Handling a Late Opener",
+     "type": "procedure",
+     "version": 3,
+     "effective": "2025-02-26",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "PRO-BOP-03@v2/s6/c1",
+    "text": "Report any alarm fault to security prior to opening for business.",
+    "heading": "Steps to follow",
+    "document": {
+     "title": "Changing Vault Combinations",
+     "type": "procedure",
+     "version": 2,
+     "effective": "2026-08-31",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-6337e72cf2",
+   "rule": null,
+   "attribute": null,
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-BOP-02@v1/s3/c4",
+    "text": "Log the opening and closing times in the branch log.",
+    "heading": "Steps",
+    "document": {
+     "title": "Closing the Branch Each Evening",
+     "type": "procedure",
+     "version": 1,
+     "effective": "2025-05-10",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "PRO-BOP-04@v3/s5/c1",
+    "text": "Log the opening and closing times in the branch log.",
+    "heading": "Steps to follow",
+    "document": {
+     "title": "Testing the Alarm System",
+     "type": "procedure",
+     "version": 3,
+     "effective": "2025-05-23",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-364388b0f6",
+   "rule": null,
+   "attribute": null,
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-REC-04@v1/s3/c1",
+    "text": "Check the legal hold list before preparing any records for destruction.",
+    "heading": "Steps",
+    "document": {
+     "title": "Releasing a Legal Hold",
+     "type": "procedure",
+     "version": 1,
+     "effective": "2025-03-23",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "JA-REC-02@v2/s3/c1",
+    "text": "Check the legal hold list prior to preparing any records for destruction.",
+    "heading": "Steps to follow",
+    "document": {
+     "title": "Destruction Approval Checklist",
+     "type": "job_aid",
+     "version": 2,
+     "effective": "2025-12-22",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-f3f9dee97b",
+   "rule": null,
+   "attribute": null,
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-DSP-04@v1/s3/c2",
+    "text": "Tell the customer how they will be notified of the outcome.",
+    "heading": "Steps",
+    "document": {
+     "title": "Reversing Provisional Credit",
+     "type": "procedure",
+     "version": 1,
+     "effective": "2025-12-02",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "PRO-DSP-02@v4/s5/c1",
+    "text": "Tell the client how they will be notified of the outcome.",
+    "heading": "Steps to follow",
+    "document": {
+     "title": "Issuing Provisional Credit",
+     "type": "procedure",
+     "version": 4,
+     "effective": "2024-12-16",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-1078c1715f",
+   "rule": null,
+   "attribute": null,
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-LND-02@v4/s3/c1",
+    "text": "Confirm the borrower's credit grade before requesting an exception.",
+    "heading": "Steps",
+    "document": {
+     "title": "Approving a Rate Exception",
+     "type": "procedure",
+     "version": 4,
+     "effective": "2026-03-04",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "PRO-LND-05@v4/s5/c1",
+    "text": "Confirm the borrower's credit grade before requesting an exception.",
+    "heading": "Steps to follow",
+    "document": {
+     "title": "Fee Exceptions on Consumer Loans",
+     "type": "procedure",
+     "version": 4,
+     "effective": "2026-04-11",
+     "applies_to": "All branches. Consumer accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-794cce66d2",
+   "rule": "Forms of identification per signer",
+   "attribute": "ao_id_count",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-AOP-06@v3/s3/c4",
+    "text": "Every signer must present two separate identification documents before the account is opened.",
+    "heading": "Steps",
+    "document": {
+     "title": "Handling Identification Exceptions",
+     "type": "procedure",
+     "version": 3,
+     "effective": "2025-05-13",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "PRO-AOP-06@v2/s3/c4",
+    "text": "Every signer must present one separate identification documents before the account is opened.",
+    "heading": "Steps",
+    "document": {
+     "title": "Handling Identification Exceptions",
+     "type": "procedure",
+     "version": 2,
+     "effective": "2023-12-09",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-e6621f82bb",
+   "rule": "Inactivity before dormancy",
+   "attribute": "dormant_inactivity",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-DRM-02@v4/s3/c4",
+    "text": "An account with no customer-initiated activity for 12 months is classified as dormant.",
+    "heading": "Steps",
+    "document": {
+     "title": "Sending Dormancy Notices",
+     "type": "procedure",
+     "version": 4,
+     "effective": "2026-06-17",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "PRO-DRM-02@v3/s3/c4",
+    "text": "An account with no customer-initiated activity for 24 months is classified as dormant.",
+    "heading": "Steps",
+    "document": {
+     "title": "Sending Dormancy Notices",
+     "type": "procedure",
+     "version": 3,
+     "effective": "2025-07-10",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  }
+ ],
+ "input_hash": "52d5bad586d0912db24c0d41b127f95f10c929384c6c351175d24e234aba1d56",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [{\"pair\": \"pair-67447ac86a\", \"label\": \"consistent\", \"quote_a\": \"Ask the customer why they are requesting the waiver and note the reason.\", \"quote_b\": \"Ask the client why they are requesting the waiver and note the reason.\", \"rationale\": \"Both clauses tell staff to ask why the waiver is requested and to note the reason. Only the word for the person differs, so staff act the same way under either.\"}, {\"pair\": \"pair-f1aecab62a\", \"label\": \"consistent\", \"quote_a\": \"Report any alarm fault to security before opening for business.\", \"quote_b\": \"Report any alarm fault to security prior to opening for business.\", \"rationale\": \"Both clauses require an alarm fault to be reported to security before the branch opens. The wording differs but the rule and its timing are the same.\"}, {\"pair\": \"pair-6337e72cf2\", \"label\": \"consistent\", \"quote_a\": \"Log the opening and closing times in the branch log.\", \"quote_b\": \"Log the opening and closing times in the branch log.\", \"rationale\": \"Both clauses state the same logging rule with the same value. Each sits in a different procedure and applies to all branches, so they agree.\"}, {\"pair\": \"pair-364388b0f6\", \"label\": \"consistent\", \"quote_a\": \"Check the legal hold list before preparing any records for destruction.\", \"quote_b\": \"Check the legal hold list prior to preparing any records for destruction.\", \"rationale\": \"Both clauses require the legal hold list to be checked before records are prepared for destruction. Only the phrasing of the timing differs.\"}, {\"pair\": \"pair-f3f9dee97b\", \"label\": \"consistent\", \"quote_a\": \"Tell the customer how they will be notified of the outcome.\", \"quote_b\": \"Tell the client how they will be notified of the outcome.\", \"rationale\": \"Both clauses tell staff to explain how the outcome will be communicated. Customer and client mean the same person here, so staff act the same way.\"}, {\"pair\": \"pair-1078c1715f\", \"label\": \"consistent\", \"quote_a\": \"Confirm the borrower's credit grade before requesting an exception.\", \"quote_b\": \"Confirm the borrower's credit grade before requesting an exception.\", \"rationale\": \"Both clauses require the same check before an exception is requested. The second document covers consumer accounts only, which falls inside the scope of the first, so nothing contradicts.\"}, {\"pair\": \"pair-794cce66d2\", \"label\": \"superseded\", \"quote_a\": \"Every signer must present two separate identification documents\", \"quote_b\": \"Every signer must present one separate identification documents\", \"rationale\": \"These are version 3 and version 2 of the same procedure and they set different identification counts. The newer version 3 replaces version 2, so the requirement is two documents.\"}, {\"pair\": \"pair-e6621f82bb\", \"label\": \"superseded\", \"quote_a\": \"no customer-initiated activity for 12 months is classified as dormant\", \"quote_b\": \"no customer-initiated activity for 24 months is classified as dormant\", \"rationale\": \"These are version 4 and version 3 of the same procedure and they set different inactivity periods. The newer version 4 replaces version 3, so the period is 12 months.\"}]}",
+   "problems": [],
+   "meta": {
+    "ms": 11295,
+    "api_ms": 11186,
+    "input_tokens": 8816,
+    "output_tokens": 1652,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 7973,
+     "cache_read_input_tokens": 841,
+     "output_tokens": 1652,
+     "output_tokens_details": {
+      "thinking_tokens": 598
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 7973,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 1652,
+       "cache_read_input_tokens": 841,
+       "cache_creation_input_tokens": 7973,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 7973
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.0485001,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T05:28:41+00:00"
+}

@@ -1,0 +1,209 @@
+{
+ "step": "draft",
+ "tag": "2026",
+ "model": "claude-opus",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "opus",
+  "client_context": true
+ },
+ "prompt_hash": "d412e32e9168de04c00c3959530ebecb6630d0f9092d4afc1f9c308a4695a32e",
+ "input": [
+  {
+   "group": "g-18d5c148",
+   "rule": "Dual control for the vault",
+   "attribute": "cash_vault_dual",
+   "type": "modal",
+   "keep": {
+    "clause": "POL-CSH-01@v3/s4/c2",
+    "text": "The vault must be opened under dual control, with two employees present.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Cash Handling Policy",
+     "type": "policy",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "change": [
+    {
+     "clause": "JA-CSH-01@v4/s1/c1",
+     "text": "Dual control for the vault | Optional",
+     "heading": "Quick reference",
+     "document": {
+      "title": "Teller Cash Limits Card",
+      "type": "job_aid",
+      "applies_to": "All branches. All business lines."
+     }
+    }
+   ],
+   "allowed": {
+    "BUL-CSH-01@v3/s1/c2#value": "must",
+    "FAQ-CSH-01@v4/s3/c1#value": "must",
+    "JA-CSH-02@v1/s1/c1#value": "must",
+    "POL-CSH-01@v3/s4/c2#v2": "two",
+    "POL-CSH-01@v3/s4/c2#value": "must",
+    "POL-CSH-02@v3/s3/c1#value": "must",
+    "PRO-CSH-07@v3/s3/c1#value": "must"
+   },
+   "placeholder": "{clause:POL-CSH-01@v3/s4/c2#value}"
+  },
+  {
+   "group": "g-ef93aeae",
+   "rule": "Vault combination change interval",
+   "attribute": "combo_change",
+   "type": "duration",
+   "keep": {
+    "clause": "POL-BOP-01@v5/s4/c1",
+    "text": "Vault combinations are changed every 6 months and whenever an employee who knows the combination leaves.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Branch Security and Opening Policy",
+     "type": "policy",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "change": [
+    {
+     "clause": "BUL-BOP-01@v4/s1/c2",
+     "text": "Change the vault combination at least every 12 months.",
+     "heading": "What branches need to know",
+     "document": {
+      "title": "Branch Bulletin 2025-08: Vault combination change interval",
+      "type": "bulletin",
+      "applies_to": "All branches. All business lines."
+     }
+    },
+    {
+     "clause": "PRO-BOP-04@v4/s3/c8",
+     "text": "Change the vault combination at least every 12 months.",
+     "heading": "Steps",
+     "document": {
+      "title": "Testing the Alarm System",
+      "type": "procedure",
+      "applies_to": "All branches. All business lines."
+     }
+    }
+   ],
+   "allowed": {
+    "JA-BOP-01@v2/s1/c2#value": "6 months",
+    "JA-BOP-02@v4/s1/c1#value": "6 months",
+    "JA-BOP-03@v2/s1/c1#value": "6 months",
+    "POL-BOP-01@v5/s4/c1#value": "6 months",
+    "PRO-BOP-03@v4/s3/c2#value": "6 months",
+    "PRO-BOP-05@v4/s5/c2#value": "6 months"
+   },
+   "placeholder": "{clause:POL-BOP-01@v5/s4/c1#value}"
+  },
+  {
+   "group": "g-b7462d0c",
+   "rule": "Complaint acknowledgment deadline",
+   "attribute": "complaint_ack",
+   "type": "duration",
+   "keep": {
+    "clause": "POL-CMP-01@v5/s4/c2",
+    "text": "Send the customer an acknowledgment no later than 2 business days after a written complaint arrives.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Complaint Management Policy",
+     "type": "policy",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "change": [
+    {
+     "clause": "JA-CMP-02@v2/s1/c1",
+     "text": "Complaint acknowledgment deadline | 3 business days",
+     "heading": "Quick reference",
+     "document": {
+      "title": "Complaint Escalation Checklist",
+      "type": "job_aid",
+      "applies_to": "All branches. All business lines."
+     }
+    },
+    {
+     "clause": "PRO-CMP-01@v1/s3/c5",
+     "text": "Send the customer an acknowledgment no later than 2 days after a written complaint arrives.",
+     "heading": "Steps",
+     "document": {
+      "title": "Logging a Customer Complaint",
+      "type": "procedure",
+      "applies_to": "All branches. All business lines."
+     }
+    },
+    {
+     "clause": "PRO-CMP-02@v4/s3/c2",
+     "text": "Acknowledge every written complaint within 3 business days.",
+     "heading": "Steps",
+     "document": {
+      "title": "Acknowledging a Written Complaint",
+      "type": "procedure",
+      "applies_to": "All branches. All business lines."
+     }
+    }
+   ],
+   "allowed": {
+    "FAQ-CMP-01@v1/s1/c1#value": "2 business days",
+    "FAQ-CMP-02@v2/s1/c1#value": "2 business days",
+    "POL-CMP-01@v5/s4/c2#value": "2 business days",
+    "PRO-CMP-03@v2/s3/c4#value": "2 business days",
+    "PRO-CMP-04@v4/s3/c2#value": "2 business days",
+    "PRO-CMP-05@v4/s3/c1#value": "2 business days"
+   },
+   "placeholder": "{clause:POL-CMP-01@v5/s4/c2#value}"
+  }
+ ],
+ "input_hash": "6f6eee26fcae6d9b0ac011e8fa57d02ac9781fb9926d26d3ac74cc2e90440b54",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [{\"group\": \"g-18d5c148\", \"title\": \"Dual control for the vault\", \"text\": \"The vault {clause:POL-CSH-01@v3/s4/c2#value} be opened under dual control with {clause:POL-CSH-01@v3/s4/c2#v2} employees present.\"}, {\"group\": \"g-ef93aeae\", \"title\": \"Changing vault combinations\", \"text\": \"Vault combinations are changed every {clause:POL-BOP-01@v5/s4/c1#value}. They are also changed whenever an employee who knows the combination leaves.\"}, {\"group\": \"g-b7462d0c\", \"title\": \"Acknowledging written complaints\", \"text\": \"Staff send the customer an acknowledgment no later than {clause:POL-CMP-01@v5/s4/c2#value} after a written complaint arrives.\"}]}",
+   "problems": [],
+   "meta": {
+    "ms": 6516,
+    "api_ms": 6353,
+    "input_tokens": 8015,
+    "output_tokens": 584,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 8013,
+     "cache_read_input_tokens": 0,
+     "output_tokens": 584,
+     "output_tokens_details": {
+      "thinking_tokens": 305
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 8013,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 584,
+       "cache_read_input_tokens": 0,
+       "cache_creation_input_tokens": 8013,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 8013
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.075792,
+    "models": [
+     "claude-opus-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T05:57:22+00:00"
+}

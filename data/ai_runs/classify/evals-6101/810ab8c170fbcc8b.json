@@ -1,0 +1,307 @@
+{
+ "step": "classify",
+ "tag": "evals-6101",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "2c908358fde9f0f4a792753579a6cfaa33476e41c4b0f235744675d8e8283a19",
+ "input": [
+  {
+   "pair": "pair-4844d79062",
+   "rule": "Vault combination change interval",
+   "attribute": "combo_change",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "BUL-BOP-01@v3/s1/c2",
+    "text": "Change the vault combination at least every 6 months.",
+    "heading": "What branches need to know",
+    "document": {
+     "title": "Branch Bulletin 2025-07: Vault combination change interval",
+     "type": "bulletin",
+     "version": 3,
+     "effective": "2025-10-17",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "BUL-BOP-01@v2/s1/c2",
+    "text": "Change the vault combination at least every 3 months.",
+    "heading": "What branches need to know",
+    "document": {
+     "title": "Branch Bulletin 2025-07: Vault combination change interval",
+     "type": "bulletin",
+     "version": 2,
+     "effective": "2024-09-22",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-5ce9703c79",
+   "rule": "Dispute review threshold",
+   "attribute": "dispute_review_threshold",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "BUL-DSP-02@v4/s1/c2",
+    "text": "Disputes over $500 are reviewed by a card services specialist before credit is issued.",
+    "heading": "What branches need to know",
+    "document": {
+     "title": "Branch Bulletin 2026-18: Dispute amount that needs card services review",
+     "type": "bulletin",
+     "version": 4,
+     "effective": "2026-06-11",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "BUL-DSP-02@v3/s1/c2",
+    "text": "Disputes over $250 are reviewed by a card services specialist before credit is issued.",
+    "heading": "What branches need to know",
+    "document": {
+     "title": "Branch Bulletin 2026-18: Dispute amount that needs card services review",
+     "type": "bulletin",
+     "version": 3,
+     "effective": "2025-09-12",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-3716d27768",
+   "rule": "Forms of identification per signer",
+   "attribute": "ao_id_count",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-AOP-05@v4/s3/c2",
+    "text": "Do not open an account until you have verified two forms of identification for each signer.",
+    "heading": "Steps",
+    "document": {
+     "title": "Adding a Signer to an Existing Account",
+     "type": "procedure",
+     "version": 4,
+     "effective": "2025-02-04",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "PRO-AOP-05@v3/s3/c2",
+    "text": "Do not open an account until you have verified three forms of identification for each signer.",
+    "heading": "Steps",
+    "document": {
+     "title": "Adding a Signer to an Existing Account",
+     "type": "procedure",
+     "version": 3,
+     "effective": "2024-06-11",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-2ce05d2c39",
+   "rule": "Teller drawer limit",
+   "attribute": "cash_drawer_limit",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "BUL-CSH-01@v2/s1/c2",
+    "text": "A teller drawer may not hold more than $15,000 at any time.",
+    "heading": "What branches need to know",
+    "document": {
+     "title": "Branch Bulletin 2025-04: Teller drawer cash limit",
+     "type": "bulletin",
+     "version": 2,
+     "effective": "2025-07-05",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "BUL-CSH-01@v1/s1/c2",
+    "text": "A teller drawer may not hold more than $10,000 at any time.",
+    "heading": "What branches need to know",
+    "document": {
+     "title": "Branch Bulletin 2025-04: Teller drawer cash limit",
+     "type": "bulletin",
+     "version": 1,
+     "effective": "2024-04-22",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-46cffd4cd6",
+   "rule": "Vault combination change interval",
+   "attribute": "combo_change",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-BOP-01@v3/s3/c6",
+    "text": "Vault combinations are changed every 6 months and whenever an employee who knows the combination leaves.",
+    "heading": "Steps",
+    "document": {
+     "title": "Opening the Branch Each Morning",
+     "type": "procedure",
+     "version": 3,
+     "effective": "2025-01-17",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "PRO-BOP-01@v2/s3/c6",
+    "text": "Vault combinations are changed every 12 months and whenever an employee who knows the combination leaves.",
+    "heading": "Steps",
+    "document": {
+     "title": "Opening the Branch Each Morning",
+     "type": "procedure",
+     "version": 2,
+     "effective": "2023-12-10",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-dded24829f",
+   "rule": "Notice before dormancy",
+   "attribute": "dormant_notice",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "BUL-DRM-02@v3/s1/c2",
+    "text": "Customers receive written notice 30 days before their account becomes dormant.",
+    "heading": "What branches need to know",
+    "document": {
+     "title": "Branch Bulletin 2026-34: Notice before dormancy",
+     "type": "bulletin",
+     "version": 3,
+     "effective": "2025-02-14",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "BUL-DRM-02@v2/s1/c2",
+    "text": "Customers receive written notice 60 days before their account becomes dormant.",
+    "heading": "What branches need to know",
+    "document": {
+     "title": "Branch Bulletin 2026-34: Notice before dormancy",
+     "type": "bulletin",
+     "version": 2,
+     "effective": "2023-11-13",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-b752daf50b",
+   "rule": "Dual control at opening",
+   "attribute": "branch_open_dual",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-BOP-06@v4/s3/c6",
+    "text": "The branch is opened by two employees together, never by one.",
+    "heading": "Steps",
+    "document": {
+     "title": "After-Hours Branch Access",
+     "type": "procedure",
+     "version": 4,
+     "effective": "2025-12-26",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "PRO-BOP-06@v3/s3/c6",
+    "text": "A single opener may unlock the branch if the second opener is delayed.",
+    "heading": "Steps",
+    "document": {
+     "title": "After-Hours Branch Access",
+     "type": "procedure",
+     "version": 3,
+     "effective": "2024-07-29",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-77682bfc08",
+   "rule": "Fee waivers per account per year",
+   "attribute": "fee_waivers_per_year",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "JA-FEE-02@v3/s1/c1",
+    "text": "Fee waivers per account per year | two",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Fee Schedule at a Glance",
+     "type": "job_aid",
+     "version": 3,
+     "effective": "2025-08-09",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "JA-FEE-02@v2/s1/c1",
+    "text": "Fee waivers per account per year | three",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Fee Schedule at a Glance",
+     "type": "job_aid",
+     "version": 2,
+     "effective": "2024-07-24",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  }
+ ],
+ "input_hash": "84649653563e840c609b539c659bd6e1f1f1821bcbd99e7e7ab3e52955dd4df8",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [{\"pair\": \"pair-4844d79062\", \"label\": \"superseded\", \"quote_a\": \"Change the vault combination at least every 6 months.\", \"quote_b\": \"Change the vault combination at least every 3 months.\", \"rationale\": \"These are versions 3 and 2 of the same bulletin with the same scope. Version 3 replaces version 2, so the 6 month interval now applies.\"}, {\"pair\": \"pair-5ce9703c79\", \"label\": \"superseded\", \"quote_a\": \"Disputes over $500 are reviewed by a card services specialist before credit is issued.\", \"quote_b\": \"Disputes over $250 are reviewed by a card services specialist before credit is issued.\", \"rationale\": \"These are versions 4 and 3 of the same bulletin with the same scope. Version 4 replaces version 3, so the $500 threshold now applies.\"}, {\"pair\": \"pair-3716d27768\", \"label\": \"superseded\", \"quote_a\": \"Do not open an account until you have verified two forms of identification for each signer.\", \"quote_b\": \"Do not open an account until you have verified three forms of identification for each signer.\", \"rationale\": \"These are versions 4 and 3 of the same procedure with the same scope. Version 4 replaces version 3, so two forms of identification now apply.\"}, {\"pair\": \"pair-2ce05d2c39\", \"label\": \"superseded\", \"quote_a\": \"A teller drawer may not hold more than $15,000 at any time.\", \"quote_b\": \"A teller drawer may not hold more than $10,000 at any time.\", \"rationale\": \"These are versions 2 and 1 of the same bulletin with the same scope. Version 2 replaces version 1, so the $15,000 limit now applies.\"}, {\"pair\": \"pair-46cffd4cd6\", \"label\": \"superseded\", \"quote_a\": \"Vault combinations are changed every 6 months and whenever an employee who knows the combination leaves.\", \"quote_b\": \"Vault combinations are changed every 12 months and whenever an employee who knows the combination leaves.\", \"rationale\": \"These are versions 3 and 2 of the same procedure with the same scope. Version 3 replaces version 2, so the 6 month interval now applies.\"}, {\"pair\": \"pair-dded24829f\", \"label\": \"superseded\", \"quote_a\": \"Customers receive written notice 30 days before their account becomes dormant.\", \"quote_b\": \"Customers receive written notice 60 days before their account becomes dormant.\", \"rationale\": \"These are versions 3 and 2 of the same bulletin with the same scope. Version 3 replaces version 2, so the 30 day notice now applies.\"}, {\"pair\": \"pair-b752daf50b\", \"label\": \"superseded\", \"quote_a\": \"The branch is opened by two employees together, never by one.\", \"quote_b\": \"A single opener may unlock the branch if the second opener is delayed.\", \"rationale\": \"These are versions 4 and 3 of the same procedure with the same scope. Version 4 replaces version 3, so a single opener is no longer allowed.\"}, {\"pair\": \"pair-77682bfc08\", \"label\": \"superseded\", \"quote_a\": \"Fee waivers per account per year | two\", \"quote_b\": \"Fee waivers per account per year | three\", \"rationale\": \"These are versions 3 and 2 of the same job aid with the same scope. Version 3 replaces version 2, so two waivers per year now apply.\"}]}",
+   "problems": [],
+   "meta": {
+    "ms": 11548,
+    "api_ms": 11403,
+    "input_tokens": 9050,
+    "output_tokens": 1590,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 8207,
+     "cache_read_input_tokens": 841,
+     "output_tokens": 1590,
+     "output_tokens_details": {
+      "thinking_tokens": 479
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 8207,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 1590,
+       "cache_read_input_tokens": 841,
+       "cache_creation_input_tokens": 8207,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 8207
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.0488161,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T05:28:46+00:00"
+}

@@ -1,0 +1,167 @@
+{
+ "step": "extract",
+ "tag": "fresh_wording",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "dcc761e46c6ec579c01b9dfd540df3c2fa4bba3b6b5ec777aa2cf9c9c62aa411",
+ "input": [
+  {
+   "clause": "fw-21",
+   "text": "Card services looks at any disputed charge above five hundred dollars before we credit it.",
+   "heading": "Requirements",
+   "document": {
+    "title": "Branch Operations Manual",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "fw-22",
+   "text": "Customers who complain in writing hear back from us within two business days.",
+   "heading": "Requirements",
+   "document": {
+    "title": "Branch Operations Manual",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "fw-23",
+   "text": "Aim to put every complaint to bed inside three weeks of business days.",
+   "heading": "Requirements",
+   "document": {
+    "title": "Branch Operations Manual",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "fw-24",
+   "text": "Allegations of unfair treatment go straight to the regional manager on the same day.",
+   "heading": "Requirements",
+   "document": {
+    "title": "Branch Operations Manual",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "fw-25",
+   "text": "After a year of no customer activity we treat the account as dormant.",
+   "heading": "Requirements",
+   "document": {
+    "title": "Branch Operations Manual",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "fw-26",
+   "text": "A heads-up letter goes out thirty days ahead of any account going dormant.",
+   "heading": "Requirements",
+   "document": {
+    "title": "Branch Operations Manual",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "fw-27",
+   "text": "Inactive accounts pay five dollars a month once they are dormant.",
+   "heading": "Requirements",
+   "document": {
+    "title": "Branch Operations Manual",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "fw-28",
+   "text": "Hold on to closed-account files for seven years before they can go.",
+   "heading": "Requirements",
+   "document": {
+    "title": "Branch Operations Manual",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "fw-29",
+   "text": "Nothing gets shredded without the records custodian signing off in writing.",
+   "heading": "Requirements",
+   "document": {
+    "title": "Branch Operations Manual",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "fw-30",
+   "text": "Opening the branch takes two people every morning, with no exceptions for a late opener.",
+   "heading": "Requirements",
+   "document": {
+    "title": "Branch Operations Manual",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  }
+ ],
+ "input_hash": "d956fcdb1d8662d18ccc7020e0a9f25a68dfd338ebdfea8c0b1e46da80e7047e",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [{\"clause\": \"fw-21\", \"atoms\": [{\"attribute\": \"dispute_review_threshold\", \"value\": {\"type\": \"money\", \"dollars\": 500}, \"quote\": \"five hundred dollars\", \"actor\": \"card_services_specialist\", \"actor_inferred\": true, \"scope_quote\": null, \"condition\": null}]}, {\"clause\": \"fw-22\", \"atoms\": [{\"attribute\": \"complaint_ack\", \"value\": {\"type\": \"duration\", \"n\": 2, \"unit\": \"business_days\"}, \"quote\": \"two business days\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]}, {\"clause\": \"fw-23\", \"atoms\": [{\"attribute\": \"complaint_resolve\", \"value\": {\"type\": \"duration\", \"n\": 15, \"unit\": \"business_days\"}, \"quote\": \"three weeks of business days\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]}, {\"clause\": \"fw-24\", \"atoms\": [{\"attribute\": \"complaint_escalation_role\", \"value\": {\"type\": \"role\", \"role\": \"regional_manager\"}, \"quote\": \"regional manager\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]}, {\"clause\": \"fw-25\", \"atoms\": [{\"attribute\": \"dormant_inactivity\", \"value\": {\"type\": \"duration\", \"n\": 12, \"unit\": \"months\"}, \"quote\": \"a year\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]}, {\"clause\": \"fw-26\", \"atoms\": [{\"attribute\": \"dormant_notice\", \"value\": {\"type\": \"duration\", \"n\": 30, \"unit\": \"days\"}, \"quote\": \"thirty days\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]}, {\"clause\": \"fw-27\", \"atoms\": [{\"attribute\": \"dormant_fee\", \"value\": {\"type\": \"money\", \"dollars\": 5}, \"quote\": \"five dollars\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]}, {\"clause\": \"fw-28\", \"atoms\": [{\"attribute\": \"records_retention\", \"value\": {\"type\": \"duration\", \"n\": 7, \"unit\": \"years\"}, \"quote\": \"seven years\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]}, {\"clause\": \"fw-29\", \"atoms\": [{\"attribute\": \"records_destroy_role\", \"value\": {\"type\": \"role\", \"role\": \"records_custodian\"}, \"quote\": \"records custodian\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]}, {\"clause\": \"fw-30\", \"atoms\": [{\"attribute\": \"branch_open_dual\", \"value\": {\"type\": \"modal\", \"modal\": \"must\"}, \"quote\": \"takes two people every morning\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]}]}",
+   "problems": [],
+   "meta": {
+    "ms": 11622,
+    "api_ms": 11418,
+    "input_tokens": 8760,
+    "output_tokens": 1784,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 6076,
+     "cache_read_input_tokens": 2682,
+     "output_tokens": 1784,
+     "output_tokens_details": {
+      "thinking_tokens": 769
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 6076,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 1784,
+       "cache_read_input_tokens": 2682,
+       "cache_creation_input_tokens": 6076,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 6076
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.0424162,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T04:14:04+00:00"
+}

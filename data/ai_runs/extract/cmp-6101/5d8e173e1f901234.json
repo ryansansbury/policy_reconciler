@@ -1,0 +1,167 @@
+{
+ "step": "extract",
+ "tag": "cmp-6101",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "dcc761e46c6ec579c01b9dfd540df3c2fa4bba3b6b5ec777aa2cf9c9c62aa411",
+ "input": [
+  {
+   "clause": "PRO-REC-06@v4/s3/c8",
+   "text": "For commercial accounts, retain closed account records for 10 years from the closing date.",
+   "heading": "Steps",
+   "document": {
+    "title": "Retrieving Archived Records",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-WIR-01@v2/s3/c8",
+   "text": "Callbacks are completed by a teller, never by the employee who took the request.",
+   "heading": "Steps",
+   "document": {
+    "title": "Processing Outgoing Consumer Wires",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer accounts."
+   }
+  },
+  {
+   "clause": "PRO-WIR-02@v3/s3/c8",
+   "text": "Outgoing wires over $100,000 need a second approval from an operations manager.",
+   "heading": "Steps",
+   "document": {
+    "title": "Processing Outgoing Commercial Wires",
+    "type": "procedure",
+    "applies_to": "All branches. Commercial accounts."
+   }
+  },
+  {
+   "clause": "PRO-WIR-03@v3/s3/c2",
+   "text": "The cutoff for outgoing commercial wires is 2:00 PM Central time.",
+   "heading": "Steps",
+   "document": {
+    "title": "Completing Wire Callback Verification",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-WIR-04@v1/s3/c11",
+   "text": "For commercial accounts, call the customer back at a phone number already on file before releasing any outgoing wire of $25,000 or more.",
+   "heading": "Steps",
+   "document": {
+    "title": "Handling Incoming Wires",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-WIR-05@v1/s3/c13",
+   "text": "Post incoming wires the same day when they arrive by 4:30 PM Central.",
+   "heading": "Steps",
+   "document": {
+    "title": "Wire Cutoffs on Holidays and Weekends",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-WIR-05@v1/s3/c6",
+   "text": "Outgoing consumer and small business wire requests received after 4:00 PM Central are processed the next business day.",
+   "heading": "Steps",
+   "document": {
+    "title": "Wire Cutoffs on Holidays and Weekends",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-WIR-05@v1/s3/c8",
+   "text": "Only a wire specialist may complete the callback for an outgoing wire.",
+   "heading": "Steps",
+   "document": {
+    "title": "Wire Cutoffs on Holidays and Weekends",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-WIR-06@v1/s3/c8",
+   "text": "Callbacks are completed by an operations employee, never by the employee who took the request.",
+   "heading": "Steps",
+   "document": {
+    "title": "Recalling or Cancelling a Wire",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-WIR-07@v1/s5/c2",
+   "text": "An operations manager must give a second approval for any outgoing wire above $50,000.",
+   "heading": "Steps to follow",
+   "document": {
+    "title": "Second Approval for Large Wires",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  }
+ ],
+ "input_hash": "3e2757b5fdebc091239117796dfe716d5ac2ab3551a4c2dd2965c36b56797245",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [{\"clause\": \"PRO-REC-06@v4/s3/c8\", \"atoms\": [{\"attribute\": \"records_retention\", \"value\": {\"type\": \"duration\", \"n\": 10, \"unit\": \"years\"}, \"quote\": \"10 years\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": \"For commercial accounts\", \"condition\": null}]}, {\"clause\": \"PRO-WIR-01@v2/s3/c8\", \"atoms\": [{\"attribute\": \"wire_callback_role\", \"value\": {\"type\": \"role\", \"role\": \"teller\"}, \"quote\": \"a teller\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]}, {\"clause\": \"PRO-WIR-02@v3/s3/c8\", \"atoms\": [{\"attribute\": \"wire_second_approval\", \"value\": {\"type\": \"money\", \"dollars\": 100000}, \"quote\": \"$100,000\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]}, {\"clause\": \"PRO-WIR-03@v3/s3/c2\", \"atoms\": [{\"attribute\": \"wire_cutoff\", \"value\": {\"type\": \"time\", \"minutes\": 840}, \"quote\": \"2:00 PM\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": \"outgoing commercial wires\", \"condition\": null}]}, {\"clause\": \"PRO-WIR-04@v1/s3/c11\", \"atoms\": [{\"attribute\": \"wire_callback\", \"value\": {\"type\": \"money\", \"dollars\": 25000}, \"quote\": \"$25,000\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": \"For commercial accounts\", \"condition\": null}]}, {\"clause\": \"PRO-WIR-05@v1/s3/c13\", \"atoms\": [{\"attribute\": \"incoming_wire_posting\", \"value\": {\"type\": \"time\", \"minutes\": 990}, \"quote\": \"4:30 PM\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]}, {\"clause\": \"PRO-WIR-05@v1/s3/c6\", \"atoms\": [{\"attribute\": \"wire_cutoff\", \"value\": {\"type\": \"time\", \"minutes\": 960}, \"quote\": \"4:00 PM\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": \"Outgoing consumer and small business wire requests\", \"condition\": null}]}, {\"clause\": \"PRO-WIR-05@v1/s3/c8\", \"atoms\": [{\"attribute\": \"wire_callback_role\", \"value\": {\"type\": \"role\", \"role\": \"wire_specialist\"}, \"quote\": \"a wire specialist\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]}, {\"clause\": \"PRO-WIR-06@v1/s3/c8\", \"atoms\": [{\"attribute\": \"wire_callback_role\", \"value\": {\"type\": \"role\", \"role\": null, \"generic\": \"operations employee\"}, \"quote\": \"an operations employee\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]}, {\"clause\": \"PRO-WIR-07@v1/s5/c2\", \"atoms\": [{\"attribute\": \"wire_second_approval\", \"value\": {\"type\": \"money\", \"dollars\": 50000}, \"quote\": \"$50,000\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]}]}",
+   "problems": [],
+   "meta": {
+    "ms": 10912,
+    "api_ms": 10766,
+    "input_tokens": 8940,
+    "output_tokens": 2019,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 6256,
+     "cache_read_input_tokens": 2682,
+     "output_tokens": 2019,
+     "output_tokens_details": {
+      "thinking_tokens": 858
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 6256,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 2019,
+       "cache_read_input_tokens": 2682,
+       "cache_creation_input_tokens": 6256,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 6256
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.045486200000000004,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T21:17:38+00:00"
+}

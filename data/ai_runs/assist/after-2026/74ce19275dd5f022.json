@@ -1,0 +1,114 @@
+{
+ "step": "assist",
+ "tag": "after-2026",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "66c01f0da9f327e74355d39363e55b642a1bbf8dc6249974c3afbf3cb3d6ccd5",
+ "input": [
+  {
+   "question": "q-C-06",
+   "text": "How long is an account considered a new account?",
+   "type": "duration",
+   "clauses": [
+    {
+     "id": "JA-AOP-01@v3/s1/c2",
+     "text": "How long an account counts as new | 30 days",
+     "title": "New Account Quick Reference",
+     "type": "job_aid",
+     "version": 3,
+     "effective": "2026-01-31"
+    },
+    {
+     "id": "JA-AOP-03@v4/s1/c1",
+     "text": "How long an account counts as new | 30 days",
+     "title": "Account Opening Desk Card",
+     "type": "job_aid",
+     "version": 4,
+     "effective": "2025-05-22"
+    },
+    {
+     "id": "draft:g-d2a12642",
+     "text": "Checks deposited to a new account can be held for as long as 7 business days.",
+     "title": "Check holds on new accounts",
+     "type": "consolidated",
+     "version": 1,
+     "effective": ""
+    },
+    {
+     "id": "POL-HLD-01@v5/s4/c1",
+     "text": "New accounts can have check holds of as long as 7 business days.",
+     "title": "Funds Availability Policy",
+     "type": "policy",
+     "version": 5,
+     "effective": "2026-05-20"
+    },
+    {
+     "id": "POL-AOP-01@v2/s4/c1",
+     "text": "An account is treated as a new account for the first 30 days after it opens.",
+     "title": "Deposit Account Opening Policy",
+     "type": "policy",
+     "version": 2,
+     "effective": "2025-04-05"
+    }
+   ]
+  }
+ ],
+ "input_hash": "877a9e0bd17d39785ebe1091086f3e74b34cc09f9c463c7d57fa0c9ef66f95f7",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [{\"question\": \"q-C-06\", \"answer\": \"An account is treated as a new account for the first 30 days after it opens. The Deposit Account Opening Policy states this, and the New Account Quick Reference and the Account Opening Desk Card give the same 30 days.\", \"citations\": [\"POL-AOP-01@v2/s4/c1\", \"JA-AOP-01@v3/s1/c2\", \"JA-AOP-03@v4/s1/c1\"], \"sources_disagree\": false}]}",
+   "problems": [],
+   "meta": {
+    "ms": 5407,
+    "api_ms": 5269,
+    "input_tokens": 6071,
+    "output_tokens": 388,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 5451,
+     "cache_read_input_tokens": 618,
+     "output_tokens": 388,
+     "output_tokens_details": {
+      "thinking_tokens": 221
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 5451,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 388,
+       "cache_read_input_tokens": 618,
+       "cache_creation_input_tokens": 5451,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 5451
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.0257498,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T06:03:25+00:00"
+}

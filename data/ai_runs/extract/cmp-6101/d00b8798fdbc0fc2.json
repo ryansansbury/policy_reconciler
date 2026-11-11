@@ -1,0 +1,167 @@
+{
+ "step": "extract",
+ "tag": "cmp-6101",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "dcc761e46c6ec579c01b9dfd540df3c2fa4bba3b6b5ec777aa2cf9c9c62aa411",
+ "input": [
+  {
+   "clause": "FAQ-FEE-01@v2/s3/c1",
+   "text": "Customers may request a fee refund within 90 days of the statement date.",
+   "heading": "How long do customers have to request a fee refund?",
+   "document": {
+    "title": "Fee Waiver FAQ",
+    "type": "faq",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "FAQ-HLD-01@v3/s1/c3",
+   "text": "An authorization hold that the merchant never settles releases within 3 business days.",
+   "heading": "How long is the standard hold on a deposited check?",
+   "document": {
+    "title": "Funds Availability FAQ",
+    "type": "faq",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "FAQ-ODR-01@v4/s2/c1",
+   "text": "Accounts overdrawn by no more than $5 at the end of the day are not charged an overdraft fee.",
+   "heading": "How much can an account be overdrawn without a fee?",
+   "document": {
+    "title": "Overdraft FAQ",
+    "type": "faq",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "FAQ-WIR-02@v1/s1/c1",
+   "text": "An operations manager must give a second approval for any outgoing wire above $100,000.",
+   "heading": "Which outgoing wires need a second approval?",
+   "document": {
+    "title": "Wire Cutoff Questions",
+    "type": "faq",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "JA-AOP-03@v1/s1/c2",
+   "text": "Forms of identification per signer | three",
+   "heading": "Quick reference",
+   "document": {
+    "title": "Account Opening Desk Card",
+    "type": "job_aid",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "JA-CMP-02@v1/s3/c3",
+   "text": "Send the customer an acknowledgment no later than 2 business days after a written complaint arrives.",
+   "heading": "Steps to follow",
+   "document": {
+    "title": "Complaint Escalation Checklist",
+    "type": "job_aid",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "JA-CSH-02@v4/s1/c3",
+   "text": "Teller drawer cash limit | $20,000",
+   "heading": "Quick reference",
+   "document": {
+    "title": "Vault Opening Checklist",
+    "type": "job_aid",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "JA-DRM-02@v2/s1/c2",
+   "text": "Inactivity before an account is dormant | 18 months",
+   "heading": "Quick reference",
+   "document": {
+    "title": "Dormancy Notice Checklist",
+    "type": "job_aid",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "JA-DSP-01@v3/s3/c4",
+   "text": "Disputes over $500 are reviewed by a card services specialist before credit is issued.",
+   "heading": "Steps to follow",
+   "document": {
+    "title": "Dispute Intake Checklist",
+    "type": "job_aid",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "JA-FEE-02@v2/s1/c1",
+   "text": "Fee waivers per account per year | three",
+   "heading": "Quick reference",
+   "document": {
+    "title": "Fee Schedule at a Glance",
+    "type": "job_aid",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  }
+ ],
+ "input_hash": "2bb835ce70765d8cd48065b9b5fad025a006a7bdd46b834c7e10cf628bf1f96a",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [\n{\"clause\": \"FAQ-FEE-01@v2/s3/c1\", \"atoms\": [{\"attribute\": \"fee_refund_window\", \"value\": {\"type\": \"duration\", \"n\": 90, \"unit\": \"days\"}, \"quote\": \"90 days\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]},\n{\"clause\": \"FAQ-HLD-01@v3/s1/c3\", \"atoms\": [{\"attribute\": \"card_auth_hold\", \"value\": {\"type\": \"duration\", \"n\": 3, \"unit\": \"business_days\"}, \"quote\": \"3 business days\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]},\n{\"clause\": \"FAQ-ODR-01@v4/s2/c1\", \"atoms\": [{\"attribute\": \"od_de_minimis\", \"value\": {\"type\": \"money\", \"dollars\": 5}, \"quote\": \"$5\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]},\n{\"clause\": \"FAQ-WIR-02@v1/s1/c1\", \"atoms\": [{\"attribute\": \"wire_second_approval\", \"value\": {\"type\": \"money\", \"dollars\": 100000}, \"quote\": \"$100,000\", \"actor\": \"operations_manager\", \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]},\n{\"clause\": \"JA-AOP-03@v1/s1/c2\", \"atoms\": [{\"attribute\": \"ao_id_count\", \"value\": {\"type\": \"count\", \"n\": 3}, \"quote\": \"three\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]},\n{\"clause\": \"JA-CMP-02@v1/s3/c3\", \"atoms\": [{\"attribute\": \"complaint_ack\", \"value\": {\"type\": \"duration\", \"n\": 2, \"unit\": \"business_days\"}, \"quote\": \"2 business days\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]},\n{\"clause\": \"JA-CSH-02@v4/s1/c3\", \"atoms\": [{\"attribute\": \"cash_drawer_limit\", \"value\": {\"type\": \"money\", \"dollars\": 20000}, \"quote\": \"$20,000\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]},\n{\"clause\": \"JA-DRM-02@v2/s1/c2\", \"atoms\": [{\"attribute\": \"dormant_inactivity\", \"value\": {\"type\": \"duration\", \"n\": 18, \"unit\": \"months\"}, \"quote\": \"18 months\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]},\n{\"clause\": \"JA-DSP-01@v3/s3/c4\", \"atoms\": [{\"attribute\": \"dispute_review_threshold\", \"value\": {\"type\": \"money\", \"dollars\": 500}, \"quote\": \"$500\", \"actor\": \"card_services_specialist\", \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]},\n{\"clause\": \"JA-FEE-02@v2/s1/c1\", \"atoms\": [{\"attribute\": \"fee_waivers_per_year\", \"value\": {\"type\": \"count\", \"n\": 3}, \"quote\": \"three\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]}\n]}",
+   "problems": [],
+   "meta": {
+    "ms": 10734,
+    "api_ms": 10607,
+    "input_tokens": 8942,
+    "output_tokens": 1724,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 8940,
+     "cache_read_input_tokens": 0,
+     "output_tokens": 1724,
+     "output_tokens_details": {
+      "thinking_tokens": 590
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 8940,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 1724,
+       "cache_read_input_tokens": 0,
+       "cache_creation_input_tokens": 8940,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 8940
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.053004,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T17:14:23+00:00"
+}

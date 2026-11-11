@@ -1,0 +1,80 @@
+{
+ "step": "judge",
+ "tag": "2026",
+ "model": "google-a",
+ "backend": {
+  "vendor": "Google",
+  "model": "gemini-3.1-pro-preview",
+  "label": "Gemini 3.1 Pro"
+ },
+ "prompt_hash": "ab6a49ec8731854b3cf900a9a4387417ee8016fe68257c4d327181c7eb1621da",
+ "input": [
+  {
+   "draft": "g-a0b05e44",
+   "text": "A branch manager can lower a loan rate by no more than 0.25% as an exception.",
+   "sources": [
+    "A branch manager can lower a loan rate by no more than 0.25% as an exception.",
+    "Rate exceptions larger than 0.15% need approval above the branch manager."
+   ]
+  },
+  {
+   "draft": "g-133084ff",
+   "text": "A regional manager may approve a rate exception as large as 0.50%.",
+   "sources": [
+    "A regional manager can approve a rate exception as large as 0.50%.",
+    "Regional managers may approve rate exceptions of up to 0.75%.",
+    "A regional manager can approve a rate exception as large as 0.75%."
+   ]
+  },
+  {
+   "draft": "g-136d0342",
+   "text": "Refer an account for charge-off once it has been negative for 45 days.",
+   "sources": [
+    "Refer an account for charge-off once it has been negative for 45 days.",
+    "Accounts that remain overdrawn for 60 days are referred for charge-off."
+   ]
+  },
+  {
+   "draft": "g-e65702a5",
+   "text": "The records custodian must approve the destruction of any records in writing.",
+   "sources": [
+    "The records custodian must approve the destruction of any records in writing.",
+    "Records may be destroyed only with written approval from a manager."
+   ]
+  },
+  {
+   "draft": "g-23fd0004",
+   "text": "Account records are kept for 7 years after the account closes.",
+   "sources": [
+    "Account records are kept for 7 years after the account closes.",
+    "Retention for closed account records | 5 years",
+    "Account records are kept for 5 years after the account closes."
+   ]
+  }
+ ],
+ "input_hash": "72de21f384993db9c0fe89fcf1c54c09e961cf818ff277c01506f95d72b17c46",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "```json\n{\"results\": [{\"draft\": \"g-a0b05e44\", \"scores\": {\"keeps_rules\": {\"pass\": false, \"evidence\": \"Rate exceptions larger than 0.15% need approval above the branch manager.\"}, \"adds_no_rule\": {\"pass\": true, \"evidence\": \"\"}, \"keeps_scope\": {\"pass\": true, \"evidence\": \"\"}, \"plain\": {\"pass\": true, \"evidence\": \"\"}}}, {\"draft\": \"g-133084ff\", \"scores\": {\"keeps_rules\": {\"pass\": false, \"evidence\": \"Regional managers may approve rate exceptions of up to 0.75%.\"}, \"adds_no_rule\": {\"pass\": true, \"evidence\": \"\"}, \"keeps_scope\": {\"pass\": true, \"evidence\": \"\"}, \"plain\": {\"pass\": true, \"evidence\": \"\"}}}, {\"draft\": \"g-136d0342\", \"scores\": {\"keeps_rules\": {\"pass\": false, \"evidence\": \"Accounts that remain overdrawn for 60 days are referred for charge-off.\"}, \"adds_no_rule\": {\"pass\": true, \"evidence\": \"\"}, \"keeps_scope\": {\"pass\": true, \"evidence\": \"\"}, \"plain\": {\"pass\": true, \"evidence\": \"\"}}}, {\"draft\": \"g-e65702a5\", \"scores\": {\"keeps_rules\": {\"pass\": false, \"evidence\": \"Records may be destroyed only with written approval from a manager.\"}, \"adds_no_rule\": {\"pass\": true, \"evidence\": \"\"}, \"keeps_scope\": {\"pass\": true, \"evidence\": \"\"}, \"plain\": {\"pass\": true, \"evidence\": \"\"}}}, {\"draft\": \"g-23fd0004\", \"scores\": {\"keeps_rules\": {\"pass\": false, \"evidence\": \"Account records are kept for 5 years after the account closes.\"}, \"adds_no_rule\": {\"pass\": true, \"evidence\": \"\"}, \"keeps_scope\": {\"pass\": true, \"evidence\": \"\"}, \"plain\": {\"pass\": true, \"evidence\": \"\"}}}]}\n```",
+   "problems": [],
+   "meta": {
+    "ms": 14296,
+    "input_tokens": 988,
+    "output_tokens": 2525,
+    "cost_usd": 0.032276,
+    "usage": {
+     "completion_tokens": 466,
+     "prompt_tokens": 988,
+     "total_tokens": 3513
+    },
+    "models": [
+     "gemini-3.1-pro-preview"
+    ],
+    "stop_reason": "stop"
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T16:54:34+00:00"
+}

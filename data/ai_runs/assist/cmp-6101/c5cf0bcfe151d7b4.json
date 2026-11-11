@@ -1,0 +1,114 @@
+{
+ "step": "assist",
+ "tag": "cmp-6101",
+ "model": "claude-opus",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "opus",
+  "client_context": true
+ },
+ "prompt_hash": "66c01f0da9f327e74355d39363e55b642a1bbf8dc6249974c3afbf3cb3d6ccd5",
+ "input": [
+  {
+   "question": "q-C-11",
+   "text": "Which outgoing wires need a callback?",
+   "type": "money",
+   "clauses": [
+    {
+     "id": "JA-WIR-01@v4/s1/c2",
+     "text": "Callback threshold for outgoing wires | $10,000",
+     "title": "Wire Desk Quick Reference",
+     "type": "job_aid",
+     "version": 4,
+     "effective": "2026-03-16"
+    },
+    {
+     "id": "JA-WIR-03@v3/s1/c3",
+     "text": "Callback threshold for outgoing wires | $10,000",
+     "title": "Wire Cutoff Card",
+     "type": "job_aid",
+     "version": 3,
+     "effective": "2026-03-04"
+    },
+    {
+     "id": "FAQ-WIR-01@v1/s2/c1",
+     "text": "Outgoing wires of $10,000 or more require a callback to the customer at a number already on file.",
+     "title": "Wire Transfer FAQ",
+     "type": "faq",
+     "version": 1,
+     "effective": "2026-03-26"
+    },
+    {
+     "id": "POL-WIR-02@v5/s8/c1",
+     "text": "Outgoing wires of $10,000 or more require a callback that a wire specialist completes.",
+     "title": "Commercial Wire Services Policy",
+     "type": "policy",
+     "version": 5,
+     "effective": "2024-10-18"
+    },
+    {
+     "id": "PRO-WIR-02@v3/s3/c8",
+     "text": "Outgoing wires over $100,000 need a second approval from an operations manager.",
+     "title": "Processing Outgoing Commercial Wires",
+     "type": "procedure",
+     "version": 3,
+     "effective": "2025-07-09"
+    }
+   ]
+  }
+ ],
+ "input_hash": "2108a1192f2601223cc362b2d89143f13f5df001dbfa7d3077c5221c5aab7fc1",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [{\"question\": \"q-C-11\", \"answer\": \"Outgoing wires of $10,000 or more need a callback. A wire specialist completes the callback, and it goes to the customer at a number already on file.\", \"citations\": [\"POL-WIR-02@v5/s8/c1\", \"FAQ-WIR-01@v1/s2/c1\", \"JA-WIR-01@v4/s1/c2\", \"JA-WIR-03@v3/s1/c3\"], \"sources_disagree\": false}]}",
+   "problems": [],
+   "meta": {
+    "ms": 3786,
+    "api_ms": 3639,
+    "input_tokens": 6126,
+    "output_tokens": 397,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 5506,
+     "cache_read_input_tokens": 618,
+     "output_tokens": 397,
+     "output_tokens_details": {
+      "thinking_tokens": 230
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 5506,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 397,
+       "cache_read_input_tokens": 618,
+       "cache_creation_input_tokens": 5506,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 5506
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.052119599999999995,
+    "models": [
+     "claude-opus-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T17:14:06+00:00"
+}

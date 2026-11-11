@@ -1,0 +1,307 @@
+{
+ "step": "classify",
+ "tag": "cmp-6101",
+ "model": "claude-opus",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "opus",
+  "client_context": true
+ },
+ "prompt_hash": "2c908358fde9f0f4a792753579a6cfaa33476e41c4b0f235744675d8e8283a19",
+ "input": [
+  {
+   "pair": "pair-89159d17cf",
+   "rule": "Dispute review threshold",
+   "attribute": "dispute_review_threshold",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-DSP-01@v5/s3/c1",
+    "text": "Send any dispute above $500 to card services for review before issuing credit.",
+    "heading": "Policy statements",
+    "document": {
+     "title": "Debit Card Dispute Policy",
+     "type": "policy",
+     "version": 5,
+     "effective": "2024-07-18",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "PRO-DSP-02@v4/s3/c5",
+    "text": "Disputes over $1,000 are reviewed by a card services specialist before credit is issued.",
+    "heading": "Steps",
+    "document": {
+     "title": "Issuing Provisional Credit",
+     "type": "procedure",
+     "version": 4,
+     "effective": "2024-12-16",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-198c50deb1",
+   "rule": null,
+   "attribute": null,
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-CMP-01@v4/s4/c2",
+    "text": "Resolve complaints within 15 business days of receipt, or tell the customer when to expect a resolution.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Complaint Management Policy",
+     "type": "policy",
+     "version": 4,
+     "effective": "2026-05-11",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "ADD-OK-01@v1/s2/c1",
+    "text": "In Oklahoma branches, resolve complaints within 30 business days of receipt, or tell the customer when to expect a resolution.",
+    "heading": "Oklahoma requirements",
+    "document": {
+     "title": "Oklahoma Branch Addendum",
+     "type": "addendum",
+     "version": 1,
+     "effective": "2026-04-24",
+     "applies_to": "Oklahoma branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-9686e93ef6",
+   "rule": "Dormant account fee",
+   "attribute": "dormant_fee",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-DRM-01@v6/s3/c1",
+    "text": "Dormant accounts are charged a maintenance fee of $5 per month.",
+    "heading": "Policy statements",
+    "document": {
+     "title": "Dormant Account Policy",
+     "type": "policy",
+     "version": 6,
+     "effective": "2026-06-04",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "ADD-TX-01@v1/s2/c2",
+    "text": "In Texas branches, dormant accounts are charged a maintenance fee of $3 per month.",
+    "heading": "Texas requirements",
+    "document": {
+     "title": "Texas Branch Addendum",
+     "type": "addendum",
+     "version": 1,
+     "effective": "2026-08-01",
+     "applies_to": "Texas branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-78c14bcb59",
+   "rule": "New account period",
+   "attribute": "ao_new_account_window",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-AOP-01@v5/s4/c1",
+    "text": "An account is treated as a new account for the first 30 days after it opens.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Deposit Account Opening Policy",
+     "type": "policy",
+     "version": 5,
+     "effective": "2026-05-17",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "ADD-CO-01@v1/s2/c2",
+    "text": "In Colorado branches, accounts open fewer than 60 days are new accounts for hold and limit purposes.",
+    "heading": "Colorado requirements",
+    "document": {
+     "title": "Colorado Branch Addendum",
+     "type": "addendum",
+     "version": 1,
+     "effective": "2026-08-20",
+     "applies_to": "Colorado branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-de096c6c0b",
+   "rule": "Complaint resolution deadline",
+   "attribute": "complaint_resolve",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-CMP-01@v4/s4/c2",
+    "text": "Resolve complaints within 15 business days of receipt, or tell the customer when to expect a resolution.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Complaint Management Policy",
+     "type": "policy",
+     "version": 4,
+     "effective": "2026-05-11",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "ADD-KS-01@v1/s2/c3",
+    "text": "In Kansas branches, complaints should be closed within 30 business days of the day they arrive.",
+    "heading": "Kansas requirements",
+    "document": {
+     "title": "Kansas Branch Addendum",
+     "type": "addendum",
+     "version": 1,
+     "effective": "2026-04-19",
+     "applies_to": "Kansas branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-bac58c0fc4",
+   "rule": "Complaint acknowledgment deadline",
+   "attribute": "complaint_ack",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-CMP-01@v4/s4/c1",
+    "text": "Acknowledge every written complaint within 2 business days.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Complaint Management Policy",
+     "type": "policy",
+     "version": 4,
+     "effective": "2026-05-11",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "PRO-CMP-03@v1/s3/c8",
+    "text": "For commercial accounts, send the customer an acknowledgment no later than 3 business days after a written complaint arrives.",
+    "heading": "Steps",
+    "document": {
+     "title": "Resolving and Closing a Complaint",
+     "type": "procedure",
+     "version": 1,
+     "effective": "2025-11-10",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-171bcfa463",
+   "rule": "Branch manager rate exception limit",
+   "attribute": "lend_rate_bm",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-LND-01@v3/s4/c1",
+    "text": "Branch managers may approve rate exceptions of up to 0.25%.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Loan Pricing Exception Policy",
+     "type": "policy",
+     "version": 3,
+     "effective": "2026-06-18",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "PRO-LND-03@v4/s3/c10",
+    "text": "For commercial accounts, branch managers may approve rate exceptions of up to 0.15%.",
+    "heading": "Steps",
+    "document": {
+     "title": "Documenting Pricing Exceptions",
+     "type": "procedure",
+     "version": 4,
+     "effective": "2025-06-20",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-d3aa53fd01",
+   "rule": "Wire callback threshold",
+   "attribute": "wire_callback",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-WIR-01@v2/s4/c3",
+    "text": "Call the customer back at a phone number already on file before releasing any outgoing wire of $10,000 or more.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Wire Transfer Policy",
+     "type": "policy",
+     "version": 2,
+     "effective": "2026-08-02",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "PRO-WIR-04@v1/s3/c11",
+    "text": "For commercial accounts, call the customer back at a phone number already on file before releasing any outgoing wire of $25,000 or more.",
+    "heading": "Steps",
+    "document": {
+     "title": "Handling Incoming Wires",
+     "type": "procedure",
+     "version": 1,
+     "effective": "2025-02-25",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  }
+ ],
+ "input_hash": "9f4dbbcf3e36e33479012893680f748cb0263be80bf4f326ebfad1a3bbc02433",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [{\"pair\": \"pair-89159d17cf\", \"label\": \"conflict\", \"quote_a\": \"Send any dispute above $500 to card services for review before issuing credit.\", \"quote_b\": \"Disputes over $1,000 are reviewed by a card services specialist before credit is issued.\", \"rationale\": \"Both clauses cover the same branches and accounts but set different review thresholds of $500 and $1,000. A dispute between those amounts would need review under the policy but not under the procedure, and the higher-ranked policy is the clause to keep.\"}, {\"pair\": \"pair-198c50deb1\", \"label\": \"variation\", \"quote_a\": \"Resolve complaints within 15 business days of receipt\", \"quote_b\": \"In Oklahoma branches, resolve complaints within 30 business days of receipt\", \"rationale\": \"The addendum deliberately sets a 30 business day deadline for Oklahoma branches. The policy's 15 business day deadline remains the general rule.\"}, {\"pair\": \"pair-9686e93ef6\", \"label\": \"variation\", \"quote_a\": \"Dormant accounts are charged a maintenance fee of $5 per month.\", \"quote_b\": \"In Texas branches, dormant accounts are charged a maintenance fee of $3 per month.\", \"rationale\": \"The addendum deliberately sets a $3 monthly fee for Texas branches. The policy's $5 monthly fee remains the general rule.\"}, {\"pair\": \"pair-78c14bcb59\", \"label\": \"variation\", \"quote_a\": \"An account is treated as a new account for the first 30 days after it opens.\", \"quote_b\": \"In Colorado branches, accounts open fewer than 60 days are new accounts for hold and limit purposes.\", \"rationale\": \"The addendum deliberately sets a 60 day new account period for Colorado branches. The policy's 30 day period remains the general rule.\"}, {\"pair\": \"pair-de096c6c0b\", \"label\": \"variation\", \"quote_a\": \"Resolve complaints within 15 business days of receipt\", \"quote_b\": \"In Kansas branches, complaints should be closed within 30 business days of the day they arrive.\", \"rationale\": \"The addendum deliberately sets a 30 business day deadline for Kansas branches. The policy's 15 business day deadline remains the general rule.\"}, {\"pair\": \"pair-bac58c0fc4\", \"label\": \"variation\", \"quote_a\": \"Acknowledge every written complaint within 2 business days.\", \"quote_b\": \"For commercial accounts, send the customer an acknowledgment no later than 3 business days after a written complaint arrives.\", \"rationale\": \"The procedure deliberately sets a 3 business day deadline for commercial accounts. Its lower rank does not make this a conflict because its narrower scope is stated on purpose.\"}, {\"pair\": \"pair-171bcfa463\", \"label\": \"variation\", \"quote_a\": \"Branch managers may approve rate exceptions of up to 0.25%.\", \"quote_b\": \"For commercial accounts, branch managers may approve rate exceptions of up to 0.15%.\", \"rationale\": \"The procedure deliberately sets a 0.15% limit for commercial accounts. Its lower rank does not make this a conflict because its narrower scope is stated on purpose.\"}, {\"pair\": \"pair-d3aa53fd01\", \"label\": \"variation\", \"quote_a\": \"before releasing any outgoing wire of $10,000 or more.\", \"quote_b\": \"For commercial accounts, call the customer back at a phone number already on file before releasing any outgoing wire of $25,000 or more.\", \"rationale\": \"The procedure deliberately sets a $25,000 callback threshold for commercial accounts. Its lower rank does not make this a conflict because its narrower scope is stated on purpose.\"}]}",
+   "problems": [],
+   "meta": {
+    "ms": 14222,
+    "api_ms": 14104,
+    "input_tokens": 9044,
+    "output_tokens": 1843,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 9042,
+     "cache_read_input_tokens": 0,
+     "output_tokens": 1843,
+     "output_tokens_details": {
+      "thinking_tokens": 607
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 9042,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 1843,
+       "cache_read_input_tokens": 0,
+       "cache_creation_input_tokens": 9042,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 9042
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.109204,
+    "models": [
+     "claude-opus-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T17:12:42+00:00"
+}

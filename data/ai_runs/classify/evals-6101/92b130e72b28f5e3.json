@@ -1,0 +1,307 @@
+{
+ "step": "classify",
+ "tag": "evals-6101",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "2c908358fde9f0f4a792753579a6cfaa33476e41c4b0f235744675d8e8283a19",
+ "input": [
+  {
+   "pair": "pair-97ee86afb8",
+   "rule": "Personal banker fee waiver limit",
+   "attribute": "fee_waiver_pb",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-FEE-03@v2/s3/c7",
+    "text": "A personal banker can waive no more than $25 for one account in a calendar year.",
+    "heading": "Steps",
+    "document": {
+     "title": "Handling Fee Refund Requests",
+     "type": "procedure",
+     "version": 2,
+     "effective": "2024-12-28",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "POL-FEE-02@v4/s3/c1",
+    "text": "Personal bankers may waive service fees up to $25 per account in a calendar year.",
+    "heading": "Policy statements",
+    "document": {
+     "title": "Fee Refund Policy",
+     "type": "policy",
+     "version": 4,
+     "effective": "2026-01-16",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-a9061e7b02",
+   "rule": "Vault combination change interval",
+   "attribute": "combo_change",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-BOP-04@v3/s3/c3",
+    "text": "Change the vault combination at least every 6 months.",
+    "heading": "Steps",
+    "document": {
+     "title": "Testing the Alarm System",
+     "type": "procedure",
+     "version": 3,
+     "effective": "2025-05-23",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "PRO-BOP-02@v1/s3/c6",
+    "text": "Vault combinations are changed every 6 months and whenever an employee who knows the combination leaves.",
+    "heading": "Steps",
+    "document": {
+     "title": "Closing the Branch Each Evening",
+     "type": "procedure",
+     "version": 1,
+     "effective": "2025-05-10",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-df15b6f7b9",
+   "rule": "Days overdrawn before charge-off",
+   "attribute": "od_chargeoff",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "FAQ-ODR-01@v4/s3/c1",
+    "text": "Refer an account for charge-off once it has been negative for 45 days.",
+    "heading": "When is an overdrawn account referred for charge-off?",
+    "document": {
+     "title": "Overdraft FAQ",
+     "type": "faq",
+     "version": 4,
+     "effective": "2026-02-16",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "JA-ODR-01@v4/s1/c2",
+    "text": "Days overdrawn before charge-off | 45 days",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Overdraft Quick Reference",
+     "type": "job_aid",
+     "version": 4,
+     "effective": "2026-04-04",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-7df410fe3e",
+   "rule": "Complaint acknowledgment deadline",
+   "attribute": "complaint_ack",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "JA-CMP-01@v1/s1/c3",
+    "text": "Complaint acknowledgment deadline | 2 business days",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Complaint Handling Card",
+     "type": "job_aid",
+     "version": 1,
+     "effective": "2026-02-10",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "PRO-CMP-01@v2/s3/c8",
+    "text": "Send the customer an acknowledgment no later than 2 business days after a written complaint arrives.",
+    "heading": "Steps",
+    "document": {
+     "title": "Logging a Customer Complaint",
+     "type": "procedure",
+     "version": 2,
+     "effective": "2025-08-20",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-39504cfedb",
+   "rule": "Dispute review threshold",
+   "attribute": "dispute_review_threshold",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "FAQ-DSP-02@v1/s2/c1",
+    "text": "Disputes over $500 are reviewed by a card services specialist before credit is issued.",
+    "heading": "Which disputes need card services review?",
+    "document": {
+     "title": "Provisional Credit Questions",
+     "type": "faq",
+     "version": 1,
+     "effective": "2025-11-22",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "JA-DSP-01@v3/s1/c3",
+    "text": "Dispute amount that needs card services review | $500",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Dispute Intake Checklist",
+     "type": "job_aid",
+     "version": 3,
+     "effective": "2025-08-29",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-d6900c92b3",
+   "rule": "Fee refund window",
+   "attribute": "fee_refund_window",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-FEE-02@v4/s4/c1",
+    "text": "Customers may request a fee refund within 60 days of the statement date.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Fee Refund Policy",
+     "type": "policy",
+     "version": 4,
+     "effective": "2026-01-16",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "PRO-FEE-02@v1/s3/c1",
+    "text": "Customers may request a fee refund within 60 days of the statement date.",
+    "heading": "Steps",
+    "document": {
+     "title": "Reversing a Service Fee",
+     "type": "procedure",
+     "version": 1,
+     "effective": "2025-07-18",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-77f8d5360a",
+   "rule": "Dispute review threshold",
+   "attribute": "dispute_review_threshold",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "JA-DSP-02@v4/s1/c3",
+    "text": "Dispute amount that needs card services review | $500",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Dispute Timelines Card",
+     "type": "job_aid",
+     "version": 4,
+     "effective": "2025-09-06",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "PRO-DSP-03@v2/s3/c5",
+    "text": "Disputes over $500 are reviewed by a card services specialist before credit is issued.",
+    "heading": "Steps",
+    "document": {
+     "title": "Investigating a Dispute",
+     "type": "procedure",
+     "version": 2,
+     "effective": "2026-07-31",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-9a4488306e",
+   "rule": "Dual control for the vault",
+   "attribute": "cash_vault_dual",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-CSH-03@v1/s3/c2",
+    "text": "The vault must be opened under dual control, with two employees present.",
+    "heading": "Steps",
+    "document": {
+     "title": "Opening and Closing the Vault",
+     "type": "procedure",
+     "version": 1,
+     "effective": "2026-03-07",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "POL-CSH-01@v4/s4/c2",
+    "text": "The vault must be opened under dual control, with two employees present.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Cash Handling Policy",
+     "type": "policy",
+     "version": 4,
+     "effective": "2025-05-11",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  }
+ ],
+ "input_hash": "c411744e11f871b49d5c570293fb66ef93d31e3f9ea1737529d7226a46437c2e",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [{\"pair\": \"pair-97ee86afb8\", \"label\": \"consistent\", \"quote_a\": \"no more than $25 for one account in a calendar year\", \"quote_b\": \"up to $25 per account in a calendar year\", \"rationale\": \"Both clauses cap a personal banker's waiver at $25 per account in a calendar year. The wording differs but the limit and the period are the same.\"}, {\"pair\": \"pair-a9061e7b02\", \"label\": \"consistent\", \"quote_a\": \"Change the vault combination at least every 6 months.\", \"quote_b\": \"Vault combinations are changed every 6 months and whenever an employee who knows the combination leaves.\", \"rationale\": \"Both set a 6 month interval. Clause b adds a change when an employee leaves, but clause a sets only a minimum frequency and does not forbid an earlier change, so I treated the extra trigger as an omission and not a contradiction.\"}, {\"pair\": \"pair-df15b6f7b9\", \"label\": \"consistent\", \"quote_a\": \"once it has been negative for 45 days\", \"quote_b\": \"Days overdrawn before charge-off | 45 days\", \"rationale\": \"Both clauses set charge-off referral at 45 days overdrawn. The FAQ and the job aid agree on the value.\"}, {\"pair\": \"pair-7df410fe3e\", \"label\": \"consistent\", \"quote_a\": \"Complaint acknowledgment deadline | 2 business days\", \"quote_b\": \"no later than 2 business days after a written complaint arrives\", \"rationale\": \"Both use the same deadline of 2 business days. The units match, so staff act the same way under either clause.\"}, {\"pair\": \"pair-39504cfedb\", \"label\": \"consistent\", \"quote_a\": \"Disputes over $500 are reviewed by a card services specialist before credit is issued.\", \"quote_b\": \"Dispute amount that needs card services review | $500\", \"rationale\": \"Both clauses send disputes over $500 to card services review. The FAQ and the job aid state the same threshold.\"}, {\"pair\": \"pair-d6900c92b3\", \"label\": \"consistent\", \"quote_a\": \"Customers may request a fee refund within 60 days of the statement date.\", \"quote_b\": \"Customers may request a fee refund within 60 days of the statement date.\", \"rationale\": \"Each clause states the same rule with the same 60 day window. This is a single rule statement and not a copied run of steps, so the clauses are consistent.\"}, {\"pair\": \"pair-77f8d5360a\", \"label\": \"consistent\", \"quote_a\": \"Dispute amount that needs card services review | $500\", \"quote_b\": \"Disputes over $500 are reviewed by a card services specialist before credit is issued.\", \"rationale\": \"Both clauses set the card services review threshold at $500. The job aid and the procedure agree.\"}, {\"pair\": \"pair-9a4488306e\", \"label\": \"consistent\", \"quote_a\": \"The vault must be opened under dual control, with two employees present.\", \"quote_b\": \"The vault must be opened under dual control, with two employees present.\", \"rationale\": \"Both clauses require two employees present when the vault is opened. This is one rule stated with the same value in each document, so they are consistent.\"}]}",
+   "problems": [],
+   "meta": {
+    "ms": 13738,
+    "api_ms": 13613,
+    "input_tokens": 8961,
+    "output_tokens": 2126,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 8118,
+     "cache_read_input_tokens": 841,
+     "output_tokens": 2126,
+     "output_tokens_details": {
+      "thinking_tokens": 1087
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 8118,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 2126,
+       "cache_read_input_tokens": 841,
+       "cache_creation_input_tokens": 8118,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 8118
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.053820099999999996,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T05:29:20+00:00"
+}

@@ -1,0 +1,217 @@
+{
+ "step": "classify",
+ "tag": "evals-6101",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "2c908358fde9f0f4a792753579a6cfaa33476e41c4b0f235744675d8e8283a19",
+ "input": [
+  {
+   "pair": "pair-785de1b513",
+   "rule": "Large deposit hold threshold",
+   "attribute": "hold_large_threshold",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-HLD-04@v3/s3/c9",
+    "text": "An extended hold may be placed on the part of a day's check deposits above $6,000.",
+    "heading": "Steps",
+    "document": {
+     "title": "Releasing a Hold Early",
+     "type": "procedure",
+     "version": 3,
+     "effective": "2025-05-09",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "JA-HLD-01@v1/s1/c2",
+    "text": "Standard check hold | 2 business days",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Hold Calendar Quick Reference",
+     "type": "job_aid",
+     "version": 1,
+     "effective": "2025-08-18",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-10ea6931f0",
+   "rule": "Days overdrawn before charge-off",
+   "attribute": "od_chargeoff",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-ODR-04@v3/s3/c7",
+    "text": "Accounts that remain overdrawn for 45 days are referred for charge-off.",
+    "heading": "Steps",
+    "document": {
+     "title": "Talking with Customers About Overdrafts",
+     "type": "procedure",
+     "version": 3,
+     "effective": "2026-03-21",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "FAQ-ODR-02@v2/s1/c1",
+    "text": "Each item paid into overdraft is charged $30.",
+    "heading": "What is the overdraft fee?",
+    "document": {
+     "title": "Overdraft Fee Questions from Customers",
+     "type": "faq",
+     "version": 2,
+     "effective": "2026-04-06",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-7a14150fd4",
+   "rule": "Overdraft amount with no fee",
+   "attribute": "od_de_minimis",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-ODR-02@v2/s3/c2",
+    "text": "Accounts overdrawn by no more than $10 at the end of the day are not charged an overdraft fee.",
+    "heading": "Steps",
+    "document": {
+     "title": "Assessing and Reversing Overdraft Fees",
+     "type": "procedure",
+     "version": 2,
+     "effective": "2025-12-05",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "FAQ-ODR-02@v2/s2/c1",
+    "text": "Overdraft fees are capped at three per account per business day.",
+    "heading": "How many overdraft fees can an account be charged in one day?",
+    "document": {
+     "title": "Overdraft Fee Questions from Customers",
+     "type": "faq",
+     "version": 2,
+     "effective": "2026-04-06",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-fd1eefa632",
+   "rule": "Who completes wire callbacks",
+   "attribute": "wire_callback_role",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "JA-WIR-01@v4/s1/c1",
+    "text": "Who completes wire callbacks | wire specialist",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Wire Desk Quick Reference",
+     "type": "job_aid",
+     "version": 4,
+     "effective": "2026-03-16",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "PRO-WIR-04@v1/s3/c4",
+    "text": "An operations manager must give a second approval for any outgoing wire above $50,000.",
+    "heading": "Steps",
+    "document": {
+     "title": "Handling Incoming Wires",
+     "type": "procedure",
+     "version": 1,
+     "effective": "2025-02-25",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-d7b5039090",
+   "rule": "Fee waivers per account per year",
+   "attribute": "fee_waivers_per_year",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "BUL-FEE-02@v3/s1/c2",
+    "text": "Limit fee waivers to two per account in each calendar year.",
+    "heading": "What branches need to know",
+    "document": {
+     "title": "Branch Bulletin 2026-24: Fee waivers per account per year",
+     "type": "bulletin",
+     "version": 3,
+     "effective": "2025-05-20",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "PRO-FEE-04@v4/s3/c6",
+    "text": "A personal banker can waive no more than $25 for one account in a calendar year.",
+    "heading": "Steps",
+    "document": {
+     "title": "Reviewing Waiver Activity Each Month",
+     "type": "procedure",
+     "version": 4,
+     "effective": "2026-05-20",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  }
+ ],
+ "input_hash": "aa4371d8dc681c50e2aefaade10aaaca0920f59e3f9befdb3e3b1b024881cc00",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [{\"pair\": \"pair-785de1b513\", \"label\": \"unrelated\", \"quote_a\": \"An extended hold may be placed on the part of a day's check deposits above $6,000.\", \"quote_b\": \"Standard check hold | 2 business days\", \"rationale\": \"The first clause sets when an extended hold may apply to large deposits. The second gives the length of the standard hold, so they govern different things.\"}, {\"pair\": \"pair-10ea6931f0\", \"label\": \"unrelated\", \"quote_a\": \"Accounts that remain overdrawn for 45 days are referred for charge-off.\", \"quote_b\": \"Each item paid into overdraft is charged $30.\", \"rationale\": \"One clause covers when overdrawn accounts go to charge-off. The other covers the per item overdraft fee, so they govern different things.\"}, {\"pair\": \"pair-7a14150fd4\", \"label\": \"unrelated\", \"quote_a\": \"Accounts overdrawn by no more than $10 at the end of the day are not charged an overdraft fee.\", \"quote_b\": \"Overdraft fees are capped at three per account per business day.\", \"rationale\": \"The first clause sets an overdrawn amount below which no fee is charged. The second caps how many fees can be charged in a day, so they are different rules that can both be followed.\"}, {\"pair\": \"pair-fd1eefa632\", \"label\": \"unrelated\", \"quote_a\": \"Who completes wire callbacks | wire specialist\", \"quote_b\": \"An operations manager must give a second approval for any outgoing wire above $50,000.\", \"rationale\": \"One clause names who performs wire callbacks. The other requires a second approval on large outgoing wires, so they govern different steps.\"}, {\"pair\": \"pair-d7b5039090\", \"label\": \"consistent\", \"quote_a\": \"Limit fee waivers to two per account in each calendar year.\", \"quote_b\": \"A personal banker can waive no more than $25 for one account in a calendar year.\", \"rationale\": \"One clause caps the number of waivers and the other caps the dollar amount a personal banker can waive. Both are limits that staff can follow together, so neither makes staff act against the other.\"}]}",
+   "problems": [],
+   "meta": {
+    "ms": 11305,
+    "api_ms": 11156,
+    "input_tokens": 7823,
+    "output_tokens": 1451,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 6980,
+     "cache_read_input_tokens": 841,
+     "output_tokens": 1451,
+     "output_tokens_details": {
+      "thinking_tokens": 751
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 6980,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 1451,
+       "cache_read_input_tokens": 841,
+       "cache_creation_input_tokens": 6980,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 6980
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.0425181,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T05:29:33+00:00"
+}

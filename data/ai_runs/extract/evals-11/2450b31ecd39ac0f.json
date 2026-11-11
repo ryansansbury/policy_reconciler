@@ -1,0 +1,133 @@
+{
+ "step": "extract",
+ "tag": "evals-11",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "c338e60b657607c5f659b819665f2ec94796d01ec070e1f88f830e5bdacdd3fe",
+ "input": [
+  {
+   "clause": "PRO-DRM-04@v4/s3/c3",
+   "text": "Customers receive written notice 60 days before their account becomes dormant.",
+   "heading": "Steps",
+   "document": {
+    "title": "Charging Dormant Account Fees",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "PRO-DRM-06@v1/s3/c1",
+   "text": "Send dormant accounts one statement every 12 months.",
+   "heading": "Steps",
+   "document": {
+    "title": "Handling Mail Returned on a Dormant Account",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "PRO-DSP-01@v3/s3/c10",
+   "text": "Tell customers a replacement card will arrive within 7 business days.",
+   "heading": "Steps",
+   "document": {
+    "title": "Taking a Debit Card Dispute",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "PRO-DSP-02@v2/s3/c9",
+   "text": "For small business accounts, disputes over $250 are reviewed by a card services specialist before credit is issued.",
+   "heading": "Steps",
+   "document": {
+    "title": "Issuing Provisional Credit",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "PRO-DSP-03@v4/s3/c10",
+   "text": "Tell customers a replacement card will arrive within 7 business days.",
+   "heading": "Steps",
+   "document": {
+    "title": "Investigating a Dispute",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "PRO-DSP-05@v1/s3/c3",
+   "text": "Send any dispute above $250 to card services for review before issuing credit.",
+   "heading": "Steps",
+   "document": {
+    "title": "Blocking and Replacing a Compromised Card",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "PRO-FEE-01@v2/s3/c1",
+   "text": "Limit fee waivers to three per account in each calendar year.",
+   "heading": "Steps",
+   "document": {
+    "title": "Processing a Fee Waiver Request",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "PRO-FEE-04@v3/s3/c7",
+   "text": "Fee refund requests are accepted for 30 days after the statement date.",
+   "heading": "Steps",
+   "document": {
+    "title": "Reviewing Waiver Activity Each Month",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "PRO-FEE-04@v3/s5/c4",
+   "text": "Fee refund requests are accepted for 60 days after the statement date.",
+   "heading": "Steps to follow",
+   "document": {
+    "title": "Reviewing Waiver Activity Each Month",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "PRO-HLD-02@v2/s3/c2",
+   "text": "Funds from deposited checks are available within 2 days unless a longer hold applies.",
+   "heading": "Steps",
+   "document": {
+    "title": "Extending a Hold on a Large Deposit",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  }
+ ],
+ "input_hash": "22be7da10344e47c13fccd386e5ca043307e935eb3570d00b4f114106651fe31",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [{\"clause\": \"PRO-DRM-04@v4/s3/c3\", \"atoms\": [{\"attribute\": \"dormant_notice\", \"value\": {\"type\": \"duration\", \"n\": 60, \"unit\": \"days\"}, \"quote\": \"60 days\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]}, {\"clause\": \"PRO-DRM-06@v1/s3/c1\", \"atoms\": [{\"attribute\": \"dormant_statement\", \"value\": {\"type\": \"duration\", \"n\": 12, \"unit\": \"months\"}, \"quote\": \"12 months\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]}, {\"clause\": \"PRO-DSP-01@v3/s3/c10\", \"atoms\": [{\"attribute\": \"card_replacement\", \"value\": {\"type\": \"duration\", \"n\": 7, \"unit\": \"business_days\"}, \"quote\": \"7 business days\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]}, {\"clause\": \"PRO-DSP-02@v2/s3/c9\", \"atoms\": [{\"attribute\": \"dispute_review_threshold\", \"value\": {\"type\": \"money\", \"dollars\": 250}, \"quote\": \"$250\", \"actor\": \"card_services_specialist\", \"actor_inferred\": false, \"scope_quote\": \"For small business accounts\", \"condition\": null}]}, {\"clause\": \"PRO-DSP-03@v4/s3/c10\", \"atoms\": [{\"attribute\": \"card_replacement\", \"value\": {\"type\": \"duration\", \"n\": 7, \"unit\": \"business_days\"}, \"quote\": \"7 business days\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]}, {\"clause\": \"PRO-DSP-05@v1/s3/c3\", \"atoms\": [{\"attribute\": \"dispute_review_threshold\", \"value\": {\"type\": \"money\", \"dollars\": 250}, \"quote\": \"$250\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]}, {\"clause\": \"PRO-FEE-01@v2/s3/c1\", \"atoms\": [{\"attribute\": \"fee_waivers_per_year\", \"value\": {\"type\": \"count\", \"n\": 3}, \"quote\": \"three\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]}, {\"clause\": \"PRO-FEE-04@v3/s3/c7\", \"atoms\": [{\"attribute\": \"fee_refund_window\", \"value\": {\"type\": \"duration\", \"n\": 30, \"unit\": \"days\"}, \"quote\": \"30 days\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]}, {\"clause\": \"PRO-FEE-04@v3/s5/c4\", \"atoms\": [{\"attribute\": \"fee_refund_window\", \"value\": {\"type\": \"duration\", \"n\": 60, \"unit\": \"days\"}, \"quote\": \"60 days\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]}, {\"clause\": \"PRO-HLD-02@v2/s3/c2\", \"atoms\": [{\"attribute\": \"hold_standard\", \"value\": {\"type\": \"duration\", \"n\": 2, \"unit\": \"days\"}, \"quote\": \"2 days\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": \"unless a longer hold applies\"}]}]}",
+   "problems": [],
+   "meta": {
+    "ms": 10149,
+    "api_ms": 9874,
+    "input_tokens": 2,
+    "output_tokens": 1704,
+    "cost_usd": 0.042337,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T03:23:30+00:00"
+}

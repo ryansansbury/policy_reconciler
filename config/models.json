@@ -1,0 +1,88 @@
+{
+ "note": "The models the comparison ran and the routes choose between. This public copy calls no model, and no entry carries a key, an endpoint, or a way to reach a vendor. Prices are US dollars per million input and output tokens at the standard tier from each vendor's pricing page.",
+ "prices_checked": "2026-10-30",
+ "prices_note": "Rechecked 10/30 on each vendor's pricing page. Every price here held at the standard tier. Claude Haiku 5.5's price applies to prompts up to 100,000 tokens and Gemini 3.1 Pro's up to 200,000, far above any prompt here. Gemini 3.8 Flash's price is introductory through 12/31/2026, and price_after gives its regular price from 1/1/2027.",
+ "default": "claude-sonnet",
+ "steps": {
+  "extract": "claude-sonnet",
+  "classify": "claude-sonnet",
+  "draft": "claude-opus",
+  "judge": "google-a",
+  "assist": "claude-sonnet"
+ },
+ "steps_note": "The model each step was recorded with before routing chose its route. Each step returns to it when routing is off. The judge comes from another vendor than the drafter, and no recorded judgment came from the drafter's family.",
+ "models": [
+  {
+   "id": "claude-opus",
+   "label": "Claude Opus 5.5",
+   "vendor": "Anthropic",
+   "model": "opus",
+   "price_in": 4.0,
+   "price_out": 20.0
+  },
+  {
+   "id": "claude-sonnet",
+   "label": "Claude Sonnet 5.5",
+   "vendor": "Anthropic",
+   "model": "sonnet",
+   "price_in": 2.0,
+   "price_out": 10.0
+  },
+  {
+   "id": "claude-haiku",
+   "label": "Claude Haiku 5.5",
+   "vendor": "Anthropic",
+   "model": "haiku",
+   "price_in": 0.1,
+   "price_out": 0.5
+  },
+  {
+   "id": "openai-a",
+   "label": "GPT-6 Astra",
+   "vendor": "OpenAI",
+   "model": "gpt-6-astra",
+   "price_in": 10.0,
+   "price_out": 50.0
+  },
+  {
+   "id": "openai-b",
+   "label": "GPT-6 Luna",
+   "vendor": "OpenAI",
+   "model": "gpt-6-luna",
+   "price_in": 0.1,
+   "price_out": 0.5
+  },
+  {
+   "id": "google-a",
+   "label": "Gemini 3.1 Pro",
+   "vendor": "Google",
+   "model": "gemini-3.1-pro-preview",
+   "price_in": 2.0,
+   "price_out": 12.0
+  },
+  {
+   "id": "google-b",
+   "label": "Gemini 3.8 Flash",
+   "vendor": "Google",
+   "model": "gemini-3.8-flash",
+   "price_in": 0.75,
+   "price_out": 3.75,
+   "price_after": {
+    "from": "2027-01-01",
+    "price_in": 1.5,
+    "price_out": 7.5
+   }
+  }
+ ],
+ "client_context_tokens": 4936,
+ "client_context_note": "The client context each recorded Claude call carries beyond the prompt and items. It's left out when Claude is priced the way an API bills a client.",
+ "embeddings": {
+  "id": "openai-embed-small",
+  "label": "OpenAI text-embedding-3-small",
+  "vendor": "OpenAI",
+  "model": "text-embedding-3-small",
+  "dimensions": 256,
+  "price_in": 0.02,
+  "note": "The embeddings experiment's model in evals/embeddings.py. Its vectors were recorded once through OpenAI's API and aren't part of this repo. 256 dimensions are plenty for short clauses and kept those vectors small. Its price of $0.02 per million tokens was confirmed on 10/30, and it's still offered."
+ }
+}

@@ -1,0 +1,292 @@
+{
+ "step": "classify",
+ "tag": "evals-11",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "1346938ac1ecbf43874a700ab9916c851d6a29bb5d6b9e5f1199128bc8cd59f2",
+ "input": [
+  {
+   "pair": "pair-3d192161aa",
+   "rule": "New account period",
+   "attribute": "ao_new_account_window",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "JA-AOP-02@v3/s1/c2",
+    "text": "How long an account counts as new | 30 days",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Identification Checklist",
+     "type": "job_aid",
+     "version": 3,
+     "effective": "2025-09-16",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "PRO-AOP-05@v1/s3/c9",
+    "text": "An account is treated as a new account for the first 30 days after it opens.",
+    "heading": "Steps",
+    "document": {
+     "title": "Adding a Signer to an Existing Account",
+     "type": "procedure",
+     "version": 1,
+     "effective": "2025-01-13",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-c168d25904",
+   "rule": "Large-cash review threshold",
+   "attribute": "cash_review_threshold",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "FAQ-CSH-02@v2/s1/c1",
+    "text": "Log any cash deposit or withdrawal of $7,500 or more for large-cash review.",
+    "heading": "Which cash transactions go to large-cash review?",
+    "document": {
+     "title": "Large-Cash Review Questions",
+     "type": "faq",
+     "version": 2,
+     "effective": "2026-03-29",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "JA-CSH-01@v1/s1/c2",
+    "text": "Large-cash review threshold | $7,500",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Teller Cash Limits Card",
+     "type": "job_aid",
+     "version": 1,
+     "effective": "2026-06-30",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-3cc08712ee",
+   "rule": "Branch manager fee waiver limit",
+   "attribute": "fee_waiver_bm",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "JA-FEE-01@v4/s1/c1",
+    "text": "Branch manager fee waiver limit | $50",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Fee Waiver Quick Reference",
+     "type": "job_aid",
+     "version": 4,
+     "effective": "2026-04-28",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "JA-FEE-02@v2/s1/c2",
+    "text": "Branch manager fee waiver limit | $50",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Fee Schedule at a Glance",
+     "type": "job_aid",
+     "version": 2,
+     "effective": "2025-10-20",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-cf7a352252",
+   "rule": "Wire second approval threshold",
+   "attribute": "wire_second_approval",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "JA-WIR-02@v3/s1/c1",
+    "text": "Second approval threshold for outgoing wires | $50,000",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Callback Checklist",
+     "type": "job_aid",
+     "version": 3,
+     "effective": "2025-12-02",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "JA-WIR-03@v1/s1/c1",
+    "text": "Second approval threshold for outgoing wires | $50,000",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Wire Cutoff Card",
+     "type": "job_aid",
+     "version": 1,
+     "effective": "2025-12-30",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-69571e2e65",
+   "rule": "Teller drawer limit",
+   "attribute": "cash_drawer_limit",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "JA-CSH-01@v1/s1/c1",
+    "text": "Teller drawer cash limit | $15,000",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Teller Cash Limits Card",
+     "type": "job_aid",
+     "version": 1,
+     "effective": "2026-06-30",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "PRO-CSH-07@v4/s3/c7",
+    "text": "Sell excess cash to the vault whenever a teller drawer goes above $15,000.",
+    "heading": "Steps",
+    "document": {
+     "title": "Counting Cash Under Dual Control",
+     "type": "procedure",
+     "version": 4,
+     "effective": "2025-06-14",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-8b79fb2098",
+   "rule": "Minimum opening deposit",
+   "attribute": "ao_min_deposit",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-AOP-01@v4/s3/c6",
+    "text": "A consumer checking account needs at least $25 to open.",
+    "heading": "Steps",
+    "document": {
+     "title": "Opening a Consumer Checking Account",
+     "type": "procedure",
+     "version": 4,
+     "effective": "2025-06-07",
+     "applies_to": "All branches. Consumer accounts."
+    }
+   },
+   "b": {
+    "clause": "PRO-AOP-06@v4/s3/c2",
+    "text": "The minimum opening deposit for a consumer checking account is $25.",
+    "heading": "Steps",
+    "document": {
+     "title": "Handling Identification Exceptions",
+     "type": "procedure",
+     "version": 4,
+     "effective": "2025-04-25",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-7bc86c336e",
+   "rule": "New account check hold",
+   "attribute": "hold_new_account",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "JA-HLD-03@v1/s1/c2",
+    "text": "Longest check hold on a new account | 7 business days",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Hold Notice Checklist",
+     "type": "job_aid",
+     "version": 1,
+     "effective": "2026-05-01",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "JA-HLD-01@v2/s1/c2",
+    "text": "Longest check hold on a new account | 7 business days",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Hold Calendar Quick Reference",
+     "type": "job_aid",
+     "version": 2,
+     "effective": "2026-04-24",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-c8d77ba6c1",
+   "rule": "Vault combination change interval",
+   "attribute": "combo_change",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "JA-BOP-02@v2/s1/c1",
+    "text": "Vault combination change interval | 6 months",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Closing Checklist",
+     "type": "job_aid",
+     "version": 2,
+     "effective": "2025-05-25",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "PRO-BOP-04@v1/s3/c8",
+    "text": "Vault combinations are changed every 6 months and whenever an employee who knows the combination leaves.",
+    "heading": "Steps",
+    "document": {
+     "title": "Testing the Alarm System",
+     "type": "procedure",
+     "version": 1,
+     "effective": "2026-01-28",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  }
+ ],
+ "input_hash": "69ce02a68b667f9bdd84db3e0ccc9ba1ae1c89425d6ec63731dc1bd94780fab0",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [{\"pair\": \"pair-3d192161aa\", \"label\": \"duplicate\", \"quote_a\": \"How long an account counts as new | 30 days\", \"quote_b\": \"An account is treated as a new account for the first 30 days after it opens.\", \"rationale\": \"Both clauses set the new account period at 30 days for the same scope of branches and accounts. Nothing differs that would change what staff do.\"}, {\"pair\": \"pair-c168d25904\", \"label\": \"duplicate\", \"quote_a\": \"Log any cash deposit or withdrawal of $7,500 or more for large-cash review.\", \"quote_b\": \"Large-cash review threshold | $7,500\", \"rationale\": \"Both clauses put the large-cash review threshold at $7,500 across all branches and business lines. The rule is stated twice with no difference.\"}, {\"pair\": \"pair-3cc08712ee\", \"label\": \"duplicate\", \"quote_a\": \"Branch manager fee waiver limit | $50\", \"quote_b\": \"Branch manager fee waiver limit | $50\", \"rationale\": \"The two quick reference rows are identical and cover the same branches and accounts. The $50 limit is simply repeated.\"}, {\"pair\": \"pair-cf7a352252\", \"label\": \"duplicate\", \"quote_a\": \"Second approval threshold for outgoing wires | $50,000\", \"quote_b\": \"Second approval threshold for outgoing wires | $50,000\", \"rationale\": \"Both job aids state the same $50,000 threshold for the same scope. Nothing differs that matters.\"}, {\"pair\": \"pair-69571e2e65\", \"label\": \"duplicate\", \"quote_a\": \"Teller drawer cash limit | $15,000\", \"quote_b\": \"whenever a teller drawer goes above $15,000\", \"rationale\": \"Both clauses treat $15,000 as the drawer limit for all branches and business lines. The procedure only adds the action of selling the excess to the vault, which the limit already implies.\"}, {\"pair\": \"pair-8b79fb2098\", \"label\": \"duplicate\", \"quote_a\": \"A consumer checking account needs at least $25 to open.\", \"quote_b\": \"The minimum opening deposit for a consumer checking account is $25.\", \"rationale\": \"Both procedures require $25 to open a consumer checking account. The wording differs but the requirement is the same.\"}, {\"pair\": \"pair-7bc86c336e\", \"label\": \"duplicate\", \"quote_a\": \"Longest check hold on a new account | 7 business days\", \"quote_b\": \"Longest check hold on a new account | 7 business days\", \"rationale\": \"The two job aids give the same 7 business days limit for the same scope. The rule is repeated with no difference.\"}, {\"pair\": \"pair-c8d77ba6c1\", \"label\": \"consistent\", \"quote_a\": \"Vault combination change interval | 6 months\", \"quote_b\": \"Vault combinations are changed every 6 months and whenever an employee who knows the combination leaves.\", \"rationale\": \"Both set the routine interval at 6 months. The procedure adds a change when an employee leaves, and the job aid only omits it without ruling it out, so staff following either would not act against the other.\"}]}",
+   "problems": [
+    "pair-c8d77ba6c1: the rationale has a comma before so"
+   ],
+   "meta": {
+    "ms": 11062,
+    "api_ms": 10834,
+    "input_tokens": 2,
+    "output_tokens": 1698,
+    "cost_usd": 0.0492789,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  },
+  {
+   "reply": "{\"results\": [{\"pair\": \"pair-c8d77ba6c1\", \"label\": \"consistent\", \"quote_a\": \"Vault combination change interval | 6 months\", \"quote_b\": \"Vault combinations are changed every 6 months and whenever an employee who knows the combination leaves.\", \"rationale\": \"Both clauses set the routine change interval at 6 months for all branches and business lines. Clause b adds a change when an employee who knows the combination leaves, which clause a leaves out without contradicting it, and staff following the job aid would still make the routine change on schedule.\"}]}",
+   "problems": [],
+   "meta": {
+    "ms": 2483,
+    "api_ms": 2312,
+    "input_tokens": 2,
+    "output_tokens": 186,
+    "cost_usd": 0.0232629,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   },
+   "items": [
+    "pair-c8d77ba6c1"
+   ]
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T03:27:03+00:00"
+}

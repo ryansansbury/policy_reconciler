@@ -1,0 +1,167 @@
+{
+ "step": "extract",
+ "tag": "8101",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "dcc761e46c6ec579c01b9dfd540df3c2fa4bba3b6b5ec777aa2cf9c9c62aa411",
+ "input": [
+  {
+   "clause": "POL-WIR-02@v5/s6/c1",
+   "text": "Branch managers make sure their teams follow this policy, and Treasury Services answers questions about it.",
+   "heading": "Roles and responsibilities",
+   "document": {
+    "title": "Commercial Wire Services Policy",
+    "type": "policy",
+    "applies_to": "All branches. Commercial accounts."
+   }
+  },
+  {
+   "clause": "PRO-AOP-06@v1/s3/c5",
+   "text": "Any exception to the identification requirements must be approved by the branch manager.",
+   "heading": "Steps",
+   "document": {
+    "title": "Handling Identification Exceptions",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "PRO-AOP-07@v4/s3/c7",
+   "text": "Only a manager can approve an exception to the identification requirements.",
+   "heading": "Steps",
+   "document": {
+    "title": "Opening an Account for a Minor with a Custodian",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "PRO-BOP-02@v3/s3/c3",
+   "text": "Approach the branch together and check the exterior for signs of forced entry.",
+   "heading": "Steps",
+   "document": {
+    "title": "Closing the Branch Each Evening",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-BOP-02@v4/s3/c3",
+   "text": "Approach the branch together and check the exterior for signs of forced entry.",
+   "heading": "Steps",
+   "document": {
+    "title": "Closing the Branch Each Evening",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-BOP-03@v2/s3/c4",
+   "text": "Approach the branch together and check the exterior for signs of forced entry.",
+   "heading": "Steps",
+   "document": {
+    "title": "Changing Vault Combinations",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-BOP-03@v2/s6/c2",
+   "text": "Approach the branch together and check the exterior for signs of forced entry.",
+   "heading": "Steps to follow",
+   "document": {
+    "title": "Changing Vault Combinations",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-BOP-04@v3/s3/c6",
+   "text": "Approach the branch together and check the exterior for signs of forced entry.",
+   "heading": "Steps",
+   "document": {
+    "title": "Testing the Alarm System",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-BOP-05@v3/s3/c1",
+   "text": "Approach the branch together and check the exterior for signs of forced entry.",
+   "heading": "Steps",
+   "document": {
+    "title": "Handling a Late Opener",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-BOP-05@v4/s3/c1",
+   "text": "Approach the branch together and check the exterior for signs of forced entry.",
+   "heading": "Steps",
+   "document": {
+    "title": "Handling a Late Opener",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  }
+ ],
+ "input_hash": "c58c786cd1d673d5571ace7c513fe7a67277874da42cb8c9107771e93fe10d2d",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [\n{\"clause\": \"POL-WIR-02@v5/s6/c1\", \"atoms\": []},\n{\"clause\": \"PRO-AOP-06@v1/s3/c5\", \"atoms\": [\n{\"attribute\": \"ao_exception_approver\", \"value\": {\"type\": \"role\", \"role\": \"branch_manager\"}, \"quote\": \"branch manager\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}\n]},\n{\"clause\": \"PRO-AOP-07@v4/s3/c7\", \"atoms\": [\n{\"attribute\": \"ao_exception_approver\", \"value\": {\"type\": \"role\", \"role\": null, \"generic\": \"a manager\"}, \"quote\": \"a manager\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}\n]},\n{\"clause\": \"PRO-BOP-02@v3/s3/c3\", \"atoms\": []},\n{\"clause\": \"PRO-BOP-02@v4/s3/c3\", \"atoms\": []},\n{\"clause\": \"PRO-BOP-03@v2/s3/c4\", \"atoms\": []},\n{\"clause\": \"PRO-BOP-03@v2/s6/c2\", \"atoms\": []},\n{\"clause\": \"PRO-BOP-04@v3/s3/c6\", \"atoms\": []},\n{\"clause\": \"PRO-BOP-05@v3/s3/c1\", \"atoms\": []},\n{\"clause\": \"PRO-BOP-05@v4/s3/c1\", \"atoms\": []}\n]}",
+   "problems": [],
+   "meta": {
+    "ms": 6837,
+    "api_ms": 6688,
+    "input_tokens": 8874,
+    "output_tokens": 928,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 6190,
+     "cache_read_input_tokens": 2682,
+     "output_tokens": 928,
+     "output_tokens_details": {
+      "thinking_tokens": 422
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 6190,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 928,
+       "cache_read_input_tokens": 2682,
+       "cache_creation_input_tokens": 6190,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 6190
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.0343122,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T05:39:44+00:00"
+}

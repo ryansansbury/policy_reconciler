@@ -1,0 +1,293 @@
+{
+ "added": [
+  {
+   "at": "2026-10-29T18:58",
+   "seeds": [
+    6101,
+    6202,
+    6303
+   ]
+  },
+  {
+   "at": "2026-10-29T22:38",
+   "seeds": [
+    8101,
+    8202,
+    8303
+   ]
+  }
+ ],
+ "frozen_at": "2026-10-29T18:34",
+ "generator": "0c84415a8240a6f110d4ec7eb919f8a8b39687e9f14b0857ca54947f04fbdff4",
+ "note": "Catalog version 2. Version 1 was frozen earlier on 10/29 and had a labeling flaw the development seeds found. A line variation could land where a document scoped to just that line already stated the bank-wide value, and that's a real conflict and not a variation. Version 2 skips those, shuffles quick-reference rows, and makes planted duplicates three or four clauses long. No held-out seed was ever scored under version 1. Development seeds 11 and 23 are for building and tuning. Held-out seeds 4211, 5309, and 7717 are scored once after each freeze. 2026 is the demo seed and 9001 the scale seed. The generator fingerprint was redefined on 10/29 to cover only the files that decide the content and to leave out the orchestration file. Every seed's library and key hashes are unchanged. Held-out set B (6101, 6202, and 6303) was drawn from the same frozen generator on 10/29 for engine version 2 and the AI steps. As of 10/29 no version had been scored on it.",
+ "seeds": {
+  "11": {
+   "counts": {
+    "A": 18,
+    "C": 36,
+    "D": 25,
+    "N": 20,
+    "P": 14,
+    "S": 15,
+    "V": 20
+   },
+   "documents": 186,
+   "eval_sizes": {
+    "assistant": 10,
+    "extraction": 180,
+    "judge": 30,
+    "pairs": 208
+   },
+   "key": "a3c3d3d3faff51f80c4beb1b5943c8cde7648f9e370448c4e3408db9a35306c7",
+   "library": "aa49a16b6e9045c476a1587d3b02e963d2962e13dbcff09e019d085c123cb14c",
+   "role": "dev"
+  },
+  "2026": {
+   "counts": {
+    "A": 18,
+    "C": 36,
+    "D": 25,
+    "N": 20,
+    "P": 14,
+    "S": 14,
+    "V": 21
+   },
+   "documents": 185,
+   "eval_sizes": {
+    "assistant": 10,
+    "extraction": 180,
+    "judge": 30,
+    "pairs": 208
+   },
+   "key": "f1269a70a4e7197246d124611f095369580267764e1be225fd27d91c4549dd6c",
+   "library": "79576fc813bcdf29a4105d56e3c265b9ce7e22ec8fcadcc56225ec79ed89100a",
+   "role": "demo"
+  },
+  "23": {
+   "counts": {
+    "A": 18,
+    "C": 36,
+    "D": 25,
+    "N": 20,
+    "P": 14,
+    "S": 15,
+    "V": 20
+   },
+   "documents": 186,
+   "eval_sizes": {
+    "assistant": 10,
+    "extraction": 180,
+    "judge": 30,
+    "pairs": 208
+   },
+   "key": "0da0d0ecc1c770021ecb20ba18d914d849d0f0f76b7159f0d9b830e82259ac82",
+   "library": "15ac7b46771d4037bccbb42bf046543690d6cf6d63a48a91b06c0db62261b31a",
+   "role": "dev"
+  },
+  "4211": {
+   "counts": {
+    "A": 18,
+    "C": 36,
+    "D": 25,
+    "N": 20,
+    "P": 14,
+    "S": 15,
+    "V": 20
+   },
+   "documents": 186,
+   "eval_sizes": {
+    "assistant": 10,
+    "extraction": 180,
+    "judge": 30,
+    "pairs": 208
+   },
+   "key": "61a729e5ffa4f779485aa30f307a81e757d2d7448ad1f913c07a0f0aa81801ce",
+   "library": "a33194574794ee8e0e7ccc30ed96c518d905ce3a7cff3b523514e70c89d0b5ab",
+   "role": "heldout"
+  },
+  "5309": {
+   "counts": {
+    "A": 18,
+    "C": 36,
+    "D": 25,
+    "N": 20,
+    "P": 14,
+    "S": 15,
+    "V": 20
+   },
+   "documents": 186,
+   "eval_sizes": {
+    "assistant": 10,
+    "extraction": 180,
+    "judge": 30,
+    "pairs": 208
+   },
+   "key": "08fe3abbeedabd4c77d1513395abde61e8584e3b5c30594fd2abbb2d5c13f981",
+   "library": "bfa87d2117ae0acc83b3cdbb57ce20e841a97b3cceb8f85ea9682fdd05152e0a",
+   "role": "heldout"
+  },
+  "6101": {
+   "counts": {
+    "A": 14,
+    "C": 36,
+    "D": 25,
+    "N": 20,
+    "P": 14,
+    "S": 15,
+    "V": 21
+   },
+   "documents": 186,
+   "eval_sizes": {
+    "assistant": 10,
+    "extraction": 180,
+    "judge": 30,
+    "pairs": 205
+   },
+   "key": "2e0779050ef41dc5f8cf36e6a21441ebc386f1db82283f429da69ad4c29140e4",
+   "library": "b7bbb114a6c230d283d09e77f18b6bdbbdfcddbb8704c0d12181126863d6183f",
+   "role": "heldout_b"
+  },
+  "6202": {
+   "counts": {
+    "A": 18,
+    "C": 36,
+    "D": 25,
+    "N": 20,
+    "P": 14,
+    "S": 14,
+    "V": 20
+   },
+   "documents": 185,
+   "eval_sizes": {
+    "assistant": 10,
+    "extraction": 180,
+    "judge": 30,
+    "pairs": 207
+   },
+   "key": "8f4b22a3dc8d16452f4e7a6276015192af24bb0643c9000d1564fddac4052896",
+   "library": "a93aa242f69bdbec4e296ed9b9693fccb4ebb37e2c71fb72ef66dea9f737d811",
+   "role": "heldout_b"
+  },
+  "6303": {
+   "counts": {
+    "A": 18,
+    "C": 36,
+    "D": 25,
+    "N": 20,
+    "P": 14,
+    "S": 15,
+    "V": 20
+   },
+   "documents": 186,
+   "eval_sizes": {
+    "assistant": 10,
+    "extraction": 180,
+    "judge": 30,
+    "pairs": 208
+   },
+   "key": "146927f01b463a400c58b6f06ccf9e41aaf090b4963c3d7c7b02e73af23bbb91",
+   "library": "25d4f48bc2ece4dfd902d654af35a902ac3a444d9b8aee2141b0ebbe35dce51a",
+   "role": "heldout_b"
+  },
+  "7717": {
+   "counts": {
+    "A": 17,
+    "C": 36,
+    "D": 25,
+    "N": 20,
+    "P": 14,
+    "S": 15,
+    "V": 20
+   },
+   "documents": 186,
+   "eval_sizes": {
+    "assistant": 10,
+    "extraction": 180,
+    "judge": 30,
+    "pairs": 207
+   },
+   "key": "140428c915950d462266dccf88d009dd8202886f83318cb5d4ba02a5afe76494",
+   "library": "af66a268652ac651f0995b7761b9e4c2161a82416650017dd8be30be51577dd4",
+   "role": "heldout"
+  },
+  "8101": {
+   "counts": {
+    "A": 18,
+    "C": 36,
+    "D": 25,
+    "N": 20,
+    "P": 14,
+    "S": 15,
+    "V": 20
+   },
+   "documents": 186,
+   "eval_sizes": {
+    "assistant": 10,
+    "extraction": 180,
+    "judge": 30,
+    "pairs": 208
+   },
+   "key": "d16d82d4c7907002915c0f3bc642313e64672a7158cebc8462ea85f968d3db84",
+   "library": "e4439a0a94936ae26a2190239fb8c5dcc684bb3dba022e992514b7532e8b2395",
+   "role": "heldout_c"
+  },
+  "8202": {
+   "counts": {
+    "A": 16,
+    "C": 36,
+    "D": 25,
+    "N": 20,
+    "P": 14,
+    "S": 15,
+    "V": 20
+   },
+   "documents": 186,
+   "eval_sizes": {
+    "assistant": 10,
+    "extraction": 180,
+    "judge": 30,
+    "pairs": 206
+   },
+   "key": "a035721d2686ee42bfc51e8c77ffce44892074763d2331952f7e8800eb45302e",
+   "library": "164a784c6ea05346992ce67ab839a59a6936497c2f388f4db4af7c6f9d318b40",
+   "role": "heldout_c"
+  },
+  "8303": {
+   "counts": {
+    "A": 18,
+    "C": 36,
+    "D": 25,
+    "N": 20,
+    "P": 14,
+    "S": 12,
+    "V": 20
+   },
+   "documents": 183,
+   "eval_sizes": {
+    "assistant": 10,
+    "extraction": 180,
+    "judge": 30,
+    "pairs": 205
+   },
+   "key": "3ffce3ba8764debee3f56e6ace1cd5fbece1692b7a80c03226f4f6d871bb01c7",
+   "library": "80d41b0505e0928eed345af6eedd75d6dcb6ca9bfd6ac3cdd1751f336e6a2d80",
+   "role": "heldout_c"
+  },
+  "9001": {
+   "counts": {
+    "A": 180,
+    "C": 78,
+    "D": 250,
+    "N": 200,
+    "P": 0,
+    "S": 143,
+    "V": 128
+   },
+   "documents": 1853,
+   "library": "c18124c60ef03591f5c32e54bd11b75515f59af666f28043b4baaec8227c49bd",
+   "role": "scale"
+  }
+ },
+ "version": 2,
+ "public_note": "This public copy's generator differs from the one frozen on 10/29 only in a docstring sentence that named a person, and its fingerprint was taken again for that reason. Every seed's library and key hashes fingerprint what the generator produces, and they're unchanged."
+}

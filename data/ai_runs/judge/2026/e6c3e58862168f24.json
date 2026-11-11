@@ -1,0 +1,73 @@
+{
+ "step": "judge",
+ "tag": "2026",
+ "model": "google-a",
+ "backend": {
+  "vendor": "Google",
+  "model": "gemini-3.1-pro-preview",
+  "label": "Gemini 3.1 Pro"
+ },
+ "prompt_hash": "ab6a49ec8731854b3cf900a9a4387417ee8016fe68257c4d327181c7eb1621da",
+ "input": [
+  {
+   "draft": "g-88f87594",
+   "text": "Each account may receive no more than two fee waivers in a calendar year.",
+   "sources": [
+    "Each account may receive no more than two fee waivers in a calendar year."
+   ]
+  },
+  {
+   "draft": "g-ed5c7bea",
+   "text": "Check deposits over $6,000 in one day are eligible for an extended hold on the amount over that figure.",
+   "sources": [
+    "Check deposits over $6,000 in one day are eligible for an extended hold on the amount over that figure."
+   ]
+  },
+  {
+   "draft": "g-d2a12642",
+   "text": "Checks deposited to a new account can be held for as long as 7 business days.",
+   "sources": [
+    "New accounts can have check holds of as long as 7 business days."
+   ]
+  },
+  {
+   "draft": "g-feb17e64",
+   "text": "Place a standard hold of 2 business days on deposited checks that don't qualify for next day availability.",
+   "sources": [
+    "Place a standard hold of 2 business days on deposited checks that don't qualify for next-day availability."
+   ]
+  },
+  {
+   "draft": "g-26d6eeb7",
+   "text": "Staff must record the reason and the approver for every pricing exception in the loan file.",
+   "sources": [
+    "Record the reason and the approver for every pricing exception in the loan file."
+   ]
+  }
+ ],
+ "input_hash": "abd2e6a326ff01f25f0bd56bfde8faf72923d201f568a0cb404f3f7c629a8ad0",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "```json\n{\"results\": [{\"draft\": \"g-88f87594\", \"scores\": {\"keeps_rules\": {\"pass\": true, \"evidence\": \"\"}, \"adds_no_rule\": {\"pass\": true, \"evidence\": \"\"}, \"keeps_scope\": {\"pass\": true, \"evidence\": \"\"}, \"plain\": {\"pass\": true, \"evidence\": \"\"}}}, {\"draft\": \"g-ed5c7bea\", \"scores\": {\"keeps_rules\": {\"pass\": true, \"evidence\": \"\"}, \"adds_no_rule\": {\"pass\": true, \"evidence\": \"\"}, \"keeps_scope\": {\"pass\": true, \"evidence\": \"\"}, \"plain\": {\"pass\": true, \"evidence\": \"\"}}}, {\"draft\": \"g-d2a12642\", \"scores\": {\"keeps_rules\": {\"pass\": true, \"evidence\": \"\"}, \"adds_no_rule\": {\"pass\": true, \"evidence\": \"\"}, \"keeps_scope\": {\"pass\": true, \"evidence\": \"\"}, \"plain\": {\"pass\": true, \"evidence\": \"\"}}}, {\"draft\": \"g-feb17e64\", \"scores\": {\"keeps_rules\": {\"pass\": true, \"evidence\": \"\"}, \"adds_no_rule\": {\"pass\": true, \"evidence\": \"\"}, \"keeps_scope\": {\"pass\": true, \"evidence\": \"\"}, \"plain\": {\"pass\": true, \"evidence\": \"\"}}}, {\"draft\": \"g-26d6eeb7\", \"scores\": {\"keeps_rules\": {\"pass\": true, \"evidence\": \"\"}, \"adds_no_rule\": {\"pass\": false, \"evidence\": \"Staff\"}, \"keeps_scope\": {\"pass\": true, \"evidence\": \"\"}, \"plain\": {\"pass\": true, \"evidence\": \"\"}}}]}\n```",
+   "problems": [],
+   "meta": {
+    "ms": 27356,
+    "input_tokens": 884,
+    "output_tokens": 4038,
+    "cost_usd": 0.050224,
+    "usage": {
+     "completion_tokens": 394,
+     "prompt_tokens": 884,
+     "total_tokens": 4922
+    },
+    "models": [
+     "gemini-3.1-pro-preview"
+    ],
+    "stop_reason": "stop"
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T17:02:18+00:00"
+}

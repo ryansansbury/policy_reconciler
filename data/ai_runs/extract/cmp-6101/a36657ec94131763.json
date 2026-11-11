@@ -1,0 +1,167 @@
+{
+ "step": "extract",
+ "tag": "cmp-6101",
+ "model": "claude-opus",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "opus",
+  "client_context": true
+ },
+ "prompt_hash": "dcc761e46c6ec579c01b9dfd540df3c2fa4bba3b6b5ec777aa2cf9c9c62aa411",
+ "input": [
+  {
+   "clause": "PRO-HLD-03@v2/s5/c5",
+   "text": "Debit card authorization holds drop off within 3 business days if the merchant does not settle the charge.",
+   "heading": "Steps to follow",
+   "document": {
+    "title": "Holds on New Accounts",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "PRO-LND-02@v4/s3/c5",
+   "text": "Pricing exceptions may be documented in the loan file after closing if time is short.",
+   "heading": "Steps",
+   "document": {
+    "title": "Approving a Rate Exception",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-ODR-01@v2/s3/c10",
+   "text": "Withdrawals at ATMs outside the network are charged $3 each.",
+   "heading": "Steps",
+   "document": {
+    "title": "Reviewing Overdrawn Accounts Each Morning",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "PRO-ODR-04@v3/s3/c2",
+   "text": "Each item paid into overdraft is charged $29.",
+   "heading": "Steps",
+   "document": {
+    "title": "Talking with Customers About Overdrafts",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "PRO-ODR-05@v4/s3/c12",
+   "text": "Withdrawals at ATMs outside the network are charged $3 each.",
+   "heading": "Steps",
+   "document": {
+    "title": "Closing an Overdrawn Account",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "PRO-REC-06@v4/s3/c6",
+   "text": "Never destroy a record that is under a legal hold.",
+   "heading": "Steps",
+   "document": {
+    "title": "Retrieving Archived Records",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-WIR-02@v3/s3/c3",
+   "text": "Only an operations employee may complete the callback for an outgoing wire.",
+   "heading": "Steps",
+   "document": {
+    "title": "Processing Outgoing Commercial Wires",
+    "type": "procedure",
+    "applies_to": "All branches. Commercial accounts."
+   }
+  },
+  {
+   "clause": "PRO-WIR-04@v1/s3/c1",
+   "text": "Call the customer back at a phone number already on file before releasing any outgoing wire of $25,000 or more.",
+   "heading": "Steps",
+   "document": {
+    "title": "Handling Incoming Wires",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-WIR-05@v1/s3/c14",
+   "text": "Incoming wires received by 4:30 PM Central are posted to the customer's account the same day.",
+   "heading": "Steps",
+   "document": {
+    "title": "Wire Cutoffs on Holidays and Weekends",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-WIR-06@v1/s3/c1",
+   "text": "Call the customer back at a phone number already on file before releasing any outgoing wire of $10,000 or more.",
+   "heading": "Steps",
+   "document": {
+    "title": "Recalling or Cancelling a Wire",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  }
+ ],
+ "input_hash": "3c6017085a355bdeb1944d03d2cb4f96cf125647490bdd03e2ffdf6ea06ee9b6",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [{\"clause\": \"PRO-HLD-03@v2/s5/c5\", \"atoms\": [{\"attribute\": \"card_auth_hold\", \"value\": {\"type\": \"duration\", \"n\": 3, \"unit\": \"business_days\"}, \"quote\": \"3 business days\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": \"if the merchant does not settle the charge\"}]}, {\"clause\": \"PRO-LND-02@v4/s3/c5\", \"atoms\": [{\"attribute\": \"lend_exception_doc\", \"value\": {\"type\": \"modal\", \"modal\": \"may\"}, \"quote\": \"may be documented\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": \"if time is short\"}]}, {\"clause\": \"PRO-ODR-01@v2/s3/c10\", \"atoms\": [{\"attribute\": \"atm_fee\", \"value\": {\"type\": \"money\", \"dollars\": 3}, \"quote\": \"$3\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]}, {\"clause\": \"PRO-ODR-04@v3/s3/c2\", \"atoms\": [{\"attribute\": \"od_fee\", \"value\": {\"type\": \"money\", \"dollars\": 29}, \"quote\": \"$29\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]}, {\"clause\": \"PRO-ODR-05@v4/s3/c12\", \"atoms\": [{\"attribute\": \"atm_fee\", \"value\": {\"type\": \"money\", \"dollars\": 3}, \"quote\": \"$3\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]}, {\"clause\": \"PRO-REC-06@v4/s3/c6\", \"atoms\": [{\"attribute\": \"legal_hold\", \"value\": {\"type\": \"modal\", \"modal\": \"must_not\"}, \"quote\": \"Never destroy\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]}, {\"clause\": \"PRO-WIR-02@v3/s3/c3\", \"atoms\": [{\"attribute\": \"wire_callback_role\", \"value\": {\"type\": \"role\", \"role\": null, \"generic\": \"an operations employee\"}, \"quote\": \"an operations employee\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]}, {\"clause\": \"PRO-WIR-04@v1/s3/c1\", \"atoms\": [{\"attribute\": \"wire_callback\", \"value\": {\"type\": \"money\", \"dollars\": 25000}, \"quote\": \"$25,000\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]}, {\"clause\": \"PRO-WIR-05@v1/s3/c14\", \"atoms\": [{\"attribute\": \"incoming_wire_posting\", \"value\": {\"type\": \"time\", \"minutes\": 990}, \"quote\": \"4:30 PM\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]}, {\"clause\": \"PRO-WIR-06@v1/s3/c1\", \"atoms\": [{\"attribute\": \"wire_callback\", \"value\": {\"type\": \"money\", \"dollars\": 10000}, \"quote\": \"$10,000\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]}]}",
+   "problems": [],
+   "meta": {
+    "ms": 11915,
+    "api_ms": 11775,
+    "input_tokens": 8926,
+    "output_tokens": 1668,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 6242,
+     "cache_read_input_tokens": 2682,
+     "output_tokens": 1668,
+     "output_tokens_details": {
+      "thinking_tokens": 542
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 6242,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 1668,
+       "cache_read_input_tokens": 2682,
+       "cache_creation_input_tokens": 6242,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 6242
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.08384040000000001,
+    "models": [
+     "claude-opus-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T17:12:27+00:00"
+}

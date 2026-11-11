@@ -1,0 +1,167 @@
+{
+ "step": "extract",
+ "tag": "6303",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "dcc761e46c6ec579c01b9dfd540df3c2fa4bba3b6b5ec777aa2cf9c9c62aa411",
+ "input": [
+  {
+   "clause": "FAQ-CSH-01@v3/s3/c2",
+   "text": "Report any shortage or overage to the head teller before you leave for the day.",
+   "heading": "Can one employee open the vault alone?",
+   "document": {
+    "title": "Cash Handling FAQ",
+    "type": "faq",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "FAQ-FEE-01@v3/s1/c1",
+   "text": "Each account may receive no more than one fee waivers in a calendar year.",
+   "heading": "How many fee waivers can one account get in a year?",
+   "document": {
+    "title": "Fee Waiver FAQ",
+    "type": "faq",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "FAQ-FEE-02@v4/s3/c1",
+   "text": "Limit fee waivers to two per account in each calendar year.",
+   "heading": "How many fee waivers can one account get in a year?",
+   "document": {
+    "title": "Fee Refund Questions",
+    "type": "faq",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "FAQ-WIR-01@v2/s2/c1",
+   "text": "Only a wire specialist may complete the callback for an outgoing wire.",
+   "heading": "Who completes the callback for an outgoing wire?",
+   "document": {
+    "title": "Wire Transfer FAQ",
+    "type": "faq",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "FAQ-WIR-01@v2/s3/c1",
+   "text": "Branches without a wire specialist on site may release outgoing wires up to $25,000 after the teller's own review.",
+   "heading": "Related requirements",
+   "document": {
+    "title": "Wire Transfer FAQ",
+    "type": "faq",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "FAQ-WIR-02@v4/s1/c1",
+   "text": "Call the customer back at a phone number already on file before releasing any outgoing wire of $10,000 or more.",
+   "heading": "Which outgoing wires need a callback?",
+   "document": {
+    "title": "Wire Cutoff Questions",
+    "type": "faq",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "FAQ-WIR-02@v4/s2/c1",
+   "text": "Only a teller may complete the callback for an outgoing wire.",
+   "heading": "Who completes the callback for an outgoing wire?",
+   "document": {
+    "title": "Wire Cutoff Questions",
+    "type": "faq",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "JA-AOP-02@v3/s1/c4",
+   "text": "Approver for identification exceptions | operations specialist",
+   "heading": "Quick reference",
+   "document": {
+    "title": "Identification Checklist",
+    "type": "job_aid",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "JA-AOP-03@v4/s1/c3",
+   "text": "Approver for identification exceptions | branch manager",
+   "heading": "Quick reference",
+   "document": {
+    "title": "Account Opening Desk Card",
+    "type": "job_aid",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "JA-BOP-01@v1/s2/c2",
+   "text": "Approach the branch together and check the exterior for signs of forced entry.",
+   "heading": "Checklist",
+   "document": {
+    "title": "Opening Checklist",
+    "type": "job_aid",
+    "applies_to": "All branches. All business lines."
+   }
+  }
+ ],
+ "input_hash": "d663673ca27c86b193c8198d89cc1f5fdc148dada3a551b66d89e555ab9110f6",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [\n{\"clause\": \"FAQ-CSH-01@v3/s3/c2\", \"atoms\": []},\n{\"clause\": \"FAQ-FEE-01@v3/s1/c1\", \"atoms\": [{\"attribute\": \"fee_waivers_per_year\", \"value\": {\"type\": \"count\", \"n\": 1}, \"quote\": \"one\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]},\n{\"clause\": \"FAQ-FEE-02@v4/s3/c1\", \"atoms\": [{\"attribute\": \"fee_waivers_per_year\", \"value\": {\"type\": \"count\", \"n\": 2}, \"quote\": \"two\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]},\n{\"clause\": \"FAQ-WIR-01@v2/s2/c1\", \"atoms\": [{\"attribute\": \"wire_callback_role\", \"value\": {\"type\": \"role\", \"role\": \"wire_specialist\"}, \"quote\": \"wire specialist\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]},\n{\"clause\": \"FAQ-WIR-01@v2/s3/c1\", \"atoms\": []},\n{\"clause\": \"FAQ-WIR-02@v4/s1/c1\", \"atoms\": [{\"attribute\": \"wire_callback\", \"value\": {\"type\": \"money\", \"dollars\": 10000}, \"quote\": \"$10,000\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]},\n{\"clause\": \"FAQ-WIR-02@v4/s2/c1\", \"atoms\": [{\"attribute\": \"wire_callback_role\", \"value\": {\"type\": \"role\", \"role\": \"teller\"}, \"quote\": \"teller\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]},\n{\"clause\": \"JA-AOP-02@v3/s1/c4\", \"atoms\": [{\"attribute\": \"ao_exception_approver\", \"value\": {\"type\": \"role\", \"role\": \"operations_specialist\"}, \"quote\": \"operations specialist\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]},\n{\"clause\": \"JA-AOP-03@v4/s1/c3\", \"atoms\": [{\"attribute\": \"ao_exception_approver\", \"value\": {\"type\": \"role\", \"role\": \"branch_manager\"}, \"quote\": \"branch manager\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]},\n{\"clause\": \"JA-BOP-01@v1/s2/c2\", \"atoms\": [{\"attribute\": \"branch_open_dual\", \"value\": {\"type\": \"modal\", \"modal\": \"must\"}, \"quote\": \"Approach the branch together\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]}\n]}",
+   "problems": [],
+   "meta": {
+    "ms": 9483,
+    "api_ms": 9231,
+    "input_tokens": 8941,
+    "output_tokens": 1568,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 6257,
+     "cache_read_input_tokens": 2682,
+     "output_tokens": 1568,
+     "output_tokens_details": {
+      "thinking_tokens": 604
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 6257,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 1568,
+       "cache_read_input_tokens": 2682,
+       "cache_creation_input_tokens": 6257,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 6257
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.0409802,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T04:11:30+00:00"
+}

@@ -1,0 +1,79 @@
+{
+ "step": "judge",
+ "tag": "judge-11",
+ "model": "google-a",
+ "backend": {
+  "vendor": "Google",
+  "model": "gemini-3.1-pro-preview",
+  "label": "Gemini 3.1 Pro"
+ },
+ "prompt_hash": "ab6a49ec8731854b3cf900a9a4387417ee8016fe68257c4d327181c7eb1621da",
+ "input": [
+  {
+   "draft": "draft-06",
+   "text": "Credit the customer provisionally no later than 10 business days after the dispute form is complete. Send any dispute above $500 to card services for review before issuing credit.",
+   "sources": [
+    "Credit the customer provisionally no later than 10 business days after the dispute form is complete.",
+    "Send any dispute above $500 to card services for review before issuing credit."
+   ]
+  },
+  {
+   "draft": "draft-07",
+   "text": "The vault must be opened under dual control, with two employees present.",
+   "sources": [
+    "The vault must be opened under dual control, with two employees present.",
+    "A teller drawer may not hold more than $15,000 at any time."
+   ]
+  },
+  {
+   "draft": "draft-08",
+   "text": "Credit the customer provisionally no later than 10 business days after the dispute form is complete. Disputes over $500 are reviewed by a card services specialist before credit is issued. Personal bankers may waive service fees up to $15 per account in a calendar year.",
+   "sources": [
+    "Credit the customer provisionally no later than 10 business days after the dispute form is complete.",
+    "Disputes over $500 are reviewed by a card services specialist before credit is issued."
+   ]
+  },
+  {
+   "draft": "draft-09",
+   "text": "The most a branch manager can waive for one account in a calendar year is $50, generally. Fee refund requests are accepted for 60 days after the statement date, generally.",
+   "sources": [
+    "The most a branch manager can waive for one account in a calendar year is $50.",
+    "Fee refund requests are accepted for 60 days after the statement date."
+   ]
+  },
+  {
+   "draft": "draft-10",
+   "text": "Complaints should be closed within 15 business days of the day they arrive, or within 30 business days when another department has to investigate. Resolve complaints within 30 business days of receipt, or tell the customer when to expect a resolution. Complaints that allege unfair treatment are escalated to the regional manager the same day.",
+   "sources": [
+    "Complaints should be closed within 15 business days of the day they arrive, or within 30 business days when another department has to investigate.",
+    "In Oklahoma branches, resolve complaints within 30 business days of receipt, or tell the customer when to expect a resolution.",
+    "Complaints that allege unfair treatment are escalated to the regional manager the same day."
+   ]
+  }
+ ],
+ "input_hash": "2837e9c7e79b53ab97201bf3d4b169e034ddcde337daeb2d49353be887f67889",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "```json\n{\n \"results\": [\n  {\n   \"draft\": \"draft-06\",\n   \"scores\": {\n    \"keeps_rules\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    },\n    \"adds_no_rule\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    },\n    \"keeps_scope\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    },\n    \"plain\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    }\n   }\n  },\n  {\n   \"draft\": \"draft-07\",\n   \"scores\": {\n    \"keeps_rules\": {\n     \"pass\": false,\n     \"evidence\": \"A teller drawer may not hold more than $15,000 at any time.\"\n    },\n    \"adds_no_rule\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    },\n    \"keeps_scope\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    },\n    \"plain\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    }\n   }\n  },\n  {\n   \"draft\": \"draft-08\",\n   \"scores\": {\n    \"keeps_rules\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    },\n    \"adds_no_rule\": {\n     \"pass\": false,\n     \"evidence\": \"Personal bankers may waive service fees up to $15 per account in a calendar year.\"\n    },\n    \"keeps_scope\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    },\n    \"plain\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    }\n   }\n  },\n  {\n   \"draft\": \"draft-09\",\n   \"scores\": {\n    \"keeps_rules\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    },\n    \"adds_no_rule\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    },\n    \"keeps_scope\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    },\n    \"plain\": {\n     \"pass\": false,\n     \"evidence\": \"generally\"\n    }\n   }\n  },\n  {\n   \"draft\": \"draft-10\",\n   \"scores\": {\n    \"keeps_rules\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    },\n    \"adds_no_rule\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    },\n    \"keeps_scope\": {\n     \"pass\": false,\n     \"evidence\": \"In Oklahoma branches\"\n    },\n    \"plain\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    }\n   }\n  }\n ]\n}\n```",
+   "problems": [],
+   "meta": {
+    "ms": 14673,
+    "input_tokens": 1113,
+    "output_tokens": 2478,
+    "cost_usd": 0.031962,
+    "usage": {
+     "completion_tokens": 668,
+     "prompt_tokens": 1113,
+     "total_tokens": 3591
+    },
+    "models": [
+     "gemini-3.1-pro-preview"
+    ],
+    "stop_reason": "stop"
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T16:46:55+00:00"
+}

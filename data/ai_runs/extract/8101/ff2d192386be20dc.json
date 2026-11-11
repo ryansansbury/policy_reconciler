@@ -1,0 +1,167 @@
+{
+ "step": "extract",
+ "tag": "8101",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "dcc761e46c6ec579c01b9dfd540df3c2fa4bba3b6b5ec777aa2cf9c9c62aa411",
+ "input": [
+  {
+   "clause": "ADD-KS-01@v3/s2/c3",
+   "text": "In Kansas branches, resolve complaints within 10 business days of receipt, or tell the customer when to expect a resolution.",
+   "heading": "Kansas requirements",
+   "document": {
+    "title": "Kansas Branch Addendum",
+    "type": "addendum",
+    "applies_to": "Kansas branches. All business lines."
+   }
+  },
+  {
+   "clause": "BUL-DSP-01@v4/s2/c1",
+   "text": "Card services specialists review disputes in the order they arrive.",
+   "heading": "Related requirements",
+   "document": {
+    "title": "Branch Bulletin 2025-38: Provisional credit deadline for disputes",
+    "type": "bulletin",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "BUL-FEE-02@v4/s1/c2",
+   "text": "Limit fee waivers to two per account in each calendar year.",
+   "heading": "What branches need to know",
+   "document": {
+    "title": "Branch Bulletin 2026-01: Fee waivers per account per year",
+    "type": "bulletin",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "BUL-FEE-02@v4/s3/c2",
+   "text": "Review recurring waiver requests with the branch manager at the monthly meeting.",
+   "heading": "Steps to follow",
+   "document": {
+    "title": "Branch Bulletin 2026-01: Fee waivers per account per year",
+    "type": "bulletin",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "BUL-WIR-01@v1/s1/c2",
+   "text": "Outgoing wires of $25,000 or more require a callback to the customer at a number already on file.",
+   "heading": "What branches need to know",
+   "document": {
+    "title": "Branch Bulletin 2025-13: Callback threshold for outgoing wires",
+    "type": "bulletin",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "BUL-WIR-01@v1/s2/c2",
+   "text": "Never accept wire instructions sent by email without verifying them by phone.",
+   "heading": "Steps to follow",
+   "document": {
+    "title": "Branch Bulletin 2025-13: Callback threshold for outgoing wires",
+    "type": "bulletin",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "BUL-WIR-01@v1/s2/c3",
+   "text": "Outgoing wires of $10,000 or more require a callback to the customer at a number already on file.",
+   "heading": "Steps to follow",
+   "document": {
+    "title": "Branch Bulletin 2025-13: Callback threshold for outgoing wires",
+    "type": "bulletin",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "BUL-WIR-02@v2/s1/c2",
+   "text": "Call the customer back at a phone number already on file before releasing any outgoing wire of $10,000 or more.",
+   "heading": "What branches need to know",
+   "document": {
+    "title": "Branch Bulletin 2026-32: Callback threshold for outgoing wires",
+    "type": "bulletin",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "FAQ-CSH-01@v4/s2/c1",
+   "text": "Branches in rural markets share one operations specialist, who visits each branch once a week.",
+   "heading": "Related requirements",
+   "document": {
+    "title": "Cash Handling FAQ",
+    "type": "faq",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "FAQ-FEE-01@v1/s2/c1",
+   "text": "Limit fee waivers to two per account in each calendar year.",
+   "heading": "How many fee waivers can one account get in a year?",
+   "document": {
+    "title": "Fee Waiver FAQ",
+    "type": "faq",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  }
+ ],
+ "input_hash": "ffee3396620f1f5cd92e53943a7520e533ec5e0e0f84ee690fd5c47c915a7690",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [\n{\"clause\": \"ADD-KS-01@v3/s2/c3\", \"atoms\": [{\"attribute\": \"complaint_resolve\", \"value\": {\"type\": \"duration\", \"n\": 10, \"unit\": \"business_days\"}, \"quote\": \"10 business days\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": \"In Kansas branches\", \"condition\": \"or tell the customer when to expect a resolution\"}]},\n{\"clause\": \"BUL-DSP-01@v4/s2/c1\", \"atoms\": []},\n{\"clause\": \"BUL-FEE-02@v4/s1/c2\", \"atoms\": [{\"attribute\": \"fee_waivers_per_year\", \"value\": {\"type\": \"count\", \"n\": 2}, \"quote\": \"two\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]},\n{\"clause\": \"BUL-FEE-02@v4/s3/c2\", \"atoms\": []},\n{\"clause\": \"BUL-WIR-01@v1/s1/c2\", \"atoms\": [{\"attribute\": \"wire_callback\", \"value\": {\"type\": \"money\", \"dollars\": 25000}, \"quote\": \"$25,000\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]},\n{\"clause\": \"BUL-WIR-01@v1/s2/c2\", \"atoms\": []},\n{\"clause\": \"BUL-WIR-01@v1/s2/c3\", \"atoms\": [{\"attribute\": \"wire_callback\", \"value\": {\"type\": \"money\", \"dollars\": 10000}, \"quote\": \"$10,000\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]},\n{\"clause\": \"BUL-WIR-02@v2/s1/c2\", \"atoms\": [{\"attribute\": \"wire_callback\", \"value\": {\"type\": \"money\", \"dollars\": 10000}, \"quote\": \"$10,000\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]},\n{\"clause\": \"FAQ-CSH-01@v4/s2/c1\", \"atoms\": []},\n{\"clause\": \"FAQ-FEE-01@v1/s2/c1\", \"atoms\": [{\"attribute\": \"fee_waivers_per_year\", \"value\": {\"type\": \"count\", \"n\": 2}, \"quote\": \"two\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]}\n]}",
+   "problems": [],
+   "meta": {
+    "ms": 6832,
+    "api_ms": 6697,
+    "input_tokens": 9062,
+    "output_tokens": 1221,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 9060,
+     "cache_read_input_tokens": 0,
+     "output_tokens": 1221,
+     "output_tokens_details": {
+      "thinking_tokens": 400
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 9060,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 1221,
+       "cache_read_input_tokens": 0,
+       "cache_creation_input_tokens": 9060,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 9060
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.048454000000000004,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T05:39:26+00:00"
+}

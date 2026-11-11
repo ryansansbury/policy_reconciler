@@ -1,0 +1,375 @@
+{
+ "step": "classify",
+ "tag": "evals-11",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "2c908358fde9f0f4a792753579a6cfaa33476e41c4b0f235744675d8e8283a19",
+ "input": [
+  {
+   "pair": "pair-76492523ca",
+   "rule": "Records destruction approver",
+   "attribute": "records_destroy_role",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-REC-01@v3/s3/c1",
+    "text": "The records custodian must approve the destruction of any records in writing.",
+    "heading": "Policy statements",
+    "document": {
+     "title": "Records Retention Policy",
+     "type": "policy",
+     "version": 3,
+     "effective": "2026-06-19",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "FAQ-REC-01@v2/s2/c1",
+    "text": "Records may be destroyed only with written approval from the operations specialist.",
+    "heading": "Who approves the destruction of records?",
+    "document": {
+     "title": "Records Retention FAQ",
+     "type": "faq",
+     "version": 2,
+     "effective": "2025-12-06",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-6fba84f458",
+   "rule": "Overdraft fees per day",
+   "attribute": "od_daily_cap",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-ODR-01@v6/s4/c2",
+    "text": "No more than three overdraft fees are charged to an account in one business day.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Overdraft Policy",
+     "type": "policy",
+     "version": 6,
+     "effective": "2024-07-17",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "FAQ-ODR-02@v1/s1/c1",
+    "text": "Overdraft fees are capped at five per account per business day.",
+    "heading": "How many overdraft fees can an account be charged in one day?",
+    "document": {
+     "title": "Overdraft Fee Questions from Customers",
+     "type": "faq",
+     "version": 1,
+     "effective": "2026-03-27",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-981a4f0c19",
+   "rule": "Notice before dormancy",
+   "attribute": "dormant_notice",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-DRM-01@v4/s3/c1",
+    "text": "Mail the customer a notice at least 30 days before the account is classified as dormant.",
+    "heading": "Policy statements",
+    "document": {
+     "title": "Dormant Account Policy",
+     "type": "policy",
+     "version": 4,
+     "effective": "2026-08-22",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "PRO-DRM-04@v4/s3/c3",
+    "text": "Customers receive written notice 60 days before their account becomes dormant.",
+    "heading": "Steps",
+    "document": {
+     "title": "Charging Dormant Account Fees",
+     "type": "procedure",
+     "version": 4,
+     "effective": "2025-12-28",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-5f3cff59b2",
+   "rule": "Approver for identification exceptions",
+   "attribute": "ao_exception_approver",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-AOP-01@v5/s4/c2",
+    "text": "Only the branch manager can approve an exception to the identification requirements.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Deposit Account Opening Policy",
+     "type": "policy",
+     "version": 5,
+     "effective": "2025-02-05",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "PRO-AOP-04@v3/s3/c7",
+    "text": "Any exception to the identification requirements must be approved by the operations specialist.",
+    "heading": "Steps",
+    "document": {
+     "title": "Verifying Customer Identification",
+     "type": "procedure",
+     "version": 3,
+     "effective": "2025-01-03",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-8647d2c751",
+   "rule": "Card dispute window",
+   "attribute": "dispute_window",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-DSP-01@v5/s4/c1",
+    "text": "Customers have 60 days from the statement date to dispute a debit card transaction.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Debit Card Dispute Policy",
+     "type": "policy",
+     "version": 5,
+     "effective": "2025-02-25",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "FAQ-DSP-01@v3/s1/c1",
+    "text": "Accept debit card disputes filed within 90 days of the statement that first showed the charge.",
+    "heading": "How long do customers have to dispute a debit card transaction?",
+    "document": {
+     "title": "Debit Card Dispute FAQ",
+     "type": "faq",
+     "version": 3,
+     "effective": "2026-07-10",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-3a577ee6fd",
+   "rule": "Dormant account fee",
+   "attribute": "dormant_fee",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-DRM-01@v4/s4/c2",
+    "text": "The monthly fee for a dormant account is $5.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Dormant Account Policy",
+     "type": "policy",
+     "version": 4,
+     "effective": "2026-08-22",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "BUL-DRM-01@v4/s1/c2",
+    "text": "Dormant accounts are charged a maintenance fee of $3 per month.",
+    "heading": "What branches need to know",
+    "document": {
+     "title": "Branch Bulletin 2025-17: Monthly dormant account fee",
+     "type": "bulletin",
+     "version": 4,
+     "effective": "2025-11-20",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-811a0e7afa",
+   "rule": "Overdraft amount with no fee",
+   "attribute": "od_de_minimis",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-ODR-01@v6/s3/c2",
+    "text": "No overdraft fee is charged when the account is overdrawn by $10 or less at the end of the day.",
+    "heading": "Policy statements",
+    "document": {
+     "title": "Overdraft Policy",
+     "type": "policy",
+     "version": 6,
+     "effective": "2024-07-17",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "PRO-ODR-01@v1/s3/c5",
+    "text": "Accounts overdrawn by no more than $5 at the end of the day are not charged an overdraft fee.",
+    "heading": "Steps",
+    "document": {
+     "title": "Reviewing Overdrawn Accounts Each Morning",
+     "type": "procedure",
+     "version": 1,
+     "effective": "2026-03-09",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-0078f6923a",
+   "rule": "Dual control at opening",
+   "attribute": "branch_open_dual",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-BOP-01@v2/s3/c1",
+    "text": "Two employees must be present to open the branch each morning.",
+    "heading": "Policy statements",
+    "document": {
+     "title": "Branch Security and Opening Policy",
+     "type": "policy",
+     "version": 2,
+     "effective": "2025-01-24",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "PRO-BOP-04@v1/s3/c4",
+    "text": "A single opener may unlock the branch if the second opener is delayed.",
+    "heading": "Steps",
+    "document": {
+     "title": "Testing the Alarm System",
+     "type": "procedure",
+     "version": 1,
+     "effective": "2026-01-28",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  }
+ ],
+ "input_hash": "40f7d80dfb2a2b31480e1123808f460659f187574313a73df0f03814859fd74a",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [{\"pair\": \"pair-76492523ca\", \"label\": \"conflict\", \"quote_a\": \"The records custodian must approve the destruction of any records in writing.\", \"quote_b\": \"Records may be destroyed only with written approval from the operations specialist.\", \"rationale\": \"Each clause names a different single approver for records destruction across all branches. Staff following one would get approval from someone the other does not accept. The policy outranks the FAQ, so the policy clause is the one to keep.\"}, {\"pair\": \"pair-6fba84f458\", \"label\": \"conflict\", \"quote_a\": \"No more than three overdraft fees are charged to an account in one business day.\", \"quote_b\": \"Overdraft fees are capped at five per account per business day.\", \"rationale\": \"The daily cap is three in one clause and five in the other for the same accounts. Staff following the FAQ could charge fees the policy forbids. The policy outranks the FAQ, so the policy clause is the one to keep.\"}, {\"pair\": \"pair-981a4f0c19\", \"label\": \"conflict\", \"quote_a\": \"Mail the customer a notice at least 30 days before the account is classified as dormant.\", \"quote_b\": \"Customers receive written notice 60 days before their account becomes dormant.\", \"rationale\": \"The notice lead time is at least 30 days in the policy and 60 days in the procedure for the same accounts. Staff sending notice at 30 days would break the procedure. The policy outranks the procedure, so the policy clause is the one to keep.\"}, {\"pair\": \"pair-5f3cff59b2\", \"label\": \"conflict\", \"quote_a\": \"Only the branch manager can approve an exception to the identification requirements.\", \"quote_b\": \"Any exception to the identification requirements must be approved by the operations specialist.\", \"rationale\": \"The policy limits approval to the branch manager while the procedure requires the operations specialist. Staff following the procedure would use an approver the policy does not allow. The policy outranks the procedure, so the policy clause is the one to keep.\"}, {\"pair\": \"pair-8647d2c751\", \"label\": \"conflict\", \"quote_a\": \"Customers have 60 days from the statement date to dispute a debit card transaction.\", \"quote_b\": \"Accept debit card disputes filed within 90 days of the statement that first showed the charge.\", \"rationale\": \"The dispute window is 60 days in the policy and 90 days in the FAQ for the same accounts. Staff following the policy would refuse disputes the FAQ says to accept. The policy outranks the FAQ, so the policy clause is the one to keep.\"}, {\"pair\": \"pair-3a577ee6fd\", \"label\": \"conflict\", \"quote_a\": \"The monthly fee for a dormant account is $5.\", \"quote_b\": \"Dormant accounts are charged a maintenance fee of $3 per month.\", \"rationale\": \"The monthly dormant fee is $5 in the policy and $3 in the bulletin for the same accounts. Staff would charge different amounts depending on which clause they follow. The policy outranks the bulletin, so the policy clause is the one to keep.\"}, {\"pair\": \"pair-811a0e7afa\", \"label\": \"conflict\", \"quote_a\": \"No overdraft fee is charged when the account is overdrawn by $10 or less at the end of the day.\", \"quote_b\": \"Accounts overdrawn by no more than $5 at the end of the day are not charged an overdraft fee.\", \"rationale\": \"The no fee threshold is $10 in the policy and $5 in the procedure for the same accounts. An account overdrawn by $8 would be fee free under the policy but charged under the procedure. The policy outranks the procedure, so the policy clause is the one to keep.\"}, {\"pair\": \"pair-0078f6923a\", \"label\": \"conflict\", \"quote_a\": \"Two employees must be present to open the branch each morning.\", \"quote_b\": \"A single opener may unlock the branch if the second opener is delayed.\", \"rationale\": \"The policy requires two employees with no exception while the procedure lets one opener unlock the branch when the second is delayed. Staff following the policy would wait and staff following the procedure would open alone. Both apply to all branches and the stated exception is not a deliberate narrower scope. The policy outranks the procedure, so the policy clause is the one to keep.\"}]}",
+   "problems": [
+    "pair-76492523ca: the rationale has a comma before so. End the sentence there and start the next one",
+    "pair-6fba84f458: the rationale has a comma before so. End the sentence there and start the next one",
+    "pair-981a4f0c19: the rationale has a comma before so. End the sentence there and start the next one",
+    "pair-5f3cff59b2: the rationale has a comma before so. End the sentence there and start the next one",
+    "pair-8647d2c751: the rationale has a comma before so. End the sentence there and start the next one",
+    "pair-3a577ee6fd: the rationale has a comma before so. End the sentence there and start the next one",
+    "pair-811a0e7afa: the rationale uses numbers that aren't in either clause or its document: 8",
+    "pair-811a0e7afa: the rationale has a comma before so. End the sentence there and start the next one",
+    "pair-0078f6923a: the rationale has a comma before so. End the sentence there and start the next one"
+   ],
+   "meta": {
+    "ms": 11579,
+    "api_ms": 11425,
+    "input_tokens": 9018,
+    "output_tokens": 1950,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 8175,
+     "cache_read_input_tokens": 841,
+     "output_tokens": 1950,
+     "output_tokens_details": {
+      "thinking_tokens": 550
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 8175,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 1950,
+       "cache_read_input_tokens": 841,
+       "cache_creation_input_tokens": 8175,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 8175
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.052288100000000004,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  },
+  {
+   "reply": "{\"results\": [{\"pair\": \"pair-76492523ca\", \"label\": \"conflict\", \"quote_a\": \"The records custodian must approve the destruction of any records in writing.\", \"quote_b\": \"Records may be destroyed only with written approval from the operations specialist.\", \"rationale\": \"The policy names the records custodian as the approver and the FAQ names the operations specialist. Staff following one clause would act against the other, and the policy is the clause to keep.\"}, {\"pair\": \"pair-6fba84f458\", \"label\": \"conflict\", \"quote_a\": \"No more than three overdraft fees are charged to an account in one business day.\", \"quote_b\": \"Overdraft fees are capped at five per account per business day.\", \"rationale\": \"The policy caps overdraft fees at three per business day and the FAQ caps them at five. Both apply to the same accounts, and the policy is the clause to keep.\"}, {\"pair\": \"pair-981a4f0c19\", \"label\": \"conflict\", \"quote_a\": \"at least 30 days before the account is classified as dormant\", \"quote_b\": \"written notice 60 days before their account becomes dormant\", \"rationale\": \"The policy sets a minimum of 30 days and the procedure requires notice 60 days ahead. Staff who mail the notice 30 days ahead follow the policy but break the procedure.\"}, {\"pair\": \"pair-5f3cff59b2\", \"label\": \"conflict\", \"quote_a\": \"Only the branch manager can approve an exception to the identification requirements.\", \"quote_b\": \"Any exception to the identification requirements must be approved by the operations specialist.\", \"rationale\": \"The policy limits approval to the branch manager and the procedure gives it to the operations specialist. An exception approved by the specialist would be invalid under the policy, and the policy is the clause to keep.\"}, {\"pair\": \"pair-8647d2c751\", \"label\": \"conflict\", \"quote_a\": \"60 days from the statement date\", \"quote_b\": \"within 90 days of the statement\", \"rationale\": \"The policy allows 60 days to dispute a debit card transaction and the FAQ says to accept disputes up to 90 days. Staff following the policy would refuse a dispute the FAQ says to accept.\"}, {\"pair\": \"pair-3a577ee6fd\", \"label\": \"conflict\", \"quote_a\": \"The monthly fee for a dormant account is $5.\", \"quote_b\": \"maintenance fee of $3 per month\", \"rationale\": \"The policy sets the monthly dormant account fee at $5 and the bulletin sets it at $3. Both cover the same accounts, and the policy is the clause to keep.\"}, {\"pair\": \"pair-811a0e7afa\", \"label\": \"conflict\", \"quote_a\": \"overdrawn by $10 or less\", \"quote_b\": \"overdrawn by no more than $5\", \"rationale\": \"The policy waives the fee up to $10 and the procedure waives it only up to $5. An account overdrawn by an amount between the two would go uncharged under the policy and be charged under the procedure.\"}, {\"pair\": \"pair-0078f6923a\", \"label\": \"conflict\", \"quote_a\": \"Two employees must be present to open the branch each morning.\", \"quote_b\": \"A single opener may unlock the branch if the second opener is delayed.\", \"rationale\": \"The policy requires two employees at opening and the procedure lets one person unlock when the second is delayed. Staff following the procedure would open alone, which the policy does not allow.\"}]}",
+   "problems": [],
+   "meta": {
+    "ms": 16075,
+    "api_ms": 15949,
+    "input_tokens": 9357,
+    "output_tokens": 2558,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 8514,
+     "cache_read_input_tokens": 841,
+     "output_tokens": 2558,
+     "output_tokens_details": {
+      "thinking_tokens": 1446
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 8514,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 2558,
+       "cache_read_input_tokens": 841,
+       "cache_creation_input_tokens": 8514,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 8514
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.0597241,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   },
+   "items": [
+    "pair-76492523ca",
+    "pair-6fba84f458",
+    "pair-981a4f0c19",
+    "pair-5f3cff59b2",
+    "pair-8647d2c751",
+    "pair-3a577ee6fd",
+    "pair-811a0e7afa",
+    "pair-0078f6923a"
+   ]
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T03:54:30+00:00"
+}

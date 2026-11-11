@@ -1,0 +1,273 @@
+{
+ "step": "classify",
+ "tag": "evals-11",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "1346938ac1ecbf43874a700ab9916c851d6a29bb5d6b9e5f1199128bc8cd59f2",
+ "input": [
+  {
+   "pair": "pair-84bc6e3ddc",
+   "rule": "Forms of identification per signer",
+   "attribute": "ao_id_count",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-AOP-01@v5/s4/c1",
+    "text": "Every signer must present two separate identification documents before the account is opened, or one form plus a verified bank reference when the branch manager approves.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Deposit Account Opening Policy",
+     "type": "policy",
+     "version": 5,
+     "effective": "2025-02-05",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "PRO-AOP-01@v4/s3/c9",
+    "text": "Every signer must present one separate identification documents before the account is opened.",
+    "heading": "Steps",
+    "document": {
+     "title": "Opening a Consumer Checking Account",
+     "type": "procedure",
+     "version": 4,
+     "effective": "2025-06-07",
+     "applies_to": "All branches. Consumer accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-b0f60934d1",
+   "rule": "Closed account record retention",
+   "attribute": "records_retention",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-REC-01@v3/s4/c1",
+    "text": "Retain closed account records for 7 years from the closing date.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Records Retention Policy",
+     "type": "policy",
+     "version": 3,
+     "effective": "2026-06-19",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "JA-REC-02@v1/s1/c2",
+    "text": "Retention for closed account records | 10 years",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Destruction Approval Checklist",
+     "type": "job_aid",
+     "version": 1,
+     "effective": "2025-12-05",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-ff25ca9bfb",
+   "rule": "Dual control at opening",
+   "attribute": "branch_open_dual",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-BOP-01@v2/s3/c1",
+    "text": "Two employees must be present to open the branch each morning.",
+    "heading": "Policy statements",
+    "document": {
+     "title": "Branch Security and Opening Policy",
+     "type": "policy",
+     "version": 2,
+     "effective": "2025-01-24",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "JA-BOP-01@v2/s1/c2",
+    "text": "Dual control at branch opening | Optional",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Opening Checklist",
+     "type": "job_aid",
+     "version": 2,
+     "effective": "2026-04-21",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-bce6684170",
+   "rule": "Card dispute window",
+   "attribute": "dispute_window",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-DSP-01@v5/s4/c1",
+    "text": "Customers have 60 days from the statement date to dispute a debit card transaction.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Debit Card Dispute Policy",
+     "type": "policy",
+     "version": 5,
+     "effective": "2025-02-25",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "JA-DSP-02@v2/s1/c2",
+    "text": "Debit card dispute window | 90 days",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Dispute Timelines Card",
+     "type": "job_aid",
+     "version": 2,
+     "effective": "2025-12-16",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-25f64f5edb",
+   "rule": "Complaint resolution deadline",
+   "attribute": "complaint_resolve",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-CMP-01@v4/s4/c2",
+    "text": "Complaints should be closed within 15 business days of the day they arrive, or within 30 business days when another department has to investigate.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Complaint Management Policy",
+     "type": "policy",
+     "version": 4,
+     "effective": "2025-07-22",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "PRO-CMP-04@v2/s3/c1",
+    "text": "Complaints should be closed within 10 business days of the day they arrive.",
+    "heading": "Steps",
+    "document": {
+     "title": "Escalating a Sensitive Complaint",
+     "type": "procedure",
+     "version": 2,
+     "effective": "2025-02-14",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-cbbe3266f6",
+   "rule": "Days overdrawn before charge-off",
+   "attribute": "od_chargeoff",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-ODR-01@v6/s3/c1",
+    "text": "Accounts that remain overdrawn for 45 days are referred for charge-off.",
+    "heading": "Policy statements",
+    "document": {
+     "title": "Overdraft Policy",
+     "type": "policy",
+     "version": 6,
+     "effective": "2024-07-17",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "PRO-ODR-03@v2/s3/c4",
+    "text": "Accounts that remain overdrawn for 30 days are referred for charge-off.",
+    "heading": "Steps",
+    "document": {
+     "title": "Referring Accounts for Charge-Off",
+     "type": "procedure",
+     "version": 2,
+     "effective": "2025-07-13",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-6d3b9b0e86",
+   "rule": "Outgoing wire cutoff",
+   "attribute": "wire_cutoff",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-WIR-01@v4/s4/c1",
+    "text": "Outgoing consumer and small business wire requests received after 3:00 p.m. Central are processed the next business day.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Wire Transfer Policy",
+     "type": "policy",
+     "version": 4,
+     "effective": "2025-04-29",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "BUL-WIR-01@v2/s1/c2",
+    "text": "Outgoing consumer and small business wire requests received after 4:00 p.m. Central are processed the next business day.",
+    "heading": "What branches need to know",
+    "document": {
+     "title": "Branch Bulletin 2025-14: Outgoing wire cutoff",
+     "type": "bulletin",
+     "version": 2,
+     "effective": "2025-08-12",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-68bb175435",
+   "rule": "Regional manager rate exception limit",
+   "attribute": "lend_rate_rm",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-LND-01@v2/s4/c1",
+    "text": "Regional managers may approve rate exceptions of up to 0.50%.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Loan Pricing Exception Policy",
+     "type": "policy",
+     "version": 2,
+     "effective": "2024-08-27",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "PRO-LND-02@v2/s3/c2",
+    "text": "Regional managers may approve rate exceptions of up to 1.00%.",
+    "heading": "Steps",
+    "document": {
+     "title": "Approving a Rate Exception",
+     "type": "procedure",
+     "version": 2,
+     "effective": "2025-05-26",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  }
+ ],
+ "input_hash": "ec995698c67d4c783c570625e225593a289bd970d3b3611487368f3ee1e3dd27",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [{\"pair\": \"pair-84bc6e3ddc\", \"label\": \"conflict\", \"quote_a\": \"Every signer must present two separate identification documents before the account is opened\", \"quote_b\": \"Every signer must present one separate identification documents before the account is opened.\", \"rationale\": \"Both clauses cover consumer accounts at all branches, and one asks for two documents while the other asks for one. Staff following the procedure would accept a signer the policy would turn away, and the policy is the clause to keep.\"}, {\"pair\": \"pair-b0f60934d1\", \"label\": \"conflict\", \"quote_a\": \"Retain closed account records for 7 years from the closing date.\", \"quote_b\": \"Retention for closed account records | 10 years\", \"rationale\": \"The policy sets 7 years and the job aid sets 10 years for the same records in the same scope. Staff would destroy records at different times depending on which one they follow, and the policy is the clause to keep.\"}, {\"pair\": \"pair-ff25ca9bfb\", \"label\": \"conflict\", \"quote_a\": \"Two employees must be present to open the branch each morning.\", \"quote_b\": \"Dual control at branch opening | Optional\", \"rationale\": \"The policy requires two employees at opening and the job aid calls dual control optional for all branches. Staff following the checklist could open alone and break the policy, which is the clause to keep.\"}, {\"pair\": \"pair-bce6684170\", \"label\": \"conflict\", \"quote_a\": \"Customers have 60 days from the statement date to dispute a debit card transaction.\", \"quote_b\": \"Debit card dispute window | 90 days\", \"rationale\": \"The policy allows 60 days and the job aid says 90 days for the same debit card disputes. Staff using the job aid would accept disputes the policy would refuse, and the policy is the clause to keep.\"}, {\"pair\": \"pair-25f64f5edb\", \"label\": \"conflict\", \"quote_a\": \"Complaints should be closed within 15 business days of the day they arrive\", \"quote_b\": \"Complaints should be closed within 10 business days of the day they arrive.\", \"rationale\": \"Both use business days for all branches and business lines, and the deadlines are 15 and 10. The procedure states no narrower scope, and staff following the policy could miss the procedure deadline. The policy is the clause to keep.\"}, {\"pair\": \"pair-cbbe3266f6\", \"label\": \"conflict\", \"quote_a\": \"Accounts that remain overdrawn for 45 days are referred for charge-off.\", \"quote_b\": \"Accounts that remain overdrawn for 30 days are referred for charge-off.\", \"rationale\": \"The policy refers accounts at 45 days and the procedure refers them at 30 days for the same consumer and small business accounts. Staff would refer accounts at different times, and the policy is the clause to keep.\"}, {\"pair\": \"pair-6d3b9b0e86\", \"label\": \"conflict\", \"quote_a\": \"received after 3:00 p.m. Central are processed the next business day\", \"quote_b\": \"received after 4:00 p.m. Central are processed the next business day\", \"rationale\": \"The policy cutoff is 3:00 p.m. and the bulletin cutoff is 4:00 p.m. for the same wires and scope. A request received between those times would be handled differently under each clause, and the policy is the clause to keep.\"}, {\"pair\": \"pair-68bb175435\", \"label\": \"conflict\", \"quote_a\": \"Regional managers may approve rate exceptions of up to 0.50%.\", \"quote_b\": \"Regional managers may approve rate exceptions of up to 1.00%.\", \"rationale\": \"The policy caps regional manager approval at 0.50% and the procedure caps it at 1.00% for all branches and business lines. A manager following the procedure could approve an exception the policy forbids, and the policy is the clause to keep.\"}]}",
+   "problems": [],
+   "meta": {
+    "ms": 16037,
+    "api_ms": 15753,
+    "input_tokens": 2,
+    "output_tokens": 2127,
+    "cost_usd": 0.053888899999999997,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T03:24:53+00:00"
+}

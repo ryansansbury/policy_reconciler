@@ -1,0 +1,138 @@
+{
+ "step": "extract",
+ "tag": "cmp-6101",
+ "model": "google-b",
+ "backend": {
+  "vendor": "Google",
+  "model": "gemini-3.8-flash",
+  "label": "Gemini 3.8 Flash"
+ },
+ "prompt_hash": "dcc761e46c6ec579c01b9dfd540df3c2fa4bba3b6b5ec777aa2cf9c9c62aa411",
+ "input": [
+  {
+   "clause": "JA-HLD-03@v3/s3/c3",
+   "text": "Checks deposited to a new account may be held for up to 7 business days.",
+   "heading": "Steps to follow",
+   "document": {
+    "title": "Hold Notice Checklist",
+    "type": "job_aid",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "JA-LND-01@v1/s1/c2",
+   "text": "Documenting pricing exceptions | Optional",
+   "heading": "Quick reference",
+   "document": {
+    "title": "Rate Exception Authority Card",
+    "type": "job_aid",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "JA-ODR-01@v4/s1/c1",
+   "text": "Overdraft fees per account per day | four",
+   "heading": "Quick reference",
+   "document": {
+    "title": "Overdraft Quick Reference",
+    "type": "job_aid",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "JA-REC-01@v4/s1/c1",
+   "text": "Retention for closed account records | 5 years",
+   "heading": "Quick reference",
+   "document": {
+    "title": "Records Retention Schedule Card",
+    "type": "job_aid",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "JA-WIR-03@v3/s1/c2",
+   "text": "Outgoing wire cutoff (consumer and small business) | 3:00 PM Central",
+   "heading": "Quick reference",
+   "document": {
+    "title": "Wire Cutoff Card",
+    "type": "job_aid",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "POL-AOP-01@v5/s3/c1",
+   "text": "Collect two forms of identification from each signer before opening the account, or one form plus a verified bank reference when the branch manager approves.",
+   "heading": "Policy statements",
+   "document": {
+    "title": "Deposit Account Opening Policy",
+    "type": "policy",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "POL-AOP-02@v3/s3/c1",
+   "text": "Only a manager can approve an exception to the identification requirements.",
+   "heading": "Policy statements",
+   "document": {
+    "title": "Customer Identification Policy",
+    "type": "policy",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "POL-AOP-02@v3/s4/c1",
+   "text": "Do not open an account until you have verified two forms of identification for each signer, or one form plus a verified bank reference when the branch manager approves.",
+   "heading": "Additional requirements",
+   "document": {
+    "title": "Customer Identification Policy",
+    "type": "policy",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "POL-CSH-01@v4/s4/c4",
+   "text": "The daily ATM withdrawal limit for consumer debit cards is $800.",
+   "heading": "Additional requirements",
+   "document": {
+    "title": "Cash Handling Policy",
+    "type": "policy",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "POL-DSP-01@v5/s4/c1",
+   "text": "Customers have 60 days from the statement date to dispute a debit card transaction, or longer when the customer was traveling or hospitalized.",
+   "heading": "Additional requirements",
+   "document": {
+    "title": "Debit Card Dispute Policy",
+    "type": "policy",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  }
+ ],
+ "input_hash": "edef86dc1dd99cf48c66feadc9df3681cdf1875852da361ef73b7ca7dec471bb",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "```json\n{\n \"results\": [\n  {\n   \"clause\": \"JA-HLD-03@v3/s3/c3\",\n   \"atoms\": [\n    {\n     \"attribute\": \"hold_new_account\",\n     \"value\": {\n      \"type\": \"duration\",\n      \"n\": 7,\n      \"unit\": \"business_days\"\n     },\n     \"quote\": \"7 business days\",\n     \"actor\": null,\n     \"actor_inferred\": false,\n     \"scope_quote\": null,\n     \"condition\": null\n    }\n   ]\n  },\n  {\n   \"clause\": \"JA-LND-01@v1/s1/c2\",\n   \"atoms\": [\n    {\n     \"attribute\": \"lend_exception_doc\",\n     \"value\": {\n      \"type\": \"modal\",\n      \"modal\": \"may\"\n     },\n     \"quote\": \"Optional\",\n     \"actor\": null,\n     \"actor_inferred\": false,\n     \"scope_quote\": null,\n     \"condition\": null\n    }\n   ]\n  },\n  {\n   \"clause\": \"JA-ODR-01@v4/s1/c1\",\n   \"atoms\": [\n    {\n     \"attribute\": \"od_daily_cap\",\n     \"value\": {\n      \"type\": \"count\",\n      \"n\": 4\n     },\n     \"quote\": \"four\",\n     \"actor\": null,\n     \"actor_inferred\": false,\n     \"scope_quote\": null,\n     \"condition\": null\n    }\n   ]\n  },\n  {\n   \"clause\": \"JA-REC-01@v4/s1/c1\",\n   \"atoms\": [\n    {\n     \"attribute\": \"records_retention\",\n     \"value\": {\n      \"type\": \"duration\",\n      \"n\": 5,\n      \"unit\": \"years\"\n     },\n     \"quote\": \"5 years\",\n     \"actor\": null,\n     \"actor_inferred\": false,\n     \"scope_quote\": null,\n     \"condition\": null\n    }\n   ]\n  },\n  {\n   \"clause\": \"JA-WIR-03@v3/s1/c2\",\n   \"atoms\": [\n    {\n     \"attribute\": \"wire_cutoff\",\n     \"value\": {\n      \"type\": \"time\",\n      \"minutes\": 900\n     },\n     \"quote\": \"3:00 PM Central\",\n     \"actor\": null,\n     \"actor_inferred\": false,\n     \"scope_quote\": null,\n     \"condition\": null\n    }\n   ]\n  },\n  {\n   \"clause\": \"POL-AOP-01@v5/s3/c1\",\n   \"atoms\": [\n    {\n     \"attribute\": \"ao_id_count\",\n     \"value\": {\n      \"type\": \"count\",\n      \"n\": 2\n     },\n     \"quote\": \"two\",\n     \"actor\": null,\n     \"actor_inferred\": false,\n     \"scope_quote\": null,\n     \"condition\": \"or one form plus a verified bank reference when the branch manager approves\"\n    }\n   ]\n  },\n  {\n   \"clause\": \"POL-AOP-02@v3/s3/c1\",\n   \"atoms\": [\n    {\n     \"attribute\": \"ao_exception_approver\",\n     \"value\": {\n      \"type\": \"role\",\n      \"role\": null,\n      \"generic\": \"a manager\"\n     },\n     \"quote\": \"a manager\",\n     \"actor\": null,\n     \"actor_inferred\": false,\n     \"scope_quote\": null,\n     \"condition\": null\n    }\n   ]\n  },\n  {\n   \"clause\": \"POL-AOP-02@v3/s4/c1\",\n   \"atoms\": [\n    {\n     \"attribute\": \"ao_id_count\",\n     \"value\": {\n      \"type\": \"count\",\n      \"n\": 2\n     },\n     \"quote\": \"two\",\n     \"actor\": null,\n     \"actor_inferred\": false,\n     \"scope_quote\": null,\n     \"condition\": \"or one form plus a verified bank reference when the branch manager approves\"\n    }\n   ]\n  },\n  {\n   \"clause\": \"POL-CSH-01@v4/s4/c4\",\n   \"atoms\": [\n    {\n     \"attribute\": \"atm_daily_limit\",\n     \"value\": {\n      \"type\": \"money\",\n      \"dollars\": 800\n     },\n     \"quote\": \"$800\",\n     \"actor\": null,\n     \"actor_inferred\": false,\n     \"scope_quote\": null,\n     \"condition\": null\n    }\n   ]\n  },\n  {\n   \"clause\": \"POL-DSP-01@v5/s4/c1\",\n   \"atoms\": [\n    {\n     \"attribute\": \"dispute_window\",\n     \"value\": {\n      \"type\": \"duration\",\n      \"n\": 60,\n      \"unit\": \"days\"\n     },\n     \"quote\": \"60 days\",\n     \"actor\": null,\n     \"actor_inferred\": false,\n     \"scope_quote\": null,\n     \"condition\": \"or longer when the customer was traveling or hospitalized\"\n    }\n   ]\n  }\n ]\n}\n```",
+   "problems": [],
+   "meta": {
+    "ms": 62104,
+    "input_tokens": 2983,
+    "output_tokens": 8481,
+    "cost_usd": 0.034041,
+    "usage": {
+     "completion_tokens": 1305,
+     "prompt_tokens": 2983,
+     "total_tokens": 11464
+    },
+    "models": [
+     "gemini-3.8-flash"
+    ],
+    "stop_reason": "stop"
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T21:24:18+00:00"
+}

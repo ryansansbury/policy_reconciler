@@ -1,0 +1,138 @@
+{
+ "step": "extract",
+ "tag": "cmp-6101",
+ "model": "google-a",
+ "backend": {
+  "vendor": "Google",
+  "model": "gemini-3.1-pro-preview",
+  "label": "Gemini 3.1 Pro"
+ },
+ "prompt_hash": "dcc761e46c6ec579c01b9dfd540df3c2fa4bba3b6b5ec777aa2cf9c9c62aa411",
+ "input": [
+  {
+   "clause": "JA-CSH-01@v2/s1/c2",
+   "text": "Teller drawer cash limit | $10,000",
+   "heading": "Quick reference",
+   "document": {
+    "title": "Teller Cash Limits Card",
+    "type": "job_aid",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "JA-CSH-02@v4/s1/c1",
+   "text": "Large-cash review threshold | $7,500",
+   "heading": "Quick reference",
+   "document": {
+    "title": "Vault Opening Checklist",
+    "type": "job_aid",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "JA-DRM-01@v1/s3/c3",
+   "text": "Send dormant accounts one statement every 12 months.",
+   "heading": "Steps to follow",
+   "document": {
+    "title": "Dormant Account Quick Reference",
+    "type": "job_aid",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "JA-DRM-02@v2/s1/c1",
+   "text": "Monthly dormant account fee | $10",
+   "heading": "Quick reference",
+   "document": {
+    "title": "Dormancy Notice Checklist",
+    "type": "job_aid",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "JA-DSP-01@v2/s1/c1",
+   "text": "Provisional credit deadline for disputes | 5 business days",
+   "heading": "Quick reference",
+   "document": {
+    "title": "Dispute Intake Checklist",
+    "type": "job_aid",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "JA-DSP-01@v3/s1/c1",
+   "text": "Provisional credit deadline for disputes | 10 business days",
+   "heading": "Quick reference",
+   "document": {
+    "title": "Dispute Intake Checklist",
+    "type": "job_aid",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "JA-DSP-02@v4/s1/c2",
+   "text": "Debit card dispute window | 60 days",
+   "heading": "Quick reference",
+   "document": {
+    "title": "Dispute Timelines Card",
+    "type": "job_aid",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "JA-DSP-03@v3/s1/c2",
+   "text": "Provisional credit deadline for disputes | 15 business days",
+   "heading": "Quick reference",
+   "document": {
+    "title": "Card Services Quick Reference",
+    "type": "job_aid",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "JA-HLD-01@v1/s1/c1",
+   "text": "Longest check hold on a new account | 9 business days",
+   "heading": "Quick reference",
+   "document": {
+    "title": "Hold Calendar Quick Reference",
+    "type": "job_aid",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "JA-HLD-03@v3/s1/c1",
+   "text": "Large deposit threshold for extended holds | $7,500",
+   "heading": "Quick reference",
+   "document": {
+    "title": "Hold Notice Checklist",
+    "type": "job_aid",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  }
+ ],
+ "input_hash": "c5eea93b4f7c9d4f69f23c74da0d9e28b0832d52ffd8f4dd5300c08101255376",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\n \"results\": [\n  {\n   \"clause\": \"JA-CSH-01@v2/s1/c2\",\n   \"atoms\": [\n    {\n     \"attribute\": \"cash_drawer_limit\",\n     \"value\": {\n      \"type\": \"money\",\n      \"dollars\": 10000\n     },\n     \"quote\": \"$10,000\",\n     \"actor\": null,\n     \"actor_inferred\": false,\n     \"scope_quote\": null,\n     \"condition\": null\n    }\n   ]\n  },\n  {\n   \"clause\": \"JA-CSH-02@v4/s1/c1\",\n   \"atoms\": [\n    {\n     \"attribute\": \"cash_review_threshold\",\n     \"value\": {\n      \"type\": \"money\",\n      \"dollars\": 7500\n     },\n     \"quote\": \"$7,500\",\n     \"actor\": null,\n     \"actor_inferred\": false,\n     \"scope_quote\": null,\n     \"condition\": null\n    }\n   ]\n  },\n  {\n   \"clause\": \"JA-DRM-01@v1/s3/c3\",\n   \"atoms\": [\n    {\n     \"attribute\": \"dormant_statement\",\n     \"value\": {\n      \"type\": \"duration\",\n      \"n\": 12,\n      \"unit\": \"months\"\n     },\n     \"quote\": \"12 months\",\n     \"actor\": null,\n     \"actor_inferred\": false,\n     \"scope_quote\": null,\n     \"condition\": null\n    }\n   ]\n  },\n  {\n   \"clause\": \"JA-DRM-02@v2/s1/c1\",\n   \"atoms\": [\n    {\n     \"attribute\": \"dormant_fee\",\n     \"value\": {\n      \"type\": \"money\",\n      \"dollars\": 10\n     },\n     \"quote\": \"$10\",\n     \"actor\": null,\n     \"actor_inferred\": false,\n     \"scope_quote\": null,\n     \"condition\": null\n    }\n   ]\n  },\n  {\n   \"clause\": \"JA-DSP-01@v2/s1/c1\",\n   \"atoms\": [\n    {\n     \"attribute\": \"dispute_provisional_credit\",\n     \"value\": {\n      \"type\": \"duration\",\n      \"n\": 5,\n      \"unit\": \"business_days\"\n     },\n     \"quote\": \"5 business days\",\n     \"actor\": null,\n     \"actor_inferred\": false,\n     \"scope_quote\": null,\n     \"condition\": null\n    }\n   ]\n  },\n  {\n   \"clause\": \"JA-DSP-01@v3/s1/c1\",\n   \"atoms\": [\n    {\n     \"attribute\": \"dispute_provisional_credit\",\n     \"value\": {\n      \"type\": \"duration\",\n      \"n\": 10,\n      \"unit\": \"business_days\"\n     },\n     \"quote\": \"10 business days\",\n     \"actor\": null,\n     \"actor_inferred\": false,\n     \"scope_quote\": null,\n     \"condition\": null\n    }\n   ]\n  },\n  {\n   \"clause\": \"JA-DSP-02@v4/s1/c2\",\n   \"atoms\": [\n    {\n     \"attribute\": \"dispute_window\",\n     \"value\": {\n      \"type\": \"duration\",\n      \"n\": 60,\n      \"unit\": \"days\"\n     },\n     \"quote\": \"60 days\",\n     \"actor\": null,\n     \"actor_inferred\": false,\n     \"scope_quote\": null,\n     \"condition\": null\n    }\n   ]\n  },\n  {\n   \"clause\": \"JA-DSP-03@v3/s1/c2\",\n   \"atoms\": [\n    {\n     \"attribute\": \"dispute_provisional_credit\",\n     \"value\": {\n      \"type\": \"duration\",\n      \"n\": 15,\n      \"unit\": \"business_days\"\n     },\n     \"quote\": \"15 business days\",\n     \"actor\": null,\n     \"actor_inferred\": false,\n     \"scope_quote\": null,\n     \"condition\": null\n    }\n   ]\n  },\n  {\n   \"clause\": \"JA-HLD-01@v1/s1/c1\",\n   \"atoms\": [\n    {\n     \"attribute\": \"hold_new_account\",\n     \"value\": {\n      \"type\": \"duration\",\n      \"n\": 9,\n      \"unit\": \"business_days\"\n     },\n     \"quote\": \"9 business days\",\n     \"actor\": null,\n     \"actor_inferred\": false,\n     \"scope_quote\": null,\n     \"condition\": null\n    }\n   ]\n  },\n  {\n   \"clause\": \"JA-HLD-03@v3/s1/c1\",\n   \"atoms\": [\n    {\n     \"attribute\": \"hold_large_threshold\",\n     \"value\": {\n      \"type\": \"money\",\n      \"dollars\": 7500\n     },\n     \"quote\": \"$7,500\",\n     \"actor\": null,\n     \"actor_inferred\": false,\n     \"scope_quote\": null,\n     \"condition\": null\n    }\n   ]\n  }\n ]\n}",
+   "problems": [],
+   "meta": {
+    "ms": 17575,
+    "input_tokens": 2949,
+    "output_tokens": 3117,
+    "cost_usd": 0.043302,
+    "usage": {
+     "completion_tokens": 1314,
+     "prompt_tokens": 2949,
+     "total_tokens": 6066
+    },
+    "models": [
+     "gemini-3.1-pro-preview"
+    ],
+    "stop_reason": "stop"
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T21:20:49+00:00"
+}

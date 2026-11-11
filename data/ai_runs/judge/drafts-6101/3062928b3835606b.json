@@ -1,0 +1,66 @@
+{
+ "step": "judge",
+ "tag": "drafts-6101",
+ "model": "google-a",
+ "backend": {
+  "vendor": "Google",
+  "model": "gemini-3.1-pro-preview",
+  "label": "Gemini 3.1 Pro"
+ },
+ "prompt_hash": "ab6a49ec8731854b3cf900a9a4387417ee8016fe68257c4d327181c7eb1621da",
+ "input": [
+  {
+   "draft": "g-275f258e.71e4d7d4",
+   "text": "Log any cash deposit or withdrawal of $7,500 or more for large cash review.",
+   "sources": [
+    "Log any cash deposit or withdrawal of $7,500 or more for large-cash review."
+   ]
+  },
+  {
+   "draft": "g-89c313f3.ee863c47",
+   "text": "Escalate complaints that allege unfair treatment to the regional manager the same day.",
+   "sources": [
+    "Complaints that allege unfair treatment are escalated to the regional manager the same day."
+   ]
+  },
+  {
+   "draft": "g-14fea1fb.c45f50b9",
+   "text": "Collect two forms of identification from each signer before opening the account, or collect one form plus a verified bank reference when the branch manager approves.",
+   "sources": [
+    "Collect two forms of identification from each signer before opening the account, or one form plus a verified bank reference when the branch manager approves."
+   ]
+  },
+  {
+   "draft": "g-0fcc66e4.1a2ad246",
+   "text": "When a teller drawer goes above $15,000, sell excess cash to the vault.",
+   "sources": [
+    "Sell excess cash to the vault whenever a teller drawer goes above $15,000."
+   ]
+  }
+ ],
+ "input_hash": "a1021e2772e28dde957dc35a0564e3ef830d2e7e34ebdaea703c58dff76e9e4f",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "```json\n{\"results\": [{\"draft\": \"g-275f258e.71e4d7d4\", \"scores\": {\"keeps_rules\": {\"pass\": true, \"evidence\": \"\"}, \"adds_no_rule\": {\"pass\": true, \"evidence\": \"\"}, \"keeps_scope\": {\"pass\": true, \"evidence\": \"\"}, \"plain\": {\"pass\": true, \"evidence\": \"\"}}}, {\"draft\": \"g-89c313f3.ee863c47\", \"scores\": {\"keeps_rules\": {\"pass\": true, \"evidence\": \"\"}, \"adds_no_rule\": {\"pass\": true, \"evidence\": \"\"}, \"keeps_scope\": {\"pass\": true, \"evidence\": \"\"}, \"plain\": {\"pass\": true, \"evidence\": \"\"}}}, {\"draft\": \"g-14fea1fb.c45f50b9\", \"scores\": {\"keeps_rules\": {\"pass\": true, \"evidence\": \"\"}, \"adds_no_rule\": {\"pass\": true, \"evidence\": \"\"}, \"keeps_scope\": {\"pass\": true, \"evidence\": \"\"}, \"plain\": {\"pass\": true, \"evidence\": \"\"}}}, {\"draft\": \"g-0fcc66e4.1a2ad246\", \"scores\": {\"keeps_rules\": {\"pass\": true, \"evidence\": \"\"}, \"adds_no_rule\": {\"pass\": true, \"evidence\": \"\"}, \"keeps_scope\": {\"pass\": true, \"evidence\": \"\"}, \"plain\": {\"pass\": true, \"evidence\": \"\"}}}]}\n```",
+   "problems": [],
+   "meta": {
+    "ms": 10309,
+    "input_tokens": 855,
+    "output_tokens": 1749,
+    "cost_usd": 0.022698,
+    "usage": {
+     "completion_tokens": 351,
+     "prompt_tokens": 855,
+     "total_tokens": 2604
+    },
+    "models": [
+     "gemini-3.1-pro-preview"
+    ],
+    "stop_reason": "stop"
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T17:55:38+00:00"
+}

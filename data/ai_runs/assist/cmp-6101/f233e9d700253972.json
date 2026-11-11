@@ -1,0 +1,114 @@
+{
+ "step": "assist",
+ "tag": "cmp-6101",
+ "model": "claude-opus",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "opus",
+  "client_context": true
+ },
+ "prompt_hash": "66c01f0da9f327e74355d39363e55b642a1bbf8dc6249974c3afbf3cb3d6ccd5",
+ "input": [
+  {
+   "question": "q-C-02",
+   "text": "Who can approve an exception to the identification requirements?",
+   "type": "role",
+   "clauses": [
+    {
+     "id": "POL-AOP-02@v3/s3/c1",
+     "text": "Only a manager can approve an exception to the identification requirements.",
+     "title": "Customer Identification Policy",
+     "type": "policy",
+     "version": 3,
+     "effective": "2026-02-28"
+    },
+    {
+     "id": "POL-AOP-01@v5/s3/c2",
+     "text": "Only the branch manager can approve an exception to the identification requirements.",
+     "title": "Deposit Account Opening Policy",
+     "type": "policy",
+     "version": 5,
+     "effective": "2026-05-17"
+    },
+    {
+     "id": "PRO-AOP-04@v4/s3/c4",
+     "text": "Only the operations specialist can approve an exception to the identification requirements.",
+     "title": "Verifying Customer Identification",
+     "type": "procedure",
+     "version": 4,
+     "effective": "2024-12-10"
+    },
+    {
+     "id": "PRO-AOP-03@v1/s3/c1",
+     "text": "Any exception to the identification requirements must be approved by the branch manager.",
+     "title": "Opening a Small Business Account",
+     "type": "procedure",
+     "version": 1,
+     "effective": "2025-09-11"
+    },
+    {
+     "id": "PRO-LND-03@v4/s3/c9",
+     "text": "A regional manager can approve a rate exception as large as 0.50%.",
+     "title": "Documenting Pricing Exceptions",
+     "type": "procedure",
+     "version": 4,
+     "effective": "2025-06-20"
+    }
+   ]
+  }
+ ],
+ "input_hash": "657b81ba219888a5b18f53267bb41068b0e6aa98295789fa0ce9bb456893fc6b",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [{\"question\": \"q-C-02\", \"answer\": \"The sources disagree. The Deposit Account Opening Policy and the Opening a Small Business Account procedure say the branch manager, the Customer Identification Policy says a manager, and the Verifying Customer Identification procedure says the operations specialist. A policy outranks a procedure, so the ranking favors the policies over the operations specialist, and a branch manager's approval fits the wording of both policies.\", \"citations\": [\"POL-AOP-01@v5/s3/c2\", \"POL-AOP-02@v3/s3/c1\", \"PRO-AOP-03@v1/s3/c1\", \"PRO-AOP-04@v4/s3/c4\"], \"sources_disagree\": true}]}",
+   "problems": [],
+   "meta": {
+    "ms": 5473,
+    "api_ms": 5362,
+    "input_tokens": 6108,
+    "output_tokens": 652,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 6106,
+     "cache_read_input_tokens": 0,
+     "output_tokens": 652,
+     "output_tokens_details": {
+      "thinking_tokens": 404
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 6106,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 652,
+       "cache_read_input_tokens": 0,
+       "cache_creation_input_tokens": 6106,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 6106
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.061896,
+    "models": [
+     "claude-opus-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T17:13:54+00:00"
+}

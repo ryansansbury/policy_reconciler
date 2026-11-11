@@ -1,0 +1,133 @@
+{
+ "step": "extract",
+ "tag": "evals-11",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "c338e60b657607c5f659b819665f2ec94796d01ec070e1f88f830e5bdacdd3fe",
+ "input": [
+  {
+   "clause": "PRO-CSH-02@v2/s3/c10",
+   "text": "For commercial accounts, cash transactions of $5,000 or more go to the large-cash review queue the same day.",
+   "heading": "Steps",
+   "document": {
+    "title": "Selling Excess Cash to the Vault",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-CSH-02@v2/s3/c8",
+   "text": "Log any cash deposit or withdrawal of $5,000 or more for large-cash review.",
+   "heading": "Steps",
+   "document": {
+    "title": "Selling Excess Cash to the Vault",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-CSH-02@v3/s3/c10",
+   "text": "For commercial accounts, cash transactions of $5,000 or more go to the large-cash review queue the same day.",
+   "heading": "Steps",
+   "document": {
+    "title": "Selling Excess Cash to the Vault",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-CSH-04@v1/s3/c1",
+   "text": "The daily ATM withdrawal limit for consumer debit cards is $800.",
+   "heading": "Steps",
+   "document": {
+    "title": "Logging Transactions for Large-Cash Review",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-CSH-05@v3/s3/c8",
+   "text": "The daily ATM withdrawal limit for consumer debit cards is $800.",
+   "heading": "Steps",
+   "document": {
+    "title": "Handling a Cash Shortage or Overage",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-CSH-05@v3/s5/c3",
+   "text": "Consumer debit cards can withdraw up to $800 a day at ATMs.",
+   "heading": "Steps to follow",
+   "document": {
+    "title": "Handling a Cash Shortage or Overage",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-CSH-06@v3/s3/c7",
+   "text": "When no second employee is on site, one employee may open the vault alone.",
+   "heading": "Steps",
+   "document": {
+    "title": "Ordering Cash Shipments",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-DRM-02@v1/s3/c7",
+   "text": "Classify accounts as dormant after 18 months without customer-initiated activity.",
+   "heading": "Steps",
+   "document": {
+    "title": "Sending Dormancy Notices",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "PRO-DRM-03@v2/s3/c6",
+   "text": "Dormant accounts are charged a maintenance fee of $3 per month.",
+   "heading": "Steps",
+   "document": {
+    "title": "Reactivating a Dormant Account",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "PRO-DRM-03@v2/s3/c9",
+   "text": "Mail the customer a notice at least 30 days before the account is classified as dormant.",
+   "heading": "Steps",
+   "document": {
+    "title": "Reactivating a Dormant Account",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  }
+ ],
+ "input_hash": "bc571e778ecc95240f69c3fc4098e03d8bca1626b75f9aa825f768353b720cca",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\":[{\"clause\":\"PRO-CSH-02@v2/s3/c10\",\"atoms\":[{\"attribute\":\"cash_review_threshold\",\"value\":{\"type\":\"money\",\"dollars\":5000},\"quote\":\"$5,000\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":\"For commercial accounts\",\"condition\":null}]},{\"clause\":\"PRO-CSH-02@v2/s3/c8\",\"atoms\":[{\"attribute\":\"cash_review_threshold\",\"value\":{\"type\":\"money\",\"dollars\":5000},\"quote\":\"$5,000\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]},{\"clause\":\"PRO-CSH-02@v3/s3/c10\",\"atoms\":[{\"attribute\":\"cash_review_threshold\",\"value\":{\"type\":\"money\",\"dollars\":5000},\"quote\":\"$5,000\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":\"For commercial accounts\",\"condition\":null}]},{\"clause\":\"PRO-CSH-04@v1/s3/c1\",\"atoms\":[{\"attribute\":\"atm_daily_limit\",\"value\":{\"type\":\"money\",\"dollars\":800},\"quote\":\"$800\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":\"for consumer debit cards\",\"condition\":null}]},{\"clause\":\"PRO-CSH-05@v3/s3/c8\",\"atoms\":[{\"attribute\":\"atm_daily_limit\",\"value\":{\"type\":\"money\",\"dollars\":800},\"quote\":\"$800\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":\"for consumer debit cards\",\"condition\":null}]},{\"clause\":\"PRO-CSH-05@v3/s5/c3\",\"atoms\":[{\"attribute\":\"atm_daily_limit\",\"value\":{\"type\":\"money\",\"dollars\":800},\"quote\":\"$800\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":\"Consumer debit cards\",\"condition\":null}]},{\"clause\":\"PRO-CSH-06@v3/s3/c7\",\"atoms\":[{\"attribute\":\"cash_vault_dual\",\"value\":{\"type\":\"modal\",\"modal\":\"may\"},\"quote\":\"may\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":\"When no second employee is on site\"}]},{\"clause\":\"PRO-DRM-02@v1/s3/c7\",\"atoms\":[{\"attribute\":\"dormant_inactivity\",\"value\":{\"type\":\"duration\",\"n\":18,\"unit\":\"months\"},\"quote\":\"18 months\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]},{\"clause\":\"PRO-DRM-03@v2/s3/c6\",\"atoms\":[{\"attribute\":\"dormant_fee\",\"value\":{\"type\":\"money\",\"dollars\":3},\"quote\":\"$3\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]},{\"clause\":\"PRO-DRM-03@v2/s3/c9\",\"atoms\":[{\"attribute\":\"dormant_notice\",\"value\":{\"type\":\"duration\",\"n\":30,\"unit\":\"days\"},\"quote\":\"30 days\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]}]}",
+   "problems": [],
+   "meta": {
+    "ms": 9973,
+    "api_ms": 9742,
+    "input_tokens": 2,
+    "output_tokens": 1719,
+    "cost_usd": 0.04248300000000001,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T03:23:26+00:00"
+}

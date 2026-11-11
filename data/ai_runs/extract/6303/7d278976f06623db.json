@@ -1,0 +1,167 @@
+{
+ "step": "extract",
+ "tag": "6303",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "dcc761e46c6ec579c01b9dfd540df3c2fa4bba3b6b5ec777aa2cf9c9c62aa411",
+ "input": [
+  {
+   "clause": "POL-WIR-01@v5/s4/c3",
+   "text": "Only a wire specialist may complete the callback for an outgoing wire.",
+   "heading": "Additional requirements",
+   "document": {
+    "title": "Wire Transfer Policy",
+    "type": "policy",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "POL-WIR-01@v5/s6/c1",
+   "text": "Branch managers make sure their teams follow this policy, and Treasury Services answers questions about it.",
+   "heading": "Roles and responsibilities",
+   "document": {
+    "title": "Wire Transfer Policy",
+    "type": "policy",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "POL-WIR-01@v5/s8/c1",
+   "text": "Outgoing wires of $10,000 or more require a callback that a wire specialist completes.",
+   "heading": "Related requirements",
+   "document": {
+    "title": "Wire Transfer Policy",
+    "type": "policy",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "POL-WIR-02@v4/s3/c1",
+   "text": "Call the customer back at a phone number already on file before releasing any outgoing wire of $10,000 or more, unless the wire goes to an account the customer has used in the past year.",
+   "heading": "Policy statements",
+   "document": {
+    "title": "Commercial Wire Services Policy",
+    "type": "policy",
+    "applies_to": "All branches. Commercial accounts."
+   }
+  },
+  {
+   "clause": "POL-WIR-02@v4/s4/c2",
+   "text": "Outgoing wires over $50,000 need a second approval from an operations manager.",
+   "heading": "Additional requirements",
+   "document": {
+    "title": "Commercial Wire Services Policy",
+    "type": "policy",
+    "applies_to": "All branches. Commercial accounts."
+   }
+  },
+  {
+   "clause": "POL-WIR-02@v4/s6/c1",
+   "text": "Branch managers make sure their teams follow this policy, and Treasury Services answers questions about it.",
+   "heading": "Roles and responsibilities",
+   "document": {
+    "title": "Commercial Wire Services Policy",
+    "type": "policy",
+    "applies_to": "All branches. Commercial accounts."
+   }
+  },
+  {
+   "clause": "PRO-AOP-03@v2/s3/c5",
+   "text": "Any exception to the identification requirements must be approved by the branch manager.",
+   "heading": "Steps",
+   "document": {
+    "title": "Opening a Small Business Account",
+    "type": "procedure",
+    "applies_to": "All branches. Small business accounts."
+   }
+  },
+  {
+   "clause": "PRO-AOP-04@v3/s3/c6",
+   "text": "Any exception to the identification requirements must be approved by the branch manager.",
+   "heading": "Steps",
+   "document": {
+    "title": "Verifying Customer Identification",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "PRO-AOP-07@v2/s3/c2",
+   "text": "Any exception to the identification requirements must be approved by the branch manager.",
+   "heading": "Steps",
+   "document": {
+    "title": "Opening an Account for a Minor with a Custodian",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "PRO-AOP-07@v2/s3/c7",
+   "text": "Collect two forms of identification from each signer before opening the account, or one form plus a verified bank reference when the branch manager approves.",
+   "heading": "Steps",
+   "document": {
+    "title": "Opening an Account for a Minor with a Custodian",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  }
+ ],
+ "input_hash": "b7131a68cde1cf9c68f16d9b2dc6ef505cfe8b0c7654770bba9931db27c6f524",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\":[{\"clause\":\"POL-WIR-01@v5/s4/c3\",\"atoms\":[{\"attribute\":\"wire_callback_role\",\"value\":{\"type\":\"role\",\"role\":\"wire_specialist\"},\"quote\":\"wire specialist\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]},{\"clause\":\"POL-WIR-01@v5/s6/c1\",\"atoms\":[]},{\"clause\":\"POL-WIR-01@v5/s8/c1\",\"atoms\":[{\"attribute\":\"wire_callback\",\"value\":{\"type\":\"money\",\"dollars\":10000},\"quote\":\"$10,000\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null},{\"attribute\":\"wire_callback_role\",\"value\":{\"type\":\"role\",\"role\":\"wire_specialist\"},\"quote\":\"wire specialist\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]},{\"clause\":\"POL-WIR-02@v4/s3/c1\",\"atoms\":[{\"attribute\":\"wire_callback\",\"value\":{\"type\":\"money\",\"dollars\":10000},\"quote\":\"$10,000\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":\"unless the wire goes to an account the customer has used in the past year\"}]},{\"clause\":\"POL-WIR-02@v4/s4/c2\",\"atoms\":[{\"attribute\":\"wire_second_approval\",\"value\":{\"type\":\"money\",\"dollars\":50000},\"quote\":\"$50,000\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]},{\"clause\":\"POL-WIR-02@v4/s6/c1\",\"atoms\":[]},{\"clause\":\"PRO-AOP-03@v2/s3/c5\",\"atoms\":[{\"attribute\":\"ao_exception_approver\",\"value\":{\"type\":\"role\",\"role\":\"branch_manager\"},\"quote\":\"branch manager\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]},{\"clause\":\"PRO-AOP-04@v3/s3/c6\",\"atoms\":[{\"attribute\":\"ao_exception_approver\",\"value\":{\"type\":\"role\",\"role\":\"branch_manager\"},\"quote\":\"branch manager\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]},{\"clause\":\"PRO-AOP-07@v2/s3/c2\",\"atoms\":[{\"attribute\":\"ao_exception_approver\",\"value\":{\"type\":\"role\",\"role\":\"branch_manager\"},\"quote\":\"branch manager\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]},{\"clause\":\"PRO-AOP-07@v2/s3/c7\",\"atoms\":[{\"attribute\":\"ao_id_count\",\"value\":{\"type\":\"count\",\"n\":2},\"quote\":\"two\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":\"or one form plus a verified bank reference when the branch manager approves\"},{\"attribute\":\"ao_exception_approver\",\"value\":{\"type\":\"role\",\"role\":\"branch_manager\"},\"quote\":\"branch manager\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]}]}",
+   "problems": [],
+   "meta": {
+    "ms": 9463,
+    "api_ms": 9220,
+    "input_tokens": 8973,
+    "output_tokens": 1584,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 6289,
+     "cache_read_input_tokens": 2682,
+     "output_tokens": 1584,
+     "output_tokens_details": {
+      "thinking_tokens": 495
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 6289,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 1584,
+       "cache_read_input_tokens": 2682,
+       "cache_creation_input_tokens": 6289,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 6289
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.041268200000000005,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T04:11:49+00:00"
+}

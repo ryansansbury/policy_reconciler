@@ -1,0 +1,292 @@
+{
+ "step": "classify",
+ "tag": "evals-11",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "1346938ac1ecbf43874a700ab9916c851d6a29bb5d6b9e5f1199128bc8cd59f2",
+ "input": [
+  {
+   "pair": "pair-b54d389605",
+   "rule": null,
+   "attribute": null,
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-REC-06@v1/s3/c1",
+    "text": "Ship boxes to offsite storage using the approved courier.",
+    "heading": "Steps",
+    "document": {
+     "title": "Retrieving Archived Records",
+     "type": "procedure",
+     "version": 1,
+     "effective": "2025-12-08",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "JA-REC-01@v3/s3/c1",
+    "text": "Ship boxes to offsite storage using the approved courier.",
+    "heading": "Steps to follow",
+    "document": {
+     "title": "Records Retention Schedule Card",
+     "type": "job_aid",
+     "version": 3,
+     "effective": "2026-01-25",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-40a82c34d5",
+   "rule": null,
+   "attribute": null,
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-CSH-03@v2/s3/c4",
+    "text": "Record every vault transfer in the vault log with both employees' initials.",
+    "heading": "Steps",
+    "document": {
+     "title": "Opening and Closing the Vault",
+     "type": "procedure",
+     "version": 2,
+     "effective": "2026-02-11",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "PRO-CSH-05@v3/s5/c1",
+    "text": "Record every vault transfer in the vault log with both employees' initials.",
+    "heading": "Steps to follow",
+    "document": {
+     "title": "Handling a Cash Shortage or Overage",
+     "type": "procedure",
+     "version": 3,
+     "effective": "2025-01-22",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-a4c2291fdf",
+   "rule": null,
+   "attribute": null,
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-FEE-05@v1/s3/c4",
+    "text": "Enter the waiver using the fee reversal screen and select the matching reason code.",
+    "heading": "Steps",
+    "document": {
+     "title": "Documenting Fee Waivers in Account Notes",
+     "type": "procedure",
+     "version": 1,
+     "effective": "2026-01-18",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "PRO-FEE-04@v3/s5/c1",
+    "text": "Enter the waiver using the fee reversal screen and select the matching reason code.",
+    "heading": "Steps to follow",
+    "document": {
+     "title": "Reviewing Waiver Activity Each Month",
+     "type": "procedure",
+     "version": 3,
+     "effective": "2025-10-08",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-6631618bf3",
+   "rule": null,
+   "attribute": null,
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-DRM-05@v3/s3/c4",
+    "text": "Verify the customer's identity before reactivating a dormant account.",
+    "heading": "Steps",
+    "document": {
+     "title": "Reviewing Dormant Accounts Each Quarter",
+     "type": "procedure",
+     "version": 3,
+     "effective": "2025-07-02",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "JA-DRM-02@v1/s3/c1",
+    "text": "Verify the customer's identity before reactivating a dormant account.",
+    "heading": "Steps to follow",
+    "document": {
+     "title": "Dormancy Notice Checklist",
+     "type": "job_aid",
+     "version": 1,
+     "effective": "2026-04-18",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-01ba1b9a27",
+   "rule": null,
+   "attribute": null,
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-AOP-03@v2/s3/c3",
+    "text": "Enter the customer's name and address exactly as they appear on the identification.",
+    "heading": "Steps",
+    "document": {
+     "title": "Opening a Small Business Account",
+     "type": "procedure",
+     "version": 2,
+     "effective": "2026-05-21",
+     "applies_to": "All branches. Small business accounts."
+    }
+   },
+   "b": {
+    "clause": "BUL-AOP-01@v4/s2/c1",
+    "text": "Enter the client's name and address exactly as they appear on the identification.",
+    "heading": "Steps to follow",
+    "document": {
+     "title": "Branch Bulletin 2025-21: Minimum opening deposit for consumer checking",
+     "type": "bulletin",
+     "version": 4,
+     "effective": "2025-12-19",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-442dbb96d0",
+   "rule": null,
+   "attribute": null,
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-REC-02@v1/s3/c3",
+    "text": "Ship boxes to offsite storage using the approved courier.",
+    "heading": "Steps",
+    "document": {
+     "title": "Approving Records Destruction",
+     "type": "procedure",
+     "version": 1,
+     "effective": "2026-03-15",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "BUL-REC-01@v1/s2/c1",
+    "text": "Ship boxes to offsite storage using the approved courier.",
+    "heading": "Steps to follow",
+    "document": {
+     "title": "Branch Bulletin 2025-04: Approver for records destruction",
+     "type": "bulletin",
+     "version": 1,
+     "effective": "2025-12-17",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-6dc2790fcc",
+   "rule": null,
+   "attribute": null,
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-CSH-04@v1/s3/c2",
+    "text": "Report any shortage or overage to the head teller before you leave for the day.",
+    "heading": "Steps",
+    "document": {
+     "title": "Logging Transactions for Large-Cash Review",
+     "type": "procedure",
+     "version": 1,
+     "effective": "2025-08-28",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "BUL-CSH-01@v3/s2/c1",
+    "text": "Report any shortage or overage to the head teller prior to you leave for the day.",
+    "heading": "Steps to follow",
+    "document": {
+     "title": "Branch Bulletin 2025-13: Teller drawer cash limit",
+     "type": "bulletin",
+     "version": 3,
+     "effective": "2025-09-04",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-4f45b4cee0",
+   "rule": null,
+   "attribute": null,
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-REC-02@v1/s3/c1",
+    "text": "Shred destroyed records with the approved vendor and keep the certificate of destruction.",
+    "heading": "Steps",
+    "document": {
+     "title": "Approving Records Destruction",
+     "type": "procedure",
+     "version": 1,
+     "effective": "2026-03-15",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "PRO-REC-06@v1/s5/c1",
+    "text": "Shred destroyed records with the approved vendor and keep the certificate of destruction.",
+    "heading": "Steps to follow",
+    "document": {
+     "title": "Retrieving Archived Records",
+     "type": "procedure",
+     "version": 1,
+     "effective": "2025-12-08",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  }
+ ],
+ "input_hash": "9c63e5ea51a9d51d19563bc5acef19afeaa229239ab0d91e21ce3c3c3e9da666",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [{\"pair\": \"pair-b54d389605\", \"label\": \"duplicate\", \"quote_a\": \"Ship boxes to offsite storage using the approved courier.\", \"quote_b\": \"Ship boxes to offsite storage using the approved courier.\", \"rationale\": \"Both clauses give the same instruction word for word and apply to all branches and business lines. They come from different documents, so they are not versions of one document.\"}, {\"pair\": \"pair-40a82c34d5\", \"label\": \"duplicate\", \"quote_a\": \"Record every vault transfer in the vault log with both employees' initials.\", \"quote_b\": \"Record every vault transfer in the vault log with both employees' initials.\", \"rationale\": \"The two procedures state the identical requirement with the same scope. Nothing differs that would change what staff do.\"}, {\"pair\": \"pair-a4c2291fdf\", \"label\": \"duplicate\", \"quote_a\": \"Enter the waiver using the fee reversal screen and select the matching reason code.\", \"quote_b\": \"Enter the waiver using the fee reversal screen and select the matching reason code.\", \"rationale\": \"Both procedures repeat the same step word for word for the same accounts. Staff would act the same way under either one.\"}, {\"pair\": \"pair-6631618bf3\", \"label\": \"duplicate\", \"quote_a\": \"Verify the customer's identity before reactivating a dormant account.\", \"quote_b\": \"Verify the customer's identity before reactivating a dormant account.\", \"rationale\": \"The procedure and the job aid say exactly the same thing for the same scope. The job aid simply repeats the procedure.\"}, {\"pair\": \"pair-01ba1b9a27\", \"label\": \"duplicate\", \"quote_a\": \"Enter the customer's name and address exactly as they appear on the identification.\", \"quote_b\": \"Enter the client's name and address exactly as they appear on the identification.\", \"rationale\": \"The only difference is the word client in place of customer, which does not change the action staff take. The bulletin's wider account scope also adds no different value.\"}, {\"pair\": \"pair-442dbb96d0\", \"label\": \"duplicate\", \"quote_a\": \"Ship boxes to offsite storage using the approved courier.\", \"quote_b\": \"Ship boxes to offsite storage using the approved courier.\", \"rationale\": \"The two clauses are the same sentence with the same scope. Nothing in either one changes what staff do.\"}, {\"pair\": \"pair-6dc2790fcc\", \"label\": \"duplicate\", \"quote_a\": \"Report any shortage or overage to the head teller before you leave for the day.\", \"quote_b\": \"Report any shortage or overage to the head teller prior to you leave for the day.\", \"rationale\": \"The clauses differ only in before versus prior to, which mean the same timing. The same person must be told by the same point in the day.\"}, {\"pair\": \"pair-4f45b4cee0\", \"label\": \"duplicate\", \"quote_a\": \"Shred destroyed records with the approved vendor and keep the certificate of destruction.\", \"quote_b\": \"Shred destroyed records with the approved vendor and keep the certificate of destruction.\", \"rationale\": \"Both procedures repeat the identical requirement for the same scope. Staff would do the same thing under either clause.\"}]}",
+   "problems": [
+    "pair-b54d389605: the rationale has a comma before so"
+   ],
+   "meta": {
+    "ms": 10860,
+    "api_ms": 10676,
+    "input_tokens": 2,
+    "output_tokens": 1532,
+    "cost_usd": 0.047526900000000004,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  },
+  {
+   "reply": "{\"results\": [{\"pair\": \"pair-b54d389605\", \"label\": \"duplicate\", \"quote_a\": \"Ship boxes to offsite storage using the approved courier.\", \"quote_b\": \"Ship boxes to offsite storage using the approved courier.\", \"rationale\": \"Both clauses give the identical instruction with the same scope of all branches and all business lines. Nothing differs between them that would change what staff do.\"}]}",
+   "problems": [],
+   "meta": {
+    "ms": 2657,
+    "api_ms": 2477,
+    "input_tokens": 2,
+    "output_tokens": 137,
+    "cost_usd": 0.022684899999999997,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   },
+   "items": [
+    "pair-b54d389605"
+   ]
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T03:26:09+00:00"
+}

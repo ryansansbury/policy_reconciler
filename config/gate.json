@@ -1,0 +1,8 @@
+{
+ "note": "The CI gate's regression thresholds. A change fails the gate when code alone catches fewer planted contradictions on the demo library than min_recall_cp, when any deliberate variation or look-alike is flagged, when a conflict finding matches no planted problem, when a recorded draft fails the gate more often than the pass rate allows, or when the audit log and the recordings disagree.",
+ "min_recall_cp": 0.95,
+ "max_false_alarms": 0,
+ "max_unexplained": 0,
+ "min_gate_pass_rate": 0.9,
+ "max_audit_problems": 0
+}

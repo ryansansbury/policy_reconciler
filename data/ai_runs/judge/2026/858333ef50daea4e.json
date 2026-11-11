@@ -1,0 +1,88 @@
+{
+ "step": "judge",
+ "tag": "2026",
+ "model": "google-a",
+ "backend": {
+  "vendor": "Google",
+  "model": "gemini-3.1-pro-preview",
+  "label": "Gemini 3.1 Pro"
+ },
+ "prompt_hash": "ab6a49ec8731854b3cf900a9a4387417ee8016fe68257c4d327181c7eb1621da",
+ "input": [
+  {
+   "draft": "g-fdf90551",
+   "text": "Only the branch manager can approve an exception to the identification requirements.",
+   "sources": [
+    "Only the branch manager can approve an exception to the identification requirements.",
+    "Any exception to the identification requirements must be approved by a manager.",
+    "Only the regional manager can approve an exception to the identification requirements.",
+    "Approver for identification exceptions | regional manager"
+   ]
+  },
+  {
+   "draft": "g-e45abd58",
+   "text": "Do not open an account until you have verified two forms of identification for each signer. When the branch manager approves, you can instead accept one form of identification plus a verified bank reference.",
+   "sources": [
+    "Do not open an account until you have verified two forms of identification for each signer, or one form plus a verified bank reference when the branch manager approves.",
+    "Collect two forms of identification from each signer before opening the account.",
+    "Do not open an account until you have verified two forms of identification for each signer.",
+    "Forms of identification per signer | two",
+    "Every signer must present two separate identification documents before the account is opened.",
+    "Do not open an account until you have verified two forms of identification for each signer.",
+    "Every signer must present one separate identification documents before the account is opened.",
+    "Every signer must present two separate identification documents before the account is opened."
+   ]
+  },
+  {
+   "draft": "g-2cac3e43",
+   "text": "The minimum opening deposit for a consumer checking account is $25.",
+   "sources": [
+    "The minimum opening deposit for a consumer checking account is $25.",
+    "The minimum opening deposit for a consumer checking account is $100.",
+    "Minimum opening deposit for consumer checking | $50"
+   ]
+  },
+  {
+   "draft": "g-2529a4f0",
+   "text": "An account that has been open fewer than 30 days is a new account for hold and limit purposes.",
+   "sources": [
+    "Accounts open fewer than 30 days are new accounts for hold and limit purposes.",
+    "Accounts open fewer than 90 days are new accounts for hold and limit purposes.",
+    "An account is treated as a new account for the first 60 days after it opens."
+   ]
+  },
+  {
+   "draft": "g-4ec9a097",
+   "text": "two employees must open the branch together. No employee opens the branch alone.",
+   "sources": [
+    "The branch is opened by two employees together, never by one.",
+    "One employee may open the branch when the second opener is running late, as long as the alarm log is noted."
+   ]
+  }
+ ],
+ "input_hash": "411079f8e7a8fcfa2dba146dbf9ceb9caf08cde5d39704af5c5d72071bfdeee3",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "```json\n{\"results\": [{\"draft\": \"g-fdf90551\", \"scores\": {\"keeps_rules\": {\"pass\": false, \"evidence\": \"Only the regional manager can approve an exception to the identification requirements.\"}, \"adds_no_rule\": {\"pass\": true, \"evidence\": \"\"}, \"keeps_scope\": {\"pass\": true, \"evidence\": \"\"}, \"plain\": {\"pass\": true, \"evidence\": \"\"}}}, {\"draft\": \"g-e45abd58\", \"scores\": {\"keeps_rules\": {\"pass\": false, \"evidence\": \"Every signer must present one separate identification documents before the account is opened.\"}, \"adds_no_rule\": {\"pass\": true, \"evidence\": \"\"}, \"keeps_scope\": {\"pass\": true, \"evidence\": \"\"}, \"plain\": {\"pass\": true, \"evidence\": \"\"}}}, {\"draft\": \"g-2cac3e43\", \"scores\": {\"keeps_rules\": {\"pass\": false, \"evidence\": \"The minimum opening deposit for a consumer checking account is $100.\"}, \"adds_no_rule\": {\"pass\": true, \"evidence\": \"\"}, \"keeps_scope\": {\"pass\": true, \"evidence\": \"\"}, \"plain\": {\"pass\": true, \"evidence\": \"\"}}}, {\"draft\": \"g-2529a4f0\", \"scores\": {\"keeps_rules\": {\"pass\": false, \"evidence\": \"Accounts open fewer than 90 days are new accounts for hold and limit purposes.\"}, \"adds_no_rule\": {\"pass\": true, \"evidence\": \"\"}, \"keeps_scope\": {\"pass\": true, \"evidence\": \"\"}, \"plain\": {\"pass\": true, \"evidence\": \"\"}}}, {\"draft\": \"g-4ec9a097\", \"scores\": {\"keeps_rules\": {\"pass\": false, \"evidence\": \"One employee may open the branch when the second opener is running late, as long as the alarm log is noted.\"}, \"adds_no_rule\": {\"pass\": true, \"evidence\": \"\"}, \"keeps_scope\": {\"pass\": true, \"evidence\": \"\"}, \"plain\": {\"pass\": true, \"evidence\": \"\"}}}]}\n```",
+   "problems": [],
+   "meta": {
+    "ms": 17941,
+    "input_tokens": 1143,
+    "output_tokens": 3188,
+    "cost_usd": 0.040542,
+    "usage": {
+     "completion_tokens": 470,
+     "prompt_tokens": 1143,
+     "total_tokens": 4331
+    },
+    "models": [
+     "gemini-3.1-pro-preview"
+    ],
+    "stop_reason": "stop"
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T16:53:58+00:00"
+}

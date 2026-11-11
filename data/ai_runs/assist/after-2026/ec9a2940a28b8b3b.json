@@ -1,0 +1,167 @@
+{
+ "step": "assist",
+ "tag": "after-2026",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "66c01f0da9f327e74355d39363e55b642a1bbf8dc6249974c3afbf3cb3d6ccd5",
+ "input": [
+  {
+   "question": "q-C-08",
+   "text": "When does an account become dormant?",
+   "type": "duration",
+   "clauses": [
+    {
+     "id": "JA-DRM-02@v2/s1/c2",
+     "text": "Monthly dormant account fee | $5",
+     "title": "Dormancy Notice Checklist",
+     "type": "job_aid",
+     "version": 2,
+     "effective": "2025-11-08"
+    },
+    {
+     "id": "ADD-TX-01@v3/s2/c2",
+     "text": "In Texas branches, the monthly fee for a dormant account is $10.",
+     "title": "Texas Branch Addendum",
+     "type": "addendum",
+     "version": 3,
+     "effective": "2026-02-10"
+    },
+    {
+     "id": "JA-DRM-01@v4/s2/c2",
+     "text": "Verify the customer's identity before reactivating a dormant account.",
+     "title": "Dormant Account Quick Reference",
+     "type": "job_aid",
+     "version": 4,
+     "effective": "2026-07-23"
+    },
+    {
+     "id": "JA-DRM-02@v2/s2/c3",
+     "text": "Verify the customer's identity before reactivating a dormant account.",
+     "title": "Dormancy Notice Checklist",
+     "type": "job_aid",
+     "version": 2,
+     "effective": "2025-11-08"
+    },
+    {
+     "id": "PRO-DRM-01@v1/s3/c6",
+     "text": "Verify the customer's identity before reactivating a dormant account.",
+     "title": "Identifying Dormant Accounts",
+     "type": "procedure",
+     "version": 1,
+     "effective": "2024-11-28"
+    }
+   ]
+  }
+ ],
+ "input_hash": "7aafe6deaf5ace25859d7840bcb376e4c2da0b35793e25722bdd2f0d5ccdd785",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [{\"question\": \"q-C-08\", \"answer\": \"None of the retrieved clauses say when an account becomes dormant. They only cover the monthly dormant account fee and the identity check before reactivation, and none gives an inactivity period.\", \"citations\": [], \"sources_disagree\": false}]}",
+   "problems": [
+    "q-C-08: an answer needs its text and at least one citation"
+   ],
+   "meta": {
+    "ms": 4083,
+    "api_ms": 3926,
+    "input_tokens": 6104,
+    "output_tokens": 345,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 5484,
+     "cache_read_input_tokens": 618,
+     "output_tokens": 345,
+     "output_tokens_details": {
+      "thinking_tokens": 246
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 5484,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 345,
+       "cache_read_input_tokens": 618,
+       "cache_creation_input_tokens": 5484,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 5484
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.0254518,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  },
+  {
+   "reply": "{\"results\": [{\"question\": \"q-C-08\", \"answer\": \"None of the retrieved clauses states when an account becomes dormant. The closest one is in the Identifying Dormant Accounts procedure, and it only covers verifying the customer's identity before reactivation without giving any inactivity period.\", \"citations\": [\"PRO-DRM-01@v1/s3/c6\"], \"sources_disagree\": false}]}",
+   "problems": [],
+   "meta": {
+    "ms": 6719,
+    "api_ms": 6553,
+    "input_tokens": 6152,
+    "output_tokens": 721,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 5532,
+     "cache_read_input_tokens": 618,
+     "output_tokens": 721,
+     "output_tokens_details": {
+      "thinking_tokens": 586
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 5532,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 721,
+       "cache_read_input_tokens": 618,
+       "cache_creation_input_tokens": 5532,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 5532
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.029403799999999997,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   },
+   "items": [
+    "q-C-08"
+   ]
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T06:03:35+00:00"
+}

@@ -1,0 +1,167 @@
+{
+ "step": "assist",
+ "tag": "after-2026",
+ "model": "claude-haiku",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "haiku",
+  "client_context": true
+ },
+ "prompt_hash": "66c01f0da9f327e74355d39363e55b642a1bbf8dc6249974c3afbf3cb3d6ccd5",
+ "input": [
+  {
+   "question": "q-C-08",
+   "text": "When does an account become dormant?",
+   "type": "duration",
+   "clauses": [
+    {
+     "id": "JA-DRM-02@v2/s1/c2",
+     "text": "Monthly dormant account fee | $5",
+     "title": "Dormancy Notice Checklist",
+     "type": "job_aid",
+     "version": 2,
+     "effective": "2025-11-08"
+    },
+    {
+     "id": "ADD-TX-01@v3/s2/c2",
+     "text": "In Texas branches, the monthly fee for a dormant account is $10.",
+     "title": "Texas Branch Addendum",
+     "type": "addendum",
+     "version": 3,
+     "effective": "2026-02-10"
+    },
+    {
+     "id": "JA-DRM-01@v4/s2/c2",
+     "text": "Verify the customer's identity before reactivating a dormant account.",
+     "title": "Dormant Account Quick Reference",
+     "type": "job_aid",
+     "version": 4,
+     "effective": "2026-07-23"
+    },
+    {
+     "id": "JA-DRM-02@v2/s2/c3",
+     "text": "Verify the customer's identity before reactivating a dormant account.",
+     "title": "Dormancy Notice Checklist",
+     "type": "job_aid",
+     "version": 2,
+     "effective": "2025-11-08"
+    },
+    {
+     "id": "PRO-DRM-01@v1/s3/c6",
+     "text": "Verify the customer's identity before reactivating a dormant account.",
+     "title": "Identifying Dormant Accounts",
+     "type": "procedure",
+     "version": 1,
+     "effective": "2024-11-28"
+    }
+   ]
+  }
+ ],
+ "input_hash": "7aafe6deaf5ace25859d7840bcb376e4c2da0b35793e25722bdd2f0d5ccdd785",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [{\"question\": \"q-C-08\", \"answer\": \"The retrieved clauses do not say when an account becomes dormant. They cover the monthly dormant account fee, the Texas branch fee and identity checks before reactivation, but none of them states the period of inactivity that triggers dormancy. The threshold would have to come from the governing policy, which was not among the retrieved clauses.\", \"citations\": [], \"sources_disagree\": false}]}",
+   "problems": [
+    "q-C-08: an answer needs its text and at least one citation"
+   ],
+   "meta": {
+    "ms": 4711,
+    "api_ms": 4595,
+    "input_tokens": 6125,
+    "output_tokens": 759,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 5505,
+     "cache_read_input_tokens": 618,
+     "output_tokens": 759,
+     "output_tokens_details": {
+      "thinking_tokens": 614
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 5505,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 759,
+       "cache_read_input_tokens": 618,
+       "cache_creation_input_tokens": 5505,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 5505
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.0014868800000000003,
+    "models": [
+     "claude-haiku-5-5"
+    ]
+   }
+  },
+  {
+   "reply": "```json\n{\"results\": [{\"question\": \"q-C-08\", \"answer\": \"None of the retrieved clauses states when an account becomes dormant, so the time period cannot be confirmed from them. The Identifying Dormant Accounts procedure only says to verify the customer's identity before reactivating a dormant account. The Texas Branch Addendum sets a $10 monthly fee for dormant accounts in Texas branches, but it does not give a time period either.\", \"citations\": [\"PRO-DRM-01@v1/s3/c6\", \"ADD-TX-01@v3/s2/c2\"], \"sources_disagree\": false}]}\n```",
+   "problems": [],
+   "meta": {
+    "ms": 7730,
+    "api_ms": 7618,
+    "input_tokens": 6171,
+    "output_tokens": 1577,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 5551,
+     "cache_read_input_tokens": 618,
+     "output_tokens": 1577,
+     "output_tokens_details": {
+      "thinking_tokens": 1371
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 5551,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 1577,
+       "cache_read_input_tokens": 618,
+       "cache_creation_input_tokens": 5551,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 5551
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.0019050800000000004,
+    "models": [
+     "claude-haiku-5-5"
+    ]
+   },
+   "items": [
+    "q-C-08"
+   ]
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T21:27:38+00:00"
+}

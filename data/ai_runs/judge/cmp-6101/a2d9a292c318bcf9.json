@@ -1,0 +1,79 @@
+{
+ "step": "judge",
+ "tag": "cmp-6101",
+ "model": "google-b",
+ "backend": {
+  "vendor": "Google",
+  "model": "gemini-3.8-flash",
+  "label": "Gemini 3.8 Flash"
+ },
+ "prompt_hash": "ab6a49ec8731854b3cf900a9a4387417ee8016fe68257c4d327181c7eb1621da",
+ "input": [
+  {
+   "draft": "draft-06",
+   "text": "Complaints that allege unfair treatment are escalated to the regional manager the same day. Complaints should be closed within 15 business days of the day they arrive.",
+   "sources": [
+    "Complaints that allege unfair treatment are escalated to the regional manager the same day.",
+    "Complaints should be closed within 15 business days of the day they arrive."
+   ]
+  },
+  {
+   "draft": "draft-07",
+   "text": "Complaints that allege unfair treatment are escalated to the regional manager the same day.",
+   "sources": [
+    "Complaints that allege unfair treatment are escalated to the regional manager the same day.",
+    "Send the customer an acknowledgment no later than 2 business days after a written complaint arrives."
+   ]
+  },
+  {
+   "draft": "draft-08",
+   "text": "Call the customer back at a phone number already on file before releasing any outgoing wire of $10,000 or more. Outgoing wires over $50,000 need a second approval from an operations manager. Personal bankers may waive service fees up to $15 per account in a calendar year.",
+   "sources": [
+    "Call the customer back at a phone number already on file before releasing any outgoing wire of $10,000 or more.",
+    "Outgoing wires over $50,000 need a second approval from an operations manager."
+   ]
+  },
+  {
+   "draft": "draft-09",
+   "text": "No more than three overdraft fees are charged to an account in one business day, generally. Refer an account for charge-off once it has been negative for 45 days, generally.",
+   "sources": [
+    "No more than three overdraft fees are charged to an account in one business day.",
+    "Refer an account for charge-off once it has been negative for 45 days."
+   ]
+  },
+  {
+   "draft": "draft-10",
+   "text": "Resolve complaints within 15 business days of receipt, or tell the customer when to expect a resolution. Resolve complaints within 30 business days of receipt, or tell the customer when to expect a resolution. Escalate any complaint alleging unfair treatment to the regional manager on the day it is received.",
+   "sources": [
+    "Resolve complaints within 15 business days of receipt, or tell the customer when to expect a resolution.",
+    "In Oklahoma branches, resolve complaints within 30 business days of receipt, or tell the customer when to expect a resolution.",
+    "Escalate any complaint alleging unfair treatment to the regional manager on the day it is received."
+   ]
+  }
+ ],
+ "input_hash": "8b5d00a97cec262ae2447752fabda5a8092f10dc6179a1251782f78a0ff68d6e",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "```json\n{\n \"results\": [\n  {\n   \"draft\": \"draft-06\",\n   \"scores\": {\n    \"keeps_rules\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    },\n    \"adds_no_rule\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    },\n    \"keeps_scope\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    },\n    \"plain\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    }\n   }\n  },\n  {\n   \"draft\": \"draft-07\",\n   \"scores\": {\n    \"keeps_rules\": {\n     \"pass\": false,\n     \"evidence\": \"Send the customer an acknowledgment no later than 2 business days after a written complaint arrives.\"\n    },\n    \"adds_no_rule\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    },\n    \"keeps_scope\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    },\n    \"plain\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    }\n   }\n  },\n  {\n   \"draft\": \"draft-08\",\n   \"scores\": {\n    \"keeps_rules\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    },\n    \"adds_no_rule\": {\n     \"pass\": false,\n     \"evidence\": \"Personal bankers may waive service fees up to $15 per account in a calendar year.\"\n    },\n    \"keeps_scope\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    },\n    \"plain\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    }\n   }\n  },\n  {\n   \"draft\": \"draft-09\",\n   \"scores\": {\n    \"keeps_rules\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    },\n    \"adds_no_rule\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    },\n    \"keeps_scope\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    },\n    \"plain\": {\n     \"pass\": false,\n     \"evidence\": \"generally\"\n    }\n   }\n  },\n  {\n   \"draft\": \"draft-10\",\n   \"scores\": {\n    \"keeps_rules\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    },\n    \"adds_no_rule\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    },\n    \"keeps_scope\": {\n     \"pass\": false,\n     \"evidence\": \"In Oklahoma branches\"\n    },\n    \"plain\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    }\n   }\n  }\n ]\n}\n```",
+   "problems": [],
+   "meta": {
+    "ms": 14736,
+    "input_tokens": 1108,
+    "output_tokens": 2144,
+    "cost_usd": 0.008871,
+    "usage": {
+     "completion_tokens": 667,
+     "prompt_tokens": 1108,
+     "total_tokens": 3252
+    },
+    "models": [
+     "gemini-3.8-flash"
+    ],
+    "stop_reason": "stop"
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T17:34:20+00:00"
+}

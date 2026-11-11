@@ -1,0 +1,78 @@
+{
+ "step": "judge",
+ "tag": "judge-11",
+ "model": "google-a",
+ "backend": {
+  "vendor": "Google",
+  "model": "gemini-3.1-pro-preview",
+  "label": "Gemini 3.1 Pro"
+ },
+ "prompt_hash": "ab6a49ec8731854b3cf900a9a4387417ee8016fe68257c4d327181c7eb1621da",
+ "input": [
+  {
+   "draft": "draft-21",
+   "text": "Send the customer an acknowledgment no later than 2 business days after a written complaint arrives. Complaints should be closed within 15 business days of the day they arrive.",
+   "sources": [
+    "Send the customer an acknowledgment no later than 2 business days after a written complaint arrives.",
+    "Complaints should be closed within 15 business days of the day they arrive."
+   ]
+  },
+  {
+   "draft": "draft-22",
+   "text": "Every pricing exception must be documented in the loan file with the reason and the approver.",
+   "sources": [
+    "Every pricing exception must be documented in the loan file with the reason and the approver.",
+    "A regional manager can approve a rate exception as large as 0.50%."
+   ]
+  },
+  {
+   "draft": "draft-23",
+   "text": "Change the vault combination at least every 6 months. Personal bankers may waive service fees up to $15 per account in a calendar year.",
+   "sources": [
+    "Change the vault combination at least every 6 months."
+   ]
+  },
+  {
+   "draft": "draft-24",
+   "text": "The vault must be opened under dual control, with two employees present, as needed. Log any cash deposit or withdrawal of $7,500 or more for large-cash review, as needed.",
+   "sources": [
+    "The vault must be opened under dual control, with two employees present.",
+    "Log any cash deposit or withdrawal of $7,500 or more for large-cash review."
+   ]
+  },
+  {
+   "draft": "draft-25",
+   "text": "The monthly fee for a dormant account is $5. The monthly fee for a dormant account is $3. Classify accounts as dormant after 12 months without customer-initiated activity.",
+   "sources": [
+    "The monthly fee for a dormant account is $5.",
+    "In Texas branches, the monthly fee for a dormant account is $3.",
+    "Classify accounts as dormant after 12 months without customer-initiated activity."
+   ]
+  }
+ ],
+ "input_hash": "ae2d61a29032b691ca717b3a5ded6e623bdced3e388db02a5e80d541c96ab0f4",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "```json\n{\"results\": [{\"draft\": \"draft-21\", \"scores\": {\"keeps_rules\": {\"pass\": true, \"evidence\": \"\"}, \"adds_no_rule\": {\"pass\": true, \"evidence\": \"\"}, \"keeps_scope\": {\"pass\": true, \"evidence\": \"\"}, \"plain\": {\"pass\": true, \"evidence\": \"\"}}}, {\"draft\": \"draft-22\", \"scores\": {\"keeps_rules\": {\"pass\": false, \"evidence\": \"A regional manager can approve a rate exception as large as 0.50%.\"}, \"adds_no_rule\": {\"pass\": true, \"evidence\": \"\"}, \"keeps_scope\": {\"pass\": true, \"evidence\": \"\"}, \"plain\": {\"pass\": true, \"evidence\": \"\"}}}, {\"draft\": \"draft-23\", \"scores\": {\"keeps_rules\": {\"pass\": true, \"evidence\": \"\"}, \"adds_no_rule\": {\"pass\": false, \"evidence\": \"Personal bankers may waive service fees up to $15 per account in a calendar year.\"}, \"keeps_scope\": {\"pass\": true, \"evidence\": \"\"}, \"plain\": {\"pass\": true, \"evidence\": \"\"}}}, {\"draft\": \"draft-24\", \"scores\": {\"keeps_rules\": {\"pass\": true, \"evidence\": \"\"}, \"adds_no_rule\": {\"pass\": true, \"evidence\": \"\"}, \"keeps_scope\": {\"pass\": true, \"evidence\": \"\"}, \"plain\": {\"pass\": false, \"evidence\": \"as needed\"}}}, {\"draft\": \"draft-25\", \"scores\": {\"keeps_rules\": {\"pass\": true, \"evidence\": \"\"}, \"adds_no_rule\": {\"pass\": true, \"evidence\": \"\"}, \"keeps_scope\": {\"pass\": false, \"evidence\": \"In Texas branches\"}, \"plain\": {\"pass\": true, \"evidence\": \"\"}}}]}\n```",
+   "problems": [],
+   "meta": {
+    "ms": 11599,
+    "input_tokens": 1002,
+    "output_tokens": 2005,
+    "cost_usd": 0.026064,
+    "usage": {
+     "completion_tokens": 409,
+     "prompt_tokens": 1002,
+     "total_tokens": 3007
+    },
+    "models": [
+     "gemini-3.1-pro-preview"
+    ],
+    "stop_reason": "stop"
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T16:47:07+00:00"
+}

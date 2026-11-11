@@ -1,0 +1,10 @@
+{
+ "note": "The thresholds that choose the readiness report's recommendation. Code checks each condition against the results files, and the report names every condition that isn't met. No AI writes any part of the report.",
+ "conditions": {
+  "recall_cp": {"min": 0.95, "about": "contradictions caught on held-out libraries"},
+  "false_alarms": {"max": 0, "about": "false alarms on deliberate variations and look-alikes"},
+  "decisions": {"min": 4, "about": "groups of expert disagreement decided"},
+  "judge_trusted": {"min": 2, "about": "criteria the judge is trusted on"},
+  "gate_pass_rate": {"min": 0.9, "about": "drafts that passed the gate"}
+ }
+}

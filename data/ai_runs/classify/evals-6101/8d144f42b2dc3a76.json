@@ -1,0 +1,307 @@
+{
+ "step": "classify",
+ "tag": "evals-6101",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "2c908358fde9f0f4a792753579a6cfaa33476e41c4b0f235744675d8e8283a19",
+ "input": [
+  {
+   "pair": "pair-8d554dca7b",
+   "rule": "Forms of identification per signer",
+   "attribute": "ao_id_count",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "BUL-AOP-02@v4/s1/c2",
+    "text": "Do not open an account until you have verified two forms of identification for each signer.",
+    "heading": "What branches need to know",
+    "document": {
+     "title": "Branch Bulletin 2026-13: Forms of identification per signer",
+     "type": "bulletin",
+     "version": 4,
+     "effective": "2025-11-22",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "POL-AOP-02@v3/s4/c1",
+    "text": "Do not open an account until you have verified two forms of identification for each signer, or one form plus a verified bank reference when the branch manager approves.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Customer Identification Policy",
+     "type": "policy",
+     "version": 3,
+     "effective": "2026-02-28",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-b1d5c24a22",
+   "rule": null,
+   "attribute": null,
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-CMP-02@v1/s3/c1",
+    "text": "Resolve complaints within 15 business days of receipt, or tell the customer when to expect a resolution.",
+    "heading": "Steps",
+    "document": {
+     "title": "Acknowledging a Written Complaint",
+     "type": "procedure",
+     "version": 1,
+     "effective": "2026-01-12",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "PRO-CMP-06@v1/s3/c2",
+    "text": "Resolve complaints within 15 days of receipt, or tell the customer when to expect a resolution.",
+    "heading": "Steps",
+    "document": {
+     "title": "Responding to a Complaint by Phone",
+     "type": "procedure",
+     "version": 1,
+     "effective": "2024-12-19",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-58d96655e4",
+   "rule": "Who completes wire callbacks",
+   "attribute": "wire_callback_role",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-WIR-05@v1/s3/c8",
+    "text": "Only a wire specialist may complete the callback for an outgoing wire.",
+    "heading": "Steps",
+    "document": {
+     "title": "Wire Cutoffs on Holidays and Weekends",
+     "type": "procedure",
+     "version": 1,
+     "effective": "2025-04-08",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "PRO-WIR-06@v1/s3/c8",
+    "text": "Callbacks are completed by an operations employee, never by the employee who took the request.",
+    "heading": "Steps",
+    "document": {
+     "title": "Recalling or Cancelling a Wire",
+     "type": "procedure",
+     "version": 1,
+     "effective": "2026-08-03",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-45fe34d567",
+   "rule": "Forms of identification per signer",
+   "attribute": "ao_id_count",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-AOP-06@v3/s3/c4",
+    "text": "Every signer must present two separate identification documents before the account is opened.",
+    "heading": "Steps",
+    "document": {
+     "title": "Handling Identification Exceptions",
+     "type": "procedure",
+     "version": 3,
+     "effective": "2025-05-13",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "PRO-AOP-01@v2/s3/c1",
+    "text": "Collect two forms of identification from each signer before opening the account, or one form plus a verified bank reference when the branch manager approves.",
+    "heading": "Steps",
+    "document": {
+     "title": "Opening a Consumer Checking Account",
+     "type": "procedure",
+     "version": 2,
+     "effective": "2026-08-02",
+     "applies_to": "All branches. Consumer accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-b5fcf80da1",
+   "rule": null,
+   "attribute": null,
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "POL-HLD-01@v3/s4/c1",
+    "text": "Funds from deposited checks are available within 2 business days unless a longer hold applies.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Funds Availability Policy",
+     "type": "policy",
+     "version": 3,
+     "effective": "2025-02-25",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "PRO-HLD-05@v1/s3/c7",
+    "text": "Funds from deposited checks are available within 2 days unless a longer hold applies.",
+    "heading": "Steps",
+    "document": {
+     "title": "Explaining Holds to Customers",
+     "type": "procedure",
+     "version": 1,
+     "effective": "2025-03-23",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-d7ac9a5b10",
+   "rule": null,
+   "attribute": null,
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-DSP-03@v2/s3/c2",
+    "text": "Send the completed form to card services the same day.",
+    "heading": "Steps",
+    "document": {
+     "title": "Investigating a Dispute",
+     "type": "procedure",
+     "version": 2,
+     "effective": "2026-07-31",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "PRO-DSP-01@v1/s5/c1",
+    "text": "Send the completed form to card services the same day.",
+    "heading": "Steps to follow",
+    "document": {
+     "title": "Taking a Debit Card Dispute",
+     "type": "procedure",
+     "version": 1,
+     "effective": "2025-06-27",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-39b9cd6394",
+   "rule": "Standard check hold",
+   "attribute": "hold_standard",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-HLD-04@v3/s3/c2",
+    "text": "Place a standard hold of 2 business days on deposited checks that don't qualify for next-day availability.",
+    "heading": "Steps",
+    "document": {
+     "title": "Releasing a Hold Early",
+     "type": "procedure",
+     "version": 3,
+     "effective": "2025-05-09",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "PRO-HLD-03@v2/s5/c1",
+    "text": "Place a standard hold of 2 business days on deposited checks that don't qualify for next-day availability.",
+    "heading": "Steps to follow",
+    "document": {
+     "title": "Holds on New Accounts",
+     "type": "procedure",
+     "version": 2,
+     "effective": "2025-08-25",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-bbabaee60a",
+   "rule": null,
+   "attribute": null,
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-DSP-03@v2/s3/c2",
+    "text": "Send the completed form to card services the same day.",
+    "heading": "Steps",
+    "document": {
+     "title": "Investigating a Dispute",
+     "type": "procedure",
+     "version": 2,
+     "effective": "2026-07-31",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "JA-DSP-01@v3/s3/c1",
+    "text": "Send the completed form to card services the same day.",
+    "heading": "Steps to follow",
+    "document": {
+     "title": "Dispute Intake Checklist",
+     "type": "job_aid",
+     "version": 3,
+     "effective": "2025-08-29",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  }
+ ],
+ "input_hash": "54b2bfb65096d0e4fe8545f1772967dfcbff950b7dae86138c6b574be39ed548",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [{\"pair\": \"pair-8d554dca7b\", \"label\": \"conflict\", \"quote_a\": \"Do not open an account until you have verified two forms of identification for each signer.\", \"quote_b\": \"or one form plus a verified bank reference when the branch manager approves\", \"rationale\": \"Both clauses cover the same accounts and branches. Staff following the bulletin would refuse an account that the policy lets a branch manager approve with one form and a bank reference. The policy outranks the bulletin, which only tells the reader which clause to keep.\"}, {\"pair\": \"pair-b1d5c24a22\", \"label\": \"conflict\", \"quote_a\": \"Resolve complaints within 15 business days of receipt\", \"quote_b\": \"Resolve complaints within 15 days of receipt\", \"rationale\": \"Both procedures apply to all branches and business lines. Fifteen days of receipt can be shorter than 15 business days, so staff following one could miss the deadline in the other.\"}, {\"pair\": \"pair-58d96655e4\", \"label\": \"conflict\", \"quote_a\": \"Only a wire specialist may complete the callback\", \"quote_b\": \"Callbacks are completed by an operations employee\", \"rationale\": \"Both clauses say who completes the callback on an outgoing wire for all branches and business lines. One limits it to a wire specialist and the other names an operations employee, so an operations employee who is not a wire specialist would be allowed by one clause and barred by the other.\"}, {\"pair\": \"pair-45fe34d567\", \"label\": \"conflict\", \"quote_a\": \"Every signer must present two separate identification documents before the account is opened.\", \"quote_b\": \"or one form plus a verified bank reference when the branch manager approves\", \"rationale\": \"Consumer accounts fall under both procedures, and the second one is not a deliberate narrower variation on this rule. Staff following the first would refuse an account that the second allows with manager approval.\"}, {\"pair\": \"pair-b5fcf80da1\", \"label\": \"conflict\", \"quote_a\": \"available within 2 business days\", \"quote_b\": \"available within 2 days\", \"rationale\": \"Both clauses cover the same accounts and branches. Two days can pass sooner than 2 business days when a weekend or holiday falls in between, so the customer explanation could promise earlier availability than the policy gives. The policy outranks the procedure, which only tells the reader which clause to keep.\"}, {\"pair\": \"pair-d7ac9a5b10\", \"label\": \"consistent\", \"quote_a\": \"Send the completed form to card services the same day.\", \"quote_b\": \"Send the completed form to card services the same day.\", \"rationale\": \"Both clauses give the same instruction with the same deadline for the same accounts. This is a single sentence and not a copied run of steps, so it is consistent.\"}, {\"pair\": \"pair-39b9cd6394\", \"label\": \"consistent\", \"quote_a\": \"Place a standard hold of 2 business days on deposited checks that don't qualify for next-day availability.\", \"quote_b\": \"Place a standard hold of 2 business days on deposited checks that don't qualify for next-day availability.\", \"rationale\": \"Both clauses state the same hold with the same value for the same accounts. Matching words alone do not make this a duplicate, so it is consistent.\"}, {\"pair\": \"pair-bbabaee60a\", \"label\": \"consistent\", \"quote_a\": \"Send the completed form to card services the same day.\", \"quote_b\": \"Send the completed form to card services the same day.\", \"rationale\": \"The procedure and the job aid give the same instruction with the same same day deadline for the same accounts. Staff acting on either one do the same thing.\"}]}",
+   "problems": [],
+   "meta": {
+    "ms": 18338,
+    "api_ms": 18226,
+    "input_tokens": 8977,
+    "output_tokens": 2580,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 8134,
+     "cache_read_input_tokens": 841,
+     "output_tokens": 2580,
+     "output_tokens_details": {
+      "thinking_tokens": 1404
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 8134,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 2580,
+       "cache_read_input_tokens": 841,
+       "cache_creation_input_tokens": 8134,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 8134
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.0584241,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T05:28:29+00:00"
+}

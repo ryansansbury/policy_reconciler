@@ -1,0 +1,167 @@
+{
+ "step": "extract",
+ "tag": "evals-11",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "dcc761e46c6ec579c01b9dfd540df3c2fa4bba3b6b5ec777aa2cf9c9c62aa411",
+ "input": [
+  {
+   "clause": "JA-HLD-02@v3/s3/c2",
+   "text": "An extended hold may be placed on the part of a day's check deposits above $5,000.",
+   "heading": "Steps to follow",
+   "document": {
+    "title": "Check Hold Desk Card",
+    "type": "job_aid",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "JA-HLD-02@v4/s3/c2",
+   "text": "An extended hold may be placed on the part of a day's check deposits above $6,000.",
+   "heading": "Steps to follow",
+   "document": {
+    "title": "Check Hold Desk Card",
+    "type": "job_aid",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "JA-HLD-03@v1/s1/c3",
+   "text": "Large deposit threshold for extended holds | $5,000",
+   "heading": "Quick reference",
+   "document": {
+    "title": "Hold Notice Checklist",
+    "type": "job_aid",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "JA-LND-01@v4/s1/c1",
+   "text": "Documenting pricing exceptions | Optional",
+   "heading": "Quick reference",
+   "document": {
+    "title": "Rate Exception Authority Card",
+    "type": "job_aid",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "JA-LND-02@v3/s1/c2",
+   "text": "Branch manager rate exception limit | 0.15%",
+   "heading": "Quick reference",
+   "document": {
+    "title": "Exception Documentation Checklist",
+    "type": "job_aid",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "JA-ODR-01@v2/s1/c2",
+   "text": "Overdraft amount with no fee | $25",
+   "heading": "Quick reference",
+   "document": {
+    "title": "Overdraft Quick Reference",
+    "type": "job_aid",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "JA-REC-01@v2/s1/c2",
+   "text": "Approver for records destruction | branch manager",
+   "heading": "Quick reference",
+   "document": {
+    "title": "Records Retention Schedule Card",
+    "type": "job_aid",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "JA-REC-01@v3/s3/c3",
+   "text": "The records custodian must approve the destruction of any records in writing.",
+   "heading": "Steps to follow",
+   "document": {
+    "title": "Records Retention Schedule Card",
+    "type": "job_aid",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "JA-REC-02@v1/s1/c1",
+   "text": "Approver for records destruction | operations specialist",
+   "heading": "Quick reference",
+   "document": {
+    "title": "Destruction Approval Checklist",
+    "type": "job_aid",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "JA-REC-02@v1/s1/c2",
+   "text": "Retention for closed account records | 10 years",
+   "heading": "Quick reference",
+   "document": {
+    "title": "Destruction Approval Checklist",
+    "type": "job_aid",
+    "applies_to": "All branches. All business lines."
+   }
+  }
+ ],
+ "input_hash": "ce843337f78822b3d989cef0e419184ac664d47b4793ab6cfe6151a4a5054145",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [\n{\"clause\": \"JA-HLD-02@v3/s3/c2\", \"atoms\": [{\"attribute\": \"hold_large_threshold\", \"value\": {\"type\": \"money\", \"dollars\": 5000}, \"quote\": \"$5,000\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]},\n{\"clause\": \"JA-HLD-02@v4/s3/c2\", \"atoms\": [{\"attribute\": \"hold_large_threshold\", \"value\": {\"type\": \"money\", \"dollars\": 6000}, \"quote\": \"$6,000\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]},\n{\"clause\": \"JA-HLD-03@v1/s1/c3\", \"atoms\": [{\"attribute\": \"hold_large_threshold\", \"value\": {\"type\": \"money\", \"dollars\": 5000}, \"quote\": \"$5,000\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]},\n{\"clause\": \"JA-LND-01@v4/s1/c1\", \"atoms\": [{\"attribute\": \"lend_exception_doc\", \"value\": {\"type\": \"modal\", \"modal\": \"may\"}, \"quote\": \"Optional\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]},\n{\"clause\": \"JA-LND-02@v3/s1/c2\", \"atoms\": [{\"attribute\": \"lend_rate_bm\", \"value\": {\"type\": \"percent\", \"bp\": 15}, \"quote\": \"0.15%\", \"actor\": \"branch_manager\", \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]},\n{\"clause\": \"JA-ODR-01@v2/s1/c2\", \"atoms\": [{\"attribute\": \"od_de_minimis\", \"value\": {\"type\": \"money\", \"dollars\": 25}, \"quote\": \"$25\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]},\n{\"clause\": \"JA-REC-01@v2/s1/c2\", \"atoms\": [{\"attribute\": \"records_destroy_role\", \"value\": {\"type\": \"role\", \"role\": \"branch_manager\"}, \"quote\": \"branch manager\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]},\n{\"clause\": \"JA-REC-01@v3/s3/c3\", \"atoms\": [{\"attribute\": \"records_destroy_role\", \"value\": {\"type\": \"role\", \"role\": \"records_custodian\"}, \"quote\": \"records custodian\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]},\n{\"clause\": \"JA-REC-02@v1/s1/c1\", \"atoms\": [{\"attribute\": \"records_destroy_role\", \"value\": {\"type\": \"role\", \"role\": \"operations_specialist\"}, \"quote\": \"operations specialist\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]},\n{\"clause\": \"JA-REC-02@v1/s1/c2\", \"atoms\": [{\"attribute\": \"records_retention\", \"value\": {\"type\": \"duration\", \"n\": 10, \"unit\": \"years\"}, \"quote\": \"10 years\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]}\n]}",
+   "problems": [],
+   "meta": {
+    "ms": 9803,
+    "api_ms": 9662,
+    "input_tokens": 8838,
+    "output_tokens": 1740,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 6154,
+     "cache_read_input_tokens": 2682,
+     "output_tokens": 1740,
+     "output_tokens_details": {
+      "thinking_tokens": 631
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 6154,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 1740,
+       "cache_read_input_tokens": 2682,
+       "cache_creation_input_tokens": 6154,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 6154
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.0422882,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T03:52:58+00:00"
+}

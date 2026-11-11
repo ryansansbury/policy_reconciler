@@ -1,0 +1,133 @@
+{
+ "step": "extract",
+ "tag": "evals-11",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "c338e60b657607c5f659b819665f2ec94796d01ec070e1f88f830e5bdacdd3fe",
+ "input": [
+  {
+   "clause": "PRO-BOP-04@v1/s2/c1",
+   "text": "Make sure you have completed the training for this task and have access to the systems it uses.",
+   "heading": "Before you begin",
+   "document": {
+    "title": "Testing the Alarm System",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-BOP-04@v1/s3/c3",
+   "text": "Signal the all-clear to the second opener only after walking the branch.",
+   "heading": "Steps",
+   "document": {
+    "title": "Testing the Alarm System",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-BOP-04@v1/s3/c7",
+   "text": "Verify the customer's identity before discussing any account details.",
+   "heading": "Steps",
+   "document": {
+    "title": "Testing the Alarm System",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-CMP-01@v2/s1/c1",
+   "text": "This procedure covers logging a Customer Complaint, step by step, for every branch it applies to.",
+   "heading": "Purpose",
+   "document": {
+    "title": "Logging a Customer Complaint",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-CSH-01@v1/s3/c4",
+   "text": "Use the counterfeit detection pen on bills of fifty dollars or more.",
+   "heading": "Steps",
+   "document": {
+    "title": "Balancing a Teller Drawer",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-CSH-03@v2/s3/c2",
+   "text": "Keep your drawer locked whenever you step away from the teller line.",
+   "heading": "Steps",
+   "document": {
+    "title": "Opening and Closing the Vault",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-CSH-03@v2/s3/c4",
+   "text": "Record every vault transfer in the vault log with both employees' initials.",
+   "heading": "Steps",
+   "document": {
+    "title": "Opening and Closing the Vault",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-CSH-06@v4/s4/c1",
+   "text": "Escalate to your manager if the customer is upset or the request is unusual.",
+   "heading": "Exceptions and escalation",
+   "document": {
+    "title": "Ordering Cash Shipments",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-DRM-03@v2/s3/c3",
+   "text": "Confirm the customer's mailing address before sending a notice.",
+   "heading": "Steps",
+   "document": {
+    "title": "Reactivating a Dormant Account",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "PRO-DRM-03@v2/s5/c2",
+   "text": "Confirm the client's mailing address before sending a notice.",
+   "heading": "Steps to follow",
+   "document": {
+    "title": "Reactivating a Dormant Account",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  }
+ ],
+ "input_hash": "0af4a832d9bd00cc54952de43981e394e5c302013303fdc3b29333a035f8f053",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [\n{\"clause\": \"PRO-BOP-04@v1/s2/c1\", \"atoms\": []},\n{\"clause\": \"PRO-BOP-04@v1/s3/c3\", \"atoms\": []},\n{\"clause\": \"PRO-BOP-04@v1/s3/c7\", \"atoms\": []},\n{\"clause\": \"PRO-CMP-01@v2/s1/c1\", \"atoms\": []},\n{\"clause\": \"PRO-CSH-01@v1/s3/c4\", \"atoms\": []},\n{\"clause\": \"PRO-CSH-03@v2/s3/c2\", \"atoms\": []},\n{\"clause\": \"PRO-CSH-03@v2/s3/c4\", \"atoms\": []},\n{\"clause\": \"PRO-CSH-06@v4/s4/c1\", \"atoms\": []},\n{\"clause\": \"PRO-DRM-03@v2/s3/c3\", \"atoms\": []},\n{\"clause\": \"PRO-DRM-03@v2/s5/c2\", \"atoms\": []}\n]}",
+   "problems": [],
+   "meta": {
+    "ms": 4414,
+    "api_ms": 4221,
+    "input_tokens": 2,
+    "output_tokens": 631,
+    "cost_usd": 0.031299,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T03:23:39+00:00"
+}

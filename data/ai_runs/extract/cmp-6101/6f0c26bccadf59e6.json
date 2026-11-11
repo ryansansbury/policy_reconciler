@@ -1,0 +1,149 @@
+{
+ "step": "extract",
+ "tag": "cmp-6101",
+ "model": "openai-b",
+ "backend": {
+  "vendor": "OpenAI",
+  "model": "gpt-6-luna",
+  "label": "GPT-6 Luna"
+ },
+ "prompt_hash": "dcc761e46c6ec579c01b9dfd540df3c2fa4bba3b6b5ec777aa2cf9c9c62aa411",
+ "input": [
+  {
+   "clause": "BUL-CSH-02@v2/s1/c2",
+   "text": "Cash transactions under $5,000 do not need large-cash review.",
+   "heading": "What branches need to know",
+   "document": {
+    "title": "Branch Bulletin 2026-36: Large-cash review threshold",
+    "type": "bulletin",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "BUL-DRM-02@v2/s1/c2",
+   "text": "Customers receive written notice 60 days before their account becomes dormant.",
+   "heading": "What branches need to know",
+   "document": {
+    "title": "Branch Bulletin 2026-34: Notice before dormancy",
+    "type": "bulletin",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "BUL-DSP-02@v4/s1/c2",
+   "text": "Disputes over $500 are reviewed by a card services specialist before credit is issued.",
+   "heading": "What branches need to know",
+   "document": {
+    "title": "Branch Bulletin 2026-18: Dispute amount that needs card services review",
+    "type": "bulletin",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "BUL-HLD-02@v4/s1/c2",
+   "text": "New accounts can have check holds of as long as 7 days.",
+   "heading": "What branches need to know",
+   "document": {
+    "title": "Branch Bulletin 2026-17: Longest check hold on a new account",
+    "type": "bulletin",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "BUL-REC-01@v2/s1/c2",
+   "text": "Retain closed account records for 10 years from the closing date.",
+   "heading": "What branches need to know",
+   "document": {
+    "title": "Branch Bulletin 2025-26: Retention for closed account records",
+    "type": "bulletin",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "BUL-WIR-01@v1/s1/c2",
+   "text": "Call the customer back at a phone number already on file before releasing any outgoing wire of $5,000 or more.",
+   "heading": "What branches need to know",
+   "document": {
+    "title": "Branch Bulletin 2025-24: Callback threshold for outgoing wires",
+    "type": "bulletin",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "FAQ-AOP-01@v4/s1/c1",
+   "text": "Accounts open fewer than 60 days are new accounts for hold and limit purposes.",
+   "heading": "How long is an account considered a new account?",
+   "document": {
+    "title": "Account Opening FAQ",
+    "type": "faq",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "FAQ-CMP-01@v3/s1/c1",
+   "text": "Send the customer an acknowledgment no later than 2 days after a written complaint arrives.",
+   "heading": "How quickly is a written complaint acknowledged?",
+   "document": {
+    "title": "Complaint Handling FAQ",
+    "type": "faq",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "FAQ-CSH-02@v2/s1/c3",
+   "text": "Consumer debit cards can withdraw up to $800 a day at ATMs.",
+   "heading": "How much cash can a teller drawer hold?",
+   "document": {
+    "title": "Large-Cash Review Questions",
+    "type": "faq",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "FAQ-CSH-02@v2/s2/c1",
+   "text": "Two employees must be present whenever the vault is opened.",
+   "heading": "Can one employee open the vault alone?",
+   "document": {
+    "title": "Large-Cash Review Questions",
+    "type": "faq",
+    "applies_to": "All branches. All business lines."
+   }
+  }
+ ],
+ "input_hash": "8637bf680720455f044399a92096fb43df1c1219f9143d97bba22d789515a802",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\":[{\"clause\":\"BUL-CSH-02@v2/s1/c2\",\"atoms\":[{\"attribute\":\"cash_review_threshold\",\"value\":{\"type\":\"money\",\"dollars\":5000},\"quote\":\"$5,000\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]},{\"clause\":\"BUL-DRM-02@v2/s1/c2\",\"atoms\":[{\"attribute\":\"dormant_notice\",\"value\":{\"type\":\"duration\",\"n\":60,\"unit\":\"days\"},\"quote\":\"60 days\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]},{\"clause\":\"BUL-DSP-02@v4/s1/c2\",\"atoms\":[{\"attribute\":\"dispute_review_threshold\",\"value\":{\"type\":\"money\",\"dollars\":500},\"quote\":\"$500\",\"actor\":\"card_services_specialist\",\"actor_inferred\":false,\"scope_quote\":null,\"condition\":\"before credit is issued\"}]},{\"clause\":\"BUL-HLD-02@v4/s1/c2\",\"atoms\":[{\"attribute\":\"hold_new_account\",\"value\":{\"type\":\"duration\",\"n\":7,\"unit\":\"days\"},\"quote\":\"7 days\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]},{\"clause\":\"BUL-REC-01@v2/s1/c2\",\"atoms\":[{\"attribute\":\"records_retention\",\"value\":{\"type\":\"duration\",\"n\":10,\"unit\":\"years\"},\"quote\":\"10 years\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]},{\"clause\":\"BUL-WIR-01@v1/s1/c2\",\"atoms\":[{\"attribute\":\"wire_callback\",\"value\":{\"type\":\"money\",\"dollars\":5000},\"quote\":\"$5,000 or more\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]},{\"clause\":\"FAQ-AOP-01@v4/s1/c1\",\"atoms\":[{\"attribute\":\"ao_new_account_window\",\"value\":{\"type\":\"duration\",\"n\":60,\"unit\":\"days\"},\"quote\":\"60 days\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]},{\"clause\":\"FAQ-CMP-01@v3/s1/c1\",\"atoms\":[{\"attribute\":\"complaint_ack\",\"value\":{\"type\":\"duration\",\"n\":2,\"unit\":\"days\"},\"quote\":\"2 days\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":null}]},{\"clause\":\"FAQ-CSH-02@v2/s1/c3\",\"atoms\":[{\"attribute\":\"atm_daily_limit\",\"value\":{\"type\":\"money\",\"dollars\":800},\"quote\":\"$800\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":\"Consumer debit cards\",\"condition\":null}]},{\"clause\":\"FAQ-CSH-02@v2/s2/c1\",\"atoms\":[{\"attribute\":\"cash_vault_dual\",\"value\":{\"type\":\"modal\",\"modal\":\"must\"},\"quote\":\"must\",\"actor\":null,\"actor_inferred\":false,\"scope_quote\":null,\"condition\":\"whenever the vault is opened\"}]}]}",
+   "problems": [],
+   "meta": {
+    "ms": 15544,
+    "input_tokens": 2762,
+    "output_tokens": 1706,
+    "cost_usd": 0.001129,
+    "usage": {
+     "prompt_tokens": 2762,
+     "completion_tokens": 1706,
+     "total_tokens": 4468,
+     "prompt_tokens_details": {
+      "cached_tokens": 1728,
+      "cache_write_tokens": 1031,
+      "audio_tokens": 0
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 1024,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+     }
+    },
+    "models": [
+     "gpt-6-luna"
+    ],
+    "stop_reason": "stop"
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T21:19:27+00:00"
+}

@@ -1,0 +1,167 @@
+{
+ "step": "extract",
+ "tag": "6303",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "dcc761e46c6ec579c01b9dfd540df3c2fa4bba3b6b5ec777aa2cf9c9c62aa411",
+ "input": [
+  {
+   "clause": "JA-CSH-03@v1/s2/c1",
+   "text": "Keep your drawer locked whenever you step away from the teller line.",
+   "heading": "Checklist",
+   "document": {
+    "title": "Large-Cash Review Quick Reference",
+    "type": "job_aid",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "JA-CSH-03@v1/s2/c2",
+   "text": "Report any shortage or overage to the head teller before you leave for the day.",
+   "heading": "Checklist",
+   "document": {
+    "title": "Large-Cash Review Quick Reference",
+    "type": "job_aid",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "JA-CSH-03@v1/s2/c3",
+   "text": "Use the counterfeit detection pen on bills of fifty dollars or more.",
+   "heading": "Checklist",
+   "document": {
+    "title": "Large-Cash Review Quick Reference",
+    "type": "job_aid",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "JA-CSH-03@v1/s3/c3",
+   "text": "Report any shortage or overage to the head teller prior to you leave for the day.",
+   "heading": "Steps to follow",
+   "document": {
+    "title": "Large-Cash Review Quick Reference",
+    "type": "job_aid",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "JA-DSP-01@v3/s3/c1",
+   "text": "Provisional credit is issued within 10 business days of receiving a completed dispute, whatever its review status.",
+   "heading": "Related requirements",
+   "document": {
+    "title": "Dispute Intake Checklist",
+    "type": "job_aid",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "JA-FEE-01@v2/s2/c1",
+   "text": "Review recurring waiver requests with the branch manager at the monthly meeting.",
+   "heading": "Checklist",
+   "document": {
+    "title": "Fee Waiver Quick Reference",
+    "type": "job_aid",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "JA-FEE-02@v2/s2/c1",
+   "text": "Review recurring waiver requests with the branch manager at the monthly meeting.",
+   "heading": "Checklist",
+   "document": {
+    "title": "Fee Schedule at a Glance",
+    "type": "job_aid",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "JA-FEE-02@v3/s2/c1",
+   "text": "Review recurring waiver requests with the branch manager at the monthly meeting.",
+   "heading": "Checklist",
+   "document": {
+    "title": "Fee Schedule at a Glance",
+    "type": "job_aid",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "JA-WIR-01@v1/s1/c3",
+   "text": "Who completes wire callbacks | teller",
+   "heading": "Quick reference",
+   "document": {
+    "title": "Wire Desk Quick Reference",
+    "type": "job_aid",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "JA-WIR-01@v1/s1/c4",
+   "text": "Callback threshold for outgoing wires | $10,000",
+   "heading": "Quick reference",
+   "document": {
+    "title": "Wire Desk Quick Reference",
+    "type": "job_aid",
+    "applies_to": "All branches. All business lines."
+   }
+  }
+ ],
+ "input_hash": "919656f26db44d2490473de8df926f4796dd1131ec9fcb399c384ce2682494be",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [{\"clause\": \"JA-CSH-03@v1/s2/c1\", \"atoms\": []}, {\"clause\": \"JA-CSH-03@v1/s2/c2\", \"atoms\": []}, {\"clause\": \"JA-CSH-03@v1/s2/c3\", \"atoms\": []}, {\"clause\": \"JA-CSH-03@v1/s3/c3\", \"atoms\": []}, {\"clause\": \"JA-DSP-01@v3/s3/c1\", \"atoms\": [{\"attribute\": \"dispute_provisional_credit\", \"value\": {\"type\": \"duration\", \"n\": 10, \"unit\": \"business_days\"}, \"quote\": \"10 business days\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]}, {\"clause\": \"JA-FEE-01@v2/s2/c1\", \"atoms\": []}, {\"clause\": \"JA-FEE-02@v2/s2/c1\", \"atoms\": []}, {\"clause\": \"JA-FEE-02@v3/s2/c1\", \"atoms\": []}, {\"clause\": \"JA-WIR-01@v1/s1/c3\", \"atoms\": [{\"attribute\": \"wire_callback_role\", \"value\": {\"type\": \"role\", \"role\": \"teller\"}, \"quote\": \"teller\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]}, {\"clause\": \"JA-WIR-01@v1/s1/c4\", \"atoms\": [{\"attribute\": \"wire_callback\", \"value\": {\"type\": \"money\", \"dollars\": 10000}, \"quote\": \"$10,000\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]}]}",
+   "problems": [],
+   "meta": {
+    "ms": 6048,
+    "api_ms": 5836,
+    "input_tokens": 8913,
+    "output_tokens": 917,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 6229,
+     "cache_read_input_tokens": 2682,
+     "output_tokens": 917,
+     "output_tokens_details": {
+      "thinking_tokens": 352
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 6229,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 917,
+       "cache_read_input_tokens": 2682,
+       "cache_creation_input_tokens": 6229,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 6229
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.0343582,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T04:11:32+00:00"
+}

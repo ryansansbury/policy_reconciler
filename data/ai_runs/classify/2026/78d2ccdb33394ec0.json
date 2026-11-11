@@ -1,0 +1,224 @@
+{
+ "step": "classify",
+ "tag": "2026",
+ "model": "google-b",
+ "backend": {
+  "vendor": "Google",
+  "model": "gemini-3.8-flash",
+  "label": "Gemini 3.8 Flash"
+ },
+ "prompt_hash": "2c908358fde9f0f4a792753579a6cfaa33476e41c4b0f235744675d8e8283a19",
+ "input": [
+  {
+   "pair": "pair-14e62e4004",
+   "rule": "Forms of identification per signer",
+   "attribute": "ao_id_count",
+   "reason": "One side carries a condition that may change the rule.",
+   "a": {
+    "clause": "POL-AOP-02@v2/s4/c1",
+    "text": "Do not open an account until you have verified two forms of identification for each signer, or one form plus a verified bank reference when the branch manager approves.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Customer Identification Policy",
+     "type": "policy",
+     "version": 2,
+     "effective": "2026-08-21",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "PRO-AOP-03@v4/s3/c5",
+    "text": "Every signer must present one separate identification documents before the account is opened.",
+    "heading": "Steps",
+    "document": {
+     "title": "Opening a Small Business Account",
+     "type": "procedure",
+     "version": 4,
+     "effective": "2026-04-09",
+     "applies_to": "All branches. Small business accounts."
+    }
+   },
+   "kind": "condition"
+  },
+  {
+   "pair": "pair-ddf3f1a137",
+   "rule": "Complaint resolution deadline",
+   "attribute": "complaint_resolve",
+   "reason": "One side carries a condition that may change the rule.",
+   "a": {
+    "clause": "POL-CMP-01@v5/s3/c1",
+    "text": "Resolve complaints within 15 business days of receipt, or tell the customer when to expect a resolution.",
+    "heading": "Policy statements",
+    "document": {
+     "title": "Complaint Management Policy",
+     "type": "policy",
+     "version": 5,
+     "effective": "2026-06-14",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "JA-CMP-01@v1/s1/c1",
+    "text": "Complaint resolution deadline | 10 business days",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Complaint Handling Card",
+     "type": "job_aid",
+     "version": 1,
+     "effective": "2026-07-10",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "kind": "condition"
+  },
+  {
+   "pair": "pair-267f7e596f",
+   "rule": "Standard check hold",
+   "attribute": "hold_standard",
+   "reason": "One side carries a condition that may change the rule.",
+   "a": {
+    "clause": "POL-HLD-01@v5/s3/c1",
+    "text": "Place a standard hold of 2 business days on deposited checks that don't qualify for next-day availability.",
+    "heading": "Policy statements",
+    "document": {
+     "title": "Funds Availability Policy",
+     "type": "policy",
+     "version": 5,
+     "effective": "2026-05-20",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "PRO-HLD-05@v1/s3/c3",
+    "text": "Funds from deposited checks are available within 3 business days unless a longer hold applies.",
+    "heading": "Steps",
+    "document": {
+     "title": "Explaining Holds to Customers",
+     "type": "procedure",
+     "version": 1,
+     "effective": "2025-07-31",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "kind": "condition"
+  },
+  {
+   "pair": "pair-2ca802d208",
+   "rule": "Standard check hold",
+   "attribute": "hold_standard",
+   "reason": "The values match, but the weaker document adds a condition the stronger one doesn't state.",
+   "a": {
+    "clause": "POL-HLD-01@v5/s3/c1",
+    "text": "Place a standard hold of 2 business days on deposited checks that don't qualify for next-day availability.",
+    "heading": "Policy statements",
+    "document": {
+     "title": "Funds Availability Policy",
+     "type": "policy",
+     "version": 5,
+     "effective": "2026-05-20",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "FAQ-HLD-02@v3/s1/c1",
+    "text": "Funds from deposited checks are available within 2 business days unless a longer hold applies.",
+    "heading": "How long is the standard hold on a deposited check?",
+    "document": {
+     "title": "Check Hold Questions from Customers",
+     "type": "faq",
+     "version": 3,
+     "effective": "2026-05-09",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "kind": "added_condition"
+  },
+  {
+   "pair": "pair-462f0d3724",
+   "rule": "Who completes wire callbacks",
+   "attribute": "wire_callback_role",
+   "reason": "The values match, but the weaker document adds a condition the stronger one doesn't state.",
+   "a": {
+    "clause": "BUL-WIR-01@v1/s1/c2",
+    "text": "Only an operations employee may complete the callback for an outgoing wire.",
+    "heading": "What branches need to know",
+    "document": {
+     "title": "Branch Bulletin 2025-30: Who completes wire callbacks",
+     "type": "bulletin",
+     "version": 1,
+     "effective": "2026-07-31",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "FAQ-WIR-02@v3/s3/c1",
+    "text": "Callbacks are completed by an operations employee, never by the employee who took the request.",
+    "heading": "Who completes the callback for an outgoing wire?",
+    "document": {
+     "title": "Wire Cutoff Questions",
+     "type": "faq",
+     "version": 3,
+     "effective": "2026-06-07",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "kind": "added_condition"
+  },
+  {
+   "pair": "pair-9cd02f15d1",
+   "rule": "Standard check hold",
+   "attribute": "hold_standard",
+   "reason": "The values match, but the weaker document adds a condition the stronger one doesn't state.",
+   "a": {
+    "clause": "POL-HLD-01@v5/s3/c1",
+    "text": "Place a standard hold of 2 business days on deposited checks that don't qualify for next-day availability.",
+    "heading": "Policy statements",
+    "document": {
+     "title": "Funds Availability Policy",
+     "type": "policy",
+     "version": 5,
+     "effective": "2026-05-20",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "PRO-HLD-04@v3/s3/c8",
+    "text": "Funds from deposited checks are available within 2 business days unless a longer hold applies.",
+    "heading": "Steps",
+    "document": {
+     "title": "Releasing a Hold Early",
+     "type": "procedure",
+     "version": 3,
+     "effective": "2026-02-02",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "kind": "added_condition"
+  }
+ ],
+ "input_hash": "0ac8e60c7a2f87f044661ced17e094268427d7296968e3e14229084a87857d4b",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [{\"pair\": \"pair-14e62e4004\", \"label\": \"conflict\", \"quote_a\": \"two forms of identification for each signer, or one form plus a verified bank reference when the branch manager approves\", \"quote_b\": \"one separate identification documents\", \"rationale\": \"Staff following the procedure would accept one document without manager approval. That action conflicts with the policy requirement of two forms of identification.\"}, {\"pair\": \"pair-ddf3f1a137\", \"label\": \"conflict\", \"quote_a\": \"15 business days\", \"quote_b\": \"10 business days\", \"rationale\": \"The policy allows 15 business days while the job aid sets a deadline of 10 business days. Staff following the policy would miss the shorter deadline.\"}, {\"pair\": \"pair-267f7e596f\", \"label\": \"conflict\", \"quote_a\": \"2 business days\", \"quote_b\": \"3 business days\", \"rationale\": \"The policy sets a hold of 2 business days but the procedure allows 3 business days. Staff following the procedure would hold funds longer than the policy permits.\"}, {\"pair\": \"pair-2ca802d208\", \"label\": \"consistent\", \"quote_a\": \"2 business days\", \"quote_b\": \"2 business days\", \"rationale\": \"Both clauses specify a standard hold period of 2 business days. The condition for a longer hold does not contradict the policy rule.\"}, {\"pair\": \"pair-462f0d3724\", \"label\": \"consistent\", \"quote_a\": \"Only an operations employee\", \"quote_b\": \"operations employee, never by the employee who took the request\", \"rationale\": \"Both clauses require an operations employee to complete the callback. The restriction excluding the employee who took the request aligns with that requirement.\"}, {\"pair\": \"pair-9cd02f15d1\", \"label\": \"consistent\", \"quote_a\": \"2 business days\", \"quote_b\": \"2 business days\", \"rationale\": \"Both clauses provide that funds are available within 2 business days. The added phrase regarding a longer hold does not create a conflict.\"}]}",
+   "problems": [],
+   "meta": {
+    "ms": 52078,
+    "input_tokens": 2711,
+    "output_tokens": 7234,
+    "cost_usd": 0.029161,
+    "usage": {
+     "completion_tokens": 485,
+     "prompt_tokens": 2711,
+     "total_tokens": 9945
+    },
+    "models": [
+     "gemini-3.8-flash"
+    ],
+    "stop_reason": "stop"
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T19:47:35+00:00"
+}

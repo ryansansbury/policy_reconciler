@@ -1,0 +1,167 @@
+{
+ "step": "assist",
+ "tag": "after-2026",
+ "model": "claude-haiku",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "haiku",
+  "client_context": true
+ },
+ "prompt_hash": "66c01f0da9f327e74355d39363e55b642a1bbf8dc6249974c3afbf3cb3d6ccd5",
+ "input": [
+  {
+   "question": "q-C-12",
+   "text": "Who can approve an exception to the identification requirements?",
+   "type": "role",
+   "clauses": [
+    {
+     "id": "POL-AOP-01@v2/s3/c1",
+     "text": "Only the branch manager can approve an exception to the identification requirements.",
+     "title": "Deposit Account Opening Policy",
+     "type": "policy",
+     "version": 2,
+     "effective": "2025-04-05"
+    },
+    {
+     "id": "draft:g-fdf90551",
+     "text": "Only the branch manager can approve an exception to the identification requirements.",
+     "title": "Approving identification exceptions",
+     "type": "consolidated",
+     "version": 1,
+     "effective": ""
+    },
+    {
+     "id": "FAQ-AOP-01@v4/s3/c1",
+     "text": "Any exception to the identification requirements must be approved by the branch manager.",
+     "title": "Account Opening FAQ",
+     "type": "faq",
+     "version": 4,
+     "effective": "2026-05-05"
+    },
+    {
+     "id": "POL-LND-01@v4/s4/c2",
+     "text": "A regional manager can approve a rate exception as large as 0.50%.",
+     "title": "Loan Pricing Exception Policy",
+     "type": "policy",
+     "version": 4,
+     "effective": "2025-06-19"
+    },
+    {
+     "id": "draft:g-133084ff",
+     "text": "A regional manager may approve a rate exception as large as 0.50%.",
+     "title": "Regional manager rate exceptions",
+     "type": "consolidated",
+     "version": 1,
+     "effective": ""
+    }
+   ]
+  }
+ ],
+ "input_hash": "cd7576f8fceaecd42bb0248ff7bbdfa9486de603a49c380be1ada39fa8bd70fc",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [{\"question\": \"q-C-12\", \"answer\": \"Only the branch manager can approve an exception to the identification requirements, as stated in the Deposit Account Opening Policy and the Account Opening FAQ. The regional manager rate exception clauses concern loan pricing and do not apply to identification exceptions.\", \"citations\": [\"POL-AOP-01@v2/s3/c1\", \"FAQ-AOP-01@v4/s3/c1\"], \"sources_disagree\": false}]}",
+   "problems": [
+    "q-C-12: the answer states a value no cited clause holds"
+   ],
+   "meta": {
+    "ms": 4295,
+    "api_ms": 4147,
+    "input_tokens": 6107,
+    "output_tokens": 825,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 5487,
+     "cache_read_input_tokens": 618,
+     "output_tokens": 825,
+     "output_tokens_details": {
+      "thinking_tokens": 661
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 5487,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 825,
+       "cache_read_input_tokens": 618,
+       "cache_creation_input_tokens": 5487,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 5487
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.0015162799999999998,
+    "models": [
+     "claude-haiku-5-5"
+    ]
+   }
+  },
+  {
+   "reply": "{\"results\": [{\"question\": \"q-C-12\", \"answer\": \"Only the branch manager can approve an exception to the identification requirements. The Deposit Account Opening Policy and the Account Opening FAQ both state this, and they agree.\", \"citations\": [\"POL-AOP-01@v2/s3/c1\", \"FAQ-AOP-01@v4/s3/c1\"], \"sources_disagree\": false}]}",
+   "problems": [],
+   "meta": {
+    "ms": 3878,
+    "api_ms": 3730,
+    "input_tokens": 6155,
+    "output_tokens": 639,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 5535,
+     "cache_read_input_tokens": 618,
+     "output_tokens": 639,
+     "output_tokens_details": {
+      "thinking_tokens": 503
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 5535,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 639,
+       "cache_read_input_tokens": 618,
+       "cache_creation_input_tokens": 5535,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 5535
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.00143288,
+    "models": [
+     "claude-haiku-5-5"
+    ]
+   },
+   "items": [
+    "q-C-12"
+   ]
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T21:27:42+00:00"
+}

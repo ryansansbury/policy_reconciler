@@ -1,0 +1,73 @@
+{
+ "step": "judge",
+ "tag": "2026",
+ "model": "google-a",
+ "backend": {
+  "vendor": "Google",
+  "model": "gemini-3.1-pro-preview",
+  "label": "Gemini 3.1 Pro"
+ },
+ "prompt_hash": "ab6a49ec8731854b3cf900a9a4387417ee8016fe68257c4d327181c7eb1621da",
+ "input": [
+  {
+   "draft": "g-d6d9426f",
+   "text": "An account with no activity initiated by the customer for 12 months is classified as dormant.",
+   "sources": [
+    "An account with no customer-initiated activity for 12 months is classified as dormant."
+   ]
+  },
+  {
+   "draft": "g-06709e03",
+   "text": "Customers receive written notice 30 days before their account becomes dormant.",
+   "sources": [
+    "Customers receive written notice 30 days before their account becomes dormant."
+   ]
+  },
+  {
+   "draft": "g-76e59fc8",
+   "text": "Customers may request a fee refund within 60 days of the statement date.",
+   "sources": [
+    "Customers may request a fee refund within 60 days of the statement date."
+   ]
+  },
+  {
+   "draft": "g-8dd7694e",
+   "text": "A branch manager may waive up to $50 in fees for one account in a calendar year.",
+   "sources": [
+    "The most a branch manager can waive for one account in a calendar year is $50."
+   ]
+  },
+  {
+   "draft": "g-eeefec6d",
+   "text": "Personal bankers may waive service fees up to $25 per account in a calendar year. With branch manager approval noted in the account they may waive up to $50.",
+   "sources": [
+    "Personal bankers may waive service fees up to $25 per account in a calendar year, or up to $50 with branch manager approval noted in the account."
+   ]
+  }
+ ],
+ "input_hash": "bbee910610e7644eb4fa84e8e66abb71dcc61ace49f2f1299dcf354b6a9ef741",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "```json\n{\"results\": [{\"draft\": \"g-d6d9426f\", \"scores\": {\"keeps_rules\": {\"pass\": true, \"evidence\": \"\"}, \"adds_no_rule\": {\"pass\": true, \"evidence\": \"\"}, \"keeps_scope\": {\"pass\": true, \"evidence\": \"\"}, \"plain\": {\"pass\": true, \"evidence\": \"\"}}}, {\"draft\": \"g-06709e03\", \"scores\": {\"keeps_rules\": {\"pass\": true, \"evidence\": \"\"}, \"adds_no_rule\": {\"pass\": true, \"evidence\": \"\"}, \"keeps_scope\": {\"pass\": true, \"evidence\": \"\"}, \"plain\": {\"pass\": true, \"evidence\": \"\"}}}, {\"draft\": \"g-76e59fc8\", \"scores\": {\"keeps_rules\": {\"pass\": true, \"evidence\": \"\"}, \"adds_no_rule\": {\"pass\": true, \"evidence\": \"\"}, \"keeps_scope\": {\"pass\": true, \"evidence\": \"\"}, \"plain\": {\"pass\": true, \"evidence\": \"\"}}}, {\"draft\": \"g-8dd7694e\", \"scores\": {\"keeps_rules\": {\"pass\": true, \"evidence\": \"\"}, \"adds_no_rule\": {\"pass\": true, \"evidence\": \"\"}, \"keeps_scope\": {\"pass\": true, \"evidence\": \"\"}, \"plain\": {\"pass\": true, \"evidence\": \"\"}}}, {\"draft\": \"g-eeefec6d\", \"scores\": {\"keeps_rules\": {\"pass\": true, \"evidence\": \"\"}, \"adds_no_rule\": {\"pass\": true, \"evidence\": \"\"}, \"keeps_scope\": {\"pass\": true, \"evidence\": \"\"}, \"plain\": {\"pass\": true, \"evidence\": \"\"}}}]}\n```",
+   "problems": [],
+   "meta": {
+    "ms": 14639,
+    "input_tokens": 897,
+    "output_tokens": 2144,
+    "cost_usd": 0.027522,
+    "usage": {
+     "completion_tokens": 393,
+     "prompt_tokens": 897,
+     "total_tokens": 3041
+    },
+    "models": [
+     "gemini-3.1-pro-preview"
+    ],
+    "stop_reason": "stop"
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T17:01:59+00:00"
+}

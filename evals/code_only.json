@@ -1,0 +1,514 @@
+{
+ "catalog_generator": "057ebd7e78fc5da383945e2711d66071c58094841920b8dd61c50c39ee616774",
+ "catalog_version": 2,
+ "engine": "31151da2577b69394997f4c972c9ba194c314ce8a049de24c969ff8fe2351454",
+ "engine_version": 1,
+ "note": "Scored once on the held-out seeds after the engine froze. Code ran alone with no AI step.",
+ "scored_at": "2026-10-29T18:34",
+ "seeds": {
+  "4211": {
+   "counts": {
+    "atoms": 383,
+    "clauses": 1513,
+    "conflicts": 57,
+    "documents": 186,
+    "duplicates": 46,
+    "held": 0,
+    "queue": 74,
+    "superseded": 15,
+    "variations": 193
+   },
+   "disputed": [
+    {
+     "item": "A-01",
+     "kind": "exception_path",
+     "said": "sent to AI"
+    },
+    {
+     "item": "A-02",
+     "kind": "unit",
+     "said": "conflict"
+    },
+    {
+     "item": "A-03",
+     "kind": "role_generic",
+     "said": "sent to AI"
+    },
+    {
+     "item": "A-04",
+     "kind": "exception_path",
+     "said": "sent to AI"
+    },
+    {
+     "item": "A-05",
+     "kind": "unit",
+     "said": "conflict"
+    },
+    {
+     "item": "A-06",
+     "kind": "role_generic",
+     "said": "sent to AI"
+    },
+    {
+     "item": "A-07",
+     "kind": "exception_path",
+     "said": "sent to AI"
+    },
+    {
+     "item": "A-08",
+     "kind": "unit",
+     "said": "conflict"
+    },
+    {
+     "item": "A-09",
+     "kind": "role_generic",
+     "said": "sent to AI"
+    },
+    {
+     "item": "A-10",
+     "kind": "exception_path",
+     "said": "sent to AI"
+    },
+    {
+     "item": "A-11",
+     "kind": "unit",
+     "said": "sent to AI"
+    },
+    {
+     "item": "A-12",
+     "kind": "role_generic",
+     "said": "sent to AI"
+    },
+    {
+     "item": "A-13",
+     "kind": "exception_path",
+     "said": "sent to AI"
+    },
+    {
+     "item": "A-14",
+     "kind": "unit",
+     "said": "conflict"
+    },
+    {
+     "item": "A-15",
+     "kind": "role_generic",
+     "said": "sent to AI"
+    },
+    {
+     "item": "A-16",
+     "kind": "exception_path",
+     "said": "sent to AI"
+    },
+    {
+     "item": "A-17",
+     "kind": "unit",
+     "said": "sent to AI"
+    },
+    {
+     "item": "A-18",
+     "kind": "role_generic",
+     "said": "sent to AI"
+    }
+   ],
+   "false_alarms": {
+    "N": {
+     "flagged": 0,
+     "flags": [],
+     "planted": 20
+    },
+    "V": {
+     "flagged": 0,
+     "flags": [],
+     "planted": 20
+    }
+   },
+   "other_duplicates": 16,
+   "other_duplicates_exact": 15,
+   "per_category": {
+    "C": {
+     "caught": 36,
+     "missed": [],
+     "planted": 36
+    },
+    "D": {
+     "caught": 25,
+     "missed": [],
+     "planted": 25
+    },
+    "P": {
+     "caught": 11,
+     "missed": [
+      "P-01",
+      "P-02",
+      "P-14"
+     ],
+     "planted": 14
+    },
+    "S": {
+     "caught": 15,
+     "missed": [],
+     "planted": 15
+    }
+   },
+   "summary": {
+    "caught": 87,
+    "false_alarms": 0,
+    "planted": 90,
+    "queue": 74,
+    "unexplained": 0
+   },
+   "timings": {
+    "compare": 0.069,
+    "duplicates": 0.25,
+    "extract": 1.7,
+    "parse": 3.688,
+    "superseded": 0.006
+   }
+  },
+  "5309": {
+   "counts": {
+    "atoms": 396,
+    "clauses": 1550,
+    "conflicts": 55,
+    "documents": 186,
+    "duplicates": 40,
+    "held": 0,
+    "queue": 79,
+    "superseded": 15,
+    "variations": 211
+   },
+   "disputed": [
+    {
+     "item": "A-01",
+     "kind": "exception_path",
+     "said": "sent to AI"
+    },
+    {
+     "item": "A-02",
+     "kind": "unit",
+     "said": "sent to AI"
+    },
+    {
+     "item": "A-03",
+     "kind": "role_generic",
+     "said": "sent to AI"
+    },
+    {
+     "item": "A-04",
+     "kind": "exception_path",
+     "said": "sent to AI"
+    },
+    {
+     "item": "A-05",
+     "kind": "unit",
+     "said": "conflict"
+    },
+    {
+     "item": "A-06",
+     "kind": "role_generic",
+     "said": "sent to AI"
+    },
+    {
+     "item": "A-07",
+     "kind": "exception_path",
+     "said": "sent to AI"
+    },
+    {
+     "item": "A-08",
+     "kind": "unit",
+     "said": "conflict"
+    },
+    {
+     "item": "A-09",
+     "kind": "role_generic",
+     "said": "sent to AI"
+    },
+    {
+     "item": "A-10",
+     "kind": "exception_path",
+     "said": "sent to AI"
+    },
+    {
+     "item": "A-11",
+     "kind": "unit",
+     "said": "conflict"
+    },
+    {
+     "item": "A-12",
+     "kind": "role_generic",
+     "said": "sent to AI"
+    },
+    {
+     "item": "A-13",
+     "kind": "exception_path",
+     "said": "sent to AI"
+    },
+    {
+     "item": "A-14",
+     "kind": "unit",
+     "said": "conflict"
+    },
+    {
+     "item": "A-15",
+     "kind": "role_generic",
+     "said": "sent to AI"
+    },
+    {
+     "item": "A-16",
+     "kind": "exception_path",
+     "said": "sent to AI"
+    },
+    {
+     "item": "A-17",
+     "kind": "unit",
+     "said": "conflict"
+    },
+    {
+     "item": "A-18",
+     "kind": "role_generic",
+     "said": "sent to AI"
+    }
+   ],
+   "false_alarms": {
+    "N": {
+     "flagged": 0,
+     "flags": [],
+     "planted": 20
+    },
+    "V": {
+     "flagged": 0,
+     "flags": [],
+     "planted": 20
+    }
+   },
+   "other_duplicates": 12,
+   "other_duplicates_exact": 10,
+   "per_category": {
+    "C": {
+     "caught": 33,
+     "missed": [
+      "C-06",
+      "C-10",
+      "C-25"
+     ],
+     "planted": 36
+    },
+    "D": {
+     "caught": 25,
+     "missed": [],
+     "planted": 25
+    },
+    "P": {
+     "caught": 14,
+     "missed": [],
+     "planted": 14
+    },
+    "S": {
+     "caught": 15,
+     "missed": [],
+     "planted": 15
+    }
+   },
+   "summary": {
+    "caught": 87,
+    "false_alarms": 0,
+    "planted": 90,
+    "queue": 79,
+    "unexplained": 0
+   },
+   "timings": {
+    "compare": 0.047,
+    "duplicates": 0.119,
+    "extract": 0.724,
+    "parse": 0.865,
+    "superseded": 0.001
+   }
+  },
+  "7717": {
+   "counts": {
+    "atoms": 370,
+    "clauses": 1501,
+    "conflicts": 59,
+    "documents": 186,
+    "duplicates": 33,
+    "held": 0,
+    "queue": 83,
+    "superseded": 15,
+    "variations": 218
+   },
+   "disputed": [
+    {
+     "item": "A-01",
+     "kind": "exception_path",
+     "said": "sent to AI"
+    },
+    {
+     "item": "A-02",
+     "kind": "unit",
+     "said": "conflict"
+    },
+    {
+     "item": "A-03",
+     "kind": "role_generic",
+     "said": "sent to AI"
+    },
+    {
+     "item": "A-04",
+     "kind": "exception_path",
+     "said": "sent to AI"
+    },
+    {
+     "item": "A-05",
+     "kind": "unit",
+     "said": "sent to AI"
+    },
+    {
+     "item": "A-06",
+     "kind": "role_generic",
+     "said": "sent to AI"
+    },
+    {
+     "item": "A-07",
+     "kind": "exception_path",
+     "said": "sent to AI"
+    },
+    {
+     "item": "A-08",
+     "kind": "unit",
+     "said": "conflict"
+    },
+    {
+     "item": "A-09",
+     "kind": "role_generic",
+     "said": "sent to AI"
+    },
+    {
+     "item": "A-10",
+     "kind": "exception_path",
+     "said": "sent to AI"
+    },
+    {
+     "item": "A-11",
+     "kind": "unit",
+     "said": "conflict"
+    },
+    {
+     "item": "A-12",
+     "kind": "role_generic",
+     "said": "sent to AI"
+    },
+    {
+     "item": "A-13",
+     "kind": "exception_path",
+     "said": "sent to AI"
+    },
+    {
+     "item": "A-14",
+     "kind": "unit",
+     "said": "conflict"
+    },
+    {
+     "item": "A-15",
+     "kind": "role_generic",
+     "said": "sent to AI"
+    },
+    {
+     "item": "A-16",
+     "kind": "exception_path",
+     "said": "sent to AI"
+    },
+    {
+     "item": "A-17",
+     "kind": "unit",
+     "said": "conflict"
+    }
+   ],
+   "false_alarms": {
+    "N": {
+     "flagged": 0,
+     "flags": [],
+     "planted": 20
+    },
+    "V": {
+     "flagged": 0,
+     "flags": [],
+     "planted": 20
+    }
+   },
+   "other_duplicates": 7,
+   "other_duplicates_exact": 7,
+   "per_category": {
+    "C": {
+     "caught": 35,
+     "missed": [
+      "C-11"
+     ],
+     "planted": 36
+    },
+    "D": {
+     "caught": 25,
+     "missed": [],
+     "planted": 25
+    },
+    "P": {
+     "caught": 13,
+     "missed": [
+      "P-02"
+     ],
+     "planted": 14
+    },
+    "S": {
+     "caught": 15,
+     "missed": [],
+     "planted": 15
+    }
+   },
+   "summary": {
+    "caught": 88,
+    "false_alarms": 0,
+    "planted": 90,
+    "queue": 83,
+    "unexplained": 0
+   },
+   "timings": {
+    "compare": 0.028,
+    "duplicates": 0.181,
+    "extract": 0.443,
+    "parse": 0.233,
+    "superseded": 0.001
+   }
+  }
+ },
+ "totals": {
+  "by_category": {
+   "C": {
+    "hit": 104,
+    "of": 108
+   },
+   "D": {
+    "hit": 75,
+    "of": 75
+   },
+   "N_alarms": {
+    "hit": 0,
+    "of": 60
+   },
+   "P": {
+    "hit": 38,
+    "of": 42
+   },
+   "S": {
+    "hit": 45,
+    "of": 45
+   },
+   "V_alarms": {
+    "hit": 0,
+    "of": 60
+   }
+  },
+  "caught": 262,
+  "false_alarms": 0,
+  "planted": 270,
+  "unexplained": 0
+ }
+}

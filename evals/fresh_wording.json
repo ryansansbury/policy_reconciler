@@ -1,0 +1,556 @@
+{
+ "note": "Forty clauses written by hand on 10/29 in wording the generator never uses and frozen before any AI extraction ran. They test whether rule extraction generalizes beyond the phrasing families the code was tuned on. Each has its gold atoms. A clause with no tracked rule has an empty list.",
+ "context": {
+  "title": "Branch Operations Manual",
+  "type": "procedure",
+  "applies_to": "All branches. Consumer and small business accounts.",
+  "states": [
+   "CO",
+   "KS",
+   "OK",
+   "TX"
+  ],
+  "lines": [
+   "consumer",
+   "small_business"
+  ]
+ },
+ "clauses": [
+  {
+   "id": "fw-01",
+   "text": "Managers at the branch level can forgive up to fifty bucks in service charges per account per year.",
+   "gold": [
+    {
+     "attribute": "fee_waiver_bm",
+     "value": {
+      "type": "money",
+      "dollars": 50
+     },
+     "actor": "branch_manager"
+    }
+   ]
+  },
+  {
+   "id": "fw-02",
+   "text": "Anything over $25 that a personal banker wants to waive needs a sign-off from the BM first.",
+   "gold": [
+    {
+     "attribute": "fee_waiver_pb",
+     "value": {
+      "type": "money",
+      "dollars": 25
+     },
+     "actor": "personal_banker"
+    }
+   ]
+  },
+  {
+   "id": "fw-03",
+   "text": "We allow two courtesy waivers on any one account during a calendar year, and a third goes to the regional office.",
+   "gold": [
+    {
+     "attribute": "fee_waivers_per_year",
+     "value": {
+      "type": "count",
+      "n": 2
+     },
+     "actor": null
+    }
+   ]
+  },
+  {
+   "id": "fw-04",
+   "text": "A customer who spots a fee on their statement has sixty days to ask for it back.",
+   "gold": [
+    {
+     "attribute": "fee_refund_window",
+     "value": {
+      "type": "duration",
+      "n": 60,
+      "unit": "days"
+     },
+     "actor": null
+    }
+   ]
+  },
+  {
+   "id": "fw-05",
+   "text": "Every paid overdraft item costs the customer thirty dollars.",
+   "gold": [
+    {
+     "attribute": "od_fee",
+     "value": {
+      "type": "money",
+      "dollars": 30
+     },
+     "actor": null
+    }
+   ]
+  },
+  {
+   "id": "fw-06",
+   "text": "The system stops assessing overdraft charges after the third one in a business day.",
+   "gold": [
+    {
+     "attribute": "od_daily_cap",
+     "value": {
+      "type": "count",
+      "n": 3
+     },
+     "actor": null
+    }
+   ]
+  },
+  {
+   "id": "fw-07",
+   "text": "If an end-of-day negative balance is ten dollars or smaller, waive the overdraft charge automatically.",
+   "gold": [
+    {
+     "attribute": "od_de_minimis",
+     "value": {
+      "type": "money",
+      "dollars": 10
+     },
+     "actor": null
+    }
+   ]
+  },
+  {
+   "id": "fw-08",
+   "text": "Six weeks and three days in the red sends an account to the charge-off team.",
+   "gold": [
+    {
+     "attribute": "od_chargeoff",
+     "value": {
+      "type": "duration",
+      "n": 45,
+      "unit": "days"
+     },
+     "actor": null
+    }
+   ]
+  },
+  {
+   "id": "fw-09",
+   "text": "Consumer and small business wire requests have to be in by three in the afternoon Central to go out today.",
+   "gold": [
+    {
+     "attribute": "wire_cutoff",
+     "value": {
+      "type": "time",
+      "minutes": 900
+     },
+     "actor": null
+    }
+   ]
+  },
+  {
+   "id": "fw-10",
+   "text": "For transfers going out by wire at $10K and up, phone the client at the number on file before release.",
+   "gold": [
+    {
+     "attribute": "wire_callback",
+     "value": {
+      "type": "money",
+      "dollars": 10000
+     },
+     "actor": null
+    }
+   ]
+  },
+  {
+   "id": "fw-11",
+   "text": "An ops manager signs off a second time on outbound wires larger than fifty thousand dollars.",
+   "gold": [
+    {
+     "attribute": "wire_second_approval",
+     "value": {
+      "type": "money",
+      "dollars": 50000
+     },
+     "actor": "operations_manager"
+    }
+   ]
+  },
+  {
+   "id": "fw-12",
+   "text": "The person who verifies a wire by phone has to be from the wire desk, not whoever took the request.",
+   "gold": [
+    {
+     "attribute": "wire_callback_role",
+     "value": {
+      "type": "role",
+      "role": "wire_specialist"
+     },
+     "actor": null
+    }
+   ]
+  },
+  {
+   "id": "fw-13",
+   "text": "Keep no more than fifteen thousand in any teller's cash drawer.",
+   "gold": [
+    {
+     "attribute": "cash_drawer_limit",
+     "value": {
+      "type": "money",
+      "dollars": 15000
+     },
+     "actor": "teller"
+    }
+   ]
+  },
+  {
+   "id": "fw-14",
+   "text": "Flag cash in or out totaling $7,500 or higher for the large-cash reviewers before close.",
+   "gold": [
+    {
+     "attribute": "cash_review_threshold",
+     "value": {
+      "type": "money",
+      "dollars": 7500
+     },
+     "actor": null
+    }
+   ]
+  },
+  {
+   "id": "fw-15",
+   "text": "Nobody goes into the vault alone, ever.",
+   "gold": [
+    {
+     "attribute": "cash_vault_dual",
+     "value": {
+      "type": "modal",
+      "modal": "must"
+     },
+     "actor": null
+    }
+   ]
+  },
+  {
+   "id": "fw-16",
+   "text": "Most check deposits clear in two business days unless a longer hold is placed.",
+   "gold": [
+    {
+     "attribute": "hold_standard",
+     "value": {
+      "type": "duration",
+      "n": 2,
+      "unit": "business_days"
+     },
+     "actor": null
+    }
+   ]
+  },
+  {
+   "id": "fw-17",
+   "text": "Only the part of a day's check deposits beyond $6,000 can be held longer than the standard hold.",
+   "gold": [
+    {
+     "attribute": "hold_large_threshold",
+     "value": {
+      "type": "money",
+      "dollars": 6000
+     },
+     "actor": null
+    }
+   ]
+  },
+  {
+   "id": "fw-18",
+   "text": "Brand-new accounts may see deposited checks held as long as seven business days.",
+   "gold": [
+    {
+     "attribute": "hold_new_account",
+     "value": {
+      "type": "duration",
+      "n": 7,
+      "unit": "business_days"
+     },
+     "actor": null
+    }
+   ]
+  },
+  {
+   "id": "fw-19",
+   "text": "Cardholders get two months from the statement date to challenge a debit charge.",
+   "gold": [
+    {
+     "attribute": "dispute_window",
+     "value": {
+      "type": "duration",
+      "n": 2,
+      "unit": "months"
+     },
+     "actor": null
+    }
+   ]
+  },
+  {
+   "id": "fw-20",
+   "text": "Temporary credit must post no later than the tenth business day after a dispute form is complete.",
+   "gold": [
+    {
+     "attribute": "dispute_provisional_credit",
+     "value": {
+      "type": "duration",
+      "n": 10,
+      "unit": "business_days"
+     },
+     "actor": null
+    }
+   ]
+  },
+  {
+   "id": "fw-21",
+   "text": "Card services looks at any disputed charge above five hundred dollars before we credit it.",
+   "gold": [
+    {
+     "attribute": "dispute_review_threshold",
+     "value": {
+      "type": "money",
+      "dollars": 500
+     },
+     "actor": "card_services_specialist"
+    }
+   ]
+  },
+  {
+   "id": "fw-22",
+   "text": "Customers who complain in writing hear back from us within two business days.",
+   "gold": [
+    {
+     "attribute": "complaint_ack",
+     "value": {
+      "type": "duration",
+      "n": 2,
+      "unit": "business_days"
+     },
+     "actor": null
+    }
+   ]
+  },
+  {
+   "id": "fw-23",
+   "text": "Aim to put every complaint to bed inside three weeks of business days.",
+   "gold": [
+    {
+     "attribute": "complaint_resolve",
+     "value": {
+      "type": "duration",
+      "n": 15,
+      "unit": "business_days"
+     },
+     "actor": null
+    }
+   ]
+  },
+  {
+   "id": "fw-24",
+   "text": "Allegations of unfair treatment go straight to the regional manager on the same day.",
+   "gold": [
+    {
+     "attribute": "complaint_escalation_role",
+     "value": {
+      "type": "role",
+      "role": "regional_manager"
+     },
+     "actor": null
+    }
+   ]
+  },
+  {
+   "id": "fw-25",
+   "text": "After a year of no customer activity we treat the account as dormant.",
+   "gold": [
+    {
+     "attribute": "dormant_inactivity",
+     "value": {
+      "type": "duration",
+      "n": 12,
+      "unit": "months"
+     },
+     "actor": null
+    }
+   ]
+  },
+  {
+   "id": "fw-26",
+   "text": "A heads-up letter goes out thirty days ahead of any account going dormant.",
+   "gold": [
+    {
+     "attribute": "dormant_notice",
+     "value": {
+      "type": "duration",
+      "n": 30,
+      "unit": "days"
+     },
+     "actor": null
+    }
+   ]
+  },
+  {
+   "id": "fw-27",
+   "text": "Inactive accounts pay five dollars a month once they are dormant.",
+   "gold": [
+    {
+     "attribute": "dormant_fee",
+     "value": {
+      "type": "money",
+      "dollars": 5
+     },
+     "actor": null
+    }
+   ]
+  },
+  {
+   "id": "fw-28",
+   "text": "Hold on to closed-account files for seven years before they can go.",
+   "gold": [
+    {
+     "attribute": "records_retention",
+     "value": {
+      "type": "duration",
+      "n": 7,
+      "unit": "years"
+     },
+     "actor": null
+    }
+   ]
+  },
+  {
+   "id": "fw-29",
+   "text": "Nothing gets shredded without the records custodian signing off in writing.",
+   "gold": [
+    {
+     "attribute": "records_destroy_role",
+     "value": {
+      "type": "role",
+      "role": "records_custodian"
+     },
+     "actor": null
+    }
+   ]
+  },
+  {
+   "id": "fw-30",
+   "text": "Opening the branch takes two people every morning, with no exceptions for a late opener.",
+   "gold": [
+    {
+     "attribute": "branch_open_dual",
+     "value": {
+      "type": "modal",
+      "modal": "must"
+     },
+     "actor": null
+    }
+   ]
+  },
+  {
+   "id": "fw-31",
+   "text": "Twice a year, reset the vault combination.",
+   "gold": [
+    {
+     "attribute": "combo_change",
+     "value": {
+      "type": "duration",
+      "n": 6,
+      "unit": "months"
+     },
+     "actor": null
+    }
+   ]
+  },
+  {
+   "id": "fw-32",
+   "text": "BMs can shave up to a quarter point off a loan rate on their own.",
+   "gold": [
+    {
+     "attribute": "lend_rate_bm",
+     "value": {
+      "type": "percent",
+      "bp": 25
+     },
+     "actor": "branch_manager"
+    }
+   ]
+  },
+  {
+   "id": "fw-33",
+   "text": "The regional manager's pricing authority tops out at half a percentage point.",
+   "gold": [
+    {
+     "attribute": "lend_rate_rm",
+     "value": {
+      "type": "percent",
+      "bp": 50
+     },
+     "actor": "regional_manager"
+    }
+   ]
+  },
+  {
+   "id": "fw-34",
+   "text": "Write down why and who approved it for every pricing exception, in the loan file.",
+   "gold": [
+    {
+     "attribute": "lend_exception_doc",
+     "value": {
+      "type": "modal",
+      "modal": "must"
+     },
+     "actor": null
+    }
+   ]
+  },
+  {
+   "id": "fw-35",
+   "text": "New checking customers bring at least $25 to get started.",
+   "gold": [
+    {
+     "attribute": "ao_min_deposit",
+     "value": {
+      "type": "money",
+      "dollars": 25
+     },
+     "actor": null
+    }
+   ]
+  },
+  {
+   "id": "fw-36",
+   "text": "Each person signing on the account shows us a pair of IDs.",
+   "gold": [
+    {
+     "attribute": "ao_id_count",
+     "value": {
+      "type": "count",
+      "n": 2
+     },
+     "actor": null
+    }
+   ]
+  },
+  {
+   "id": "fw-37",
+   "text": "Say thank you and walk the customer to the door at the end of the visit.",
+   "gold": []
+  },
+  {
+   "id": "fw-38",
+   "text": "The branch holiday party is the second Friday of December.",
+   "gold": []
+  },
+  {
+   "id": "fw-39",
+   "text": "Remind customers that statements are available online every month.",
+   "gold": []
+  },
+  {
+   "id": "fw-40",
+   "text": "Our tellers handle about 900 transactions on a busy Saturday.",
+   "gold": []
+  }
+ ]
+}

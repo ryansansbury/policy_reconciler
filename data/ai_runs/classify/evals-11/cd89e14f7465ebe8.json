@@ -1,0 +1,273 @@
+{
+ "step": "classify",
+ "tag": "evals-11",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "1346938ac1ecbf43874a700ab9916c851d6a29bb5d6b9e5f1199128bc8cd59f2",
+ "input": [
+  {
+   "pair": "pair-8390b067b1",
+   "rule": "Overdraft fees per day",
+   "attribute": "od_daily_cap",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "BUL-ODR-02@v3/s1/c2",
+    "text": "No more than three overdraft fees are charged to an account in one business day.",
+    "heading": "What branches need to know",
+    "document": {
+     "title": "Branch Bulletin 2026-35: Overdraft fees per account per day",
+     "type": "bulletin",
+     "version": 3,
+     "effective": "2026-06-05",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "BUL-ODR-01@v1/s1/c2",
+    "text": "No more than three overdraft fees are charged to an account in one business day.",
+    "heading": "What branches need to know",
+    "document": {
+     "title": "Branch Bulletin 2025-03: Overdraft fees per account per day",
+     "type": "bulletin",
+     "version": 1,
+     "effective": "2025-11-28",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-29b647a089",
+   "rule": "Minimum opening deposit",
+   "attribute": "ao_min_deposit",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-AOP-02@v1/s3/c3",
+    "text": "The minimum opening deposit for a consumer checking account is $25.",
+    "heading": "Steps",
+    "document": {
+     "title": "Opening a Savings Account",
+     "type": "procedure",
+     "version": 1,
+     "effective": "2026-09-01",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "PRO-AOP-04@v3/s3/c8",
+    "text": "The minimum opening deposit for a consumer checking account is $25.",
+    "heading": "Steps",
+    "document": {
+     "title": "Verifying Customer Identification",
+     "type": "procedure",
+     "version": 3,
+     "effective": "2025-01-03",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-38b4b5c422",
+   "rule": "Wire callback threshold",
+   "attribute": "wire_callback",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "FAQ-WIR-02@v1/s2/c1",
+    "text": "Call the customer back at a phone number already on file before releasing any outgoing wire of $10,000 or more.",
+    "heading": "Which outgoing wires need a callback?",
+    "document": {
+     "title": "Wire Cutoff Questions",
+     "type": "faq",
+     "version": 1,
+     "effective": "2026-07-25",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "FAQ-WIR-01@v4/s1/c1",
+    "text": "Call the customer back at a phone number already on file before releasing any outgoing wire of $10,000 or more.",
+    "heading": "Which outgoing wires need a callback?",
+    "document": {
+     "title": "Wire Transfer FAQ",
+     "type": "faq",
+     "version": 4,
+     "effective": "2026-08-13",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-d19312cddb",
+   "rule": "Branch manager rate exception limit",
+   "attribute": "lend_rate_bm",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-LND-02@v2/s3/c4",
+    "text": "Branch managers may approve rate exceptions of up to 0.25%.",
+    "heading": "Steps",
+    "document": {
+     "title": "Approving a Rate Exception",
+     "type": "procedure",
+     "version": 2,
+     "effective": "2025-05-26",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "FAQ-LND-02@v3/s1/c1",
+    "text": "Branch managers may approve rate exceptions of up to 0.25%.",
+    "heading": "How large a rate exception can a branch manager approve?",
+    "document": {
+     "title": "Pricing Exception Questions",
+     "type": "faq",
+     "version": 3,
+     "effective": "2026-07-30",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  },
+  {
+   "pair": "pair-b56e20625a",
+   "rule": "Dormant account fee",
+   "attribute": "dormant_fee",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "FAQ-DRM-02@v4/s3/c1",
+    "text": "The monthly fee for a dormant account is $5.",
+    "heading": "What is the monthly fee on a dormant account?",
+    "document": {
+     "title": "Reactivation Questions",
+     "type": "faq",
+     "version": 4,
+     "effective": "2026-05-12",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "FAQ-DRM-01@v4/s2/c1",
+    "text": "The monthly fee for a dormant account is $5.",
+    "heading": "What is the monthly fee on a dormant account?",
+    "document": {
+     "title": "Dormant Account FAQ",
+     "type": "faq",
+     "version": 4,
+     "effective": "2025-12-23",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-104eac1c22",
+   "rule": "Personal banker fee waiver limit",
+   "attribute": "fee_waiver_pb",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "JA-FEE-03@v3/s1/c2",
+    "text": "Personal banker fee waiver limit | $25",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Waiver Authority Card",
+     "type": "job_aid",
+     "version": 3,
+     "effective": "2026-03-04",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "JA-FEE-01@v4/s1/c2",
+    "text": "Personal banker fee waiver limit | $25",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Fee Waiver Quick Reference",
+     "type": "job_aid",
+     "version": 4,
+     "effective": "2026-04-28",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-288fa041cc",
+   "rule": "Notice before dormancy",
+   "attribute": "dormant_notice",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "PRO-DRM-03@v2/s3/c9",
+    "text": "Mail the customer a notice at least 30 days before the account is classified as dormant.",
+    "heading": "Steps",
+    "document": {
+     "title": "Reactivating a Dormant Account",
+     "type": "procedure",
+     "version": 2,
+     "effective": "2024-11-06",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "b": {
+    "clause": "JA-DRM-02@v1/s1/c2",
+    "text": "Notice before dormancy | 30 days",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Dormancy Notice Checklist",
+     "type": "job_aid",
+     "version": 1,
+     "effective": "2026-04-18",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   }
+  },
+  {
+   "pair": "pair-7b9ea4abf4",
+   "rule": "Regional manager rate exception limit",
+   "attribute": "lend_rate_rm",
+   "reason": "This pair comes from the evaluation set, so code's own reading isn't shared.",
+   "a": {
+    "clause": "JA-LND-01@v4/s1/c2",
+    "text": "Regional manager rate exception limit | 0.50%",
+    "heading": "Quick reference",
+    "document": {
+     "title": "Rate Exception Authority Card",
+     "type": "job_aid",
+     "version": 4,
+     "effective": "2026-05-06",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "b": {
+    "clause": "PRO-LND-03@v3/s3/c1",
+    "text": "Regional managers may approve rate exceptions of up to 0.50%.",
+    "heading": "Steps",
+    "document": {
+     "title": "Documenting Pricing Exceptions",
+     "type": "procedure",
+     "version": 3,
+     "effective": "2026-04-10",
+     "applies_to": "All branches. All business lines."
+    }
+   }
+  }
+ ],
+ "input_hash": "2bb253e1b9c5ae7cfaa3d53b976cb0432321e3163bdb190a264519f62abf92a8",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [{\"pair\": \"pair-8390b067b1\", \"label\": \"duplicate\", \"quote_a\": \"No more than three overdraft fees are charged to an account in one business day.\", \"quote_b\": \"No more than three overdraft fees are charged to an account in one business day.\", \"rationale\": \"The two bulletins have different numbers and are not versions of one document. They state the same cap of three fees per business day in identical words.\"}, {\"pair\": \"pair-29b647a089\", \"label\": \"duplicate\", \"quote_a\": \"The minimum opening deposit for a consumer checking account is $25.\", \"quote_b\": \"The minimum opening deposit for a consumer checking account is $25.\", \"rationale\": \"Both procedures set the same $25 minimum for a consumer checking account with identical wording and scope. Nothing differs that would change what staff do.\"}, {\"pair\": \"pair-38b4b5c422\", \"label\": \"duplicate\", \"quote_a\": \"Call the customer back at a phone number already on file before releasing any outgoing wire of $10,000 or more.\", \"quote_b\": \"Call the customer back at a phone number already on file before releasing any outgoing wire of $10,000 or more.\", \"rationale\": \"Both FAQs require the same callback for outgoing wires of $10,000 or more. The wording and scope are identical.\"}, {\"pair\": \"pair-d19312cddb\", \"label\": \"duplicate\", \"quote_a\": \"Branch managers may approve rate exceptions of up to 0.25%.\", \"quote_b\": \"Branch managers may approve rate exceptions of up to 0.25%.\", \"rationale\": \"The procedure and the FAQ give the same 0.25% limit for branch managers in the same words. Staff would act the same way under either one.\"}, {\"pair\": \"pair-b56e20625a\", \"label\": \"duplicate\", \"quote_a\": \"The monthly fee for a dormant account is $5.\", \"quote_b\": \"The monthly fee for a dormant account is $5.\", \"rationale\": \"Both FAQs state the same $5 monthly dormant account fee in identical words. They are separate documents and neither replaces the other.\"}, {\"pair\": \"pair-104eac1c22\", \"label\": \"duplicate\", \"quote_a\": \"Personal banker fee waiver limit | $25\", \"quote_b\": \"Personal banker fee waiver limit | $25\", \"rationale\": \"Both job aids list the same $25 waiver limit for personal bankers. The rows are identical and the scope is the same.\"}, {\"pair\": \"pair-288fa041cc\", \"label\": \"consistent\", \"quote_a\": \"at least 30 days before the account is classified as dormant\", \"quote_b\": \"Notice before dormancy | 30 days\", \"rationale\": \"Both set a 30 day notice period before dormancy. The procedure adds that the notice is mailed, which the job aid leaves out without contradicting it.\"}, {\"pair\": \"pair-7b9ea4abf4\", \"label\": \"duplicate\", \"quote_a\": \"Regional manager rate exception limit | 0.50%\", \"quote_b\": \"Regional managers may approve rate exceptions of up to 0.50%.\", \"rationale\": \"The job aid and the procedure both give regional managers a 0.50% limit. One is a table row and the other a sentence, and the requirement is the same.\"}]}",
+   "problems": [],
+   "meta": {
+    "ms": 10981,
+    "api_ms": 10761,
+    "input_tokens": 2,
+    "output_tokens": 1625,
+    "cost_usd": 0.049048900000000006,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T03:26:46+00:00"
+}

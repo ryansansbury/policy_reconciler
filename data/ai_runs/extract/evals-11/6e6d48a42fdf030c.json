@@ -1,0 +1,167 @@
+{
+ "step": "extract",
+ "tag": "evals-11",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "dcc761e46c6ec579c01b9dfd540df3c2fa4bba3b6b5ec777aa2cf9c9c62aa411",
+ "input": [
+  {
+   "clause": "BUL-AOP-01@v4/s1/c1",
+   "text": "This bulletin reminds branch staff of a requirement that applies to their daily work.",
+   "heading": "What branches need to know",
+   "document": {
+    "title": "Branch Bulletin 2025-21: Minimum opening deposit for consumer checking",
+    "type": "bulletin",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "JA-CMP-01@v4/s2/c1",
+   "text": "Tell the customer who will contact them next and when.",
+   "heading": "Checklist",
+   "document": {
+    "title": "Complaint Handling Card",
+    "type": "job_aid",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "JA-LND-02@v3/s3/c1",
+   "text": "Enter the requested rate and the reason for the exception in the pricing worksheet.",
+   "heading": "Steps to follow",
+   "document": {
+    "title": "Exception Documentation Checklist",
+    "type": "job_aid",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "JA-LND-02@v3/s3/c2",
+   "text": "Send the exception request to the approver through the loan system.",
+   "heading": "Steps to follow",
+   "document": {
+    "title": "Exception Documentation Checklist",
+    "type": "job_aid",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "JA-REC-01@v2/s2/c1",
+   "text": "Box closed account records by closing month and label each box with the destruction date.",
+   "heading": "Checklist",
+   "document": {
+    "title": "Records Retention Schedule Card",
+    "type": "job_aid",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "JA-WIR-02@v3/s2/c2",
+   "text": "Check the holiday calendar before promising a same-day wire.",
+   "heading": "Checklist",
+   "document": {
+    "title": "Callback Checklist",
+    "type": "job_aid",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "POL-AOP-02@v6/s6/c1",
+   "text": "Branch managers make sure their teams follow this policy, and Deposit Operations answers questions about it.",
+   "heading": "Roles and responsibilities",
+   "document": {
+    "title": "Customer Identification Policy",
+    "type": "policy",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "POL-DRM-01@v4/s5/c1",
+   "text": "Exceptions to this policy need written approval from the Deposit Operations manager and are reviewed each quarter.",
+   "heading": "Exceptions",
+   "document": {
+    "title": "Dormant Account Policy",
+    "type": "policy",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "POL-FEE-01@v2/s2/c1",
+   "text": "It applies to every branch for consumer and small business accounts.",
+   "heading": "Scope",
+   "document": {
+    "title": "Service Fee Waiver Policy",
+    "type": "policy",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "PRO-AOP-06@v4/s3/c4",
+   "text": "Give the customer a copy of the fee schedule and the funds availability notice.",
+   "heading": "Steps",
+   "document": {
+    "title": "Handling Identification Exceptions",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  }
+ ],
+ "input_hash": "3b064831faad446386f53f74fc645fc3ffad648c29beff124f1eeae48ed310a7",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [{\"clause\": \"BUL-AOP-01@v4/s1/c1\", \"atoms\": []}, {\"clause\": \"JA-CMP-01@v4/s2/c1\", \"atoms\": []}, {\"clause\": \"JA-LND-02@v3/s3/c1\", \"atoms\": []}, {\"clause\": \"JA-LND-02@v3/s3/c2\", \"atoms\": []}, {\"clause\": \"JA-REC-01@v2/s2/c1\", \"atoms\": []}, {\"clause\": \"JA-WIR-02@v3/s2/c2\", \"atoms\": []}, {\"clause\": \"POL-AOP-02@v6/s6/c1\", \"atoms\": []}, {\"clause\": \"POL-DRM-01@v4/s5/c1\", \"atoms\": []}, {\"clause\": \"POL-FEE-01@v2/s2/c1\", \"atoms\": []}, {\"clause\": \"PRO-AOP-06@v4/s3/c4\", \"atoms\": []}]}",
+   "problems": [],
+   "meta": {
+    "ms": 2745,
+    "api_ms": 2580,
+    "input_tokens": 8908,
+    "output_tokens": 327,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 6224,
+     "cache_read_input_tokens": 2682,
+     "output_tokens": 327,
+     "output_tokens_details": {
+      "thinking_tokens": 0
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 6224,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 327,
+       "cache_read_input_tokens": 2682,
+       "cache_creation_input_tokens": 6224,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 6224
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.0284382,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T03:53:20+00:00"
+}

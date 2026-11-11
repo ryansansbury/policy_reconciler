@@ -1,0 +1,114 @@
+{
+ "step": "assist",
+ "tag": "before-2026",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "66c01f0da9f327e74355d39363e55b642a1bbf8dc6249974c3afbf3cb3d6ccd5",
+ "input": [
+  {
+   "question": "q-C-07",
+   "text": "Do pricing exceptions have to be documented?",
+   "type": "modal",
+   "clauses": [
+    {
+     "id": "PRO-LND-03@v4/s3/c5",
+     "text": "Pricing exceptions may be documented in the loan file after closing if time is short.",
+     "title": "Documenting Pricing Exceptions",
+     "type": "procedure",
+     "version": 4,
+     "effective": "2025-04-01"
+    },
+    {
+     "id": "JA-LND-01@v3/s1/c2",
+     "text": "Documenting pricing exceptions | Optional",
+     "title": "Rate Exception Authority Card",
+     "type": "job_aid",
+     "version": 3,
+     "effective": "2025-06-11"
+    },
+    {
+     "id": "JA-LND-02@v2/s1/c1",
+     "text": "Documenting pricing exceptions | Required",
+     "title": "Exception Documentation Checklist",
+     "type": "job_aid",
+     "version": 2,
+     "effective": "2026-07-01"
+    },
+    {
+     "id": "BUL-LND-02@v2/s1/c2",
+     "text": "Every pricing exception must be documented in the loan file with the reason and the approver.",
+     "title": "Branch Bulletin 2026-22: Documenting pricing exceptions",
+     "type": "bulletin",
+     "version": 2,
+     "effective": "2026-07-03"
+    },
+    {
+     "id": "JA-LND-01@v3/s3/c1",
+     "text": "Every pricing exception must be documented in the loan file with the reason and the approver.",
+     "title": "Rate Exception Authority Card",
+     "type": "job_aid",
+     "version": 3,
+     "effective": "2025-06-11"
+    }
+   ]
+  }
+ ],
+ "input_hash": "e01344951be5fac8d3ef3726f5f0c3f3117e114d75b3cccaee91fe0f7b718878",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [{\"question\": \"q-C-07\", \"answer\": \"The sources disagree. The Rate Exception Authority Card marks documenting as optional in one place but says every exception must be documented in another, and the Exception Documentation Checklist and Branch Bulletin 2026-22 both say it is required, with the bulletin adding that the loan file must show the reason and the approver. The Documenting Pricing Exceptions procedure outranks the job aids and the bulletin, and it only relaxes the timing by letting the documentation go in the loan file after closing when time is short.\", \"citations\": [\"PRO-LND-03@v4/s3/c5\", \"JA-LND-01@v3/s1/c2\", \"JA-LND-01@v3/s3/c1\", \"JA-LND-02@v2/s1/c1\", \"BUL-LND-02@v2/s1/c2\"], \"sources_disagree\": true}]}",
+   "problems": [],
+   "meta": {
+    "ms": 10486,
+    "api_ms": 10329,
+    "input_tokens": 6126,
+    "output_tokens": 1098,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 5506,
+     "cache_read_input_tokens": 618,
+     "output_tokens": 1098,
+     "output_tokens_details": {
+      "thinking_tokens": 803
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 5506,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 1098,
+       "cache_read_input_tokens": 618,
+       "cache_creation_input_tokens": 5506,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 5506
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.033069799999999996,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T06:03:03+00:00"
+}

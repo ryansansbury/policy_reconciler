@@ -1,0 +1,167 @@
+{
+ "step": "assist",
+ "tag": "after-2026",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "66c01f0da9f327e74355d39363e55b642a1bbf8dc6249974c3afbf3cb3d6ccd5",
+ "input": [
+  {
+   "question": "q-C-03",
+   "text": "How long does the bank have to resolve a complaint?",
+   "type": "duration",
+   "clauses": [
+    {
+     "id": "draft:g-077300da",
+     "text": "Staff resolve every complaint within 10 business days.",
+     "title": "Complaint resolution deadline",
+     "type": "consolidated",
+     "version": 1,
+     "effective": ""
+    },
+    {
+     "id": "JA-AOP-01@v3/s1/c2",
+     "text": "How long an account counts as new | 30 days",
+     "title": "New Account Quick Reference",
+     "type": "job_aid",
+     "version": 3,
+     "effective": "2026-01-31"
+    },
+    {
+     "id": "JA-AOP-03@v4/s1/c1",
+     "text": "How long an account counts as new | 30 days",
+     "title": "Account Opening Desk Card",
+     "type": "job_aid",
+     "version": 4,
+     "effective": "2025-05-22"
+    },
+    {
+     "id": "draft:g-46a9b4de",
+     "text": "Staff resolve every complaint within 15 business days of receipt. If that is not possible, staff tell the customer when to expect a resolution.",
+     "title": "Resolving complaints",
+     "type": "consolidated",
+     "version": 1,
+     "effective": ""
+    },
+    {
+     "id": "POL-HLD-01@v5/s4/c1",
+     "text": "New accounts can have check holds of as long as 7 business days.",
+     "title": "Funds Availability Policy",
+     "type": "policy",
+     "version": 5,
+     "effective": "2026-05-20"
+    }
+   ]
+  }
+ ],
+ "input_hash": "0c11b55d2176316789ed54d8f82dd6a16e99fc6accac0d0ce07355e2c38fc8be",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [{\"question\": \"q-C-03\", \"answer\": \"The sources disagree. The Complaint resolution deadline clause says 10 business days and the Resolving complaints clause says 15 business days of receipt. Both are unversioned consolidated drafts of the same type, so neither outranks the other and the bank's ranking does not settle which one to follow. The Resolving complaints clause adds that if 15 days is not possible, staff tell the customer when to expect a resolution.\", \"citations\": [\"draft:g-077300da\", \"draft:g-46a9b4de\"], \"sources_disagree\": true}]}",
+   "problems": [
+    "q-C-03: the answer states a value no cited clause holds"
+   ],
+   "meta": {
+    "ms": 5197,
+    "api_ms": 5049,
+    "input_tokens": 6079,
+    "output_tokens": 338,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 5459,
+     "cache_read_input_tokens": 618,
+     "output_tokens": 338,
+     "output_tokens_details": {
+      "thinking_tokens": 141
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 5459,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 338,
+       "cache_read_input_tokens": 618,
+       "cache_creation_input_tokens": 5459,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 5459
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.0252818,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  },
+  {
+   "reply": "{\"results\": [{\"question\": \"q-C-03\", \"answer\": \"The sources disagree. The Complaint resolution deadline clause says staff resolve every complaint within 10 business days and the Resolving complaints clause says 15 business days of receipt, with staff telling the customer when to expect a resolution if that isn't possible. Both are consolidated drafts of the same type, so the bank's ranking doesn't favor either one and the deadline needs to be confirmed before you rely on it.\", \"citations\": [\"draft:g-077300da\", \"draft:g-46a9b4de\"], \"sources_disagree\": true}]}",
+   "problems": [],
+   "meta": {
+    "ms": 4215,
+    "api_ms": 4057,
+    "input_tokens": 6127,
+    "output_tokens": 451,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 5507,
+     "cache_read_input_tokens": 618,
+     "output_tokens": 451,
+     "output_tokens_details": {
+      "thinking_tokens": 253
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 5507,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 451,
+       "cache_read_input_tokens": 618,
+       "cache_creation_input_tokens": 5507,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 5507
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.026603799999999997,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   },
+   "items": [
+    "q-C-03"
+   ]
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T06:03:18+00:00"
+}

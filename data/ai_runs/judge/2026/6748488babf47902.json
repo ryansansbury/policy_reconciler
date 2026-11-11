@@ -1,0 +1,73 @@
+{
+ "step": "judge",
+ "tag": "2026",
+ "model": "google-b",
+ "backend": {
+  "vendor": "Google",
+  "model": "gemini-3.8-flash",
+  "label": "Gemini 3.8 Flash"
+ },
+ "prompt_hash": "ab6a49ec8731854b3cf900a9a4387417ee8016fe68257c4d327181c7eb1621da",
+ "input": [
+  {
+   "draft": "g-293d155a",
+   "text": "Dormant accounts are charged a maintenance fee of $5 per month.",
+   "sources": [
+    "Dormant accounts are charged a maintenance fee of $5 per month."
+   ]
+  },
+  {
+   "draft": "g-d6d9426f",
+   "text": "An account with no activity initiated by the customer for 12 months is classified as dormant.",
+   "sources": [
+    "An account with no customer-initiated activity for 12 months is classified as dormant."
+   ]
+  },
+  {
+   "draft": "g-06709e03",
+   "text": "Customers receive written notice 30 days before their account becomes dormant.",
+   "sources": [
+    "Customers receive written notice 30 days before their account becomes dormant."
+   ]
+  },
+  {
+   "draft": "g-76e59fc8",
+   "text": "Customers may request a fee refund within 60 days of the statement date.",
+   "sources": [
+    "Customers may request a fee refund within 60 days of the statement date."
+   ]
+  },
+  {
+   "draft": "g-2fb81fd4",
+   "text": "Personal bankers may waive service fees up to $25 per account in a calendar year. With branch manager approval noted in the account, they may waive up to $50 per account in a calendar year.",
+   "sources": [
+    "Personal bankers may waive service fees up to $25 per account in a calendar year, or up to $50 with branch manager approval noted in the account."
+   ]
+  }
+ ],
+ "input_hash": "4d3c4e45348d5692226cf24afe3c7ca86e80a64ac9828929d1971ceb89110c08",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "```json\n{\n \"results\": [\n  {\n   \"draft\": \"g-293d155a\",\n   \"scores\": {\n    \"keeps_rules\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    },\n    \"adds_no_rule\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    },\n    \"keeps_scope\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    },\n    \"plain\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    }\n   }\n  },\n  {\n   \"draft\": \"g-d6d9426f\",\n   \"scores\": {\n    \"keeps_rules\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    },\n    \"adds_no_rule\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    },\n    \"keeps_scope\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    },\n    \"plain\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    }\n   }\n  },\n  {\n   \"draft\": \"g-06709e03\",\n   \"scores\": {\n    \"keeps_rules\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    },\n    \"adds_no_rule\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    },\n    \"keeps_scope\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    },\n    \"plain\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    }\n   }\n  },\n  {\n   \"draft\": \"g-76e59fc8\",\n   \"scores\": {\n    \"keeps_rules\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    },\n    \"adds_no_rule\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    },\n    \"keeps_scope\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    },\n    \"plain\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    }\n   }\n  },\n  {\n   \"draft\": \"g-2fb81fd4\",\n   \"scores\": {\n    \"keeps_rules\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    },\n    \"adds_no_rule\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    },\n    \"keeps_scope\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    },\n    \"plain\": {\n     \"pass\": true,\n     \"evidence\": \"\"\n    }\n   }\n  }\n ]\n}\n```",
+   "problems": [],
+   "meta": {
+    "ms": 10088,
+    "input_tokens": 897,
+    "output_tokens": 1142,
+    "cost_usd": 0.004955,
+    "usage": {
+     "completion_tokens": 652,
+     "prompt_tokens": 897,
+     "total_tokens": 2039
+    },
+    "models": [
+     "gemini-3.8-flash"
+    ],
+    "stop_reason": "stop"
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T19:48:04+00:00"
+}

@@ -1,0 +1,167 @@
+{
+ "step": "extract",
+ "tag": "evals-6101",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "dcc761e46c6ec579c01b9dfd540df3c2fa4bba3b6b5ec777aa2cf9c9c62aa411",
+ "input": [
+  {
+   "clause": "PRO-DRM-06@v1/s2/c1",
+   "text": "Make sure you have completed the training for this task and have access to the systems it uses.",
+   "heading": "Before you begin",
+   "document": {
+    "title": "Handling Mail Returned on a Dormant Account",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "PRO-DSP-02@v4/s5/c1",
+   "text": "Tell the client how they will be notified of the outcome.",
+   "heading": "Steps to follow",
+   "document": {
+    "title": "Issuing Provisional Credit",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "PRO-DSP-04@v1/s3/c6",
+   "text": "Document the request and its outcome in the account notes.",
+   "heading": "Steps",
+   "document": {
+    "title": "Reversing Provisional Credit",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "PRO-FEE-01@v1/s3/c8",
+   "text": "Follow up with the customer if the request cannot be completed the same day.",
+   "heading": "Steps",
+   "document": {
+    "title": "Processing a Fee Waiver Request",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "PRO-HLD-04@v3/s3/c7",
+   "text": "Print the hold notice and give it to the customer with their receipt.",
+   "heading": "Steps",
+   "document": {
+    "title": "Releasing a Hold Early",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "PRO-LND-06@v4/s3/c1",
+   "text": "Enter the requested rate and the reason for the exception in the pricing worksheet.",
+   "heading": "Steps",
+   "document": {
+    "title": "Escalating Exceptions Above Branch Authority",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-ODR-03@v2/s4/c1",
+   "text": "Use plain language and avoid internal codes when explaining the outcome to the customer.",
+   "heading": "Exceptions and escalation",
+   "document": {
+    "title": "Referring Accounts for Charge-Off",
+    "type": "procedure",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "PRO-WIR-03@v3/s3/c8",
+   "text": "Enter the wire in the wire system and attach the signed request form.",
+   "heading": "Steps",
+   "document": {
+    "title": "Completing Wire Callback Verification",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-WIR-04@v1/s2/c1",
+   "text": "Make sure you have completed the training for this task and have access to the systems it uses.",
+   "heading": "Before you begin",
+   "document": {
+    "title": "Handling Incoming Wires",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "PRO-WIR-05@v1/s3/c2",
+   "text": "Check the account balance before sending the wire to operations.",
+   "heading": "Steps",
+   "document": {
+    "title": "Wire Cutoffs on Holidays and Weekends",
+    "type": "procedure",
+    "applies_to": "All branches. All business lines."
+   }
+  }
+ ],
+ "input_hash": "e87f18f4666e140f658d9ac1fde15995ea638cf55b8386bf1da5d5dd80e92f3d",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\":[{\"clause\":\"PRO-DRM-06@v1/s2/c1\",\"atoms\":[]},{\"clause\":\"PRO-DSP-02@v4/s5/c1\",\"atoms\":[]},{\"clause\":\"PRO-DSP-04@v1/s3/c6\",\"atoms\":[]},{\"clause\":\"PRO-FEE-01@v1/s3/c8\",\"atoms\":[]},{\"clause\":\"PRO-HLD-04@v3/s3/c7\",\"atoms\":[]},{\"clause\":\"PRO-LND-06@v4/s3/c1\",\"atoms\":[]},{\"clause\":\"PRO-ODR-03@v2/s4/c1\",\"atoms\":[]},{\"clause\":\"PRO-WIR-03@v3/s3/c8\",\"atoms\":[]},{\"clause\":\"PRO-WIR-04@v1/s2/c1\",\"atoms\":[]},{\"clause\":\"PRO-WIR-05@v1/s3/c2\",\"atoms\":[]}]}",
+   "problems": [],
+   "meta": {
+    "ms": 2645,
+    "api_ms": 2425,
+    "input_tokens": 8906,
+    "output_tokens": 328,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 6222,
+     "cache_read_input_tokens": 2682,
+     "output_tokens": 328,
+     "output_tokens_details": {
+      "thinking_tokens": 0
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 6222,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 328,
+       "cache_read_input_tokens": 2682,
+       "cache_creation_input_tokens": 6222,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 6222
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.0284402,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T04:13:50+00:00"
+}

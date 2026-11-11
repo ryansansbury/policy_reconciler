@@ -1,0 +1,171 @@
+{
+ "step": "draft",
+ "tag": "cmp-6101",
+ "model": "google-a",
+ "backend": {
+  "vendor": "Google",
+  "model": "gemini-3.1-pro-preview",
+  "label": "Gemini 3.1 Pro"
+ },
+ "prompt_hash": "d412e32e9168de04c00c3959530ebecb6630d0f9092d4afc1f9c308a4695a32e",
+ "input": [
+  {
+   "group": "g-0fcc66e4",
+   "rule": "Teller drawer limit",
+   "attribute": "cash_drawer_limit",
+   "type": "money",
+   "keep": {
+    "clause": "POL-CSH-01@v4/s4/c1",
+    "text": "Sell excess cash to the vault whenever a teller drawer goes above $15,000.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Cash Handling Policy",
+     "type": "policy",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "change": [
+    {
+     "clause": "JA-CSH-01@v2/s1/c2",
+     "text": "Teller drawer cash limit | $10,000",
+     "heading": "Quick reference",
+     "document": {
+      "title": "Teller Cash Limits Card",
+      "type": "job_aid",
+      "applies_to": "All branches. All business lines."
+     }
+    },
+    {
+     "clause": "JA-CSH-02@v4/s1/c3",
+     "text": "Teller drawer cash limit | $20,000",
+     "heading": "Quick reference",
+     "document": {
+      "title": "Vault Opening Checklist",
+      "type": "job_aid",
+      "applies_to": "All branches. All business lines."
+     }
+    }
+   ],
+   "allowed": {
+    "BUL-CSH-01@v2/s1/c2#value": "$15,000",
+    "FAQ-CSH-01@v3/s1/c1#value": "$15,000",
+    "FAQ-CSH-02@v2/s1/c1#value": "$15,000",
+    "POL-CSH-01@v4/s4/c1#value": "$15,000",
+    "PRO-CSH-06@v2/s3/c4#value": "$15,000"
+   },
+   "placeholder": "{clause:POL-CSH-01@v4/s4/c1#value}"
+  },
+  {
+   "group": "g-275f258e",
+   "rule": "Large-cash review threshold",
+   "attribute": "cash_review_threshold",
+   "type": "money",
+   "keep": {
+    "clause": "POL-CSH-01@v4/s3/c1",
+    "text": "Log any cash deposit or withdrawal of $7,500 or more for large-cash review.",
+    "heading": "Policy statements",
+    "document": {
+     "title": "Cash Handling Policy",
+     "type": "policy",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "change": [
+    {
+     "clause": "BUL-CSH-02@v2/s1/c2",
+     "text": "Cash transactions under $5,000 do not need large-cash review.",
+     "heading": "What branches need to know",
+     "document": {
+      "title": "Branch Bulletin 2026-36: Large-cash review threshold",
+      "type": "bulletin",
+      "applies_to": "All branches. All business lines."
+     }
+    },
+    {
+     "clause": "PRO-CSH-01@v1/s3/c1",
+     "text": "Log any cash deposit or withdrawal of $5,000 or more for large-cash review.",
+     "heading": "Steps",
+     "document": {
+      "title": "Balancing a Teller Drawer",
+      "type": "procedure",
+      "applies_to": "All branches. All business lines."
+     }
+    }
+   ],
+   "allowed": {
+    "JA-CSH-01@v2/s1/c3#value": "$7,500",
+    "JA-CSH-02@v4/s1/c1#value": "$7,500",
+    "JA-CSH-03@v2/s1/c2#value": "$7,500",
+    "POL-CSH-01@v4/s3/c1#value": "$7,500",
+    "POL-CSH-02@v2/s8/c1#value": "$7,500",
+    "PRO-CSH-06@v2/s3/c5#value": "$7,500"
+   },
+   "placeholder": "{clause:POL-CSH-01@v4/s3/c1#value}"
+  },
+  {
+   "group": "g-982e824a",
+   "rule": "Complaint acknowledgment deadline",
+   "attribute": "complaint_ack",
+   "type": "duration",
+   "keep": {
+    "clause": "POL-CMP-01@v4/s4/c1",
+    "text": "Acknowledge every written complaint within 2 business days.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Complaint Management Policy",
+     "type": "policy",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "change": [
+    {
+     "clause": "FAQ-CMP-01@v3/s1/c1",
+     "text": "Send the customer an acknowledgment no later than 2 days after a written complaint arrives.",
+     "heading": "How quickly is a written complaint acknowledged?",
+     "document": {
+      "title": "Complaint Handling FAQ",
+      "type": "faq",
+      "applies_to": "All branches. All business lines."
+     }
+    }
+   ],
+   "allowed": {
+    "BUL-CMP-02@v1/s1/c2#value": "2 business days",
+    "FAQ-CMP-02@v1/s1/c1#value": "2 business days",
+    "JA-CMP-01@v1/s1/c3#value": "2 business days",
+    "JA-CMP-02@v1/s1/c1#value": "2 business days",
+    "JA-CMP-02@v1/s3/c3#value": "2 business days",
+    "POL-CMP-01@v4/s4/c1#value": "2 business days",
+    "PRO-CMP-01@v2/s3/c8#value": "2 business days",
+    "PRO-CMP-05@v1/s3/c9#value": "2 business days",
+    "PRO-CMP-06@v1/s3/c7#value": "2 business days"
+   },
+   "placeholder": "{clause:POL-CMP-01@v4/s4/c1#value}"
+  }
+ ],
+ "input_hash": "d9208edba84b0591752311b8b86b4127a98c538874fb1b9c0b877f497a7c709f",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\n  \"results\": [\n    {\n      \"group\": \"g-0fcc66e4\",\n      \"title\": \"Teller drawer limit\",\n      \"text\": \"Sell excess cash to the vault whenever a teller drawer goes above {clause:POL-CSH-01@v4/s4/c1#value}.\"\n    },\n    {\n      \"group\": \"g-275f258e\",\n      \"title\": \"Large-cash review threshold\",\n      \"text\": \"Log any cash deposit or withdrawal of {clause:POL-CSH-01@v4/s3/c1#value} or more for large-cash review.\"\n    },\n    {\n      \"group\": \"g-982e824a\",\n      \"title\": \"Complaint acknowledgment deadline\",\n      \"text\": \"Acknowledge every written complaint within {clause:POL-CMP-01@v4/s4/c1#value}.\"\n    }\n  ]\n}",
+   "problems": [],
+   "meta": {
+    "ms": 12580,
+    "input_tokens": 2520,
+    "output_tokens": 1924,
+    "cost_usd": 0.028128,
+    "usage": {
+     "completion_tokens": 231,
+     "prompt_tokens": 2520,
+     "total_tokens": 4444
+    },
+    "models": [
+     "gemini-3.1-pro-preview"
+    ],
+    "stop_reason": "stop"
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T17:27:04+00:00"
+}

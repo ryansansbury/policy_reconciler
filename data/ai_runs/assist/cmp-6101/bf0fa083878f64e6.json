@@ -1,0 +1,114 @@
+{
+ "step": "assist",
+ "tag": "cmp-6101",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "66c01f0da9f327e74355d39363e55b642a1bbf8dc6249974c3afbf3cb3d6ccd5",
+ "input": [
+  {
+   "question": "q-C-13",
+   "text": "What is the cutoff for outgoing consumer wires?",
+   "type": "time",
+   "clauses": [
+    {
+     "id": "POL-WIR-01@v2/s3/c1",
+     "text": "The cutoff for outgoing commercial wires is 4:00 PM Central time.",
+     "title": "Wire Transfer Policy",
+     "type": "policy",
+     "version": 2,
+     "effective": "2026-08-02"
+    },
+    {
+     "id": "PRO-WIR-03@v3/s3/c2",
+     "text": "The cutoff for outgoing commercial wires is 2:00 PM Central time.",
+     "title": "Completing Wire Callback Verification",
+     "type": "procedure",
+     "version": 3,
+     "effective": "2024-12-08"
+    },
+    {
+     "id": "PRO-WIR-04@v1/s3/c7",
+     "text": "The cutoff for outgoing commercial wires is 4:00 PM Central time.",
+     "title": "Handling Incoming Wires",
+     "type": "procedure",
+     "version": 1,
+     "effective": "2025-02-25"
+    },
+    {
+     "id": "PRO-WIR-05@v1/s3/c9",
+     "text": "The cutoff for outgoing commercial wires is 4:00 p.m. Central time.",
+     "title": "Wire Cutoffs on Holidays and Weekends",
+     "type": "procedure",
+     "version": 1,
+     "effective": "2025-04-08"
+    },
+    {
+     "id": "JA-WIR-02@v4/s1/c3",
+     "text": "Outgoing wire cutoff (consumer and small business) | 3:00 PM Central",
+     "title": "Callback Checklist",
+     "type": "job_aid",
+     "version": 4,
+     "effective": "2026-05-28"
+    }
+   ]
+  }
+ ],
+ "input_hash": "0646accc71151e752d29fafbd670223020d53c9316d96e7d431ba66ccef7ad09",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [{\"question\": \"q-C-13\", \"answer\": \"The Callback Checklist job aid sets the outgoing wire cutoff for consumer and small business wires at 3 PM Central. The other clauses cover commercial wires only and do not address consumer wires. No policy or procedure clause was retrieved to confirm the consumer cutoff.\", \"citations\": [\"JA-WIR-02@v4/s1/c3\"], \"sources_disagree\": false}]}",
+   "problems": [],
+   "meta": {
+    "ms": 6997,
+    "api_ms": 6850,
+    "input_tokens": 6154,
+    "output_tokens": 761,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 5534,
+     "cache_read_input_tokens": 618,
+     "output_tokens": 761,
+     "output_tokens_details": {
+      "thinking_tokens": 608
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 5534,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 761,
+       "cache_read_input_tokens": 618,
+       "cache_creation_input_tokens": 5534,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 5534
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.0298118,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T17:16:41+00:00"
+}

@@ -1,0 +1,285 @@
+{
+ "step": "draft",
+ "tag": "2026",
+ "model": "claude-opus",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "opus",
+  "client_context": true
+ },
+ "prompt_hash": "d412e32e9168de04c00c3959530ebecb6630d0f9092d4afc1f9c308a4695a32e",
+ "input": [
+  {
+   "group": "g-46a9b4de",
+   "rule": "Complaint resolution deadline",
+   "attribute": "complaint_resolve",
+   "type": "duration",
+   "keep": {
+    "clause": "POL-CMP-01@v5/s3/c1",
+    "text": "Resolve complaints within 15 business days of receipt, or tell the customer when to expect a resolution.",
+    "heading": "Policy statements",
+    "document": {
+     "title": "Complaint Management Policy",
+     "type": "policy",
+     "applies_to": "All branches. All business lines."
+    }
+   },
+   "change": [
+    {
+     "clause": "BUL-CMP-02@v2/s1/c2",
+     "text": "Complaints should be closed within 15 days of the day they arrive.",
+     "heading": "What branches need to know",
+     "document": {
+      "title": "Branch Bulletin 2026-15: Complaint resolution deadline",
+      "type": "bulletin",
+      "applies_to": "All branches. All business lines."
+     }
+    },
+    {
+     "clause": "FAQ-CMP-01@v1/s2/c1",
+     "text": "Complaints should be closed within 15 days of the day they arrive.",
+     "heading": "How long does the bank have to resolve a complaint?",
+     "document": {
+      "title": "Complaint Handling FAQ",
+      "type": "faq",
+      "applies_to": "All branches. All business lines."
+     }
+    },
+    {
+     "clause": "FAQ-CMP-02@v2/s2/c1",
+     "text": "Complaints should be closed within 15 business days of the day they arrive.",
+     "heading": "How long does the bank have to resolve a complaint?",
+     "document": {
+      "title": "Complaint Escalation Questions",
+      "type": "faq",
+      "applies_to": "All branches. All business lines."
+     }
+    },
+    {
+     "clause": "JA-CMP-01@v1/s1/c1",
+     "text": "Complaint resolution deadline | 10 business days",
+     "heading": "Quick reference",
+     "document": {
+      "title": "Complaint Handling Card",
+      "type": "job_aid",
+      "applies_to": "All branches. All business lines."
+     }
+    },
+    {
+     "clause": "JA-CMP-02@v2/s1/c2",
+     "text": "Complaint resolution deadline | 15 business days",
+     "heading": "Quick reference",
+     "document": {
+      "title": "Complaint Escalation Checklist",
+      "type": "job_aid",
+      "applies_to": "All branches. All business lines."
+     }
+    }
+   ],
+   "allowed": {
+    "FAQ-CMP-02@v2/s2/c1#value": "15 business days",
+    "JA-CMP-02@v2/s1/c2#value": "15 business days",
+    "POL-CMP-01@v5/s3/c1#value": "15 business days",
+    "PRO-CMP-02@v4/s3/c4#value": "15 business days",
+    "PRO-CMP-06@v3/s3/c7#value": "15 business days"
+   },
+   "placeholder": "{clause:POL-CMP-01@v5/s3/c1#value}"
+  },
+  {
+   "group": "g-f23fdcaf",
+   "rule": "Card dispute window",
+   "attribute": "dispute_window",
+   "type": "duration",
+   "keep": {
+    "clause": "POL-DSP-01@v3/s4/c2",
+    "text": "Customers have 60 days from the statement date to dispute a debit card transaction, or longer when the customer was traveling or hospitalized.",
+    "heading": "Additional requirements",
+    "document": {
+     "title": "Debit Card Dispute Policy",
+     "type": "policy",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "change": [
+    {
+     "clause": "BUL-DSP-02@v4/s1/c2",
+     "text": "Accept debit card disputes filed within 30 days of the statement that first showed the charge.",
+     "heading": "What branches need to know",
+     "document": {
+      "title": "Branch Bulletin 2026-20: Debit card dispute window",
+      "type": "bulletin",
+      "applies_to": "All branches. Consumer and small business accounts."
+     }
+    },
+    {
+     "clause": "FAQ-DSP-02@v1/s1/c1",
+     "text": "Customers have 60 days from the statement date to dispute a debit card transaction.",
+     "heading": "How long do customers have to dispute a debit card transaction?",
+     "document": {
+      "title": "Provisional Credit Questions",
+      "type": "faq",
+      "applies_to": "All branches. Consumer and small business accounts."
+     }
+    },
+    {
+     "clause": "JA-DSP-02@v1/s1/c2",
+     "text": "Debit card dispute window | 60 days",
+     "heading": "Quick reference",
+     "document": {
+      "title": "Dispute Timelines Card",
+      "type": "job_aid",
+      "applies_to": "All branches. Consumer and small business accounts."
+     }
+    },
+    {
+     "clause": "JA-DSP-03@v3/s1/c2",
+     "text": "Debit card dispute window | 60 days",
+     "heading": "Quick reference",
+     "document": {
+      "title": "Card Services Quick Reference",
+      "type": "job_aid",
+      "applies_to": "All branches. Consumer and small business accounts."
+     }
+    }
+   ],
+   "allowed": {
+    "FAQ-DSP-02@v1/s1/c1#value": "60 days",
+    "JA-DSP-02@v1/s1/c2#value": "60 days",
+    "JA-DSP-03@v3/s1/c2#value": "60 days",
+    "POL-DSP-01@v3/s4/c2#value": "60 days"
+   },
+   "placeholder": "{clause:POL-DSP-01@v3/s4/c2#value}"
+  },
+  {
+   "group": "g-eeefec6d",
+   "rule": "Personal banker fee waiver limit",
+   "attribute": "fee_waiver_pb",
+   "type": "money",
+   "keep": {
+    "clause": "POL-FEE-01@v2/s3/c1",
+    "text": "Personal bankers may waive service fees up to $25 per account in a calendar year, or up to $50 with branch manager approval noted in the account.",
+    "heading": "Policy statements",
+    "document": {
+     "title": "Service Fee Waiver Policy",
+     "type": "policy",
+     "applies_to": "All branches. Consumer and small business accounts."
+    }
+   },
+   "change": [
+    {
+     "clause": "FAQ-FEE-02@v2/s2/c1",
+     "text": "A personal banker can waive no more than $25 for one account in a calendar year.",
+     "heading": "How much can a personal banker waive in fees?",
+     "document": {
+      "title": "Fee Refund Questions",
+      "type": "faq",
+      "applies_to": "All branches. Consumer and small business accounts."
+     }
+    },
+    {
+     "clause": "JA-FEE-02@v3/s1/c1",
+     "text": "Personal banker fee waiver limit | $25",
+     "heading": "Quick reference",
+     "document": {
+      "title": "Fee Schedule at a Glance",
+      "type": "job_aid",
+      "applies_to": "All branches. Consumer and small business accounts."
+     }
+    },
+    {
+     "clause": "JA-FEE-03@v3/s1/c1",
+     "text": "Personal banker fee waiver limit | $15",
+     "heading": "Quick reference",
+     "document": {
+      "title": "Waiver Authority Card",
+      "type": "job_aid",
+      "applies_to": "All branches. Consumer and small business accounts."
+     }
+    },
+    {
+     "clause": "PRO-FEE-04@v4/s3/c1",
+     "text": "A personal banker can waive no more than $25 for one account in a calendar year.",
+     "heading": "Steps",
+     "document": {
+      "title": "Reviewing Waiver Activity Each Month",
+      "type": "procedure",
+      "applies_to": "All branches. Consumer and small business accounts."
+     }
+    },
+    {
+     "clause": "PRO-FEE-05@v4/s3/c3",
+     "text": "Personal bankers may waive service fees up to $25 per account in a calendar year.",
+     "heading": "Steps",
+     "document": {
+      "title": "Documenting Fee Waivers in Account Notes",
+      "type": "procedure",
+      "applies_to": "All branches. Consumer and small business accounts."
+     }
+    }
+   ],
+   "allowed": {
+    "FAQ-FEE-02@v2/s2/c1#value": "$25",
+    "JA-FEE-02@v3/s1/c1#value": "$25",
+    "POL-FEE-01@v2/s3/c1#v2": "$50",
+    "POL-FEE-01@v2/s3/c1#value": "$25",
+    "PRO-FEE-04@v4/s3/c1#value": "$25",
+    "PRO-FEE-05@v4/s3/c3#value": "$25"
+   },
+   "placeholder": "{clause:POL-FEE-01@v2/s3/c1#value}"
+  }
+ ],
+ "input_hash": "ee22a65621f383943ad3e85d6c0df9bfeec66b2a51bbbb03d8bf98dd6cd173f9",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [{\"group\": \"g-46a9b4de\", \"title\": \"Complaint resolution deadline\", \"text\": \"Staff resolve each complaint within {clause:POL-CMP-01@v5/s3/c1#value} of receipt or tell the customer when to expect a resolution.\"}, {\"group\": \"g-f23fdcaf\", \"title\": \"Debit card dispute window\", \"text\": \"Customers have {clause:POL-DSP-01@v3/s4/c2#value} from the statement date to dispute a debit card transaction. The window is longer when the customer was traveling or hospitalized.\"}, {\"group\": \"g-eeefec6d\", \"title\": \"Personal banker fee waivers\", \"text\": \"Personal bankers may waive service fees up to {clause:POL-FEE-01@v2/s3/c1#value} per account in a calendar year. With branch manager approval noted in the account they may waive up to {clause:POL-FEE-01@v2/s3/c1#v2}.\"}]}",
+   "problems": [],
+   "meta": {
+    "ms": 12198,
+    "api_ms": 12051,
+    "input_tokens": 9112,
+    "output_tokens": 744,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 8036,
+     "cache_read_input_tokens": 1074,
+     "output_tokens": 744,
+     "output_tokens_details": {
+      "thinking_tokens": 422
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 8036,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 744,
+       "cache_read_input_tokens": 1074,
+       "cache_creation_input_tokens": 8036,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 8036
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.0793908,
+    "models": [
+     "claude-opus-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T06:12:34+00:00"
+}

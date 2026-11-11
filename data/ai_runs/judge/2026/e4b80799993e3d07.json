@@ -1,0 +1,86 @@
+{
+ "step": "judge",
+ "tag": "2026",
+ "model": "google-a",
+ "backend": {
+  "vendor": "Google",
+  "model": "gemini-3.1-pro-preview",
+  "label": "Gemini 3.1 Pro"
+ },
+ "prompt_hash": "ab6a49ec8731854b3cf900a9a4387417ee8016fe68257c4d327181c7eb1621da",
+ "input": [
+  {
+   "draft": "g-46a9b4de",
+   "text": "Staff resolve each complaint within 15 business days of receipt or tell the customer when to expect a resolution.",
+   "sources": [
+    "Resolve complaints within 15 business days of receipt, or tell the customer when to expect a resolution.",
+    "Complaints should be closed within 15 days of the day they arrive.",
+    "Complaints should be closed within 15 days of the day they arrive.",
+    "Complaints should be closed within 15 business days of the day they arrive.",
+    "Complaint resolution deadline | 10 business days",
+    "Complaint resolution deadline | 15 business days"
+   ]
+  },
+  {
+   "draft": "g-34eb5d1d",
+   "text": "Staff credit the customer provisionally no later than 10 business days after the dispute form is complete.",
+   "sources": [
+    "Credit the customer provisionally no later than 10 business days after the dispute form is complete.",
+    "Provisional credit is issued within 10 days of receiving a completed dispute."
+   ]
+  },
+  {
+   "draft": "g-137a3a32",
+   "text": "A card services specialist reviews every dispute over $500 before credit is issued.",
+   "sources": [
+    "Disputes over $500 are reviewed by a card services specialist before credit is issued.",
+    "Dispute amount that needs card services review | $1,000",
+    "Disputes over $1,000 are reviewed by a card services specialist before credit is issued."
+   ]
+  },
+  {
+   "draft": "g-f23fdcaf",
+   "text": "Customers have 60 days from the statement date to dispute a debit card transaction. The window is longer when the customer was traveling or hospitalized.",
+   "sources": [
+    "Customers have 60 days from the statement date to dispute a debit card transaction, or longer when the customer was traveling or hospitalized.",
+    "Accept debit card disputes filed within 30 days of the statement that first showed the charge.",
+    "Customers have 60 days from the statement date to dispute a debit card transaction.",
+    "Debit card dispute window | 60 days",
+    "Debit card dispute window | 60 days"
+   ]
+  },
+  {
+   "draft": "g-293d155a",
+   "text": "Dormant accounts are charged a maintenance fee of $5 per month.",
+   "sources": [
+    "Dormant accounts are charged a maintenance fee of $5 per month.",
+    "Monthly dormant account fee | $10"
+   ]
+  }
+ ],
+ "input_hash": "de674cb4caff296e42d57745311b75c101b39e2ed44dfdefb33d3fd2120793df",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "```json\n{\"results\": [{\"draft\": \"g-46a9b4de\", \"scores\": {\"keeps_rules\": {\"pass\": false, \"evidence\": \"10 business days\"}, \"adds_no_rule\": {\"pass\": true, \"evidence\": \"\"}, \"keeps_scope\": {\"pass\": true, \"evidence\": \"\"}, \"plain\": {\"pass\": true, \"evidence\": \"\"}}}, {\"draft\": \"g-34eb5d1d\", \"scores\": {\"keeps_rules\": {\"pass\": false, \"evidence\": \"10 days\"}, \"adds_no_rule\": {\"pass\": true, \"evidence\": \"\"}, \"keeps_scope\": {\"pass\": true, \"evidence\": \"\"}, \"plain\": {\"pass\": true, \"evidence\": \"\"}}}, {\"draft\": \"g-137a3a32\", \"scores\": {\"keeps_rules\": {\"pass\": false, \"evidence\": \"$1,000\"}, \"adds_no_rule\": {\"pass\": true, \"evidence\": \"\"}, \"keeps_scope\": {\"pass\": true, \"evidence\": \"\"}, \"plain\": {\"pass\": true, \"evidence\": \"\"}}}, {\"draft\": \"g-f23fdcaf\", \"scores\": {\"keeps_rules\": {\"pass\": false, \"evidence\": \"30 days\"}, \"adds_no_rule\": {\"pass\": true, \"evidence\": \"\"}, \"keeps_scope\": {\"pass\": true, \"evidence\": \"\"}, \"plain\": {\"pass\": true, \"evidence\": \"\"}}}, {\"draft\": \"g-293d155a\", \"scores\": {\"keeps_rules\": {\"pass\": false, \"evidence\": \"$10\"}, \"adds_no_rule\": {\"pass\": true, \"evidence\": \"\"}, \"keeps_scope\": {\"pass\": true, \"evidence\": \"\"}, \"plain\": {\"pass\": true, \"evidence\": \"\"}}}]}\n```",
+   "problems": [],
+   "meta": {
+    "ms": 21587,
+    "input_tokens": 1125,
+    "output_tokens": 3287,
+    "cost_usd": 0.041694,
+    "usage": {
+     "completion_tokens": 411,
+     "prompt_tokens": 1125,
+     "total_tokens": 4412
+    },
+    "models": [
+     "gemini-3.1-pro-preview"
+    ],
+    "stop_reason": "stop"
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T16:54:02+00:00"
+}

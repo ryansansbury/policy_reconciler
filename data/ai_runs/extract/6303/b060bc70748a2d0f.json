@@ -1,0 +1,167 @@
+{
+ "step": "extract",
+ "tag": "6303",
+ "model": "claude-sonnet",
+ "backend": {
+  "vendor": "Anthropic",
+  "model": "sonnet",
+  "client_context": true
+ },
+ "prompt_hash": "dcc761e46c6ec579c01b9dfd540df3c2fa4bba3b6b5ec777aa2cf9c9c62aa411",
+ "input": [
+  {
+   "clause": "POL-AOP-01@v5/s5/c1",
+   "text": "Exceptions to this policy need written approval from the Deposit Operations manager and are reviewed each quarter.",
+   "heading": "Exceptions",
+   "document": {
+    "title": "Deposit Account Opening Policy",
+    "type": "policy",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "POL-AOP-01@v5/s6/c1",
+   "text": "Branch managers make sure their teams follow this policy, and Deposit Operations answers questions about it.",
+   "heading": "Roles and responsibilities",
+   "document": {
+    "title": "Deposit Account Opening Policy",
+    "type": "policy",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "POL-AOP-02@v3/s4/c1",
+   "text": "Only a manager can approve an exception to the identification requirements.",
+   "heading": "Additional requirements",
+   "document": {
+    "title": "Customer Identification Policy",
+    "type": "policy",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "POL-AOP-02@v3/s5/c1",
+   "text": "Exceptions to this policy need written approval from the Deposit Operations manager and are reviewed each quarter.",
+   "heading": "Exceptions",
+   "document": {
+    "title": "Customer Identification Policy",
+    "type": "policy",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "POL-AOP-02@v3/s6/c1",
+   "text": "Branch managers make sure their teams follow this policy, and Deposit Operations answers questions about it.",
+   "heading": "Roles and responsibilities",
+   "document": {
+    "title": "Customer Identification Policy",
+    "type": "policy",
+    "applies_to": "All branches. Consumer and small business accounts."
+   }
+  },
+  {
+   "clause": "POL-BOP-01@v6/s6/c1",
+   "text": "Branch managers make sure their teams follow this policy, and Branch Network answers questions about it.",
+   "heading": "Roles and responsibilities",
+   "document": {
+    "title": "Branch Security and Opening Policy",
+    "type": "policy",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "POL-CMP-01@v6/s4/c1",
+   "text": "Resolve complaints within 15 business days of receipt, or tell the customer when to expect a resolution.",
+   "heading": "Additional requirements",
+   "document": {
+    "title": "Complaint Management Policy",
+    "type": "policy",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "POL-CMP-01@v6/s6/c1",
+   "text": "Branch managers make sure their teams follow this policy, and Customer Experience answers questions about it.",
+   "heading": "Roles and responsibilities",
+   "document": {
+    "title": "Complaint Management Policy",
+    "type": "policy",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "POL-CSH-01@v4/s6/c1",
+   "text": "Branch managers make sure their teams follow this policy, and Branch Network answers questions about it.",
+   "heading": "Roles and responsibilities",
+   "document": {
+    "title": "Cash Handling Policy",
+    "type": "policy",
+    "applies_to": "All branches. All business lines."
+   }
+  },
+  {
+   "clause": "POL-CSH-01@v4/s8/c1",
+   "text": "The large-cash review queue is worked by the operations specialist assigned to the branch.",
+   "heading": "Related requirements",
+   "document": {
+    "title": "Cash Handling Policy",
+    "type": "policy",
+    "applies_to": "All branches. All business lines."
+   }
+  }
+ ],
+ "input_hash": "ebbe42b58e76f211a4594609e77797331f232d504f6fd6626e2adf76a94225f9",
+ "masked": {},
+ "attempts": [
+  {
+   "reply": "{\"results\": [{\"clause\": \"POL-AOP-01@v5/s5/c1\", \"atoms\": []}, {\"clause\": \"POL-AOP-01@v5/s6/c1\", \"atoms\": []}, {\"clause\": \"POL-AOP-02@v3/s4/c1\", \"atoms\": [{\"attribute\": \"ao_exception_approver\", \"value\": {\"type\": \"role\", \"role\": null, \"generic\": \"a manager\"}, \"quote\": \"a manager\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": null}]}, {\"clause\": \"POL-AOP-02@v3/s5/c1\", \"atoms\": []}, {\"clause\": \"POL-AOP-02@v3/s6/c1\", \"atoms\": []}, {\"clause\": \"POL-BOP-01@v6/s6/c1\", \"atoms\": []}, {\"clause\": \"POL-CMP-01@v6/s4/c1\", \"atoms\": [{\"attribute\": \"complaint_resolve\", \"value\": {\"type\": \"duration\", \"n\": 15, \"unit\": \"business_days\"}, \"quote\": \"15 business days\", \"actor\": null, \"actor_inferred\": false, \"scope_quote\": null, \"condition\": \"or tell the customer when to expect a resolution\"}]}, {\"clause\": \"POL-CMP-01@v6/s6/c1\", \"atoms\": []}, {\"clause\": \"POL-CSH-01@v4/s6/c1\", \"atoms\": []}, {\"clause\": \"POL-CSH-01@v4/s8/c1\", \"atoms\": []}]}",
+   "problems": [],
+   "meta": {
+    "ms": 5453,
+    "api_ms": 5258,
+    "input_tokens": 8969,
+    "output_tokens": 843,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 6285,
+     "cache_read_input_tokens": 2682,
+     "output_tokens": 843,
+     "output_tokens_details": {
+      "thinking_tokens": 332
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 6285,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "global",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 843,
+       "cache_read_input_tokens": 2682,
+       "cache_creation_input_tokens": 6285,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 6285
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard",
+     "fallback_credit": null
+    },
+    "cost_usd": 0.0338422,
+    "models": [
+     "claude-sonnet-5-5"
+    ]
+   }
+  }
+ ],
+ "held": {},
+ "recorded_at": "2026-10-30T04:11:37+00:00"
+}
