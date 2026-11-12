@@ -88,6 +88,7 @@ def render(w, vm, combined, results, files=None):
             f"<meta property=\"og:title\" content=\"{page.esc(w['page.title'])}\">"
             f"<meta property=\"og:description\" content=\"{page.esc(w['page.description'])}\">"
             f"<meta property=\"og:type\" content=\"website\">{site_tags()}"
+            f"<link rel=\"icon\" href=\"data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCAzMiAzMic+PHJlY3Qgd2lkdGg9JzMyJyBoZWlnaHQ9JzMyJyByeD0nOCcgZmlsbD0nIzQzMzhDQScvPjxwYXRoIGQ9J005IDExaDE0TTkgMTZoOU05IDIxaDE0JyBzdHJva2U9JyNmZmYnIHN0cm9rZS13aWR0aD0nMi42JyBzdHJva2UtbGluZWNhcD0ncm91bmQnLz48L3N2Zz4=\">"
             f"<link rel=\"stylesheet\" href=\"app.css\"></head><body>")
     html = head + body + ("<script src=\"data.js\"></script>"
                           "<script src=\"app.js\"></script></body></html>\n")

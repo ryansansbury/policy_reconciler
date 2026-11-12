@@ -336,3 +336,97 @@ footer { border-top: 1px solid var(--border); padding: 18px 0 28px; font-size: 1
 @media (max-width: 860px) { .hours-grid { grid-template-columns: minmax(0, 1fr); } }
 @media (max-width: 560px) { .steps { grid-template-columns: repeat(2, minmax(0, 1fr)); } .run-cell { grid-column: 1 / -1; } }
 @media (max-width: 860px) { table.results, table.aimap { display: block; overflow-x: auto; min-width: 0; max-width: 100%; } }
+
+/* ------------------------------------------------------------------ phones and touch screens
+   Everything below reaches only a phone-sized window or a touch screen, so a desktop with a mouse looks and works
+   exactly as it did. */
+/* iPhone Safari enlarges the text of a phone turned on its side unless the page asks it not to. Desktop browsers
+   ignore this. */
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+.arch-list { display: none; }
+@media (max-width: 640px) {
+  .bar, .strip, main, footer .wrap { padding-left: 14px; padding-right: 14px; }
+  .panel { padding: 16px 14px; }
+  /* The title and the bank stack, so neither squeezes the other. */
+  .bar { flex-direction: column; align-items: flex-start; gap: 6px; padding-top: 12px; padding-bottom: 8px; }
+  .bar-right { text-align: left; }
+  .bar-right p { color: var(--text-muted); }
+  /* The tab row swipes sideways, and a fade at an edge shows there's more to swipe to (app.js marks which). */
+  .tabs ul { padding-left: 6px; padding-right: 6px; gap: 0; }
+  .tabs button { padding: 12px 10px; }
+  nav.tabs::before, nav.tabs::after { content: ""; position: absolute; top: 0; bottom: 1px; width: 36px; z-index: 1;
+    pointer-events: none; opacity: 0; transition: opacity .15s ease-out; }
+  nav.tabs::before { left: 0; background: linear-gradient(to right, var(--bg) 25%, rgba(246, 247, 249, 0)); }
+  nav.tabs::after { right: 0; background: linear-gradient(to left, var(--bg) 25%, rgba(246, 247, 249, 0)); }
+  nav.tabs.more-left::before, nav.tabs.more-right::after { opacity: 1; }
+  /* The findings filters share the width, two to a row. */
+  .controls label { flex: 1 1 140px; }
+  .controls select { width: 100%; }
+  /* Findings read as cards in their own scrolling list, with the rank, the category and the risk on top, then the
+     rule, the documents and who decided. A tap opens the finding below the list and scrolls to it (app.js). */
+  .list-wrap { max-height: 62vh; }
+  #f-list thead { display: none; }
+  #f-list, #f-list tbody { display: block; }
+  #f-list tr { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: 6px 10px;
+    padding: 10px 12px; border-bottom: 1px solid var(--grid); }
+  #f-list tr.sel { background: var(--accent-soft); }
+  #f-list td { display: block; padding: 0; border: 0; background: none; }
+  #f-list td:nth-child(1) { grid-column: 1; font-weight: 700; }
+  #f-list td:nth-child(2) { grid-column: 2; }
+  #f-list td:nth-child(6) { grid-column: 3; grid-row: 1; }
+  #f-list td:nth-child(6)::before { content: attr(data-label) " "; color: var(--text-muted); font-size: 13px; }
+  #f-list td:nth-child(3), #f-list td:nth-child(4), #f-list td:nth-child(5) { grid-column: 1 / -1; }
+  #f-list td:nth-child(4) { font-size: 14px; color: var(--text-muted); }
+  /* Citation codes at 12px in the list and beside each clause. */
+  #f-list code, .side-id code { font-size: 12px; }
+  .detail-head { flex-direction: column; gap: 8px; }
+  /* A decision group's pair count stays on one line beside its title. */
+  .panel-head > .muted { white-space: nowrap; }
+  /* The five AI steps read one under another, each at the full width. */
+  .step-cards { grid-template-columns: minmax(0, 1fr); }
+  /* A table wider than three columns reads as one card per row, each value under its column's name (app.js names
+     the cells). */
+  table.cards thead { display: none; }
+  table.cards, table.cards tbody, table.cards tr { display: block; min-width: 0; max-width: none; overflow: visible; }
+  table.cards tr { border: 1px solid var(--border); border-radius: 10px; padding: 8px 12px; margin: 0 0 10px;
+    background: var(--surface); }
+  table.cards td { display: block; border: 0; padding: 3px 0; white-space: normal; text-align: left; }
+  table.cards td:first-child { font-weight: 600; }
+  table.cards td[data-label]:not(:first-child)::before { content: attr(data-label); display: block; font-size: 12px;
+    font-weight: 600; color: var(--text-muted); }
+  /* Each routing chart takes the full width, so its labels read at a readable size. */
+  .facet { max-width: 100%; }
+  ul.cites code, ul.sources code { font-size: 13px; }
+}
+@media (max-width: 640px), (max-width: 960px) and (max-height: 500px) {
+  /* The architecture as one list per lane in place of the wide diagram. A phone shows the diagram too small to
+     read upright or on its side. */
+  svg.arch { display: none; }
+  .arch-list { display: block; margin-top: 12px; }
+  .arch-lane + .arch-lane { margin-top: 14px; }
+  .arch-lane ol { list-style: none; margin: 6px 0 0; padding: 0; }
+  .arch-lane li { position: relative; }
+  .arch-lane li + li { margin-top: 14px; }
+  .arch-lane li + li::before { content: ""; position: absolute; left: 50%; top: -13px; height: 12px;
+    border-left: 1.6px solid var(--axis); }
+  .arch-lane a { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; padding: 10px 14px;
+    border: 1.2px solid var(--axis); border-radius: 10px; background: var(--surface); color: inherit;
+    text-decoration: none; }
+  .arch-lane .b-ai a { background: var(--accent-soft); border-color: var(--accent); }
+  .arch-lane .b-people a { background: var(--people-bg); border-color: var(--people); }
+  .arch-lane strong { font-size: 15px; }
+  .arch-lane span { flex: none; font-size: 13px; color: var(--text-muted); }
+  /* The run's steps. One that hasn't run yet is a single line, and every tab but the Library keeps only the run
+     button above its own content, except while a run plays (app.js names the open tab on the page). */
+  .step:not(.done) .sd { display: none; }
+  body[data-shown-tab]:not([data-shown-tab="library"]) .strip .steps:not(:has(.active)) .step { display: none; }
+}
+@media (hover: none) and (pointer: coarse) {
+  /* Touch targets of at least 44px, and form fields at 16px so a phone doesn't zoom the page when one is tapped. */
+  .btn, .run-card { min-height: 44px; }
+  .controls select, .weight-row input, .hours-inputs input { font-size: 16px; min-height: 40px; }
+  .draft summary, details.weights summary, .table-view summary { padding: 10px 0; }
+  .table-view summary { font-size: 14px; }
+  details.nf summary { padding: 6px 0; }
+  footer a { display: inline-block; padding: 12px 2px; margin: -12px -2px; }
+}

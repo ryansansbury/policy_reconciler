@@ -48,6 +48,20 @@ def diagram(w):
             f"orient=\"auto-start-reverse\"><path d=\"M0 0L8 4L0 8z\"/></marker></defs>{lanes}{''.join(out)}</svg>")
 
 
+def diagram_list(w):
+    """The diagram as one list per lane for a phone, where the wide picture would shrink past reading. app.css shows
+    the list or the picture and never both, and each step links the same file as its box."""
+    lanes = []
+    for row, lane in ((0, "review"), (1, "fix")):
+        items = "".join(f"<li class=\"b-{kind}\"><a href=\"{esc(code_view.blob(code_view.BOXES[key]))}\" "
+                        f"target=\"_blank\" rel=\"noopener\"><strong>{esc(w['arch.' + key])}</strong>"
+                        f"<span>{esc(w['arch.kind.' + kind])}</span></a></li>"
+                        for key, r, _, kind in BOXES if r == row)
+        lanes.append(f"<div class=\"arch-lane\"><p class=\"kicker\">{esc(w['arch.lane.' + lane])}</p>"
+                     f"<ol>{items}</ol></div>")
+    return f"<div class=\"arch-list\">{''.join(lanes)}</div>"
+
+
 def results_panel(w):
     code = json.loads(HERE.joinpath("evals", "code_only.json").read_text())["totals"]
     rows = [(w["how.res.code_only"], w.fill("how.res.caught", caught=code["caught"], planted=code["planted"]),
@@ -204,7 +218,7 @@ def render(w, files):
                     for k in ("w1", "w2", "w3", "w4"))
     return (f"<section class=\"tab\" id=\"t-how\" role=\"tabpanel\" aria-labelledby=\"tab-how\">"
             f"<section class=\"panel\" id=\"how-arch\"><h2>{esc(w['arch.title'])}</h2><p>{esc(w['arch.text'])}</p>"
-            f"{diagram(w)}</section>"
+            f"{diagram(w)}{diagram_list(w)}</section>"
             f"<section class=\"panel\" id=\"how-map\"><h3>{esc(w['aimap.title'])}</h3><p>{esc(w['aimap.text'])}</p>"
             f"<table class=\"aimap\"><thead><tr>{head}</tr></thead><tbody>{body}</tbody></table></section>"
             f"<section class=\"panel\" id=\"how-steps\"><h3>{esc(w['steps.title'])}</h3><div class=\"step-cards\">{steps}"

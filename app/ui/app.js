@@ -325,3 +325,54 @@
   hoursRecalc();
   showTab("library");
 })();
+
+/* Phones and touch screens. The page names its open tab for the phone rules in app.css, the tab row fades at an edge
+   with more to swipe to, each cell of a wide table carries its column's name so a phone can show each row as a card,
+   and on a phone a tapped finding scrolls into view below the list. Every rule these feed sits under a phone-sized or
+   touch-only media query, so a desktop with a mouse sees none of it. */
+(function () {
+  "use strict";
+  var win = window, doc = document, ADP = win.ADP || {};
+  if (!doc || !doc.body || !doc.querySelectorAll) { return; }
+  function $(sel, root) { return (root || doc).querySelector(sel); }
+  function $$(sel, root) { return Array.prototype.slice.call((root || doc).querySelectorAll(sel)); }
+  function phone() { return !!(win.matchMedia && win.matchMedia("(max-width: 640px)").matches); }
+  /* Not data-tab, which the page's click handler reads on any element a click lands inside. */
+  function markTab() { if (ADP.tab) { doc.body.setAttribute("data-shown-tab", ADP.tab() || ""); } }
+  var nav = $("nav.tabs"), row = $("nav.tabs ul"), list = $("#f-list");
+  function edges() {
+    if (!nav || !row || !nav.classList) { return; }
+    var max = (row.scrollWidth || 0) - (row.clientWidth || 0), at = row.scrollLeft || 0;
+    nav.classList.toggle("more-left", max > 1 && at > 1);
+    nav.classList.toggle("more-right", max > 1 && at < max - 1);
+  }
+  function label(table) {
+    var heads = $$("thead th", table).map(function (th) { return (th.textContent || "").trim(); });
+    $$("tbody tr", table).forEach(function (tr) {
+      $$("td", tr).forEach(function (td, i) {
+        if (heads[i] && !td.getAttribute("data-label")) { td.setAttribute("data-label", heads[i]); }
+      });
+    });
+    return heads.length;
+  }
+  $$("main table").forEach(function (t) {
+    if (t.id !== "f-list" && t.id !== "audit" && label(t) > 3) { t.classList.add("cards"); }
+  });
+  if (list) { label(list); }
+  markTab();
+  edges();
+  if (win.MutationObserver) {
+    if (nav) {
+      new win.MutationObserver(function () { markTab(); edges(); })
+        .observe(nav, {subtree: true, attributes: true, attributeFilter: ["aria-selected"]});
+    }
+    var body = $("#f-list tbody");
+    if (body) { new win.MutationObserver(function () { label(list); }).observe(body, {childList: true}); }
+  }
+  if (row && row.addEventListener) { row.addEventListener("scroll", edges, {passive: true}); }
+  if (win.addEventListener) { win.addEventListener("resize", edges); }
+  doc.addEventListener("click", function (e) {
+    var tr = e.target && e.target.closest ? e.target.closest("#f-list tr[data-id]") : null, box = $("#f-detail");
+    if (tr && box && phone() && box.scrollIntoView) { box.scrollIntoView({behavior: "smooth", block: "start"}); }
+  });
+})();
